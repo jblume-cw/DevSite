@@ -1,4 +1,23 @@
 body {
     font-family: 'Courier New', Courier, monospace;
     font-size: 1em;
+    color: #3C3C3C;
+    background-color: #D7F3F5;
+}
+
+h2 {
+    font-size: 1.2em;
+    color: #004A98;
+}
+
+section {
+    width: 250px;
+    background-color: #fff;
+    padding: 20px;
+    margin: 10px;
+}
+
+a {
+    color: #3C3C3C;
+    text-decoration: underline;
 }
