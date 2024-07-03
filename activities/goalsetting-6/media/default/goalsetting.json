@@ -1,0 +1,64 @@
+{
+  "sprite": {
+    "Slide 1 Sofia": [
+      0,
+      18.75,
+      false,
+      "Slide 1 Sofia"
+    ],
+    "Slide 1a Jack": [
+      19,
+      7,
+      false,
+      "Slide 1a Jack"
+    ],
+    "Slide 1b Jack": [
+      26,
+      17,
+      false,
+      "Slide 1b Jack"
+    ],
+    "Slide 2 Sofia": [
+      43,
+      32.62990929705215,
+      false,
+      "Slide 2 Sofia"
+    ],
+    "Slide 3 Jack": [
+      76,
+      15.5,
+      false,
+      "Slide 3 Jack"
+    ],
+    "Slide 3 Sofia": [
+      92,
+      27.304195011337868,
+      false,
+      "Slide 3 Sofia"
+    ],
+    "Slide 4 Sofia": [
+      120,
+      23.104172335600907,
+      false,
+      "Slide 4 Sofia"
+    ],
+    "Slide 5 Jack": [
+      144,
+      9.011995464852617,
+      false,
+      "Slide 5 Jack"
+    ],
+    "Slide 5a Sofia": [
+      154,
+      6.886984126984117,
+      false,
+      "Slide 5a Sofia"
+    ],
+    "Slide 5b Sofia": [
+      161,
+      1.642222222222216,
+      false,
+      "Slide 5b Sofia"
+    ]
+  }
+}

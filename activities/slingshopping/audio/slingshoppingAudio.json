@@ -1,0 +1,83 @@
+{
+  "resources": [
+    "output/MH6ss/slingshoppingAudio.ogg",
+    "output/MH6ss/slingshoppingAudio.m4a"
+  ],
+  "spritemap": {
+    "boing06": {
+      "start": 0,
+      "end": 1.4353968253968254,
+      "loop": false
+    },
+    "buzzer02": {
+      "start": 2,
+      "end": 2.522448979591837,
+      "loop": false
+    },
+    "no": {
+      "start": 3,
+      "end": 3.2075283446712017,
+      "loop": false
+    },
+    "pip02": {
+      "start": 4,
+      "end": 4.0580498866213155,
+      "loop": false
+    },
+    "stretch01": {
+      "start": 5,
+      "end": 6.015192743764173,
+      "loop": false
+    },
+    "success_sound_exploding_glass_01": {
+      "start": 7,
+      "end": 8.860498866213153,
+      "loop": false
+    },
+    "success_sound_exploding_glass_02": {
+      "start": 9,
+      "end": 11.29877551020408,
+      "loop": false
+    },
+    "success_sound_exploding_glass_03": {
+      "start": 12,
+      "end": 13.645714285714286,
+      "loop": false
+    },
+    "Instructions": {
+      "start": 14,
+      "end": 31.624988662131518,
+      "loop": false
+    },
+    "Level 1": {
+      "start": 32,
+      "end": 41.25,
+      "loop": false
+    },
+    "Level 2": {
+      "start": 42,
+      "end": 49.70560090702948,
+      "loop": false
+    },
+    "Level 3": {
+      "start": 50,
+      "end": 60.643514739229026,
+      "loop": false
+    },
+    "Level 4": {
+      "start": 61,
+      "end": 68.74997732426304,
+      "loop": false
+    },
+    "Lose": {
+      "start": 69,
+      "end": 74.58333333333333,
+      "loop": false
+    },
+    "Win": {
+      "start": 75,
+      "end": 80.12501133786849,
+      "loop": false
+    }
+  }
+}

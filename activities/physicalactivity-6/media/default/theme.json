@@ -1,0 +1,207 @@
+{
+  "texture": "media/default/physical_activity.png",
+  "textureMap": "media/default/physical_activity.json",
+  "textureKey": "texture",
+  "data": "media/default/sceneData.json",
+  "fonts" : {
+        "title": { "font": "40px Barlow", "fill": "#ffffff", "align": "left", "fontWeight": "800" },
+        "bullet": { "font": "Barlow", "fontSize": "28px", "fill": "#ffffff",  "fontWeight": "bold", "align": "left", "wordWrap":false },
+        "large-text": { "font": "60px Barlow", "fill": "#ffffff", "align": "left", "fontWeight": "800" },
+        "barlow-36-bold": { "font": "36px Barlow", "fill": "#ffffff", "align": "left", "fontWeight": "700" },
+        "barlow-48-bold": { "font": "48px Barlow", "fill": "#ffffff", "align": "left", "fontWeight": "700" },
+        "barlow-blue-36-exbold-centered-wrap400": { "font": "36px Barlow", "fill": "#007cc2", "align": "center", "fontWeight": "800", "wordWrap": true, "wordWrapWidth": 400, "lineSpacing": -7 }
+
+  },
+  "images": {
+    "resumeBox": "resume-box.png",
+    "back-disabled": "nav_back_button_disabled.png",
+    "next-disabled": "nav_next_button_disabled.png",
+    "clock": "clock.png",
+    "topBar": "interface-bars-top.png",
+    "bottomBar": "interface-bars-bottom.png",  
+    "logo": "logo.png",     
+    "intro-paper-blank": "intro-paper-blank.png",
+    "resume-box": "resume-box.png",
+    "resume-down": "resume-down.png",
+    "resume-over": "resume-over.png",
+    "resume-up": "resume-up.png",
+    "startover-down": "startover-down.png",
+    "startover-over": "startover-over.png",
+    "startover-up": "startover-up.png", 
+    "feel-worse": "feel-worse.png",
+    "feel-better": "feel-better.png",
+    "karate": "karate.png",
+    "pushups": "pushups.png",
+    "running": "running.png",
+    "situps": "situps.png",
+    "soccer": "soccer.png",
+    "soccer2": "soccer2.png",
+    "stretching": "stretching.png",
+    "swimming": "swimming.png",
+    "walking": "walking.png",
+    "yoga": "yoga.png",
+    "addition-baseline": "addition-baseline.png"
+
+  },
+  "sceneImages": {
+    "background": "bg-blue-horiz.png",
+    "background-1": "bg-green-horiz.png"
+  },
+  "buttons": {
+   "next": {
+      "up": "nav_next_button_up.png",
+      "over": "nav_next_button_over.png",
+      "out": "nav_next_button_up.png",
+      "down": "nav_next_button_down.png"
+    },
+    "next-hi": {
+      "up": "nav_next_button_over.png",
+      "over": "nav_next_button_over.png",
+      "out": "nav_next_button_over.png",
+      "down": "nav_next_button_down.png"
+    },
+      "back": {
+      "up": "nav_back_button_up.png",
+      "over": "nav_back_button_over.png",
+      "out": "nav_back_button_up.png",
+      "down": "nav_back_button_down.png"
+    },
+    "replay": {
+      "up": "nav_replay_button_up.png",
+      "over": "nav_replay_button_over.png",
+      "out": "nav_replay_button_up.png",
+      "down": "nav_replay_button_down.png"
+    },
+    "worksheet": {
+      "up": "worksheet_button_up.png",
+      "over": "worksheet_button_over.png",
+      "down": "worksheet_button_down.png",
+      "out": "worksheet_button_up.png"
+    },
+    "resumeBtn":{
+      "up": "resume-up.png",
+      "over": "resume-over.png",
+      "out": "resume-up.png",
+      "down": "resume-down.png"
+    },
+    "startOverBtn":{
+      "up": "startover-up.png",
+      "over": "startover-over.png",
+      "out": "startover-up.png",
+      "down": "startover-down.png"
+    }
+  },
+  "soundKey": "physicalactivity",
+  "soundFile": [ "media/default/physicalactivity.m4a", "media/default/physicalactivity.ogg" ],
+  "sounds": {
+    "Slide 1 Sofia": [
+      0,
+      12.87501133786848,
+      false,
+      "Slide 1 Sofia"
+    ],
+    "Slide 10": [
+      13,
+      29.437505668934236,
+      false,
+      "Slide 10"
+    ],
+    "Slide 11a Jack": [
+      43,
+      5.79167800453515,
+      false,
+      "Slide 11a Jack"
+    ],
+    "Slide 11a Sofia": [
+      49,
+      7.427097505668932,
+      false,
+      "Slide 11a Sofia"
+    ],
+    "Slide 11b Jack": [
+      57,
+      5.109909297052155,
+      false,
+      "Slide 11b Jack"
+    ],
+    "Slide 11b Sofia": [
+      63,
+      17.031269841269847,
+      false,
+      "Slide 11b Sofia"
+    ],
+    "Slide 1a Jack": [
+      81,
+      14,
+      false,
+      "Slide 1a Jack"
+    ],
+    "Slide 1b Jack": [
+      95,
+      6,
+      false,
+      "Slide 1b Jack"
+    ],
+    "Slide 2": [
+      101,
+      13.375011337868486,
+      false,
+      "Slide 2"
+    ],
+    "Slide 3": [
+      115,
+      30.5,
+      false,
+      "Slide 3"
+    ],
+    "Slide 4": [
+      146,
+      36,
+      false,
+      "Slide 4"
+    ],
+    "Slide 5": [
+      182,
+      18.75,
+      false,
+      "Slide 5"
+    ],
+    "Slide 6 Sofia": [
+      201,
+      16.82916099773243,
+      false,
+      "Slide 6 Sofia"
+    ],
+    "Slide 6a Jack": [
+      218,
+      13,
+      false,
+      "Slide 6a Jack"
+    ],
+    "Slide 6b Jack": [
+      231,
+      22,
+      false,
+      "Slide 6b Jack"
+    ],
+    "Slide 7": [
+      253,
+      17.8749886621315,
+      false,
+      "Slide 7"
+    ],
+    "Slide 8": [
+      271,
+      21.531247165532875,
+      false,
+      "Slide 8"
+    ],
+    "Slide 9": [
+      293,
+      28.75,
+      false,
+      "Slide 9"
+    ]
+  }
+
+}

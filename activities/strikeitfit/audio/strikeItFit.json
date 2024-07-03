@@ -1,0 +1,118 @@
+{
+  "resources": [
+    "output/MH6sif/strikeItFit.ogg",
+    "output/MH6sif/strikeItFit.m4a"
+  ],
+  "spritemap": {
+    "bowling_amb_B_30": {
+      "start": 0,
+      "end": 30.040816326530614,
+      "loop": false
+    },
+    "bowling_gutter_ball01": {
+      "start": 31,
+      "end": 31.99546485260771,
+      "loop": false
+    },
+    "bowling_gutter_ball02": {
+      "start": 32,
+      "end": 32.55102040816327,
+      "loop": false
+    },
+    "bowling_pins01": {
+      "start": 33,
+      "end": 34.021133786848075,
+      "loop": false
+    },
+    "bowling_pins02": {
+      "start": 35,
+      "end": 36.31065759637188,
+      "loop": false
+    },
+    "dropandroll": {
+      "start": 37,
+      "end": 39.63111111111111,
+      "loop": false
+    },
+    "splash_mixdown": {
+      "start": 40,
+      "end": 42.06417233560091,
+      "loop": false
+    },
+    "Correct 1 - Jack": {
+      "start": 43,
+      "end": 44.37501133786848,
+      "loop": false
+    },
+    "Correct 2 - Jack": {
+      "start": 45,
+      "end": 46.5,
+      "loop": false
+    },
+    "Correct 3 - Jack": {
+      "start": 47,
+      "end": 48.62498866213152,
+      "loop": false
+    },
+    "Correct 4 - Jack": {
+      "start": 49,
+      "end": 50.75,
+      "loop": false
+    },
+    "Correct 5 - Jack": {
+      "start": 51,
+      "end": 53.12501133786848,
+      "loop": false
+    },
+    "Incorrect 1 - Jack": {
+      "start": 54,
+      "end": 55.593764172335604,
+      "loop": false
+    },
+    "Incorrect 2 - Jack": {
+      "start": 56,
+      "end": 57.5,
+      "loop": false
+    },
+    "Incorrect 3 - Jack": {
+      "start": 58,
+      "end": 59.843764172335604,
+      "loop": false
+    },
+    "Incorrect 4 - Jack": {
+      "start": 60,
+      "end": 61.68750566893424,
+      "loop": false
+    },
+    "Instructions": {
+      "start": 62,
+      "end": 80,
+      "loop": false
+    },
+    "Recap High": {
+      "start": 80,
+      "end": 86.5,
+      "loop": false
+    },
+    "Recap Low": {
+      "start": 87,
+      "end": 92.25,
+      "loop": false
+    },
+    "Recap Medium": {
+      "start": 93,
+      "end": 97.75,
+      "loop": false
+    },
+    "Recap Perfect": {
+      "start": 98,
+      "end": 103.96875283446713,
+      "loop": false
+    },
+    "Try Again": {
+      "start": 104,
+      "end": 106.42607709750567,
+      "loop": false
+    }
+  }
+}

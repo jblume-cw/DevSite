@@ -1,0 +1,244 @@
+{
+  "texture": "media/default/healthy_minds.png",
+  "textureMap": "media/default/healthy_minds.json",
+  "textureKey": "texture",
+  "data": "media/default/sceneData.json",
+  "fonts" : {
+        "title": { "font": "40px Barlow", "fill": "#ffffff", "align": "left", "fontWeight": "800" },
+        "bullet": { "font": "Barlow", "fontSize": "28px", "fill": "#ffffff",  "fontWeight": "bold", "align": "left", "wordWrap":false },
+        "small-text": { "font": "Barlow", "fontSize": "22px", "fill": "#ffffff",  "fontWeight": "bold", "align": "left", "wordWrap":false },
+        "text": { "font": "Barlow", "fontSize": "38px", "fill": "#ffffff",  "fontWeight": "700", "align": "left", "wordWrap":false },
+        "large-text": { "font": "60px Barlow", "fill": "#ffffff", "align": "left", "fontWeight": "800" },
+        "barlow-blue-36-exbold-centered-wrap400": { "font": "36px Barlow", "fill": "#007cc2", "align": "center", "fontWeight": "800", "wordWrap": true, "wordWrapWidth": 400, "lineSpacing": -7 }
+
+  },
+  "images": {
+    "resumeBox": "resume-box.png",
+    "back-disabled": "nav_back_button_disabled.png",
+    "next-disabled": "nav_next_button_disabled.png",
+    "123": "123.png",
+    "topBar": "interface-bars-top.png",
+    "bottomBar": "interface-bars-bottom.png",  
+    "logo": "logo.png",     
+    "intro-paper-blank": "intro-paper-blank.png",
+    "resume-box": "resume-box.png",
+    "resume-down": "resume-down.png",
+    "resume-over": "resume-over.png",
+    "resume-up": "resume-up.png",
+    "startover-down": "startover-down.png",
+    "startover-over": "startover-over.png",
+    "startover-up": "startover-up.png", 
+    "asleep": "asleep.png",
+    "awake-asleep-split": "awake-asleep-split.png",
+    "basketball": "basketball.png",
+    "desk-center-decision-full": "desk-center-decision-full.png",
+    "desk-center1-full": "desk-center1-full.png",
+    "desk-center1": "desk-center1.png",
+    "desk-center2-full": "desk-center2-full.png",
+    "desk-center2": "desk-center2.png",
+    "desk-center3-full": "desk-center3-full.png",
+    "desk-center3": "desk-center3.png",
+    "desk-long-term-stress-right-edge": "desk-long-term-stress-right-edge.png",
+    "desk-making-a-decision-right-edge": "desk-making-a-decision-right-edge.png",
+    "no-phone-in-bed-crossed-out": "no-phone-in-bed-crossed-out.png",
+    "no-phone-in-bed1": "no-phone-in-bed1.png",
+    "no-phone-in-bed2": "no-phone-in-bed2.png",
+    "on-laptop": "on-laptop.png",
+    "on-phone": "on-phone.png",
+    "painting": "painting.png",
+    "reading": "reading.png",
+    "sleep-tech-charging": "sleep-tech-charging.png",
+    "sleep-tech-phone": "sleep-tech-phone.png",
+    "sleep-tech-table": "sleep-tech-table.png",
+    "sleep-tech-tv" : "sleep-tech-tv.png",
+    "watching-tv": "watching-tv.png",
+    "class-stress": "class-stress.png",
+    "background-cover": "bg-blue-horiz.png",
+    "background-cover-1": "bg-red-vert.png",
+    "arrow": "nav_next_button_over.png"
+
+
+
+
+  },
+  "sceneImages": {
+    "background": "bg-blue-horiz.png",
+    "background-1": "bg-red-vert.png"
+  },
+  "buttons": {
+   "next": {
+      "up": "nav_next_button_up.png",
+      "over": "nav_next_button_over.png",
+      "out": "nav_next_button_up.png",
+      "down": "nav_next_button_down.png"
+    },
+    "next-hi": {
+      "up": "nav_next_button_over.png",
+      "over": "nav_next_button_over.png",
+      "out": "nav_next_button_over.png",
+      "down": "nav_next_button_down.png"
+    },
+      "back": {
+      "up": "nav_back_button_up.png",
+      "over": "nav_back_button_over.png",
+      "out": "nav_back_button_up.png",
+      "down": "nav_back_button_down.png"
+    },
+    "replay": {
+      "up": "nav_replay_button_up.png",
+      "over": "nav_replay_button_over.png",
+      "out": "nav_replay_button_up.png",
+      "down": "nav_replay_button_down.png"
+    },
+    "worksheet": {
+      "up": "worksheet_button_up.png",
+      "over": "worksheet_button_over.png",
+      "out": "worksheet_button_up.png",
+      "down": "worksheet_button_down.png"
+    },
+    "resumeBtn":{
+      "up": "resume-up.png",
+      "over": "resume-over.png",
+      "out": "resume-up.png",
+      "down": "resume-down.png"
+    },
+    "startOverBtn":{
+      "up": "startover-up.png",
+      "over": "startover-over.png",
+      "out": "startover-up.png",
+      "down": "startover-down.png"
+    }
+  },
+  "soundKey": "healthyminds",
+  "soundFile": [ "media/default/healthyminds.m4a", "media/default/healthyminds.ogg" ],
+  "sounds": {
+     "Slide 10": [
+      0,
+      29.124988662131518,
+      false,
+      "Slide 10"
+    ],
+    "Slide 11": [
+      30,
+      31.25,
+      false,
+      "Slide 11"
+    ],
+    "Slide 12": [
+      62,
+      55.25,
+      false,
+      "Slide 12"
+    ],
+    "Slide 13": [
+      118,
+      59.37498866213153,
+      false,
+      "Slide 13"
+    ],
+    "Slide 14": [
+      178,
+      51.58328798185943,
+      false,
+      "Slide 14"
+    ],
+    "Slide 15": [
+      230,
+      112.7833560090703,
+      false,
+      "Slide 15"
+    ],
+    "Slide 16 Jack": [
+      343,
+      9.03283446712021,
+      false,
+      "Slide 16 Jack"
+    ],
+    "Slide 16 Sofia": [
+      353,
+      13.574489795918339,
+      false,
+      "Slide 16 Sofia"
+    ],
+    "Slide 1a Jack": [
+      367,
+      5.75,
+      false,
+      "Slide 1a Jack"
+    ],
+    "Slide 1a Sofia": [
+      373,
+      9.09167800453514,
+      false,
+      "Slide 1a Sofia"
+    ],
+    "Slide 1b Jack": [
+      383,
+      6.1249886621315,
+      false,
+      "Slide 1b Jack"
+    ],
+    "Slide 1b Sofia": [
+      390,
+      12,
+      false,
+      "Slide 1b Sofia"
+    ],
+    "Slide 2": [
+      402,
+      35.3750113378685,
+      false,
+      "Slide 2"
+    ],
+    "Slide 3": [
+      438,
+      17.8749886621315,
+      false,
+      "Slide 3"
+    ],
+    "Slide 4": [
+      456,
+      15.15154195011337,
+      false,
+      "Slide 4"
+    ],
+    "Slide 5": [
+      472,
+      23.5,
+      false,
+      "Slide 5"
+    ],
+    "Slide 6": [
+      496,
+      41.45809523809521,
+      false,
+      "Slide 6"
+    ],
+    "Slide 7": [
+      538,
+      13.75,
+      false,
+      "Slide 7"
+    ],
+    "Slide 8 Jack": [
+      552,
+      12.1249886621315,
+      false,
+      "Slide 8 Jack"
+    ],
+    "Slide 8 Sofia": [
+      565,
+      17.75,
+      false,
+      "Slide 8 Sofia"
+    ],
+    "Slide 9": [
+      583,
+      24.75,
+      false,
+      "Slide 9"
+    ]
+  }
+  
+}
+

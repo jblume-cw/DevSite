@@ -1,0 +1,142 @@
+{
+  "texture": "media/default/goal-setting.png",
+  "textureMap": "media/default/goal-setting.json",
+  "textureKey": "texture",
+  "data": "media/default/sceneData.json",
+  "fonts" : {
+    "lessonTitle": { "font": "40px Barlow", "fill": "#ffffff", "align": "left", "fontWeight": "800" },
+    "barlow-48-bold-centered-wrap300": { "font": "48px Barlow", "fill": "#ffffff", "align": "center", "fontWeight": "700", "wordWrap": true, "wordWrapWidth": 360, "lineSpacing": -7 },
+    "barlow-blue-36-exbold-centered-wrap400": { "font": "36px Barlow", "fill": "#007cc2", "align": "center", "fontWeight": "800", "wordWrap": true, "wordWrapWidth": 400, "lineSpacing": -7 },
+    "barlow-blue-36-exbold-centered": { "font": "36px Barlow", "fill": "#ffffff", "align": "center", "fontWeight": "800", "wordWrap": true, "wordWrapWidth": 400},
+    "barlow-black-48-exbold-centered": { "font": "48px Barlow", "fill": "#ffffff", "align": "center", "fontWeight": "800", "wordWrap": false },
+    "barlow-black-30-exbold-centered": { "font": "30px Barlow", "fill": "#ffffff", "align": "center", "fontWeight": "800", "wordWrap": false },
+    "barlow-black-28-regular-centered": { "font": "28px Barlow", "fill": "#ffffff", "align": "left", "fontWeight": "400", "wordWrap": false },
+     "barlow-black-28-regular-centered-700": { "font": "28px Barlow", "fill": "#ffffff", "align": "left", "fontWeight": "700", "wordWrap": false },
+    "barlow-black-22-regular-centered": { "font": "22px Barlow", "fill": "#ffffff", "align": "left", "fontWeight": "400", "wordWrap": false },
+    "barlow-black-21-regular-centered": { "font": "21px Barlow", "fill": "#ffffff", "align": "left", "fontWeight": "400", "wordWrap": false },
+    "barlow-black-72-centered": { "font": "72px Barlow", "fill": "#ffffff", "align": "center", "fontWeight": "800", "wordWrap": false },
+    "barlow-bold-48-left": { "font": "48px Barlow", "fill": "#ffffff", "align": "left", "fontWeight": "700", "wordWrap": false }
+  },
+  "sceneImages": {
+    "background": "bg-green-horiz.png",
+    "background-1": "bg-blue-horiz.png"
+  },
+  "images": {
+    "resumeBox": "resume-box.png",
+    "back-disabled": "nav_back_button_disabled.png",
+    "next-disabled": "nav_next_button_disabled.png",
+    "topBar": "interface-bars-top.png",
+    "bottomBar": "interface-bars-bottom.png",  
+    "logo": "logo.png",     
+    "topBar": "interface-bars-top.png",
+    "bottomBar": "interface-bars-bottom.png" 
+  },
+  "buttons": {
+   "next": {
+      "up": "nav_next_button_up.png",
+      "over": "nav_next_button_over.png",
+      "out": "nav_next_button_up.png",
+      "down": "nav_next_button_down.png"
+    },
+    "next-hi": {
+      "up": "nav_next_button_over.png",
+      "over": "nav_next_button_over.png",
+      "out": "nav_next_button_over.png",
+      "down": "nav_next_button_down.png"
+    },
+      "back": {
+      "up": "nav_back_button_up.png",
+      "over": "nav_back_button_over.png",
+      "out": "nav_back_button_up.png",
+      "down": "nav_back_button_down.png"
+    },
+    "replay": {
+      "up": "nav_replay_button_up.png",
+      "over": "nav_replay_button_over.png",
+      "out": "nav_replay_button_up.png",
+      "down": "nav_replay_button_down.png"
+    },
+    "worksheet": {
+      "up": "worksheet_button_up.png",
+      "over": "worksheet_button_over.png",
+      "out": "worksheet_button_up.png",
+      "down": "worksheet_button_down.png"
+    },
+    "resumeBtn":{
+      "up": "resume-up.png",
+      "over": "resume-over.png",
+      "out": "resume-up.png",
+      "down": "resume-down.png"
+    },
+    "startOverBtn":{
+      "up": "startover-up.png",
+      "over": "startover-over.png",
+      "out": "startover-up.png",
+      "down": "startover-down.png"
+    }
+  },
+  "soundKey": "goalsetting",
+  "soundFile": [ "media/default/goalsetting.m4a", "media/default/goalsetting.ogg" ],
+  "sounds": {
+     "Slide 1 Sofia": [
+      0,
+      18.75,
+      false,
+      "Slide 1 Sofia"
+    ],
+    "Slide 1a Jack": [
+      19,
+      7,
+      false,
+      "Slide 1a Jack"
+    ],
+    "Slide 1b Jack": [
+      26,
+      17,
+      false,
+      "Slide 1b Jack"
+    ],
+    "Slide 2 Sofia": [
+      43,
+      32.62990929705215,
+      false,
+      "Slide 2 Sofia"
+    ],
+    "Slide 3 Jack": [
+      76,
+      15.5,
+      false,
+      "Slide 3 Jack"
+    ],
+    "Slide 3 Sofia": [
+      92,
+      27.304195011337868,
+      false,
+      "Slide 3 Sofia"
+    ],
+    "Slide 4 Sofia": [
+      120,
+      23.104172335600907,
+      false,
+      "Slide 4 Sofia"
+    ],
+    "Slide 5 Jack": [
+      144,
+      9.011995464852617,
+      false,
+      "Slide 5 Jack"
+    ],
+    "Slide 5a Sofia": [
+      154,
+      6.886984126984117,
+      false,
+      "Slide 5a Sofia"
+    ],
+    "Slide 5b Sofia": [
+      161,
+      1.642222222222216,
+      false,
+      "Slide 5b Sofia"
+    ]
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "name": "MH Healthy Minds",
+  "description": "Healthy Minds lesson",
+  "scorm": true,
+  "logging": false,
+  "autoScale": true, 
+  "acts": {
+    "default": {
+      "id": "default",
+      "description": "Describe specific behaviors that can reduce or prevent common  injuries and communicable or chronic diseases. These may include but are not limited to: refraining from alcohol, tobacco, and other drug use, engaging in physical activity, demonstrating healthy eating, sexual behaviors, applying social behaviors to prevent or reduce violence, safety and related behaviors.",
+      "name": "MH Healthy Minds",
+      "theme": "media/default/theme.json",
+      "objectives": []
+    }
+  }
+}

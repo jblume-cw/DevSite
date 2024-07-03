@@ -1,0 +1,130 @@
+{
+  "sprite": {
+    "Slide 10": [
+      0,
+      29.124988662131518,
+      false,
+      "Slide 10"
+    ],
+    "Slide 11": [
+      30,
+      31.25,
+      false,
+      "Slide 11"
+    ],
+    "Slide 12": [
+      62,
+      55.25,
+      false,
+      "Slide 12"
+    ],
+    "Slide 13": [
+      118,
+      59.37498866213153,
+      false,
+      "Slide 13"
+    ],
+    "Slide 14": [
+      178,
+      51.58328798185943,
+      false,
+      "Slide 14"
+    ],
+    "Slide 15": [
+      230,
+      112.7833560090703,
+      false,
+      "Slide 15"
+    ],
+    "Slide 16 Jack": [
+      343,
+      9.03283446712021,
+      false,
+      "Slide 16 Jack"
+    ],
+    "Slide 16 Sofia": [
+      353,
+      13.574489795918339,
+      false,
+      "Slide 16 Sofia"
+    ],
+    "Slide 1a Jack": [
+      367,
+      5.75,
+      false,
+      "Slide 1a Jack"
+    ],
+    "Slide 1a Sofia": [
+      373,
+      9.09167800453514,
+      false,
+      "Slide 1a Sofia"
+    ],
+    "Slide 1b Jack": [
+      383,
+      6.1249886621315,
+      false,
+      "Slide 1b Jack"
+    ],
+    "Slide 1b Sofia": [
+      390,
+      12,
+      false,
+      "Slide 1b Sofia"
+    ],
+    "Slide 2": [
+      402,
+      35.3750113378685,
+      false,
+      "Slide 2"
+    ],
+    "Slide 3": [
+      438,
+      17.8749886621315,
+      false,
+      "Slide 3"
+    ],
+    "Slide 4": [
+      456,
+      15.15154195011337,
+      false,
+      "Slide 4"
+    ],
+    "Slide 5": [
+      472,
+      23.5,
+      false,
+      "Slide 5"
+    ],
+    "Slide 6": [
+      496,
+      41.45809523809521,
+      false,
+      "Slide 6"
+    ],
+    "Slide 7": [
+      538,
+      13.75,
+      false,
+      "Slide 7"
+    ],
+    "Slide 8 Jack": [
+      552,
+      12.1249886621315,
+      false,
+      "Slide 8 Jack"
+    ],
+    "Slide 8 Sofia": [
+      565,
+      17.75,
+      false,
+      "Slide 8 Sofia"
+    ],
+    "Slide 9": [
+      583,
+      24.75,
+      false,
+      "Slide 9"
+    ]
+  }
+}

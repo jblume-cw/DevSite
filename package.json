@@ -1,0 +1,10 @@
+{
+  "scripts": {
+    "dev": "vite --open --port 3000",
+    "build": "vite build",
+    "preview": "vite preview --open --port 4173"
+  },
+  "devDependencies": {
+    "vite": "^5.3.3"
+  }
+}
