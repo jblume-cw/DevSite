@@ -1,0 +1,1104 @@
+{
+  "play": {
+    "start": "resumeFork",
+    "persist": [ "lessonLocation" ],
+    "modelType": "basic",
+    "showPlaythrough": false,
+    "global": {
+      "actors": {
+        "topBar": {
+          "name": "topBar",
+          "type": "decoration",
+          "image": "topBar",
+          "location": [0, 0]
+        },
+        "bottomBar": {
+          "name": "bottomBar",
+          "type": "decoration",
+          "image": "bottomBar",
+          "location": [0, 525]
+        },
+         "logo": {
+          "name": "logo",
+          "type": "decoration",
+          "image": "logo",
+          "location": [656, 8]
+        },
+        "intro-text":{
+          "name": "intro-text",
+          "type": "text",
+          "text": "Healthy Minds",
+          "font": "title",
+          "location": [ 25, 17 ]
+        },
+        "back_btn": {
+          "name": "back_btn",
+          "type": "button",
+          "variable": "back_btn",
+          "image": "back",
+          "location": [477, 535]
+        },
+        "replay_btn": {
+          "name": "replay_btn",
+          "type": "button",
+          "variable": "replay_btn",
+          "image": "replay",
+          "location": [577, 535]
+        },
+        "next_btn": {
+          "name": "next_btn",
+          "type": "button",
+          "image": "next",
+          "variable": "next_btn",
+          "location": [677, 535]
+        },
+        "next_btn_hi": {
+          "name": "next_btn_hi",
+          "type": "button",
+          "image": "next-hi",
+          "variable": "next_btn",
+          "location": [677, 535]
+        }
+      },
+      "outcomes": [],
+      "actions": []
+    },
+    "scenes": {
+      "resumeFork": {
+        "id": "resumeFork",
+        "background": "background-blue-horiz",
+        "actors": [
+          {
+            "name": "resumeBox",
+            "type": "decoration",
+            "image": "resumeBox",
+            "location": [190, 120]
+          },
+          {
+            "name": "resumePrompt",
+            "type": "text",
+            "text": "You have completed part of this lesson.",
+            "font": "barlow-blue-36-exbold-centered-wrap400",
+            "location": ["center", 167]
+          },
+          {
+            "name": "resumeBtn",
+            "type": "button",
+            "location": [275, 290],
+            "image": "resumeBtn",
+            "variable": "resumeBtn"
+          },
+          {
+            "name": "startOverBtn",
+            "type": "button",
+            "location": [275, 350],
+            "image": "startOverBtn",
+            "variable": "startOverBtn"
+          }
+        ],
+        "outcomes": {
+          "no_resume": {
+            "events": { "lessonLocation": "undefined" },
+            "actions": [
+              { "type": "scene", "args": ["slide1"] }
+            ]
+          },
+          "resume": {
+            "events": { "resumeBtn": "*" },
+            "actions": [
+              { "type": "scene", "args": [ "$lessonLocation" ] }
+            ]
+          },
+          "startOver": {
+            "events": { "startOverBtn": "*" },
+            "actions": [
+              { "type": "scene", "args": [ "slide1" ] }
+            ]
+          }
+        },
+        "actions": [
+          { "type": "check-outcomes", "args": [ "lessonLocation" ] }
+        ]
+      },
+      "slide1": {
+        "id": "slide1",
+        "background": "none",
+        "actors": [
+          {
+            "name": "topBar",
+            "type": "reference"
+          },
+          {
+            "name": "bottomBar",
+            "type": "reference"
+          },
+          {
+            "name": "logo",
+            "type": "reference"            
+          },
+          {
+            "name": "next_btn",
+            "type": "reference"
+          },
+          {
+            "name": "replay_btn",
+            "type": "reference"
+          },
+          {
+            "name": "intro-text",
+            "type": "reference"
+          },
+          {
+            "name": "back_btn_dis",
+            "type": "decoration",
+            "image": "back-disabled",
+            "location": [475, 535]
+          },
+          {
+            "name": "worksheet",
+            "type": "url-button",
+            "location": [50, 543],
+            "image": "worksheet",
+            "variable": "worksheet",
+            "url": "HealthyMindsWorksheet.pdf"
+          },          
+          {
+            "name": "intro_video",
+            "type": "wistia",
+            "location": [0, 75],
+            "size": [800, 450],
+            "video": "106ezo3iob",
+            "hideCloseButton": true,
+            "variable": "intro_video",
+            "blockerAlpha": 0.0,
+            "autoplay": true
+          }
+        ],
+        "outcomes": {
+        	"vid1_finished": {
+            "events": { "intro_video": "finished" },
+            "actions": [
+             { "type": "remove-actor", "args": ["next_btn"] },
+              { "type": "add-actor", "args": [
+                {
+                  "name": "next_btn_hi",
+                  "type": "reference"
+                }
+              ] }
+            ]
+          },
+          "next_btn" : {
+            "events": { "next_btn": "*" },
+            "actions": [ 
+              { "type": "choice", "args": [ "next_btn", 0, true ] },
+              { "type": "scene", "args": [ "slide2" ] }
+            ]
+          },
+          "replay_btn": {
+            "events": { "replay_btn": "*" },
+            "actions": [
+              { "type": "choice", "args": [ "replay_btn", 0, true ] },
+              { "type": "scene", "args": [ "empty_replay_scene" ] },
+              { "type": "scene", "args": [ "slide1" ] }
+            ]
+          }
+        },
+        "actions": [
+        ]
+      },
+      "slide2": {
+        "id": "slide2",
+        "background": "background-blue-horiz",
+        "actors": [
+          {
+            "name": "topBar",
+            "type": "reference"
+          },
+          {
+            "name": "bottomBar",
+            "type": "reference"
+          },
+          {
+            "name": "logo",
+            "type": "reference"            
+          },
+          {
+            "name": "next_btn",
+            "type": "reference"
+          },
+           {
+            "name": "back_btn",
+            "type": "reference"
+          },
+          {
+            "name": "replay_btn",
+            "type": "reference"
+          },
+          {
+            "name": "intro-text",
+            "type": "reference"
+          },
+          {
+            "name": "brain",
+            "type": "decoration",
+            "image": "brain",
+            "location": [ 195, 156 ]
+          },
+          {
+            "name": "laugh-emoji",
+            "type": "decoration",
+            "image": "laugh-emoji",
+            "location": [ 214, 95 ],
+            "startDelay": 14200
+          },
+          {
+            "name": "stress-emoji",
+            "type": "decoration",
+            "image": "stress-emoji",
+            "location": [ 413, 76 ],
+            "startDelay": 16400
+          },
+          {
+            "name": "purpose-emoji",
+            "type": "decoration",
+            "image": "purpose-emoji",
+            "location": [ 48, 208 ],
+            "startDelay": 18200
+          },
+          {
+            "name": "learn-emoji",
+            "type": "decoration",
+            "image": "learn-emoji",
+            "location": [ 415, 357 ],
+            "startDelay": 20100
+          },
+          {
+            "name": "relationships-emoji",
+            "type": "decoration",
+            "image": "relationships-emoji",
+            "location": [ 548, 242 ],
+            "startDelay": 23900
+          },
+          {
+            "name": "balance-emoji",
+            "type": "decoration",
+            "image": "balance-emoji",
+            "location": [ 173, 369 ],
+            "startDelay": 27300
+          },
+          {
+            "name": "slide2VO",
+            "type": "audio",
+            "audio": [ "Slide 02" ],
+            "variable": "slide2VO",
+            "startDelay": 0
+          }
+        ],
+        "outcomes": {
+           "vo2_finished": {
+            "events": { "slide2VO": "played" },
+            "actions": [
+             { "type": "remove-actor", "args": ["next_btn"] },
+              { "type": "add-actor", "args": [
+                {
+                  "name": "next_btn_hi",
+                  "type": "reference"
+                }
+              ] }
+            ]
+          },
+          "next_btn" : {
+            "events": { "next_btn": "*" },
+            "actions": [ 
+              { "type": "choice", "args": [ "next_btn", 0, true ] },
+              { "type": "scene", "args": [ "slide3" ] }
+            ]
+          },
+          "back_btn" : {
+            "events": { "back_btn": "*" },
+            "actions": [ 
+              { "type": "choice", "args": [ "back_btn", 0, true ] },
+              { "type": "scene", "args": [ "slide1" ] }
+            ]
+          },
+          "replay_btn": {
+            "events": { "replay_btn": "*" },
+            "actions": [
+              { "type": "choice", "args": [ "replay_btn", 0, true ] },
+              { "type": "scene", "args": [ "empty_replay_scene" ] },
+              { "type": "scene", "args": [ "slide2" ] }
+            ]
+          }
+        },
+        "actions": [
+          { "type": "variable", "args": [ "lessonLocation", "$current_scene_name" ] }
+        ]
+      },
+      "slide3": {
+        "id": "slide3",
+        "background": "background-blue-vert",
+        "actors": [
+          {
+            "name": "topBar",
+            "type": "reference"
+          },
+          {
+            "name": "bottomBar",
+            "type": "reference"
+          },
+          {
+            "name": "logo",
+            "type": "reference"            
+          },
+          {
+            "name": "next_btn",
+            "type": "reference"
+          },
+           {
+            "name": "back_btn",
+            "type": "reference"
+          },
+          {
+            "name": "replay_btn",
+            "type": "reference"
+          },
+          {
+            "name": "intro-text",
+            "type": "reference"
+          },
+          {
+            "name": "mental-illness",
+            "type": "text",
+            "text": "Mental illness",
+            "font": "barlow-white-48-800",
+            "location": [ 64, 110 ]
+          },
+          {
+            "name": "mental-illness-bullet1",
+            "type": "text",
+            "text": "Anyone can experience mental illness.",
+            "font": "barlow-white-36-700",
+            "location": [ 104, 180 ],
+            "bullet": true,
+            "wordWrapWidth": 750
+          },
+          {
+            "name": "mental-illness-bullet2",
+            "type": "text",
+            "text": "Mental illness is not caused by doing something wrong.",
+            "font": "barlow-white-36-700",
+            "location": [ 104, 240 ],
+            "bullet": true,
+            "wordWrapWidth": 700,
+            "startDelay": 6800
+          },
+          {
+            "name": "mental-illness-bullet3",
+            "type": "text",
+            "text": "You can't catch a mental illness from someone else.",
+            "font": "barlow-white-36-700",
+            "location": [ 104, 336 ],
+            "bullet": true,
+            "wordWrapWidth": 700,
+            "startDelay": 9900
+          },
+          {
+            "name": "slide3VO",
+            "type": "audio",
+            "audio": [ "Slide 03" ],
+            "variable": "slide3VO",
+            "startDelay": 0
+          }
+        ],
+        "outcomes": {
+           "vo3_finished": {
+            "events": { "slide3VO": "played" },
+            "actions": [
+             { "type": "remove-actor", "args": ["next_btn"] },
+              { "type": "add-actor", "args": [
+                {
+                  "name": "next_btn_hi",
+                  "type": "reference"
+                }
+              ] }
+            ]
+          },
+          "next_btn" : {
+            "events": { "next_btn": "*" },
+            "actions": [ 
+              { "type": "choice", "args": [ "next_btn", 0, true ] },
+              { "type": "scene", "args": [ "slide4" ] }
+            ]
+          },
+          "back_btn" : {
+            "events": { "back_btn": "*" },
+            "actions": [ 
+              { "type": "choice", "args": [ "back_btn", 0, true ] },
+              { "type": "scene", "args": [ "slide2" ] }
+            ]
+          },
+          "replay_btn": {
+            "events": { "replay_btn": "*" },
+            "actions": [
+              { "type": "choice", "args": [ "replay_btn", 0, true ] },
+              { "type": "scene", "args": [ "empty_replay_scene" ] },
+              { "type": "scene", "args": [ "slide3" ] }
+            ]
+          }
+        },
+        "actions": [
+          { "type": "variable", "args": [ "lessonLocation", "$current_scene_name" ] }
+        ]
+      },
+      "slide4": {
+        "id": "slide4",
+        "background": "background-blue-vert",
+        "actors": [
+          {
+            "name": "topBar",
+            "type": "reference"
+          },
+          {
+            "name": "bottomBar",
+            "type": "reference"
+          },
+          {
+            "name": "logo",
+            "type": "reference"            
+          },
+          {
+            "name": "next_btn",
+            "type": "reference"
+          },
+           {
+            "name": "back_btn",
+            "type": "reference"
+          },
+          {
+            "name": "replay_btn",
+            "type": "reference"
+          },
+          {
+            "name": "intro-text",
+            "type": "reference"
+          },
+          {
+            "name": "challenges",
+            "type": "text",
+            "text": "Common mental health challenges",
+            "font": "barlow-white-40-800",
+            "location": [ 64, 110 ]
+          },
+          {
+            "name": "challenges-bullet1",
+            "type": "text",
+            "text": "Anxiety",
+            "font": "barlow-white-36-700",
+            "location": [ 104, 180 ],
+            "bullet": true,
+            "wordWrapWidth": 750,
+            "startDelay": 4400
+          },
+          {
+            "name": "challenges-bullet2",
+            "type": "text",
+            "text": "Depression",
+            "font": "barlow-white-36-700",
+            "location": [ 104, 240 ],
+            "bullet": true,
+            "wordWrapWidth": 700,
+            "startDelay": 5200
+          },
+          {
+            "name": "challenges-bullet3",
+            "type": "text",
+            "text": "ADHD (Attention Deficit Hyperactivity Disorder)",
+            "font": "barlow-white-36-700",
+            "location": [ 104, 300 ],
+            "bullet": true,
+            "wordWrapWidth": 700,
+            "startDelay": 6300
+          },
+          {
+            "name": "slide4VO",
+            "type": "audio",
+            "audio": [ "Slide 04" ],
+            "variable": "slide4VO",
+            "startDelay": 0
+          }
+        ],
+        "outcomes": {
+           "vo4_finished": {
+            "events": { "slide4VO": "played" },
+            "actions": [
+             { "type": "remove-actor", "args": ["next_btn"] },
+              { "type": "add-actor", "args": [
+                {
+                  "name": "next_btn_hi",
+                  "type": "reference"
+                }
+              ] }
+            ]
+          },
+          "next_btn" : {
+            "events": { "next_btn": "*" },
+            "actions": [ 
+              { "type": "choice", "args": [ "next_btn", 0, true ] },
+              { "type": "scene", "args": [ "slide5" ] }
+            ]
+          },
+          "back_btn" : {
+            "events": { "back_btn": "*" },
+            "actions": [ 
+              { "type": "choice", "args": [ "back_btn", 0, true ] },
+              { "type": "scene", "args": [ "slide3" ] }
+            ]
+          },
+          "replay_btn": {
+            "events": { "replay_btn": "*" },
+            "actions": [
+              { "type": "choice", "args": [ "replay_btn", 0, true ] },
+              { "type": "scene", "args": [ "empty_replay_scene" ] },
+              { "type": "scene", "args": [ "slide4" ] }
+            ]
+          }
+        },
+        "actions": [
+          { "type": "variable", "args": [ "lessonLocation", "$current_scene_name" ] }
+        ]
+      },
+      "slide5": {
+        "id": "slide5",
+        "background": "background-green-horiz",
+        "actors": [
+          {
+            "name": "topBar",
+            "type": "reference"
+          },
+          {
+            "name": "bottomBar",
+            "type": "reference"
+          },
+          {
+            "name": "logo",
+            "type": "reference"            
+          },
+          {
+            "name": "next_btn",
+            "type": "reference"
+          },
+           {
+            "name": "back_btn",
+            "type": "reference"
+          },
+          {
+            "name": "replay_btn",
+            "type": "reference"
+          },
+          {
+            "name": "intro-text",
+            "type": "reference"
+          },
+          {
+            "name": "anxiety-cloud",
+            "type": "decoration",
+            "image": "anxiety-cloud",
+            "location": [ 185, 85 ]
+          },
+          {
+            "name": "slide5VO",
+            "type": "audio",
+            "audio": [ "Slide 05" ],
+            "variable": "slide5VO",
+            "startDelay": 0
+          }
+        ],
+        "outcomes": {
+           "vo5_finished": {
+            "events": { "slide5VO": "played" },
+            "actions": [
+             { "type": "remove-actor", "args": ["next_btn"] },
+              { "type": "add-actor", "args": [
+                {
+                  "name": "next_btn_hi",
+                  "type": "reference"
+                }
+              ] }
+            ]
+          },
+          "next_btn" : {
+            "events": { "next_btn": "*" },
+            "actions": [ 
+              { "type": "choice", "args": [ "next_btn", 0, true ] },
+              { "type": "scene", "args": [ "slide6" ] }
+            ]
+          },
+          "back_btn" : {
+            "events": { "back_btn": "*" },
+            "actions": [ 
+              { "type": "choice", "args": [ "back_btn", 0, true ] },
+              { "type": "scene", "args": [ "slide4" ] }
+            ]
+          },
+          "replay_btn": {
+            "events": { "replay_btn": "*" },
+            "actions": [
+              { "type": "choice", "args": [ "replay_btn", 0, true ] },
+              { "type": "scene", "args": [ "empty_replay_scene" ] },
+              { "type": "scene", "args": [ "slide5" ] }
+            ]
+          }
+        },
+        "actions": [
+          { "type": "variable", "args": [ "lessonLocation", "$current_scene_name" ] }
+        ]
+      },
+      "slide6": {
+        "id": "slide6",
+        "background": "background-blue-vert",
+        "actors": [
+          {
+            "name": "topBar",
+            "type": "reference"
+          },
+          {
+            "name": "bottomBar",
+            "type": "reference"
+          },
+          {
+            "name": "logo",
+            "type": "reference"            
+          },
+          {
+            "name": "next_btn",
+            "type": "reference"
+          },
+           {
+            "name": "back_btn",
+            "type": "reference"
+          },
+          {
+            "name": "replay_btn",
+            "type": "reference"
+          },
+          {
+            "name": "intro-text",
+            "type": "reference"
+          },
+          {
+            "name": "depression-cloud",
+            "type": "decoration",
+            "image": "depression-cloud",
+            "location": [ 83, 110 ]
+          },
+          {
+            "name": "slide6VO",
+            "type": "audio",
+            "audio": [ "Slide 06" ],
+            "variable": "slide6VO",
+            "startDelay": 0
+          }
+        ],
+        "outcomes": {
+           "vo6_finished": {
+            "events": { "slide6VO": "played" },
+            "actions": [
+             { "type": "remove-actor", "args": ["next_btn"] },
+              { "type": "add-actor", "args": [
+                {
+                  "name": "next_btn_hi",
+                  "type": "reference"
+                }
+              ] }
+            ]
+          },
+          "next_btn" : {
+            "events": { "next_btn": "*" },
+            "actions": [ 
+              { "type": "choice", "args": [ "next_btn", 0, true ] },
+              { "type": "scene", "args": [ "slide7" ] }
+            ]
+          },
+          "back_btn" : {
+            "events": { "back_btn": "*" },
+            "actions": [ 
+              { "type": "choice", "args": [ "back_btn", 0, true ] },
+              { "type": "scene", "args": [ "slide5" ] }
+            ]
+          },
+          "replay_btn": {
+            "events": { "replay_btn": "*" },
+            "actions": [
+              { "type": "choice", "args": [ "replay_btn", 0, true ] },
+              { "type": "scene", "args": [ "empty_replay_scene" ] },
+              { "type": "scene", "args": [ "slide6" ] }
+            ]
+          }
+        },
+        "actions": [
+          { "type": "variable", "args": [ "lessonLocation", "$current_scene_name" ] }
+        ]
+      },
+      "slide7": {
+        "id": "slide7",
+        "background": "background-red-vert",
+        "actors": [
+          {
+            "name": "topBar",
+            "type": "reference"
+          },
+          {
+            "name": "bottomBar",
+            "type": "reference"
+          },
+          {
+            "name": "logo",
+            "type": "reference"            
+          },
+          {
+            "name": "next_btn",
+            "type": "reference"
+          },
+           {
+            "name": "back_btn",
+            "type": "reference"
+          },
+          {
+            "name": "replay_btn",
+            "type": "reference"
+          },
+          {
+            "name": "intro-text",
+            "type": "reference"
+          },
+          {
+            "name": "adhd-cloud",
+            "type": "decoration",
+            "image": "adhd-cloud",
+            "location": [ 158, 93 ]
+          },
+          {
+            "name": "slide7VO",
+            "type": "audio",
+            "audio": [ "Slide 07" ],
+            "variable": "slide7VO",
+            "startDelay": 0
+          }
+        ],
+        "outcomes": {
+           "vo7_finished": {
+            "events": { "slide7VO": "played" },
+            "actions": [
+             { "type": "remove-actor", "args": ["next_btn"] },
+              { "type": "add-actor", "args": [
+                {
+                  "name": "next_btn_hi",
+                  "type": "reference"
+                }
+              ] }
+            ]
+          },
+          "next_btn" : {
+            "events": { "next_btn": "*" },
+            "actions": [ 
+              { "type": "choice", "args": [ "next_btn", 0, true ] },
+              { "type": "scene", "args": [ "slide8" ] }
+            ]
+          },
+          "back_btn" : {
+            "events": { "back_btn": "*" },
+            "actions": [ 
+              { "type": "choice", "args": [ "back_btn", 0, true ] },
+              { "type": "scene", "args": [ "slide6" ] }
+            ]
+          },
+          "replay_btn": {
+            "events": { "replay_btn": "*" },
+            "actions": [
+              { "type": "choice", "args": [ "replay_btn", 0, true ] },
+              { "type": "scene", "args": [ "empty_replay_scene" ] },
+              { "type": "scene", "args": [ "slide7" ] }
+            ]
+          }
+        },
+        "actions": [
+          { "type": "variable", "args": [ "lessonLocation", "$current_scene_name" ] }
+        ]
+      },
+      "slide8": {
+        "id": "slide8",
+        "background": "none",
+        "actors": [
+          {
+            "name": "topBar",
+            "type": "reference"
+          },
+          {
+            "name": "bottomBar",
+            "type": "reference"
+          },
+          {
+            "name": "logo",
+            "type": "reference"            
+          },
+          {
+            "name": "next_btn",
+            "type": "reference"
+          },
+           {
+            "name": "back_btn",
+            "type": "reference"
+          },
+          {
+            "name": "replay_btn",
+            "type": "reference"
+          },
+          {
+            "name": "intro-text",
+            "type": "reference"
+          },       
+          {
+            "name": "mid_video",
+            "type": "wistia",
+            "location": [0, 75],
+            "size": [800, 450],
+            "video": "9t3w9u0vsh",
+            "hideCloseButton": true,
+            "variable": "mid_video",
+            "blockerAlpha": 0.0,
+            "autoplay": true
+          }
+        ],
+        "outcomes": {
+           "vid2_finished": {
+            "events": { "mid_video": "finished" },
+            "actions": [
+             { "type": "remove-actor", "args": ["next_btn"] },
+              { "type": "add-actor", "args": [
+                {
+                  "name": "next_btn_hi",
+                  "type": "reference"
+                }
+              ] }
+            ]
+          },
+          "next_btn" : {
+            "events": { "next_btn": "*" },
+            "actions": [ 
+              { "type": "choice", "args": [ "next_btn", 0, true ] },
+              { "type": "scene", "args": [ "slide9" ] }
+            ]
+          },
+          "back_btn" : {
+            "events": { "back_btn": "*" },
+            "actions": [ 
+              { "type": "choice", "args": [ "back_btn", 0, true ] },
+              { "type": "scene", "args": [ "slide7" ] }
+            ]
+          },
+          "replay_btn": {
+            "events": { "replay_btn": "*" },
+            "actions": [
+              { "type": "choice", "args": [ "replay_btn", 0, true ] },
+              { "type": "scene", "args": [ "empty_replay_scene" ] },
+              { "type": "scene", "args": [ "slide8" ] }
+            ]
+          }
+        },
+        "actions": [
+          { "type": "variable", "args": [ "lessonLocation", "$current_scene_name" ] }
+        ]
+      },
+      "slide9": {
+        "id": "slide9",
+        "background": "background-blue-horiz",
+        "actors": [
+          {
+            "name": "topBar",
+            "type": "reference"
+          },
+          {
+            "name": "bottomBar",
+            "type": "reference"
+          },
+          {
+            "name": "logo",
+            "type": "reference"            
+          },
+          {
+            "name": "next_btn",
+            "type": "reference"
+          },
+           {
+            "name": "back_btn",
+            "type": "reference"
+          },
+          {
+            "name": "replay_btn",
+            "type": "reference"
+          },
+          {
+            "name": "intro-text",
+            "type": "reference"
+          },
+          {
+            "name": "sleeping",
+            "type": "decoration",
+            "image": "sleeping",
+            "location": [ 0, 75 ],
+            "startDelay": 3800
+          },
+          {
+            "name": "walking",
+            "type": "decoration",
+            "image": "walking",
+            "location": [ 400, 75 ],
+            "startDelay": 17000
+          },
+          {
+            "name": "talking",
+            "type": "decoration",
+            "image": "talking",
+            "location": [ 0, 300 ],
+            "startDelay": 26600
+          },
+          {
+            "name": "relaxing",
+            "type": "decoration",
+            "image": "relaxing",
+            "location": [ 400, 300 ],
+            "startDelay": 40400
+          },
+          {
+            "name": "slide9VO",
+            "type": "audio",
+            "audio": [ "Slide 09" ],
+            "variable": "slide9VO",
+            "startDelay": 0
+          }
+        ],
+        "outcomes": {
+           "vo9_finished": {
+            "events": { "slide9VO": "played" },
+            "actions": [
+             { "type": "remove-actor", "args": ["next_btn"] },
+              { "type": "add-actor", "args": [
+                {
+                  "name": "next_btn_hi",
+                  "type": "reference"
+                }
+              ] }
+            ]
+          },
+          "next_btn" : {
+            "events": { "next_btn": "*" },
+            "actions": [ 
+              { "type": "choice", "args": [ "next_btn", 0, true ] },
+              { "type": "scene", "args": [ "slide10" ] }
+            ]
+          },
+          "back_btn" : {
+            "events": { "back_btn": "*" },
+            "actions": [ 
+              { "type": "choice", "args": [ "back_btn", 0, true ] },
+              { "type": "scene", "args": [ "slide8" ] }
+            ]
+          },
+          "replay_btn": {
+            "events": { "replay_btn": "*" },
+            "actions": [
+              { "type": "choice", "args": [ "replay_btn", 0, true ] },
+              { "type": "scene", "args": [ "empty_replay_scene" ] },
+              { "type": "scene", "args": [ "slide9" ] }
+            ]
+          }
+        },
+        "actions": [
+          { "type": "variable", "args": [ "lessonLocation", "$current_scene_name" ] }
+        ]
+      },
+      "slide10": {
+        "id": "slide10",
+        "background": "none",
+        "actors": [
+          {
+            "name": "topBar",
+            "type": "reference"
+          },
+          {
+            "name": "bottomBar",
+            "type": "reference"
+          },
+          {
+            "name": "logo",
+            "type": "reference"            
+          },
+           {
+            "name": "back_btn",
+            "type": "reference"
+          },
+          {
+            "name": "replay_btn",
+            "type": "reference"
+          },
+          {
+            "name": "intro-text",
+            "type": "reference"
+          },
+          {
+            "name": "next_btn_dis",
+            "type": "decoration",
+            "image": "next-disabled",
+            "location": [675, 535]
+          },
+          {
+            "name": "end_video",
+            "type": "wistia",
+            "location": [0, 75],
+            "size": [800, 450],
+            "video": "k6qlhl9rut",
+            "hideCloseButton": true,
+            "variable": "end_video",
+            "blockerAlpha": 0.0,
+            "hideCloseButton": true,
+            "autoplay": true
+          }
+         
+        ],
+        "outcomes": {
+           "back_btn" : {
+            "events": { "back_btn": "*" },
+            "actions": [ 
+              { "type": "choice", "args": [ "back_btn", 0, true ] },
+              { "type": "scene", "args": [ "slide9" ] }
+            ]
+          },
+          "replay_btn": {
+            "events": { "replay_btn": "*" },
+            "actions": [
+              { "type": "choice", "args": [ "replay_btn", 0, true ] },
+              { "type": "scene", "args": [ "empty_replay_scene" ] },
+              { "type": "scene", "args": [ "slide10" ] }
+            ]
+          }
+        },
+        "actions": [
+          { "type": "variable", "args": [ "lessonLocation", "$current_scene_name" ] },
+          { "type": "choice", "args": [ "objective_complete", 1] },
+          { "type": "choice", "args": [ "save", 0 ] }
+        ]
+      },
+      "empty_replay_scene": {
+        "id": "empty_replay_scene",
+        "description": "since a scene change request to the current scene is ignored, first change to this empty scene",
+        "background": "none",
+        "actors": [ ],
+        "outcomes": { },
+        "actions": [ ]
+      }
+    }
+  }
+}
+
+
+ 

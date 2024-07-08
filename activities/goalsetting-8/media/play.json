@@ -1,0 +1,16 @@
+{
+  "name": "MH Goal Setting",
+  "description": "Goal Setting lesson",
+  "scorm": true,
+  "logging": false,
+  "autoScale": true,
+  "acts": {
+    "default": {
+      "id": "default",
+      "description": "Every set of acts has a default, which is the act that is started by default.",
+      "name": "MH Goal Setting",
+      "theme": "media/default/theme.json",
+      "objectives": []
+    }
+  }
+}

@@ -1,0 +1,68 @@
+{
+  "resources": [
+    "output/MH6get60/get60.ogg",
+    "output/MH6get60/get60.m4a"
+  ],
+  "spritemap": {
+    "Instructions 1": {
+      "start": 0,
+      "end": 5.417777777777777,
+      "loop": false
+    },
+    "Instructions 2": {
+      "start": 6,
+      "end": 11.802721088435373,
+      "loop": false
+    },
+    "Instructions 3": {
+      "start": 12,
+      "end": 15.060702947845805,
+      "loop": false
+    },
+    "Instructions 4": {
+      "start": 16,
+      "end": 23.3659410430839,
+      "loop": false
+    },
+    "Instructions 5": {
+      "start": 24,
+      "end": 26.502063492063492,
+      "loop": false
+    },
+    "Instructions 6": {
+      "start": 27,
+      "end": 33.40315192743764,
+      "loop": false
+    },
+    "Instructions 7": {
+      "start": 34,
+      "end": 40.86766439909297,
+      "loop": false
+    },
+    "loop b": {
+      "start": 41,
+      "end": 48.78002267573696,
+      "loop": false
+    },
+    "loop c": {
+      "start": 49,
+      "end": 56.80580498866213,
+      "loop": false
+    },
+    "magicmallet_a": {
+      "start": 57,
+      "end": 57.96628117913832,
+      "loop": false
+    },
+    "melodic_lose_04": {
+      "start": 58,
+      "end": 59.947210884353744,
+      "loop": false
+    },
+    "tag": {
+      "start": 60,
+      "end": 65.87804988662131,
+      "loop": false
+    }
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "name": "MH Nutrition",
+  "description": "Nutrition lesson",
+  "scorm": true,
+  "logging": false,
+  "autoScale": true,
+  "acts": {
+    "default": {
+      "id": "default",
+      "description": "Mission Health 8th grade Nutrition lesson",
+      "name": "MH Nutrition",
+      "theme": "media/default/theme.json",
+      "objectives": []
+    }
+  }
+}

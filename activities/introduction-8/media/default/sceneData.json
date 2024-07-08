@@ -1,0 +1,839 @@
+{
+  "play": {
+    "start": "resumeFork",
+    "persist": [ "lessonLocation" ],
+    "modelType": "basic",
+    "showPlaythrough": false,
+    "global": {
+      "actors": {
+        "topBar": {
+          "name": "topBar",
+          "type": "decoration",
+          "image": "topBar",
+          "location": [0, 0]
+        },
+        "lessonTitle":{
+          "name": "lessonTitle",
+          "type": "text",
+          "text": "Introduction",
+          "font": "lessonTitle",
+          "location": [27, 15]
+        },
+        "logo": {
+          "name": "logo",
+          "type": "decoration",
+          "image": "logo",
+          "location": [656, 8]
+        },
+        "bottomBar": {
+          "name": "bottomBar",
+          "type": "decoration",
+          "image": "bottomBar",
+          "location": [0, 525]
+        },
+        "backBtn": {
+          "name": "backBtn",
+          "type": "button",
+          "location": [477, 535],
+          "image": "backBtn",
+          "variable": "backBtn"
+        },
+        "replayBtn": {
+          "name": "replayBtn",
+          "type": "button",
+          "location": [577, 535],
+          "image": "replayBtn",
+          "variable": "replayBtn"
+        },
+        "nextBtn": {
+          "name": "nextBtn",
+          "type": "button",
+          "location": [677, 535],
+          "image": "nextBtn",
+          "variable": "nextBtn"
+        },
+        "nextBtnHi": {
+          "name": "nextBtnHi",
+          "type": "button",
+          "location": [677, 535],
+          "image": "nextBtnHi",
+          "variable": "nextBtn"
+        }
+      },
+      "outcomes": {
+        
+      },
+      "actions": []
+    },
+    "scenes": {
+      "resumeFork": {
+        "id": "resumeFork",
+        "background": "background",
+        "actors": [
+          {
+            "name": "resumeBox",
+            "type": "decoration",
+            "image": "resumeBox",
+            "location": [190, 120]
+          },
+          {
+            "name": "resumePrompt",
+            "type": "text",
+            "text": "You have completed part of this lesson.",
+            "font": "barlow-blue-36-exbold-centered-wrap400",
+            "location": ["center", 167]
+          },
+          {
+            "name": "resumeBtn",
+            "type": "button",
+            "location": [275, 290],
+            "image": "resumeBtn",
+            "variable": "resumeBtn"
+          },
+          {
+            "name": "startOverBtn",
+            "type": "button",
+            "location": [275, 350],
+            "image": "startOverBtn",
+            "variable": "startOverBtn"
+          }
+        ],
+        "outcomes": {
+          "no_resume": {
+            "events": { "lessonLocation": "undefined" },
+            "actions": [
+              { "type": "scene", "args": ["slide0"] }
+            ]
+          },
+          "resume": {
+            "events": { "resumeBtn": "*" },
+            "actions": [
+              { "type": "scene", "args": [ "$lessonLocation" ] }
+            ]
+          },
+          "startOver": {
+            "events": { "startOverBtn": "*" },
+            "actions": [
+              { "type": "scene", "args": [ "slide0" ] }
+            ]
+          }
+        },
+        "actions": [
+          { "type": "check-outcomes", "args": [ "lessonLocation" ] }
+        ]
+      },
+      "slide0": {
+        "id": "slide0",
+        "background": "none",
+        "actions": [],
+        "actors": [
+          
+          { "name": "topBar", "type": "reference" },
+          { "name": "lessonTitle", "type": "reference" },
+          { "name": "logo", "type": "reference" },
+          { "name": "bottomBar", "type": "reference" },
+          { "name": "replayBtn", "type": "reference" },
+          { "name": "nextBtn", "type": "reference" },
+          {
+            "name": "backDisabled",
+            "type": "decoration",
+            "image": "backDisabled",
+            "location": [477, 535]
+          },
+          {
+            "name": "largeText",
+            "type": "text",
+            "text": "Mission: Health 8th Grade",
+            "font": "barlow-black-48-exbold-centered",
+            "location": ["center", 188]
+          },
+          {
+            "name": "smallText",
+            "type": "text",
+            "text": "In partnership with",
+            "font": "barlow-black-32-regular-centered",
+            "location": ["center", 276]
+          },
+          {
+            "name": "kohlsCares",
+            "type": "decoration",
+            "image": "kohlsCares",
+            "location": [317, 319]
+          }
+        ],
+        "outcomes": {
+          "replay": {
+            "events": { "replayBtn": "*" },
+            "actions": [
+              { "type": "choice", "args": [ "replayBtn", 0, true ] },
+              { "type": "scene", "args": [ "empty_replay_scene" ] },
+              { "type": "scene", "args": [ "slide0" ] }
+            ]
+          },
+          "next": {
+            "events": { "nextBtn": "*" },
+            "actions": [
+              { "type": "choice", "args": [ "nextBtn", 0, true ] },
+              { "type": "scene", "args": [ "slide1" ] }
+            ]
+          }
+        }
+      },
+      "slide1": {
+        "id": "slide1",
+        "background": "none",
+        "actions": [],
+        "actors": [
+          { "name": "topBar", "type": "reference" },
+          { "name": "lessonTitle", "type": "reference" },
+          { "name": "logo", "type": "reference" },
+          { "name": "bottomBar", "type": "reference" },
+          { "name": "backBtn", "type": "reference" },
+          { "name": "replayBtn", "type": "reference" },
+          { "name": "nextBtn", "type": "reference" },
+          {
+            "name": "introVideo",
+            "type": "wistia",
+            "location": [0, 75],
+            "size": [800, 450],
+            "video": "k0s06mwf6c",
+            "variable": "introVideo",
+            "hideCloseButton": true,
+            "autoplay": true
+          }
+        ],
+        "outcomes": {
+            "onVideoComplete": {
+            "events": {  "introVideo": "finished" },
+            "actions" : [
+              { "type": "remove-actor", "args": [ "nextBtn" ] },
+              { "type": "add-actor", 
+                "args": [ 
+                  { "name": "nextBtnHi", "type": "reference" } 
+                ] 
+              }
+            ]
+          },
+          "back": {
+            "events": { "backBtn": "*" },
+            "actions": [
+              { "type": "choice", "args": [ "backBtn", 0, true ] },
+              { "type": "scene", "args": [ "slide0" ] }
+            ]
+          },
+          "replay": {
+            "events": { "replayBtn": "*" },
+            "actions": [
+              { "type": "choice", "args": [ "replayBtn", 0, true ] },
+              { "type": "scene", "args": [ "empty_replay_scene" ] },
+              { "type": "scene", "args": [ "slide1" ] }
+            ]
+          },
+          "next": {
+            "events": { "nextBtn": "*" },
+            "actions": [
+              { "type": "choice", "args": [ "nextBtn", 0, true ] },
+              { "type": "scene", "args": [ "slide2" ] }
+            ]
+          }
+        
+        }
+      },
+      "slide2": {
+        "id": "slide2",
+        "background": "background",
+        "actions": [
+          { "type": "variable", "args": [ "lessonLocation", "$current_scene_name" ] }
+        ],
+        "actors": [
+          
+          { "name": "topBar", "type": "reference" },
+          { "name": "lessonTitle", "type": "reference" },
+          { "name": "logo", "type": "reference" },
+          { "name": "bottomBar", "type": "reference" },
+          { "name": "nextBtn", "type": "reference" },
+          { "name": "backBtn", "type": "reference" },
+          { "name": "replayBtn", "type": "reference" },
+
+           {
+            "name": "paper",
+            "type": "decoration",
+            "image": "paper",
+            "location": [19, 93]
+          },
+           {
+            "name": "twoBtn",
+            "type": "decoration",
+            "location": [207, 151],
+            "image": "twoBtn"            
+          },
+          {
+            "name": "zeroBtn",
+            "type": "decoration",
+            "location": [207, 306],
+            "image": "zeroBtn"
+          },
+            { 
+                    "name": "oneBtn", 
+                    "type": "decoration",
+                    "image": "oneBtn",
+                    "location": [54, 306]
+                  },
+                 { 
+                    "name": "threeLarge", 
+                    "type": "decoration",
+                    "image": "threeLarge",
+                    "location": [35, 133] 
+                  },
+                  {
+                    "name": "slideVO",
+                    "type": "audio",
+                    "audio": ["Slide 2"],
+                    "variable": "slideVO"
+                  },
+                  {
+                    "name": "threeText",
+                    "type": "text",
+                    "text": "3 = 3 meals per day",
+                    "font": "barlow-blue-36-exbold-centered-wrap400-white",
+                    "location": [430, 120]
+                  },
+                   {
+                    "name": "threeTexta",
+                    "type": "text",
+                    "text": "Eat together as a family.",
+                    "font": "barlow-blue-26-exbold-centered-wrap300-white-light",
+                    "location": [450, 200],
+                    "bullet": true,
+                    "wordWrapWidth": 300
+                  },
+                   {
+                    "name": "threeTextb",
+                    "type": "text",
+                    "text": "Turn off all electronics.",
+                    "font": "barlow-blue-26-exbold-centered-wrap300-white-light",
+                    "location": [450, 260],
+                    "bullet": true,
+                    "wordWrapWidth": 300
+                  },
+                  {
+                    "name": "threeTextc",
+                    "type": "text",
+                    "text": "Don't rush through meals.",
+                    "font": "barlow-blue-26-exbold-centered-wrap300-white-light",
+                    "location": [450, 320],
+                    "bullet": true,
+                    "wordWrapWidth": 300
+                  },
+                  {
+                    "name": "threeTextd",
+                    "type": "text",
+                    "text": "Limit eating out to no more than 1-2 times per week.",
+                    "font": "barlow-blue-26-exbold-centered-wrap300-white-light",
+                    "location": [450, 380],
+                    "bullet": true,
+                    "wordWrapWidth": 300
+                  }
+         
+        ],
+        "outcomes": {
+           "vo_finished": {
+            "events": { "slideVO": "played" },
+            "actions": [
+             { "type": "remove-actor", "args": ["next_btn"] },
+              { "type": "add-actor", "args": [
+                {
+                  "name": "nextBtnHi",
+                  "type": "reference"
+                }
+              ] }
+            ]
+          },
+          "replay": {
+            "events": { "replayBtn": "*" },
+            "actions": [
+              { "type": "choice", "args": [ "replayBtn", 0, true ] },
+              { "type": "scene", "args": [ "empty_replay_scene" ] },
+              { "type": "scene", "args": [ "slide2" ] }
+            ]
+          },
+          "back": {
+            "events": { "backBtn": "*" },
+            "actions": [
+              { "type": "choice", "args": [ "backBtn", 0, true ] },
+              { "type": "scene", "args": [ "slide1" ] }
+            ]
+          },
+           "next": {
+            "events": { "nextBtn": "*" },
+            "actions": [
+              { "type": "choice", "args": [ "nextBtn", 0, true ] },
+              { "type": "scene", "args": [ "slide3" ] }
+            ]
+          }
+        }
+      },           
+       "slide3": {
+        "id": "slide3",
+        "background": "background",
+        "actions": [
+          { "type": "variable", "args": [ "lessonLocation", "$current_scene_name" ] }
+        ],
+        "actors": [
+          
+          { "name": "topBar", "type": "reference" },
+          { "name": "lessonTitle", "type": "reference" },
+          { "name": "logo", "type": "reference" },
+          { "name": "bottomBar", "type": "reference" },
+          { "name": "nextBtn", "type": "reference" },
+          { "name": "backBtn", "type": "reference" },
+          { "name": "replayBtn", "type": "reference" },
+
+           {
+            "name": "paper",
+            "type": "decoration",
+            "image": "paper",
+            "location": [19, 93]
+          },
+          {
+            "name": "threeBtn",
+            "type": "decoration",
+            "location": [54, 151],
+            "image": "threeBtn"
+          },
+          {
+            "name": "zeroBtn",
+            "type": "decoration",
+            "location": [207, 306],
+            "image": "zeroBtn"
+          },
+            { 
+                    "name": "oneBtn", 
+                    "type": "decoration",
+                    "image": "oneBtn",
+                    "location": [54, 306]
+                  },
+                  { 
+                    "name": "twoLarge", 
+                    "type": "decoration",
+                    "image": "twoLarge",
+                    "location": [186, 133] 
+                  },
+                  {
+                    "name": "slideVO",
+                    "type": "audio",
+                    "audio": ["Slide 3"],
+                    "variable": "slideVO"
+                  },
+                  {
+                    "name": "twoText",
+                    "type": "text",
+                    "text": "2 = 2 hours or less of screen time each day",
+                    "font": "barlow-blue-36-exbold-centered-wrap400-white",
+                    "location": [430, 100],
+                    "wordWrapWidth": 300
+                  },
+                   {
+                    "name": "twoTexta",
+                    "type": "text",
+                    "text": "Cut back on screen time by 30 min. each day.",
+                    "font": "barlow-blue-26-exbold-centered-wrap300-white-light",
+                    "location": [450, 250],
+                    "bullet": true,
+                    "wordWrapWidth": 310
+                  },
+                   {
+                    "name": "twoTextb",
+                    "type": "text",
+                    "text": "Try doing other fun things.",
+                    "font": "barlow-blue-26-exbold-centered-wrap300-white-light",
+                    "location": [450, 330],
+                    "bullet": true,
+                    "wordWrapWidth": 400
+                  },
+                  {
+                    "name": "twoTextc",
+                    "type": "text",
+                    "text": "Put away electronics at least 30 min. before going to bed.",
+                    "font": "barlow-blue-26-exbold-centered-wrap300-white-light",
+                    "location": [450, 390],
+                    "bullet": true,
+                    "wordWrapWidth": 300
+                  }
+         
+        ],
+        "outcomes": {
+           "vo_finished": {
+            "events": { "slideVO": "played" },
+            "actions": [
+             { "type": "remove-actor", "args": ["next_btn"] },
+              { "type": "add-actor", "args": [
+                {
+                  "name": "nextBtnHi",
+                  "type": "reference"
+                }
+              ] }
+            ]
+          },
+          "replay": {
+            "events": { "replayBtn": "*" },
+            "actions": [
+              { "type": "choice", "args": [ "replayBtn", 0, true ] },
+              { "type": "scene", "args": [ "empty_replay_scene" ] },
+              { "type": "scene", "args": [ "slide3" ] }
+            ]
+          },
+          "back": {
+            "events": { "backBtn": "*" },
+            "actions": [
+              { "type": "choice", "args": [ "backBtn", 0, true ] },
+              { "type": "scene", "args": [ "slide2" ] }
+            ]
+          },
+           "next": {
+            "events": { "nextBtn": "*" },
+            "actions": [
+              { "type": "choice", "args": [ "nextBtn", 0, true ] },
+              { "type": "scene", "args": [ "slide4" ] }
+            ]
+          },
+           "nextHi": {
+            "events": { "nextBtnHi": "*" },
+            "actions": [
+              { "type": "choice", "args": [ "nextBtnHi", 0, true ] },
+              { "type": "scene", "args": [ "slide4" ] }
+            ]
+          }
+        }
+      }, 
+      "slide4": {
+        "id": "slide4",
+        "background": "background",
+        "actions": [
+          { "type": "variable", "args": [ "lessonLocation", "$current_scene_name" ] }
+        ],
+        "actors": [
+        
+          { "name": "topBar", "type": "reference" },
+          { "name": "lessonTitle", "type": "reference" },
+          { "name": "logo", "type": "reference" },
+          { "name": "bottomBar", "type": "reference" },
+          { "name": "nextBtn", "type": "reference" },
+          { "name": "backBtn", "type": "reference" },
+          { "name": "replayBtn", "type": "reference" },
+
+           {
+            "name": "paper",
+            "type": "decoration",
+            "image": "paper",
+            "location": [19, 93]
+          },
+          {
+            "name": "threeBtn",
+            "type": "decoration",
+            "location": [54, 151],
+            "image": "threeBtn"
+          },
+          {
+            "name": "twoBtn",
+            "type": "decoration",
+            "location": [207, 151],
+            "image": "twoBtn"            
+          },
+          {
+            "name": "zeroBtn",
+            "type": "decoration",
+            "location": [207, 306],
+            "image": "zeroBtn"
+          },
+            { 
+                    "name": "oneLarge", 
+                    "type": "decoration",
+                    "image": "oneLarge",
+                    "location": [35, 285] 
+                  },
+                  {
+                    "name": "slideVO",
+                    "type": "audio",
+                    "audio": ["Slide 4"],
+                    "variable": "slideVO"
+                  },
+                  {
+                    "name": "oneText",
+                    "type": "text",
+                    "text": "1 = 1 hour of physical activity each day",
+                    "font": "barlow-blue-36-exbold-centered-wrap400-white",
+                    "location": [430, 100],
+                    "wordWrapWidth": 300
+                  },
+                   {
+                    "name": "oneTexta",
+                    "type": "text",
+                    "text": "Start out slow.",
+                    "font": "barlow-blue-26-exbold-centered-wrap300-white-light",
+                    "location": [450, 250],
+                    "bullet": true,
+                    "wordWrapWidth": 350
+                  },
+                   {
+                    "name": "oneTextb",
+                    "type": "text",
+                    "text": "Take quick exercise breaks.",
+                    "font": "barlow-blue-26-exbold-centered-wrap300-white-light",
+                    "location": [450, 310],
+                    "bullet": true,
+                    "wordWrapWidth": 400
+                  },
+                  {
+                    "name": "oneTextc",
+                    "type": "text",
+                    "text": "Try exercising indoors.",
+                    "font": "barlow-blue-26-exbold-centered-wrap300-white-light",
+                    "location": [450, 370],
+                    "bullet": true,
+                    "wordWrapWidth": 300
+                  }
+         
+        ],
+        "outcomes": {
+           "vo_finished": {
+            "events": { "slideVO": "played" },
+            "actions": [
+             { "type": "remove-actor", "args": ["next_btn"] },
+              { "type": "add-actor", "args": [
+                {
+                  "name": "nextBtnHi",
+                  "type": "reference"
+                }
+              ] }
+            ]
+          },
+          "replay": {
+            "events": { "replayBtn": "*" },
+            "actions": [
+              { "type": "choice", "args": [ "replayBtn", 0, true ] },
+              { "type": "scene", "args": [ "empty_replay_scene" ] },
+              { "type": "scene", "args": [ "slide4" ] }
+            ]
+          },
+          "back": {
+            "events": { "backBtn": "*" },
+            "actions": [
+              { "type": "choice", "args": [ "backBtn", 0, true ] },
+              { "type": "scene", "args": [ "slide3" ] }
+            ]
+          },
+           "next": {
+            "events": { "nextBtn": "*" },
+            "actions": [
+              { "type": "choice", "args": [ "nextBtn", 0, true ] },
+              { "type": "scene", "args": [ "slide5" ] }
+            ]
+          },
+           "nextHi": {
+            "events": { "nextBtnHi": "*" },
+            "actions": [
+              { "type": "choice", "args": [ "nextBtnHi", 0, true ] },
+              { "type": "scene", "args": [ "slide5" ] }
+            ]
+          }
+        }
+      }, 
+      "slide5": {
+        "id": "slide5",
+        "background": "background",
+        "actions": [
+          { "type": "variable", "args": [ "lessonLocation", "$current_scene_name" ] }
+        ],
+        "actors": [
+          
+          { "name": "topBar", "type": "reference" },
+          { "name": "lessonTitle", "type": "reference" },
+          { "name": "logo", "type": "reference" },
+          { "name": "bottomBar", "type": "reference" },
+          { "name": "nextBtn", "type": "reference" },
+          { "name": "backBtn", "type": "reference" },
+          { "name": "replayBtn", "type": "reference" },
+
+           {
+            "name": "paper",
+            "type": "decoration",
+            "image": "paper",
+            "location": [19, 93]
+          },
+          {
+            "name": "threeBtn",
+            "type": "decoration",
+            "location": [54, 151],
+            "image": "threeBtn"
+          },
+          {
+            "name": "twoBtn",
+            "type": "decoration",
+            "location": [207, 151],
+            "image": "twoBtn"            
+          },
+           { 
+                    "name": "oneBtn", 
+                    "type": "decoration",
+                    "image": "oneBtn",
+                    "location": [54, 306]
+                  },
+                  { 
+                    "name": "zeroLarge", 
+                    "type": "decoration",
+                    "image": "zeroLarge",
+                    "location": [186, 285] 
+                  },
+                  {
+                    "name": "slideVO",
+                    "type": "audio",
+                    "audio": ["Slide 5"],
+                    "variable": "slideVO"
+                  },
+                  {
+                    "name": "zeroText",
+                    "type": "text",
+                    "text": "0 = 0 sweetened drinks",
+                    "font": "barlow-blue-36-exbold-centered-wrap400-white",
+                    "location": [430, 100],
+                    "wordWrapWidth": 300
+                  },
+                   {
+                    "name": "zeroTexta",
+                    "type": "text",
+                    "text": "Try to stick to drinks with less than 3 grams of sugar per serving.",
+                    "font": "barlow-blue-26-exbold-centered-wrap300-white-light",
+                    "location": [450, 220],
+                    "bullet": true,
+                    "wordWrapWidth": 300
+                  },
+                   {
+                    "name": "zeroTextb",
+                    "type": "text",
+                    "text": "Water and milk are best.",
+                    "font": "barlow-blue-26-exbold-centered-wrap300-white-light",
+                    "location": [450, 330],
+                    "bullet": true,
+                    "wordWrapWidth": 400
+                  },
+                  {
+                    "name": "zeroTextc",
+                    "type": "text",
+                    "text": "Try flavored water.",
+                    "font": "barlow-blue-26-exbold-centered-wrap300-white-light",
+                    "location": [450, 390],
+                    "bullet": true,
+                    "wordWrapWidth": 300
+                  }
+         
+        ],
+        "outcomes": {
+           "vo_finished": {
+            "events": { "slideVO": "played" },
+            "actions": [
+             { "type": "remove-actor", "args": ["next_btn"] },
+              { "type": "add-actor", "args": [
+                {
+                  "name": "nextBtnHi",
+                  "type": "reference"
+                }
+              ] }
+            ]
+          },
+          "replay": {
+            "events": { "replayBtn": "*" },
+            "actions": [
+              { "type": "choice", "args": [ "replayBtn", 0, true ] },
+              { "type": "scene", "args": [ "empty_replay_scene" ] },
+              { "type": "scene", "args": [ "slide5" ] }
+            ]
+          },
+          "back": {
+            "events": { "backBtn": "*" },
+            "actions": [
+              { "type": "choice", "args": [ "backBtn", 0, true ] },
+              { "type": "scene", "args": [ "slide4" ] }
+            ]
+          },
+           "next": {
+            "events": { "nextBtn": "*" },
+            "actions": [
+              { "type": "choice", "args": [ "nextBtn", 0, true ] },
+              { "type": "scene", "args": [ "slide6" ] }
+            ]
+          },
+           "nextHi": {
+            "events": { "nextBtnHi": "*" },
+            "actions": [
+              { "type": "choice", "args": [ "nextBtnHi", 0, true ] },
+              { "type": "scene", "args": [ "slide6" ] }
+            ]
+          }
+        }
+      },   
+      "slide6": {
+        "id": "slide6",
+        "background": "none",
+        "actions": [
+          { "type": "variable", "args": [ "lessonLocation", "$current_scene_name" ] },
+          { "type": "choice", "args": [ "objective_complete", 1] },
+          { "type": "choice", "args": [ "save", 0 ] }
+        ],
+        "actors": [
+          
+          { "name": "topBar", "type": "reference" },
+          { "name": "lessonTitle", "type": "reference" },
+          { "name": "logo", "type": "reference" },
+          { "name": "bottomBar", "type": "reference" },
+          { "name": "backBtn", "type": "reference" },
+          { "name": "replayBtn", "type": "reference" },
+          {
+            "name": "nextDisabled",
+            "type": "decoration",
+            "image": "nextDisabled",
+            "location": [677, 535]
+          },
+          {
+            "name": "outroVideo",
+            "type": "wistia",
+            "location": [0, 75],
+            "size": [800, 450],
+            "video": "45sbneoh5y",
+            "variable": "outroVideo",
+            "hideCloseButton": true,
+            "autoplay": true
+          }
+        ],
+        "outcomes": {
+          "replay": {
+            "events": { "replayBtn": "*" },
+            "actions": [
+              { "type": "choice", "args": [ "replayBtn", 0, true ] },
+              { "type": "scene", "args": [ "empty_replay_scene" ] },
+              { "type": "scene", "args": [ "slide6" ] }
+            ]
+          },
+          "back": {
+            "events": { "backBtn": "*" },
+            "actions": [
+              { "type": "choice", "args": [ "backBtn", 0, true ] },
+              { "type": "scene", "args": [ "slide5" ] }
+            ]
+          }
+        }
+      },
+      "empty_replay_scene": {
+        "id": "emptyReplayScene",
+        "description": "since a scene change request to the current scene is ignored, first change to this empty scene",
+        "background": "none",
+        "actors": [],
+        "outcomes": {},
+        "actions": []
+      }
+    } 
+  }
+}
+
+
+ 

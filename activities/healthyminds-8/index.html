@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<meta property="og:title" content="" />
+		<title></title>
+		<script>
+			const _environmentSettings = {
+				assetPath: "",
+				scormEnabled: false,
+			};
+		</script>
+		<script src="engine/APIWrapper.js"></script>
+		<script src="engine/phaser.js"></script>
+		<script src="engine/scene-engine.min.js"></script>
+
+		<script
+			src="//fast.wistia.com/assets/external/E-v1.js"
+			charset="ISO-8859-1"
+			async
+		></script>
+		<style>
+			body {
+				margin: 0;
+				padding: 0;
+			}
+			.container {
+				position: relative;
+			}
+			.gameItem {
+				top: 0;
+				left: 0;
+			}
+		</style>
+
+		<script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.16/webfont.js"></script>
+		<script>
+			WebFont.load({
+				google: {
+					families: ["Barlow:400,700,800"],
+				},
+			});
+		</script>
+	</head>
+	<body>
+		<div id="gameContainer" class="container">
+			<div id="game" class="gameItem" style="z-index: 100"></div>
+		</div>
+
+		<script type="text/javascript">
+			SceneEngine("game", 800, 600);
+		</script>
+	</body>
+</html>

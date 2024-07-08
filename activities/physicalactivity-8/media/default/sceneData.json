@@ -1,0 +1,1744 @@
+{
+  "play": {
+    "start": "resumeFork",
+    "persist": [ "lessonLocation" ],
+    "modelType": "basic",
+    "showPlaythrough": false,
+    "global": {
+      "actors": {
+        "topBar": {
+          "name": "topBar",
+          "type": "decoration",
+          "image": "topBar",
+          "location": [0, 0]
+        },
+        "bottomBar": {
+          "name": "bottomBar",
+          "type": "decoration",
+          "image": "bottomBar",
+          "location": [0, 525]
+        },
+         "logo": {
+          "name": "logo",
+          "type": "decoration",
+          "image": "logo",
+          "location": [656, 8]
+        },
+        "intro-text":{
+          "name": "intro-text",
+          "type": "text",
+          "text": "Physical Activity",
+          "font": "title",
+          "location": [ 25, 17 ]
+        },
+        "back_btn": {
+          "name": "back_btn",
+          "type": "button",
+          "variable": "back_btn",
+          "image": "back",
+          "location": [477, 535]
+        },
+        "replay_btn": {
+          "name": "replay_btn",
+          "type": "button",
+          "variable": "replay_btn",
+          "image": "replay",
+          "location": [577, 535]
+        },
+        "next_btn": {
+          "name": "next_btn",
+          "type": "button",
+          "image": "next",
+          "variable": "next_btn",
+          "location": [677, 535]
+        },
+        "next_btn_hi": {
+          "name": "next_btn_hi",
+          "type": "button",
+          "image": "next-hi",
+          "variable": "next_btn",
+          "location": [677, 535]
+        }
+      },
+      "outcomes": [],
+      "actions": []
+    },
+    "scenes": {
+      "resumeFork": {
+        "id": "resumeFork",
+        "background": "background-blue-vert",
+        "actors": [
+          {
+            "name": "resumeBox",
+            "type": "decoration",
+            "image": "resumeBox",
+            "location": [190, 120]
+          },
+          {
+            "name": "resumePrompt",
+            "type": "text",
+            "text": "You have completed part of this lesson.",
+            "font": "barlow-blue-36-exbold-centered-wrap400",
+            "location": ["center", 167]
+          },
+          {
+            "name": "resumeBtn",
+            "type": "button",
+            "location": [275, 290],
+            "image": "resumeBtn",
+            "variable": "resumeBtn"
+          },
+          {
+            "name": "startOverBtn",
+            "type": "button",
+            "location": [275, 350],
+            "image": "startOverBtn",
+            "variable": "startOverBtn"
+          }
+        ],
+        "outcomes": {
+          "no_resume": {
+            "events": { "lessonLocation": "undefined" },
+            "actions": [
+              { "type": "scene", "args": ["slide1"] }
+            ]
+          },
+          "resume": {
+            "events": { "resumeBtn": "*" },
+            "actions": [
+              { "type": "scene", "args": [ "$lessonLocation" ] }
+            ]
+          },
+          "startOver": {
+            "events": { "startOverBtn": "*" },
+            "actions": [
+              { "type": "scene", "args": [ "slide1" ] }
+            ]
+          }
+        },
+        "actions": [
+          { "type": "check-outcomes", "args": [ "lessonLocation" ] }
+        ]
+      },
+      "slide1": {
+        "id": "slide1",
+        "background": "none",
+        "actors": [
+          {
+            "name": "topBar",
+            "type": "reference"
+          },
+          {
+            "name": "bottomBar",
+            "type": "reference"
+          },
+          {
+            "name": "logo",
+            "type": "reference"            
+          },
+          {
+            "name": "next_btn",
+            "type": "reference"
+          },
+          {
+            "name": "replay_btn",
+            "type": "reference"
+          },
+          {
+            "name": "intro-text",
+            "type": "reference"
+          },
+          {
+            "name": "back_btn_dis",
+            "type": "decoration",
+            "image": "back-disabled",
+            "location": [475, 535]
+          },
+          {
+            "name": "worksheet",
+            "type": "url-button",
+            "location": [50, 543],
+            "image": "worksheet",
+            "variable": "worksheet",
+            "url": "PhysicalActivityWorksheet.pdf"
+          },          
+          {
+            "name": "intro_video",
+            "type": "wistia",
+            "location": [0, 75],
+            "size": [800, 450],
+            "video": "p1c5xk83ry",
+            "hideCloseButton": true,
+            "variable": "intro_video",
+            "blockerAlpha": 0.0,
+            "autoplay": true
+          }
+        ],
+        "outcomes": {
+        	"vid1_finished": {
+            "events": { "intro_video": "finished" },
+            "actions": [
+             { "type": "remove-actor", "args": ["next_btn"] },
+              { "type": "add-actor", "args": [
+                {
+                  "name": "next_btn_hi",
+                  "type": "reference"
+                }
+              ] }
+            ]
+          },
+          "next_btn" : {
+            "events": { "next_btn": "*" },
+            "actions": [ 
+              { "type": "choice", "args": [ "next_btn", 0, true ] },
+              { "type": "scene", "args": [ "slide2" ] }
+            ]
+          },
+          "replay_btn": {
+            "events": { "replay_btn": "*" },
+            "actions": [
+              { "type": "choice", "args": [ "replay_btn", 0, true ] },
+              { "type": "scene", "args": [ "empty_replay_scene" ] },
+              { "type": "scene", "args": [ "slide1" ] }
+            ]
+          }
+        },
+        "actions": [
+        ]
+      },
+      "slide2": {
+        "id": "slide2",
+        "background": "background-red-vert",
+        "actors": [
+          {
+            "name": "topBar",
+            "type": "reference"
+          },
+          {
+            "name": "bottomBar",
+            "type": "reference"
+          },
+          {
+            "name": "logo",
+            "type": "reference"            
+          },
+          {
+            "name": "next_btn",
+            "type": "reference"
+          },
+           {
+            "name": "back_btn",
+            "type": "reference"
+          },
+          {
+            "name": "replay_btn",
+            "type": "reference"
+          },
+          {
+            "name": "intro-text",
+            "type": "reference"
+          },
+          {
+            "name": "Types",
+            "type": "text",
+            "text": "Types of physical activity",
+            "font": "barlow-white-48-800",
+            "location": [ 90, 110 ]
+          },
+          {
+            "name": "aerobic-bullet",
+            "type": "text",
+            "text": "Aerobic exercise",
+            "font": "barlow-white-36-700",
+            "location": [ 130, 180 ],
+            "bullet": true,
+            "wordWrapWidth": 700,
+            "startDelay": 7000
+          },
+          {
+            "name": "strength-bullet",
+            "type": "text",
+            "text": "Strength training",
+            "font": "barlow-white-36-700",
+            "location": [ 130, 250 ],
+            "bullet": true,
+            "wordWrapWidth": 700,
+            "startDelay": 8200
+          },
+          {
+            "name": "flexibility-bullet",
+            "type": "text",
+            "text": "Flexibility training",
+            "font": "barlow-white-36-700",
+            "location": [ 130, 320 ],
+            "bullet": true,
+            "wordWrapWidth": 700,
+            "startDelay": 9200
+          },
+          {
+            "name": "slide2VO",
+            "type": "audio",
+            "audio": [ "Slide 2" ],
+            "variable": "slide2VO",
+            "startDelay": 0
+          }
+        ],
+        "outcomes": {
+           "vo2_finished": {
+            "events": { "slide2VO": "played" },
+            "actions": [
+             { "type": "remove-actor", "args": ["next_btn"] },
+              { "type": "add-actor", "args": [
+                {
+                  "name": "next_btn_hi",
+                  "type": "reference"
+                }
+              ] }
+            ]
+          },
+          "next_btn" : {
+            "events": { "next_btn": "*" },
+            "actions": [ 
+              { "type": "choice", "args": [ "next_btn", 0, true ] },
+              { "type": "scene", "args": [ "slide3" ] }
+            ]
+          },
+          "back_btn" : {
+            "events": { "back_btn": "*" },
+            "actions": [ 
+              { "type": "choice", "args": [ "back_btn", 0, true ] },
+              { "type": "scene", "args": [ "slide1" ] }
+            ]
+          },
+          "replay_btn": {
+            "events": { "replay_btn": "*" },
+            "actions": [
+              { "type": "choice", "args": [ "replay_btn", 0, true ] },
+              { "type": "scene", "args": [ "empty_replay_scene" ] },
+              { "type": "scene", "args": [ "slide2" ] }
+            ]
+          }
+        },
+        "actions": [
+          { "type": "variable", "args": [ "lessonLocation", "$current_scene_name" ] }
+        ]
+      },
+      "slide3": {
+        "id": "slide3",
+        "background": "background-green-horiz",
+        "actors": [
+          {
+            "name": "topBar",
+            "type": "reference"
+          },
+          {
+            "name": "bottomBar",
+            "type": "reference"
+          },
+          {
+            "name": "logo",
+            "type": "reference"            
+          },
+          {
+            "name": "next_btn",
+            "type": "reference"
+          },
+           {
+            "name": "back_btn",
+            "type": "reference"
+          },
+          {
+            "name": "replay_btn",
+            "type": "reference"
+          },
+          {
+            "name": "intro-text",
+            "type": "reference"
+          },
+          {
+            "name": "aerobic",
+            "type": "text",
+            "text": "Aerobic exercise",
+            "font": "barlow-white-48-800",
+            "location": [ 47, 443 ]
+          },
+          {
+            "name": "swimming",
+            "type": "decoration",
+            "image": "swimming",
+            "location": [ 11, 194 ]
+          },
+          {
+            "name": "soccer",
+            "type": "decoration",
+            "image": "soccer",
+            "location": [ 325, 116 ]
+          },
+          {
+            "name": "walking",
+            "type": "decoration",
+            "image": "walking",
+            "location": [ 616, 128 ]
+          },
+          {
+            "name": "slide3VO",
+            "type": "audio",
+            "audio": [ "Slide 3" ],
+            "variable": "slide3VO",
+            "startDelay": 0
+          }
+        ],
+        "outcomes": {
+           "vo3_finished": {
+            "events": { "slide3VO": "played" },
+            "actions": [
+             { "type": "remove-actor", "args": ["next_btn"] },
+              { "type": "add-actor", "args": [
+                {
+                  "name": "next_btn_hi",
+                  "type": "reference"
+                }
+              ] }
+            ]
+          },
+          "next_btn" : {
+            "events": { "next_btn": "*" },
+            "actions": [ 
+              { "type": "choice", "args": [ "next_btn", 0, true ] },
+              { "type": "scene", "args": [ "slide4" ] }
+            ]
+          },
+          "back_btn" : {
+            "events": { "back_btn": "*" },
+            "actions": [ 
+              { "type": "choice", "args": [ "back_btn", 0, true ] },
+              { "type": "scene", "args": [ "slide2" ] }
+            ]
+          },
+          "replay_btn": {
+            "events": { "replay_btn": "*" },
+            "actions": [
+              { "type": "choice", "args": [ "replay_btn", 0, true ] },
+              { "type": "scene", "args": [ "empty_replay_scene" ] },
+              { "type": "scene", "args": [ "slide3" ] }
+            ]
+          }
+        },
+        "actions": [
+          { "type": "variable", "args": [ "lessonLocation", "$current_scene_name" ] }
+        ]
+      },
+      "slide4": {
+        "id": "slide4",
+        "background": "background-green-horiz",
+        "actors": [
+          {
+            "name": "topBar",
+            "type": "reference"
+          },
+          {
+            "name": "bottomBar",
+            "type": "reference"
+          },
+          {
+            "name": "logo",
+            "type": "reference"            
+          },
+          {
+            "name": "next_btn",
+            "type": "reference"
+          },
+           {
+            "name": "back_btn",
+            "type": "reference"
+          },
+          {
+            "name": "replay_btn",
+            "type": "reference"
+          },
+          {
+            "name": "intro-text",
+            "type": "reference"
+          },
+          {
+            "name": "tips",
+            "type": "text",
+            "text": "Tips for safe aerobic exercise",
+            "font": "barlow-white-48-800",
+            "location": [ 70, 110 ]
+          },
+          {
+            "name": "start-slowly",
+            "type": "text",
+            "text": "Start slowly.",
+            "font": "barlow-white-36-700",
+            "location": [ 130, 180 ],
+            "bullet": true,
+            "wordWrapWidth": 700,
+            "startDelay": 3000
+          },
+          {
+            "name": "warm-up",
+            "type": "text",
+            "text": "Warm up.",
+            "font": "barlow-white-36-700",
+            "location": [ 130, 250 ],
+            "bullet": true,
+            "wordWrapWidth": 700,
+            "startDelay": 15000
+          },
+          {
+            "name": "listen",
+            "type": "text",
+            "text": "Listen to your body.",
+            "font": "barlow-white-36-700",
+            "location": [ 130, 320 ],
+            "bullet": true,
+            "wordWrapWidth": 700,
+            "startDelay": 24000
+          },
+          {
+            "name": "keep-hydrated",
+            "type": "text",
+            "text": "Keep hydrated.",
+            "font": "barlow-white-36-700",
+            "location": [ 130, 390 ],
+            "bullet": true,
+            "wordWrapWidth": 700,
+            "startDelay": 35200
+          },
+          {
+            "name": "slide4VO",
+            "type": "audio",
+            "audio": [ "Slide 4" ],
+            "variable": "slide4VO",
+            "startDelay": 0
+          }
+        ],
+        "outcomes": {
+           "vo4_finished": {
+            "events": { "slide4VO": "played" },
+            "actions": [
+             { "type": "remove-actor", "args": ["next_btn"] },
+              { "type": "add-actor", "args": [
+                {
+                  "name": "next_btn_hi",
+                  "type": "reference"
+                }
+              ] }
+            ]
+          },
+          "next_btn" : {
+            "events": { "next_btn": "*" },
+            "actions": [ 
+              { "type": "choice", "args": [ "next_btn", 0, true ] },
+              { "type": "scene", "args": [ "slide5" ] }
+            ]
+          },
+          "back_btn" : {
+            "events": { "back_btn": "*" },
+            "actions": [ 
+              { "type": "choice", "args": [ "back_btn", 0, true ] },
+              { "type": "scene", "args": [ "slide3" ] }
+            ]
+          },
+          "replay_btn": {
+            "events": { "replay_btn": "*" },
+            "actions": [
+              { "type": "choice", "args": [ "replay_btn", 0, true ] },
+              { "type": "scene", "args": [ "empty_replay_scene" ] },
+              { "type": "scene", "args": [ "slide4" ] }
+            ]
+          }
+        },
+        "actions": [
+          { "type": "variable", "args": [ "lessonLocation", "$current_scene_name" ] }
+        ]
+      },
+      "slide5": {
+        "id": "slide5",
+        "background": "background-green-horiz",
+        "actors": [
+          {
+            "name": "topBar",
+            "type": "reference"
+          },
+          {
+            "name": "bottomBar",
+            "type": "reference"
+          },
+          {
+            "name": "logo",
+            "type": "reference"            
+          },
+          {
+            "name": "next_btn",
+            "type": "reference"
+          },
+           {
+            "name": "back_btn",
+            "type": "reference"
+          },
+          {
+            "name": "replay_btn",
+            "type": "reference"
+          },
+          {
+            "name": "intro-text",
+            "type": "reference"
+          },
+          {
+            "name": "benefits",
+            "type": "text",
+            "text": "Benefits of aerobic exercise",
+            "font": "barlow-white-48-800",
+            "location": [ 70, 110 ]
+          },
+          {
+            "name": "benefit1",
+            "type": "text",
+            "text": "Helps you sleep, learn and feel better",
+            "font": "barlow-white-36-700",
+            "location": [ 110, 180 ],
+            "bullet": true,
+            "wordWrapWidth": 700,
+            "startDelay": 5800
+          },
+          {
+            "name": "benefit2",
+            "type": "text",
+            "text": "Builds a stronger heart and lungs",
+            "font": "barlow-white-36-700",
+            "location": [ 110, 250 ],
+            "bullet": true,
+            "wordWrapWidth": 700,
+            "startDelay": 9100
+          },
+          {
+            "name": "benefit3",
+            "type": "text",
+            "text": "Helps control your weight",
+            "font": "barlow-white-36-700",
+            "location": [ 110, 320 ],
+            "bullet": true,
+            "wordWrapWidth": 700,
+            "startDelay": 13100
+          },
+          {
+            "name": "benefit4",
+            "type": "text",
+            "text": "Helps prevent or reduce your chances of developing certain diseases",
+            "font": "barlow-white-36-700",
+            "location": [ 110, 390 ],
+            "bullet": true,
+            "wordWrapWidth": 640,
+            "startDelay": 14500
+          },
+          {
+            "name": "slide5VO",
+            "type": "audio",
+            "audio": [ "Slide 5" ],
+            "variable": "slide5VO",
+            "startDelay": 0
+          }
+        ],
+        "outcomes": {
+           "vo5_finished": {
+            "events": { "slide5VO": "played" },
+            "actions": [
+             { "type": "remove-actor", "args": ["next_btn"] },
+              { "type": "add-actor", "args": [
+                {
+                  "name": "next_btn_hi",
+                  "type": "reference"
+                }
+              ] }
+            ]
+          },
+          "next_btn" : {
+            "events": { "next_btn": "*" },
+            "actions": [ 
+              { "type": "choice", "args": [ "next_btn", 0, true ] },
+              { "type": "scene", "args": [ "slide6" ] }
+            ]
+          },
+          "back_btn" : {
+            "events": { "back_btn": "*" },
+            "actions": [ 
+              { "type": "choice", "args": [ "back_btn", 0, true ] },
+              { "type": "scene", "args": [ "slide4" ] }
+            ]
+          },
+          "replay_btn": {
+            "events": { "replay_btn": "*" },
+            "actions": [
+              { "type": "choice", "args": [ "replay_btn", 0, true ] },
+              { "type": "scene", "args": [ "empty_replay_scene" ] },
+              { "type": "scene", "args": [ "slide5" ] }
+            ]
+          }
+        },
+        "actions": [
+          { "type": "variable", "args": [ "lessonLocation", "$current_scene_name" ] }
+        ]
+      },
+      "slide6": {
+        "id": "slide6",
+        "background": "background-blue-horiz",
+        "actors": [
+          {
+            "name": "topBar",
+            "type": "reference"
+          },
+          {
+            "name": "bottomBar",
+            "type": "reference"
+          },
+          {
+            "name": "logo",
+            "type": "reference"            
+          },
+          {
+            "name": "next_btn",
+            "type": "reference"
+          },
+           {
+            "name": "back_btn",
+            "type": "reference"
+          },
+          {
+            "name": "replay_btn",
+            "type": "reference"
+          },
+          {
+            "name": "intro-text",
+            "type": "reference"
+          },
+          {
+            "name": "strength",
+            "type": "text",
+            "text": "Strength training",
+            "font": "barlow-white-48-800",
+            "location": [ 47, 443 ]
+          },
+          {
+            "name": "situps",
+            "type": "decoration",
+            "image": "situps",
+            "location": [ 47, 254 ]
+          },
+          {
+            "name": "weights",
+            "type": "decoration",
+            "image": "weights",
+            "location": [ 322, 89 ]
+          },
+          {
+            "name": "pushups",
+            "type": "decoration",
+            "image": "pushups",
+            "location": [ 469, 210 ]
+          },
+          {
+            "name": "slide6VO",
+            "type": "audio",
+            "audio": [ "Slide 6" ],
+            "variable": "slide6VO",
+            "startDelay": 0
+          }
+        ],
+        "outcomes": {
+           "vo6_finished": {
+            "events": { "slide6VO": "played" },
+            "actions": [
+             { "type": "remove-actor", "args": ["next_btn"] },
+              { "type": "add-actor", "args": [
+                {
+                  "name": "next_btn_hi",
+                  "type": "reference"
+                }
+              ] }
+            ]
+          },
+          "next_btn" : {
+            "events": { "next_btn": "*" },
+            "actions": [ 
+              { "type": "choice", "args": [ "next_btn", 0, true ] },
+              { "type": "scene", "args": [ "slide7" ] }
+            ]
+          },
+          "back_btn" : {
+            "events": { "back_btn": "*" },
+            "actions": [ 
+              { "type": "choice", "args": [ "back_btn", 0, true ] },
+              { "type": "scene", "args": [ "slide5" ] }
+            ]
+          },
+          "replay_btn": {
+            "events": { "replay_btn": "*" },
+            "actions": [
+              { "type": "choice", "args": [ "replay_btn", 0, true ] },
+              { "type": "scene", "args": [ "empty_replay_scene" ] },
+              { "type": "scene", "args": [ "slide6" ] }
+            ]
+          }
+        },
+        "actions": [
+          { "type": "variable", "args": [ "lessonLocation", "$current_scene_name" ] }
+        ]
+      },
+      "slide7": {
+        "id": "slide7",
+        "background": "background-blue-horiz",
+        "actors": [
+          {
+            "name": "topBar",
+            "type": "reference"
+          },
+          {
+            "name": "bottomBar",
+            "type": "reference"
+          },
+          {
+            "name": "logo",
+            "type": "reference"            
+          },
+          {
+            "name": "next_btn",
+            "type": "reference"
+          },
+           {
+            "name": "back_btn",
+            "type": "reference"
+          },
+          {
+            "name": "replay_btn",
+            "type": "reference"
+          },
+          {
+            "name": "intro-text",
+            "type": "reference"
+          },
+          {
+            "name": "strength-tips",
+            "type": "text",
+            "text": "Tips for safe strength training",
+            "font": "barlow-white-48-800",
+            "location": [ 50, 95 ]
+          },
+          {
+            "name": "strength-tip1",
+            "type": "text",
+            "text": "Warm up.",
+            "font": "barlow-white-36-700",
+            "location": [ 90, 150 ],
+            "bullet": true,
+            "wordWrapWidth": 700,
+            "startDelay": 2300
+          },
+          {
+            "name": "strength-tip2",
+            "type": "text",
+            "text": "Learn proper technique.",
+            "font": "barlow-white-36-700",
+            "location": [ 90, 200 ],
+            "bullet": true,
+            "wordWrapWidth": 700,
+            "startDelay": 5200
+          },
+          {
+            "name": "lungeBtn",
+            "type": "button",
+            "location": [ 130, 263 ],
+            "image": "lungeButton",
+            "variable": "lungeBtn",
+            "startDelay": 9600
+          },
+          {
+            "name": "squatBtn",
+            "type": "button",
+            "location": [ 430, 263 ],
+            "image": "squatButton",
+            "variable": "squatBtn",
+            "startDelay": 9600
+          },
+          {
+            "name": "slide7VO",
+            "type": "audio",
+            "audio": [ "Slide 7" ],
+            "variable": "slide7VO",
+            "startDelay": 0
+          }
+        ],
+        "outcomes": {
+          "showLunge": {
+            "events": { "lungeBtn": "*" },
+            "actions": [
+              { "type": "choice", "args": [ "lungeBtn", 0, true ] },
+              { "type": "add-actor", "args": [
+                {
+                  "name": "lungeScrim",
+                  "type": "blocker",
+                  "location": [ 0, 75 ],
+                  "size": [ 800, 450 ],
+                  "blockerTint": "0x000000",
+                  "blockerAlpha": 0.5
+                },
+                {
+                  "name": "lungeBox",
+                  "type": "blocker",
+                  "location": [ 190, 75 ],
+                  "size": [ 420, 450 ],
+                  "blockerTint": "0xffffff",
+                  "blockerAlpha": 1
+                },
+                {
+                  "name": "closeLungeBtn",
+                  "type": "button",
+                  "location": [ 575, 79 ],
+                  "image": "xButton",
+                  "variable": "closeLungeBtn"
+                },
+                {
+                  "name": "lungeCorrect",
+                  "type": "decoration",
+                  "location": [ 200, 117 ],
+                  "image": "lungeIncorrect"
+                },
+                {
+                  "name": "lungeIncorrect",
+                  "type": "decoration",
+                  "location": [ 200, 319 ],
+                  "image": "lungeCorrect"
+                },
+                {
+                  "name": "slide7LungeVO",
+                  "type": "audio",
+                  "audio": [ "Lunge" ],
+                  "variable": "slide7LungeVO"
+                }
+              ] }
+            ]
+          },
+          "hideLunge": {
+            "events": { "closeLungeBtn": "*" },
+            "actions": [
+              { "type": "choice", "args": [ "closeLungeBtn", 0, true ] },
+              { "type": "remove-actor", "args": ["lungeScrim", "lungeBox", "closeLungeBtn", "lungeCorrect", "lungeIncorrect", "slide7LungeVO"] },
+              { "type": "add-actor", "args": [
+                {
+                  "name": "lungeSilence",
+                  "type": "audio",
+                  "audio": [ "silence" ],
+                  "variable": "lungeSilence"
+                }
+              ]}
+            ]
+          },
+          "showSquat": {
+            "events": { "squatBtn": "*" },
+            "actions": [
+              { "type": "choice", "args": [ "squatBtn", 0, true ] },
+              { "type": "add-actor", "args": [
+                {
+                  "name": "squatScrim",
+                  "type": "blocker",
+                  "location": [ 0, 75 ],
+                  "size": [ 800, 450 ],
+                  "blockerTint": "0x000000",
+                  "blockerAlpha": 0.5
+                },
+                {
+                  "name": "squatBox",
+                  "type": "blocker",
+                  "location": [ 190, 75 ],
+                  "size": [ 420, 450 ],
+                  "blockerTint": "0xffffff",
+                  "blockerAlpha": 1
+                },
+                {
+                  "name": "closeSquatBtn",
+                  "type": "button",
+                  "location": [ 575, 79 ],
+                  "image": "xButton",
+                  "variable": "closeSquatBtn"
+                },
+                {
+                  "name": "squatCorrect",
+                  "type": "decoration",
+                  "location": [ 200, 117 ],
+                  "image": "squatIncorrect"
+                },
+                {
+                  "name": "squatIncorrect",
+                  "type": "decoration",
+                  "location": [ 200, 319 ],
+                  "image": "squatCorrect"
+                },
+                {
+                  "name": "slide7SquatVO",
+                  "type": "audio",
+                  "audio": [ "Squat" ],
+                  "variable": "slide7SquatVO"
+                }
+              ] }
+            ]
+          },
+          "hideSquat": {
+            "events": { "closeSquatBtn": "*" },
+            "actions": [
+              { "type": "choice", "args": [ "closeSquatBtn", 0, true ] },
+              { "type": "remove-actor", "args": ["squatScrim", "squatBox", "closeSquatBtn", "squatCorrect", "squatIncorrect", "slide7SquatVO"] },
+              { "type": "add-actor", "args": [
+                {
+                  "name": "squatSilence",
+                  "type": "audio",
+                  "audio": [ "silence" ],
+                  "variable": "squatSilence"
+                }
+              ]}
+            ]
+          },
+          "vo7_finished": {
+            "events": { "slide7VO": "played", "slide7LungeVO": "played", "slide7SquatVO": "played" },
+            "actions": [
+             { "type": "remove-actor", "args": ["next_btn"] },
+              { "type": "add-actor", "args": [
+                {
+                  "name": "next_btn_hi",
+                  "type": "reference"
+                }
+              ] }
+            ]
+          },
+          "next_btn" : {
+            "events": { "next_btn": "*" },
+            "actions": [ 
+              { "type": "choice", "args": [ "next_btn", 0, true ] },
+              { "type": "scene", "args": [ "slide7a" ] }
+            ]
+          },
+          "back_btn" : {
+            "events": { "back_btn": "*" },
+            "actions": [ 
+              { "type": "choice", "args": [ "back_btn", 0, true ] },
+              { "type": "scene", "args": [ "slide6" ] }
+            ]
+          },
+          "replay_btn": {
+            "events": { "replay_btn": "*" },
+            "actions": [
+              { "type": "choice", "args": [ "replay_btn", 0, true ] },
+              { "type": "scene", "args": [ "empty_replay_scene" ] },
+              { "type": "scene", "args": [ "slide7" ] }
+            ]
+          }
+        },
+        "actions": [
+          { "type": "variable", "args": [ "lessonLocation", "$current_scene_name" ] }
+        ]
+      },
+      "slide7a": {
+        "id": "slide7a",
+        "background": "background-blue-horiz",
+        "actors": [
+          {
+            "name": "topBar",
+            "type": "reference"
+          },
+          {
+            "name": "bottomBar",
+            "type": "reference"
+          },
+          {
+            "name": "logo",
+            "type": "reference"            
+          },
+          {
+            "name": "next_btn",
+            "type": "reference"
+          },
+           {
+            "name": "back_btn",
+            "type": "reference"
+          },
+          {
+            "name": "replay_btn",
+            "type": "reference"
+          },
+          {
+            "name": "intro-text",
+            "type": "reference"
+          },
+          {
+            "name": "strength-tips2",
+            "type": "text",
+            "text": "Tips for safe strength training",
+            "font": "barlow-white-48-800",
+            "location": [ 50, 95 ]
+          },
+          {
+            "name": "strength-tip3",
+            "type": "text",
+            "text": "When lifting weights, have a spotter.",
+            "font": "barlow-white-36-700",
+            "location": [ 90, 175 ],
+            "bullet": true,
+            "wordWrapWidth": 700,
+            "startDelay": 3100
+          },
+          {
+            "name": "strength-tip4",
+            "type": "text",
+            "text": "Listen to your body.",
+            "font": "barlow-white-36-700",
+            "location": [ 90, 255 ],
+            "bullet": true,
+            "wordWrapWidth": 700,
+            "startDelay": 14100
+          },
+          {
+            "name": "slide7aVO",
+            "type": "audio",
+            "audio": [ "Slide 7a" ],
+            "variable": "slide7aVO",
+            "startDelay": 0
+          }
+        ],
+        "outcomes": {
+           "vo7a_finished": {
+            "events": { "slide7aVO": "played" },
+            "actions": [
+             { "type": "remove-actor", "args": ["next_btn"] },
+              { "type": "add-actor", "args": [
+                {
+                  "name": "next_btn_hi",
+                  "type": "reference"
+                }
+              ] }
+            ]
+          },
+          "next_btn" : {
+            "events": { "next_btn": "*" },
+            "actions": [ 
+              { "type": "choice", "args": [ "next_btn", 0, true ] },
+              { "type": "scene", "args": [ "slide8" ] }
+            ]
+          },
+          "back_btn" : {
+            "events": { "back_btn": "*" },
+            "actions": [ 
+              { "type": "choice", "args": [ "back_btn", 0, true ] },
+              { "type": "scene", "args": [ "slide7" ] }
+            ]
+          },
+          "replay_btn": {
+            "events": { "replay_btn": "*" },
+            "actions": [
+              { "type": "choice", "args": [ "replay_btn", 0, true ] },
+              { "type": "scene", "args": [ "empty_replay_scene" ] },
+              { "type": "scene", "args": [ "slide7a" ] }
+            ]
+          }
+        },
+        "actions": [
+          { "type": "variable", "args": [ "lessonLocation", "$current_scene_name" ] }
+        ]
+      },
+      "slide8": {
+        "id": "slide8",
+        "background": "background-blue-horiz",
+        "actors": [
+          {
+            "name": "topBar",
+            "type": "reference"
+          },
+          {
+            "name": "bottomBar",
+            "type": "reference"
+          },
+          {
+            "name": "logo",
+            "type": "reference"            
+          },
+          {
+            "name": "next_btn",
+            "type": "reference"
+          },
+           {
+            "name": "back_btn",
+            "type": "reference"
+          },
+          {
+            "name": "replay_btn",
+            "type": "reference"
+          },
+          {
+            "name": "intro-text",
+            "type": "reference"
+          },
+          {
+            "name": "strength-benefits",
+            "type": "text",
+            "text": "Benefits of strength training",
+            "font": "barlow-white-48-800",
+            "location": [ 50, 95 ]
+          },
+          {
+            "name": "strength-benefit1",
+            "type": "text",
+            "text": "Stronger muscles and bones",
+            "font": "barlow-white-36-700",
+            "location": [ 90, 175 ],
+            "bullet": true,
+            "wordWrapWidth": 700,
+            "startDelay": 3900
+          },
+          {
+            "name": "strength-benefit2",
+            "type": "text",
+            "text": "Helps control weight",
+            "font": "barlow-white-36-700",
+            "location": [ 90, 255 ],
+            "bullet": true,
+            "wordWrapWidth": 700,
+            "startDelay": 11300
+          },
+          {
+            "name": "strength-benefit3",
+            "type": "text",
+            "text": "Builds lean muscle and reduces fat",
+            "font": "barlow-white-36-700",
+            "location": [ 90, 335 ],
+            "bullet": true,
+            "wordWrapWidth": 700,
+            "startDelay": 12400
+          },
+          {
+            "name": "strength-benefit4",
+            "type": "text",
+            "text": "Improved balance",
+            "font": "barlow-white-36-700",
+            "location": [ 90, 415 ],
+            "bullet": true,
+            "wordWrapWidth": 700,
+            "startDelay": 15800
+          },
+          {
+            "name": "slide8VO",
+            "type": "audio",
+            "audio": [ "Slide 8" ],
+            "variable": "slide8VO",
+            "startDelay": 0
+          }
+        ],
+        "outcomes": {
+           "vo8_finished": {
+            "events": { "slide8VO": "played" },
+            "actions": [
+             { "type": "remove-actor", "args": ["next_btn"] },
+              { "type": "add-actor", "args": [
+                {
+                  "name": "next_btn_hi",
+                  "type": "reference"
+                }
+              ] }
+            ]
+          },
+          "next_btn" : {
+            "events": { "next_btn": "*" },
+            "actions": [ 
+              { "type": "choice", "args": [ "next_btn", 0, true ] },
+              { "type": "scene", "args": [ "slide9" ] }
+            ]
+          },
+          "back_btn" : {
+            "events": { "back_btn": "*" },
+            "actions": [ 
+              { "type": "choice", "args": [ "back_btn", 0, true ] },
+              { "type": "scene", "args": [ "slide7a" ] }
+            ]
+          },
+          "replay_btn": {
+            "events": { "replay_btn": "*" },
+            "actions": [
+              { "type": "choice", "args": [ "replay_btn", 0, true ] },
+              { "type": "scene", "args": [ "empty_replay_scene" ] },
+              { "type": "scene", "args": [ "slide8" ] }
+            ]
+          }
+        },
+        "actions": [
+          { "type": "variable", "args": [ "lessonLocation", "$current_scene_name" ] }
+        ]
+      },
+      "slide9": {
+        "id": "slide9",
+        "background": "background-blue-vert",
+        "actors": [
+          {
+            "name": "topBar",
+            "type": "reference"
+          },
+          {
+            "name": "bottomBar",
+            "type": "reference"
+          },
+          {
+            "name": "logo",
+            "type": "reference"            
+          },
+          {
+            "name": "next_btn",
+            "type": "reference"
+          },
+           {
+            "name": "back_btn",
+            "type": "reference"
+          },
+          {
+            "name": "replay_btn",
+            "type": "reference"
+          },
+          {
+            "name": "intro-text",
+            "type": "reference"
+          },
+          {
+            "name": "flexibility",
+            "type": "text",
+            "text": "Flexibility training",
+            "font": "barlow-white-48-800",
+            "location": [ 47, 443 ]
+          },
+          {
+            "name": "karate",
+            "type": "decoration",
+            "image": "karate",
+            "location": [ 6, 83 ]
+          },
+          {
+            "name": "stretching",
+            "type": "decoration",
+            "image": "stretching",
+            "location": [ 265, 175 ]
+          },
+          {
+            "name": "yoga",
+            "type": "decoration",
+            "image": "yoga",
+            "location": [ 561, 87 ]
+          },
+          {
+            "name": "slide9VO",
+            "type": "audio",
+            "audio": [ "Slide 9" ],
+            "variable": "slide9VO",
+            "startDelay": 0
+          }
+        ],
+        "outcomes": {
+           "vo9_finished": {
+            "events": { "slide9VO": "played" },
+            "actions": [
+             { "type": "remove-actor", "args": ["next_btn"] },
+              { "type": "add-actor", "args": [
+                {
+                  "name": "next_btn_hi",
+                  "type": "reference"
+                }
+              ] }
+            ]
+          },
+          "next_btn" : {
+            "events": { "next_btn": "*" },
+            "actions": [ 
+              { "type": "choice", "args": [ "next_btn", 0, true ] },
+              { "type": "scene", "args": [ "slide10" ] }
+            ]
+          },
+          "back_btn" : {
+            "events": { "back_btn": "*" },
+            "actions": [ 
+              { "type": "choice", "args": [ "back_btn", 0, true ] },
+              { "type": "scene", "args": [ "slide8" ] }
+            ]
+          },
+          "replay_btn": {
+            "events": { "replay_btn": "*" },
+            "actions": [
+              { "type": "choice", "args": [ "replay_btn", 0, true ] },
+              { "type": "scene", "args": [ "empty_replay_scene" ] },
+              { "type": "scene", "args": [ "slide9" ] }
+            ]
+          }
+        },
+        "actions": [
+          { "type": "variable", "args": [ "lessonLocation", "$current_scene_name" ] }
+        ]
+      },
+      "slide10": {
+        "id": "slide10",
+        "background": "background-blue-vert",
+        "actors": [
+          {
+            "name": "topBar",
+            "type": "reference"
+          },
+          {
+            "name": "bottomBar",
+            "type": "reference"
+          },
+          {
+            "name": "logo",
+            "type": "reference"            
+          },
+          {
+            "name": "next_btn",
+            "type": "reference"
+          },
+           {
+            "name": "back_btn",
+            "type": "reference"
+          },
+          {
+            "name": "replay_btn",
+            "type": "reference"
+          },
+          {
+            "name": "intro-text",
+            "type": "reference"
+          },
+          {
+            "name": "flex-tips",
+            "type": "text",
+            "text": "Tips for safe flexibility training",
+            "font": "barlow-white-48-800",
+            "location": [ 50, 95 ]
+          },
+          {
+            "name": "flex-tip1",
+            "type": "text",
+            "text": "Warm up.",
+            "font": "barlow-white-36-700",
+            "location": [ 90, 145 ],
+            "bullet": true,
+            "wordWrapWidth": 700,
+            "startDelay": 6600
+          },
+          {
+            "name": "flex-tip2",
+            "type": "text",
+            "text": "Maintain each stretch for 30 seconds.",
+            "font": "barlow-white-36-700",
+            "location": [ 90, 195 ],
+            "bullet": true,
+            "wordWrapWidth": 700,
+            "startDelay": 15300
+          },
+          {
+            "name": "flex-tip3",
+            "type": "text",
+            "text": "Stop if it hurts.",
+            "font": "barlow-white-36-700",
+            "location": [ 90, 245 ],
+            "bullet": true,
+            "wordWrapWidth": 700,
+            "startDelay": 25900
+          },
+          {
+            "name": "flex-tip4",
+            "type": "text",
+            "text": "Stretch both sides equally.",
+            "font": "barlow-white-36-700",
+            "location": [ 90, 295 ],
+            "bullet": true,
+            "wordWrapWidth": 700,
+            "startDelay": 28800
+          },
+          {
+            "name": "flex-benefits",
+            "type": "text",
+            "text": "Benefits of flexibility training",
+            "font": "barlow-white-48-800",
+            "location": [ 50, 355 ],
+            "startDelay": 31200
+          },
+          {
+            "name": "flex-benefit1",
+            "type": "text",
+            "text": "Helps you move better",
+            "font": "barlow-white-36-700",
+            "location": [ 90, 405 ],
+            "bullet": true,
+            "wordWrapWidth": 700,
+            "startDelay": 31200
+          },
+          {
+            "name": "flex-benefit2",
+            "type": "text",
+            "text": "Helps improve sports performance",
+            "font": "barlow-white-36-700",
+            "location": [ 90, 455 ],
+            "bullet": true,
+            "wordWrapWidth": 700,
+            "startDelay": 34200
+          },
+          {
+            "name": "slide10VO",
+            "type": "audio",
+            "audio": [ "Slide 10" ],
+            "variable": "slide10VO",
+            "startDelay": 0
+          }
+        ],
+        "outcomes": {
+           "vo10_finished": {
+            "events": { "slide10VO": "played" },
+            "actions": [
+             { "type": "remove-actor", "args": ["next_btn"] },
+              { "type": "add-actor", "args": [
+                {
+                  "name": "next_btn_hi",
+                  "type": "reference"
+                }
+              ] }
+            ]
+          },
+          "next_btn" : {
+            "events": { "next_btn": "*" },
+            "actions": [ 
+              { "type": "choice", "args": [ "next_btn", 0, true ] },
+              { "type": "scene", "args": [ "slide11" ] }
+            ]
+          },
+          "back_btn" : {
+            "events": { "back_btn": "*" },
+            "actions": [ 
+              { "type": "choice", "args": [ "back_btn", 0, true ] },
+              { "type": "scene", "args": [ "slide9" ] }
+            ]
+          },
+          "replay_btn": {
+            "events": { "replay_btn": "*" },
+            "actions": [
+              { "type": "choice", "args": [ "replay_btn", 0, true ] },
+              { "type": "scene", "args": [ "empty_replay_scene" ] },
+              { "type": "scene", "args": [ "slide10" ] }
+            ]
+          }
+        },
+        "actions": [
+          { "type": "variable", "args": [ "lessonLocation", "$current_scene_name" ] }
+        ]
+      },
+      "slide11": {
+        "id": "slide11",
+        "background": "background-red-vert",
+        "actors": [
+          {
+            "name": "topBar",
+            "type": "reference"
+          },
+          {
+            "name": "bottomBar",
+            "type": "reference"
+          },
+          {
+            "name": "logo",
+            "type": "reference"            
+          },
+          {
+            "name": "next_btn",
+            "type": "reference"
+          },
+           {
+            "name": "back_btn",
+            "type": "reference"
+          },
+          {
+            "name": "replay_btn",
+            "type": "reference"
+          },
+          {
+            "name": "intro-text",
+            "type": "reference"
+          },
+          {
+            "name": "consequences",
+            "type": "text",
+            "text": "Consequences of not getting regular physical activity",
+            "font": "barlow-white-48-800",
+            "location": [ 50, 95 ],
+            "wordWrapWidth": 720
+          },
+          {
+            "name": "consequence1",
+            "type": "text",
+            "text": "Weight gain",
+            "font": "barlow-white-36-700",
+            "location": [ 90, 210 ],
+            "bullet": true,
+            "wordWrapWidth": 700,
+            "startDelay": 5300
+          },
+          {
+            "name": "consequence2",
+            "type": "text",
+            "text": "Weaker muscles and bones",
+            "font": "barlow-white-36-700",
+            "location": [ 90, 270 ],
+            "bullet": true,
+            "wordWrapWidth": 700,
+            "startDelay": 8400
+          },
+          {
+            "name": "consequence3",
+            "type": "text",
+            "text": "Increased risk of certain diseases",
+            "font": "barlow-white-36-700",
+            "location": [ 90, 330 ],
+            "bullet": true,
+            "wordWrapWidth": 700,
+            "startDelay": 10600
+          },
+          {
+            "name": "consequence4",
+            "type": "text",
+            "text": "Poor sleep, mood and outlook",
+            "font": "barlow-white-36-700",
+            "location": [ 90, 390 ],
+            "bullet": true,
+            "wordWrapWidth": 700,
+            "startDelay": 22600
+          },
+          {
+            "name": "slide11VO",
+            "type": "audio",
+            "audio": [ "Slide 11" ],
+            "variable": "slide11VO",
+            "startDelay": 0
+          }
+        ],
+        "outcomes": {
+           "vo101_finished": {
+            "events": { "slide11VO": "played" },
+            "actions": [
+             { "type": "remove-actor", "args": ["next_btn"] },
+              { "type": "add-actor", "args": [
+                {
+                  "name": "next_btn_hi",
+                  "type": "reference"
+                }
+              ] }
+            ]
+          },
+          "next_btn" : {
+            "events": { "next_btn": "*" },
+            "actions": [ 
+              { "type": "choice", "args": [ "next_btn", 0, true ] },
+              { "type": "scene", "args": [ "slide12" ] }
+            ]
+          },
+          "back_btn" : {
+            "events": { "back_btn": "*" },
+            "actions": [ 
+              { "type": "choice", "args": [ "back_btn", 0, true ] },
+              { "type": "scene", "args": [ "slide10" ] }
+            ]
+          },
+          "replay_btn": {
+            "events": { "replay_btn": "*" },
+            "actions": [
+              { "type": "choice", "args": [ "replay_btn", 0, true ] },
+              { "type": "scene", "args": [ "empty_replay_scene" ] },
+              { "type": "scene", "args": [ "slide11" ] }
+            ]
+          }
+        },
+        "actions": [
+          { "type": "variable", "args": [ "lessonLocation", "$current_scene_name" ] }
+        ]
+      },
+      "slide12": {
+        "id": "slide12",
+        "background": "none",
+        "actions": [
+          { "type": "variable", "args": [ "lessonLocation", "$current_scene_name" ] },
+          { "type": "choice", "args": [ "objective_complete", 1] },
+          { "type": "choice", "args": [ "save", 0 ] }
+        ],
+        "actors": [
+          {
+            "name": "topBar",
+            "type": "reference"
+          },
+          {
+            "name": "bottomBar",
+            "type": "reference"
+          },
+          {
+            "name": "logo",
+            "type": "reference"            
+          },
+          {
+            "name": "back_btn",
+            "type": "reference"
+          },
+          {
+            "name": "replay_btn",
+            "type": "reference"
+          },
+          {
+            "name": "intro-text",
+            "type": "reference"
+          },
+          {
+            "name": "nextDisabled",
+            "type": "decoration",
+            "image": "next-disabled",
+            "location": [677, 535]
+          },
+          {
+            "name": "outroVideo",
+            "type": "wistia",
+            "location": [0, 75],
+            "size": [800, 450],
+            "video": "9ioictii59",
+            "variable": "outroVideo",
+            "hideCloseButton": true,
+            "autoplay": true
+          }
+        ],
+        "outcomes": {
+          "back_btn" : {
+            "events": { "back_btn": "*" },
+            "actions": [ 
+              { "type": "choice", "args": [ "back_btn", 0, true ] },
+              { "type": "scene", "args": [ "slide11" ] }
+            ]
+          },
+          "replay_btn": {
+            "events": { "replay_btn": "*" },
+            "actions": [
+              { "type": "choice", "args": [ "replay_btn", 0, true ] },
+              { "type": "scene", "args": [ "empty_replay_scene" ] },
+              { "type": "scene", "args": [ "slide12" ] }
+            ]
+          }
+        }
+      },
+      "empty_replay_scene": {
+        "id": "empty_replay_scene",
+        "description": "since a scene change request to the current scene is ignored, first change to this empty scene",
+        "background": "none",
+        "actors": [ ],
+        "outcomes": { },
+        "actions": [ ]
+      }
+    }
+  }
+}
+
+
+ 

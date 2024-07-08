@@ -1,0 +1,139 @@
+{
+  "texture": "media/default/healthy_minds.png",
+  "textureMap": "media/default/healthy_minds.json",
+  "textureKey": "texture",
+  "data": "media/default/sceneData.json",
+  "fonts" : {
+    "title": { "font": "40px Barlow", "fill": "#ffffff", "align": "left", "fontWeight": "800" },
+    "barlow-white-48-800": { "font": "48px Barlow", "fill": "#ffffff", "align": "left", "fontWeight": "800" },
+    "barlow-white-40-800": { "font": "40px Barlow", "fill": "#ffffff", "align": "left", "fontWeight": "800" },
+    "barlow-white-36-700": { "font": "36px Barlow", "fill": "#ffffff", "align": "left", "fontWeight": "700", "lineSpacing": -7 },
+
+    "bullet": { "font": "Barlow", "fontSize": "28px", "fill": "#ffffff",  "fontWeight": "bold", "align": "left", "wordWrap":false },
+    "small-text": { "font": "Barlow", "fontSize": "22px", "fill": "#ffffff",  "fontWeight": "bold", "align": "left", "wordWrap":false },
+    "text": { "font": "Barlow", "fontSize": "38px", "fill": "#ffffff",  "fontWeight": "700", "align": "left", "wordWrap":false },
+    "large-text": { "font": "60px Barlow", "fill": "#ffffff", "align": "left", "fontWeight": "800" },
+    "barlow-blue-36-exbold-centered-wrap400": { "font": "36px Barlow", "fill": "#007cc2", "align": "center", "fontWeight": "800", "wordWrap": true, "wordWrapWidth": 400, "lineSpacing": -7 }
+
+  },
+  "images": {
+    "resumeBox": "resume-box.png",
+    "back-disabled": "nav_back_button_disabled.png",
+    "next-disabled": "nav_next_button_disabled.png",
+    "topBar": "interface-bars-top.png",
+    "bottomBar": "interface-bars-bottom.png",  
+    "logo": "logo.png",
+    "brain": "brain-opt3.png",
+    "balance-emoji": "emoji-balance.png",
+    "laugh-emoji": "emoji-laugh.png",
+    "learn-emoji": "emoji-learn.png",
+    "purpose-emoji": "emoji-purpose.png",
+    "relationships-emoji": "emoji-relationships.png",
+    "stress-emoji": "emoji-stress.png",
+    "anxiety-cloud": "5 - magnifying glass.png",
+    "depression-cloud": "6 - cloud.png",
+    "adhd-cloud": "7 - brain.png",
+    "sleeping": "sleeping.png",
+    "walking": "walking.png",
+    "talking": "talking.png",
+    "relaxing": "relaxing.png"
+  },
+  "sceneImages": {
+    "background-blue-vert": "bg-blue-vert.png",
+    "background-blue-horiz": "bg-blue-horiz.png",
+    "background-green-horiz": "bg-green-horiz.png",
+    "background-red-vert": "bg-red-vert.png"
+  },
+  "buttons": {
+   "next": {
+      "up": "nav_next_button_up.png",
+      "over": "nav_next_button_over.png",
+      "out": "nav_next_button_up.png",
+      "down": "nav_next_button_down.png"
+    },
+    "next-hi": {
+      "up": "nav_next_button_over.png",
+      "over": "nav_next_button_over.png",
+      "out": "nav_next_button_over.png",
+      "down": "nav_next_button_down.png"
+    },
+      "back": {
+      "up": "nav_back_button_up.png",
+      "over": "nav_back_button_over.png",
+      "out": "nav_back_button_up.png",
+      "down": "nav_back_button_down.png"
+    },
+    "replay": {
+      "up": "nav_replay_button_up.png",
+      "over": "nav_replay_button_over.png",
+      "out": "nav_replay_button_up.png",
+      "down": "nav_replay_button_down.png"
+    },
+    "worksheet": {
+      "up": "worksheet_button_up.png",
+      "over": "worksheet_button_over.png",
+      "out": "worksheet_button_up.png",
+      "down": "worksheet_button_down.png"
+    },
+    "resumeBtn":{
+      "up": "resume-up.png",
+      "over": "resume-over.png",
+      "out": "resume-up.png",
+      "down": "resume-down.png"
+    },
+    "startOverBtn":{
+      "up": "startover-up.png",
+      "over": "startover-over.png",
+      "out": "startover-up.png",
+      "down": "startover-down.png"
+    }
+  },
+  "soundKey": "healthyminds",
+  "soundFile": [ "media/default/healthyminds.m4a", "media/default/healthyminds.ogg" ],
+  "sounds": {
+     "Slide 02": [
+      0,
+      42.53083900226758,
+      false,
+      "Slide 02"
+    ],
+    "Slide 03": [
+      43,
+      16.51927437641723,
+      false,
+      "Slide 03"
+    ],
+    "Slide 04": [
+      60,
+      14.02462585034013,
+      false,
+      "Slide 04"
+    ],
+    "Slide 05": [
+      75,
+      48.03167800453514,
+      false,
+      "Slide 05"
+    ],
+    "Slide 06": [
+      124,
+      28.850022675736966,
+      false,
+      "Slide 06"
+    ],
+    "Slide 07": [
+      153,
+      22.812562358276637,
+      false,
+      "Slide 07"
+    ],
+    "Slide 09": [
+      176,
+      51.87641723356009,
+      false,
+      "Slide 09"
+    ]
+  }
+  
+}
+

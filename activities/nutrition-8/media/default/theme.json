@@ -1,0 +1,276 @@
+{
+  "texture": "media/default/nutrition-spritesheet.png",
+  "textureMap": "media/default/nutrition-spritesheet.json",
+  "textureKey": "texture",
+  "data": "media/default/sceneData.json",
+  "fonts" : {
+    "title": { "font": "Barlow", "fontSize": "38px", "fill": "#ffffff",  "fontWeight": "800", "align": "left", "wordWrap":false },
+    "barlow-blue-36-exbold-centered-wrap400": { "font": "36px Barlow", "fill": "#007cc2", "align": "center", "fontWeight": "800", "wordWrap": true, "wordWrapWidth": 400, "lineSpacing": -7 },   
+    "barlow-white-48-800": { "font": "Barlow", "fontSize": "48px", "fill": "#ffffff",  "fontWeight": "800", "align": "left", "lineSpacing": -7 },
+    "barlow-white-36-700": { "font": "Barlow", "fontSize": "36px", "fill": "#ffffff",  "fontWeight": "700", "align": "left", "lineSpacing": -7 },
+    "barlow-white-28-800": { "font": "Barlow", "fontSize": "28px", "fill": "#ffffff",  "fontWeight": "800", "align": "left", "lineSpacing": -7 },
+    "barlow-white-24-700": { "font": "Barlow", "fontSize": "24px", "fill": "#ffffff",  "fontWeight": "700", "align": "left", "lineSpacing": -7 },
+    "barlow-white-44-800": { "font": "Barlow", "fontSize": "44px", "fill": "#ffffff",  "fontWeight": "800", "align": "left", "lineSpacing": -7 },
+    "barlow-white-36-800": { "font": "Barlow", "fontSize": "36px", "fill": "#ffffff",  "fontWeight": "800", "align": "left", "lineSpacing": -7 }
+  },
+  "images": {
+    "resumeBox": "resume-box.png",
+    "back-disabled": "nav_back_button_disabled.png",
+    "next-disabled": "nav_next_button_disabled.png",
+    "topBar": "interface-bars-top.png",
+    "bottomBar": "interface-bars-bottom.png", 
+    "logo": "logo.png",     
+    "intro-paper-blank": "intro-paper-blank.png",
+    "resume-box": "resume-box.png",
+    "soccer": "soccer2.png",
+    "reading": "reading.png",
+    "trumpet": "trumpet.png",
+    "myplate": "myplate1.png",
+    "myplate-empty": "myplate-empty.png",
+    "fruits": "myplate fruit.png",
+    "fruits-hi": "myplate fruit hi.png",
+    "vegetables": "green btn.png",
+    "vegetables-hi": "green btn hi.png",
+    "protein": "myplate protein.png",
+    "protein-hi": "myplate protein hi.png",
+    "grains": "myplate grains.png",
+    "grains-hi": "myplate grains hi.png",
+    "dairy": "myplate dairy.png",
+    "dairy-hi": "myplate dairy hi.png",
+    "corn": "corn.png",
+    "beans": "beans.png",
+    "broccoli": "broccoli.png",
+    "banana": "banana.png",
+    "applesauce": "applesauce.png",
+    "grapes": "grapes.png",
+    "pasta": "pasta.png",
+    "bread": "whole wheat bread.png",
+    "rice": "brown rice.png",
+    "peanuts": "peanuts.png",
+    "fish": "fish.png",
+    "chicken": "chicken.png",
+    "milk": "skim milk.png",
+    "cheese": "cheddar cheese.png",
+    "yogurt": "low fat yogurt.png",
+    "wheat": "processed-wheat.png",
+    "bread-loaf": "processed-bread.png",
+    "processed": "processed-text copy.png",
+    "raw-beans": "processed-beans.png",
+    "canned-beans": "processed-bean-can.png",
+    "apple": "processed-apple.png",
+    "apple-juice": "processed-apple-juice.png",
+    "label-potato": "label-potato.png",
+    "label-chips": "label-chips.png",
+    "label-highlights": "label-highlights.png",
+    "wheat-ingredients": "wholewheatbread.png",
+    "white-ingredients": "whitebread.png",
+    "circle": "circle.png",
+    "tortilla-flour": "Tortilla-flour.jpg",
+    "tortilla-wheat": "Tortilla-wheat.jpg",
+    "fiber-highlight": "fiber-highlight.png",
+    "background-blue-vert": "bg-blue-vert.png",
+    "chocolate-label": "chocolate-label.png",
+    "skim-label": "skim-label.png",
+    "whole-label": "whole-label.png"
+  },
+  "sceneImages": {
+    "background-blue-vert": "bg-blue-vert.png",
+    "background-green-horiz": "bg-green-horiz.png",
+    "background-blue-horiz": "bg-blue-horiz.png",
+    "background-red-vert": "bg-red-vert.png"
+  },
+  "buttons": {
+    "next": {
+      "up": "nav_next_button_up.png",
+      "over": "nav_next_button_over.png",
+      "out": "nav_next_button_up.png",
+      "down": "nav_next_button_down.png"
+    },
+    "next-hi": {
+      "up": "nav_next_button_over.png",
+      "over": "nav_next_button_over.png",
+      "out": "nav_next_button_over.png",
+      "down": "nav_next_button_down.png"
+    },
+    "back": {
+      "up": "nav_back_button_up.png",
+      "over": "nav_back_button_over.png",
+      "out": "nav_back_button_up.png",
+      "down": "nav_back_button_down.png"
+    },
+    "replay": {
+      "up": "nav_replay_button_up.png",
+      "over": "nav_replay_button_over.png",
+      "out": "nav_replay_button_up.png",
+      "down": "nav_replay_button_down.png"
+    },
+    "worksheet": {
+      "up": "worksheet_button_up.png",
+      "over": "worksheet_button_over.png",
+      "out": "worksheet_button_up.png",
+      "down": "worksheet_button_down.png"
+    },
+    "calories": {
+      "up": "calories-up.png",
+      "over": "calories-up.png",
+      "out": "calories-up.png",
+      "down": "calories-up.png"
+    },
+    "fiber": {
+      "up": "fiber-up.png",
+      "over": "fiber-up.png",
+      "out": "fiber-up.png",
+      "down": "fiber-up.png"
+    },
+    "satfat": {
+      "up": "satfat-up.png",
+      "over": "satfat-up.png",
+      "out": "satfat-up.png",
+      "down": "satfat-up.png"
+    },
+    "servingsize": {
+      "up": "servingsize-up.png",
+      "over": "servingsize-up.png",
+      "out": "servingsize-up.png",
+      "down": "servingsize-up.png"
+    },
+    "sugars": {
+      "up": "sugars-up.png",
+      "over": "sugars-up.png",
+      "out": "sugars-up.png",
+      "down": "sugars-up.png"
+    },
+    "transfat": {
+      "up": "transfat-up.png",
+      "over": "transfat-up.png",
+      "out": "transfat-up.png",
+      "down": "transfat-up.png"
+    },
+    "resumeBtn":{
+      "up": "resume-up.png",
+      "over": "resume-over.png",
+      "out": "resume-up.png",
+      "down": "resume-down.png"
+    },
+    "startOverBtn":{
+      "up": "startover-up.png",
+      "over": "startover-over.png",
+      "out": "startover-up.png",
+      "down": "startover-down.png"
+    },
+    "wholeBtn":{
+      "up": "whole.png",
+      "over": "whole-over.png",
+      "out": "whole.png",
+      "down": "whole-down.png"
+    },
+    "skimBtn":{
+      "up": "skim.png",
+      "over": "skim-over.png",
+      "out": "skim.png",
+      "down": "skim-down.png"
+    },
+    "chocolateBtn":{
+      "up": "chocolate.png",
+      "over": "chocolate-over.png",
+      "out": "chocolate.png",
+      "down": "chocolate-down.png"
+    }
+
+  },
+  "soundKey": "nutrition",
+  "soundFile": [ "media/default/nutrition.m4a", "media/default/nutrition.ogg" ],
+  "sounds": {
+     "magicmallet_c": [
+      0,
+      0.9723356009070295,
+      false,
+      "magicmallet_c"
+    ],
+    "Slide 02": [
+      1,
+      19.804263038548754,
+      false,
+      "Slide 02"
+    ],
+    "Slide 03": [
+      21,
+      31.92748299319728,
+      false,
+      "Slide 03"
+    ],
+    "Slide 04": [
+      53,
+      24.491723356009075,
+      false,
+      "Slide 04"
+    ],
+    "Slide 05": [
+      78,
+      11.77312925170068,
+      false,
+      "Slide 05"
+    ],
+    "Slide 05a": [
+      90,
+      4.289160997732424,
+      false,
+      "Slide 05a"
+    ],
+    "Slide 06": [
+      95,
+      33.298503401360534,
+      false,
+      "Slide 06"
+    ],
+    "Slide 07": [
+      129,
+      41.16612244897959,
+      false,
+      "Slide 07"
+    ],
+    "Slide 08": [
+      171,
+      43.174421768707475,
+      false,
+      "Slide 08"
+    ],
+    "Slide 09": [
+      215,
+      35.73655328798185,
+      false,
+      "Slide 09"
+    ],
+    "Slide 10": [
+      251,
+      21.81886621315192,
+      false,
+      "Slide 10"
+    ],
+    "Slide 11": [
+      273,
+      45.81374149659865,
+      false,
+      "Slide 11"
+    ],
+    "Slide 12": [
+      319,
+      45.53283446712021,
+      false,
+      "Slide 12"
+    ],
+    "Slide 13": [
+      365,
+      33.4746031746032,
+      false,
+      "Slide 13"
+    ],
+    "Slide 14": [
+      399,
+      23.28646258503403,
+      false,
+      "Slide 14"
+    ]
+  }
+  
+}

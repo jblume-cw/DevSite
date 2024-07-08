@@ -1,0 +1,93 @@
+{
+  "resources": [
+    "output/MH6millionaire/millionaire.ogg",
+    "output/MH6millionaire/millionaire.m4a"
+  ],
+  "spritemap": {
+    "applause": {
+      "start": 0,
+      "end": 3.1956462585034013,
+      "loop": false
+    },
+    "cheering2-short": {
+      "start": 4,
+      "end": 9,
+      "loop": false
+    },
+    "crowd_01_reaction_ah_01": {
+      "start": 9,
+      "end": 11.161972789115646,
+      "loop": false
+    },
+    "dooweep02": {
+      "start": 12,
+      "end": 12.374172335600907,
+      "loop": false
+    },
+    "dooweep03": {
+      "start": 13,
+      "end": 13.391972789115647,
+      "loop": false
+    },
+    "game_over.-shortwav": {
+      "start": 14,
+      "end": 17.571678004535148,
+      "loop": false
+    },
+    "game-win_mixdown": {
+      "start": 18,
+      "end": 54.33269841269841,
+      "loop": false
+    },
+    "GameOver": {
+      "start": 55,
+      "end": 60.912018140589566,
+      "loop": false
+    },
+    "Intro100": {
+      "start": 61,
+      "end": 64.18931972789116,
+      "loop": false
+    },
+    "Intro1000": {
+      "start": 65,
+      "end": 68.85068027210885,
+      "loop": false
+    },
+    "Intro100000": {
+      "start": 69,
+      "end": 73.24535147392291,
+      "loop": false
+    },
+    "Intro1000000": {
+      "start": 74,
+      "end": 80.38931972789116,
+      "loop": false
+    },
+    "Intro500": {
+      "start": 81,
+      "end": 84.13621315192744,
+      "loop": false
+    },
+    "Intro5000": {
+      "start": 85,
+      "end": 88.4880045351474,
+      "loop": false
+    },
+    "Intro50000": {
+      "start": 89,
+      "end": 92.96800453514739,
+      "loop": false
+    },
+    "Intro500000": {
+      "start": 93,
+      "end": 97.56,
+      "loop": false
+    },
+    "millionaire-intro_mixdown": {
+      "start": 98,
+      "end": 158.23018140589568,
+      "loop": false
+    }
+  }
+}

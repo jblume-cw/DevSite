@@ -1,0 +1,109 @@
+{
+  "texture": "media/default/introduction.png",
+  "textureMap": "media/default/introduction.json",
+  "textureKey": "texture",
+  "data": "media/default/sceneData.json",
+  "fonts" : {
+    "lessonTitle": { "font": "40px Barlow", "fill": "#ffffff", "align": "left", "fontWeight": "800" },
+    "barlow-48-bold-centered-wrap300": { "font": "48px Barlow", "fill": "#ffffff", "align": "center", "fontWeight": "700", "wordWrap": true, "wordWrapWidth": 360, "lineSpacing": -7 },
+    "barlow-blue-36-exbold-centered-wrap400": { "font": "36px Barlow", "fill": "#007cc2", "align": "center", "fontWeight": "800", "wordWrap": true, "wordWrapWidth": 400, "lineSpacing": -7 },
+    "barlow-blue-36-exbold-centered-wrap400-white": { "font": "36px Barlow", "fill": "#ffffff", "align": "left", "fontWeight": "800", "wordWrap": true, "wordWrapWidth": 400, "lineSpacing": -7 },
+    "barlow-blue-26-exbold-centered-wrap300-white": { "font": "26px Barlow", "fill": "#ffffff", "align": "left", "fontWeight": "800", "wordWrap": true, "wordWrapWidth": 500, "lineSpacing": -7 },
+    "barlow-blue-26-exbold-centered-wrap300-white-light": { "font": "26px Barlow", "fill": "#ffffff", "align": "left", "fontWeight": "400", "wordWrap": true, "wordWrapWidth": 500, "lineSpacing": -7 },
+    "barlow-black-48-exbold-centered": { "font": "48px Barlow", "fill": "#333333", "align": "center", "fontWeight": "800", "wordWrap": false },
+    "barlow-black-32-regular-centered": { "font": "32px Barlow", "fill": "#333333", "align": "center", "fontWeight": "500", "wordWrap": false }
+  },
+  "sceneImages": {
+    "background": "bg-blue-vert.png"
+  },
+  "images": {
+    "resumeBox": "resume-box.png",
+    "topBar": "interface-bars-top.png",
+    "bottomBar": "interface-bars-bottom.png",
+    "backDisabled": "nav_back_button_disabled.png",
+    "nextDisabled": "nav_next_button_disabled.png",
+    "logo": "logo.png",
+    "paper": "intro-paper-blank.png",
+    "threeLarge": "3-large.png",
+    "twoLarge": "2-large.png",
+    "oneLarge": "1-large.png",
+    "zeroLarge": "0-large.png",
+    "kohlsCares": "kohlscares.png",
+    "threeBtn": "intro_button_3_off.png",
+    "twoBtn": "intro_button_2_off.png",
+    "oneBtn": "intro_button_1_off.png",
+    "zeroBtn": "intro_button_0_off.png"
+  },
+  "buttons": {
+    "backBtn": {
+      "up": "nav_back_button_up.png",
+      "over": "nav_back_button_over.png",
+      "out": "nav_back_button_up.png",
+      "down": "nav_back_button_down.png"
+    },
+    "replayBtn": {
+      "up": "nav_replay_button_up.png",
+      "over": "nav_replay_button_over.png",
+      "out": "nav_replay_button_up.png",
+      "down": "nav_replay_button_down.png"
+    },
+    "nextBtn": {
+      "up": "nav_next_button_up.png",
+      "over": "nav_next_button_over.png",
+      "out": "nav_next_button_up.png",
+      "down": "nav_next_button_down.png"
+    },
+    "nextBtnHi": {
+      "up": "nav_next_button_over.png",
+      "over": "nav_next_button_over.png",
+      "out": "nav_next_button_over.png",
+      "down": "nav_next_button_down.png"
+    },
+    "worksheetBtn": {
+      "up": "worksheet_button_up.png",
+      "over": "worksheet_button_over.png",
+      "out": "worksheet_button_up.png",
+      "down": "worksheet_button_down.png"
+    },
+    "resumeBtn":{
+      "up": "resume-up.png",
+      "over": "resume-over.png",
+      "out": "resume-up.png",
+      "down": "resume-down.png"
+    },
+    "startOverBtn":{
+      "up": "startover-up.png",
+      "over": "startover-over.png",
+      "out": "startover-up.png",
+      "down": "startover-down.png"
+    }
+  },
+  "soundKey": "introduction-a",
+  "soundFile": [ "media/default/introduction-a.m4a", "media/default/introduction-a.ogg" ],
+  "sounds": {
+    "Slide 2": [
+      0,
+      56.359251700680275,
+      false,
+      "Slide 2"
+    ],
+    "Slide 3": [
+      57,
+      40.595668934240365,
+      false,
+      "Slide 3"
+    ],
+    "Slide 4": [
+      98,
+      45.095147392290244,
+      false,
+      "Slide 4"
+    ],
+    "Slide 5": [
+      144,
+      42.3920634920635,
+      false,
+      "Slide 5"
+    ]
+  }
+}

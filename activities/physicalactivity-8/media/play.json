@@ -1,0 +1,16 @@
+{
+  "name": "MH Physical Activity",
+  "description": "Physical Activity lesson",
+  "scorm": true,
+  "logging": false,
+  "autoScale": true, 
+  "acts": {
+    "default": {
+      "id": "default",
+      "description": "Mission Health 8th grade Physical Activity lesson",
+      "name": "MH Physical Activity",
+      "theme": "media/default/theme.json",
+      "objectives": []
+    }
+  }
+}
