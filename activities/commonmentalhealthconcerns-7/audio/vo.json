@@ -1,0 +1,163 @@
+{
+	"resources": [
+		"output/hm7-commonmentalhealthconcerns/vo.ogg",
+		"output/hm7-commonmentalhealthconcerns/vo.m4a"
+	],
+	"spritemap": {
+		"Slide 10": {
+			"start": 0,
+			"end": 40.62931972789116,
+			"loop": false
+		},
+		"Slide 12": {
+			"start": 42,
+			"end": 64.48265306122448,
+			"loop": false
+		},
+		"Slide 13": {
+			"start": 66,
+			"end": 84.37598639455783,
+			"loop": false
+		},
+		"Slide 14": {
+			"start": 86,
+			"end": 106.2853514739229,
+			"loop": false
+		},
+		"Slide 15": {
+			"start": 108,
+			"end": 126.51201814058956,
+			"loop": false
+		},
+		"Slide 2": {
+			"start": 128,
+			"end": 134.5280045351474,
+			"loop": false
+		},
+		"Slide 3": {
+			"start": 136,
+			"end": 166.90133786848074,
+			"loop": false
+		},
+		"Slide 3a": {
+			"start": 168,
+			"end": 208.02666666666667,
+			"loop": false
+		},
+		"Slide 3b": {
+			"start": 210,
+			"end": 265.3893197278912,
+			"loop": false
+		},
+		"Slide 3c": {
+			"start": 267,
+			"end": 339.91467120181403,
+			"loop": false
+		},
+		"Slide 4": {
+			"start": 341,
+			"end": 368.14666666666665,
+			"loop": false
+		},
+		"Slide 4a": {
+			"start": 370,
+			"end": 397.59467120181404,
+			"loop": false
+		},
+		"Slide 4b": {
+			"start": 399,
+			"end": 437.4480045351474,
+			"loop": false
+		},
+		"Slide 4c": {
+			"start": 439,
+			"end": 509.82666666666665,
+			"loop": false
+		},
+		"Slide 5": {
+			"start": 511,
+			"end": 541.1813378684807,
+			"loop": false
+		},
+		"Slide 5a": {
+			"start": 543,
+			"end": 605.2026530612245,
+			"loop": false
+		},
+		"Slide 5b": {
+			"start": 607,
+			"end": 643.0426530612245,
+			"loop": false
+		},
+		"Slide 5c": {
+			"start": 645,
+			"end": 702.9413378684807,
+			"loop": false
+		},
+		"Slide 6": {
+			"start": 704,
+			"end": 712.5973469387756,
+			"loop": false
+		},
+		"Slide 7": {
+			"start": 714,
+			"end": 729.0489342403628,
+			"loop": false
+		},
+		"Slide 7a": {
+			"start": 731,
+			"end": 733.4428571428572,
+			"loop": false
+		},
+		"Slide 7b": {
+			"start": 735,
+			"end": 737,
+			"loop": false
+		},
+		"Slide 7c": {
+			"start": 738,
+			"end": 739.101156462585,
+			"loop": false
+		},
+		"Slide 7d": {
+			"start": 741,
+			"end": 742.524671201814,
+			"loop": false
+		},
+		"Slide 7e": {
+			"start": 744,
+			"end": 747.5293197278911,
+			"loop": false
+		},
+		"Slide 7f": {
+			"start": 749,
+			"end": 750.9763945578231,
+			"loop": false
+		},
+		"Slide 7g": {
+			"start": 752,
+			"end": 753.3552607709751,
+			"loop": false
+		},
+		"Slide 7h": {
+			"start": 755,
+			"end": 756.4117006802721,
+			"loop": false
+		},
+		"Slide 7i": {
+			"start": 758,
+			"end": 758.875260770975,
+			"loop": false
+		},
+		"Slide 8": {
+			"start": 760,
+			"end": 795.5893197278912,
+			"loop": false
+		},
+		"Slide 9": {
+			"start": 797,
+			"end": 813.0080045351474,
+			"loop": false
+		}
+	}
+}

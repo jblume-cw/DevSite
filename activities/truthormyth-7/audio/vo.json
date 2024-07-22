@@ -1,0 +1,133 @@
+{
+	"resources": [
+		"output/hm7-truthormyth/vo.ogg",
+		"output/hm7-truthormyth/vo.m4a"
+	],
+	"spritemap": {
+		"Slide 1": {
+			"start": 0,
+			"end": 11.21795918367347,
+			"loop": false
+		},
+		"Slide 10": {
+			"start": 13,
+			"end": 26.535396825396823,
+			"loop": false
+		},
+		"Slide 11": {
+			"start": 28,
+			"end": 37.15680272108844,
+			"loop": false
+		},
+		"Slide 2 Myth": {
+			"start": 39,
+			"end": 52.4677097505669,
+			"loop": false
+		},
+		"Slide 2 Truth": {
+			"start": 54,
+			"end": 68.78478458049887,
+			"loop": false
+		},
+		"Slide 2": {
+			"start": 70,
+			"end": 73.80657596371881,
+			"loop": false
+		},
+		"Slide 3 Myth": {
+			"start": 75,
+			"end": 85.22390022675737,
+			"loop": false
+		},
+		"Slide 3 Truth": {
+			"start": 87,
+			"end": 95.7942857142857,
+			"loop": false
+		},
+		"Slide 3": {
+			"start": 97,
+			"end": 103.05482993197279,
+			"loop": false
+		},
+		"Slide 4 Myth": {
+			"start": 105,
+			"end": 111.26240362811791,
+			"loop": false
+		},
+		"Slide 4 Truth": {
+			"start": 113,
+			"end": 120.07519274376418,
+			"loop": false
+		},
+		"Slide 4": {
+			"start": 122,
+			"end": 125.99367346938776,
+			"loop": false
+		},
+		"Slide 5 Myth": {
+			"start": 127,
+			"end": 143.49512471655328,
+			"loop": false
+		},
+		"Slide 5 Truth": {
+			"start": 145,
+			"end": 161.18956916099773,
+			"loop": false
+		},
+		"Slide 5": {
+			"start": 163,
+			"end": 167.22172335600908,
+			"loop": false
+		},
+		"Slide 6 Myth": {
+			"start": 169,
+			"end": 182.0919954648526,
+			"loop": false
+		},
+		"Slide 6 Truth": {
+			"start": 184,
+			"end": 196.41374149659865,
+			"loop": false
+		},
+		"Slide 6": {
+			"start": 198,
+			"end": 205.18625850340135,
+			"loop": false
+		},
+		"Slide 7 Myth": {
+			"start": 207,
+			"end": 217.49873015873015,
+			"loop": false
+		},
+		"Slide 7 Truth": {
+			"start": 219,
+			"end": 230.09809523809523,
+			"loop": false
+		},
+		"Slide 7": {
+			"start": 232,
+			"end": 235.1809523809524,
+			"loop": false
+		},
+		"Slide 8 Myth": {
+			"start": 237,
+			"end": 241.7947619047619,
+			"loop": false
+		},
+		"Slide 8 Truth": {
+			"start": 243,
+			"end": 247.53748299319727,
+			"loop": false
+		},
+		"Slide 8": {
+			"start": 249,
+			"end": 253.08138321995466,
+			"loop": false
+		},
+		"Slide 9": {
+			"start": 255,
+			"end": 269.19419501133785,
+			"loop": false
+		}
+	}
+}

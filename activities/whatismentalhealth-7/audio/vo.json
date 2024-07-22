@@ -1,0 +1,143 @@
+{
+	"resources": [
+		"output/hm7-whatismentalhealth/vo.ogg",
+		"output/hm7-whatismentalhealth/vo.m4a"
+	],
+	"spritemap": {
+		"Slide 11": {
+			"start": 0,
+			"end": 18.570680272108845,
+			"loop": false
+		},
+		"Slide 12": {
+			"start": 20,
+			"end": 45.838684807256236,
+			"loop": false
+		},
+		"Slide 2": {
+			"start": 47,
+			"end": 88.04535147392289,
+			"loop": false
+		},
+		"Slide 3 coping": {
+			"start": 90,
+			"end": 107.25598639455782,
+			"loop": false
+		},
+		"Slide 3 downtime": {
+			"start": 109,
+			"end": 122.14133786848072,
+			"loop": false
+		},
+		"Slide 3 intro": {
+			"start": 124,
+			"end": 135.30133786848072,
+			"loop": false
+		},
+		"Slide 3 physical activity": {
+			"start": 137,
+			"end": 151.57598639455782,
+			"loop": false
+		},
+		"Slide 3 sleep": {
+			"start": 153,
+			"end": 177.19734693877552,
+			"loop": false
+		},
+		"Slide 3 social media": {
+			"start": 179,
+			"end": 200.52,
+			"loop": false
+		},
+		"Slide 3 Stay connected": {
+			"start": 202,
+			"end": 233.83201814058958,
+			"loop": false
+		},
+		"Slide 4": {
+			"start": 235,
+			"end": 271.0213378684807,
+			"loop": false
+		},
+		"Slide 5 negative": {
+			"start": 273,
+			"end": 275.10401360544216,
+			"loop": false
+		},
+		"Slide 5 positive": {
+			"start": 277,
+			"end": 281.9253514739229,
+			"loop": false
+		},
+		"Slide 5": {
+			"start": 283,
+			"end": 297.0959863945578,
+			"loop": false
+		},
+		"Slide 6 negative": {
+			"start": 299,
+			"end": 302.53068027210884,
+			"loop": false
+		},
+		"Slide 6 positive": {
+			"start": 304,
+			"end": 309.18666666666667,
+			"loop": false
+		},
+		"Slide 6": {
+			"start": 311,
+			"end": 312.1280045351474,
+			"loop": false
+		},
+		"Slide 6a": {
+			"start": 314,
+			"end": 315.1840136054422,
+			"loop": false
+		},
+		"Slide 7 negative": {
+			"start": 317,
+			"end": 321.46931972789116,
+			"loop": false
+		},
+		"Slide 7 positive": {
+			"start": 323,
+			"end": 326.3680045351474,
+			"loop": false
+		},
+		"Slide 7": {
+			"start": 328,
+			"end": 328.89068027210885,
+			"loop": false
+		},
+		"Slide 8 negative": {
+			"start": 330,
+			"end": 334.57598639455784,
+			"loop": false
+		},
+		"Slide 8 positive": {
+			"start": 336,
+			"end": 339.2640136054422,
+			"loop": false
+		},
+		"Slide 8": {
+			"start": 341,
+			"end": 342.9066666666667,
+			"loop": false
+		},
+		"Slide 9 negative": {
+			"start": 344,
+			"end": 348.57598639455784,
+			"loop": false
+		},
+		"Slide 9 positive": {
+			"start": 350,
+			"end": 354.3626530612245,
+			"loop": false
+		},
+		"Slide 9": {
+			"start": 356,
+			"end": 357.1759863945578,
+			"loop": false
+		}
+	}
+}

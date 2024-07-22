@@ -1,0 +1,218 @@
+{
+	"resources": [
+		"output/hm7-youbethejudge/vo.ogg",
+		"output/hm7-youbethejudge/vo.m4a"
+	],
+	"spritemap": {
+		"end 0-2": {
+			"start": 0,
+			"end": 4.565351473922902,
+			"loop": false
+		},
+		"end 3": {
+			"start": 6,
+			"end": 8.368004535147392,
+			"loop": false
+		},
+		"end 4": {
+			"start": 10,
+			"end": 13.79734693877551,
+			"loop": false
+		},
+		"end 5": {
+			"start": 15,
+			"end": 18.674671201814057,
+			"loop": false
+		},
+		"end intro": {
+			"start": 20,
+			"end": 25.66308390022676,
+			"loop": false
+		},
+		"end outro": {
+			"start": 27,
+			"end": 31.797709750566895,
+			"loop": false
+		},
+		"end recap": {
+			"start": 33,
+			"end": 53.659546485260776,
+			"loop": false
+		},
+		"exhibit a correct": {
+			"start": 55,
+			"end": 69.43104308390022,
+			"loop": false
+		},
+		"exhibit a explanation": {
+			"start": 71,
+			"end": 80.09333333333333,
+			"loop": false
+		},
+		"exhibit a incorrect": {
+			"start": 82,
+			"end": 95.18555555555555,
+			"loop": false
+		},
+		"exhibit a question": {
+			"start": 97,
+			"end": 100.01718820861677,
+			"loop": false
+		},
+		"exhibit b correct": {
+			"start": 102,
+			"end": 128.99385487528343,
+			"loop": false
+		},
+		"exhibit b explanation": {
+			"start": 130,
+			"end": 147.59201814058957,
+			"loop": false
+		},
+		"exhibit b incorrect": {
+			"start": 149,
+			"end": 175.94707482993198,
+			"loop": false
+		},
+		"exhibit b question": {
+			"start": 177,
+			"end": 180.30954648526077,
+			"loop": false
+		},
+		"exhibit c correct": {
+			"start": 182,
+			"end": 192.81156462585034,
+			"loop": false
+		},
+		"exhibit c explanation": {
+			"start": 194,
+			"end": 202.38133786848073,
+			"loop": false
+		},
+		"exhibit c incorrect": {
+			"start": 204,
+			"end": 213.93743764172336,
+			"loop": false
+		},
+		"exhibit c question": {
+			"start": 215,
+			"end": 218.040589569161,
+			"loop": false
+		},
+		"exhibit d correct": {
+			"start": 220,
+			"end": 229.14802721088435,
+			"loop": false
+		},
+		"exhibit d explanation": {
+			"start": 231,
+			"end": 243.6026530612245,
+			"loop": false
+		},
+		"exhibit d incorrect": {
+			"start": 245,
+			"end": 253.57061224489797,
+			"loop": false
+		},
+		"exhibit d question": {
+			"start": 255,
+			"end": 258.06979591836733,
+			"loop": false
+		},
+		"exhibit e conclusion": {
+			"start": 260,
+			"end": 264.7947619047619,
+			"loop": false
+		},
+		"exhibit e correct": {
+			"start": 266,
+			"end": 275.3029931972789,
+			"loop": false
+		},
+		"exhibit e explanation": {
+			"start": 277,
+			"end": 293.8626530612245,
+			"loop": false
+		},
+		"exhibit e incorrect": {
+			"start": 295,
+			"end": 307.1213605442177,
+			"loop": false
+		},
+		"exhibit e question": {
+			"start": 309,
+			"end": 312.043514739229,
+			"loop": false
+		},
+		"introduction": {
+			"start": 314,
+			"end": 338.1900907029478,
+			"loop": false
+		},
+		"meeting 1": {
+			"start": 340,
+			"end": 394.7733333333333,
+			"loop": false
+		},
+		"meeting 2": {
+			"start": 396,
+			"end": 419.42401360544216,
+			"loop": false
+		},
+		"meeting 3": {
+			"start": 421,
+			"end": 449.0480045351474,
+			"loop": false
+		},
+		"meeting 4": {
+			"start": 451,
+			"end": 473.9013378684807,
+			"loop": false
+		},
+		"meeting 4alt": {
+			"start": 475,
+			"end": 497.9013378684807,
+			"loop": false
+		},
+		"meeting 5": {
+			"start": 499,
+			"end": 515.8773469387755,
+			"loop": false
+		},
+		"meeting 6": {
+			"start": 517,
+			"end": 583.9546712018141,
+			"loop": false
+		},
+		"meeting 7": {
+			"start": 585,
+			"end": 600.7973469387755,
+			"loop": false
+		},
+		"meeting 8": {
+			"start": 602,
+			"end": 614.3413378684808,
+			"loop": false
+		},
+		"meeting 8alt": {
+			"start": 616,
+			"end": 627.8080045351473,
+			"loop": false
+		},
+		"meeting 9": {
+			"start": 629,
+			"end": 647.7520181405896,
+			"loop": false
+		},
+		"splash": {
+			"start": 649,
+			"end": 650.0466666666666,
+			"loop": false
+		},
+		"trial introduction": {
+			"start": 652,
+			"end": 666.1211111111111,
+			"loop": false
+		}
+	}
+}
