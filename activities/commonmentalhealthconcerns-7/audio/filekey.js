@@ -1,8 +1,0 @@
-export const FileKey = {
-	"captions": "vo-captions.js",
-	"spritemap": "vo.json",
-	"audio": [
-		"vo.ogg",
-		"vo.m4a"
-	]
-}
