@@ -1,0 +1,1543 @@
+{
+	"textures": [
+		{
+			"image": "sprites-0.png",
+			"format": "RGBA8888",
+			"size": {
+				"w": 2045,
+				"h": 2018
+			},
+			"scale": 1,
+			"frames": [
+				{
+					"filename": "game-bg.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 1024,
+						"h": 768
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 1024,
+						"h": 768
+					},
+					"frame": {
+						"x": 1,
+						"y": 1,
+						"w": 1024,
+						"h": 768
+					}
+				},
+				{
+					"filename": "splash-bg.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 1024,
+						"h": 768
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 1024,
+						"h": 768
+					},
+					"frame": {
+						"x": 1,
+						"y": 771,
+						"w": 1024,
+						"h": 768
+					}
+				},
+				{
+					"filename": "question-overlay.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 710,
+						"h": 777
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 710,
+						"h": 777
+					},
+					"frame": {
+						"x": 1027,
+						"y": 1,
+						"w": 710,
+						"h": 777
+					}
+				},
+				{
+					"filename": "list-overlay.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 400,
+						"h": 544
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 400,
+						"h": 544
+					},
+					"frame": {
+						"x": 1027,
+						"y": 780,
+						"w": 400,
+						"h": 544
+					}
+				},
+				{
+					"filename": "spinner-over.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 305,
+						"h": 306
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 305,
+						"h": 306
+					},
+					"frame": {
+						"x": 1739,
+						"y": 1,
+						"w": 305,
+						"h": 306
+					}
+				},
+				{
+					"filename": "spinner-up.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 305,
+						"h": 306
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 305,
+						"h": 306
+					},
+					"frame": {
+						"x": 1739,
+						"y": 309,
+						"w": 305,
+						"h": 306
+					}
+				},
+				{
+					"filename": "salad.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 468,
+						"h": 381
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 468,
+						"h": 381
+					},
+					"frame": {
+						"x": 1,
+						"y": 1541,
+						"w": 468,
+						"h": 381
+					}
+				},
+				{
+					"filename": "fore-carrots-dirt.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 646,
+						"h": 100
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 646,
+						"h": 100
+					},
+					"frame": {
+						"x": 471,
+						"y": 1541,
+						"w": 646,
+						"h": 100
+					}
+				},
+				{
+					"filename": "spinner-back.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 300,
+						"h": 300
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 300,
+						"h": 300
+					},
+					"frame": {
+						"x": 1429,
+						"y": 780,
+						"w": 300,
+						"h": 300
+					}
+				},
+				{
+					"filename": "option-over.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 240,
+						"h": 300
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 240,
+						"h": 300
+					},
+					"frame": {
+						"x": 471,
+						"y": 1643,
+						"w": 240,
+						"h": 300
+					}
+				},
+				{
+					"filename": "option-up.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 239,
+						"h": 300
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 239,
+						"h": 300
+					},
+					"frame": {
+						"x": 713,
+						"y": 1643,
+						"w": 239,
+						"h": 300
+					}
+				},
+				{
+					"filename": "q-devonte-calm-low.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 207,
+						"h": 270
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 207,
+						"h": 270
+					},
+					"frame": {
+						"x": 1429,
+						"y": 1082,
+						"w": 207,
+						"h": 270
+					}
+				},
+				{
+					"filename": "q-devonte-calm.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 207,
+						"h": 270
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 207,
+						"h": 270
+					},
+					"frame": {
+						"x": 954,
+						"y": 1643,
+						"w": 207,
+						"h": 270
+					}
+				},
+				{
+					"filename": "lettuce-disabled.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 211,
+						"h": 198
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 211,
+						"h": 198
+					},
+					"frame": {
+						"x": 1027,
+						"y": 1326,
+						"w": 211,
+						"h": 198
+					}
+				},
+				{
+					"filename": "q-devonte-sad-playground.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 207,
+						"h": 270
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 207,
+						"h": 270
+					},
+					"frame": {
+						"x": 1739,
+						"y": 617,
+						"w": 207,
+						"h": 270
+					}
+				},
+				{
+					"filename": "q-devonte-scared.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 207,
+						"h": 270
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 207,
+						"h": 270
+					},
+					"frame": {
+						"x": 1731,
+						"y": 889,
+						"w": 207,
+						"h": 270
+					}
+				},
+				{
+					"filename": "q-devonte-snack.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 207,
+						"h": 270
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 207,
+						"h": 270
+					},
+					"frame": {
+						"x": 1638,
+						"y": 1161,
+						"w": 207,
+						"h": 270
+					}
+				},
+				{
+					"filename": "pointer.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 182,
+						"h": 123
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 182,
+						"h": 123
+					},
+					"frame": {
+						"x": 1240,
+						"y": 1326,
+						"w": 182,
+						"h": 123
+					}
+				},
+				{
+					"filename": "q-miguel-adult.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 207,
+						"h": 270
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 207,
+						"h": 270
+					},
+					"frame": {
+						"x": 1424,
+						"y": 1354,
+						"w": 207,
+						"h": 270
+					}
+				},
+				{
+					"filename": "q-miguel-bump-devonte.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 207,
+						"h": 270
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 207,
+						"h": 270
+					},
+					"frame": {
+						"x": 1633,
+						"y": 1433,
+						"w": 207,
+						"h": 270
+					}
+				},
+				{
+					"filename": "play-over.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 195,
+						"h": 195
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 195,
+						"h": 195
+					},
+					"frame": {
+						"x": 1847,
+						"y": 1161,
+						"w": 195,
+						"h": 195
+					}
+				},
+				{
+					"filename": "fore-tomato-leaves.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 92,
+						"h": 191
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 92,
+						"h": 191
+					},
+					"frame": {
+						"x": 1948,
+						"y": 617,
+						"w": 92,
+						"h": 191
+					}
+				},
+				{
+					"filename": "dirt-fore.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 234,
+						"h": 42
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 234,
+						"h": 42
+					},
+					"frame": {
+						"x": 1,
+						"y": 1924,
+						"w": 234,
+						"h": 42
+					}
+				},
+				{
+					"filename": "q-miguel-devonte-lunch.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 207,
+						"h": 270
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 207,
+						"h": 270
+					},
+					"frame": {
+						"x": 1163,
+						"y": 1626,
+						"w": 207,
+						"h": 270
+					}
+				},
+				{
+					"filename": "q-miguel-happy.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 207,
+						"h": 270
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 207,
+						"h": 270
+					},
+					"frame": {
+						"x": 1372,
+						"y": 1626,
+						"w": 207,
+						"h": 270
+					}
+				},
+				{
+					"filename": "q-miguel-slide.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 207,
+						"h": 270
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 207,
+						"h": 270
+					},
+					"frame": {
+						"x": 1581,
+						"y": 1705,
+						"w": 207,
+						"h": 270
+					}
+				},
+				{
+					"filename": "q-miguel-steps-sad-low.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 207,
+						"h": 270
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 207,
+						"h": 270
+					},
+					"frame": {
+						"x": 1790,
+						"y": 1705,
+						"w": 207,
+						"h": 270
+					}
+				},
+				{
+					"filename": "arrow-over.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 150,
+						"h": 150
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 150,
+						"h": 150
+					},
+					"frame": {
+						"x": 1240,
+						"y": 1451,
+						"w": 150,
+						"h": 150
+					}
+				},
+				{
+					"filename": "arrow-up.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 150,
+						"h": 150
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 150,
+						"h": 150
+					},
+					"frame": {
+						"x": 1847,
+						"y": 1358,
+						"w": 150,
+						"h": 150
+					}
+				},
+				{
+					"filename": "carrot-disabled.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 112,
+						"h": 182
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 112,
+						"h": 182
+					},
+					"frame": {
+						"x": 1842,
+						"y": 1510,
+						"w": 112,
+						"h": 182
+					}
+				},
+				{
+					"filename": "fore-lettuce-dirt-2.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 149,
+						"h": 46
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 149,
+						"h": 46
+					},
+					"frame": {
+						"x": 1,
+						"y": 1968,
+						"w": 149,
+						"h": 46
+					}
+				},
+				{
+					"filename": "fore-lettuce-dirt-1.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 127,
+						"h": 64
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 127,
+						"h": 64
+					},
+					"frame": {
+						"x": 237,
+						"y": 1924,
+						"w": 127,
+						"h": 64
+					}
+				},
+				{
+					"filename": "fore-lettuce-dirt-3.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 103,
+						"h": 58
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 103,
+						"h": 58
+					},
+					"frame": {
+						"x": 366,
+						"y": 1924,
+						"w": 103,
+						"h": 58
+					}
+				},
+				{
+					"filename": "pepper-disabled.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 78,
+						"h": 89
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 78,
+						"h": 89
+					},
+					"frame": {
+						"x": 1948,
+						"y": 810,
+						"w": 78,
+						"h": 89
+					}
+				},
+				{
+					"filename": "pepper-over.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 78,
+						"h": 89
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 78,
+						"h": 89
+					},
+					"frame": {
+						"x": 1940,
+						"y": 901,
+						"w": 78,
+						"h": 89
+					}
+				},
+				{
+					"filename": "pepper-up.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 78,
+						"h": 89
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 78,
+						"h": 89
+					},
+					"frame": {
+						"x": 1940,
+						"y": 992,
+						"w": 78,
+						"h": 89
+					}
+				},
+				{
+					"filename": "tomato-disabled.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 77,
+						"h": 73
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 77,
+						"h": 73
+					},
+					"frame": {
+						"x": 1638,
+						"y": 1082,
+						"w": 77,
+						"h": 73
+					}
+				},
+				{
+					"filename": "tomato-over.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 77,
+						"h": 73
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 77,
+						"h": 73
+					},
+					"frame": {
+						"x": 1940,
+						"y": 1083,
+						"w": 77,
+						"h": 73
+					}
+				},
+				{
+					"filename": "tomato-up.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 77,
+						"h": 73
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 77,
+						"h": 73
+					},
+					"frame": {
+						"x": 1119,
+						"y": 1526,
+						"w": 77,
+						"h": 73
+					}
+				},
+				{
+					"filename": "fore-pepper-leaves.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 114,
+						"h": 119
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 114,
+						"h": 119
+					},
+					"frame": {
+						"x": 1163,
+						"y": 1898,
+						"w": 114,
+						"h": 119
+					}
+				},
+				{
+					"filename": "spinner-wildcard.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 68,
+						"h": 68
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 68,
+						"h": 68
+					},
+					"frame": {
+						"x": 1279,
+						"y": 1898,
+						"w": 68,
+						"h": 68
+					}
+				},
+				{
+					"filename": "spinner-lettuce.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 55,
+						"h": 55
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 55,
+						"h": 55
+					},
+					"frame": {
+						"x": 1349,
+						"y": 1898,
+						"w": 55,
+						"h": 55
+					}
+				},
+				{
+					"filename": "spinner-tomato.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 53,
+						"h": 49
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 53,
+						"h": 49
+					},
+					"frame": {
+						"x": 1279,
+						"y": 1968,
+						"w": 53,
+						"h": 49
+					}
+				},
+				{
+					"filename": "spinner-pepper.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 43,
+						"h": 56
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 43,
+						"h": 56
+					},
+					"frame": {
+						"x": 1581,
+						"y": 1626,
+						"w": 43,
+						"h": 56
+					}
+				},
+				{
+					"filename": "spinner-carrot.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 34,
+						"h": 60
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 34,
+						"h": 60
+					},
+					"frame": {
+						"x": 1999,
+						"y": 1358,
+						"w": 34,
+						"h": 60
+					}
+				},
+				{
+					"filename": "fore-tomato-dirt.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 50,
+						"h": 21
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 50,
+						"h": 21
+					},
+					"frame": {
+						"x": 152,
+						"y": 1968,
+						"w": 50,
+						"h": 21
+					}
+				},
+				{
+					"filename": "fore-pepper-dirt.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 38,
+						"h": 10
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 38,
+						"h": 10
+					},
+					"frame": {
+						"x": 1956,
+						"y": 1510,
+						"w": 38,
+						"h": 10
+					}
+				}
+			]
+		},
+		{
+			"image": "sprites-1.png",
+			"format": "RGBA8888",
+			"size": {
+				"w": 1463,
+				"h": 1000
+			},
+			"scale": 1,
+			"frames": [
+				{
+					"filename": "q-miguel-steps-sad.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 207,
+						"h": 270
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 207,
+						"h": 270
+					},
+					"frame": {
+						"x": 1,
+						"y": 1,
+						"w": 207,
+						"h": 270
+					}
+				},
+				{
+					"filename": "q-playground.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 207,
+						"h": 270
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 207,
+						"h": 270
+					},
+					"frame": {
+						"x": 1,
+						"y": 273,
+						"w": 207,
+						"h": 270
+					}
+				},
+				{
+					"filename": "q-playing-game.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 207,
+						"h": 270
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 207,
+						"h": 270
+					},
+					"frame": {
+						"x": 1,
+						"y": 545,
+						"w": 207,
+						"h": 270
+					}
+				},
+				{
+					"filename": "carrot-over.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 112,
+						"h": 182
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 112,
+						"h": 182
+					},
+					"frame": {
+						"x": 1,
+						"y": 817,
+						"w": 112,
+						"h": 182
+					}
+				},
+				{
+					"filename": "carrot-up.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 112,
+						"h": 182
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 112,
+						"h": 182
+					},
+					"frame": {
+						"x": 115,
+						"y": 817,
+						"w": 112,
+						"h": 182
+					}
+				},
+				{
+					"filename": "q-quinn-angry-low.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 207,
+						"h": 270
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 207,
+						"h": 270
+					},
+					"frame": {
+						"x": 210,
+						"y": 1,
+						"w": 207,
+						"h": 270
+					}
+				},
+				{
+					"filename": "q-quinn-angry.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 207,
+						"h": 270
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 207,
+						"h": 270
+					},
+					"frame": {
+						"x": 210,
+						"y": 273,
+						"w": 207,
+						"h": 270
+					}
+				},
+				{
+					"filename": "q-quinn-calm.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 207,
+						"h": 270
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 207,
+						"h": 270
+					},
+					"frame": {
+						"x": 210,
+						"y": 545,
+						"w": 207,
+						"h": 270
+					}
+				},
+				{
+					"filename": "spinner-arrow.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 155,
+						"h": 130
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 155,
+						"h": 130
+					},
+					"frame": {
+						"x": 229,
+						"y": 817,
+						"w": 155,
+						"h": 130
+					}
+				},
+				{
+					"filename": "q-quinn-confused.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 207,
+						"h": 270
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 207,
+						"h": 270
+					},
+					"frame": {
+						"x": 419,
+						"y": 1,
+						"w": 207,
+						"h": 270
+					}
+				},
+				{
+					"filename": "q-quinn-jacks.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 207,
+						"h": 270
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 207,
+						"h": 270
+					},
+					"frame": {
+						"x": 419,
+						"y": 273,
+						"w": 207,
+						"h": 270
+					}
+				},
+				{
+					"filename": "q-quinn-mess.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 207,
+						"h": 270
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 207,
+						"h": 270
+					},
+					"frame": {
+						"x": 419,
+						"y": 545,
+						"w": 207,
+						"h": 270
+					}
+				},
+				{
+					"filename": "q-quinn-mom.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 207,
+						"h": 270
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 207,
+						"h": 270
+					},
+					"frame": {
+						"x": 628,
+						"y": 1,
+						"w": 207,
+						"h": 270
+					}
+				},
+				{
+					"filename": "q-quinn-scream.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 207,
+						"h": 270
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 207,
+						"h": 270
+					},
+					"frame": {
+						"x": 628,
+						"y": 273,
+						"w": 207,
+						"h": 270
+					}
+				},
+				{
+					"filename": "q-quinn-soccer.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 207,
+						"h": 270
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 207,
+						"h": 270
+					},
+					"frame": {
+						"x": 628,
+						"y": 545,
+						"w": 207,
+						"h": 270
+					}
+				},
+				{
+					"filename": "q-quinn-talk-zoe.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 207,
+						"h": 270
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 207,
+						"h": 270
+					},
+					"frame": {
+						"x": 837,
+						"y": 1,
+						"w": 207,
+						"h": 270
+					}
+				},
+				{
+					"filename": "q-quinn-yell-zoe.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 207,
+						"h": 270
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 207,
+						"h": 270
+					},
+					"frame": {
+						"x": 1046,
+						"y": 1,
+						"w": 207,
+						"h": 270
+					}
+				},
+				{
+					"filename": "q-quinn-zoe-marker.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 207,
+						"h": 270
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 207,
+						"h": 270
+					},
+					"frame": {
+						"x": 1255,
+						"y": 1,
+						"w": 207,
+						"h": 270
+					}
+				},
+				{
+					"filename": "q-zoe-angry.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 207,
+						"h": 270
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 207,
+						"h": 270
+					},
+					"frame": {
+						"x": 837,
+						"y": 273,
+						"w": 207,
+						"h": 270
+					}
+				},
+				{
+					"filename": "q-zoe-excited.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 207,
+						"h": 270
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 207,
+						"h": 270
+					},
+					"frame": {
+						"x": 837,
+						"y": 545,
+						"w": 207,
+						"h": 270
+					}
+				},
+				{
+					"filename": "q-zoe-talk-dad-kneel.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 207,
+						"h": 270
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 207,
+						"h": 270
+					},
+					"frame": {
+						"x": 1046,
+						"y": 273,
+						"w": 207,
+						"h": 270
+					}
+				},
+				{
+					"filename": "q-zoe-talk-dad.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 207,
+						"h": 270
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 207,
+						"h": 270
+					},
+					"frame": {
+						"x": 1255,
+						"y": 273,
+						"w": 207,
+						"h": 270
+					}
+				},
+				{
+					"filename": "lettuce-over.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 211,
+						"h": 198
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 211,
+						"h": 198
+					},
+					"frame": {
+						"x": 1046,
+						"y": 545,
+						"w": 211,
+						"h": 198
+					}
+				},
+				{
+					"filename": "play-up.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 195,
+						"h": 195
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 195,
+						"h": 195
+					},
+					"frame": {
+						"x": 1259,
+						"y": 545,
+						"w": 195,
+						"h": 195
+					}
+				},
+				{
+					"filename": "lettuce-up.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 211,
+						"h": 198
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 211,
+						"h": 198
+					},
+					"frame": {
+						"x": 1046,
+						"y": 745,
+						"w": 211,
+						"h": 198
+					}
+				}
+			]
+		}
+	],
+	"meta": {
+		"app": "https://www.codeandweb.com/texturepacker",
+		"version": "3.0",
+		"smartupdate": "$TexturePacker:SmartUpdate:fdad40fea71c0f3ffe57045f76c2bc53:5b23acdfb1ac8f10152a3387cf50570d:177e0ecd2af713cf2a675df91f44ef4a$"
+	}
+}

@@ -1,0 +1,28 @@
+{
+  "resources": [
+    "output/HMKbookoffeelingssfx/sfx.ogg",
+    "output/HMKbookoffeelingssfx/sfx.m4a"
+  ],
+  "spritemap": {
+    "book-open": {
+      "start": 0,
+      "end": 0.4368707482993197,
+      "loop": false
+    },
+    "correct": {
+      "start": 1,
+      "end": 2.0555328798185943,
+      "loop": false
+    },
+    "sticker-peel": {
+      "start": 3,
+      "end": 3.5551020408163265,
+      "loop": false
+    },
+    "sticker-stick": {
+      "start": 4,
+      "end": 4.59766439909297,
+      "loop": false
+    }
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "resources": [
+    "output/HMKhealthyharvestsfx/sfx.ogg",
+    "output/HMKhealthyharvestsfx/sfx.m4a"
+  ],
+  "spritemap": {
+    "spinner": {
+      "start": 0,
+      "end": 4.159909297052154,
+      "loop": false
+    },
+    "veg-animation": {
+      "start": 5,
+      "end": 6.627142857142857,
+      "loop": false
+    },
+    "veg-pop": {
+      "start": 7,
+      "end": 7.162675736961451,
+      "loop": false
+    },
+    "win": {
+      "start": 8,
+      "end": 9.6,
+      "loop": false
+    }
+  }
+}

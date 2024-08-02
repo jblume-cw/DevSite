@@ -1,0 +1,93 @@
+{
+  "resources": [
+    "output/HMKmanagingfeelings/managingfeelings-vo.ogg",
+    "output/HMKmanagingfeelings/managingfeelings-vo.m4a"
+  ],
+  "spritemap": {
+    "silence": {
+      "start": 0,
+      "end": 1,
+      "loop": false
+    },
+    "Slide 10a": {
+      "start": 1,
+      "end": 5.384013605442177,
+      "loop": false
+    },
+    "Slide 11": {
+      "start": 6,
+      "end": 24.632403628117913,
+      "loop": false
+    },
+    "Slide 12": {
+      "start": 25,
+      "end": 40.45013605442177,
+      "loop": false
+    },
+    "Slide 13": {
+      "start": 41,
+      "end": 48,
+      "loop": false
+    },
+    "Slide 14": {
+      "start": 48,
+      "end": 70.34052154195011,
+      "loop": false
+    },
+    "Slide 2a": {
+      "start": 71,
+      "end": 79.39804988662132,
+      "loop": false
+    },
+    "Slide 2c": {
+      "start": 80,
+      "end": 84.03757369614513,
+      "loop": false
+    },
+    "Slide 2d": {
+      "start": 85,
+      "end": 118.59616780045351,
+      "loop": false
+    },
+    "Slide 3": {
+      "start": 119,
+      "end": 163.84521541950113,
+      "loop": false
+    },
+    "Slide 5": {
+      "start": 164,
+      "end": 193.2651247165533,
+      "loop": false
+    },
+    "Slide 6a": {
+      "start": 194,
+      "end": 199.18219954648526,
+      "loop": false
+    },
+    "Slide 6c": {
+      "start": 200,
+      "end": 211.03521541950113,
+      "loop": false
+    },
+    "Slide 7": {
+      "start": 212,
+      "end": 231.86133786848072,
+      "loop": false
+    },
+    "Slide 8a": {
+      "start": 232,
+      "end": 237.59308390022676,
+      "loop": false
+    },
+    "Slide 8c": {
+      "start": 238,
+      "end": 259.93625850340135,
+      "loop": false
+    },
+    "Slide 9": {
+      "start": 260,
+      "end": 288.06181405895694,
+      "loop": false
+    }
+  }
+}

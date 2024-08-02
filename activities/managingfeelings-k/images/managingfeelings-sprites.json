@@ -1,0 +1,1186 @@
+{
+	"textures": [
+		{
+			"image": "managingfeelings-sprites-0.png",
+			"format": "RGBA8888",
+			"size": {
+				"w": 2003,
+				"h": 2045
+			},
+			"scale": 1,
+			"frames": [
+				{
+					"filename": "resume-bg.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 800,
+						"h": 600
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 800,
+						"h": 600
+					},
+					"frame": {
+						"x": 1,
+						"y": 1,
+						"w": 800,
+						"h": 600
+					}
+				},
+				{
+					"filename": "bg-gold2.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 800,
+						"h": 450
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 800,
+						"h": 450
+					},
+					"frame": {
+						"x": 1,
+						"y": 603,
+						"w": 800,
+						"h": 450
+					}
+				},
+				{
+					"filename": "bg-purple.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 800,
+						"h": 450
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 800,
+						"h": 450
+					},
+					"frame": {
+						"x": 1,
+						"y": 1055,
+						"w": 800,
+						"h": 450
+					}
+				},
+				{
+					"filename": "devonte playground.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 800,
+						"h": 450
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 800,
+						"h": 450
+					},
+					"frame": {
+						"x": 1,
+						"y": 1507,
+						"w": 800,
+						"h": 450
+					}
+				},
+				{
+					"filename": "bottom-bg.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 800,
+						"h": 85
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 800,
+						"h": 85
+					},
+					"frame": {
+						"x": 1,
+						"y": 1959,
+						"w": 800,
+						"h": 85
+					}
+				},
+				{
+					"filename": "miguel overwhelmed.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 800,
+						"h": 450
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 800,
+						"h": 450
+					},
+					"frame": {
+						"x": 803,
+						"y": 1,
+						"w": 800,
+						"h": 450
+					}
+				},
+				{
+					"filename": "quinn ready.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 800,
+						"h": 450
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 800,
+						"h": 450
+					},
+					"frame": {
+						"x": 803,
+						"y": 453,
+						"w": 800,
+						"h": 450
+					}
+				},
+				{
+					"filename": "zoe playground.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 800,
+						"h": 450
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 800,
+						"h": 450
+					},
+					"frame": {
+						"x": 803,
+						"y": 905,
+						"w": 800,
+						"h": 450
+					}
+				},
+				{
+					"filename": "top-bg.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 800,
+						"h": 65
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 800,
+						"h": 65
+					},
+					"frame": {
+						"x": 803,
+						"y": 1357,
+						"w": 800,
+						"h": 65
+					}
+				},
+				{
+					"filename": "resume-box.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 473,
+						"h": 433
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 473,
+						"h": 433
+					},
+					"frame": {
+						"x": 803,
+						"y": 1424,
+						"w": 473,
+						"h": 433
+					}
+				},
+				{
+					"filename": "quinn soccer.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 399,
+						"h": 434
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 399,
+						"h": 434
+					},
+					"frame": {
+						"x": 1278,
+						"y": 1424,
+						"w": 399,
+						"h": 434
+					}
+				},
+				{
+					"filename": "start over down.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 233,
+						"h": 45
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 233,
+						"h": 45
+					},
+					"frame": {
+						"x": 803,
+						"y": 1859,
+						"w": 233,
+						"h": 45
+					}
+				},
+				{
+					"filename": "arrow.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 154,
+						"h": 106
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 154,
+						"h": 106
+					},
+					"frame": {
+						"x": 1038,
+						"y": 1859,
+						"w": 154,
+						"h": 106
+					}
+				},
+				{
+					"filename": "back disabled.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 166,
+						"h": 66
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 166,
+						"h": 66
+					},
+					"frame": {
+						"x": 803,
+						"y": 1906,
+						"w": 166,
+						"h": 66
+					}
+				},
+				{
+					"filename": "replay down.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 64,
+						"h": 64
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 64,
+						"h": 64
+					},
+					"frame": {
+						"x": 971,
+						"y": 1906,
+						"w": 64,
+						"h": 64
+					}
+				},
+				{
+					"filename": "replay over.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 64,
+						"h": 64
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 64,
+						"h": 64
+					},
+					"frame": {
+						"x": 1194,
+						"y": 1859,
+						"w": 64,
+						"h": 64
+					}
+				},
+				{
+					"filename": "start over over.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 233,
+						"h": 44
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 233,
+						"h": 44
+					},
+					"frame": {
+						"x": 1260,
+						"y": 1860,
+						"w": 233,
+						"h": 44
+					}
+				},
+				{
+					"filename": "start over up.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 233,
+						"h": 44
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 233,
+						"h": 44
+					},
+					"frame": {
+						"x": 1495,
+						"y": 1860,
+						"w": 233,
+						"h": 44
+					}
+				},
+				{
+					"filename": "continue down.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 231,
+						"h": 44
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 231,
+						"h": 44
+					},
+					"frame": {
+						"x": 1260,
+						"y": 1906,
+						"w": 231,
+						"h": 44
+					}
+				},
+				{
+					"filename": "replay up.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 64,
+						"h": 64
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 64,
+						"h": 64
+					},
+					"frame": {
+						"x": 1194,
+						"y": 1925,
+						"w": 64,
+						"h": 64
+					}
+				},
+				{
+					"filename": "back down.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 166,
+						"h": 66
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 166,
+						"h": 66
+					},
+					"frame": {
+						"x": 971,
+						"y": 1972,
+						"w": 166,
+						"h": 66
+					}
+				},
+				{
+					"filename": "back over.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 166,
+						"h": 66
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 166,
+						"h": 66
+					},
+					"frame": {
+						"x": 803,
+						"y": 1974,
+						"w": 166,
+						"h": 66
+					}
+				},
+				{
+					"filename": "continue over.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 231,
+						"h": 44
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 231,
+						"h": 44
+					},
+					"frame": {
+						"x": 1493,
+						"y": 1906,
+						"w": 231,
+						"h": 44
+					}
+				},
+				{
+					"filename": "continue up.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 231,
+						"h": 44
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 231,
+						"h": 44
+					},
+					"frame": {
+						"x": 1726,
+						"y": 1906,
+						"w": 231,
+						"h": 44
+					}
+				},
+				{
+					"filename": "back up.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 166,
+						"h": 66
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 166,
+						"h": 66
+					},
+					"frame": {
+						"x": 1260,
+						"y": 1952,
+						"w": 166,
+						"h": 66
+					}
+				},
+				{
+					"filename": "next disabled.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 166,
+						"h": 66
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 166,
+						"h": 66
+					},
+					"frame": {
+						"x": 1428,
+						"y": 1952,
+						"w": 166,
+						"h": 66
+					}
+				},
+				{
+					"filename": "next down.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 166,
+						"h": 66
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 166,
+						"h": 66
+					},
+					"frame": {
+						"x": 1596,
+						"y": 1952,
+						"w": 166,
+						"h": 66
+					}
+				},
+				{
+					"filename": "next hi down.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 166,
+						"h": 66
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 166,
+						"h": 66
+					},
+					"frame": {
+						"x": 1764,
+						"y": 1952,
+						"w": 166,
+						"h": 66
+					}
+				},
+				{
+					"filename": "poster.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 397,
+						"h": 450
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 397,
+						"h": 450
+					},
+					"frame": {
+						"x": 1605,
+						"y": 1,
+						"w": 397,
+						"h": 450
+					}
+				},
+				{
+					"filename": "dad standing.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 189,
+						"h": 450
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 189,
+						"h": 450
+					},
+					"frame": {
+						"x": 1605,
+						"y": 453,
+						"w": 189,
+						"h": 450
+					}
+				},
+				{
+					"filename": "dad kneeling.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 327,
+						"h": 417
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 327,
+						"h": 417
+					},
+					"frame": {
+						"x": 1605,
+						"y": 905,
+						"w": 327,
+						"h": 417
+					}
+				},
+				{
+					"filename": "miguel talking mom.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 307,
+						"h": 447
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 307,
+						"h": 447
+					},
+					"frame": {
+						"x": 1679,
+						"y": 1324,
+						"w": 307,
+						"h": 447
+					}
+				},
+				{
+					"filename": "miguel mom.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 151,
+						"h": 447
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 151,
+						"h": 447
+					},
+					"frame": {
+						"x": 1796,
+						"y": 453,
+						"w": 151,
+						"h": 447
+					}
+				},
+				{
+					"filename": "next hi over.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 166,
+						"h": 66
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 166,
+						"h": 66
+					},
+					"frame": {
+						"x": 1730,
+						"y": 1773,
+						"w": 166,
+						"h": 66
+					}
+				}
+			]
+		},
+		{
+			"image": "managingfeelings-sprites-1.png",
+			"format": "RGBA8888",
+			"size": {
+				"w": 1516,
+				"h": 999
+			},
+			"scale": 1,
+			"frames": [
+				{
+					"filename": "dad kneeling2.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 326,
+						"h": 416
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 326,
+						"h": 416
+					},
+					"frame": {
+						"x": 1,
+						"y": 1,
+						"w": 326,
+						"h": 416
+					}
+				},
+				{
+					"filename": "miguel-sad-down.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 300,
+						"h": 300
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 300,
+						"h": 300
+					},
+					"frame": {
+						"x": 329,
+						"y": 1,
+						"w": 300,
+						"h": 300
+					}
+				},
+				{
+					"filename": "take break.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 291,
+						"h": 347
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 291,
+						"h": 347
+					},
+					"frame": {
+						"x": 631,
+						"y": 1,
+						"w": 291,
+						"h": 347
+					}
+				},
+				{
+					"filename": "ignore.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 166,
+						"h": 340
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 166,
+						"h": 340
+					},
+					"frame": {
+						"x": 329,
+						"y": 303,
+						"w": 166,
+						"h": 340
+					}
+				},
+				{
+					"filename": "scream.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 180,
+						"h": 329
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 180,
+						"h": 329
+					},
+					"frame": {
+						"x": 1,
+						"y": 419,
+						"w": 180,
+						"h": 329
+					}
+				},
+				{
+					"filename": "miguel sad.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 141,
+						"h": 321
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 141,
+						"h": 321
+					},
+					"frame": {
+						"x": 183,
+						"y": 419,
+						"w": 141,
+						"h": 321
+					}
+				},
+				{
+					"filename": "zoe talking.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 121,
+						"h": 297
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 121,
+						"h": 297
+					},
+					"frame": {
+						"x": 497,
+						"y": 303,
+						"w": 121,
+						"h": 297
+					}
+				},
+				{
+					"filename": "miguel-sad-over.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 300,
+						"h": 300
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 300,
+						"h": 300
+					},
+					"frame": {
+						"x": 620,
+						"y": 350,
+						"w": 300,
+						"h": 300
+					}
+				},
+				{
+					"filename": "quinn btn down.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 289,
+						"h": 289
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 289,
+						"h": 289
+					},
+					"frame": {
+						"x": 326,
+						"y": 645,
+						"w": 289,
+						"h": 289
+					}
+				},
+				{
+					"filename": "zoe crying.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 121,
+						"h": 256
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 121,
+						"h": 256
+					},
+					"frame": {
+						"x": 183,
+						"y": 742,
+						"w": 121,
+						"h": 256
+					}
+				},
+				{
+					"filename": "next hi up.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 166,
+						"h": 66
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 166,
+						"h": 66
+					},
+					"frame": {
+						"x": 1,
+						"y": 750,
+						"w": 166,
+						"h": 66
+					}
+				},
+				{
+					"filename": "next over.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 166,
+						"h": 66
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 166,
+						"h": 66
+					},
+					"frame": {
+						"x": 1,
+						"y": 818,
+						"w": 166,
+						"h": 66
+					}
+				},
+				{
+					"filename": "next up.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 166,
+						"h": 66
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 166,
+						"h": 66
+					},
+					"frame": {
+						"x": 1,
+						"y": 886,
+						"w": 166,
+						"h": 66
+					}
+				},
+				{
+					"filename": "miguel-sad-up.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 300,
+						"h": 300
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 300,
+						"h": 300
+					},
+					"frame": {
+						"x": 922,
+						"y": 350,
+						"w": 300,
+						"h": 300
+					}
+				},
+				{
+					"filename": "zoe-angry-down.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 300,
+						"h": 300
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 300,
+						"h": 300
+					},
+					"frame": {
+						"x": 924,
+						"y": 1,
+						"w": 300,
+						"h": 300
+					}
+				},
+				{
+					"filename": "zoe content.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 119,
+						"h": 296
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 119,
+						"h": 296
+					},
+					"frame": {
+						"x": 1224,
+						"y": 303,
+						"w": 119,
+						"h": 296
+					}
+				},
+				{
+					"filename": "quinn btn over.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 289,
+						"h": 289
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 289,
+						"h": 289
+					},
+					"frame": {
+						"x": 1226,
+						"y": 1,
+						"w": 289,
+						"h": 289
+					}
+				},
+				{
+					"filename": "quinn btn up.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 289,
+						"h": 289
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 289,
+						"h": 289
+					},
+					"frame": {
+						"x": 1224,
+						"y": 601,
+						"w": 289,
+						"h": 289
+					}
+				},
+				{
+					"filename": "miguel talking.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 142,
+						"h": 249
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 142,
+						"h": 249
+					},
+					"frame": {
+						"x": 1345,
+						"y": 292,
+						"w": 142,
+						"h": 249
+					}
+				},
+				{
+					"filename": "zoe-angry-over.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 300,
+						"h": 300
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 300,
+						"h": 300
+					},
+					"frame": {
+						"x": 617,
+						"y": 652,
+						"w": 300,
+						"h": 300
+					}
+				},
+				{
+					"filename": "zoe-angry-up.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 300,
+						"h": 300
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 300,
+						"h": 300
+					},
+					"frame": {
+						"x": 919,
+						"y": 652,
+						"w": 300,
+						"h": 300
+					}
+				}
+			]
+		}
+	],
+	"meta": {
+		"app": "https://www.codeandweb.com/texturepacker",
+		"version": "3.0",
+		"smartupdate": "$TexturePacker:SmartUpdate:f879fb6e00ae46089c638ef9c37ee2fd:6541d022bb4d9ac2bc669deb325ed53e:51d60f7a02742951049c6f413529d726$"
+	}
+}

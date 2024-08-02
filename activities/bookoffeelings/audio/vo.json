@@ -1,0 +1,258 @@
+{
+  "resources": [
+    "output/HMKbookoffeelings/vo.ogg",
+    "output/HMKbookoffeelings/vo.m4a"
+  ],
+  "spritemap": {
+    "Angry definition": {
+      "start": 0,
+      "end": 10.13453514739229,
+      "loop": false
+    },
+    "Angry": {
+      "start": 11,
+      "end": 11.73374149659864,
+      "loop": false
+    },
+    "Calm definition": {
+      "start": 12,
+      "end": 19.79952380952381,
+      "loop": false
+    },
+    "Calm": {
+      "start": 20,
+      "end": 20.687619047619048,
+      "loop": false
+    },
+    "Click arrow direction": {
+      "start": 21,
+      "end": 24.396099773242632,
+      "loop": false
+    },
+    "Continue direction": {
+      "start": 25,
+      "end": 27.24519274376417,
+      "loop": false
+    },
+    "Correct devonte disappointed": {
+      "start": 28,
+      "end": 33.30795918367347,
+      "loop": false
+    },
+    "Correct devonte frustrated": {
+      "start": 34,
+      "end": 39.08156462585034,
+      "loop": false
+    },
+    "Correct miguel angry": {
+      "start": 40,
+      "end": 44.939024943310656,
+      "loop": false
+    },
+    "Correct miguel happy": {
+      "start": 45,
+      "end": 49.62875283446712,
+      "loop": false
+    },
+    "Correct quinn calm": {
+      "start": 50,
+      "end": 55.11512471655329,
+      "loop": false
+    },
+    "Correct quinn excited": {
+      "start": 56,
+      "end": 60.84734693877551,
+      "loop": false
+    },
+    "Correct zoe sad": {
+      "start": 61,
+      "end": 66.03963718820862,
+      "loop": false
+    },
+    "Correct zoe scared": {
+      "start": 67,
+      "end": 72.21573696145124,
+      "loop": false
+    },
+    "Correction body and face": {
+      "start": 73,
+      "end": 78.22621315192744,
+      "loop": false
+    },
+    "Correction body devonte disappointed": {
+      "start": 79,
+      "end": 85.17167800453515,
+      "loop": false
+    },
+    "Correction body devonte frustrated": {
+      "start": 86,
+      "end": 92.1507029478458,
+      "loop": false
+    },
+    "Correction body miguel angry": {
+      "start": 93,
+      "end": 98.47566893424036,
+      "loop": false
+    },
+    "Correction body miguel happy": {
+      "start": 99,
+      "end": 105.07104308390022,
+      "loop": false
+    },
+    "Correction body quinn calm": {
+      "start": 106,
+      "end": 111.58469387755102,
+      "loop": false
+    },
+    "Correction body quinn excited": {
+      "start": 112,
+      "end": 117.6014739229025,
+      "loop": false
+    },
+    "Correction body zoe sad": {
+      "start": 118,
+      "end": 123.66018140589568,
+      "loop": false
+    },
+    "Correction body zoe scared": {
+      "start": 124,
+      "end": 130.3309977324263,
+      "loop": false
+    },
+    "Correction face devonte disappointed": {
+      "start": 131,
+      "end": 136.9284807256236,
+      "loop": false
+    },
+    "Correction face devonte frustrated": {
+      "start": 137,
+      "end": 143.67480725623582,
+      "loop": false
+    },
+    "Correction face miguel angry": {
+      "start": 144,
+      "end": 150.00394557823128,
+      "loop": false
+    },
+    "Correction face miguel happy": {
+      "start": 151,
+      "end": 156.87818594104309,
+      "loop": false
+    },
+    "Correction face quinn calm": {
+      "start": 157,
+      "end": 162.75240362811792,
+      "loop": false
+    },
+    "Correction face quinn excited": {
+      "start": 163,
+      "end": 168.6014739229025,
+      "loop": false
+    },
+    "Correction face zoe sad": {
+      "start": 169,
+      "end": 174.69367346938776,
+      "loop": false
+    },
+    "Correction face zoe scared": {
+      "start": 175,
+      "end": 181.03750566893424,
+      "loop": false
+    },
+    "Correction no body or face": {
+      "start": 182,
+      "end": 185.92854875283447,
+      "loop": false
+    },
+    "Correction no body": {
+      "start": 186,
+      "end": 189.2556462585034,
+      "loop": false
+    },
+    "Correction no face": {
+      "start": 190,
+      "end": 193.11938775510205,
+      "loop": false
+    },
+    "Disappointed definition": {
+      "start": 194,
+      "end": 201.06367346938777,
+      "loop": false
+    },
+    "Disappointed": {
+      "start": 202,
+      "end": 202.9328798185941,
+      "loop": false
+    },
+    "Excited definition": {
+      "start": 203,
+      "end": 211.31521541950113,
+      "loop": false
+    },
+    "Excited": {
+      "start": 212,
+      "end": 212.9224036281179,
+      "loop": false
+    },
+    "Frustrated definition": {
+      "start": 213,
+      "end": 222.38854875283448,
+      "loop": false
+    },
+    "Frustrated": {
+      "start": 223,
+      "end": 223.93079365079365,
+      "loop": false
+    },
+    "Happy definition": {
+      "start": 224,
+      "end": 230.24820861678003,
+      "loop": false
+    },
+    "Happy": {
+      "start": 231,
+      "end": 231.69598639455782,
+      "loop": false
+    },
+    "Instructions": {
+      "start": 232,
+      "end": 241.89269841269842,
+      "loop": false
+    },
+    "Place sticker direction": {
+      "start": 242,
+      "end": 245.09002267573698,
+      "loop": false
+    },
+    "Sad definition": {
+      "start": 246,
+      "end": 255.54367346938776,
+      "loop": false
+    },
+    "Sad": {
+      "start": 256,
+      "end": 256.754693877551,
+      "loop": false
+    },
+    "Scared definition": {
+      "start": 257,
+      "end": 265.54580498866216,
+      "loop": false
+    },
+    "Scared": {
+      "start": 266,
+      "end": 266.81757369614513,
+      "loop": false
+    },
+    "Splash": {
+      "start": 267,
+      "end": 283.91337868480724,
+      "loop": false
+    },
+    "Win": {
+      "start": 284,
+      "end": 291.4113605442177,
+      "loop": false
+    }
+  }
+}

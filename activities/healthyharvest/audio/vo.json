@@ -1,0 +1,78 @@
+{
+  "resources": [
+    "output/HMKhealthyharvestvo/vo.ogg",
+    "output/HMKhealthyharvestvo/vo.m4a"
+  ],
+  "spritemap": {
+    "Instructions": {
+      "start": 0,
+      "end": 19.930680272108845,
+      "loop": false
+    },
+    "Pick carrot": {
+      "start": 20,
+      "end": 21.989319727891157,
+      "loop": false
+    },
+    "Pick lettuce": {
+      "start": 22,
+      "end": 24.368004535147392,
+      "loop": false
+    },
+    "Pick tomato": {
+      "start": 25,
+      "end": 27.144013605442176,
+      "loop": false
+    },
+    "Pick wildcard": {
+      "start": 28,
+      "end": 30.949319727891158,
+      "loop": false
+    },
+    "Pick yellow pepper": {
+      "start": 31,
+      "end": 33.36800453514739,
+      "loop": false
+    },
+    "Spin result - carrot": {
+      "start": 34,
+      "end": 40.35467120181406,
+      "loop": false
+    },
+    "Spin result - lettuce": {
+      "start": 41,
+      "end": 47.62401360544218,
+      "loop": false
+    },
+    "Spin result - tomato": {
+      "start": 48,
+      "end": 55.210680272108846,
+      "loop": false
+    },
+    "Spin result - wildcard": {
+      "start": 56,
+      "end": 60.70401360544218,
+      "loop": false
+    },
+    "Spin result - yellow pepper": {
+      "start": 61,
+      "end": 68.07201814058956,
+      "loop": false
+    },
+    "Spinner prompt": {
+      "start": 69,
+      "end": 72.06133786848072,
+      "loop": false
+    },
+    "Splash": {
+      "start": 73,
+      "end": 90.06133786848073,
+      "loop": false
+    },
+    "Win": {
+      "start": 91,
+      "end": 102.09598639455783,
+      "loop": false
+    }
+  }
+}

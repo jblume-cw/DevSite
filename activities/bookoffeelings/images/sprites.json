@@ -1,0 +1,1858 @@
+{
+	"textures": [
+		{
+			"image": "sprites-0.png",
+			"format": "RGBA8888",
+			"size": {
+				"w": 2046,
+				"h": 2042
+			},
+			"scale": 1,
+			"frames": [
+				{
+					"filename": "backdrop.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 1024,
+						"h": 768
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 1024,
+						"h": 768
+					},
+					"frame": {
+						"x": 1,
+						"y": 1,
+						"w": 1024,
+						"h": 768
+					}
+				},
+				{
+					"filename": "book.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 943,
+						"h": 580
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 943,
+						"h": 580
+					},
+					"frame": {
+						"x": 1,
+						"y": 771,
+						"w": 943,
+						"h": 580
+					}
+				},
+				{
+					"filename": "sticker-back.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 619,
+						"h": 591
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 619,
+						"h": 591
+					},
+					"frame": {
+						"x": 946,
+						"y": 771,
+						"w": 619,
+						"h": 591
+					}
+				},
+				{
+					"filename": "bof-logo.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 741,
+						"h": 433
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 741,
+						"h": 433
+					},
+					"frame": {
+						"x": 1,
+						"y": 1353,
+						"w": 741,
+						"h": 433
+					}
+				},
+				{
+					"filename": "sil-devonte.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 181,
+						"h": 487
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 181,
+						"h": 487
+					},
+					"frame": {
+						"x": 744,
+						"y": 1353,
+						"w": 181,
+						"h": 487
+					}
+				},
+				{
+					"filename": "miguel-body-disappointed.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 243,
+						"h": 253
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 243,
+						"h": 253
+					},
+					"frame": {
+						"x": 1,
+						"y": 1788,
+						"w": 243,
+						"h": 253
+					}
+				},
+				{
+					"filename": "sil-quinn-head.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 235,
+						"h": 200
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 235,
+						"h": 200
+					},
+					"frame": {
+						"x": 246,
+						"y": 1788,
+						"w": 235,
+						"h": 200
+					}
+				},
+				{
+					"filename": "quinn-head-sad.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 211,
+						"h": 214
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 211,
+						"h": 214
+					},
+					"frame": {
+						"x": 483,
+						"y": 1788,
+						"w": 211,
+						"h": 214
+					}
+				},
+				{
+					"filename": "devonte-button-body-frustrated.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 46,
+						"h": 113
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 46,
+						"h": 113
+					},
+					"frame": {
+						"x": 696,
+						"y": 1788,
+						"w": 46,
+						"h": 113
+					}
+				},
+				{
+					"filename": "top-screen.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 1024,
+						"h": 142
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 1024,
+						"h": 142
+					},
+					"frame": {
+						"x": 744,
+						"y": 1842,
+						"w": 1024,
+						"h": 142
+					}
+				},
+				{
+					"filename": "zoe-button-body-scared.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 46,
+						"h": 110
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 46,
+						"h": 110
+					},
+					"frame": {
+						"x": 696,
+						"y": 1903,
+						"w": 46,
+						"h": 110
+					}
+				},
+				{
+					"filename": "sticker-angry.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 496,
+						"h": 496
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 496,
+						"h": 496
+					},
+					"frame": {
+						"x": 1027,
+						"y": 1,
+						"w": 496,
+						"h": 496
+					}
+				},
+				{
+					"filename": "sticker-scared.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 495,
+						"h": 496
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 495,
+						"h": 496
+					},
+					"frame": {
+						"x": 1525,
+						"y": 1,
+						"w": 495,
+						"h": 496
+					}
+				},
+				{
+					"filename": "belinda-circle.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 371,
+						"h": 327
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 371,
+						"h": 327
+					},
+					"frame": {
+						"x": 927,
+						"y": 1364,
+						"w": 371,
+						"h": 327
+					}
+				},
+				{
+					"filename": "sil-quinn.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 235,
+						"h": 442
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 235,
+						"h": 442
+					},
+					"frame": {
+						"x": 1300,
+						"y": 1364,
+						"w": 235,
+						"h": 442
+					}
+				},
+				{
+					"filename": "pointer.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 182,
+						"h": 123
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 182,
+						"h": 123
+					},
+					"frame": {
+						"x": 927,
+						"y": 1693,
+						"w": 182,
+						"h": 123
+					}
+				},
+				{
+					"filename": "arrow-up.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 101,
+						"h": 101
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 101,
+						"h": 101
+					},
+					"frame": {
+						"x": 1111,
+						"y": 1693,
+						"w": 101,
+						"h": 101
+					}
+				},
+				{
+					"filename": "zoe-arm-fore-scared.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 69,
+						"h": 141
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 69,
+						"h": 141
+					},
+					"frame": {
+						"x": 1214,
+						"y": 1693,
+						"w": 69,
+						"h": 141
+					}
+				},
+				{
+					"filename": "quinn-head-calm.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 235,
+						"h": 199
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 235,
+						"h": 199
+					},
+					"frame": {
+						"x": 1537,
+						"y": 1364,
+						"w": 235,
+						"h": 199
+					}
+				},
+				{
+					"filename": "sil-zoe.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 185,
+						"h": 460
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 185,
+						"h": 460
+					},
+					"frame": {
+						"x": 1770,
+						"y": 1565,
+						"w": 185,
+						"h": 460
+					}
+				},
+				{
+					"filename": "quinn-head-angry.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 211,
+						"h": 212
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 211,
+						"h": 212
+					},
+					"frame": {
+						"x": 1537,
+						"y": 1565,
+						"w": 211,
+						"h": 212
+					}
+				},
+				{
+					"filename": "sil-miguel.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 185,
+						"h": 451
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 185,
+						"h": 451
+					},
+					"frame": {
+						"x": 1567,
+						"y": 499,
+						"w": 185,
+						"h": 451
+					}
+				},
+				{
+					"filename": "quinn-head-excited.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 235,
+						"h": 199
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 235,
+						"h": 199
+					},
+					"frame": {
+						"x": 1567,
+						"y": 952,
+						"w": 235,
+						"h": 199
+					}
+				},
+				{
+					"filename": "devonte-body-neutral.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 171,
+						"h": 302
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 171,
+						"h": 302
+					},
+					"frame": {
+						"x": 1774,
+						"y": 1153,
+						"w": 171,
+						"h": 302
+					}
+				},
+				{
+					"filename": "sticker-outline.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 199,
+						"h": 199
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 199,
+						"h": 199
+					},
+					"frame": {
+						"x": 1567,
+						"y": 1153,
+						"w": 199,
+						"h": 199
+					}
+				},
+				{
+					"filename": "sil-devonte-body.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 146,
+						"h": 301
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 146,
+						"h": 301
+					},
+					"frame": {
+						"x": 1754,
+						"y": 499,
+						"w": 146,
+						"h": 301
+					}
+				},
+				{
+					"filename": "devonte-body-disappointed.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 229,
+						"h": 296
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 229,
+						"h": 296
+					},
+					"frame": {
+						"x": 1804,
+						"y": 802,
+						"w": 229,
+						"h": 296
+					}
+				},
+				{
+					"filename": "zoe-body-neutral.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 143,
+						"h": 280
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 143,
+						"h": 280
+					},
+					"frame": {
+						"x": 1902,
+						"y": 499,
+						"w": 143,
+						"h": 280
+					}
+				},
+				{
+					"filename": "quinn-button-body-scared.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 45,
+						"h": 107
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 45,
+						"h": 107
+					},
+					"frame": {
+						"x": 1754,
+						"y": 802,
+						"w": 45,
+						"h": 107
+					}
+				},
+				{
+					"filename": "checkmark-up.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 101,
+						"h": 100
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 101,
+						"h": 100
+					},
+					"frame": {
+						"x": 1774,
+						"y": 1457,
+						"w": 101,
+						"h": 100
+					}
+				},
+				{
+					"filename": "arrow-down.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 100,
+						"h": 101
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 100,
+						"h": 101
+					},
+					"frame": {
+						"x": 1877,
+						"y": 1457,
+						"w": 100,
+						"h": 101
+					}
+				},
+				{
+					"filename": "devonte-arm-fore-frustrated.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 79,
+						"h": 205
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 79,
+						"h": 205
+					},
+					"frame": {
+						"x": 1947,
+						"y": 1100,
+						"w": 79,
+						"h": 205
+					}
+				},
+				{
+					"filename": "zoe-arm-back-scared.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 68,
+						"h": 124
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 68,
+						"h": 124
+					},
+					"frame": {
+						"x": 1947,
+						"y": 1307,
+						"w": 68,
+						"h": 124
+					}
+				},
+				{
+					"filename": "quinn-head-scared.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 235,
+						"h": 199
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 235,
+						"h": 199
+					},
+					"frame": {
+						"x": 1027,
+						"y": 499,
+						"w": 235,
+						"h": 199
+					}
+				},
+				{
+					"filename": "miguel-head-disappointed.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 190,
+						"h": 210
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 190,
+						"h": 210
+					},
+					"frame": {
+						"x": 1264,
+						"y": 499,
+						"w": 190,
+						"h": 210
+					}
+				},
+				{
+					"filename": "devonte-arm-back-frustrated.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 85,
+						"h": 181
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 85,
+						"h": 181
+					},
+					"frame": {
+						"x": 1456,
+						"y": 499,
+						"w": 85,
+						"h": 181
+					}
+				},
+				{
+					"filename": "zoe-button-head-sad.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 76,
+						"h": 83
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 76,
+						"h": 83
+					},
+					"frame": {
+						"x": 1456,
+						"y": 682,
+						"w": 76,
+						"h": 83
+					}
+				},
+				{
+					"filename": "quinn-arm-fore-scared.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 69,
+						"h": 179
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 69,
+						"h": 179
+					},
+					"frame": {
+						"x": 1957,
+						"y": 1560,
+						"w": 69,
+						"h": 179
+					}
+				},
+				{
+					"filename": "quinn-arm-back-scared.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 62,
+						"h": 144
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 62,
+						"h": 144
+					},
+					"frame": {
+						"x": 1957,
+						"y": 1741,
+						"w": 62,
+						"h": 144
+					}
+				},
+				{
+					"filename": "book-down.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 88,
+						"h": 88
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 88,
+						"h": 88
+					},
+					"frame": {
+						"x": 1957,
+						"y": 1887,
+						"w": 88,
+						"h": 88
+					}
+				}
+			]
+		},
+		{
+			"image": "sprites-1.png",
+			"format": "RGBA8888",
+			"size": {
+				"w": 1989,
+				"h": 1506
+			},
+			"scale": 1,
+			"frames": [
+				{
+					"filename": "sticker-calm.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 494,
+						"h": 496
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 494,
+						"h": 496
+					},
+					"frame": {
+						"x": 1,
+						"y": 1,
+						"w": 494,
+						"h": 496
+					}
+				},
+				{
+					"filename": "sticker-excited.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 494,
+						"h": 496
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 494,
+						"h": 496
+					},
+					"frame": {
+						"x": 1,
+						"y": 499,
+						"w": 494,
+						"h": 496
+					}
+				},
+				{
+					"filename": "sticker-frustrated.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 494,
+						"h": 496
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 494,
+						"h": 496
+					},
+					"frame": {
+						"x": 497,
+						"y": 1,
+						"w": 494,
+						"h": 496
+					}
+				},
+				{
+					"filename": "sticker-happy.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 494,
+						"h": 496
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 494,
+						"h": 496
+					},
+					"frame": {
+						"x": 1,
+						"y": 997,
+						"w": 494,
+						"h": 496
+					}
+				},
+				{
+					"filename": "sticker-sad.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 494,
+						"h": 496
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 494,
+						"h": 496
+					},
+					"frame": {
+						"x": 497,
+						"y": 499,
+						"w": 494,
+						"h": 496
+					}
+				},
+				{
+					"filename": "sticker-disappointed.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 490,
+						"h": 492
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 490,
+						"h": 492
+					},
+					"frame": {
+						"x": 993,
+						"y": 1,
+						"w": 490,
+						"h": 492
+					}
+				},
+				{
+					"filename": "devonte-body-happy.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 140,
+						"h": 302
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 140,
+						"h": 302
+					},
+					"frame": {
+						"x": 497,
+						"y": 997,
+						"w": 140,
+						"h": 302
+					}
+				},
+				{
+					"filename": "zoe-hair-back-tilt.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 190,
+						"h": 204
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 190,
+						"h": 204
+					},
+					"frame": {
+						"x": 497,
+						"y": 1301,
+						"w": 190,
+						"h": 204
+					}
+				},
+				{
+					"filename": "devonte-body-frustrated.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 131,
+						"h": 302
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 131,
+						"h": 302
+					},
+					"frame": {
+						"x": 639,
+						"y": 997,
+						"w": 131,
+						"h": 302
+					}
+				},
+				{
+					"filename": "sil-zoe-head.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 185,
+						"h": 204
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 185,
+						"h": 204
+					},
+					"frame": {
+						"x": 689,
+						"y": 1301,
+						"w": 185,
+						"h": 204
+					}
+				},
+				{
+					"filename": "zoe-body-excited.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 151,
+						"h": 280
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 151,
+						"h": 280
+					},
+					"frame": {
+						"x": 993,
+						"y": 495,
+						"w": 151,
+						"h": 280
+					}
+				},
+				{
+					"filename": "quinn-body-excited.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 163,
+						"h": 255
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 163,
+						"h": 255
+					},
+					"frame": {
+						"x": 1485,
+						"y": 1,
+						"w": 163,
+						"h": 255
+					}
+				},
+				{
+					"filename": "sil-quinn-body.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 163,
+						"h": 254
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 163,
+						"h": 254
+					},
+					"frame": {
+						"x": 772,
+						"y": 997,
+						"w": 163,
+						"h": 254
+					}
+				},
+				{
+					"filename": "miguel-body-neutral.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 162,
+						"h": 253
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 162,
+						"h": 253
+					},
+					"frame": {
+						"x": 1146,
+						"y": 495,
+						"w": 162,
+						"h": 253
+					}
+				},
+				{
+					"filename": "quinn-body-angry.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 153,
+						"h": 255
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 153,
+						"h": 255
+					},
+					"frame": {
+						"x": 1650,
+						"y": 1,
+						"w": 153,
+						"h": 255
+					}
+				},
+				{
+					"filename": "quinn-body-calm.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 153,
+						"h": 255
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 153,
+						"h": 255
+					},
+					"frame": {
+						"x": 1805,
+						"y": 1,
+						"w": 153,
+						"h": 255
+					}
+				},
+				{
+					"filename": "quinn-body-scared.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 153,
+						"h": 255
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 153,
+						"h": 255
+					},
+					"frame": {
+						"x": 1310,
+						"y": 495,
+						"w": 153,
+						"h": 255
+					}
+				},
+				{
+					"filename": "miguel-head-happy.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 185,
+						"h": 212
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 185,
+						"h": 212
+					},
+					"frame": {
+						"x": 1485,
+						"y": 258,
+						"w": 185,
+						"h": 212
+					}
+				},
+				{
+					"filename": "sil-miguel-head.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 185,
+						"h": 212
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 185,
+						"h": 212
+					},
+					"frame": {
+						"x": 1672,
+						"y": 258,
+						"w": 185,
+						"h": 212
+					}
+				},
+				{
+					"filename": "sil-miguel-body.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 152,
+						"h": 250
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 152,
+						"h": 250
+					},
+					"frame": {
+						"x": 993,
+						"y": 777,
+						"w": 152,
+						"h": 250
+					}
+				},
+				{
+					"filename": "sil-zoe-body.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 127,
+						"h": 278
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 127,
+						"h": 278
+					},
+					"frame": {
+						"x": 1147,
+						"y": 750,
+						"w": 127,
+						"h": 278
+					}
+				},
+				{
+					"filename": "miguel-body-angry.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 147,
+						"h": 253
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 147,
+						"h": 253
+					},
+					"frame": {
+						"x": 1276,
+						"y": 752,
+						"w": 147,
+						"h": 253
+					}
+				},
+				{
+					"filename": "miguel-head-calm.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 184,
+						"h": 212
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 184,
+						"h": 212
+					},
+					"frame": {
+						"x": 937,
+						"y": 1029,
+						"w": 184,
+						"h": 212
+					}
+				},
+				{
+					"filename": "miguel-head-excited.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 184,
+						"h": 212
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 184,
+						"h": 212
+					},
+					"frame": {
+						"x": 1123,
+						"y": 1030,
+						"w": 184,
+						"h": 212
+					}
+				},
+				{
+					"filename": "zoe-body-scared.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 123,
+						"h": 280
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 123,
+						"h": 280
+					},
+					"frame": {
+						"x": 1309,
+						"y": 1007,
+						"w": 123,
+						"h": 280
+					}
+				},
+				{
+					"filename": "zoe-body-sad.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 123,
+						"h": 276
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 123,
+						"h": 276
+					},
+					"frame": {
+						"x": 1859,
+						"y": 258,
+						"w": 123,
+						"h": 276
+					}
+				},
+				{
+					"filename": "miguel-body-happy.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 146,
+						"h": 253
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 146,
+						"h": 253
+					},
+					"frame": {
+						"x": 1425,
+						"y": 752,
+						"w": 146,
+						"h": 253
+					}
+				},
+				{
+					"filename": "zoe-head-sad.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 181,
+						"h": 212
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 181,
+						"h": 212
+					},
+					"frame": {
+						"x": 1434,
+						"y": 1007,
+						"w": 181,
+						"h": 212
+					}
+				},
+				{
+					"filename": "miguel-head-angry.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 185,
+						"h": 211
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 185,
+						"h": 211
+					},
+					"frame": {
+						"x": 1434,
+						"y": 1221,
+						"w": 185,
+						"h": 211
+					}
+				},
+				{
+					"filename": "zoe-head-calm.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 171,
+						"h": 210
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 171,
+						"h": 210
+					},
+					"frame": {
+						"x": 1465,
+						"y": 495,
+						"w": 171,
+						"h": 210
+					}
+				},
+				{
+					"filename": "devonte-head-excited.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 182,
+						"h": 202
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 182,
+						"h": 202
+					},
+					"frame": {
+						"x": 1638,
+						"y": 472,
+						"w": 182,
+						"h": 202
+					}
+				},
+				{
+					"filename": "circle-down.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 154,
+						"h": 154
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 154,
+						"h": 154
+					},
+					"frame": {
+						"x": 1822,
+						"y": 536,
+						"w": 154,
+						"h": 154
+					}
+				},
+				{
+					"filename": "zoe-head-happy.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 171,
+						"h": 210
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 171,
+						"h": 210
+					},
+					"frame": {
+						"x": 1573,
+						"y": 707,
+						"w": 171,
+						"h": 210
+					}
+				},
+				{
+					"filename": "devonte-head-happy.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 182,
+						"h": 202
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 182,
+						"h": 202
+					},
+					"frame": {
+						"x": 1746,
+						"y": 692,
+						"w": 182,
+						"h": 202
+					}
+				},
+				{
+					"filename": "zoe-head-scared.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 171,
+						"h": 208
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 171,
+						"h": 208
+					},
+					"frame": {
+						"x": 1617,
+						"y": 919,
+						"w": 171,
+						"h": 208
+					}
+				},
+				{
+					"filename": "sil-devonte-head.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 181,
+						"h": 202
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 181,
+						"h": 202
+					},
+					"frame": {
+						"x": 1790,
+						"y": 896,
+						"w": 181,
+						"h": 202
+					}
+				},
+				{
+					"filename": "devonte-head-disappointed.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 180,
+						"h": 199
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 180,
+						"h": 199
+					},
+					"frame": {
+						"x": 1621,
+						"y": 1129,
+						"w": 180,
+						"h": 199
+					}
+				},
+				{
+					"filename": "zoe-hair-back-straight.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 185,
+						"h": 196
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 185,
+						"h": 196
+					},
+					"frame": {
+						"x": 1803,
+						"y": 1100,
+						"w": 185,
+						"h": 196
+					}
+				},
+				{
+					"filename": "play-down.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 170,
+						"h": 171
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 170,
+						"h": 171
+					},
+					"frame": {
+						"x": 1621,
+						"y": 1330,
+						"w": 170,
+						"h": 171
+					}
+				},
+				{
+					"filename": "devonte-head-frustrated.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 180,
+						"h": 196
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 180,
+						"h": 196
+					},
+					"frame": {
+						"x": 1803,
+						"y": 1298,
+						"w": 180,
+						"h": 196
+					}
+				},
+				{
+					"filename": "play-up.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 170,
+						"h": 171
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 170,
+						"h": 171
+					},
+					"frame": {
+						"x": 876,
+						"y": 1253,
+						"w": 170,
+						"h": 171
+					}
+				},
+				{
+					"filename": "circle-up.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 154,
+						"h": 154
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 154,
+						"h": 154
+					},
+					"frame": {
+						"x": 1048,
+						"y": 1244,
+						"w": 154,
+						"h": 154
+					}
+				},
+				{
+					"filename": "checkmark-down.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 100,
+						"h": 100
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 100,
+						"h": 100
+					},
+					"frame": {
+						"x": 1204,
+						"y": 1244,
+						"w": 100,
+						"h": 100
+					}
+				},
+				{
+					"filename": "book-up.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 87,
+						"h": 88
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 87,
+						"h": 88
+					},
+					"frame": {
+						"x": 1204,
+						"y": 1346,
+						"w": 87,
+						"h": 88
+					}
+				},
+				{
+					"filename": "zoe-button-head-calm.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 72,
+						"h": 82
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 72,
+						"h": 82
+					},
+					"frame": {
+						"x": 1306,
+						"y": 1289,
+						"w": 72,
+						"h": 82
+					}
+				},
+				{
+					"filename": "zoe-button-head-happy.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 72,
+						"h": 82
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 72,
+						"h": 82
+					},
+					"frame": {
+						"x": 1293,
+						"y": 1373,
+						"w": 72,
+						"h": 82
+					}
+				},
+				{
+					"filename": "zoe-button-head-scared.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 72,
+						"h": 81
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 72,
+						"h": 81
+					},
+					"frame": {
+						"x": 1048,
+						"y": 1400,
+						"w": 72,
+						"h": 81
+					}
+				}
+			]
+		}
+	],
+	"meta": {
+		"app": "https://www.codeandweb.com/texturepacker",
+		"version": "3.0",
+		"smartupdate": "$TexturePacker:SmartUpdate:a626576d1b09f275f0c3fb6d65d1f911:f3b94a226a8cdcad07a9fa35036f22e7:177e0ecd2af713cf2a675df91f44ef4a$"
+	}
+}
