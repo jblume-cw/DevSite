@@ -1,0 +1,556 @@
+{
+  "autoScale": true,
+  "texture": "media/texture.png",
+  "textureMap": "media/texture.json",
+  "textureKey": "textureTTT",
+  "menu": {
+    "audio": "splash",
+    "background": "Background.png",
+    "headline": "SplashLogo.png"
+  },
+  "gameBoard": {
+    "drawBoard": [
+      "GridDrawMask anim0003.png", "GridDrawMask anim0004.png", "GridDrawMask anim0005.png", "GridDrawMask anim0006.png",
+      "GridDrawMask anim0007.png", "GridDrawMask anim0008.png", "GridDrawMask anim0009.png", "GridDrawMask anim0010.png",
+      "GridDrawMask anim0011.png", "GridDrawMask anim0012.png", "GridDrawMask anim0013.png", "GridDrawMask anim0014.png",
+      "GridDrawMask anim0015.png", "GridDrawMask anim0016.png", "GridDrawMask anim0017.png", "GridDrawMask anim0018.png",
+      "GridDrawMask anim0019.png", "GridDrawMask anim0020.png", "GridDrawMask anim0021.png"
+    ],
+    "drawX": [
+      "XDrawMask anim0003.png", "XDrawMask anim0004.png", "XDrawMask anim0005.png", "XDrawMask anim0006.png",
+      "XDrawMask anim0007.png", "XDrawMask anim0008.png", "XDrawMask anim0009.png", "XDrawMask anim0010.png",
+      "XDrawMask anim0011.png"
+    ],
+    "drawO": [
+      "ODrawMask anim0003.png", "ODrawMask anim0004.png", "ODrawMask anim0005.png", "ODrawMask anim0006.png",
+      "ODrawMask anim0007.png", "ODrawMask anim0008.png"
+    ],
+    "arrow": "playerarrow.png",
+    "bigO": "ODrawMask anim0008.png",
+    "bigX": "XDrawMask anim0011.png",
+    "drawWinLine": [
+      "WinLineDrawMask anim0003.png", "WinLineDrawMask anim0004.png", "WinLineDrawMask anim0005.png", "WinLineDrawMask anim0006.png",
+      "WinLineDrawMask anim0007.png", "WinLineDrawMask anim0008.png", "WinLineDrawMask anim0009.png", "WinLineDrawMask anim0010.png"
+    ],
+    "winUnderline": "win underline.png"
+  },
+  "gameOver": {
+    "xWin": {
+      "text": "X's WIN",
+      "onePlayerAudio": "lose_1p",
+      "twoPlayerAudio": "x_win"
+    },
+    "oWin": {
+      "text": "O's WIN",
+      "onePlayerAudio": "win_1p",
+      "twoPlayerAudio": "o_win"
+    },
+    "tie": {
+      "text": " TIE",
+      "audio": "tie"
+    }
+  },
+  "questions": {
+    "top": "question-box-top",
+    "middle": "question-box-middle",
+    "bottom": "question-box-bottom"
+  },
+  "answers": {
+    "default": "optionbutton0001.png",
+    "down": "optionbutton0002.png",
+    "highlight": "optionbutton0003.png",
+    "correct": "CorrectSymbol.png"
+  },
+  "square": {
+    "default": "none",
+    "highlight": "GridHighlight.png"
+  },
+  "buttons": {
+    "one-player": {
+      "over": "OnePlayerButton0001.png",
+      "out": "OnePlayerButton0001.png",
+      "down": "OnePlayerButton0003.png",
+      "up": "OnePlayerButton0001.png"
+    },
+    "two-player": {
+      "over": "TwoPlayerButton0001.png",
+      "out": "TwoPlayerButton0001.png",
+      "down": "TwoPlayerButton0003.png",
+      "up": "TwoPlayerButton0001.png"
+    }
+  },
+  "fonts": {
+    "question": {
+      "font": "18pt Walter Turncoat",
+      "fill": "white",
+      "align": "left",
+      "wordWrap": true
+    },
+    "answer": {
+      "font": "18pt Walter Turncoat",
+      "fill": "white",
+      "align": "right",
+      "wordWrap": true
+    },
+    "player": { 
+      "font": "Walter Turncoat", 
+      "fontSize": "22px", 
+      "fill": "white"
+    },
+    "winFont": {
+      "font": "Walter Turncoat", 
+      "fontSize": "52px", 
+      "fill": "#F2F297"
+    },
+    "playAgain": {
+      "font": "Walter Turncoat", 
+      "fontSize": "36px", 
+      "fill": "white"
+    }
+  },
+  "soundKey": "tttSounds",
+  "soundFile": [
+    "media/tictactoe.m4a",
+    "media/tictactoe.ogg"
+  ],
+  "sounds": {
+    "chalk_025": [
+      0,
+      0.2502721088435374,
+      false,
+      "chalk_025"
+    ],
+    "chalk_04": [
+      1,
+      0.41065759637188215,
+      false,
+      "chalk_04"
+    ],
+    "drawGrid": [
+      2,
+      0.8102721088435372,
+      false,
+      "drawGrid"
+    ],
+    "drawX": [
+      3,
+      0.41027210884353726,
+      false,
+      "drawX"
+    ],
+    "sweep_04": [
+      4,
+      0.4202494331065756,
+      false,
+      "sweep_04"
+    ],
+    "computer_turn": [
+      5,
+      1.9253741496598638,
+      false,
+      "computer_turn"
+    ],
+    "game_start_1p": [
+      7,
+      11.876757369614513,
+      false,
+      "game_start_1p"
+    ],
+    "game_start_2p": [
+      19,
+      4.0220634920634915,
+      false,
+      "game_start_2p"
+    ],
+    "lose_1p": [
+      24,
+      6.127755102040815,
+      false,
+      "lose_1p"
+    ],
+    "o_turn": [
+      31,
+      1.1362585034013577,
+      false,
+      "o_turn"
+    ],
+    "o_win": [
+      33,
+      4.811156462585032,
+      false,
+      "o_win"
+    ],
+    "pre_question_o": [
+      38,
+      3.336666666666666,
+      false,
+      "pre_question_o"
+    ],
+    "pre_question_x": [
+      42,
+      3.5395918367346937,
+      false,
+      "pre_question_x"
+    ],
+    "question01_correct": [
+      46,
+      3.715442176870745,
+      false,
+      "question01_correct"
+    ],
+    "question01_incorrect": [
+      50,
+      3.715442176870745,
+      false,
+      "question01_incorrect"
+    ],
+    "question01": [
+      54,
+      4.4008163265306095,
+      false,
+      "question01"
+    ],
+    "question02_correct": [
+      59,
+      4.752517006802719,
+      false,
+      "question02_correct"
+    ],
+    "question02_incorrect": [
+      64,
+      4.991519274376415,
+      false,
+      "question02_incorrect"
+    ],
+    "question02": [
+      69,
+      5.334172335600911,
+      false,
+      "question02"
+    ],
+    "question03_correct": [
+      75,
+      5.041088435374149,
+      false,
+      "question03_correct"
+    ],
+    "question03_incorrect": [
+      81,
+      4.698412698412696,
+      false,
+      "question03_incorrect"
+    ],
+    "question03": [
+      86,
+      5.564126984126986,
+      false,
+      "question03"
+    ],
+    "question04_correct": [
+      92,
+      4.563129251700673,
+      false,
+      "question04_correct"
+    ],
+    "question04_incorrect": [
+      97,
+      4.635306122448981,
+      false,
+      "question04_incorrect"
+    ],
+    "question04": [
+      102,
+      5.519047619047626,
+      false,
+      "question04"
+    ],
+    "question05_correct": [
+      108,
+      4.130272108843542,
+      false,
+      "question05_correct"
+    ],
+    "question05_incorrect": [
+      113,
+      3.87777777777778,
+      false,
+      "question05_incorrect"
+    ],
+    "question05": [
+      117,
+      5.356734693877556,
+      false,
+      "question05"
+    ],
+    "question06_correct": [
+      123,
+      4.8517233560090745,
+      false,
+      "question06_correct"
+    ],
+    "question06_incorrect": [
+      128,
+      6.150317460317467,
+      false,
+      "question06_incorrect"
+    ],
+    "question06": [
+      135,
+      5.320680272108831,
+      false,
+      "question06"
+    ],
+    "question07_correct": [
+      141,
+      5.591201814058962,
+      false,
+      "question07_correct"
+    ],
+    "question07_incorrect": [
+      147,
+      5.158344671201803,
+      false,
+      "question07_incorrect"
+    ],
+    "question07": [
+      153,
+      5.573174603174607,
+      false,
+      "question07"
+    ],
+    "question08_correct": [
+      159,
+      5.86176870748298,
+      false,
+      "question08_correct"
+    ],
+    "question08_incorrect": [
+      165,
+      5.879773242630392,
+      false,
+      "question08_incorrect"
+    ],
+    "question08": [
+      171,
+      7.683401360544224,
+      false,
+      "question08"
+    ],
+    "question09_correct": [
+      179,
+      2.1282766439909437,
+      false,
+      "question09_correct"
+    ],
+    "question09_incorrect": [
+      182,
+      2.290589569161,
+      false,
+      "question09_incorrect"
+    ],
+    "question09": [
+      185,
+      9.360770975056681,
+      false,
+      "question09"
+    ],
+    "question10_correct": [
+      195,
+      2.128253968253972,
+      false,
+      "question10_correct"
+    ],
+    "question10_incorrect": [
+      198,
+      2.308639455782327,
+      false,
+      "question10_incorrect"
+    ],
+    "question10": [
+      201,
+      9.054126984126981,
+      false,
+      "question10"
+    ],
+    "question11_correct": [
+      211,
+      1.9839909297052145,
+      false,
+      "question11_correct"
+    ],
+    "question11_incorrect": [
+      213,
+      2.2454875283446825,
+      false,
+      "question11_incorrect"
+    ],
+    "question11": [
+      216,
+      8.76555555555555,
+      false,
+      "question11"
+    ],
+    "question12_correct": [
+      225,
+      8.143310657596373,
+      false,
+      "question12_correct"
+    ],
+    "question12_incorrect": [
+      234,
+      8.080204081632644,
+      false,
+      "question12_incorrect"
+    ],
+    "question12": [
+      243,
+      6.267528344671206,
+      false,
+      "question12"
+    ],
+    "question13_correct": [
+      250,
+      4.797619047619037,
+      false,
+      "question13_correct"
+    ],
+    "question13_incorrect": [
+      255,
+      4.563151927437616,
+      false,
+      "question13_incorrect"
+    ],
+    "question13": [
+      260,
+      4.8517233560090745,
+      false,
+      "question13"
+    ],
+    "question14_correct": [
+      265,
+      5.519070294784569,
+      false,
+      "question14_correct"
+    ],
+    "question14_incorrect": [
+      271,
+      5.122267573696149,
+      false,
+      "question14_incorrect"
+    ],
+    "question14": [
+      277,
+      5.140294784580476,
+      false,
+      "question14"
+    ],
+    "question15_correct": [
+      283,
+      7.016054421768729,
+      false,
+      "question15_correct"
+    ],
+    "question15_incorrect": [
+      291,
+      4.671360544217691,
+      false,
+      "question15_incorrect"
+    ],
+    "question15": [
+      296,
+      5.735487528344663,
+      false,
+      "question15"
+    ],
+    "question16_correct": [
+      302,
+      4.23848072562356,
+      false,
+      "question16_correct"
+    ],
+    "question16_incorrect": [
+      307,
+      4.4368934240362705,
+      false,
+      "question16_incorrect"
+    ],
+    "question16": [
+      312,
+      5.789591836734701,
+      false,
+      "question16"
+    ],
+    "question17_correct": [
+      318,
+      5.032086167800458,
+      false,
+      "question17_correct"
+    ],
+    "question17_incorrect": [
+      324,
+      4.8156462585034205,
+      false,
+      "question17_incorrect"
+    ],
+    "question17": [
+      329,
+      4.941882086167823,
+      false,
+      "question17"
+    ],
+    "question18_correct": [
+      334,
+      3.6523129251700652,
+      false,
+      "question18_correct"
+    ],
+    "question18_incorrect": [
+      338,
+      3.8822902494330833,
+      false,
+      "question18_incorrect"
+    ],
+    "question18": [
+      342,
+      5.266553287981878,
+      false,
+      "question18"
+    ],
+    "splash": [
+      348,
+      5.519070294784569,
+      false,
+      "splash"
+    ],
+    "tie": [
+      354,
+      5.825668934240355,
+      false,
+      "tie"
+    ],
+    "win_1p": [
+      360,
+      4.576666666666654,
+      false,
+      "win_1p"
+    ],
+    "x_turn": [
+      365,
+      1.0821541950113556,
+      false,
+      "x_turn"
+    ],
+    "x_win": [
+      367,
+      4.865215419501112,
+      false,
+      "x_win"
+    ],
+    "your_turn_1p": [
+      372,
+      3.138299319727878,
+      false,
+      "your_turn_1p"
+    ]
+  }
+}

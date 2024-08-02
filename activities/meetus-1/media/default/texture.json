@@ -1,0 +1,476 @@
+{"frames": {
+
+"BackButton0001.png":
+{
+	"frame": {"x":157,"y":904,"w":97,"h":75},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":0,"y":0,"w":97,"h":75},
+	"sourceSize": {"w":99,"h":78}
+},
+"BackButton0003.png":
+{
+	"frame": {"x":256,"y":904,"w":97,"h":75},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":0,"y":0,"w":97,"h":75},
+	"sourceSize": {"w":99,"h":78}
+},
+"choose btn0001.png":
+{
+	"frame": {"x":1,"y":904,"w":154,"h":53},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":0,"y":0,"w":154,"h":53},
+	"sourceSize": {"w":157,"h":55}
+},
+"choose btn0003.png":
+{
+	"frame": {"x":1,"y":959,"w":154,"h":53},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":0,"y":0,"w":154,"h":53},
+	"sourceSize": {"w":157,"h":55}
+},
+"cj mouth0001.png":
+{
+	"frame": {"x":1553,"y":275,"w":20,"h":10},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":0,"y":2,"w":20,"h":10},
+	"sourceSize": {"w":22,"h":13}
+},
+"cj mouth0002.png":
+{
+	"frame": {"x":1465,"y":470,"w":22,"h":13},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":22,"h":13},
+	"sourceSize": {"w":22,"h":13}
+},
+"cj mouth0003.png":
+{
+	"frame": {"x":157,"y":996,"w":22,"h":12},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":0,"y":1,"w":22,"h":12},
+	"sourceSize": {"w":22,"h":13}
+},
+"cj mouth0004.png":
+{
+	"frame": {"x":182,"y":981,"w":22,"h":11},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":0,"y":2,"w":22,"h":11},
+	"sourceSize": {"w":22,"h":13}
+},
+"cj0001.png":
+{
+	"frame": {"x":1283,"y":261,"w":89,"h":227},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":0,"y":0,"w":89,"h":227},
+	"sourceSize": {"w":89,"h":228}
+},
+"cj0002.png":
+{
+	"frame": {"x":1374,"y":261,"w":89,"h":228},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":89,"h":228},
+	"sourceSize": {"w":89,"h":228}
+},
+"CJHeadTalker-mouth0001.png":
+{
+	"frame": {"x":1346,"y":969,"w":20,"h":10},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":0,"y":2,"w":20,"h":10},
+	"sourceSize": {"w":23,"h":13}
+},
+"CJHeadTalker-mouth0002.png":
+{
+	"frame": {"x":157,"y":981,"w":23,"h":13},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":23,"h":13},
+	"sourceSize": {"w":23,"h":13}
+},
+"CJHeadTalker-mouth0003.png":
+{
+	"frame": {"x":1553,"y":261,"w":23,"h":12},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":0,"y":1,"w":23,"h":12},
+	"sourceSize": {"w":23,"h":13}
+},
+"CJHeadTalker-mouth0004.png":
+{
+	"frame": {"x":1494,"y":457,"w":23,"h":11},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":0,"y":2,"w":23,"h":11},
+	"sourceSize": {"w":23,"h":13}
+},
+"CJHeadTalker.png":
+{
+	"frame": {"x":887,"y":877,"w":142,"h":142},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":142,"h":142},
+	"sourceSize": {"w":142,"h":142}
+},
+"easel.png":
+{
+	"frame": {"x":1,"y":483,"w":362,"h":419},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":362,"h":419},
+	"sourceSize": {"w":362,"h":419}
+},
+"gus still head0001.png":
+{
+	"frame": {"x":1283,"y":1,"w":293,"h":258},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":293,"h":258},
+	"sourceSize": {"w":293,"h":258}
+},
+"gus still head0002.png":
+{
+	"frame": {"x":365,"y":483,"w":293,"h":258},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":293,"h":258},
+	"sourceSize": {"w":293,"h":258}
+},
+"gus still head0003.png":
+{
+	"frame": {"x":660,"y":483,"w":293,"h":258},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":293,"h":258},
+	"sourceSize": {"w":293,"h":258}
+},
+"gus still head0004.png":
+{
+	"frame": {"x":955,"y":483,"w":293,"h":258},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":293,"h":258},
+	"sourceSize": {"w":293,"h":258}
+},
+"gym square0001.png":
+{
+	"frame": {"x":365,"y":743,"w":172,"h":132},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":172,"h":132},
+	"sourceSize": {"w":172,"h":132}
+},
+"gym square0002.png":
+{
+	"frame": {"x":539,"y":743,"w":172,"h":132},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":172,"h":132},
+	"sourceSize": {"w":172,"h":132}
+},
+"hallway square0001.png":
+{
+	"frame": {"x":713,"y":743,"w":172,"h":132},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":172,"h":132},
+	"sourceSize": {"w":172,"h":132}
+},
+"hallway square0002.png":
+{
+	"frame": {"x":887,"y":743,"w":172,"h":132},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":172,"h":132},
+	"sourceSize": {"w":172,"h":132}
+},
+"kate mouth0001.png":
+{
+	"frame": {"x":206,"y":981,"w":19,"h":8},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":0,"y":1,"w":19,"h":8},
+	"sourceSize": {"w":19,"h":10}
+},
+"kate mouth0002.png":
+{
+	"frame": {"x":24,"y":1014,"w":19,"h":9},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":0,"y":1,"w":19,"h":9},
+	"sourceSize": {"w":19,"h":10}
+},
+"kate mouth0003.png":
+{
+	"frame": {"x":1489,"y":470,"w":19,"h":10},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":19,"h":10},
+	"sourceSize": {"w":19,"h":10}
+},
+"kate0001.png":
+{
+	"frame": {"x":1465,"y":261,"w":86,"h":194},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":86,"h":194},
+	"sourceSize": {"w":86,"h":194}
+},
+"kate0002.png":
+{
+	"frame": {"x":1250,"y":490,"w":86,"h":194},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":86,"h":194},
+	"sourceSize": {"w":86,"h":194}
+},
+"KateHeadTalker-mouth0001.png":
+{
+	"frame": {"x":45,"y":1014,"w":21,"h":8},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":0,"y":2,"w":21,"h":8},
+	"sourceSize": {"w":21,"h":11}
+},
+"KateHeadTalker-mouth0002.png":
+{
+	"frame": {"x":1319,"y":982,"w":21,"h":10},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":0,"y":1,"w":21,"h":10},
+	"sourceSize": {"w":21,"h":11}
+},
+"KateHeadTalker-mouth0003.png":
+{
+	"frame": {"x":1514,"y":837,"w":21,"h":11},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":21,"h":11},
+	"sourceSize": {"w":21,"h":11}
+},
+"KateHeadTalker.png":
+{
+	"frame": {"x":1031,"y":877,"w":142,"h":142},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":142,"h":142},
+	"sourceSize": {"w":142,"h":142}
+},
+"lunch square0001.png":
+{
+	"frame": {"x":1061,"y":743,"w":172,"h":132},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":172,"h":132},
+	"sourceSize": {"w":172,"h":132}
+},
+"lunch square0002.png":
+{
+	"frame": {"x":365,"y":877,"w":172,"h":132},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":172,"h":132},
+	"sourceSize": {"w":172,"h":132}
+},
+"mollie mouth0001.png":
+{
+	"frame": {"x":1275,"y":698,"w":17,"h":7},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":2,"y":2,"w":17,"h":7},
+	"sourceSize": {"w":22,"h":10}
+},
+"mollie mouth0002.png":
+{
+	"frame": {"x":1541,"y":824,"w":22,"h":10},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":22,"h":10},
+	"sourceSize": {"w":22,"h":10}
+},
+"mollie mouth0003.png":
+{
+	"frame": {"x":1,"y":1014,"w":21,"h":9},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":0,"y":1,"w":21,"h":9},
+	"sourceSize": {"w":22,"h":10}
+},
+"mollie0001.png":
+{
+	"frame": {"x":1482,"y":674,"w":94,"h":148},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":0,"y":0,"w":94,"h":148},
+	"sourceSize": {"w":94,"h":149}
+},
+"mollie0002.png":
+{
+	"frame": {"x":1319,"y":818,"w":94,"h":149},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":94,"h":149},
+	"sourceSize": {"w":94,"h":149}
+},
+"MollieHeadTalker-mouth0001.png":
+{
+	"frame": {"x":1519,"y":457,"w":20,"h":8},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":3,"y":2,"w":20,"h":8},
+	"sourceSize": {"w":27,"h":11}
+},
+"MollieHeadTalker-mouth0002.png":
+{
+	"frame": {"x":1465,"y":457,"w":27,"h":11},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":27,"h":11},
+	"sourceSize": {"w":27,"h":11}
+},
+"MollieHeadTalker-mouth0003.png":
+{
+	"frame": {"x":1250,"y":686,"w":26,"h":10},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":0,"y":1,"w":26,"h":10},
+	"sourceSize": {"w":27,"h":11}
+},
+"MollieHeadTalker.png":
+{
+	"frame": {"x":1175,"y":877,"w":142,"h":142},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":142,"h":142},
+	"sourceSize": {"w":142,"h":142}
+},
+"NextButton0001.png":
+{
+	"frame": {"x":1415,"y":824,"w":97,"h":75},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":0,"y":0,"w":97,"h":75},
+	"sourceSize": {"w":99,"h":78}
+},
+"NextButton0003.png":
+{
+	"frame": {"x":1415,"y":901,"w":97,"h":75},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":0,"y":0,"w":97,"h":75},
+	"sourceSize": {"w":99,"h":78}
+},
+"raj mouth0001.png":
+{
+	"frame": {"x":1250,"y":710,"w":18,"h":7},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":2,"y":1,"w":18,"h":7},
+	"sourceSize": {"w":23,"h":10}
+},
+"raj mouth0002.png":
+{
+	"frame": {"x":1250,"y":698,"w":23,"h":10},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":23,"h":10},
+	"sourceSize": {"w":23,"h":10}
+},
+"raj mouth0003.png":
+{
+	"frame": {"x":1278,"y":686,"w":23,"h":10},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":23,"h":10},
+	"sourceSize": {"w":23,"h":10}
+},
+"raj0001.png":
+{
+	"frame": {"x":1338,"y":491,"w":92,"h":181},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":92,"h":181},
+	"sourceSize": {"w":92,"h":181}
+},
+"raj0002.png":
+{
+	"frame": {"x":1432,"y":491,"w":92,"h":181},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":92,"h":181},
+	"sourceSize": {"w":92,"h":181}
+},
+"RajHeadTalker-mouth0001.png":
+{
+	"frame": {"x":1489,"y":482,"w":19,"h":7},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":2,"y":1,"w":19,"h":7},
+	"sourceSize": {"w":25,"h":11}
+},
+"RajHeadTalker-mouth0002.png":
+{
+	"frame": {"x":1514,"y":824,"w":25,"h":11},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":25,"h":11},
+	"sourceSize": {"w":25,"h":11}
+},
+"RajHeadTalker-mouth0003.png":
+{
+	"frame": {"x":1319,"y":969,"w":25,"h":11},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":25,"h":11},
+	"sourceSize": {"w":25,"h":11}
+},
+"RajHeadTalker.png":
+{
+	"frame": {"x":1338,"y":674,"w":142,"h":142},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":142,"h":142},
+	"sourceSize": {"w":142,"h":142}
+},
+"school square0001.png":
+{
+	"frame": {"x":539,"y":877,"w":172,"h":132},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":172,"h":132},
+	"sourceSize": {"w":172,"h":132}
+},
+"school square0002.png":
+{
+	"frame": {"x":713,"y":877,"w":172,"h":132},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":172,"h":132},
+	"sourceSize": {"w":172,"h":132}
+},
+"schoolbackground.png":
+{
+	"frame": {"x":1,"y":1,"w":1280,"h":480},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":1280,"h":480},
+	"sourceSize": {"w":1280,"h":480}
+}},
+"meta": {
+	"app": "http://www.codeandweb.com/texturepacker",
+	"version": "1.0",
+	"image": "texture.png",
+	"format": "RGBA8888",
+	"size": {"w":1577,"h":1024},
+	"scale": "1",
+	"smartupdate": "$TexturePacker:SmartUpdate:c13b9a3eb8a23db222cb5ba187042076:a9a9ab5b54ccdf376ee9c7d966c8ed3d:88db1022cd6b660616541d2788fcd4f7$"
+}
+}

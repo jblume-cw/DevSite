@@ -1,0 +1,266 @@
+{
+  "texture": "media/default/texture.png",
+  "textureMap": "media/default/texture.json",
+  "textureKey": "texture",
+  "data": "media/default/sceneData.json",
+  "fonts" : {
+    "scene1Headline": { 
+      "font": "100px Caveat Brush, sans-serif", 
+      "fill": "#005996", 
+      "align": "left" ,
+      "wordWrap": true, 
+      "wordWrapWidth": 700
+    },
+    "scene2paragraph": { 
+      "font": "38px Caveat Brush, sans-serif", 
+      "fill": "#005996", 
+      "align": "left" ,
+      "wordWrap": true, 
+      "wordWrapWidth": 700
+    },
+    "scene2list": { 
+      "font": "30px Caveat Brush, sans-serif", 
+      "fill": "#D9531E", 
+      "align": "left" ,
+      "wordWrap": true, 
+      "wordWrapWidth": 700
+    },
+    "goodJob": { 
+      "font": "100px Caveat Brush, sans-serif", 
+      "fill": "#005996", 
+      "align": "left" ,
+      "wordWrap": true, 
+      "wordWrapWidth": 700
+    },
+    "teacher": { 
+      "font": "24px Caveat Brush, sans-serif", 
+      "fill": "#D9531E", 
+      "align": "left" ,
+      "wordWrap": true, 
+      "wordWrapWidth": 700
+    },
+    "resume-message": { 
+      "font": "28px Caveat Brush, sans-serif", 
+      "fill": "#005996", 
+      "align": "left" ,
+      "wordWrap": true, 
+      "wordWrapWidth": 700
+    }
+  },
+  "images": {
+    "actorImages": {
+      "gus": "gus still head0001.png"
+    },
+    "no_back": "back-btn0003.png",
+    "no_next": "next-btn0003.png",
+    "videoframe": "videoframe.png",
+    "bullying_still_1": "1bullying4.png",
+    "bullying_still_2": "1bullying5.png",
+    "bullying_still_3": "1bullying6.png",
+    "bullying_still_4": "1bullying7.png"
+  },
+  "logo": "splash-bg.png",
+  "buttons": {
+    "yes_button": {
+      "up": "yes button0001.png",
+      "over": "yes button0001.png",
+      "down": "yes button0003.png",
+      "out": "yes button0001.png"
+    },
+    "hi_yes_button": {
+      "up": "yes button0002.png",
+      "over": "yes button0002.png",
+      "down": "yes button0004.png",
+      "out": "yes button0002.png"
+    },
+    "no_button": {
+      "up": "no button0001.png",
+      "over": "no button0001.png",
+      "down": "no button0003.png",
+      "out": "no button0001.png"
+    },
+    "hi_no_button": {
+      "up": "no button0002.png",
+      "over": "no button0002.png",
+      "down": "no button0004.png",
+      "out": "no button0002.png"
+    },
+    "back": {
+      "up": "back-btn0001.png",
+      "over": "back-btn0001.png",
+      "down": "back-btn0002.png",
+      "out": "back-btn0001.png"
+    },
+    "next": {
+      "up": "next-btn0001.png",
+      "over": "next-btn0001.png",
+      "down": "next-btn0002.png",
+      "out": "next-btn0001.png"
+    },
+    "replay": {
+      "up": "replay-btn0001.png",
+      "over": "replay-btn0001.png",
+      "down": "replay-btn0002.png",
+      "out": "replay-btn0001.png"
+     },
+     "restart": {
+       "up": "restart-btn0001.png",
+       "over": "restart-btn0001.png",
+       "down": "restart-btn0002.png",
+       "out": "restart-btn0001.png"
+     },
+     "resume": {
+      "up": "resume-btn0001.png",
+      "over": "resume-btn0001.png",
+      "down": "resume-btn0002.png",
+      "out": "resume-btn0001.png"
+    }
+  },
+  "buttonAnimations": {
+    "next": ["NextUpHilited0001.png", "NextUpHilited0002.png", "NextUpHilited0003.png", "NextUpHilited0004.png", "NextUpHilited0005.png", "NextUpHilited0006.png", "NextUpHilited0007.png", "NextUpHilited0008.png", "NextUpHilited0009.png", "NextUpHilited0010.png", "NextUpHilited0011.png", "NextUpHilited0012.png", "NextUpHilited0013.png", "NextUpHilited0014.png", "NextUpHilited0015.png", "NextUpHilited0016.png", "NextUpHilited0017.png", "NextUpHilited0018.png", "NextUpHilited0019.png"]
+  },
+  "sceneImages": {
+    "background": "Background.png"
+  },
+  "speechAnimations": {
+    "gus": {
+      "images": ["gus still head0001.png", "gus still head0002.png",  "gus still head0002.png",  "gus still head0003.png", "gus still head0004.png"],
+      "mouthOffset": [0, 0]
+    }
+  },
+  "soundKey": "activity-sounds",
+  "soundFile": [ "media/default/bullying.m4a", "media/default/bullying.ogg" ],
+  "sounds": {
+    "slide01": [
+      0,
+      20.457460317460317,
+      false,
+      "slide01"
+    ],
+    "slide02": [
+      21,
+      61.61587301587301,
+      false,
+      "slide02"
+    ],
+    "slide03": [
+      83,
+      12.751541950113378,
+      false,
+      "slide03"
+    ],
+    "slide04_no": [
+      96,
+      8.296621315192738,
+      false,
+      "slide04_no"
+    ],
+    "slide04_yes": [
+      105,
+      14.960975056689335,
+      false,
+      "slide04_yes"
+    ],
+    "slide04a": [
+      120,
+      1.2715419501133738,
+      false,
+      "slide04a"
+    ],
+    "slide05_no": [
+      122,
+      8.467959183673457,
+      false,
+      "slide05_no"
+    ],
+    "slide05_yes": [
+      131,
+      14.483015873015859,
+      false,
+      "slide05_yes"
+    ],
+    "slide05a": [
+      146,
+      1.4248752834467098,
+      false,
+      "slide05a"
+    ],
+    "slide05b": [
+      148,
+      1.1904081632653174,
+      false,
+      "slide05b"
+    ],
+    "slide06_no": [
+      150,
+      8.891814058956925,
+      false,
+      "slide06_no"
+    ],
+    "slide06_yes": [
+      159,
+      9.162335600907028,
+      false,
+      "slide06_yes"
+    ],
+    "slide06a": [
+      169,
+      1.8126530612244949,
+      false,
+      "slide06a"
+    ],
+    "slide06b": [
+      171,
+      1.2535374149659901,
+      false,
+      "slide06b"
+    ],
+    "slide07_no": [
+      173,
+      10.17235827664399,
+      false,
+      "slide07_no"
+    ],
+    "slide07_yes": [
+      184,
+      7.683378684807252,
+      false,
+      "slide07_yes"
+    ],
+    "slide07a": [
+      192,
+      1.5961904761904862,
+      false,
+      "slide07a"
+    ],
+    "slide07b": [
+      194,
+      1.2805668934240373,
+      false,
+      "slide07b"
+    ],
+    "slide08": [
+      196,
+      6.763537414965981,
+      false,
+      "slide08"
+    ]
+  },
+  "soundSyncData": {
+    "slide01": [0,0,4,2,4,4,3,3,3,3,2,4,4,4,0,0,3,2,4,4,2,2,0,0,0,0,0,0,0,2,3,3,4,2,3,3,3,3,3,3,3,0,2,4,2,2,2,4,2,4,4,3,2,2,4,4,4,0,0,0,0,0,0,0,3,2,4,3,2,3,2,3,0,3,4,3,0,0,0,4,4,3,3,3,0,0,0,0,0,0,0,4,3,3,4,4,2,2,3,3,3,4,3,3,3,3,3,3,2,2,2,3,3,3,3,3,0,0,4,3,3,2,3,0,0,2,2,3,3,3,0,0,0,0,0,3,2,2,3,4,4,4,4,3,4,3,3,3,4,0,2,2,4,2,2,2,2,3,2,3,2,2,4,2,2,4,2,4,4,4,0,0,3,2,2,3,2,2,3,4,3,4,4,3,3,3,3,3,3,2,2,2,0,0,0,0,0,0,0,2,4,2,4,3,2],
+    "slide02": [0,0,3,2,2,3,2,0,0,0,2,4,4,2,3,3,4,4,4,3,0,3,3,3,2,4,4,3,4,4,2,3,2,2,0,4,2,0,2,2,2,0,0,0,0,4,3,3,3,2,3,3,4,2,2,4,2,0,3,3,3,3,2,3,4,4,3,4,2,3,4,4,4,4,4,0,0,0,0,0,0,0,0,0,0,0,3,2,3,3,3,0,2,2,2,2,2,4,3,0,0,0,0,3,2,4,4,3,3,3,0,2,2,4,4,0,2,3,2,3,4,3,3,0,4,4,4,0,4,0,0,0,4,4,4,3,4,2,4,4,3,4,4,2,2,2,2,2,2,4,3,2,2,0,2,2,0,0,0,0,0,0,0,2,3,2,2,3,4,4,3,2,4,2,2,2,3,3,3,4,4,3,3,3,0,0,0,4,4,4,2,3,3,2,0,4,2,2,4,4,4,0,2,2,2,4,4,0,2,2,3,3,2,2,3,3,2,4,4,2,4,2,4,3,0,0,0,0,0,3,2,3,4,4,4,2,2,4,3,4,2,2,0,0,3,4,4,4,4,0,0,0,0,0,0,0,0,4,4,2,4,4,4,3,4,2,3,3,2,0,4,4,4,4,4,4,2,2,2,2,0,0,2,3,3,3,2,3,3,3,2,3,3,3,3,4,3,3,0,2,4,4,4,2,2,2,2,2,0,0,0,0,0,2,4,3,3,3,3,4,3,2,3,3,3,3,3,3,0,0,0,0,0,0,0,0,0,3,0,4,2,0,2,3,2,2,4,4,3,3,3,2,4,4,4,4,0,0,0,4,4,4,2,2,3,4,3,3,0,0,0,2,4,4,4,3,3,4,3,3,3,3,3,3,3,4,2,0,3,3,0,0,0,0,2,3,4,4,4,2,2,4,4,3,3,3,4,2,3,3,3,0,3,3,0,0,0,0,0,0,0,0,0,0,2,3,4,2,3,3,2,3,0,3,0,0,0,0,0,0,0,3,3,4,3,3,3,3,3,4,3,3,3,3,2,0,3,2,4,4,2,4,4,2,4,3,4,2,3,3,3,4,4,4,4,3,2,4,4,0,3,3,3,3,4,4,2,3,2,2,0,0,3,3,3,3,3,3,4,3,3,0,0,2,4,2,4,4,4,0,0,0,0,0,0,0,0,0,2,4,4,2,3,2,2,3,4,4,2,2,0,0,3,3,3,3,3,4,4,4,4,4,2,2,3,3,3,3,2,4,4,4,3,2,0,3,4,0,2,4,4,0,3,3,3,4,3,4,4,3,3,2,2,0,0,0,0,0,0,0,0,2,2,3,4,3,3,2,3,4,4,2,2,2,3,2,3,3,2,2,0,3,2,3,3,0,4,4,4,2,2,2,2,3,3,2,2],
+    "slide03": [0,2,2,4,4,4,0,4,2,2,2,3,4,4,4,4,2,2,2,2,4,0,3,4,4,4,4,4,2,2,0,0,0,2,2,4,4,3,3,3,2,2,0,0,0,0,0,0,0,0,0,3,4,4,4,2,3,2,4,4,4,4,4,0,4,3,4,3,2,2,0,0,2,4,4,4,3,0,3,3,2,4,4,4,4,4,4,4,4,0,4,4,0,2,2,3,3,3,0,0,0,2,3,3,3,3,4,3,3,3,3,3,3,3,0,2,4,4,4,2,2,2,2,2,2,3,3,3],
+    "slide08": [0,0,3,2,2,3,4,3,3,0,0,0,0,2,4,4,4,4,4,2,3,3,3,2,2,3,3,2,2,2,2,0,0,0,0,0,0,4,2,0,4,0,4,4,4,2,4,2,2,0,0,2,2,3,2,4,4,3,4,4,2,4,4,4,2,2,2,2]
+  }
+}
+
+
+
+
+
+
+
+
+
+
+  

@@ -1,0 +1,231 @@
+{
+  "texture": "media/default/texture.png",
+  "textureMap": "media/default/texture.json",
+  "textureKey": "texture",
+  "data": "media/default/sceneData.json",
+  "fonts" : {
+    "default": { "font": "20px Arial, Helvetica, sans-serif", "fill": "#000000", "align": "left" ,"wordWrap": true, "wordWrapWidth": 700 },
+    "resume-message": { 
+      "font": "28px Caveat Brush, sans-serif", 
+      "fill": "#005996", 
+      "align": "left" ,
+      "wordWrap": true, 
+      "wordWrapWidth": 700
+    }
+  },
+   "images": {
+    "background": "schoolbackground.png",
+    "easel": "easel.png",
+    "gym": "gym square0001.png",
+    "gym_hi": "gym square0002.png",
+    "hallway": "hallway square0001.png",
+    "hallway_hi": "hallway square0002.png",
+    "lunch": "lunch square0001.png",
+    "lunch_hi": "lunch square0002.png",
+    "school": "school square0001.png",
+    "school_hi": "school square0002.png",
+    "chooserImages": {
+      "chooser": [
+        {
+          "base": "school square0001.png",
+          "hi": "school square0002.png"
+        },
+        {
+          "base": "gym square0001.png",
+          "hi": "gym square0002.png"
+        },
+        {
+          "base": "lunch square0001.png",
+          "hi": "lunch square0002.png"
+        },
+        {
+          "base": "hallway square0001.png",
+          "hi": "hallway square0002.png"
+        }
+      ]
+    },
+    "actorImages": {
+      "mollie_circle": "MollieHeadTalker.png",
+      "cj_circle": "CJHeadTalker.png",
+      "raj_circle": "RajHeadTalker.png",
+      "kate_circle": "KateHeadTalker.png",
+      "gus": "gus still head0001.png"
+    }
+  },
+  "logo": "splash-bg.png",
+  "buttons": {
+    "gus": {
+      "up": "gus still head0001.png",
+      "over": "gus still head0001.png",
+      "out": "gus still head0001.png",
+      "down": "gus still head0001.png"
+    },
+    "next": {
+      "up": "NextButton0003.png",
+      "over": "NextButton0003.png",
+      "down": "NextButton0001.png",
+      "out": "NextButton0001.png"
+    },
+    "raj": {
+      "up": "raj0001.png",
+      "over": "raj0001.png",
+      "out": "raj0001.png",
+      "down": "raj0002.png"
+    }, 
+    "mollie": {
+      "up": "mollie0001.png",
+      "over": "mollie0001.png",
+      "out": "mollie0001.png",
+      "down": "mollie0002.png"
+    },
+    "kate":{
+      "up": "kate0001.png",
+      "over": "kate0001.png",
+      "out": "kate0001.png",
+      "down": "kate0002.png"
+    },
+    "cj":{
+      "up": "cj0001.png",
+      "over": "cj0001.png",
+      "out": "cj0001.png",
+      "down": "cj0002.png"
+    },
+    "choose": {
+      "up": "choose btn0001.png",
+      "over": "choose btn0001.png",
+      "down": "choose btn0003.png",
+      "out": "choose btn0001.png"
+    }
+  },
+  "sceneImages": {
+    "school": "school-background.png",
+    "background": "g3-background.png"
+  },
+  "speechAnimations": {
+    "cj": {
+      "images": ["cj mouth0001.png", "cj mouth0002.png", "cj mouth0002.png", "cj mouth0003.png",  "cj mouth0004.png"],
+      "mouthOffset": [21, 58]
+    },
+    "kate": {
+      "images": ["kate mouth0001.png", "kate mouth0002.png", "kate mouth0002.png", "kate mouth0003.png"],
+      "mouthOffset": [20, 60]
+    },
+    "raj": {
+      "images": ["raj mouth0001.png", "raj mouth0002.png", "raj mouth0002.png", "raj mouth0003.png"],
+      "mouthOffset": [57, 60]
+    },
+    "mollie": {
+      "images": ["mollie mouth0001.png", "mollie mouth0002.png", "mollie mouth0002.png", "mollie mouth0003.png"],
+      "mouthOffset": [45, 45]
+    },
+    "cj_circle": {
+      "images": ["CJHeadTalker-mouth0001.png", "CJHeadTalker-mouth0002.png", "CJHeadTalker-mouth0002.png", "CJHeadTalker-mouth0003.png", "CJHeadTalker-mouth0004.png"],
+      "mouthOffset": [69, 83]
+    },
+    "kate_circle": {
+      "images": ["KateHeadTalker-mouth0001.png", "KateHeadTalker-mouth0002.png", "KateHeadTalker-mouth0002.png", "KateHeadTalker-mouth0003.png"],
+      "mouthOffset": [70, 84]
+    },
+    "raj_circle": {
+      "images": ["RajHeadTalker-mouth0001.png", "RajHeadTalker-mouth0002.png", "RajHeadTalker-mouth0002.png", "RajHeadTalker-mouth0003.png"],
+      "mouthOffset": [70, 85]
+    },
+    "mollie_circle": {
+      "images": ["MollieHeadTalker-mouth0001.png", "MollieHeadTalker-mouth0002.png", "MollieHeadTalker-mouth0002.png", "MollieHeadTalker-mouth0003.png"],
+      "mouthOffset": [70, 85]
+    },
+    "gus": {
+      "images": ["gus still head0001.png", "gus still head0002.png", "gus still head0002.png", "gus still head0003.png", "gus still head0004.png"],
+      "mouthOffset": [0, 0]
+    }
+  },
+  "soundKey": "activity-sounds",
+  "soundFile": [ "media/default/meet-us.m4a", "media/default/meet-us.ogg" ],
+  "sounds": {
+    "generalclick32": [
+      0,
+      0.06149659863945578,
+      false,
+      "generalclick32"
+    ],
+    "cj_intro": [
+      1,
+      5.808004535147393,
+      false,
+      "cj_intro"
+    ],
+    "cj_school": [
+      7,
+      5.695986394557824,
+      false,
+      "cj_school"
+    ],
+    "kate_gym": [
+      13,
+      7.039999999999999,
+      false,
+      "kate_gym"
+    ],
+    "kate_intro": [
+      21,
+      11.424013605442177,
+      false,
+      "kate_intro"
+    ],
+    "mollie_hallway": [
+      33,
+      9.397346938775513,
+      false,
+      "mollie_hallway"
+    ],
+    "mollie_intro": [
+      43,
+      12.373333333333335,
+      false,
+      "mollie_intro"
+    ],
+    "raj_intro": [
+      56,
+      6.12265306122449,
+      false,
+      "raj_intro"
+    ],
+    "raj_lunch": [
+      63,
+      6.528004535147389,
+      false,
+      "raj_lunch"
+    ],
+    "screen1": [
+      70,
+      34.80068027210885,
+      false,
+      "screen1"
+    ],
+    "screen2a": [
+      105,
+      8.774580498866214,
+      false,
+      "screen2a"
+    ],
+    "screen2b": [
+      114,
+      3.4573922902494303,
+      false,
+      "screen2b"
+    ]
+  },
+  "soundSyncData": {
+    "screen1": [4,3,3,0,0,0,0,4,3,2,2,3,3,3,3,3,0,0,0,0,4,4,4,4,3,3,3,2,3,2,0,4,4,4,4,0,4,0,0,0,2,3,4,3,3,4,4,2,2,4,3,4,4,4,2,3,2,4,2,2,2,3,3,3,2,4,2,3,2,2,2,2,4,2,4,0,0,0,0,0,0,0,3,4,0,4,2,3,3,2,4,4,4,2,4,4,4,3,2,2,4,2,2,2,2,4,3,3,0,0,0,0,3,0,0,3,2,2,3,2,2,2,4,4,0,3,3,4,2,4,2,2,0,3,3,3,4,2,3,2,4,2,2,2,3,3,4,2,2,0,4,4,4,4,4,0,0,0,0,0,0,0,3,3,4,4,4,4,4,4,4,4,4,2,4,3,3,3,3,2,2,4,2,4,4,2,2,2,3,3,3,4,3,3,0,0,0,0,0,0,0,0,2,2,2,3,3,4,4,4,3,2,2,4,4,2,4,2,2,2,2,4,4,4,0,0,0,4,4,2,2,3,4,4,0,2,2,4,4,4,4,0,0,0,0,4,2,2,2,4,4,4,2,4,3,3,3,2,2,0,0,0,0,0,0,0,0,0,3,4,4,4,2,4,4,4,2,2,3,2,2,2,4,4,3,2,2,0,2,0,0,0,2,2,3,3,2,2,4,4,2,4,4,4,2,3,3,4,4,4,3,3,0,0,0,0,0,0,0,3,2,2,3,3,4,4,4,4,3,4,4,4,2,4,2,4,0,4,4,2,2,4,4,0,2,2,2],    
+    "cj_intro": [4,2,2,0,0,3,2,3,2,2,3,3,0,0,3,2,4,0,2,2,2,2,4,4,4,4,4,4,3,4,4,2,2,2,2,3,4,2,3,4,3,2,2,4,0,4,4,2,3,3,3,3,3,2,3,3,0],    
+    "kate_intro": [3,2,3,2,2,2,0,0,3,2,3,3,3,3,3,2,2,0,0,0,0,3,2,2,2,3,2,0,3,2,3,2,2,0,3,3,3,3,3,3,2,3,2,3,2,2,2,2,3,2,2,3,2,2,2,2,0,0,0,0,0,3,2,3,3,0,3,2,2,2,3,3,0,2,3,3,0,2,3,3,3,3,2,2,2,0,0,2,0,0,0,3,3,0,0,2,3,2,2,2,3,3,2,2,3,3,2,3,2,2,3,3,3],   
+    "raj_intro": [2,3,3,0,0,0,0,2,3,2,2,3,2,2,2,0,2,2,2,3,2,2,3,2,3,3,3,2,3,2,3,2,3,3,2,2,3,2,2,0,2,0,0,3,2,3,2,3,2,2,3,2,2,3,2,2,3,2,2,2],    
+    "mollie_intro": [3,2,2,0,0,2,0,3,2,3,2,3,2,3,2,3,2,3,2,2,0,2,2,2,2,3,2,3,3,3,2,3,2,3,2,3,2,2,3,3,3,3,2,2,2,2,2,2,2,3,2,3,2,3,3,3,0,3,0,2,3,2,2,2,0,0,0,3,2,3,2,3,2,2,3,2,2,3,2,3,3,3,3,2,2,2,3,3,2,3,3,3,2,3,2,2,0,2,0,0,2,0,3,3,2,2,2,3,2,2,3,2,0,2,3,3,3,3,2,3,2,2],    
+    "cj_school": [4,2,3,3,4,3,3,0,3,3,3,4,4,3,3,3,4,2,2,0,0,0,4,2,2,3,4,3,4,4,4,2,4,4,0,2,4,3,4,4,3,3,3,2,2,3,3,2,2,2,3,3,3,3],    
+    "kate_gym": [0,2,2,2,2,3,2,2,2,2,2,2,2,3,2,3,3,3,3,0,3,0,0,0,0,2,3,3,2,2,2,2,2,2,3,2,3,0,2,2,2,2,0,2,2,2,3,0,0,2,3,2,2,2,3,3,0,0,2,3,2,3,2,3,3,3,0,3],    
+    "mollie_hallway": [2,2,3,2,3,2,3,2,3,3,0,3,2,2,2,3,3,2,2,2,2,3,2,3,3,2,2,3,2,2,0,2,0,0,3,2,3,3,3,2,3,2,3,2,2,2,2,3,2,2,2,2,2,0,0,2,2,2,2,0,3,2,3,3,3,2,2,3,3,2,3,2,2,0,2,2,3,2,3,2,3,2,3,2,3,3,3,2,3,2,2,0],    
+    "raj_lunch": [0,3,2,3,2,3,0,2,3,2,3,2,3,2,3,3,3,2,2,0,0,2,2,0,0,2,2,3,3,2,2,3,3,2,2,2,3,2,2,2,2,2,2,3,3,3,2,2,3,2,2,2,2,2,3,3,2,3,2,2,2,3,2,3,2,2],
+    "screen2a": [0,3,4,2,2,2,3,2,2,3,4,3,2,3,4,4,4,4,4,3,4,4,4,2,3,4,2,0,0,3,4,4,3,2,2,4,3,3,0,0,0,0,0,0,3,2,4,3,2,3,4,2,2,2,2,2,2,0,0,4,4,2,4,4,3,3,2,2,4,2,0,3,4,4,4,3,0,4,2,2,0,4,2,4,3,3,2,2],    
+    "screen2b": [0,0,0,4,4,2,3,2,2,0,0,0,0,0,3,2,2,2,2,4,2,3,3,4,4,2,3,3,3,3,3,0,0,0,0,0,0,4,2,4,0,3,4,4,4,3,4,0,0,4,4,2,2,2,2,4,4,2,4,0,4,2,4,4]
+  }
+}

@@ -1,0 +1,623 @@
+{
+  "play": {
+    "modelType": "basic",
+    "start": "scene1",
+    "persist": [ "last_scene", "some_var" ],
+    "global": {
+      "actors": {},
+      "outcomes": {},
+      "actions": [
+        {
+          "type": "variable",
+          "args": [ "last_scene", "$previous_scene_name" ]
+        }
+      ]
+    },
+    "scenes": {
+      "scene1": {
+        "id": "scene1",
+        "title": "Scene 1",
+        "background": "none",
+        "actors": [
+          {
+            "name": "background",
+            "type": "decoration",
+            "image": "background",
+            "location": [ 0, 0 ]
+          },
+          {
+            "name": "screen1",
+            "type": "audio",
+            "audio": "screen1",
+            "variable": "screen1",
+            "startDelay": 1
+          },
+          {
+            "name": "gus",
+            "variable": "gus",
+            "type": "button-character",
+            "speechAnimation": true,
+            "speechAudio": "screen1",
+            "image": "gus",
+            "location": [25, 295 ]
+          }, 
+          {
+            "name": "raj",
+            "variable": "raj",
+            "type": "button-character",
+            "image": "raj",
+            "speechAnimation": true,
+            "speechAudio": "raj_intro",
+            "location": [ 215, 160 ]
+          }, 
+          {
+            "name": "mollie",
+            "variable": "mollie",
+            "type": "button-character",
+            "speechAnimation": true,
+            "speechAudio": "mollie_intro",
+            "image": "mollie",
+            "location": [ 310, 90 ]
+          },
+          {
+            "name": "cj",
+            "variable": "cj",
+            "type": "button-character",
+            "speechAudio": "cj_intro",
+            "image": "cj",
+            "speechAnimation": true,
+            "location": [ 480, 170 ]
+          },
+          {
+            "name": "kate",
+            "variable": "kate",
+            "type": "button-character",
+            "speechAudio": "kate_intro",
+            "speechAnimation": true,
+            "image": "kate",
+            "location": [ 400, 110 ]
+          }
+        ],
+      "outcomes": {
+          "click_next": {
+            "events": {
+              "next_button": "*"
+            },
+            "actions": [
+              {
+                "type": "scene",
+                "args": ["scene2"]
+              }
+            ]
+          },
+          "raj_intro": {
+            "events": {
+              "raj": "*"
+              },
+              "actions": [
+                {
+                "type": "add-actor",
+                "args": [
+                  {
+                    "name":"raj_intro",
+                    "type":"audio",
+                    "audio":"raj_intro",
+                    "variable":"raj_intro",
+                    "priority": "stop"
+                  },
+                  {
+                    "name":"raj_intro",
+                    "type":"audio",
+                    "audio":"raj_intro",
+                    "variable":"raj_intro"
+                  }
+                ]
+              }
+            ]
+          },
+          "raj_done": {
+            "events": {
+              "raj_intro": "played"
+            },
+            "actions": [
+              {
+                "type": "remove-actor",
+                "args": [ "raj" ]
+              },
+              {
+                "type": "add-actor",
+                "args": [
+                  {
+                    "name": "raj",
+                    "variable": "raj",
+                    "type": "button-character",
+                    "image": "raj",
+                    "speechAnimation": true,
+                    "speechAudio": "raj_intro",
+                    "location": [ 215, 160 ]
+                  }
+                ]
+              }
+            ]
+          },
+          "mollie_intro": {
+            "events": {
+              "mollie": "*"
+              },
+              "actions": [
+                {
+                "type": "add-actor",
+                "args": [
+                  {
+                    "name":"mollie_intro",
+                    "type":"audio",
+                    "audio":"mollie_intro",
+                    "variable":"mollie_intro",
+                    "priority": "stop"
+                  },
+                  {
+                    "name":"mollie_intro",
+                    "type":"audio",
+                    "audio":"mollie_intro",
+                    "variable":"mollie_intro"
+                  }
+                ]
+              }
+            ]
+          },
+          "mollie_done": {
+            "events": {
+              "mollie_intro": "played"
+            },
+            "actions": [
+              {
+                "type": "remove-actor",
+                "args": [ "mollie" ]
+              },
+              {
+                "type": "add-actor",
+                "args": [
+                  {
+                    "name": "mollie",
+                    "variable": "mollie",
+                    "type": "button-character",
+                    "speechAnimation": true,
+                    "speechAudio": "mollie_intro",
+                    "image": "mollie",
+                    "location": [ 310, 90 ]
+                  }
+                ]
+              }
+            ]
+          },
+          "kate_intro": {
+            "events": {
+              "kate": "*"
+              },
+              "actions": [
+                {
+                "type": "add-actor",
+                "args": [
+                  {
+                    "name":"kate_intro",
+                    "type":"audio",
+                    "audio":"kate_intro",
+                    "variable":"kate_intro",
+                    "priority": "stop"
+                  },
+                  {
+                    "name":"kate_intro",
+                    "type":"audio",
+                    "audio":"kate_intro",
+                    "variable":"kate_intro"
+                  }
+                ]
+              }
+            ]
+          },
+          "kate_done": {
+            "events": {
+              "kate_intro": "played"
+            },
+            "actions": [
+              {
+                "type": "remove-actor",
+                "args": [ "kate" ]
+              },
+              {
+                "type": "add-actor",
+                "args": [
+                  {
+                    "name": "kate",
+                    "variable": "kate",
+                    "type": "button-character",
+                    "speechAudio": "kate_intro",
+                    "speechAnimation": true,
+                    "image": "kate",
+                    "location": [ 400, 110 ]
+                  }
+                ]
+              }
+            ]
+          },
+          "gus_intro": {
+            "events": {
+              "gus": "*"
+              },
+              "actions": [
+                {
+                "type": "add-actor",
+                "args": [
+                  {
+                    "name":"screen1",
+                    "type":"audio",
+                    "audio":"screen1",
+                    "variable":"screen1",
+                    "priority": "stop"
+                  },
+                  {
+                    "name":"screen1",
+                    "type":"audio",
+                    "audio":"screen1",
+                    "variable":"screen1"
+                  }
+                ]
+              }
+            ]
+          },
+          "gus_done": {
+            "events": {
+              "screen1": "played"
+            },
+            "actions": [
+              {
+                "type": "remove-actor",
+                "args": [ "gus" ]
+              },
+              {
+                "type": "add-actor",
+                "args": [
+                  {
+                    "name": "gus",
+                    "variable": "gus",
+                    "type": "button-character",
+                    "speechAnimation": true,
+                    "speechAudio": "screen1",
+                    "image": "gus",
+                    "location": [25, 295 ]
+                  }
+                ]
+              }
+            ]
+          },
+          "cj_intro": {
+            "events": {
+              "cj": "*"
+              },
+              "actions": [
+                {
+                "type": "add-actor",
+                "args": [
+                  {
+                    "name":"cj_intro",
+                    "type":"audio",
+                    "audio":"cj_intro",
+                    "variable":"cj_intro",
+                    "priority": "stop"
+                  },
+                  {
+                    "name":"cj_intro",
+                    "type":"audio",
+                    "audio":"cj_intro",
+                    "variable":"cj_intro"
+                  }
+                ]
+              }
+            ]
+          },
+          "cj_done": {
+            "events": {
+              "cj_intro": "played"
+            },
+            "actions": [
+              {
+                "type": "remove-actor",
+                "args": [ "cj" ]
+              },
+              {
+                "type": "add-actor",
+                "args": [
+                  {
+                    "name": "cj",
+                    "variable": "cj",
+                    "type": "button-character",
+                    "speechAudio": "cj_intro",
+                    "image": "cj",
+                    "speechAnimation": true,
+                    "location": [ 480, 170 ]
+                  }
+                ]
+              }
+            ]
+          },
+          "clicked_all": {
+            "events": {
+              "mollie_intro": "played",
+              "kate_intro": "played",
+              "raj_intro": "played",
+              "cj_intro": "played"
+            },
+            "actions": [
+              {
+                "type": "add-actor",
+                "args": [
+                  {
+                    "name": "next",
+                    "variable": "next_button",
+                    "type": "button",
+                    "image": "next",
+                    "location": [ 520, 20 ]
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        "actions": []
+      },
+      "scene2": {
+        "id": "scene2",
+        "title": "Scene 2",
+        "background": "none",
+        "actors": [
+          {
+            "name": "background",
+            "type": "decoration",
+            "image": "background",
+            "location": [ -640, 0 ]
+          },
+          {
+            "name": "easel",
+            "type": "decoration",
+            "image": "easel",
+            "location": [ 270, 10 ]
+          },
+          {
+            "name": "chooser",
+            "variable": "chooser",
+            "type": "chooser",
+            "location": [ 280, 20 ],
+            "images": "chooser",
+            "numChanges": 24,
+            "audio": "generalclick32",
+            "startButton": {
+              "image": "choose",
+              "location": [ 385, 290 ]
+            },
+            "rigged": true
+          },
+          {
+            "name": "screen2a",
+            "type": "audio",
+            "audio": "screen2a",
+            "variable": "screen2a",
+            "startDelay": 1
+          },
+          {
+            "name": "gus",
+            "variable": "gus",
+            "type": "button-character",
+            "speechAudio": "screen2a",
+            "speechAnimation": true,
+            "image": "gus",
+            "location": [25, 295 ]
+          }
+        ],
+        "outcomes": {
+          "cj_speaks": {
+            "events": {
+              "chooser": 0
+            },
+            "actions": [
+              {
+                "type": "remove-actor",
+                "args": ["cj_circle", "raj_circle", "kate_circle", "mollie_circle"]
+              },
+              {
+                "type": "add-actor",
+                "args": [
+                  {
+                    "name": "cj_school",
+                    "type": "audio",
+                    "audio": "cj_school",
+                    "variable": "cj_school",
+                    "startDelay": 3750
+                  },
+                  {
+                    "name": "cj_circle",
+                    "type": "no-input-character",
+                    "speechAudio": "cj_school",
+                    "speechAnimation": true,
+                    "variable": "cj_circle",
+                    "image": "cj_circle",
+                    "location": [ 60, 60 ],
+                    "startDelay": 3750
+                  }
+                ]
+              }
+            ]
+          },
+          "raj_speaks": {
+            "events": {
+              "chooser": 2
+            },
+            "actions": [
+              {
+                "type": "remove-actor",
+                "args": ["cj_circle", "raj_circle", "kate_circle", "mollie_circle"]
+              },
+              {
+                "type": "add-actor",
+                "args": [
+                  {
+                    "name": "raj_lunch",
+                    "type": "audio",
+                    "audio": "raj_lunch",
+                    "variable": "raj_lunch",
+                    "startDelay": 3750
+                  },
+                  {
+                    "name": "raj_circle",
+                    "type": "no-input-character",
+                    "speechAudio": "raj_lunch",
+                    "speechAnimation": true,
+                    "variable": "raj_circle",
+                    "image": "raj_circle",
+                    "location": [ 60, 60 ],
+                    "startDelay": 3750
+                  }
+                ]
+              }
+            ]
+          },
+          "kate_speaks": {
+            "events": {
+              "chooser": 1
+            },
+            "actions": [
+              {
+                "type": "remove-actor",
+                "args": ["cj_circle", "raj_circle", "kate_circle", "mollie_circle"]
+              },
+              {
+                "type": "add-actor",
+                "args": [
+                  {
+                    "name": "kate_gym",
+                    "type": "audio",
+                    "audio": "kate_gym",
+                    "variable": "kate_gym",
+                    "startDelay": 3750
+                  },
+                  {
+                    "name": "kate_circle",
+                    "type": "no-input-character",
+                    "speechAudio": "kate_gym",
+                    "speechAnimation": true,
+                    "variable": "kate_circle",
+                    "image": "kate_circle",
+                    "location": [ 60, 60 ],
+                    "startDelay": 3750
+                  }
+                ]
+              }
+            ]
+          },
+          "mollie_speaks": {
+            "events": {
+              "chooser": 3
+            },
+            "actions": [
+              {
+                "type": "remove-actor",
+                "args": ["cj_circle", "raj_circle", "kate_circle", "mollie_circle"]
+              },
+              {
+                "type": "add-actor",
+                "args": [
+                  {
+                    "name": "mollie_hallway",
+                    "type": "audio",
+                    "audio": "mollie_hallway",
+                    "variable": "mollie_hallway",
+                    "startDelay": 3750
+                  },
+                  {
+                    "name": "mollie_circle",
+                    "type": "no-input-character",
+                    "speechAudio": "mollie_hallway",
+                    "speechAnimation": true,
+                    "variable": "mollie_circle",
+                    "image": "mollie_circle",
+                    "location": [ 60, 60 ],
+                    "startDelay": 3750
+                  }
+                ]
+              }
+            ]
+          },
+          "clicked_all": {
+            "events": {
+              "mollie_hallway": "played",
+              "kate_gym": "played",
+              "raj_lunch": "played",
+              "cj_school": "played"
+            },
+            "actions": [
+              {
+                "type": "remove-actor",
+                "args": ["gus"]
+              },
+              {
+                "type": "add-actor",
+                "args": [
+                  {
+                    "name": "screen2b",
+                    "type": "audio",
+                    "audio": "screen2b",
+                    "variable": "screen2b",
+                    "startDelay": 500
+                  },
+                  {
+                    "name": "gus",
+                    "variable": "gus",
+                    "type": "no-input-character",
+                    "speechAudio": "screen2b",
+                    "speechAnimation": true,
+                    "image": "gus",
+                    "location": [25, 295 ]
+                  }
+                ]
+              }
+            ]
+          },
+          "gus_click": {
+            "events": {
+              "gus": "*"
+              },
+              "actions": [
+                {
+                  "type": "remove-actor",
+                  "args": ["gus"]
+                },
+                {
+                "type": "add-actor",
+                "args": [
+                  {
+                    "name": "gus",
+                    "variable": "gus",
+                    "type": "button-character",
+                    "speechAudio": "screen2a",
+                    "speechAnimation": true,
+                    "image": "gus",
+                    "location": [25, 295 ]
+                  },
+                  {
+                    "name":"screen2a",
+                    "type":"audio",
+                    "audio":"screen2a",
+                    "variable":"screen2a"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        "actions": [
+          { "type": "choice", "args": [ "objective_complete", 1] },
+          { "type": "choice", "args": [ "save", 0 ] }
+        ]
+      }
+    }
+  }
+}

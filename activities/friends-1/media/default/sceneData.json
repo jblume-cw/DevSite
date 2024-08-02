@@ -1,0 +1,1069 @@
+{
+  "play": {
+    "modelType": "basic",
+    "start": "resume_started",
+    "persist": [ "saved_scene" ],
+    "global": {
+      "actors": {},
+      "outcomes": {},
+      "actions": []
+    },
+    "scenes": {
+      "scene1": {
+        "id": "scene1",
+        "title": "Scene 1",
+        "background": "background",
+        "actors": [
+          {
+            "name": "gus",
+            "type": "no-input-character",
+            "image": "gus",
+            "speechAudio": "slide01",
+            "speechAnimation": true,
+            "location": [ 45, 325 ],
+            "scale": [ 0.8, 0.8 ]
+          },
+          {
+            "name": "FRIENDS",
+            "type": "text",
+            "font": "scene1Headline",
+            "location": [ 170, 70 ],
+            "wordWrapWidth": 550,
+            "text": "FRIENDS"
+          },
+          {
+            "name": "bus",
+            "variable": "bus",
+            "type": "decoration",
+            "image": "bus_dec",
+            "location": [ 140, 190 ],
+            "startDelay": 13500
+          },
+          {
+            "name": "gym",
+            "variable": "gym",
+            "type": "decoration",
+            "image": "gym_dec",
+            "location": [ 340, 190 ],
+            "startDelay": 37250
+          },
+          {   
+            "name": "no_back",
+            "type": "decoration",
+            "image": "no_back",
+            "location": [ 378, 397 ]
+          },   
+          {   
+            "name": "replay",
+            "variable": "replay_button",
+            "type": "button",
+            "image": "replay",
+            "location": [ 478, 400 ]
+          },
+          {   
+            "name": "next",
+            "variable": "next",
+            "type": "button",
+            "image": "next",
+            "location": [ 530, 397 ]
+          },
+          {
+            "name": "slide01",
+            "type": "audio",
+            "audio": "slide01",
+            "variable": "slide01"
+          }
+        ],
+        "outcomes": {
+          "finished_slide": {
+            "events": {
+              "slide01": "played"
+            },
+            "actions": [
+              { 
+                "type": "remove-actor",
+                "args":["next"] 
+              },
+              { 
+                "type": "add-actor",
+                "args": [
+                  {
+                    "name": "next",
+                    "type": "button",
+                    "image": "next",
+                    "animated": true,
+                    "animationLoop": true,
+                    "animationRepeat": 5000,
+                    "location": [ 530, 397 ],
+                    "variable": "next"
+                  }  
+                ]
+              }
+            ]
+          },
+          "go_next": {
+            "events": {
+              "next": "*"
+            },
+            "actions": [
+              { 
+                "type": "scene", 
+                "args": ["scene2"] 
+              }
+            ]        
+          },
+          "click_replay": {
+            "events": {
+              "replay_button": "*"
+            },
+            "actions": [
+              { "type": "variable", "args": ["replay_scene", "$current_scene_name"] },
+              {
+                "type": "scene",
+                "args": ["deadscene"]
+              }
+            ]        
+          }
+        },
+        "actions": [
+          { "type": "variable", "args": [ "saved_scene", "$current_scene_name"] }
+        ]
+      },
+      "scene2": {
+        "id": "scene2",
+        "title": "Scene 2",
+        "background": "background",
+        "actors": [
+          {
+            "name": "gus",
+            "type": "no-input-character",
+            "image": "gus",
+            "speechAudio": "slide_02a",
+            "speechAnimation": true,
+            "location": [ 45, 325 ],
+            "scale": [ 0.8, 0.8 ]
+          },
+          {
+            "name": "raj",
+            "variable": "raj",
+            "type": "button-character",
+            "image": "raj",
+            "speechAudio": "slide02_raj",
+            "speechAnimation": true,
+            "location": [ 60, 110 ]
+          },
+          {
+            "name": "mollie",
+            "variable": "mollie",
+            "type": "button-character",
+            "image": "mollie",
+            "speechAudio": "slide02_mollie",
+            "speechAnimation": true,
+            "location": [ 190, 130 ]
+          },
+          {
+            "name": "kate",
+            "variable": "kate",
+            "type": "button-character",
+            "image": "kate",
+            "speechAudio": "slide02_kate",
+            "speechAnimation": true,
+            "location": [ 350, 100 ]
+          },
+          {
+            "name": "cj",
+            "variable": "cj",
+            "type": "button-character",
+            "image": "cj",
+            "speechAudio": "slide02_cj",
+            "speechAnimation": true,
+            "location": [ 485, 80 ]
+          },
+          {   
+            "name": "back",
+            "variable": "back",
+            "type": "button",
+            "image": "back",
+            "location": [ 378, 397 ]
+          },   
+          {   
+            "name": "replay",
+            "variable": "replay_button",
+            "type": "button",
+            "image": "replay",
+            "location": [ 478, 400 ]
+          },
+          {   
+            "name": "next",
+            "variable": "next",
+            "type": "button",
+            "image": "next",
+            "location": [ 530, 397 ]
+          },
+          {
+            "name": "slide_02a",
+            "type": "audio",
+            "audio": "slide_02a",
+            "variable": "slide_02a"
+          }
+        ],
+        "outcomes": {
+          "click_raj": {
+            "events": {
+              "raj": "*"
+            },
+            "actions": [
+              {
+                "type": "add-actor",
+                "args": [
+                  {
+                    "name": "slide02_raj",
+                    "type": "audio",
+                    "audio": "slide02_raj",
+                    "variable": "slide02_raj"
+                  }
+                ]
+              }
+            ]        
+          },
+          "raj_done": {
+            "events": {
+              "slide02_raj": "played"
+            },
+            "actions": [
+              {
+                "type": "remove-actor",
+                "args": ["raj"]
+              },
+              {
+                "type": "add-actor",
+                "args": [
+                  {
+                    "name": "raj",
+                    "variable": "raj",
+                    "type": "button-character",
+                    "image": "raj",
+                    "speechAudio": "slide02_raj",
+                    "speechAnimation": true,
+                    "location": [ 60, 110 ]
+                  }
+                ]
+              }
+            ]
+          },
+          "click_mollie": {
+            "events": {
+              "mollie": "*"
+            },
+            "actions": [
+              {
+                "type": "add-actor",
+                "args": [
+                  {
+                    "name": "slide02_mollie",
+                    "type": "audio",
+                    "audio": "slide02_mollie",
+                    "variable": "slide02_mollie"
+                  }
+                ]
+              }
+            ]        
+          },
+          "mollie_done": {
+            "events": {
+              "slide02_mollie": "played"
+            },
+            "actions": [
+              {
+                "type": "remove-actor",
+                "args": ["mollie"]
+              },
+              {
+                "type": "add-actor",
+                "args": [
+                  {
+                    "name": "mollie",
+                    "variable": "mollie",
+                    "type": "button-character",
+                    "image": "mollie",
+                    "speechAudio": "slide02_mollie",
+                    "speechAnimation": true,
+                    "location": [ 190, 130 ]
+                  }
+                ]
+              }
+            ]
+          },
+          "click_kate": {
+            "events": {
+              "kate": "*"
+            },
+            "actions": [
+              {
+                "type": "add-actor",
+                "args": [
+                  {
+                    "name": "slide02_kate",
+                    "type": "audio",
+                    "audio": "slide02_kate",
+                    "variable": "slide02_kate"
+                  }
+                ]
+              }
+            ]        
+          },
+          "kate_done": {
+            "events": {
+              "slide02_kate": "played"
+            },
+            "actions": [
+              {
+                "type": "remove-actor",
+                "args": ["kate"]
+              },
+              {
+                "type": "add-actor",
+                "args": [
+                  {
+                    "name": "kate",
+                    "variable": "kate",
+                    "type": "button-character",
+                    "image": "kate",
+                    "speechAudio": "slide02_kate",
+                    "speechAnimation": true,
+                    "location": [ 350, 100 ]
+                  }
+                ]
+              }
+            ]
+          },
+          "click_cj": {
+            "events": {
+              "cj": "*"
+            },
+            "actions": [
+              {
+                "type": "add-actor",
+                "args": [
+                  {
+                    "name": "slide02_cj",
+                    "type": "audio",
+                    "audio": "slide02_cj",
+                    "variable": "slide02_cj"
+                  }
+                ]
+              }
+            ]        
+          },
+          "cj_done": {
+            "events": {
+              "slide02_cj": "played"
+            },
+            "actions": [
+              {
+                "type": "remove-actor",
+                "args": ["cj"]
+              },
+              {
+                "type": "add-actor",
+                "args": [
+                  {
+                    "name": "cj",
+                    "variable": "cj",
+                    "type": "button-character",
+                    "image": "cj",
+                    "speechAudio": "slide02_cj",
+                    "speechAnimation": true,
+                    "location": [ 485, 80 ]
+                  }
+                ]
+              }
+            ]
+          },
+          "clicked_each_char": {
+            "events": {
+              "slide02_raj": "played",
+              "slide02_mollie": "played",
+              "slide02_kate": "played",
+              "slide02_cj": "played"
+            },
+            "actions": [
+              {
+                "type": "remove-actor",
+                "args": ["gus"]
+              },
+              {
+                "type": "add-actor",
+                "args": [
+                  {
+                    "name": "slide_02b",
+                    "type": "audio",
+                    "audio": "slide_02b",
+                    "variable": "slide_02b",
+                    "startDelay": 500
+                  },
+                  {
+                    "name": "gus",
+                    "type": "no-input-character",
+                    "image": "gus",
+                    "speechAudio": "slide_02b",
+                    "speechAnimation": true,
+                    "location": [ 45, 325 ],
+                    "scale": [ 0.8, 0.8 ]
+                  }
+                ]
+              }
+            ]
+          },
+          "finished_slide": {
+            "events": {
+              "slide_02b": "played"
+            },
+            "actions": [
+              { 
+                "type": "remove-actor",
+                "args":["next"] 
+              },
+              { 
+                "type": "add-actor",
+                "args": [
+                  {
+                    "name": "next",
+                    "type": "button",
+                    "image": "next",
+                    "animated": true,
+                    "animationLoop": true,
+                    "animationRepeat": 5000,
+                    "location": [ 530, 397 ],
+                    "variable": "next"
+                  }  
+                ]
+              }
+            ]
+          },
+          "go_next": {
+            "events": {
+              "next": "*"
+            },
+            "actions": [
+              { 
+                "type": "scene", 
+                "args": ["scene3"] 
+              }
+            ]        
+          },
+          "click_back": {
+            "events": {
+              "back": "*"
+            },
+            "actions": [
+              { 
+                "type": "scene", 
+                "args": ["scene1"] 
+              }
+            ]        
+          },
+          "click_replay": {
+            "events": {
+              "replay_button": "*"
+            },
+            "actions": [
+              { "type": "variable", "args": ["replay_scene", "$current_scene_name"] },
+              {
+                "type": "scene",
+                "args": ["deadscene"]
+              }
+            ]        
+          }
+        },
+        "actions": [
+          { "type": "variable", "args": [ "saved_scene", "$current_scene_name"] }
+        ]
+      },
+      "scene3": {
+        "id": "scene3",
+        "title": "scene 3",
+        "background": "background",
+        "actors": [
+          {
+            "name": "gus",
+            "type": "no-input-character",
+            "image": "gus",
+            "speechAudio": "slide_03a",
+            "speechAnimation": true,
+            "location": [ 45, 325 ],
+            "scale": [ 0.8, 0.8 ]
+          },
+          {
+            "name": "videoFrame",
+            "variable": "videoFrame",
+            "type": "decoration",
+            "image": "videoframe",
+            "location": [ 100, 50 ] 
+          },
+          {
+            "name": "bullying_still_1",
+            "variable": "bullying_still_1",
+            "type": "decoration",
+            "image": "bullying_still_1",
+            "location": [ 105, 55 ] 
+          },
+          {   
+            "name": "back",
+            "variable": "back",
+            "type": "button",
+            "image": "back",
+            "location": [ 378, 397 ]
+          },   
+          {   
+            "name": "replay",
+            "variable": "replay_button",
+            "type": "button",
+            "image": "replay",
+            "location": [ 478, 400 ]
+          },
+          {   
+            "name": "next",
+            "variable": "next",
+            "type": "button",
+            "image": "next",
+            "location": [ 530, 397 ]
+          },
+          {
+            "name": "slide_03a",
+            "type": "audio",
+            "audio": "slide_03a",
+            "variable": "slide_03a"
+          }
+        ],
+        "outcomes": {
+          "gus_intro_finished": {
+            "events": {
+              "slide_03a": "played"
+            },
+            "actions": [
+              {
+                "type": "add-actor",
+                "args": [
+                  {
+                    "name": "friends_video_1",
+                    "type": "wistia",
+                    "location": [ 104, 55 ],
+                    "size":[ 440, 240 ],
+                    "video": "js7e2wn104",  
+                    "autoplay": true,
+                    "hideCloseButton": true,
+                    "variable": "friends_video_1"
+                  }
+                ]
+              }
+            ]
+          },
+          "finished_video": {
+            "events": {
+              "friends_video_1": "finished"
+            },
+            "actions": [
+              {
+                "type": "remove-actor",
+                "args": ["gus", "friends_video_1"]
+              },
+              {
+                "type": "add-actor",
+                "args": [
+                  {
+                    "name": "slide_03b",
+                    "type": "audio",
+                    "audio": "slide_03b",
+                    "variable": "slide_03b",
+                    "startDelay": 1
+                  },
+                  {
+                    "name": "gus",
+                    "type": "no-input-character",
+                    "image": "gus",
+                    "speechAudio": "slide_03b",
+                    "speechAnimation": true,
+                    "location": [ 45, 325 ],
+                    "scale": [ 0.8, 0.8 ]
+                  }
+                ]
+              }
+            ]
+          },
+          "finished_slide": {
+            "events": {
+              "slide_03b": "played"
+            },
+            "actions": [
+              { 
+                "type": "remove-actor",
+                "args":["next"] 
+              },
+              { 
+                "type": "add-actor",
+                "args": [
+                  {
+                    "name": "next",
+                    "type": "button",
+                    "image": "next",
+                    "animated": true,
+                    "animationLoop": true,
+                    "animationRepeat": 5000,
+                    "location": [ 530, 397 ],
+                    "variable": "next"
+                  }  
+                ]
+              }
+            ]
+          },
+          "go_next": {
+            "events": {
+              "next": "*"
+            },
+            "actions": [
+              { 
+                "type": "scene", 
+                "args": ["scene4"] 
+              }
+            ]        
+          },
+          "click_back": {
+            "events": {
+              "back": "*"
+            },
+            "actions": [
+              { 
+                "type": "scene", 
+                "args": ["scene2"] 
+              }
+            ]        
+          },
+          "click_replay": {
+            "events": {
+              "replay_button": "*"
+            },
+            "actions": [
+              { "type": "variable", "args": ["replay_scene", "$current_scene_name"] },
+              {
+                "type": "scene",
+                "args": ["deadscene"]
+              }
+            ]        
+          }
+        },
+        "actions": [
+          { "type": "variable", "args": [ "saved_scene", "$current_scene_name"] }
+        ]
+      },
+      "scene4": {
+        "id": "scene4",
+        "title": "scene 4",
+        "background": "background",
+        "actors": [
+          {
+            "name": "gus",
+            "type": "no-input-character",
+            "image": "gus",
+            "speechAudio": "slide_04a",
+            "speechAnimation": true,
+            "location": [ 45, 325 ],
+            "scale": [ 0.8, 0.8 ]
+          },
+          {
+            "name": "videoFrame",
+            "variable": "videoFrame",
+            "type": "decoration",
+            "image": "videoframe",
+            "location": [ 100, 50 ] 
+          },
+          {
+            "name": "bullying_still_2",
+            "variable": "bullying_still_2",
+            "type": "decoration",
+            "image": "bullying_still_2",
+            "location": [ 105, 55 ] 
+          },
+          {   
+            "name": "back",
+            "variable": "back",
+            "type": "button",
+            "image": "back",
+            "location": [ 378, 397 ]
+          },   
+          {   
+            "name": "replay",
+            "variable": "replay_button",
+            "type": "button",
+            "image": "replay",
+            "location": [ 478, 400 ]
+          },
+          {   
+            "name": "next",
+            "variable": "next",
+            "type": "button",
+            "image": "next",
+            "location": [ 530, 397 ]
+          },
+          {
+            "name": "slide_04a",
+            "type": "audio",
+            "audio": "slide_04a",
+            "variable": "slide_04a"
+          }
+        ],
+        "outcomes": {
+          "gus_intro_finished": {
+            "events": {
+              "slide_04a": "played"
+            },
+            "actions": [
+              {
+                "type": "add-actor",
+                "args": [
+                  {
+                    "name": "friends_video_2",
+                    "type": "wistia",
+                    "location": [ 104, 55 ],
+                    "size":[ 440, 240 ],
+                    "video": "au907917gj",
+                    "autoplay": true,
+                    "hideCloseButton": true,
+                    "variable": "friends_video_2"
+                  }
+                ]
+              }
+            ]
+          },
+          "finished_video": {
+            "events": {
+              "friends_video_2": "finished"
+            },
+            "actions": [
+              {
+                "type": "remove-actor",
+                "args": ["gus", "friends_video_2"]
+              },
+              {
+                "type": "add-actor",
+                "args": [
+                  {
+                    "name": "slide_04b",
+                    "type": "audio",
+                    "audio": "slide_04b",
+                    "variable": "slide_04b",
+                    "startDelay": 1
+                  },
+                  {
+                    "name": "gus",
+                    "type": "no-input-character",
+                    "image": "gus",
+                    "speechAudio": "slide_04b",
+                    "speechAnimation": true,
+                    "location": [ 45, 325 ],
+                    "scale": [ 0.8, 0.8 ]
+                  }
+                ]
+              }
+            ]
+          },
+          "finished_slide": {
+            "events": {
+              "slide_04b": "played"
+            },
+            "actions": [
+              { 
+                "type": "remove-actor",
+                "args":["next"] 
+              },
+              { 
+                "type": "add-actor",
+                "args": [
+                  {
+                    "name": "next",
+                    "type": "button",
+                    "image": "next",
+                    "animated": true,
+                    "animationLoop": true,
+                    "animationRepeat": 5000,
+                    "location": [ 530, 397 ],
+                    "variable": "next"
+                  }  
+                ]
+              }
+            ]
+          },
+          "go_next": {
+            "events": {
+              "next": "*"
+            },
+            "actions": [
+              { 
+                "type": "scene", 
+                "args": ["scene5"] 
+              }
+            ]        
+          },
+          "click_back": {
+            "events": {
+              "back": "*"
+            },
+            "actions": [
+              { 
+                "type": "scene", 
+                "args": ["scene3"] 
+              }
+            ]        
+          },
+          "click_replay": {
+            "events": {
+              "replay_button": "*"
+            },
+            "actions": [
+              { "type": "variable", "args": ["replay_scene", "$current_scene_name"] },
+              {
+                "type": "scene",
+                "args": ["deadscene"]
+              }
+            ]        
+          }
+        },
+        "actions": [
+          { "type": "variable", "args": [ "saved_scene", "$current_scene_name"] }
+        ]
+      },
+      "scene5": {
+        "id": "scene5",
+        "title": "Scene 5",
+        "background": "background",
+        "actors": [
+          {
+            "name": "gus",
+            "type": "no-input-character",
+            "image": "gus",
+            "speechAudio": "slide_05",
+            "speechAnimation": true,
+            "location": [ 45, 325 ],
+            "scale": [ 0.8, 0.8 ]
+          },
+          {
+            "name": "text_1",
+            "type": "text",
+            "font": "goodJob",
+            "location": [ 120, 120 ],
+            "wordWrapWidth": 550,
+            "text": "GOOD JOB!"
+          },
+          {
+            "name": "teacher",
+            "type": "text",
+            "font": "teacher",
+            "location": [ 320, 270 ],
+            "wordWrapWidth": 300,
+            "text": "Teachers: follow up on this lesson with offline activities found in your Act Now! Teacher's Guide."
+          },
+          {   
+            "name": "back",
+            "variable": "back",
+            "type": "button",
+            "image": "back",
+            "location": [ 378, 397 ]
+          },   
+          {   
+            "name": "replay",
+            "variable": "replay_button",
+            "type": "button",
+            "image": "replay",
+            "location": [ 478, 400 ]
+          },
+          {   
+            "name": "no_next",
+            "type": "decoration",
+            "image": "no_next",
+            "location": [ 530, 397 ]
+          },
+          {
+            "name": "slide_05",
+            "type": "audio",
+            "audio": "slide_05",
+            "variable": "slide_05"
+          }
+        ],
+        "outcomes": {
+          "click_back": {
+            "events": {
+              "back": "*"
+            },
+            "actions": [
+              { 
+                "type": "scene", 
+                "args": ["scene4"] 
+              }
+            ]        
+          },
+          "click_replay": {
+            "events": {
+              "replay_button": "*"
+            },
+            "actions": [
+              { "type": "variable", "args": ["replay_scene", "$current_scene_name"] },
+              {
+                "type": "scene",
+                "args": ["deadscene"]
+              }
+            ]        
+          }
+        },
+        "actions": [
+          { "type": "variable", "args": [ "saved_scene", "$current_scene_name"] },
+          { "type": "choice", "args": [ "objective_complete", 1] },
+          { "type": "choice", "args": [ "save", 0 ] }
+        ]
+      },
+      "resume_started": {
+        "id": "resume_started",
+        "title": "for resuming part way through",
+        "background": "none",
+        "actors": [
+          {
+            "name": "restart",
+            "variable": "restart",
+            "type": "button",
+            "image": "restart",
+            "location": [ 120, 230 ]
+          },
+          {
+            "name": "resume",
+            "variable": "resume",
+            "type": "button",
+            "image": "resume",
+            "location": [ 330, 230 ]
+          },
+          { 
+            "name": "resume-message",
+            "type": "text",
+            "font": "resume-message",
+            "text": "You have already completed part of this lesson",
+            "location": [ "center", 160 ]
+          }
+        ],
+        "outcomes": {
+          "has_resume": {
+            "events": {
+              "saved_scene": "undefined"
+            },
+            "actions": [
+              {
+                "type": "scene",
+                "args": ["scene1"]
+              }
+            ]
+          },
+          "finished": {
+            "events": {
+              "saved_scene": "scene5"
+            },
+            "actions": [
+              {
+                "type": "scene",
+                "args": ["resume_finished"]
+              }
+            ]
+          },
+          "start_over": {
+            "events": {
+              "restart": "*"
+            },
+            "actions": [
+              {
+                "type": "scene",
+                "args": ["scene1"]
+              }
+            ]
+          },
+          "resume_scene": {
+            "events": {
+              "resume": "*"
+            },
+            "actions": [
+              {
+                "type": "scene",
+                "args": ["$saved_scene"]
+              }
+            ]
+          }
+        },
+        "actions": [
+          { "type": "check-outcomes", "args": [ "saved_scene" ] }
+        ]
+      },
+      "resume_finished": {
+        "id": "resume_finished",
+        "title": "finished",
+        "background": "none",
+        "actors": [
+          {
+            "name": "restart",
+            "variable": "restart",
+            "type": "button",
+            "image": "restart",
+            "location": [ 120, 230 ]
+          },
+          {
+            "name": "resume",
+            "variable": "resume",
+            "type": "button",
+            "image": "resume",
+            "location": [ 330, 230 ]
+          },
+          { 
+            "name": "resume-message",
+            "type": "text",
+            "font": "resume-message",
+            "text": "You have already completed this lesson",
+            "location": [ "center", 160 ]
+          }
+        ],
+        "outcomes": {
+          "start_over": {
+            "events": {
+              "restart": "*"
+            },
+            "actions": [
+              {
+                "type": "scene",
+                "args": ["scene1"]
+              }
+            ]
+          },
+          "resume_scene": {
+            "events": {
+              "resume": "*"
+            },
+            "actions": [
+              {
+                "type": "scene",
+                "args": ["scene5"]
+              }
+            ]
+          }
+        },
+        "actions": [
+        ]
+      },
+      "deadscene": {
+        "id": "deadscene",
+        "title": "deadscene",
+        "background": "background",
+        "actors": [],
+        "outcomes": {},
+        "actions": [
+          {
+            "type": "scene",
+            "args": ["$replay_scene"]
+          }
+        ]
+      }
+    }
+  }
+}

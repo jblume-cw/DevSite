@@ -1,0 +1,1768 @@
+{
+  "play": {
+    "modelType": "basic",
+    "start": "resume_started",
+    "persist": [ "saved_scene" ],
+    "global": {
+      "actors": {},
+      "outcomes": {},
+      "actions": []
+    },
+    "scenes": {
+      "scene1": {
+        "id": "scene1",
+        "title": "Scene 1",
+        "background": "background",
+        "actors": [
+          {
+            "name": "gus",
+            "variable": "gus",
+            "type": "no-input-character",
+            "image": "gus",
+            "speechAudio": "slide01",
+            "speechAnimation": true,
+            "location": [ 45, 325 ],
+            "scale": [ 0.8, 0.8 ]
+          },
+          {
+            "name": "FEELINGS",
+            "type": "text",
+            "font": "feelingsHeadline",
+            "location": [ 225, 95 ],
+            "wordWrapWidth": 550,
+            "text": "FEELINGS",
+            "startDelay": 8000,
+            "tween": {
+              "time": 500,
+              "location": [ 75, 95 ],
+              "delay": 5500,
+              "yoyo": false
+            }
+          },
+          {
+            "name": "= EMOTIONS",
+            "type": "text",
+            "font": "feelingsHeadline",
+            "location": [ 300, 95 ],
+            "wordWrapWidth": 550,
+            "text": "=   EMOTIONS",
+            "startDelay": 14000
+          },
+          {
+            "name": "All feelings",
+            "type": "text",
+            "font": "feelingsSubHeadline",
+            "location": [ 75, 180 ],
+            "wordWrapWidth": 550,
+            "text": "All feelings are normal and healthy.",
+            "startDelay": 20500
+          },
+          {   
+            "name": "no_back",
+            "type": "decoration",
+            "image": "no_back",
+            "location": [ 378, 397 ]
+          },   
+          {   
+            "name": "replay",
+            "variable": "replay_button",
+            "type": "button",
+            "image": "replay",
+            "location": [ 478, 400 ]
+          },
+          {   
+            "name": "next",
+            "variable": "next",
+            "type": "button",
+            "image": "next",
+            "location": [ 530, 397 ]
+          },
+          {
+            "name": "slide01",
+            "type": "audio",
+            "audio": "slide01",
+            "variable": "slide01"
+          }
+        ],
+        "outcomes": {
+          "finished_slide": {
+            "events": {
+              "slide01": "played"
+            },
+            "actions": [
+              { 
+                "type": "remove-actor",
+                "args":["next"] 
+              },
+              { 
+                "type": "add-actor",
+                "args": [
+                  {
+                    "name": "next",
+                    "type": "button",
+                    "image": "next",
+                    "animated": true,
+                    "animationLoop": true,
+                    "animationRepeat": 5000,
+                    "location": [ 530, 397 ],
+                    "variable": "next"
+                  }  
+                ]
+              }
+            ]
+          },
+          "go_next": {
+            "events": {
+              "next": "*"
+            },
+            "actions": [
+              { 
+                "type": "scene", 
+                "args": ["scene2"] 
+              }
+            ]        
+          },
+          "click_replay": {
+            "events": {
+              "replay_button": "*"
+            },
+            "actions": [
+              { "type": "variable", "args": ["replay_scene", "$current_scene_name"] },
+              {
+                "type": "scene",
+                "args": ["deadscene"]
+              }
+            ]        
+          }
+        },
+        "actions": [
+          { "type": "variable", "args": [ "saved_scene", "$current_scene_name"] }
+        ]
+      },
+      "scene2": {
+        "id": "scene2",
+        "title": "Scene 2",
+        "background": "background",
+        "actors": [
+          {
+            "name": "gus",
+            "variable": "gus",
+            "type": "no-input-character",
+            "image": "gus",
+            "speechAudio": "slide02",
+            "speechAnimation": true,
+            "location": [ 45, 325 ],
+            "scale": [ 0.8, 0.8 ]
+          },
+          {
+            "name": "Sad",
+            "type": "text",
+            "font": "feelingsList",
+            "location": [ 350, 80 ],
+            "wordWrapWidth": 550,
+            "text": "Sad",
+            "startDelay": 9000
+          },
+          {
+            "name": "Disappointed",
+            "type": "text",
+            "font": "feelingsList",
+            "location": [ 350, 145 ],
+            "wordWrapWidth": 550,
+            "text": "Disappointed",
+            "startDelay": 10000
+          },
+          {
+            "name": "Angry",
+            "type": "text",
+            "font": "feelingsList",
+            "location": [ 350, 210 ],
+            "wordWrapWidth": 550,
+            "text": "Angry",
+            "startDelay": 12000
+          },
+          {
+            "name": "It's OK",
+            "type": "text",
+            "font": "feelingsValidation",
+            "location": [ 100, 125 ],
+            "wordWrapWidth": 550,
+            "text": "It's OK",
+            "startDelay": 13500
+          },
+          {   
+            "name": "back",
+            "variable": "back",
+            "type": "button",
+            "image": "back",
+            "location": [ 378, 397 ]
+          },   
+          {   
+            "name": "replay",
+            "variable": "replay_button",
+            "type": "button",
+            "image": "replay",
+            "location": [ 478, 400 ]
+          },
+          {   
+            "name": "next",
+            "variable": "next",
+            "type": "button",
+            "image": "next",
+            "location": [ 530, 397 ]
+          },
+          {
+            "name": "slide02",
+            "type": "audio",
+            "audio": "slide02",
+            "variable": "slide02"
+          }
+        ],
+        "outcomes": {
+          "finished_slide": {
+            "events": {
+              "slide02": "played"
+            },
+            "actions": [
+              { 
+                "type": "remove-actor",
+                "args":["next"] 
+              },
+              { 
+                "type": "add-actor",
+                "args": [
+                  {
+                    "name": "next",
+                    "type": "button",
+                    "image": "next",
+                    "animated": true,
+                    "animationLoop": true,
+                    "animationRepeat": 5000,
+                    "location": [ 530, 397 ],
+                    "variable": "next"
+                  }  
+                ]
+              }
+            ]
+          },
+          "go_next": {
+            "events": {
+              "next": "*"
+            },
+            "actions": [
+              { 
+                "type": "scene", 
+                "args": ["scene3"] 
+              }
+            ]        
+          },
+          "click_back": {
+            "events": {
+              "back": "*"
+            },
+            "actions": [
+              { 
+                "type": "scene", 
+                "args": ["scene1"] 
+              }
+            ]        
+          },
+          "click_replay": {
+            "events": {
+              "replay_button": "*"
+            },
+            "actions": [
+              { "type": "variable", "args": ["replay_scene", "$current_scene_name"] },
+              {
+                "type": "scene",
+                "args": ["deadscene"]
+              }
+            ]        
+          }
+        },
+        "actions": [
+          { "type": "variable", "args": [ "saved_scene", "$current_scene_name"] }
+        ]
+      },
+      "scene3": {
+        "id": "scene3",
+        "title": "Scene 3",
+        "background": "background",
+        "actors": [
+          {
+            "name": "balloons_L",
+            "variable": "balloons_L",
+            "type": "decoration",
+            "image": "balloons",
+            "location": [ 75, 55 ]
+          },
+          {
+            "name": "gus",
+            "variable": "gus",
+            "type": "no-input-character",
+            "image": "gus",
+            "speechAudio": "slide03",
+            "speechAnimation": true,
+            "location": [ 45, 325 ],
+            "scale": [ 0.8, 0.8 ]
+          },
+          {
+            "name": "balloons_R",
+            "variable": "balloons_R",
+            "type": "decoration",
+            "image": "balloons",
+            "location": [ 450, 55 ]
+          },
+          {
+            "name": "Happy",
+            "type": "text",
+            "font": "feelingsList2",
+            "location": [ 250, 55 ],
+            "wordWrapWidth": 550,
+            "text": "Happy",
+            "startDelay": 5250
+          },
+          {
+            "name": "Excited",
+            "type": "text",
+            "font": "feelingsList2",
+            "location": [ 245, 145 ],
+            "wordWrapWidth": 550,
+            "text": "Excited",
+            "startDelay": 6000
+          },
+          {
+            "name": "Thank you",
+            "type": "text",
+            "font": "feelingsSubHeadline",
+            "location": [ 165, 240 ],
+            "wordWrapWidth": 550,
+            "text": "\"Thank you for coming\nto my birthday party!\"",
+            "startDelay": 15000
+          },
+          {   
+            "name": "back",
+            "variable": "back",
+            "type": "button",
+            "image": "back",
+            "location": [ 378, 397 ]
+          },   
+          {   
+            "name": "replay",
+            "variable": "replay_button",
+            "type": "button",
+            "image": "replay",
+            "location": [ 478, 400 ]
+          },
+          {   
+            "name": "next",
+            "variable": "next",
+            "type": "button",
+            "image": "next",
+            "location": [ 530, 397 ]
+          },
+          {
+            "name": "slide03",
+            "type": "audio",
+            "audio": "slide03",
+            "variable": "slide03"
+          }
+        ],
+        "outcomes": {
+          "finished_slide": {
+            "events": {
+              "slide03": "played"
+            },
+            "actions": [
+              { 
+                "type": "remove-actor",
+                "args":["next"] 
+              },
+              { 
+                "type": "add-actor",
+                "args": [
+                  {
+                    "name": "next",
+                    "type": "button",
+                    "image": "next",
+                    "animated": true,
+                    "animationLoop": true,
+                    "animationRepeat": 5000,
+                    "location": [ 530, 397 ],
+                    "variable": "next"
+                  }  
+                ]
+              }
+            ]
+          },
+          "go_next": {
+            "events": {
+              "next": "*"
+            },
+            "actions": [
+              { 
+                "type": "scene", 
+                "args": ["scene4"] 
+              }
+            ]        
+          },
+          "click_back": {
+            "events": {
+              "back": "*"
+            },
+            "actions": [
+              { 
+                "type": "scene", 
+                "args": ["scene2"] 
+              }
+            ]        
+          },
+          "click_replay": {
+            "events": {
+              "replay_button": "*"
+            },
+            "actions": [
+              { "type": "variable", "args": ["replay_scene", "$current_scene_name"] },
+              {
+                "type": "scene",
+                "args": ["deadscene"]
+              }
+            ]        
+          }
+        },
+        "actions": [
+          { "type": "variable", "args": [ "saved_scene", "$current_scene_name"] }
+        ]
+      },
+      "scene4": {
+        "id": "scene4",
+        "title": "Scene 4",
+        "background": "background",
+        "actors": [
+          {
+            "name": "gus",
+            "variable": "gus",
+            "type": "no-input-character",
+            "image": "gus",
+            "speechAudio": "slide04",
+            "speechAnimation": true,
+            "location": [ 45, 325 ],
+            "scale": [ 0.8, 0.8 ]
+          },
+          {
+            "name": "Sad",
+            "type": "text",
+            "font": "feelingsList",
+            "location": [ 290, 60 ],
+            "wordWrapWidth": 550,
+            "text": "Sad",
+            "startDelay": 3250
+          },
+          {
+            "name": "Lonely",
+            "type": "text",
+            "font": "feelingsList",
+            "location": [ 270, 125 ],
+            "wordWrapWidth": 550,
+            "text": "Lonely",
+            "startDelay": 4250
+          },
+          {
+            "name": "Disappointed",
+            "type": "text",
+            "font": "feelingsList",
+            "location": [ 215, 190 ],
+            "wordWrapWidth": 550,
+            "text": "Disappointed",
+            "startDelay": 5000
+          },
+          {
+            "name": "Talk to a friend",
+            "type": "text",
+            "font": "feelingsSubHeadline",
+            "location": [ 85, 270 ],
+            "wordWrapWidth": 550,
+            "text": "Talk to a friend or a trusted adult.",
+            "startDelay": 14500
+          },
+          {   
+            "name": "back",
+            "variable": "back",
+            "type": "button",
+            "image": "back",
+            "location": [ 378, 397 ]
+          },   
+          {   
+            "name": "replay",
+            "variable": "replay_button",
+            "type": "button",
+            "image": "replay",
+            "location": [ 478, 400 ]
+          },
+          {   
+            "name": "next",
+            "variable": "next",
+            "type": "button",
+            "image": "next",
+            "location": [ 530, 397 ]
+          },
+          {
+            "name": "slide04",
+            "type": "audio",
+            "audio": "slide04",
+            "variable": "slide04"
+          }
+        ],
+        "outcomes": {
+          "finished_slide": {
+            "events": {
+              "slide04": "played"
+            },
+            "actions": [
+              { 
+                "type": "remove-actor",
+                "args":["next"] 
+              },
+              { 
+                "type": "add-actor",
+                "args": [
+                  {
+                    "name": "next",
+                    "type": "button",
+                    "image": "next",
+                    "animated": true,
+                    "animationLoop": true,
+                    "animationRepeat": 5000,
+                    "location": [ 530, 397 ],
+                    "variable": "next"
+                  }  
+                ]
+              }
+            ]
+          },
+          "go_next": {
+            "events": {
+              "next": "*"
+            },
+            "actions": [
+              { 
+                "type": "scene", 
+                "args": ["scene5"] 
+              }
+            ]        
+          },
+          "click_back": {
+            "events": {
+              "back": "*"
+            },
+            "actions": [
+              { 
+                "type": "scene", 
+                "args": ["scene3"] 
+              }
+            ]        
+          },
+          "click_replay": {
+            "events": {
+              "replay_button": "*"
+            },
+            "actions": [
+              { "type": "variable", "args": ["replay_scene", "$current_scene_name"] },
+              {
+                "type": "scene",
+                "args": ["deadscene"]
+              }
+            ]        
+          }
+        },
+        "actions": [
+          { "type": "variable", "args": [ "saved_scene", "$current_scene_name"] }
+        ]
+      },
+      "scene5": {
+        "id": "scene5",
+        "title": "Scene 5",
+        "background": "background",
+        "actors": [
+          {
+            "name": "gus",
+            "variable": "gus",
+            "type": "no-input-character",
+            "image": "gus",
+            "speechAudio": "slide05",
+            "speechAnimation": true,
+            "location": [ 45, 325 ],
+            "scale": [ 0.8, 0.8 ]
+          },
+          {
+            "name": "text_1",
+            "type": "text",
+            "font": "feelingsScene5List",
+            "location": [ 45, 60 ],
+            "wordWrapWidth": 550,
+            "text": "All feelings are OK.",
+            "startDelay": 2250
+          },
+          {
+            "name": "text_2",
+            "type": "text",
+            "font": "feelingsScene5List",
+            "location": [ 45, 125 ],
+            "wordWrapWidth": 550,
+            "text": "You can't always control what you feel.",
+            "startDelay": 4500
+          },
+          {
+            "name": "text_3",
+            "type": "text",
+            "font": "feelingsScene5List",
+            "location": [ 45, 190 ],
+            "wordWrapWidth": 550,
+            "text": "You can control how you react.",
+            "startDelay": 7750
+          },
+          {
+            "name": "text_4",
+            "type": "text",
+            "font": "feelingsScene5Alert",
+            "location": [ 255, 255 ],
+            "wordWrapWidth": 550,
+            "text": "Angry",
+            "startDelay": 12000
+          },
+          {
+            "name": "text_5",
+            "type": "text",
+            "font": "feelingsScene5Part2",
+            "location": [ 55, 55 ],
+            "wordWrapWidth": 550,
+            "text": "What should you do when you get angry?",
+            "startDelay": 33500
+          },
+          {
+            "name": "text_6",
+            "type": "text",
+            "font": "feelingsListScene5Part2",
+            "location": [ 200, 155 ],
+            "wordWrapWidth": 550,
+            "text": "Stomp your feet",
+            "startDelay": 36500
+          },
+          {
+            "name": "text_7",
+            "type": "text",
+            "font": "feelingsListScene5Part2",
+            "location": [ 290, 205 ],
+            "wordWrapWidth": 550,
+            "text": "Yell",
+            "startDelay": 38000
+          },
+          {
+            "name": "text_8",
+            "type": "text",
+            "font": "feelingsListScene5Part2",
+            "location": [ 230, 250 ],
+            "wordWrapWidth": 550,
+            "text": "Hit somebody",
+            "startDelay": 40500
+          },
+          {
+            "name": "buster",
+            "variable": "buster",
+            "type": "decoration",
+            "image": "buster",
+            "location": [ 183, 105 ],
+            "startDelay": 42500,
+            "scale": [ 0.975, 0.975 ]
+          },
+          {   
+            "name": "back",
+            "variable": "back",
+            "type": "button",
+            "image": "back",
+            "location": [ 378, 397 ]
+          },   
+          {   
+            "name": "replay",
+            "variable": "replay_button",
+            "type": "button",
+            "image": "replay",
+            "location": [ 478, 400 ]
+          },
+          {   
+            "name": "next",
+            "variable": "next",
+            "type": "button",
+            "image": "next",
+            "location": [ 530, 397 ]
+          },
+          {
+            "name": "slide05",
+            "type": "audio",
+            "audio": "slide05",
+            "variable": "slide05"
+          },
+          {
+            "name": "split_scene",
+            "type": "timeline",
+            "variable": "split_scene",
+            "period": 33500 
+          }
+        ],
+        "outcomes": {
+          "finished_slide": {
+            "events": {
+              "slide05": "played"
+            },
+            "actions": [
+              { 
+                "type": "remove-actor",
+                "args":["next"] 
+              },
+              { 
+                "type": "add-actor",
+                "args": [
+                  {
+                    "name": "next",
+                    "type": "button",
+                    "image": "next",
+                    "animated": true,
+                    "animationLoop": true,
+                    "animationRepeat": 5000,
+                    "location": [ 530, 397 ],
+                    "variable": "next"
+                  }  
+                ]
+              }
+            ]
+          },
+          "split_scene": {
+            "events": {
+              "split_scene": "split_scene"
+            },
+            "actions": [
+              {
+                "type": "remove-actor",
+                "args": ["split_scene", "text_1", "text_2", "text_3", "text_4"]
+              }
+            ]
+          },
+          "go_next": {
+            "events": {
+              "next": "*"
+            },
+            "actions": [
+              { 
+                "type": "scene", 
+                "args": ["scene6"] 
+              }
+            ]        
+          },
+          "click_back": {
+            "events": {
+              "back": "*"
+            },
+            "actions": [
+              { 
+                "type": "scene", 
+                "args": ["scene4"] 
+              }
+            ]        
+          },
+          "click_replay": {
+            "events": {
+              "replay_button": "*"
+            },
+            "actions": [
+              { "type": "variable", "args": ["replay_scene", "$current_scene_name"] },
+              {
+                "type": "scene",
+                "args": ["deadscene"]
+              }
+            ]        
+          }
+        },
+        "actions": [
+          { "type": "variable", "args": [ "saved_scene", "$current_scene_name"] }
+        ]
+      },
+      "scene6": {
+        "id": "scene6",
+        "title": "Scene 6",
+        "background": "background",
+        "actors": [
+          {
+            "name": "gus",
+            "variable": "gus",
+            "type": "no-input-character",
+            "image": "gus",
+            "speechAudio": "slide06a",
+            "speechAnimation": true,
+            "location": [ 45, 325 ],
+            "scale": [ 0.8, 0.8 ]
+          },
+          {
+            "name": "text_1",
+            "type": "text",
+            "font": "feelingsScene6List",
+            "location": [ 55, 90 ],
+            "wordWrapWidth": 550,
+            "text": "Take a deep breath and count to 10.",
+            "startDelay": 2250
+          },
+          {   
+            "name": "back",
+            "variable": "back",
+            "type": "button",
+            "image": "back",
+            "location": [ 378, 397 ]
+          },   
+          {   
+            "name": "replay",
+            "variable": "replay_button",
+            "type": "button",
+            "image": "replay",
+            "location": [ 478, 400 ]
+          },
+          {   
+            "name": "next",
+            "variable": "next",
+            "type": "button",
+            "image": "next",
+            "location": [ 530, 397 ]
+          },
+          {
+            "name": "slide06a",
+            "type": "audio",
+            "audio": "slide06a",
+            "variable": "slide06a"
+          }
+        ],
+        "outcomes": {
+          "finished_slide": {
+            "events": {
+              "slide06b": "played"
+            },
+            "actions": [
+              { 
+                "type": "remove-actor",
+                "args":["next"] 
+              },
+              { 
+                "type": "add-actor",
+                "args": [
+                  {
+                    "name": "next",
+                    "type": "button",
+                    "image": "next",
+                    "animated": true,
+                    "animationLoop": true,
+                    "animationRepeat": 5000,
+                    "location": [ 530, 397 ],
+                    "variable": "next"
+                  }  
+                ]
+              }
+            ]
+          },
+          "ready_to_click_gus": {
+            "events": {
+              "slide06a": "played"
+            },
+            "actions": [
+              {
+                "type": "remove-actor",
+                "args": ["slide06a", "gus"]
+              },
+              {
+                "type": "add-actor",
+                "args": [
+                  {
+                    "name": "gus_button",
+                    "variable": "gus_button",
+                    "type": "button",
+                    "image": "gus_button",
+                    "location": [ 45, 325 ],
+                    "scale": [ 0.8, 0.8 ]
+                  }
+                ]
+              }
+            ]
+          },
+          "clicked_gus": {
+            "events": {
+              "gus_button": "*"
+            },
+            "actions": [
+              {
+                "type": "remove-actor",
+                "args": ["gus_button"]
+              },
+              { 
+                "type": "add-actor", 
+                "args": [
+                  {
+                    "name": "gus",
+                    "variable": "gus",
+                    "type": "no-input-character",
+                    "image": "gus",
+                    "speechAudio": "slide06b",
+                    "speechAnimation": true,
+                    "location": [ 45, 325 ],
+                    "scale": [ 0.8, 0.8 ]
+                  },
+                  {
+                    "name": "split_scene_1",
+                    "type": "timeline",
+                    "variable": "split_scene_1",
+                    "period": 9000 
+                  },
+                  {
+                    "name": "slide06b",
+                    "type": "audio",
+                    "audio": "slide06b",
+                    "variable": "slide06b"
+                  }
+                ] 
+              }
+            ]
+          },
+          "split_scene_1": {
+            "events": {
+              "split_scene_1": "split_scene_1"
+            },
+            "actions": [
+              {
+                "type": "remove-actor",
+                "args": ["split_scene_1"]
+              },
+              {
+                "type": "add-actor",
+                "args": [
+                  {
+                    "name": "split_scene_2",
+                    "type": "timeline",
+                    "variable": "split_scene_2",
+                    "period": 1250 
+                  },
+                  {
+                    "name": "counter_1",
+                    "type": "text",
+                    "font": "feelingsScene6Alert",
+                    "location": [ 300, 170 ],
+                    "wordWrapWidth": 550,
+                    "text": "1"
+                  }
+                ]
+              }
+            ]
+          },
+          "split_scene_2": {
+            "events": {
+              "split_scene_2": "split_scene_2"
+            },
+            "actions": [
+              {
+                "type": "remove-actor",
+                "args": ["split_scene_2", "counter_1"]
+              },
+              {
+                "type": "add-actor",
+                "args": [
+                  {
+                    "name": "split_scene_3",
+                    "type": "timeline",
+                    "variable": "split_scene_3",
+                    "period": 1250 
+                  },
+                  {
+                    "name": "counter_2",
+                    "type": "text",
+                    "font": "feelingsScene6Alert",
+                    "location": [ 300, 170 ],
+                    "wordWrapWidth": 550,
+                    "text": "2"
+                  }
+                ]
+              }
+            ]
+          },
+          "split_scene_3": {
+            "events": {
+              "split_scene_3": "split_scene_3"
+            },
+            "actions": [
+              {
+                "type": "remove-actor",
+                "args": ["split_scene_3", "counter_2"]
+              },
+              {
+                "type": "add-actor",
+                "args": [
+                  {
+                    "name": "split_scene_4",
+                    "type": "timeline",
+                    "variable": "split_scene_4",
+                    "period": 1250 
+                  },
+                  {
+                    "name": "counter_3",
+                    "type": "text",
+                    "font": "feelingsScene6Alert",
+                    "location": [ 300, 170 ],
+                    "wordWrapWidth": 550,
+                    "text": "3"
+                  }
+                ]
+              }
+            ]
+          },
+          "split_scene_4": {
+            "events": {
+              "split_scene_4": "split_scene_4"
+            },
+            "actions": [
+              {
+                "type": "remove-actor",
+                "args": ["split_scene_4", "counter_3"]
+              },
+              {
+                "type": "add-actor",
+                "args": [
+                  {
+                    "name": "split_scene_5",
+                    "type": "timeline",
+                    "variable": "split_scene_5",
+                    "period": 1250 
+                  },
+                  {
+                    "name": "counter_4",
+                    "type": "text",
+                    "font": "feelingsScene6Alert",
+                    "location": [ 300, 170 ],
+                    "wordWrapWidth": 550,
+                    "text": "4"
+                  }
+                ]
+              }
+            ]
+          },
+          "split_scene_5": {
+            "events": {
+              "split_scene_5": "split_scene_5"
+            },
+            "actions": [
+              {
+                "type": "remove-actor",
+                "args": ["split_scene_5", "counter_4"]
+              },
+              {
+                "type": "add-actor",
+                "args": [
+                  {
+                    "name": "split_scene_6",
+                    "type": "timeline",
+                    "variable": "split_scene_6",
+                    "period": 1250 
+                  },
+                  {
+                    "name": "counter_5",
+                    "type": "text",
+                    "font": "feelingsScene6Alert",
+                    "location": [ 300, 170 ],
+                    "wordWrapWidth": 550,
+                    "text": "5"
+                  }
+                ]
+              }
+            ]
+          },
+          "split_scene_6": {
+            "events": {
+              "split_scene_6": "split_scene_6"
+            },
+            "actions": [
+              {
+                "type": "remove-actor",
+                "args": ["split_scene_6", "counter_5"]
+              },
+              {
+                "type": "add-actor",
+                "args": [
+                  {
+                    "name": "split_scene_7",
+                    "type": "timeline",
+                    "variable": "split_scene_7",
+                    "period": 1250 
+                  },
+                  {
+                    "name": "counter_6",
+                    "type": "text",
+                    "font": "feelingsScene6Alert",
+                    "location": [ 300, 170 ],
+                    "wordWrapWidth": 550,
+                    "text": "6"
+                  }
+                ]
+              }
+            ]
+          },
+          "split_scene_7": {
+            "events": {
+              "split_scene_7": "split_scene_7"
+            },
+            "actions": [
+              {
+                "type": "remove-actor",
+                "args": ["split_scene_7", "counter_6"]
+              },
+              {
+                "type": "add-actor",
+                "args": [
+                  {
+                    "name": "split_scene_8",
+                    "type": "timeline",
+                    "variable": "split_scene_8",
+                    "period": 1250 
+                  },
+                  {
+                    "name": "counter_7",
+                    "type": "text",
+                    "font": "feelingsScene6Alert",
+                    "location": [ 300, 170 ],
+                    "wordWrapWidth": 550,
+                    "text": "7"
+                  }
+                ]
+              }
+            ]
+          },
+          "split_scene_8": {
+            "events": {
+              "split_scene_8": "split_scene_8"
+            },
+            "actions": [
+              {
+                "type": "remove-actor",
+                "args": ["split_scene_8", "counter_7"]
+              },
+              {
+                "type": "add-actor",
+                "args": [
+                  {
+                    "name": "split_scene_9",
+                    "type": "timeline",
+                    "variable": "split_scene_9",
+                    "period": 1250 
+                  },
+                  {
+                    "name": "counter_8",
+                    "type": "text",
+                    "font": "feelingsScene6Alert",
+                    "location": [ 300, 170 ],
+                    "wordWrapWidth": 550,
+                    "text": "8"
+                  }
+                ]
+              }
+            ]
+          },
+          "split_scene_9": {
+            "events": {
+              "split_scene_9": "split_scene_9"
+            },
+            "actions": [
+              {
+                "type": "remove-actor",
+                "args": ["split_scene_9", "counter_8"]
+              },
+              {
+                "type": "add-actor",
+                "args": [
+                  {
+                    "name": "split_scene_10",
+                    "type": "timeline",
+                    "variable": "split_scene_10",
+                    "period": 1250 
+                  },
+                  {
+                    "name": "counter_9",
+                    "type": "text",
+                    "font": "feelingsScene6Alert",
+                    "location": [ 300, 170 ],
+                    "wordWrapWidth": 550,
+                    "text": "9"
+                  }
+                ]
+              }
+            ]
+          },
+          "split_scene_10": {
+            "events": {
+              "split_scene_10": "split_scene_10"
+            },
+            "actions": [
+              {
+                "type": "remove-actor",
+                "args": ["split_scene_10", "counter_9"]
+              },
+              {
+                "type": "add-actor",
+                "args": [
+                  {
+                    "name": "split_scene_11",
+                    "type": "timeline",
+                    "variable": "split_scene_11",
+                    "period": 1250 
+                  },
+                  {
+                    "name": "counter_10",
+                    "type": "text",
+                    "font": "feelingsScene6Alert",
+                    "location": [ 290, 170 ],
+                    "wordWrapWidth": 550,
+                    "text": "10"
+                  }
+                ]
+              }
+            ]
+          },
+          "split_scene_11": {
+            "events": {
+              "split_scene_11": "split_scene_11"
+            },
+            "actions": [
+              {
+                "type": "remove-actor",
+                "args": ["split_scene_11", "counter_10"]
+              },
+              {
+                "type": "add-actor",
+                "args": [
+                  {
+                    "name": "split_scene_12",
+                    "type": "timeline",
+                    "variable": "split_scene_12",
+                    "period": 4500 
+                  }
+                ]
+              }
+            ]
+          },
+          "split_scene_12": {
+            "events": {
+              "split_scene_12": "split_scene_12"
+            },
+            "actions": [
+              {
+                "type": "remove-actor",
+                "args": ["split_scene_12"]
+              },
+              {
+                "type": "add-actor",
+                "args": [
+                  {
+                    "name": "text_2",
+                    "type": "text",
+                    "font": "feelingsScene6List",
+                    "location": [ 120, 200 ],
+                    "wordWrapWidth": 550,
+                    "text": "Go outside and get moving."
+                  }
+                ]
+              }
+            ]
+          },
+          "go_next": {
+            "events": {
+              "next": "*"
+            },
+            "actions": [
+              { 
+                "type": "scene", 
+                "args": ["scene7"] 
+              }
+            ]        
+          },
+          "click_back": {
+            "events": {
+              "back": "*"
+            },
+            "actions": [
+              { 
+                "type": "scene", 
+                "args": ["scene5"] 
+              }
+            ]        
+          },
+          "click_replay": {
+            "events": {
+              "replay_button": "*"
+            },
+            "actions": [
+              { "type": "variable", "args": ["replay_scene", "$current_scene_name"] },
+              {
+                "type": "scene",
+                "args": ["deadscene"]
+              }
+            ]        
+          }
+        },
+        "actions": [
+          { "type": "variable", "args": [ "saved_scene", "$current_scene_name"] }
+        ]
+      },
+      "scene7": {
+        "id": "scene7",
+        "title": "Scene 7",
+        "background": "background",
+        "actors": [
+          {
+            "name": "gus",
+            "variable": "gus",
+            "type": "no-input-character",
+            "image": "gus",
+            "speechAudio": "slide07",
+            "speechAnimation": true,
+            "location": [ 45, 325 ],
+            "scale": [ 0.8, 0.8 ]
+          },
+          {
+            "name": "kate",
+            "variable": "kate",
+            "type": "button-character",
+            "speechAudio": "slide07_kate",
+            "speechAnimation": true,
+            "image": "kate",
+            "location": [ 385, 50 ]
+          },
+          {
+            "name": "raj",
+            "variable": "raj",
+            "type": "button-character",
+            "speechAudio": "slide07_raj",
+            "speechAnimation": true,
+            "image": "raj",
+            "location": [ 145, 65 ]
+          },
+          {   
+            "name": "back",
+            "variable": "back",
+            "type": "button",
+            "image": "back",
+            "location": [ 378, 397 ]
+          },   
+          {   
+            "name": "replay",
+            "variable": "replay_button",
+            "type": "button",
+            "image": "replay",
+            "location": [ 478, 400 ]
+          },
+          {   
+            "name": "next",
+            "variable": "next",
+            "type": "button",
+            "image": "next",
+            "location": [ 530, 397 ]
+          },
+          {
+            "name": "slide07",
+            "type": "audio",
+            "audio": "slide07",
+            "variable": "slide07"
+          }
+        ],
+        "outcomes": {
+          "finished_slide": {
+            "events": {
+              "slide07": "played",
+              "slide07_raj": "played",
+              "slide07_kate": "played"
+            },
+            "actions": [
+              { 
+                "type": "remove-actor",
+                "args":["next"] 
+              },
+              { 
+                "type": "add-actor",
+                "args": [
+                  {
+                    "name": "next",
+                    "type": "button",
+                    "image": "next",
+                    "animated": true,
+                    "animationLoop": true,
+                    "animationRepeat": 5000,
+                    "location": [ 530, 397 ],
+                    "variable": "next"
+                  }  
+                ]
+              }
+            ]
+          },
+          "click_raj": {
+            "events": {
+              "raj": "*"
+            },
+            "actions": [
+              {
+                "type": "add-actor",
+                "args": [
+                  {
+                    "name": "slide07_raj",
+                    "type": "audio",
+                    "audio": "slide07_raj",
+                    "variable": "slide07_raj"
+                  }
+                ]
+              }
+            ]        
+          },
+          "raj_done": {
+            "events": {
+              "slide07_raj": "played"
+            },
+            "actions": [
+              {
+                "type": "remove-actor",
+                "args": ["raj"]
+              },
+              {
+                "type": "add-actor",
+                "args": [
+                  {
+                    "name": "raj",
+                    "variable": "raj",
+                    "type": "button-character",
+                    "speechAudio": "slide07_raj",
+                    "speechAnimation": true,
+                    "image": "raj",
+                    "location": [ 145, 65 ]
+                  }
+                ]
+              }
+            ]
+          },
+          "click_kate": {
+            "events": {
+              "kate": "*"
+            },
+            "actions": [
+              {
+                "type": "add-actor",
+                "args": [
+                  {
+                    "name": "slide07_kate",
+                    "type": "audio",
+                    "audio": "slide07_kate",
+                    "variable": "slide07_kate"
+                  }
+                ]
+              }
+            ]        
+          },
+          "kate_done": {
+            "events": {
+              "slide07_kate": "played"
+            },
+            "actions": [
+              {
+                "type": "remove-actor",
+                "args": ["kate"]
+              },
+              {
+                "type": "add-actor",
+                "args": [
+                  {
+                    "name": "kate",
+                    "variable": "kate",
+                    "type": "button-character",
+                    "speechAudio": "slide07_kate",
+                    "speechAnimation": true,
+                    "image": "kate",
+                    "location": [ 385, 50 ]
+                  }
+                ]
+              }
+            ]
+          },
+          "go_next": {
+            "events": {
+              "next": "*"
+            },
+            "actions": [
+              { 
+                "type": "scene", 
+                "args": ["scene8"] 
+              }
+            ]        
+          },
+          "click_back": {
+            "events": {
+              "back": "*"
+            },
+            "actions": [
+              { 
+                "type": "scene", 
+                "args": ["scene6"] 
+              }
+            ]        
+          },
+          "click_replay": {
+            "events": {
+              "replay_button": "*"
+            },
+            "actions": [
+              { "type": "variable", "args": ["replay_scene", "$current_scene_name"] },
+              {
+                "type": "scene",
+                "args": ["deadscene"]
+              }
+            ]        
+          }
+        },
+        "actions": [
+          { "type": "variable", "args": [ "saved_scene", "$current_scene_name"] }
+        ]
+      },
+      "scene8": {
+        "id": "scene8",
+        "title": "Scene 8",
+        "background": "background",
+        "actors": [
+          {
+            "name": "gus",
+            "variable": "gus",
+            "type": "no-input-character",
+            "image": "gus",
+            "speechAudio": "slide08",
+            "speechAnimation": true,
+            "location": [ 45, 325 ],
+            "scale": [ 0.8, 0.8 ]
+          },
+          {
+            "name": "text_1",
+            "type": "text",
+            "font": "endHeadline",
+            "location": [ 120, 120 ],
+            "wordWrapWidth": 550,
+            "text": "GOOD JOB!"
+          },
+          {
+            "name": "teacher",
+            "type": "text",
+            "font": "teacher",
+            "location": [ 320, 270 ],
+            "wordWrapWidth": 300,
+            "text": "Teachers: follow up on this lesson with offline activities found in your Act Now! Teacher's Guide."
+          },
+          {   
+            "name": "back",
+            "variable": "back",
+            "type": "button",
+            "image": "back",
+            "location": [ 378, 397 ]
+          },   
+          {   
+            "name": "replay",
+            "variable": "replay_button",
+            "type": "button",
+            "image": "replay",
+            "location": [ 478, 400 ]
+          },
+          {   
+            "name": "no_next",
+            "type": "decoration",
+            "image": "no_next",
+            "location": [ 530, 397 ]
+          },
+          {
+            "name": "slide08",
+            "type": "audio",
+            "audio": "slide08",
+            "variable": "slide08"
+          }
+        ],
+        "outcomes": {
+          "click_back": {
+            "events": {
+              "back": "*"
+            },
+            "actions": [
+              { 
+                "type": "scene", 
+                "args": ["scene7"] 
+              }
+            ]        
+          },
+          "click_replay": {
+            "events": {
+              "replay_button": "*"
+            },
+            "actions": [
+              { "type": "variable", "args": ["replay_scene", "$current_scene_name"] },
+              {
+                "type": "scene",
+                "args": ["deadscene"]
+              }
+            ]        
+          }
+        },
+        "actions": [
+          { "type": "variable", "args": [ "saved_scene", "$current_scene_name"] },
+          { "type": "choice", "args": [ "objective_complete", 1] },
+          { "type": "choice", "args": [ "save", 0 ] }
+        ]
+      },
+      "resume_started": {
+        "id": "resume_started",
+        "title": "for resuming part way through",
+        "background": "none",
+        "actors": [
+          {
+            "name": "restart",
+            "variable": "restart",
+            "type": "button",
+            "image": "restart",
+            "location": [ 120, 230 ]
+          },
+          {
+            "name": "resume",
+            "variable": "resume",
+            "type": "button",
+            "image": "resume",
+            "location": [ 330, 230 ]
+          },
+          { 
+            "name": "resume-message",
+            "type": "text",
+            "font": "resume-message",
+            "text": "You have already completed part of this lesson",
+            "location": [ "center", 160 ]
+          }
+        ],
+        "outcomes": {
+          "has_resume": {
+            "events": {
+              "saved_scene": "undefined"
+            },
+            "actions": [
+              {
+                "type": "scene",
+                "args": ["scene1"]
+              }
+            ]
+          },
+          "finished": {
+            "events": {
+              "saved_scene": "scene8"
+            },
+            "actions": [
+              {
+                "type": "scene",
+                "args": ["resume_finished"]
+              }
+            ]
+          },
+          "start_over": {
+            "events": {
+              "restart": "*"
+            },
+            "actions": [
+              {
+                "type": "scene",
+                "args": ["scene1"]
+              }
+            ]
+          },
+          "resume_scene": {
+            "events": {
+              "resume": "*"
+            },
+            "actions": [
+              {
+                "type": "scene",
+                "args": ["$saved_scene"]
+              }
+            ]
+          }
+        },
+        "actions": [
+          { "type": "check-outcomes", "args": [ "saved_scene" ] }
+        ]
+      },
+      "resume_finished": {
+        "id": "resume_finished",
+        "title": "finished",
+        "background": "none",
+        "actors": [
+          {
+            "name": "restart",
+            "variable": "restart",
+            "type": "button",
+            "image": "restart",
+            "location": [ 120, 230 ]
+          },
+          {
+            "name": "resume",
+            "variable": "resume",
+            "type": "button",
+            "image": "resume",
+            "location": [ 330, 230 ]
+          },
+          { 
+            "name": "resume-message",
+            "type": "text",
+            "font": "resume-message",
+            "text": "You have already completed this lesson",
+            "location": [ "center", 160 ]
+          }
+        ],
+        "outcomes": {
+          "start_over": {
+            "events": {
+              "restart": "*"
+            },
+            "actions": [
+              {
+                "type": "scene",
+                "args": ["scene1"]
+              }
+            ]
+          },
+          "resume_scene": {
+            "events": {
+              "resume": "*"
+            },
+            "actions": [
+              {
+                "type": "scene",
+                "args": ["scene8"]
+              }
+            ]
+          }
+        },
+        "actions": [
+        ]
+      },
+      "deadscene": {
+        "id": "deadscene",
+        "title": "deadscene",
+        "background": "background",
+        "actors": [],
+        "outcomes": {},
+        "actions": [
+          {
+            "type": "scene",
+            "args": ["$replay_scene"]
+          }
+        ]
+      }
+    }
+  }
+}
+
+
+ 

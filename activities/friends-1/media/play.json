@@ -1,0 +1,16 @@
+{
+  "name": "Act Now ",
+  "description": "Act Now",
+  "scorm": true,
+  "logging": false,
+  "autoScale": true, 
+  "acts": {
+    "default": {
+      "id": "g1-friends",
+      "description": "Act Now Something",
+      "name": "Act Now",
+      "theme": "media/default/theme.json",
+      "objectives": []
+    }
+  }
+}

@@ -1,0 +1,330 @@
+{
+  "gamedata": {
+    "questions": [
+      {
+        "audioPath": "question01",
+        "text": "If I help someone is that a friendly or unfriendly behavior?",
+        "revealDelay": [2100, 3000],
+        "option": [
+          {
+            "correct": "true",
+            "text": "Friendly"
+          },
+          { "text": "Unfriendly" }
+        ],
+        "correct": {
+          "audioPath": "question01_correct"
+        },
+        "incorrect": {
+          "audioPath": "question01_incorrect"
+        }
+      },
+      {
+        "audioPath": "question02",
+        "text": "If I do not let someone play with me is that a friendly or unfriendly behavior?",
+        "revealDelay": [3000, 4000],
+        "option": [
+          { "text": "Friendly" },
+          { 
+            "text": "Unfriendly",
+            "correct": "true"
+          }
+        ],
+        "correct": {
+          "audioPath": "question02_correct"
+        },
+        "incorrect": {
+          "audioPath": "question02_incorrect"
+        }
+      },
+      {
+        "audioPath": "question03",
+        "text": "If I invite someone to play with me is that a friendly or unfriendly behavior?",
+        "revealDelay": [2959, 4152],
+        "option": [
+          {
+            "correct": "true",
+            "text": "Friendly"
+          },
+          { "text": "Unfriendly" }
+        ],
+        "correct": {
+          "audioPath": "question03_correct"
+        },
+        "incorrect": {
+          "audioPath": "question03_incorrect"
+        }
+      },
+      {
+        "audioPath": "question04",
+        "text": "If I call someone names is that a friendly behavior? Yes or no?",
+        "revealDelay": [4248, 5044],
+        "option": [
+          { "text": "Yes" },
+          {
+            "correct": "true",
+            "text": "No"
+          }
+        ],
+        "correct": {
+          "audioPath": "question04_correct"
+        },
+        "incorrect": {
+          "audioPath": "question04_incorrect"
+        }
+      },
+      {
+        "audioPath": "question05",
+        "text": "There are no right or wrong feelings. True or false?",
+        "revealDelay": [3531, 4652],
+        "option": [
+          {
+            "correct": "true",
+            "text": "True"
+          },
+          { "text": "False" }
+        ],
+        "correct": {
+          "audioPath": "question05_correct"
+        },
+        "incorrect": {
+          "audioPath": "question05_incorrect"
+        }
+      },
+      {
+        "audioPath": "question06",
+        "text": "Is yelling a good way to calm down when you're angry? Yes or no?",
+        "revealDelay": [3961, 4769],
+        "option": [
+          { "text": "Yes" },
+          {
+            "correct": "true",
+            "text": "No"
+          }
+        ],
+        "correct": {
+          "audioPath": "question06_correct"
+        },
+        "incorrect": {
+          "audioPath": "question06_incorrect"
+        }
+      },
+      {
+        "audioPath": "question07",
+        "text": "Is counting to ten a good way to calm down when you're angry? Yes or no?",
+        "revealDelay": [4390, 5056],
+        "option": [
+          {
+            "correct": "true",
+            "text": "Yes"
+          },
+          { "text": "No" }
+        ],
+        "correct": {
+          "audioPath": "question07_correct"
+        },
+        "incorrect": {
+          "audioPath": "question07_incorrect"
+        }
+      },
+      {
+        "audioPath": "question08",
+        "text": "If I talk to an adult about a serious situation where someone could get hurt is that tattling or telling?",
+        "revealDelay": [5630, 7115],
+        "option": [
+          { "text": "Tattling" },
+          {
+            "correct": "true",
+            "text": "Telling"
+          }
+        ],
+        "correct": {
+          "audioPath": "question08_correct"
+        },
+        "incorrect": {
+          "audioPath": "question08_incorrect"
+        }
+      },
+      {
+        "audioPath": "question09",
+        "text": "What is it called when you go to an adult and try to get someone in trouble for something that's not very important?",
+        "revealDelay": [7500, 8866],
+        "option": [
+          {
+            "correct": "true",
+            "text": "Tattling"
+          },
+          { "text": "Telling" }
+        ],
+        "correct": {
+          "audioPath": "question09_correct"
+        },
+        "incorrect": {
+          "audioPath": "question09_incorrect"
+        }
+      },
+      {
+        "audioPath": "question10",
+        "text": "If I talk to a teacher at school about a kid in my class chewing gum, just to get them in trouble, is that tattling or telling?",
+        "revealDelay": [7249, 8500],
+        "option": [
+          {
+            "correct": "true",
+            "text": "Tattling"
+          },
+          { "text": "Telling"}
+        ],
+        "correct": {
+          "audioPath": "question10_correct"
+        },
+        "incorrect": {
+          "audioPath": "question10_incorrect"
+        }
+      },
+      {
+        "audioPath": "question11",
+        "text": "If I talk to a teacher at school about a kid in my class who is calling me names every day, is that tattling or telling?",
+        "revealDelay": [7042, 8247],
+        "option": [
+          { "text": "Tattling" },
+          {
+            "correct": "true",
+            "text": "Telling"
+          }
+        ],
+        "correct": {
+          "audioPath": "question11_correct"
+        },
+        "incorrect": {
+          "audioPath": "question11_incorrect"
+        }
+      },
+      {
+        "audioPath": "question12",
+        "text": "Bullying is when someone hurts another person on purpose. True or false?",
+        "revealDelay": [4508, 5500],
+        "option": [
+          {
+            "correct": "true",
+            "text": "True"
+          },
+          { "text": "False" }
+        ],
+        "correct": {
+          "audioPath": "question12_correct"
+        },
+        "incorrect": {
+          "audioPath": "question12_incorrect"
+        }
+      },
+      {
+        "audioPath": "question13",
+        "text": "Is ruining someone's things on purpose bullying? Yes or no?",
+        "revealDelay": [3564, 4188],
+        "option": [
+          {
+            "correct": "true",
+            "text": "Yes"
+          },
+          { "text": "No" }
+        ],
+        "correct": {
+          "audioPath": "question13_correct"
+        },
+        "incorrect": {
+          "audioPath": "question13_incorrect"
+        }
+      },
+      {
+        "audioPath": "question14",
+        "text": "Is arguing with a friend over what movie to watch bullying? Yes or no?",
+        "revealDelay": [3943, 4722],
+        "option": [
+          { "text": "Yes" },
+          {
+            "correct": "true",
+            "text": "No"
+          }
+        ],
+        "correct": {
+          "audioPath": "question14_correct"
+        },
+        "incorrect": {
+          "audioPath": "question14_incorrect"
+        }
+      },
+      {
+        "audioPath": "question15",
+        "text": "Is making fun of someone every day at school bullying? Yes or no?",
+        "revealDelay": [4341, 5243],
+        "option": [
+          {
+            "correct": "true",
+            "text": "Yes"
+          },
+          { "text": "No" }
+        ],
+        "correct": {
+          "audioPath": "question15_correct"
+        },
+        "incorrect": {
+          "audioPath": "question15_incorrect"
+        }
+      },
+      {
+        "audioPath": "question16",
+        "text": "If you are being bullied is it ok to ask a friend for help? Yes or no?",
+        "revealDelay": [4521, 5291],
+        "option": [
+          {
+            "correct": "true",
+            "text": "Yes"
+          },
+          { "text": "No" }
+        ],
+        "correct": {
+          "audioPath": "question16_correct"
+        },
+        "incorrect": {
+          "audioPath": "question16_incorrect"
+        }
+      },
+      {
+        "audioPath": "question17",
+        "text": "Should you talk to an adult if you see bullying? Yes or no?",
+        "revealDelay": [3500, 4327],
+        "option": [
+          {
+            "correct": "true",
+            "text": "Yes"
+          },
+          { "text": "No" }
+        ],
+        "correct": {
+          "audioPath": "question17_correct"
+        },
+        "incorrect": {
+          "audioPath": "question17_incorrect"
+        }
+      },
+      {
+        "audioPath": "question18",
+        "text": "Should you push or shove someone if they are calling you names? Yes or no?",
+        "revealDelay": [3891, 4788],
+        "option": [
+          { "text": "Yes" },
+          {
+            "correct": "true",
+            "text": "No"
+          }
+        ],
+        "correct": {
+          "audioPath": "question18_correct"
+        },
+        "incorrect": {
+          "audioPath": "question18_incorrect"
+        }
+      }
+    ]
+  }
+}

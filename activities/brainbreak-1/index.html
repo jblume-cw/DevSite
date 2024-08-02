@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<meta property="og:title" content="Act Now: Brain Break" />
+		<title>Act Now: Brain Break</title>
+		<script>
+			const _environmentSettings = {
+				assetPath: "",
+				scormEnabled: false,
+			};
+		</script>
+		<script src="engine/APIWrapper.js"></script>
+		<script src="engine/phaser.js"></script>
+		<script src="engine/scene-engine.min.js"></script>
+
+		<link
+			href="https://fonts.googleapis.com/css?family=Lalezar:400"
+			rel="stylesheet"
+		/>
+
+		<style type="text/css">
+			.lalezar {
+				font-family: "Lalezar", cursive;
+			}
+		</style>
+
+		<script
+			src="//fast.wistia.com/assets/external/E-v1.js"
+			charset="ISO-8859-1"
+			async
+		></script>
+		<style>
+			body {
+				margin: 0;
+				padding: 0;
+			}
+			.container {
+				position: relative;
+			}
+			.gameItem {
+				top: 0;
+				left: 0;
+			}
+		</style>
+	</head>
+	<body>
+		<div
+			id="preloadFont1"
+			style="position: absolute; left: -1000em; font-family: 'Lalezar', cursive"
+		>
+			.
+		</div>
+
+		<div id="gameContainer" class="container">
+			<div id="game" class="gameItem" style="z-index: 100"></div>
+		</div>
+
+		<script type="text/javascript">
+			SceneEngine("game", 640, 480);
+		</script>
+	</body>
+</html>

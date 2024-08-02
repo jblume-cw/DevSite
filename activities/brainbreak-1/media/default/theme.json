@@ -1,0 +1,59 @@
+{
+  "texture": "media/default/texture.png",
+  "textureMap": "media/default/texture.json",
+  "textureKey": "texture",
+  "data": "media/default/sceneData.json",
+  "fonts" : {
+    "resumeParagraph": {
+      "font": "38px  Lalezar", "fill": "#045a97", "font-weight": "bold",
+      "align": "center" ,"wordWrap": true, "wordWrapWidth": 400
+    }
+  },
+  "images": {
+    "bg": "grass.png",
+    "no_back": "BackDisabled.png",
+    "no_next": "NextDisabled.png",
+    "actorImages": {
+      "none": "none.png"
+    }
+  },
+  "logo": "splash-bg.png",
+  "buttons": {
+    "next": {
+      "up": "NextUp.png",
+      "over": "NextUp.png",
+      "out": "NextUp.png",
+      "down": "NextDown.png"
+    },
+    "replay": {
+      "up": "ReplayUp.png",
+      "over": "ReplayUp.png",
+      "out": "ReplayUp.png",
+      "down": "ReplayDown.png"
+    },
+    "back": {
+      "up": "BackUp.png",
+      "over": "BackUp.png",
+      "out": "BackUp.png",
+      "down": "BackDown.png"
+    },
+    "restart": {
+      "up": "RestartUp.png",
+      "over": "RestartUp.png",
+      "out": "RestartUp.png",
+      "down": "RestartDown.png"
+    },
+    "resume": {
+      "up": "ResumeUp.png",
+      "over": "ResumeUp.png",
+      "out": "ResumeUp.png",
+      "down": "ResumeDown.png"
+    }
+  },
+  "sceneImages": {
+    "school": "school-background.png"
+  },
+  "soundKey": "activity-sounds",
+  "NoSoundKeyThereIsNoSound": "true",
+  "sounds": {  }
+}

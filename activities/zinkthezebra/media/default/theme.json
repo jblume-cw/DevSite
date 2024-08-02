@@ -1,0 +1,157 @@
+{
+  "texture": "media/default/texture.png",
+  "textureMap": "media/default/texture-json.json",
+  "textureKey": "texture",
+  "data": "media/default/sceneData.json",
+  "fonts" : {
+    "default": { "font": "20px Arial, Helvetica, sans-serif", "fill": "#000000", "align": "left" ,"wordWrap": true, "wordWrapWidth": 700 },
+    "zinkHeadline": {
+      "font": "35px Kadwa",
+      "fill": "#333333"
+    },
+    "page1Credits": {
+      "font": "12px Kadwa",
+      "fill": "#333333"
+    },
+    "page1ClickPrompt": {
+      "font": "16px Kadwa",
+      "fill": "#0B7B27"
+    },
+    "storyMain": {
+      "font": "18px Kadwa",
+      "align": "center",
+      "fill": "#333333"
+    },
+    "pageNumber": {
+      "font": "12px Kadwa",
+      "fill": "#333333"
+    }
+  },
+  "images": {
+    "none": "none.png",
+    "actorImages": {
+      "background": "background.png",
+      "page 1 image": "page 1 image.png",
+      "page 1 title": "page 1 title.png",
+      "page 2 image": "page 2 image.png",
+      "page 3 image": "page 3 image.png",
+      "page 4 image": "page 4 image.png",
+      "page 5 image": "page 5 image.png",
+      "page 7 image": "page 7 image.png",
+      "page 8 image": "page 8 image.png",
+      "page 9 image": "page 9 image.png",
+      "page 10 image": "page 10 image.png",
+      "page 11 image": "page 11 image.png",
+      "page 13 image": "page 13 image.png",
+      "page 14 image": "page 14 image.png",
+      "page 15 image": "page 15 image.png",
+      "page 16 image": "page 16 image.png",
+      "page 17 image": "page 17 image.png",
+      "page 18 image": "page 18 image.png",
+      "page 19 image": "page 19 image.png"
+    },
+    "page background L": "page background L.png",
+    "page background R": "page background R.png"
+  },
+  "logo": "splash-bg.png",
+  "buttons": {
+    "page background L": {
+      "up": "page background L.png",
+      "over": "page background L.png",
+      "out": "page background L.png",
+      "down": "page background L.png"
+    },
+    "page background R": {
+      "up": "page background R.png",
+      "over": "page background R.png",
+      "out": "page background R.png",
+      "down": "page background R.png"
+    },
+    "none": {
+      "up": "none0001.png",
+      "over": "none0002.png",
+      "out": "none0001.png",
+      "down": "none0003.png"
+    }
+  },
+  "sceneImages": {
+    "school": "school-background.png"
+  },
+  "soundKey": "activity-sounds",
+  "soundFile": [ "media/default/zink-the-zebra-m4a.m4a", "media/default/zink-the-zebra-ogg.ogg" ],
+  "sounds": {
+    "book_pageturn05": [
+      0,
+      0.8591383219954648,
+      false,
+      "book_pageturn05"
+    ],
+    "page_01": [
+      1,
+      2.533333333333333,
+      false,
+      "page_01"
+    ],
+    "page_02": [
+      4,
+      6.810430839002269,
+      false,
+      "page_02"
+    ],
+    "page_04": [
+      11,
+      8.362517006802719,
+      false,
+      "page_04"
+    ],
+    "page_06": [
+      20,
+      13.23541950113379,
+      false,
+      "page_06"
+    ],
+    "page_08_09": [
+      34,
+      9.308344671201816,
+      false,
+      "page_08_09"
+    ],
+    "page_10": [
+      44,
+      5.97501133786848,
+      false,
+      "page_10"
+    ],
+    "page_12_13": [
+      50,
+      12.933333333333337,
+      false,
+      "page_12_13"
+    ],
+    "page_14": [
+      63,
+      4.5108390022675735,
+      false,
+      "page_14"
+    ],
+    "page_16": [
+      68,
+      1.324897959183673,
+      false,
+      "page_16"
+    ],
+    "page_18": [
+      70,
+      2.0712244897959238,
+      false,
+      "page_18"
+    ],
+    "page_20": [
+      73,
+      0.7127664399093021,
+      false,
+      "page_20"
+    ]
+
+  }
+}

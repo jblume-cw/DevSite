@@ -1,0 +1,5512 @@
+{
+  "play": {
+    "modelType": "basic",
+    "start": "scene1",
+    "persist": [ "last_scene", "some_var" ],
+    "global": {
+      "actors": {
+        
+      },
+      "outcomes": {
+
+      },
+      "actions": [
+        { "type": "variable", "args": [ "last_scene", "$previous_scene_name"] }
+      ]
+    },
+    "scenes": {
+      "scene1": {
+        "id": "scene1",
+        "title": "Scene 1",
+        "background": "background",
+        "actors": [
+          {
+            "name": "background",
+            "variable": "background-var",
+            "type": "decoration",
+            "image": "background.png",
+            "location": [ 0, 0 ] 
+          },
+          {   
+            "name": "page_background_R",
+            "variable": "page_background_R",
+            "type": "button",
+            "image": "page background R",
+            "location": [ 320, 38 ] 
+          },
+          {
+            "name": "page_1_title",
+            "variable": "page_1_title",
+            "type": "decoration",
+            "image": "page 1 title.png",
+            "location": [ 375, 76 ] 
+          },
+          {
+            "name": "page_1_image",
+            "variable": "page_1_image",
+            "type": "decoration",
+            "image": "page 1 image.png",
+            "location": [ 425, 150 ] 
+          },
+          {
+            "name": "story_by",
+            "type": "text",
+            "font": "page1Credits",
+            "location": [ 425, 280 ],
+            "wordWrapWidth": 550,
+            "text": "Story by Kelly Weil"
+          },
+          {
+            "name": "paintings_by",
+            "type": "text",
+            "font": "page1Credits",
+            "location": [ 410, 300 ],
+            "wordWrapWidth": 550,
+            "text": "Paintings by Jay Jocham"
+          },
+          {
+            "name": "edited_by",
+            "type": "text",
+            "font": "page1Credits",
+            "location": [ 400, 320 ],
+            "wordWrapWidth": 550,
+            "text": "Edited by Susan Rensberger"
+          },
+          {
+            "name": "click_prompt",
+            "type": "text",
+            "font": "page1ClickPrompt",
+            "location": [ 380, 370 ],
+            "wordWrapWidth": 550,
+            "text": "CLICK TO TURN THE PAGE"
+          },
+          {
+            "name": "page_number_1",
+            "type": "text",
+            "font": "pageNumber",
+            "location": [ 475, 415 ],
+            "wordWrapWidth": 550,
+            "text": "-1-"
+          },
+          {
+            "name": "page_01",
+            "type": "audio",
+            "audio": "page_01",
+            "variable": "page_01"
+          }
+        ],
+        "outcomes": {
+          "click_r_page": {
+            "events": {
+              "page_background_R": "*"
+            },
+            "actions": [
+              {
+                "type": "scene", 
+                "args": ["flip1_forward"]
+              }
+            ]   
+          }
+        }
+      },
+      "scene2": {
+        "id": "scene2",
+        "title": "Scene 2",
+        "background": "background",
+        "actors": [
+          {
+            "name": "background",
+            "variable": "background-var",
+            "type": "decoration",
+            "image": "background.png",
+            "location": [ 0, 0 ] 
+          },
+          {   
+            "name": "page_background_L",
+            "variable": "page_background_L",
+            "type": "button",
+            "image": "page background L",
+            "location": [ 20, 38 ] 
+          },
+          {   
+            "name": "page_background_R",
+            "variable": "page_background_R",
+            "type": "button",
+            "image": "page background R",
+            "location": [ 320, 38 ]
+          },
+          {
+            "name": "page_2_image",
+            "variable": "page_2_image",
+            "type": "decoration",
+            "image": "page 2 image.png",
+            "location": [ 105, 70 ] 
+          },
+          {
+            "name": "page_3_image",
+            "variable": "page_3_image",
+            "type": "decoration",
+            "image": "page 3 image.png",
+            "location": [ 350, 70 ] 
+          },
+          {
+            "name": "Once_upon_a_time",
+            "type": "text",
+            "font": "storyMain",
+            "location": [ 35, 250 ],
+            "wordWrapWidth": 400,
+            "text": "Once upon a time,\n a zebra named Zink\n lived in the Lipis Jungle\n with her mother, her father,\n and her brother Fink."
+          },
+          {
+            "name": "page_number_2",
+            "type": "text",
+            "font": "pageNumber",
+            "location": [ 155, 415 ],
+            "wordWrapWidth": 550,
+            "text": "-2-"
+          },
+          {
+            "name": "page_number_3",
+            "type": "text",
+            "font": "pageNumber",
+            "location": [ 475, 415 ],
+            "wordWrapWidth": 550,
+            "text": "-3-"
+          },
+          {
+            "name": "page_02",
+            "type": "audio",
+            "audio": "page_02",
+            "variable": "page_02"
+          }
+        ],
+        "outcomes": {
+          "turn_page_sound_R": {
+            "events": {
+              "page_background_R": "*"
+            },
+            "actions": [
+              { 
+                "type": "scene", 
+                "args": ["flip2_forward"] 
+              }
+            ]   
+          },
+          "turn_page_sound_L": {
+            "events": {
+              "page_background_L": "*"
+            },
+            "actions": [
+              { 
+              "type": "scene", 
+              "args": ["flip1_back"] 
+              }
+            ]   
+          }
+        }
+      },
+      "scene3": {
+        "id": "scene3",
+        "title": "Scene 3",
+        "background": "background",
+        "actors": [
+          {
+            "name": "background",
+            "variable": "background-var",
+            "type": "decoration",
+            "image": "background.png",
+            "location": [ 0, 0 ] 
+          },
+          {   
+            "name": "page_background_L",
+            "variable": "page_background_L",
+            "type": "button",
+            "image": "page background L",
+            "location": [ 20, 38 ] 
+          },
+          {   
+            "name": "page_background_R",
+            "variable": "page_background_R",
+            "type": "button",
+            "image": "page background R",
+            "location": [ 320, 38 ]
+          },
+          {
+            "name": "page_4_image",
+            "variable": "page_4_image",
+            "type": "decoration",
+            "image": "page 4 image.png",
+            "location": [ 105, 70 ] 
+          },
+          {
+            "name": "page_5_image",
+            "variable": "page_5_image",
+            "type": "decoration",
+            "image": "page 5 image.png",
+            "location": [ 350, 70 ] 
+          },
+          {
+            "name": "Zink_was_a_normal",
+            "type": "text",
+            "font": "storyMain",
+            "location": [ 40, 215 ],
+            "wordWrapWidth": 500,
+            "text": "Zink was a normal\nzebra in every way.\nShe had four legs, two ears,\none nose, one mouth,\n one tail ..."
+          },
+          {
+            "name": "and_spots",
+            "type": "text",
+            "font": "storyMain",
+            "location": [ 117, 370 ],
+            "wordWrapWidth": 500,
+            "text": "and spots."
+          },
+          {
+            "name": "page_number_4",
+            "type": "text",
+            "font": "pageNumber",
+            "location": [ 155, 415 ],
+            "wordWrapWidth": 550,
+            "text": "-4-"
+          },
+          {
+            "name": "page_number_5",
+            "type": "text",
+            "font": "pageNumber",
+            "location": [ 475, 415 ],
+            "wordWrapWidth": 550,
+            "text": "-5-"
+          },
+          {
+            "name": "page_04",
+            "type": "audio",
+            "audio": "page_04",
+            "variable": "page_04"
+          }
+        ],
+        "outcomes": {
+          "turn_page_sound_R": {
+            "events": {
+              "page_background_R": "*"
+            },
+            "actions": [
+              { 
+                "type": "scene", 
+                "args": ["flip3_forward"] 
+              }
+            ]   
+          },
+          "turn_page_sound_L": {
+            "events": {
+              "page_background_L": "*"
+            },
+            "actions": [
+              { 
+              "type": "scene", 
+              "args": ["flip2_back"] 
+              }
+            ]   
+          }
+        }
+      },
+      "scene4": {
+        "id": "scene4",
+        "title": "Scene 4",
+        "background": "background",
+        "actors": [
+          {
+            "name": "background",
+            "variable": "background-var",
+            "type": "decoration",
+            "image": "background.png",
+            "location": [ 0, 0 ] 
+          },
+          {   
+            "name": "page_background_L",
+            "variable": "page_background_L",
+            "type": "button",
+            "image": "page background L",
+            "location": [ 20, 38 ] 
+          },
+          {   
+            "name": "page_background_R",
+            "variable": "page_background_R",
+            "type": "button",
+            "image": "page background R",
+            "location": [ 320, 38 ]
+          },
+          {
+            "name": "page_7_image",
+            "variable": "page_7_image",
+            "type": "decoration",
+            "image": "page 7 image.png",
+            "location": [ 350, 70 ] 
+          },
+          {
+            "name": "All_the_other_zebras",
+            "type": "text",
+            "font": "storyMain",
+            "location": [ 40, 75 ],
+            "wordWrapWidth": 500,
+            "text": "All the other zebras\n- even her mother, father\nand brother - had stripes."
+          },
+          {
+            "name": "Because_Zink_had_spots",
+            "type": "text",
+            "font": "storyMain",
+            "location": [ 50, 180 ],
+            "wordWrapWidth": 500,
+            "text": "Because Zink had spots,\nthe other zebras\nwouldn't play with her."
+          },
+          {
+            "name": "Because_the_other_zebras_had",
+            "type": "text",
+            "font": "storyMain",
+            "location": [ 30, 285 ],
+            "wordWrapWidth": 500,
+            "text": "Because the other zebras had\nstripes, they thought\nZink looked odd."
+          },
+          {
+            "name": "page_number_6",
+            "type": "text",
+            "font": "pageNumber",
+            "location": [ 155, 415 ],
+            "wordWrapWidth": 550,
+            "text": "-6-"
+          },
+          {
+            "name": "page_number_7",
+            "type": "text",
+            "font": "pageNumber",
+            "location": [ 475, 415 ],
+            "wordWrapWidth": 550,
+            "text": "-7-"
+          },
+          {
+            "name": "page_06",
+            "type": "audio",
+            "audio": "page_06",
+            "variable": "page_06"
+          }
+        ],
+        "outcomes": {
+          "turn_page_sound_R": {
+            "events": {
+              "page_background_R": "*"
+            },
+            "actions": [
+              { 
+                "type": "scene", 
+                "args": ["flip4_forward"] 
+              }
+            ]   
+          },
+          "turn_page_sound_L": {
+            "events": {
+              "page_background_L": "*"
+            },
+            "actions": [
+              { 
+              "type": "scene", 
+              "args": ["flip3_back"] 
+              }
+            ]   
+          }
+        }
+      },
+      "scene5": {
+        "id": "scene5",
+        "title": "Scene 5",
+        "background": "background",
+        "actors": [
+          {
+            "name": "background",
+            "variable": "background-var",
+            "type": "decoration",
+            "image": "background.png",
+            "location": [ 0, 0 ] 
+          },
+          {   
+            "name": "page_background_L",
+            "variable": "page_background_L",
+            "type": "button",
+            "image": "page background L",
+            "location": [ 20, 38 ] 
+          },
+          {
+            "name": "page_8_image",
+            "variable": "page_8_image",
+            "type": "decoration",
+            "image": "page 8 image.png",
+            "location": [ 50, 70 ] 
+          },
+          {
+            "name": "One_day_Fink_said_to_Zink",
+            "type": "text",
+            "font": "storyMain",
+            "location": [ 45, 325 ],
+            "wordWrapWidth": 500,
+            "text": "One day Fink said to Zink,\n\"Why do you have spots?\nThey're so weird.\""
+          },
+          {
+            "name": "page_number_8",
+            "type": "text",
+            "font": "pageNumber",
+            "location": [ 155, 415 ],
+            "wordWrapWidth": 550,
+            "text": "-8-"
+          },
+          {   
+            "name": "page_background_R",
+            "variable": "page_background_R",
+            "type": "button",
+            "image": "page background R",
+            "location": [ 320, 38 ]
+          },
+          {
+            "name": "page_9_image",
+            "variable": "page_9_image",
+            "type": "decoration",
+            "image": "page 9 image.png",
+            "location": [ 350, 70 ] 
+          },
+          {
+            "name": "One_day_Zink_said_to_Fink",
+            "type": "text",
+            "font": "storyMain",
+            "location": [ 355, 325 ],
+            "wordWrapWidth": 500,
+            "text": "Zink said to Fink,\n\"Why do you have stripes?\nThey're so weird.\""
+          },
+          {
+            "name": "page_number_9",
+            "type": "text",
+            "font": "pageNumber",
+            "location": [ 475, 415 ],
+            "wordWrapWidth": 550,
+            "text": "-9-"
+          },
+          {
+            "name": "page_08_09",
+            "type": "audio",
+            "audio": "page_08_09",
+            "variable": "page_08_09"
+          }
+        ],
+        "outcomes": {
+          "turn_page_sound_R": {
+            "events": {
+              "page_background_R": "*"
+            },
+            "actions": [
+              { 
+                "type": "scene", 
+                "args": ["flip5_forward"] 
+              }
+            ]   
+          },
+          "turn_page_sound_L": {
+            "events": {
+              "page_background_L": "*"
+            },
+            "actions": [
+              { 
+              "type": "scene", 
+              "args": ["flip4_back"] 
+              }
+            ]   
+          }
+        }
+      },
+      "scene6": {
+        "id": "scene6",
+        "title": "Scene 6",
+        "background": "background",
+        "actors": [
+          {
+            "name": "background",
+            "variable": "background-var",
+            "type": "decoration",
+            "image": "background.png",
+            "location": [ 0, 0 ] 
+          },
+          {   
+            "name": "page_background_L",
+            "variable": "page_background_L",
+            "type": "button",
+            "image": "page background L",
+            "location": [ 20, 38 ] 
+          },
+          {
+            "name": "page_10_image",
+            "variable": "page_10_image",
+            "type": "decoration",
+            "image": "page 10 image.png",
+            "location": [ 105, 70 ] 
+          },
+          {
+            "name": "Zink_and_Fink_couldn't",
+            "type": "text",
+            "font": "storyMain",
+            "location": [ 60, 240 ],
+            "wordWrapWidth": 400,
+            "text": "Zink and Fink couldn't\ndecide who was right."
+          },
+          {
+            "name": "No_one_in_the_Lipis_Jungle",
+            "type": "text",
+            "font": "storyMain",
+            "location": [ 50, 310 ],
+            "wordWrapWidth": 400,
+            "text": "No one in the Lipis Jungle\nseemed to have\nthe answer."
+          },
+          {
+            "name": "page_number_10",
+            "type": "text",
+            "font": "pageNumber",
+            "location": [ 150, 415 ],
+            "wordWrapWidth": 550,
+            "text": "-10-"
+          },
+          {   
+            "name": "page_background_R",
+            "variable": "page_background_R",
+            "type": "button",
+            "image": "page background R",
+            "location": [ 320, 38 ]
+          },
+          {
+            "name": "page_11_image",
+            "variable": "page_11_image",
+            "type": "decoration",
+            "image": "page 11 image.png",
+            "location": [ 350, 70 ] 
+          },
+          {
+            "name": "page_number_11",
+            "type": "text",
+            "font": "pageNumber",
+            "location": [ 470, 415 ],
+            "wordWrapWidth": 550,
+            "text": "-11-"
+          },
+          {
+            "name": "page_10",
+            "type": "audio",
+            "audio": "page_10",
+            "variable": "page_10"
+          }
+        ],
+        "outcomes": {
+          "turn_page_sound_R": {
+            "events": {
+              "page_background_R": "*"
+            },
+            "actions": [
+              { 
+                "type": "scene", 
+                "args": ["flip6_forward"] 
+              }
+            ]   
+          },
+          "turn_page_sound_L": {
+            "events": {
+              "page_background_L": "*"
+            },
+            "actions": [
+              { 
+              "type": "scene", 
+              "args": ["flip5_back"] 
+              }
+            ]   
+          }
+        }
+      },
+      "scene7": {
+        "id": "scene7",
+        "title": "Scene 7",
+        "background": "background",
+        "actors": [
+          {
+            "name": "background",
+            "variable": "background-var",
+            "type": "decoration",
+            "image": "background.png",
+            "location": [ 0, 0 ] 
+          },
+          {   
+            "name": "page_background_L",
+            "variable": "page_background_L",
+            "type": "button",
+            "image": "page background L",
+            "location": [ 20, 38 ] 
+          },
+          {
+            "name": "Finally_Zink_and_Fink",
+            "type": "text",
+            "font": "storyMain",
+            "location": [ 65, 110 ],
+            "wordWrapWidth": 400,
+            "text": "Finally Zink and Fink\nwent home\nto ask their parents."
+          },
+          {
+            "name": "Which_one_of_us_is_weird?",
+            "type": "text",
+            "font": "storyMain",
+            "location": [ 40, 220 ],
+            "wordWrapWidth": 400,
+            "text": "\"Which one of us is weird?\"\nthey asked."
+          },
+          {
+            "name": "Neither_of_you",
+            "type": "text",
+            "font": "storyMain",
+            "location": [ 75, 300 ],
+            "wordWrapWidth": 400,
+            "text": "\"Neither of you\"\ntheir parents said."
+          },
+          {
+            "name": "page_number_12",
+            "type": "text",
+            "font": "pageNumber",
+            "location": [ 150, 415 ],
+            "wordWrapWidth": 550,
+            "text": "-12-"
+          },
+          {   
+            "name": "page_background_R",
+            "variable": "page_background_R",
+            "type": "button",
+            "image": "page background R",
+            "location": [ 320, 38 ]
+          },
+          {
+            "name": "page_13_image",
+            "variable": "page_13_image",
+            "type": "decoration",
+            "image": "page 13 image.png",
+            "location": [ 350, 70 ] 
+          },
+          {
+            "name": "Whatever_you_are",
+            "type": "text",
+            "font": "storyMain",
+            "location": [ 400, 285 ],
+            "wordWrapWidth": 400,
+            "text": "\"Whatever you are\nis what you are,\"\nsaid their mother."
+          },
+          {
+            "name": "page_number_13",
+            "type": "text",
+            "font": "pageNumber",
+            "location": [ 470, 415 ],
+            "wordWrapWidth": 550,
+            "text": "-13-"
+          },
+          {
+            "name": "page_12_13",
+            "type": "audio",
+            "audio": "page_12_13",
+            "variable": "page_12_13"
+          }
+        ],
+        "outcomes": {
+          "turn_page_sound_R": {
+            "events": {
+              "page_background_R": "*"
+            },
+            "actions": [
+              { 
+                "type": "scene", 
+                "args": ["flip7_forward"] 
+              }
+            ]   
+          },
+          "turn_page_sound_L": {
+            "events": {
+              "page_background_L": "*"
+            },
+            "actions": [
+              { 
+              "type": "scene", 
+              "args": ["flip6_back"] 
+              }
+            ]   
+          }
+        }
+      },
+      "scene8": {
+        "id": "scene8",
+        "title": "Scene 8",
+        "background": "background",
+        "actors": [
+          {
+            "name": "background",
+            "variable": "background-var",
+            "type": "decoration",
+            "image": "background.png",
+            "location": [ 0, 0 ] 
+          },
+          {   
+            "name": "page_background_L",
+            "variable": "page_background_L",
+            "type": "button",
+            "image": "page background L",
+            "location": [ 20, 38 ] 
+          },
+          {
+            "name": "page_14_image",
+            "variable": "page_14_image",
+            "type": "decoration",
+            "image": "page 14 image.png",
+            "location": [ 105, 70 ] 
+          },
+          {
+            "name": "We're_all_different",
+            "type": "text",
+            "font": "storyMain",
+            "location": [ 80, 250 ],
+            "wordWrapWidth": 400,
+            "text": "\"We're all different,\"\nsaid their father."
+          },
+          {
+            "name": "Being_different",
+            "type": "text",
+            "font": "storyMain",
+            "location": [ 80, 330 ],
+            "wordWrapWidth": 400,
+            "text": "\"Being different\nmakes you special.\""
+          },
+          {
+            "name": "page_number_14",
+            "type": "text",
+            "font": "pageNumber",
+            "location": [ 150, 415 ],
+            "wordWrapWidth": 550,
+            "text": "-14-"
+          },
+          
+          {   
+            "name": "page_background_R",
+            "variable": "page_background_R",
+            "type": "button",
+            "image": "page background R",
+            "location": [ 320, 38 ]
+          },
+          {
+            "name": "page_15_image",
+            "variable": "page_15_image",
+            "type": "decoration",
+            "image": "page 15 image.png",
+            "location": [ 350, 70 ] 
+          },
+          {
+            "name": "page_number_15",
+            "type": "text",
+            "font": "pageNumber",
+            "location": [ 470, 415 ],
+            "wordWrapWidth": 550,
+            "text": "-15-"
+          },
+          {
+            "name": "page_14",
+            "type": "audio",
+            "audio": "page_14",
+            "variable": "page_14"
+          }
+        ],
+        "outcomes": {
+          "turn_page_sound_R": {
+            "events": {
+              "page_background_R": "*"
+            },
+            "actions": [
+              { 
+                "type": "scene", 
+                "args": ["flip8_forward"] 
+              }
+            ]   
+          },
+          "turn_page_sound_L": {
+            "events": {
+              "page_background_L": "*"
+            },
+            "actions": [
+              { 
+              "type": "scene", 
+              "args": ["flip7_back"] 
+              }
+            ]   
+          }
+        }
+      },
+      "scene9": {
+        "id": "scene9",
+        "title": "Scene 9",
+        "background": "background",
+        "actors": [
+          {
+            "name": "background",
+            "variable": "background-var",
+            "type": "decoration",
+            "image": "background.png",
+            "location": [ 0, 0 ] 
+          },
+          {   
+            "name": "page_background_L",
+            "variable": "page_background_L",
+            "type": "button",
+            "image": "page background L",
+            "location": [ 20, 38 ] 
+          },
+          {
+            "name": "page_16_image",
+            "variable": "page_16_image",
+            "type": "decoration",
+            "image": "page 16 image.png",
+            "location": [ 105, 70 ] 
+          },
+          {
+            "name": "Then_everyone_nuzzled_...",
+            "type": "text",
+            "font": "storyMain",
+            "location": [ 60, 250 ],
+            "wordWrapWidth": 400,
+            "text": "Then everyone nuzzled ..."
+          },
+          {
+            "name": "page_number_16",
+            "type": "text",
+            "font": "pageNumber",
+            "location": [ 150, 415 ],
+            "wordWrapWidth": 550,
+            "text": "-16-"
+          },
+          
+          {   
+            "name": "page_background_R",
+            "variable": "page_background_R",
+            "type": "button",
+            "image": "page background R",
+            "location": [ 320, 38 ]
+          },
+          {
+            "name": "page_17_image",
+            "variable": "page_17_image",
+            "type": "decoration",
+            "image": "page 17 image.png",
+            "location": [ 350, 70 ] 
+          },
+          {
+            "name": "page_number_17",
+            "type": "text",
+            "font": "pageNumber",
+            "location": [ 470, 415 ],
+            "wordWrapWidth": 550,
+            "text": "-17-"
+          },
+          {
+            "name": "page_16",
+            "type": "audio",
+            "audio": "page_16",
+            "variable": "page_16"
+          }
+        ],
+        "outcomes": {
+          "turn_page_sound_R": {
+            "events": {
+              "page_background_R": "*"
+            },
+            "actions": [
+              { 
+                "type": "scene", 
+                "args": ["flip9_forward"] 
+              }
+            ]   
+          },
+          "turn_page_sound_L": {
+            "events": {
+              "page_background_L": "*"
+            },
+            "actions": [
+              { 
+              "type": "scene", 
+              "args": ["flip8_back"] 
+              }
+            ]   
+          }
+        }
+      },
+      "scene10": {
+        "id": "scene10",
+        "title": "Scene 10",
+        "background": "background",
+        "actors": [
+          {
+            "name": "background",
+            "variable": "background-var",
+            "type": "decoration",
+            "image": "background.png",
+            "location": [ 0, 0 ] 
+          },
+          {   
+            "name": "page_background_L",
+            "variable": "page_background_L",
+            "type": "button",
+            "image": "page background L",
+            "location": [ 20, 38 ] 
+          },
+          {
+            "name": "page_18_image",
+            "variable": "page_18_image",
+            "type": "decoration",
+            "image": "page 18 image.png",
+            "location": [ 105, 70 ] 
+          },
+          
+          {
+            "name": "and_Zink_and_Fink",
+            "type": "text",
+            "font": "storyMain",
+            "location": [ 80, 250 ],
+            "wordWrapWidth": 400,
+            "text": "and Zink and Fink\nwent out to play."
+          },
+          {
+            "name": "page_number_18",
+            "type": "text",
+            "font": "pageNumber",
+            "location": [ 150, 415 ],
+            "wordWrapWidth": 550,
+            "text": "-18-"
+          },
+          
+          {   
+            "name": "page_background_R",
+            "variable": "page_background_R",
+            "type": "button",
+            "image": "page background R",
+            "location": [ 320, 38 ]
+          },
+          {
+            "name": "page_19_image",
+            "variable": "page_19_image",
+            "type": "decoration",
+            "image": "page 19 image.png",
+            "location": [ 350, 70 ] 
+          },
+          {
+            "name": "page_number_19",
+            "type": "text",
+            "font": "pageNumber",
+            "location": [ 470, 415 ],
+            "wordWrapWidth": 550,
+            "text": "-19-"
+          },
+          {
+            "name": "page_18",
+            "type": "audio",
+            "audio": "page_18",
+            "variable": "page_18"
+          }
+        ],
+        "outcomes": {
+          "turn_page_sound_R": {
+            "events": {
+              "page_background_R": "*"
+            },
+            "actions": [
+              { 
+                "type": "scene", 
+                "args": ["flip10_forward"] 
+              }
+            ]   
+          },
+          "turn_page_sound_L": {
+            "events": {
+              "page_background_L": "*"
+            },
+            "actions": [
+              { 
+              "type": "scene", 
+              "args": ["flip9_back"] 
+              }
+            ]   
+          }
+        }
+      },
+      "scene11": {
+        "id": "scene11",
+        "title": "Scene 11",
+        "background": "background",
+        "actors": [
+          {
+            "name": "background",
+            "variable": "background-var",
+            "type": "decoration",
+            "image": "background.png",
+            "location": [ 0, 0 ] 
+          },
+          {   
+            "name": "page_background_L",
+            "variable": "page_background_L",
+            "type": "button",
+            "image": "page background L",
+            "location": [ 20, 38 ] 
+          },
+          {
+            "name": "The_end",
+            "type": "text",
+            "font": "storyMain",
+            "location": [ 130, 215 ],
+            "wordWrapWidth": 550,
+            "text": "The end."
+          },
+          {
+            "name": "page_number_20",
+            "type": "text",
+            "font": "pageNumber",
+            "location": [ 150, 415 ],
+            "wordWrapWidth": 550,
+            "text": "-20-"
+          },
+          {
+            "name": "page_20",
+            "type": "audio",
+            "audio": "page_20",
+            "variable": "page_20"
+          }
+        ],
+        "outcomes": {
+          "turn_page_sound_L": {
+            "events": {
+              "page_background_L": "*"
+            },
+            "actions": [
+              { 
+              "type": "scene", 
+              "args": ["flip10_back"] 
+              }
+            ]   
+          }
+        },
+        "actions": [
+          { "type": "choice", "args": [ "objective_complete", 1] },
+          { "type": "choice", "args": [ "save", 0 ] }
+        ]
+      },
+      "flip1_forward": {
+        "id": "flip1_forward",
+        "title": "flip 1 forward",
+        "background": "background",
+        "actors": [
+          { 
+            "name": "transition_scene_R",
+            "type": "audio",
+            "audio": "book_pageturn05",
+            "variable": "transition_scene_R"
+          },
+          {
+            "name": "background",
+            "variable": "background-var",
+            "type": "decoration",
+            "image": "background.png",
+            "location": [ 0, 0 ] 
+          },
+          {   
+            "name": "page_background_R",
+            "variable": "page_background_R",
+            "type": "decoration",
+            "image": "page background R",
+            "location": [ 320, 38 ]
+          },
+          {
+            "name": "page_3_image",
+            "variable": "page_3_image",
+            "type": "decoration",
+            "image": "page 3 image.png",
+            "location": [ 350, 70 ] 
+          },
+          {
+            "name": "page_number_3",
+            "type": "text",
+            "font": "pageNumber",
+            "location": [ 475, 415 ],
+            "wordWrapWidth": 550,
+            "text": "-3-"
+          },
+          {   
+            "name": "page_background_R_exit",
+            "variable": "page_background_R",
+            "type": "decoration",
+            "image": "page background R",
+            "location": [ 320, 38 ],
+            "tween": {
+              "time": 400,
+              "scale": [0.01, 1]
+            }
+          },
+          {
+            "name": "page_1_title",
+            "variable": "page_1_title",
+            "type": "decoration",
+            "image": "page 1 title.png",
+            "location": [ 375, 76 ],
+            "tween": {
+              "time": 400,
+              "scale": [0.01, 1],
+              "location": [320, 76]
+            }
+          },
+          {
+            "name": "page_1_image",
+            "variable": "page_1_image",
+            "type": "decoration",
+            "image": "page 1 image.png",
+            "location": [ 425, 150 ] ,
+            "tween": {
+              "time": 400,
+              "scale": [0.01, 1],
+              "location": [320, 150]
+            }
+          },
+          {
+            "name": "story_by",
+            "type": "text",
+            "font": "page1Credits",
+            "location": [ 425, 280 ],
+            "wordWrapWidth": 550,
+            "text": "Story by Kelly Weil",
+            "tween": {
+              "time": 400,
+              "scale": [0.01, 1],
+              "location": [320, 280]
+            }
+          },
+          {
+            "name": "paintings_by",
+            "type": "text",
+            "font": "page1Credits",
+            "location": [ 410, 300 ],
+            "wordWrapWidth": 550,
+            "text": "Paintings by Jay Jocham",
+            "tween": {
+              "time": 400,
+              "scale": [0.01, 1],
+              "location": [320, 300]
+            }
+          },
+          {
+            "name": "edited_by",
+            "type": "text",
+            "font": "page1Credits",
+            "location": [ 400, 320 ],
+            "wordWrapWidth": 550,
+            "text": "Edited by Susan Rensberger",
+            "tween": {
+              "time": 400,
+              "scale": [0.01, 1],
+              "location": [320, 320]
+            }
+          },
+          {
+            "name": "click_prompt",
+            "type": "text",
+            "font": "page1ClickPrompt",
+            "location": [ 380, 370 ],
+            "wordWrapWidth": 550,
+            "text": "CLICK TO TURN THE PAGE",
+            "tween": {
+              "time": 400,
+              "scale": [0.01, 1],
+              "location": [320, 370]
+            }
+          },
+          {
+            "name": "page_number_1",
+            "type": "text",
+            "font": "pageNumber",
+            "location": [ 475, 415 ],
+            "wordWrapWidth": 550,
+            "text": "-1-",
+            "tween": {
+              "time": 400,
+              "scale": [0.01, 1],
+              "location": [320, 415]
+            }
+          },
+          {
+            "name": "split",
+            "type": "timeline",
+            "variable": "split",
+            "period": 400
+          },
+          {
+            "name": "split2",
+            "type": "timeline",
+            "variable": "split2",
+            "period": 800
+          }
+        ],
+        "outcomes": {
+          "split": {
+            "events": {
+              "split": "split"
+            },
+            "actions": [
+              {
+                "type": "remove-actor",
+                "args": ["split", "page_number_1", "click_prompt", "edited_by", "paintings_by", "story_by", "page_1_image", "page_1_title", "page_background_R_exit"]
+              },
+              {
+                "type": "add-actor",
+                "args":[
+                  {   
+                    "name": "page_background_L",
+                    "variable": "page_background_L",
+                    "type": "decoration",
+                    "image": "page background L",
+                    "location": [ 320, 38 ],
+                    "scale": [0.01, 1],
+                    "tween": {
+                      "time": 400,
+                      "scale": [1, 1],
+                      "location": [20, 38]
+                    }
+                  },
+                  {
+                    "name": "Once_upon_a_time",
+                    "type": "text",
+                    "font": "storyMain",
+                    "location": [ 320, 250 ],
+                    "wordWrapWidth": 400,
+                    "text": "Once upon a time,\n a zebra named Zink\n lived in the Lipis Jungle\n with her mother, her father,\n and her brother Fink.",
+                    "scale": [0.01, 1],
+                    "tween": {
+                      "time": 400,
+                      "scale": [1, 1],
+                      "location": [35, 250]
+                    }
+                  },
+                  {
+                    "name": "page_number_2",
+                    "type": "text",
+                    "font": "pageNumber",
+                    "location": [ 320, 415 ],
+                    "wordWrapWidth": 550,
+                    "text": "-2-",
+                    "scale": [0.01, 1],
+                    "tween": {
+                      "time": 400,
+                      "scale": [1, 1],
+                      "location": [155, 415]
+                    }
+                  },
+                  {
+                    "name": "page_2_image",
+                    "variable": "page_2_image",
+                    "type": "decoration",
+                    "image": "page 2 image.png",
+                    "location": [ 320, 70 ],
+                    "scale": [0.01, 1],
+                    "tween": {
+                      "time": 400,
+                      "scale": [1, 1],
+                      "location": [105, 70]
+                    }
+                  }
+                ]
+              }
+            ]
+          },
+          "split2": {
+            "events": {
+              "split2": "split2"
+            },
+            "actions": [
+              {
+                "type": "scene",
+                "args": ["scene2"]
+              }
+            ]
+          }
+        }
+      },
+      "flip1_back": {
+        "id": "flip1_back",
+        "title": "flip 1 back",
+        "background": "background",
+        "actors": [
+          { 
+            "name": "transition_scene_R",
+            "type": "audio",
+            "audio": "book_pageturn05",
+            "variable": "transition_scene_R"
+          },
+          {
+            "name": "background",
+            "variable": "background-var",
+            "type": "decoration",
+            "image": "background.png",
+            "location": [ 0, 0 ] 
+          },
+          {   
+            "name": "page_background_R",
+            "variable": "page_background_R",
+            "type": "decoration",
+            "image": "page background R",
+            "location": [ 320, 38 ]
+          },
+          {
+            "name": "page_3_image",
+            "variable": "page_3_image",
+            "type": "decoration",
+            "image": "page 3 image.png",
+            "location": [ 350, 70 ] 
+          },
+          {
+            "name": "page_number_3",
+            "type": "text",
+            "font": "pageNumber",
+            "location": [ 475, 415 ],
+            "wordWrapWidth": 550,
+            "text": "-3-"
+          },
+          
+          {   
+            "name": "page_background_L_exit",
+            "variable": "page_background_L_exit",
+            "type": "decoration",
+            "image": "page background L",
+            "location": [ 20, 38 ] ,
+            "scale": [1, 1],
+            "tween": {
+              "time": 400,
+              "scale": [0.01, 1],
+              "location": [320, 38]
+            }
+          },
+          {
+            "name": "Once_upon_a_time",
+            "type": "text",
+            "font": "storyMain",
+            "location": [ 35, 250 ],
+            "wordWrapWidth": 400,
+            "text": "Once upon a time,\n a zebra named Zink\n lived in the Lipis Jungle\n with her mother, her father,\n and her brother Fink.",
+            "scale": [1, 1],
+            "tween": {
+              "time": 400,
+              "scale": [0.01, 1],
+              "location": [320, 250]
+            }
+          },
+          {
+            "name": "page_number_2",
+            "type": "text",
+            "font": "pageNumber",
+            "location": [ 155, 415 ],
+            "wordWrapWidth": 550,
+            "text": "-2-",
+            "scale": [1, 1],
+            "tween": {
+              "time": 400,
+              "scale": [0.01, 1],
+              "location": [320, 415]
+            }
+          },
+          {
+            "name": "page_2_image",
+            "variable": "page_2_image",
+            "type": "decoration",
+            "image": "page 2 image.png",
+            "location": [ 105, 70 ],
+            "scale": [1, 1],
+            "tween": {
+              "time": 400,
+              "scale": [0.01, 1],
+              "location": [320, 70]
+            }
+          },
+          {
+            "name": "split",
+            "type": "timeline",
+            "variable": "split",
+            "period": 400
+          },
+          {
+            "name": "split2",
+            "type": "timeline",
+            "variable": "split2",
+            "period": 800
+          }
+        ],
+        "outcomes": {
+          "split": {
+            "events": {
+              "split": "split"
+            },
+            "actions": [
+              {
+                "type": "remove-actor",
+                "args": ["split", "page_background_L_exit"]
+              },
+              {
+                "type": "add-actor",
+                "args":[
+                  {   
+                    "name": "page_background_R_exit",
+                    "variable": "page_background_R",
+                    "type": "decoration",
+                    "image": "page background R",
+                    "location": [ 320, 38 ],
+                    "scale": [0.01, 1],
+                    "tween": {
+                      "time": 400,
+                      "scale": [1, 1]
+                    }
+                  },
+                  {
+                    "name": "page_1_title",
+                    "variable": "page_1_title",
+                    "type": "decoration",
+                    "image": "page 1 title.png",
+                    "location": [ 320, 76 ],
+                    "scale": [0.01, 1],
+                    "tween": {
+                      "time": 400,
+                      "scale": [1, 1],
+                      "location": [375, 76]
+                    }
+                  },
+                  {
+                    "name": "page_1_image",
+                    "variable": "page_1_image",
+                    "type": "decoration",
+                    "image": "page 1 image.png",
+                    "location": [ 320, 150 ],
+                    "scale": [0.01, 1],
+                    "tween": {
+                      "time": 400,
+                      "scale": [1, 1],
+                      "location": [425, 150]
+                    }
+                  },
+                  {
+                    "name": "story_by",
+                    "type": "text",
+                    "font": "page1Credits",
+                    "location": [ 320, 280 ],
+                    "wordWrapWidth": 550,
+                    "text": "Story by Kelly Weil",
+                    "scale": [0.01, 1],
+                    "tween": {
+                      "time": 400,
+                      "scale": [1, 1],
+                      "location": [425, 280]
+                    }
+                  },
+                  {
+                    "name": "paintings_by",
+                    "type": "text",
+                    "font": "page1Credits",
+                    "location": [ 320, 300 ],
+                    "wordWrapWidth": 550,
+                    "text": "Paintings by Jay Jocham",
+                    "scale": [0.01, 1],
+                    "tween": {
+                      "time": 400,
+                      "scale": [1, 1],
+                      "location": [410, 300]
+                    }
+                  },
+                  {
+                    "name": "edited_by",
+                    "type": "text",
+                    "font": "page1Credits",
+                    "location": [ 320, 320 ],
+                    "wordWrapWidth": 550,
+                    "text": "Edited by Susan Rensberger",
+                    "scale": [0.01, 1],
+                    "tween": {
+                      "time": 400,
+                      "scale": [1, 1],
+                      "location": [400, 320]
+                    }
+                  },
+                  {
+                    "name": "click_prompt",
+                    "type": "text",
+                    "font": "page1ClickPrompt",
+                    "location": [ 320, 370 ],
+                    "wordWrapWidth": 550,
+                    "text": "CLICK TO TURN THE PAGE",
+                    "scale": [0.01, 1],
+                    "tween": {
+                      "time": 400,
+                      "scale": [1, 1],
+                      "location": [380, 370]
+                    }
+                  },
+                  {
+                    "name": "page_number_1",
+                    "type": "text",
+                    "font": "pageNumber",
+                    "location": [ 320, 415 ],
+                    "wordWrapWidth": 550,
+                    "text": "-1-",
+                    "scale": [0.01, 1],
+                    "tween": {
+                      "time": 400,
+                      "scale": [1, 1],
+                      "location": [475, 415]
+                    }
+                  }
+                ]
+              }
+            ]
+          },
+          "split2": {
+            "events": {
+              "split2": "split2"
+            },
+            "actions": [
+              {
+                "type": "scene",
+                "args": ["scene1"]
+              }
+            ]
+          }
+        }
+      },
+      "flip2_forward": {
+        "id": "flip2_forward",
+        "title": "flip 2 forward",
+        "background": "background",
+        "actors": [
+          { 
+            "name": "transition_scene_R",
+            "type": "audio",
+            "audio": "book_pageturn05",
+            "variable": "transition_scene_R"
+          },
+          {
+            "name": "background",
+            "variable": "background-var",
+            "type": "decoration",
+            "image": "background.png",
+            "location": [ 0, 0 ] 
+          },
+          {   
+            "name": "page_background_R",
+            "variable": "page_background_R",
+            "type": "decoration",
+            "image": "page background R",
+            "location": [ 320, 38 ]
+          },
+          {
+            "name": "page_5_image",
+            "variable": "page_5_image",
+            "type": "decoration",
+            "image": "page 5 image.png",
+            "location": [ 350, 70 ] 
+          },
+          {
+            "name": "page_number_5",
+            "type": "text",
+            "font": "pageNumber",
+            "location": [ 475, 415 ],
+            "wordWrapWidth": 550,
+            "text": "-5-"
+          },         
+          {   
+            "name": "page_background_R_exit",
+            "variable": "page_background_R",
+            "type": "decoration",
+            "image": "page background R",
+            "location": [ 320, 38 ],
+            "tween": {
+              "time": 400,
+              "scale": [0.01, 1],
+              "location": [320, 38]
+            }
+          },
+          {
+            "name": "page_number_3",
+            "type": "text",
+            "font": "pageNumber",
+            "location": [ 475, 415 ],
+            "wordWrapWidth": 550,
+            "text": "-3-",
+            "tween": {
+              "time": 400,
+              "scale": [0.01, 1],
+              "location": [320, 415]
+            }
+          }, 
+          {
+            "name": "page_3_image",
+            "variable": "page_3_image",
+            "type": "decoration",
+            "image": "page 3 image.png",
+            "location": [ 350, 70 ],
+            "tween": {
+              "time": 400,
+              "scale": [0.01, 1],
+              "location": [320, 70]
+            }
+          },
+          {   
+            "name": "page_background_L",
+            "variable": "page_background_L",
+            "type": "decoration",
+            "image": "page background L",
+            "location": [ 20, 38 ] 
+          },
+          {
+            "name": "page_2_image",
+            "variable": "page_2_image",
+            "type": "decoration",
+            "image": "page 2 image.png",
+            "location": [ 105, 70 ] 
+          },
+          {
+            "name": "Once_upon_a_time",
+            "type": "text",
+            "font": "storyMain",
+            "location": [ 35, 250 ],
+            "wordWrapWidth": 400,
+            "text": "Once upon a time,\n a zebra named Zink\n lived in the Lipis Jungle\n with her mother, her father,\n and her brother Fink."
+          },
+          {
+            "name": "page_number_2",
+            "type": "text",
+            "font": "pageNumber",
+            "location": [ 155, 415 ],
+            "wordWrapWidth": 550,
+            "text": "-2-"
+          },
+          
+
+          {
+            "name": "split",
+            "type": "timeline",
+            "variable": "split",
+            "period": 400
+          },
+          {
+            "name": "split2",
+            "type": "timeline",
+            "variable": "split2",
+            "period": 800
+          }
+        ],
+        "outcomes": {
+          "split": {
+            "events": {
+              "split": "split"
+            },
+            "actions": [
+              {
+                "type": "remove-actor",
+                "args": ["split", "page_number_3", "page_3_image", "page_background_R_exit"]
+              },
+              {
+                "type": "add-actor",
+                "args":[
+                  {   
+                    "name": "page_background_L",
+                    "variable": "page_background_L",
+                    "type": "decoration",
+                    "image": "page background L",
+                    "location": [ 320, 38 ],
+                    "scale": [0.01, 1],
+                    "tween": {
+                      "time": 400,
+                      "scale": [1, 1],
+                      "location": [20, 38]
+                    }
+                  },
+                  {
+                    "name": "page_4_image",
+                    "variable": "page_4_image",
+                    "type": "decoration",
+                    "image": "page 4 image.png",
+                    "location": [ 320, 70 ],
+                    "scale": [0.01, 1],
+                    "tween": {
+                      "time": 400,
+                      "scale": [1, 1],
+                      "location": [105, 70]
+                    }
+                  },
+                  {
+                    "name": "Zink_was_a_normal",
+                    "type": "text",
+                    "font": "storyMain",
+                    "location": [ 320, 215 ],
+                    "wordWrapWidth": 500,
+                    "text": "Zink was a normal\nzebra in every way.\nShe had four legs, two ears,\none nose, one mouth,\n one tail ...",
+                    "scale": [0.01, 1],
+                    "tween": {
+                      "time": 400,
+                      "scale": [1, 1],
+                      "location": [40, 215]
+                    }
+                  },
+                  {
+                    "name": "and_spots",
+                    "type": "text",
+                    "font": "storyMain",
+                    "location": [ 320, 370 ],
+                    "wordWrapWidth": 500,
+                    "text": "and spots.",
+                    "scale": [0.01, 1],
+                    "tween": {
+                      "time": 400,
+                      "scale": [1, 1],
+                      "location": [117, 370]
+                    }
+                  },
+                  {
+                    "name": "page_number_4",
+                    "type": "text",
+                    "font": "pageNumber",
+                    "location": [ 320, 415 ],
+                    "wordWrapWidth": 550,
+                    "text": "-4-",
+                    "scale": [0.01, 1],
+                    "tween": {
+                      "time": 400,
+                      "scale": [1, 1],
+                      "location": [155, 415]
+                    }
+                  }
+                ]
+              }
+            ]
+          },
+          "split2": {
+            "events": {
+              "split2": "split2"
+            },
+            "actions": [
+              {
+                "type": "scene",
+                "args": ["scene3"]
+              }
+            ]
+          }
+        }
+      },
+      "flip2_back": {
+        "id": "flip2_back",
+        "title": "flip 2 back",
+        "background": "background",
+        "actors": [
+          { 
+            "name": "transition_scene_R",
+            "type": "audio",
+            "audio": "book_pageturn05",
+            "variable": "transition_scene_R"
+          },
+          {
+            "name": "background",
+            "variable": "background-var",
+            "type": "decoration",
+            "image": "background.png",
+            "location": [ 0, 0 ] 
+          },
+          {   
+            "name": "page_background_R",
+            "variable": "page_background_R",
+            "type": "decoration",
+            "image": "page background R",
+            "location": [ 320, 38 ]
+          },
+          {
+            "name": "page_5_image",
+            "variable": "page_5_image",
+            "type": "decoration",
+            "image": "page 5 image.png",
+            "location": [ 350, 70 ] 
+          },
+          {
+            "name": "page_number_5",
+            "type": "text",
+            "font": "pageNumber",
+            "location": [ 475, 415 ],
+            "wordWrapWidth": 550,
+            "text": "-5-"
+          },
+          
+          {   
+            "name": "page_background_L",
+            "variable": "page_background_L",
+            "type": "decoration",
+            "image": "page background L",
+            "location": [ 20, 38 ] 
+          },
+          {
+            "name": "page_2_image",
+            "variable": "page_2_image",
+            "type": "decoration",
+            "image": "page 2 image.png",
+            "location": [ 105, 70 ] 
+          },
+          {
+            "name": "Once_upon_a_time",
+            "type": "text",
+            "font": "storyMain",
+            "location": [ 35, 250 ],
+            "wordWrapWidth": 400,
+            "text": "Once upon a time,\n a zebra named Zink\n lived in the Lipis Jungle\n with her mother, her father,\n and her brother Fink."
+          },
+          {
+            "name": "page_number_2",
+            "type": "text",
+            "font": "pageNumber",
+            "location": [ 155, 415 ],
+            "wordWrapWidth": 550,
+            "text": "-2-"
+          },
+          
+          {   
+            "name": "page_background_L_exit",
+            "variable": "page_background_L",
+            "type": "decoration",
+            "image": "page background L",
+            "location": [ 20, 38 ],
+            "scale": [1, 1],
+            "tween": {
+              "time": 400,
+              "scale": [0.01, 1],
+              "location": [320, 38]
+            }
+          },
+          {
+            "name": "page_4_image",
+            "variable": "page_4_image",
+            "type": "decoration",
+            "image": "page 4 image.png",
+            "location": [ 105, 70 ],
+            "scale": [1, 1],
+            "tween": {
+              "time": 400,
+              "scale": [0.01, 1],
+              "location": [320, 70]
+            }
+          },
+          {
+            "name": "Zink_was_a_normal",
+            "type": "text",
+            "font": "storyMain",
+            "location": [ 40, 215 ],
+            "wordWrapWidth": 500,
+            "text": "Zink was a normal\nzebra in every way.\nShe had four legs, two ears,\none nose, one mouth,\n one tail ...",
+            "scale": [1, 1],
+            "tween": {
+              "time": 400,
+              "scale": [0.01, 1],
+              "location": [320, 215]
+            }
+          },
+          {
+            "name": "and_spots",
+            "type": "text",
+            "font": "storyMain",
+            "location": [ 117, 370 ],
+            "wordWrapWidth": 500,
+            "text": "and spots.",
+            "scale": [1, 1],
+            "tween": {
+              "time": 400,
+              "scale": [0.01, 1],
+              "location": [320, 370]
+            }
+          },
+          {
+            "name": "page_number_4",
+            "type": "text",
+            "font": "pageNumber",
+            "location": [ 155, 415 ],
+            "wordWrapWidth": 550,
+            "text": "-4-",
+            "scale": [1, 1],
+            "tween": {
+              "time": 400,
+              "scale": [0.01, 1],
+              "location": [320, 415]
+            }
+          },
+
+          {
+            "name": "split",
+            "type": "timeline",
+            "variable": "split",
+            "period": 400
+          },
+          {
+            "name": "split2",
+            "type": "timeline",
+            "variable": "split2",
+            "period": 800
+          }
+        ],
+        "outcomes": {
+          "split": {
+            "events": {
+              "split": "split"
+            },
+            "actions": [
+              {
+                "type": "remove-actor",
+                "args": ["split", "page_number_4", "and_spots", "Zink_was_a_normal", "page_4_image", "page_background_L_exit"]
+              },
+              {
+                "type": "add-actor",
+                "args":[        
+                  {   
+                    "name": "page_background_R",
+                    "variable": "page_background_R",
+                    "type": "decoration",
+                    "image": "page background R",
+                    "location": [ 320, 38 ],
+                    "scale": [0.01, 1],
+                    "tween": {
+                      "time": 400,
+                      "scale": [1, 1],
+                      "location": [320, 38]
+                    }
+                  },
+                  {
+                    "name": "page_number_3",
+                    "type": "text",
+                    "font": "pageNumber",
+                    "location": [ 320, 415 ],
+                    "wordWrapWidth": 550,
+                    "text": "-3-",
+                    "scale": [0.01, 1],
+                    "tween": {
+                      "time": 400,
+                      "scale": [1, 1],
+                      "location": [475, 415]
+                    }
+                  },  
+                  {
+                    "name": "page_3_image",
+                    "variable": "page_3_image",
+                    "type": "decoration",
+                    "image": "page 3 image.png",
+                    "location": [ 320, 70 ],
+                    "scale": [0.01, 1],
+                    "tween": {
+                      "time": 400,
+                      "scale": [1, 1],
+                      "location": [350, 70]
+                    }
+                  }
+                ]
+              }
+            ]
+          },
+          "split2": {
+            "events": {
+              "split2": "split2"
+            },
+            "actions": [
+              {
+                "type": "scene",
+                "args": ["scene2"]
+              }
+            ]
+          }
+        }
+      },
+      "flip3_forward": {
+        "id": "flip3_forward",
+        "title": "flip 3 forward",
+        "background": "background",
+        "actors": [
+          { 
+            "name": "transition_scene_R",
+            "type": "audio",
+            "audio": "book_pageturn05",
+            "variable": "transition_scene_R"
+          },
+          {
+            "name": "background",
+            "variable": "background-var",
+            "type": "decoration",
+            "image": "background.png",
+            "location": [ 0, 0 ] 
+          },
+          {   
+            "name": "page_background_L",
+            "variable": "page_background_L",
+            "type": "decoration",
+            "image": "page background L",
+            "location": [ 20, 38 ] 
+          },
+          {   
+            "name": "page_background_R",
+            "variable": "page_background_R",
+            "type": "decoration",
+            "image": "page background R",
+            "location": [ 320, 38 ]
+          },
+          {
+            "name": "page_7_image",
+            "variable": "page_7_image",
+            "type": "decoration",
+            "image": "page 7 image.png",
+            "location": [ 350, 70 ] 
+          },
+          {
+            "name": "page_number_7",
+            "type": "text",
+            "font": "pageNumber",
+            "location": [ 475, 415 ],
+            "wordWrapWidth": 550,
+            "text": "-7-"
+          },
+          {
+            "name": "page_4_image",
+            "variable": "page_4_image",
+            "type": "decoration",
+            "image": "page 4 image.png",
+            "location": [ 105, 70 ]
+          },
+          {
+            "name": "Zink_was_a_normal",
+            "type": "text",
+            "font": "storyMain",
+            "location": [ 40, 215 ],
+            "wordWrapWidth": 500,
+            "text": "Zink was a normal\nzebra in every way.\nShe had four legs, two ears,\none nose, one mouth,\n one tail ..."
+          },
+          {
+            "name": "and_spots",
+            "type": "text",
+            "font": "storyMain",
+            "location": [ 117, 370 ],
+            "wordWrapWidth": 500,
+            "text": "and spots."
+          },
+          {
+            "name": "page_number_4",
+            "type": "text",
+            "font": "pageNumber",
+            "location": [ 155, 415 ],
+            "wordWrapWidth": 550,
+            "text": "-4-"
+          },
+          {   
+            "name": "page_background_R_exit",
+            "variable": "page_background_R",
+            "type": "decoration",
+            "image": "page background R",
+            "location": [ 320, 38 ],
+            "tween": {
+              "time": 400,
+              "location": [320, 38],
+              "scale": [0.01, 1]
+            }
+          },
+          {
+            "name": "page_5_image",
+            "variable": "page_5_image",
+            "type": "decoration",
+            "image": "page 5 image.png",
+            "location": [ 350, 70 ],
+            "tween": {
+              "time": 400,
+              "location": [320, 70],
+              "scale": [0.01, 1]
+            }
+          },
+          {
+            "name": "page_number_5",
+            "type": "text",
+            "font": "pageNumber",
+            "location": [ 475, 415 ],
+            "wordWrapWidth": 550,
+            "text": "-5-",
+            "tween": {
+              "time": 400,
+              "location": [320, 415],
+              "scale": [0.01, 1]
+            }
+          },
+
+          {
+            "name": "split",
+            "type": "timeline",
+            "variable": "split",
+            "period": 400
+          },
+          {
+            "name": "split2",
+            "type": "timeline",
+            "variable": "split2",
+            "period": 800
+          }
+        ],
+        "outcomes": {
+          "split": {
+            "events": {
+              "split": "split"
+            },
+            "actions": [
+              {
+                "type": "remove-actor",
+                "args": ["split", "page_background_R_exit", "page_5_image", "page_number_5"]
+              },
+              {
+                "type": "add-actor",
+                "args":[
+                  {   
+                    "name": "page_background_L",
+                    "variable": "page_background_L",
+                    "type": "decoration",
+                    "image": "page background L",
+                    "location": [ 320, 38 ],
+                    "scale": [0.01, 1],
+                    "tween": {
+                      "time": 400,
+                      "scale": [1, 1],
+                      "location": [20, 38]
+                    }
+                  },
+                  {
+                    "name": "All_the_other_zebras",
+                    "type": "text",
+                    "font": "storyMain",
+                    "location": [ 320, 75 ],
+                    "wordWrapWidth": 500,
+                    "text": "All the other zebras\n- even her mother, father\nand brother - had stripes.",
+                    "scale": [0.01, 1],
+                    "tween": {
+                      "time": 400,
+                      "scale": [1, 1],
+                      "location": [40, 75]
+                    }
+                  },
+                  {
+                    "name": "Because_Zink_had_spots",
+                    "type": "text",
+                    "font": "storyMain",
+                    "location": [ 320, 180 ],
+                    "wordWrapWidth": 500,
+                    "text": "Because Zink had spots,\nthe other zebras\nwouldn't play with her.",
+                    "scale": [0.01, 1],
+                    "tween": {
+                      "time": 400,
+                      "scale": [1, 1],
+                      "location": [50, 180]
+                    }
+                  },
+                  {
+                    "name": "Because_the_other_zebras_had",
+                    "type": "text",
+                    "font": "storyMain",
+                    "location": [ 320, 285 ],
+                    "wordWrapWidth": 500,
+                    "text": "Because the other zebras had\nstripes, they thought\nZink looked odd.",
+                    "scale": [0.01, 1],
+                    "tween": {
+                      "time": 400,
+                      "scale": [1, 1],
+                      "location": [30, 285]
+                    }
+                  },
+                  {
+                    "name": "page_number_6",
+                    "type": "text",
+                    "font": "pageNumber",
+                    "location": [ 320, 415 ],
+                    "wordWrapWidth": 550,
+                    "text": "-6-",
+                    "scale": [0.01, 1],
+                    "tween": {
+                      "time": 400,
+                      "scale": [1, 1],
+                      "location": [155, 415]
+                    }
+                  }
+                ]
+              }
+            ]
+          },
+          "split2": {
+            "events": {
+              "split2": "split2"
+            },
+            "actions": [
+              {
+                "type": "scene",
+                "args": ["scene4"]
+              }
+            ]
+          }
+        }
+      },
+      "flip3_back": {
+        "id": "flip3_back",
+        "title": "flip 3 back",
+        "background": "background",
+        "actors": [
+          { 
+            "name": "transition_scene_R",
+            "type": "audio",
+            "audio": "book_pageturn05",
+            "variable": "transition_scene_R"
+          },
+          {
+            "name": "background",
+            "variable": "background-var",
+            "type": "decoration",
+            "image": "background.png",
+            "location": [ 0, 0 ] 
+          },
+          {   
+            "name": "page_background_R",
+            "variable": "page_background_R",
+            "type": "decoration",
+            "image": "page background R",
+            "location": [ 320, 38 ]
+          },
+          {
+            "name": "page_7_image",
+            "variable": "page_7_image",
+            "type": "decoration",
+            "image": "page 7 image.png",
+            "location": [ 350, 70 ] 
+          },
+          {
+            "name": "page_number_7",
+            "type": "text",
+            "font": "pageNumber",
+            "location": [ 475, 415 ],
+            "wordWrapWidth": 550,
+            "text": "-7-"
+          },
+
+          {   
+            "name": "page_background_L",
+            "variable": "page_background_L",
+            "type": "decoration",
+            "image": "page background L",
+            "location": [ 20, 38 ]
+          },
+          {
+            "name": "page_4_image",
+            "variable": "page_4_image",
+            "type": "decoration",
+            "image": "page 4 image.png",
+            "location": [ 105, 70 ]
+          },
+          {
+            "name": "Zink_was_a_normal",
+            "type": "text",
+            "font": "storyMain",
+            "location": [ 40, 215 ],
+            "wordWrapWidth": 500,
+            "text": "Zink was a normal\nzebra in every way.\nShe had four legs, two ears,\none nose, one mouth,\n one tail ..."
+          },
+          {
+            "name": "and_spots",
+            "type": "text",
+            "font": "storyMain",
+            "location": [ 117, 370 ],
+            "wordWrapWidth": 500,
+            "text": "and spots."
+          },
+          {
+            "name": "page_number_4",
+            "type": "text",
+            "font": "pageNumber",
+            "location": [ 155, 415 ],
+            "wordWrapWidth": 550,
+            "text": "-4-"
+          },
+          
+
+
+          {   
+            "name": "page_background_L_exit",
+            "variable": "page_background_L",
+            "type": "decoration",
+            "image": "page background L",
+            "location": [ 20, 38 ],
+            "tween": {
+              "time": 400,
+              "scale": [0.01, 1],
+              "location": [320, 38]
+            }
+          },
+          {
+            "name": "All_the_other_zebras",
+            "type": "text",
+            "font": "storyMain",
+            "location": [ 40, 75 ],
+            "wordWrapWidth": 500,
+            "text": "All the other zebras\n- even her mother, father\nand brother - had stripes.",
+            "tween": {
+              "time": 400,
+              "scale": [0.01, 1],
+              "location": [320, 75]
+            }
+          },
+          {
+            "name": "Because_Zink_had_spots",
+            "type": "text",
+            "font": "storyMain",
+            "location": [ 50, 180 ],
+            "wordWrapWidth": 500,
+            "text": "Because Zink had spots,\nthe other zebras\nwouldn't play with her.",
+            "tween": {
+              "time": 400,
+              "scale": [0.01, 1],
+              "location": [320, 180]
+            }
+          },
+          {
+            "name": "Because_the_other_zebras_had",
+            "type": "text",
+            "font": "storyMain",
+            "location": [ 30, 285 ],
+            "wordWrapWidth": 500,
+            "text": "Because the other zebras had\nstripes, they thought\nZink looked odd.",
+            "tween": {
+              "time": 400,
+              "scale": [0.01, 1],
+              "location": [320, 285]
+            }
+          },
+          {
+            "name": "page_number_6",
+            "type": "text",
+            "font": "pageNumber",
+            "location": [ 155, 415 ],
+            "wordWrapWidth": 550,
+            "text": "-6-",
+            "tween": {
+              "time": 400,
+              "scale": [0.01, 1],
+              "location": [320, 415]
+            }
+          },
+          {
+            "name": "split",
+            "type": "timeline",
+            "variable": "split",
+            "period": 400
+          },
+          {
+            "name": "split2",
+            "type": "timeline",
+            "variable": "split2",
+            "period": 800
+          }
+        ],
+        "outcomes": {
+          "split": {
+            "events": {
+              "split": "split"
+            },
+            "actions": [
+              {
+                "type": "remove-actor",
+                "args": ["split", "REMOVE ACTORS FROM LEAVING PAGE"]
+              },
+              {
+                "type": "add-actor",
+                "args":[
+                  {   
+                    "name": "page_background_R",
+                    "variable": "page_background_R",
+                    "type": "decoration",
+                    "image": "page background R",
+                    "location": [ 320, 38 ],
+                    "scale": [0.01, 1],
+                    "tween": {
+                      "time": 400,
+                      "scale": [1, 1],
+                      "location": [320, 38]
+                    }
+                  },
+                  {
+                    "name": "page_5_image",
+                    "variable": "page_5_image",
+                    "type": "decoration",
+                    "image": "page 5 image.png",
+                    "location": [ 320, 70 ],
+                    "scale": [0.01, 1],
+                    "tween": {
+                      "time": 400,
+                      "scale": [1, 1],
+                      "location": [350, 70]
+                    }
+                  },
+                  {
+                    "name": "page_number_5",
+                    "type": "text",
+                    "font": "pageNumber",
+                    "location": [ 320, 415 ],
+                    "wordWrapWidth": 550,
+                    "text": "-5-",
+                    "scale": [0.01, 1],
+                    "tween": {
+                      "time": 400,
+                      "scale": [1, 1],
+                      "location": [475, 415]
+                    }
+                  }
+                ]
+              }
+            ]
+          },
+          "split2": {
+            "events": {
+              "split2": "split2"
+            },
+            "actions": [
+              {
+                "type": "scene",
+                "args": ["scene3"]
+              }
+            ]
+          }
+        }
+      },
+      "flip4_forward": {
+        "id": "flip4_forward",
+        "title": "flip 4 forward",
+        "background": "background",
+        "actors": [
+          { 
+            "name": "transition_scene_R",
+            "type": "audio",
+            "audio": "book_pageturn05",
+            "variable": "transition_scene_R"
+          },
+          {
+            "name": "background",
+            "variable": "background-var",
+            "type": "decoration",
+            "image": "background.png",
+            "location": [ 0, 0 ] 
+          },
+          {   
+            "name": "page_background_L",
+            "variable": "page_background_L",
+            "type": "decoration",
+            "image": "page background L",
+            "location": [ 20, 38 ]
+          },
+          {
+            "name": "All_the_other_zebras",
+            "type": "text",
+            "font": "storyMain",
+            "location": [ 40, 75 ],
+            "wordWrapWidth": 500,
+            "text": "All the other zebras\n- even her mother, father\nand brother - had stripes."
+          },
+          {
+            "name": "Because_Zink_had_spots",
+            "type": "text",
+            "font": "storyMain",
+            "location": [ 50, 180 ],
+            "wordWrapWidth": 500,
+            "text": "Because Zink had spots,\nthe other zebras\nwouldn't play with her."
+          },
+          {
+            "name": "Because_the_other_zebras_had",
+            "type": "text",
+            "font": "storyMain",
+            "location": [ 30, 285 ],
+            "wordWrapWidth": 500,
+            "text": "Because the other zebras had\nstripes, they thought\nZink looked odd."
+          },
+          {
+            "name": "page_number_6",
+            "type": "text",
+            "font": "pageNumber",
+            "location": [ 155, 415 ],
+            "wordWrapWidth": 550,
+            "text": "-6-"
+          },
+          {   
+            "name": "page_background_R",
+            "variable": "page_background_R",
+            "type": "decoration",
+            "image": "page background R",
+            "location": [ 320, 38 ]
+          },
+          {
+            "name": "page_9_image",
+            "variable": "page_9_image",
+            "type": "decoration",
+            "image": "page 9 image.png",
+            "location": [ 350, 70 ] 
+          },
+          {
+            "name": "One_day_Zink_said_to_Fink",
+            "type": "text",
+            "font": "storyMain",
+            "location": [ 355, 325 ],
+            "wordWrapWidth": 500,
+            "text": "Zink said to Fink,\n\"Why do you have stripes?\nThey're so weird.\""
+          },
+          {
+            "name": "page_number_9",
+            "type": "text",
+            "font": "pageNumber",
+            "location": [ 475, 415 ],
+            "wordWrapWidth": 550,
+            "text": "-9-"
+          },
+
+          {   
+            "name": "page_background_R_exit",
+            "variable": "page_background_R",
+            "type": "decoration",
+            "image": "page background R",
+            "location": [ 320, 38 ],
+            "tween": {
+              "time": 400,
+              "scale": [0.01, 1]
+            }
+          },
+          {
+            "name": "page_7_image",
+            "variable": "page_7_image",
+            "type": "decoration",
+            "image": "page 7 image.png",
+            "location": [ 350, 70 ],
+            "tween": {
+              "time": 400,
+              "scale": [0.01, 1],
+              "location": [320, 70]
+            } 
+          },
+          {
+            "name": "page_number_7",
+            "type": "text",
+            "font": "pageNumber",
+            "location": [ 475, 415 ],
+            "wordWrapWidth": 550,
+            "text": "-7-",
+            "tween": {
+              "time": 400,
+              "scale": [0.01, 1],
+              "location": [320, 415]
+            } 
+          },
+          
+          {
+            "name": "split",
+            "type": "timeline",
+            "variable": "split",
+            "period": 400
+          },
+          {
+            "name": "split2",
+            "type": "timeline",
+            "variable": "split2",
+            "period": 800
+          }
+        ],
+        "outcomes": {
+          "split": {
+            "events": {
+              "split": "split"
+            },
+            "actions": [
+              {
+                "type": "remove-actor",
+                "args": ["split", "page_7_image", "page_background_R_exit", "page_number_7"]
+              },
+              {
+                "type": "add-actor",
+                "args":[
+                  {   
+                    "name": "page_background_L",
+                    "variable": "page_background_L",
+                    "type": "decoration",
+                    "image": "page background L",
+                    "location": [ 320, 38 ],
+                    "scale": [0.01, 1],
+                    "tween": {
+                      "time": 400,
+                      "scale": [1, 1],
+                      "location": [20, 38]
+                    } 
+                  },
+                  {
+                    "name": "page_8_image",
+                    "variable": "page_8_image",
+                    "type": "decoration",
+                    "image": "page 8 image.png",
+                    "location": [ 320, 70 ],
+                    "scale": [0.01, 1],
+                    "tween": {
+                      "time": 400,
+                      "scale": [1, 1],
+                      "location": [50, 70]
+                    } 
+                  },
+                  {
+                    "name": "One_day_Fink_said_to_Zink",
+                    "type": "text",
+                    "font": "storyMain",
+                    "location": [ 320, 325 ],
+                    "wordWrapWidth": 500,
+                    "text": "One day Fink said to Zink,\n\"Why do you have spots?\nThey're so weird.\"",
+                    "scale": [0.01, 1],
+                    "tween": {
+                      "time": 400,
+                      "scale": [1, 1],
+                      "location": [45, 325]
+                    } 
+                  },
+                  {
+                    "name": "page_number_8",
+                    "type": "text",
+                    "font": "pageNumber",
+                    "location": [ 320, 415 ],
+                    "wordWrapWidth": 550,
+                    "text": "-8-",
+                    "scale": [0.01, 1],
+                    "tween": {
+                      "time": 400,
+                      "scale": [1, 1],
+                      "location": [155, 415]
+                    } 
+                  }
+                ]
+              }
+            ]
+          },
+          "split2": {
+            "events": {
+              "split2": "split2"
+            },
+            "actions": [
+              {
+                "type": "scene",
+                "args": ["scene5"]
+              }
+            ]
+          }
+        }
+      },
+      "flip4_back": {
+        "id": "flip4_back",
+        "title": "flip 4 back",
+        "background": "background",
+        "actors": [
+          { 
+            "name": "transition_scene_R",
+            "type": "audio",
+            "audio": "book_pageturn05",
+            "variable": "transition_scene_R"
+          },
+          {
+            "name": "background",
+            "variable": "background-var",
+            "type": "decoration",
+            "image": "background.png",
+            "location": [ 0, 0 ] 
+          },
+          {   
+            "name": "page_background_L",
+            "variable": "page_background_L",
+            "type": "decoration",
+            "image": "page background L",
+            "location": [ 20, 38 ]
+          },
+          {
+            "name": "All_the_other_zebras",
+            "type": "text",
+            "font": "storyMain",
+            "location": [ 40, 75 ],
+            "wordWrapWidth": 500,
+            "text": "All the other zebras\n- even her mother, father\nand brother - had stripes."
+          },
+          {
+            "name": "Because_Zink_had_spots",
+            "type": "text",
+            "font": "storyMain",
+            "location": [ 50, 180 ],
+            "wordWrapWidth": 500,
+            "text": "Because Zink had spots,\nthe other zebras\nwouldn't play with her."
+          },
+          {
+            "name": "Because_the_other_zebras_had",
+            "type": "text",
+            "font": "storyMain",
+            "location": [ 30, 285 ],
+            "wordWrapWidth": 500,
+            "text": "Because the other zebras had\nstripes, they thought\nZink looked odd."
+          },
+          {
+            "name": "page_number_6",
+            "type": "text",
+            "font": "pageNumber",
+            "location": [ 155, 415 ],
+            "wordWrapWidth": 550,
+            "text": "-6-"
+          },
+          {   
+            "name": "page_background_R",
+            "variable": "page_background_R",
+            "type": "decoration",
+            "image": "page background R",
+            "location": [ 320, 38 ]
+          },
+          {
+            "name": "page_9_image",
+            "variable": "page_9_image",
+            "type": "decoration",
+            "image": "page 9 image.png",
+            "location": [ 350, 70 ] 
+          },
+          {
+            "name": "One_day_Zink_said_to_Fink",
+            "type": "text",
+            "font": "storyMain",
+            "location": [ 355, 325 ],
+            "wordWrapWidth": 500,
+            "text": "Zink said to Fink,\n\"Why do you have stripes?\nThey're so weird.\""
+          },
+          {
+            "name": "page_number_9",
+            "type": "text",
+            "font": "pageNumber",
+            "location": [ 475, 415 ],
+            "wordWrapWidth": 550,
+            "text": "-9-"
+          },
+
+
+          {   
+            "name": "page_background_L_exit",
+            "variable": "page_background_L",
+            "type": "decoration",
+            "image": "page background L",
+            "location": [ 20, 38 ],
+            "tween": {
+              "time": 400,
+              "scale": [0.01, 1],
+              "location": [320, 38]
+            } 
+          },
+          {
+            "name": "page_8_image",
+            "variable": "page_8_image",
+            "type": "decoration",
+            "image": "page 8 image.png",
+            "location": [ 50, 70 ],
+            "tween": {
+              "time": 400,
+              "scale": [0.01, 1],
+              "location": [320, 70]
+            } 
+          },
+          {
+            "name": "One_day_Fink_said_to_Zink",
+            "type": "text",
+            "font": "storyMain",
+            "location": [ 45, 325 ],
+            "wordWrapWidth": 500,
+            "text": "One day Fink said to Zink,\n\"Why do you have spots?\nThey're so weird.\"",
+            "tween": {
+              "time": 400,
+              "scale": [0.01, 1],
+              "location": [320, 325]
+            } 
+          },
+          {
+            "name": "page_number_8",
+            "type": "text",
+            "font": "pageNumber",
+            "location": [ 155, 415 ],
+            "wordWrapWidth": 550,
+            "text": "-8-",
+            "tween": {
+              "time": 400,
+              "scale": [0.01, 1],
+              "location": [320, 415]
+            } 
+          },
+
+          {
+            "name": "split",
+            "type": "timeline",
+            "variable": "split",
+            "period": 400
+          },
+          {
+            "name": "split2",
+            "type": "timeline",
+            "variable": "split2",
+            "period": 800
+          }
+        ],
+        "outcomes": {
+          "split": {
+            "events": {
+              "split": "split"
+            },
+            "actions": [
+              {
+                "type": "remove-actor",
+                "args": ["split", "page_number_8", "One_day_Fink_said_to_Zink", "page_8_image", "page_background_L_exit"]
+              },
+              {
+                "type": "add-actor",
+                "args":[
+                  {   
+                    "name": "page_background_R",
+                    "variable": "page_background_R",
+                    "type": "decoration",
+                    "image": "page background R",
+                    "location": [ 320, 38 ],
+                    "scale": [0.01, 1],
+                    "tween": {
+                      "time": 400,
+                      "scale": [1, 1]
+                    }
+                  },
+                  {
+                    "name": "page_7_image",
+                    "variable": "page_7_image",
+                    "type": "decoration",
+                    "image": "page 7 image.png",
+                    "location": [ 320, 70 ],
+                    "scale": [0.01, 1],
+                    "tween": {
+                      "time": 400,
+                      "scale": [1, 1],
+                      "location": [350, 70]
+                    } 
+                  },
+                  {
+                    "name": "page_number_7",
+                    "type": "text",
+                    "font": "pageNumber",
+                    "location": [ 320, 415 ],
+                    "wordWrapWidth": 550,
+                    "text": "-7-",
+                    "scale": [0.01, 1],
+                    "tween": {
+                      "time": 400,
+                      "scale": [1, 1],
+                      "location": [475, 415]
+                    } 
+                  }
+                ]
+              }
+            ]
+          },
+          "split2": {
+            "events": {
+              "split2": "split2"
+            },
+            "actions": [
+              {
+                "type": "scene",
+                "args": ["scene4"]
+              }
+            ]
+          }
+        }
+      },
+      "flip5_forward": {
+        "id": "flip5_forward",
+        "title": "flip 5 forward",
+        "background": "background",
+        "actors": [
+          { 
+            "name": "transition_scene_R",
+            "type": "audio",
+            "audio": "book_pageturn05",
+            "variable": "transition_scene_R"
+          },
+          {
+            "name": "background",
+            "variable": "background-var",
+            "type": "decoration",
+            "image": "background.png",
+            "location": [ 0, 0 ] 
+          },
+          {   
+            "name": "page_background_R",
+            "variable": "page_background_R",
+            "type": "decoration",
+            "image": "page background R",
+            "location": [ 320, 38 ]
+          },
+          {
+            "name": "page_11_image",
+            "variable": "page_11_image",
+            "type": "decoration",
+            "image": "page 11 image.png",
+            "location": [ 350, 70 ] 
+          },
+          {
+            "name": "page_number_11",
+            "type": "text",
+            "font": "pageNumber",
+            "location": [ 470, 415 ],
+            "wordWrapWidth": 550,
+            "text": "-11-"
+          },
+
+
+          {   
+            "name": "page_background_L",
+            "variable": "page_background_L",
+            "type": "decoration",
+            "image": "page background L",
+            "location": [ 20, 38 ]
+          },
+          {
+            "name": "page_8_image",
+            "variable": "page_8_image",
+            "type": "decoration",
+            "image": "page 8 image.png",
+            "location": [ 50, 70 ]
+          },
+          {
+            "name": "One_day_Fink_said_to_Zink",
+            "type": "text",
+            "font": "storyMain",
+            "location": [ 45, 325 ],
+            "wordWrapWidth": 500,
+            "text": "One day Fink said to Zink,\n\"Why do you have spots?\nThey're so weird.\""
+          },
+          {
+            "name": "page_number_8",
+            "type": "text",
+            "font": "pageNumber",
+            "location": [ 155, 415 ],
+            "wordWrapWidth": 550,
+            "text": "-8-"
+          },
+
+          {   
+            "name": "page_background_R_exit",
+            "variable": "page_background_R",
+            "type": "decoration",
+            "image": "page background R",
+            "location": [ 320, 38 ],
+            "tween": {
+              "time": 400,
+              "scale": [0.01, 1],
+              "location": [320, 38]
+            }
+          },
+
+          {
+            "name": "page_9_image",
+            "variable": "page_9_image",
+            "type": "decoration",
+            "image": "page 9 image.png",
+            "location": [ 350, 70 ],
+            "tween": {
+              "time": 400,
+              "scale": [0.01, 1],
+              "location": [320, 70]
+            }
+          },
+          {
+            "name": "One_day_Zink_said_to_Fink",
+            "type": "text",
+            "font": "storyMain",
+            "location": [ 355, 325 ],
+            "wordWrapWidth": 500,
+            "text": "Zink said to Fink,\n\"Why do you have stripes?\nThey're so weird.\"",
+            "tween": {
+              "time": 400,
+              "scale": [0.01, 1],
+              "location": [320, 325]
+            }
+          },
+          {
+            "name": "page_number_9",
+            "type": "text",
+            "font": "pageNumber",
+            "location": [ 475, 415 ],
+            "wordWrapWidth": 550,
+            "text": "-9-",
+            "tween": {
+              "time": 400,
+              "scale": [0.01, 1],
+              "location": [320, 415]
+            } 
+          },
+          {
+            "name": "split",
+            "type": "timeline",
+            "variable": "split",
+            "period": 400
+          },
+          {
+            "name": "split2",
+            "type": "timeline",
+            "variable": "split2",
+            "period": 800
+          }
+        ],
+        "outcomes": {
+          "split": {
+            "events": {
+              "split": "split"
+            },
+            "actions": [
+              {
+                "type": "remove-actor",
+                "args": ["split", "page_number_9", "One_day_Zink_said_to_Fink", "page_9_image", "page_background_R_exit"]
+              },
+              {
+                "type": "add-actor",
+                "args":[
+                  {   
+                    "name": "page_background_L",
+                    "variable": "page_background_L",
+                    "type": "decoration",
+                    "image": "page background L",
+                    "location": [ 320, 38 ],
+                    "scale": [0.01, 1],
+                    "tween": {
+                      "time": 400,
+                      "scale": [1, 1],
+                      "location": [20, 38]
+                    } 
+                  },
+                  {
+                    "name": "page_10_image",
+                    "variable": "page_10_image",
+                    "type": "decoration",
+                    "image": "page 10 image.png",
+                    "location": [ 320, 70 ],
+                    "scale": [0.01, 1],
+                    "tween": {
+                      "time": 400,
+                      "scale": [1, 1],
+                      "location": [105, 70]
+                    } 
+                  },
+                  {
+                    "name": "Zink_and_Fink_couldn't",
+                    "type": "text",
+                    "font": "storyMain",
+                    "location": [ 320, 240 ],
+                    "wordWrapWidth": 400,
+                    "text": "Zink and Fink couldn't\ndecide who was right.",
+                    "scale": [0.01, 1],
+                    "tween": {
+                      "time": 400,
+                      "scale": [1, 1],
+                      "location": [60, 240]
+                    } 
+                  },
+                  {
+                    "name": "No_one_in_the_Lipis_Jungle",
+                    "type": "text",
+                    "font": "storyMain",
+                    "location": [ 320, 310 ],
+                    "wordWrapWidth": 400,
+                    "text": "No one in the Lipis Jungle\nseemed to have\nthe answer.",
+                    "scale": [0.01, 1],
+                    "tween": {
+                      "time": 400,
+                      "scale": [1, 1],
+                      "location": [50, 310]
+                    } 
+                  },
+                  {
+                    "name": "page_number_10",
+                    "type": "text",
+                    "font": "pageNumber",
+                    "location": [ 320, 415 ],
+                    "wordWrapWidth": 550,
+                    "text": "-10-",
+                    "scale": [0.01, 1],
+                    "tween": {
+                      "time": 400,
+                      "scale": [1, 1],
+                      "location": [150, 415]
+                    } 
+                  }
+                ]
+              }
+            ]
+          },
+          "split2": {
+            "events": {
+              "split2": "split2"
+            },
+            "actions": [
+              {
+                "type": "scene",
+                "args": ["scene6"]
+              }
+            ]
+          }
+        }
+      },
+      "flip5_back": {
+        "id": "flip5_back",
+        "title": "flip 5 back",
+        "background": "background",
+        "actors": [
+          { 
+            "name": "transition_scene_R",
+            "type": "audio",
+            "audio": "book_pageturn05",
+            "variable": "transition_scene_R"
+          },
+          {
+            "name": "background",
+            "variable": "background-var",
+            "type": "decoration",
+            "image": "background.png",
+            "location": [ 0, 0 ] 
+          },
+          {   
+            "name": "page_background_L",
+            "variable": "page_background_L",
+            "type": "decoration",
+            "image": "page background L",
+            "location": [ 20, 38 ]
+          },
+          {
+            "name": "page_8_image",
+            "variable": "page_8_image",
+            "type": "decoration",
+            "image": "page 8 image.png",
+            "location": [ 50, 70 ]
+          },
+          {
+            "name": "One_day_Fink_said_to_Zink",
+            "type": "text",
+            "font": "storyMain",
+            "location": [ 45, 325 ],
+            "wordWrapWidth": 500,
+            "text": "One day Fink said to Zink,\n\"Why do you have spots?\nThey're so weird.\""
+          },
+          {
+            "name": "page_number_8",
+            "type": "text",
+            "font": "pageNumber",
+            "location": [ 155, 415 ],
+            "wordWrapWidth": 550,
+            "text": "-8-"
+          },       
+          {   
+            "name": "page_background_R",
+            "variable": "page_background_R",
+            "type": "decoration",
+            "image": "page background R",
+            "location": [ 320, 38 ]
+          },
+          {
+            "name": "page_11_image",
+            "variable": "page_11_image",
+            "type": "decoration",
+            "image": "page 11 image.png",
+            "location": [ 350, 70 ] 
+          },
+          {
+            "name": "page_number_11",
+            "type": "text",
+            "font": "pageNumber",
+            "location": [ 470, 415 ],
+            "wordWrapWidth": 550,
+            "text": "-11-"
+          },   
+          {   
+            "name": "page_background_L_exit",
+            "variable": "page_background_L",
+            "type": "decoration",
+            "image": "page background L",
+            "location": [ 20, 38 ],
+            "tween": {
+              "time": 400,
+              "scale": [0.01, 1],
+              "location": [320, 38]
+            } 
+          },
+          {
+            "name": "page_10_image",
+            "variable": "page_10_image",
+            "type": "decoration",
+            "image": "page 10 image.png",
+            "location": [ 105, 70 ],
+            "tween": {
+              "time": 400,
+              "scale": [0.01, 1],
+              "location": [320, 70]
+            } 
+          },
+          {
+            "name": "Zink_and_Fink_couldn't",
+            "type": "text",
+            "font": "storyMain",
+            "location": [ 60, 240 ],
+            "wordWrapWidth": 400,
+            "text": "Zink and Fink couldn't\ndecide who was right.",
+            "tween": {
+              "time": 400,
+              "scale": [0.01, 1],
+              "location": [320, 240]
+            } 
+          },
+          {
+            "name": "No_one_in_the_Lipis_Jungle",
+            "type": "text",
+            "font": "storyMain",
+            "location": [ 50, 310 ],
+            "wordWrapWidth": 400,
+            "text": "No one in the Lipis Jungle\nseemed to have\nthe answer.",
+            "tween": {
+              "time": 400,
+              "scale": [0.01, 1],
+              "location": [320, 310]
+            } 
+          },
+          {
+            "name": "page_number_10",
+            "type": "text",
+            "font": "pageNumber",
+            "location": [ 150, 415 ],
+            "wordWrapWidth": 550,
+            "text": "-10-",
+            "tween": {
+              "time": 400,
+              "scale": [0.01, 1],
+              "location": [320, 415]
+            } 
+          },
+          {
+            "name": "split",
+            "type": "timeline",
+            "variable": "split",
+            "period": 400
+          },
+          {
+            "name": "split2",
+            "type": "timeline",
+            "variable": "split2",
+            "period": 800
+          }
+        ],
+        "outcomes": {
+          "split": {
+            "events": {
+              "split": "split"
+            },
+            "actions": [
+              {
+                "type": "remove-actor",
+                "args": ["split", "page_background_L_exit", "page_10_image", "Zink_and_Fink_couldn't", "No_one_in_the_Lipis_Jungle", "page_number_10"]
+              },
+              {
+                "type": "add-actor",
+                "args":[
+                  {   
+                    "name": "page_background_R",
+                    "variable": "page_background_R",
+                    "type": "decoration",
+                    "image": "page background R",
+                    "location": [ 320, 38 ],
+                    "scale": [0.01, 1],
+                    "tween": {
+                      "time": 400,
+                      "scale": [1, 1],
+                      "location": [320, 38]
+                    }
+                  },
+        
+                  {
+                    "name": "page_9_image",
+                    "variable": "page_9_image",
+                    "type": "decoration",
+                    "image": "page 9 image.png",
+                    "location": [ 320, 70 ],
+                    "scale": [0.01, 1],
+                    "tween": {
+                      "time": 400,
+                      "scale": [1, 1],
+                      "location": [350, 70]
+                    }
+                  },
+                  {
+                    "name": "One_day_Zink_said_to_Fink",
+                    "type": "text",
+                    "font": "storyMain",
+                    "location": [ 320, 325 ],
+                    "wordWrapWidth": 500,
+                    "text": "Zink said to Fink,\n\"Why do you have stripes?\nThey're so weird.\"",
+                    "scale": [0.01, 1],
+                    "tween": {
+                      "time": 400,
+                      "scale": [1, 1],
+                      "location": [355, 325]
+                    }
+                  },
+                  {
+                    "name": "page_number_9",
+                    "type": "text",
+                    "font": "pageNumber",
+                    "location": [ 320, 415 ],
+                    "wordWrapWidth": 550,
+                    "text": "-9-",
+                    "scale": [0.01, 1],
+                    "tween": {
+                      "time": 400,
+                      "scale": [1, 1],
+                      "location": [475, 415]
+                    } 
+                  }
+                ]
+              }
+            ]
+          },
+          "split2": {
+            "events": {
+              "split2": "split2"
+            },
+            "actions": [
+              {
+                "type": "scene",
+                "args": ["scene5"]
+              }
+            ]
+          }
+        }
+      },
+      "flip6_forward": {
+        "id": "flip6_forward",
+        "title": "flip 6 forward",
+        "background": "background",
+        "actors": [
+          { 
+            "name": "transition_scene_R",
+            "type": "audio",
+            "audio": "book_pageturn05",
+            "variable": "transition_scene_R"
+          },
+          {
+            "name": "background",
+            "variable": "background-var",
+            "type": "decoration",
+            "image": "background.png",
+            "location": [ 0, 0 ] 
+          },
+          {   
+            "name": "page_background_R",
+            "variable": "page_background_R",
+            "type": "decoration",
+            "image": "page background R",
+            "location": [ 320, 38 ]
+          },
+          {
+            "name": "page_13_image",
+            "variable": "page_13_image",
+            "type": "decoration",
+            "image": "page 13 image.png",
+            "location": [ 350, 70 ] 
+          },
+          {
+            "name": "Whatever_you_are",
+            "type": "text",
+            "font": "storyMain",
+            "location": [ 400, 285 ],
+            "wordWrapWidth": 400,
+            "text": "\"Whatever you are\nis what you are,\"\nsaid their mother."
+          },
+          {
+            "name": "page_number_13",
+            "type": "text",
+            "font": "pageNumber",
+            "location": [ 470, 415 ],
+            "wordWrapWidth": 550,
+            "text": "-13-"
+          },
+          {   
+            "name": "page_background_L",
+            "variable": "page_background_L",
+            "type": "decoration",
+            "image": "page background L",
+            "location": [ 20, 38 ]
+          },
+          {
+            "name": "page_10_image",
+            "variable": "page_10_image",
+            "type": "decoration",
+            "image": "page 10 image.png",
+            "location": [ 105, 70 ]
+          },
+          {
+            "name": "Zink_and_Fink_couldn't",
+            "type": "text",
+            "font": "storyMain",
+            "location": [ 60, 240 ],
+            "wordWrapWidth": 400,
+            "text": "Zink and Fink couldn't\ndecide who was right."
+          },
+          {
+            "name": "No_one_in_the_Lipis_Jungle",
+            "type": "text",
+            "font": "storyMain",
+            "location": [ 50, 310 ],
+            "wordWrapWidth": 400,
+            "text": "No one in the Lipis Jungle\nseemed to have\nthe answer."
+          },
+          {
+            "name": "page_number_10",
+            "type": "text",
+            "font": "pageNumber",
+            "location": [ 150, 415 ],
+            "wordWrapWidth": 550,
+            "text": "-10-"
+          },
+          {   
+            "name": "page_background_R_exit",
+            "variable": "page_background_R",
+            "type": "decoration",
+            "image": "page background R",
+            "location": [ 320, 38 ],
+            "tween": {
+              "time": 400,
+              "scale": [0.01, 1],
+              "location": [320, 38]
+            } 
+          },
+          {
+            "name": "page_11_image",
+            "variable": "page_11_image",
+            "type": "decoration",
+            "image": "page 11 image.png",
+            "location": [ 350, 70 ],
+            "tween": {
+              "time": 400,
+              "scale": [0.01, 1],
+              "location": [320, 70]
+            } 
+          },
+          {
+            "name": "page_number_11",
+            "type": "text",
+            "font": "pageNumber",
+            "location": [ 470, 415 ],
+            "wordWrapWidth": 550,
+            "text": "-11-",
+            "tween": {
+              "time": 400,
+              "scale": [0.01, 1],
+              "location": [320, 415]
+            } 
+          },   
+          {
+            "name": "split",
+            "type": "timeline",
+            "variable": "split",
+            "period": 400
+          },
+          {
+            "name": "split2",
+            "type": "timeline",
+            "variable": "split2",
+            "period": 800
+          }
+        ],
+        "outcomes": {
+          "split": {
+            "events": {
+              "split": "split"
+            },
+            "actions": [
+              {
+                "type": "remove-actor",
+                "args": ["split", "page_background_R_exit", "page_11_image", "page_number_11"]
+              },
+              {
+                "type": "add-actor",
+                "args":[
+                  {   
+                    "name": "page_background_L",
+                    "variable": "page_background_L",
+                    "type": "decoration",
+                    "image": "page background L",
+                    "location": [ 320, 38 ],
+                    "scale": [0.01, 1],
+                    "tween": {
+                      "time": 400,
+                      "scale": [1, 1],
+                      "location": [20, 38]
+                    } 
+                  },
+                  {
+                    "name": "Finally_Zink_and_Fink",
+                    "type": "text",
+                    "font": "storyMain",
+                    "location": [ 320, 110 ],
+                    "wordWrapWidth": 400,
+                    "text": "Finally Zink and Fink\nwent home\nto ask their parents.",
+                    "scale": [0.01, 1],
+                    "tween": {
+                      "time": 400,
+                      "scale": [1, 1],
+                      "location": [65, 110]
+                    } 
+                  },
+                  {
+                    "name": "Which_one_of_us_is_weird?",
+                    "type": "text",
+                    "font": "storyMain",
+                    "location": [ 320, 220 ],
+                    "wordWrapWidth": 400,
+                    "text": "\"Which one of us is weird?\"\nthey asked.",
+                    "scale": [0.01, 1],
+                    "tween": {
+                      "time": 400,
+                      "scale": [1, 1],
+                      "location": [40, 220]
+                    } 
+                  },
+                  {
+                    "name": "Neither_of_you",
+                    "type": "text",
+                    "font": "storyMain",
+                    "location": [ 320, 300 ],
+                    "wordWrapWidth": 400,
+                    "text": "\"Neither of you\"\ntheir parents said.",
+                    "scale": [0.01, 1],
+                    "tween": {
+                      "time": 400,
+                      "scale": [1, 1],
+                      "location": [75, 300]
+                    } 
+                  },
+                  {
+                    "name": "page_number_12",
+                    "type": "text",
+                    "font": "pageNumber",
+                    "location": [ 320, 415 ],
+                    "wordWrapWidth": 550,
+                    "text": "-12-",
+                    "scale": [0.01, 1],
+                    "tween": {
+                      "time": 400,
+                      "scale": [1, 1],
+                      "location": [150, 415]
+                    } 
+                  }
+                ]
+              }
+            ]
+          },
+          "split2": {
+            "events": {
+              "split2": "split2"
+            },
+            "actions": [
+              {
+                "type": "scene",
+                "args": ["scene7"]
+              }
+            ]
+          }
+        }
+      },
+      "flip6_back": {
+        "id": "flip6_back",
+        "title": "flip 6 back",
+        "background": "background",
+        "actors": [
+          { 
+            "name": "transition_scene_R",
+            "type": "audio",
+            "audio": "book_pageturn05",
+            "variable": "transition_scene_R"
+          },
+          {
+            "name": "background",
+            "variable": "background-var",
+            "type": "decoration",
+            "image": "background.png",
+            "location": [ 0, 0 ] 
+          },
+          {   
+            "name": "page_background_L",
+            "variable": "page_background_L",
+            "type": "decoration",
+            "image": "page background L",
+            "location": [ 20, 38 ]
+          },
+          {
+            "name": "page_10_image",
+            "variable": "page_10_image",
+            "type": "decoration",
+            "image": "page 10 image.png",
+            "location": [ 105, 70 ]
+          },
+          {
+            "name": "Zink_and_Fink_couldn't",
+            "type": "text",
+            "font": "storyMain",
+            "location": [ 60, 240 ],
+            "wordWrapWidth": 400,
+            "text": "Zink and Fink couldn't\ndecide who was right."
+          },
+          {
+            "name": "No_one_in_the_Lipis_Jungle",
+            "type": "text",
+            "font": "storyMain",
+            "location": [ 50, 310 ],
+            "wordWrapWidth": 400,
+            "text": "No one in the Lipis Jungle\nseemed to have\nthe answer."
+          },
+          {
+            "name": "page_number_10",
+            "type": "text",
+            "font": "pageNumber",
+            "location": [ 150, 415 ],
+            "wordWrapWidth": 550,
+            "text": "-10-"
+          },
+          {   
+            "name": "page_background_R",
+            "variable": "page_background_R",
+            "type": "decoration",
+            "image": "page background R",
+            "location": [ 320, 38 ]
+          },
+          {
+            "name": "page_13_image",
+            "variable": "page_13_image",
+            "type": "decoration",
+            "image": "page 13 image.png",
+            "location": [ 350, 70 ] 
+          },
+          {
+            "name": "Whatever_you_are",
+            "type": "text",
+            "font": "storyMain",
+            "location": [ 400, 285 ],
+            "wordWrapWidth": 400,
+            "text": "\"Whatever you are\nis what you are,\"\nsaid their mother."
+          },
+          {
+            "name": "page_number_13",
+            "type": "text",
+            "font": "pageNumber",
+            "location": [ 470, 415 ],
+            "wordWrapWidth": 550,
+            "text": "-13-"
+          },
+          {   
+            "name": "page_background_L_exit",
+            "variable": "page_background_L",
+            "type": "decoration",
+            "image": "page background L",
+            "location": [ 20, 38 ],
+            "tween": {
+              "time": 400,
+              "scale": [0.01, 1],
+              "location": [320, 38]
+            } 
+          },
+          {
+            "name": "Finally_Zink_and_Fink",
+            "type": "text",
+            "font": "storyMain",
+            "location": [ 65, 110 ],
+            "wordWrapWidth": 400,
+            "text": "Finally Zink and Fink\nwent home\nto ask their parents.",
+            "tween": {
+              "time": 400,
+              "scale": [0.01, 1],
+              "location": [320, 110]
+            } 
+          },
+          {
+            "name": "Which_one_of_us_is_weird",
+            "type": "text",
+            "font": "storyMain",
+            "location": [ 40, 220 ],
+            "wordWrapWidth": 400,
+            "text": "\"Which one of us is weird?\"\nthey asked.",
+            "tween": {
+              "time": 400,
+              "scale": [0.01, 1],
+              "location": [320, 220]
+            } 
+          },
+          {
+            "name": "Neither_of_you",
+            "type": "text",
+            "font": "storyMain",
+            "location": [ 75, 300 ],
+            "wordWrapWidth": 400,
+            "text": "\"Neither of you\"\ntheir parents said.",
+            "tween": {
+              "time": 400,
+              "scale": [0.01, 1],
+              "location": [320, 300]
+            } 
+          },
+          {
+            "name": "page_number_12",
+            "type": "text",
+            "font": "pageNumber",
+            "location": [ 150, 415 ],
+            "wordWrapWidth": 550,
+            "text": "-12-",
+            "tween": {
+              "time": 400,
+              "scale": [0.01, 1],
+              "location": [320, 415]
+            } 
+          },
+          {
+            "name": "split",
+            "type": "timeline",
+            "variable": "split",
+            "period": 400
+          },
+          {
+            "name": "split2",
+            "type": "timeline",
+            "variable": "split2",
+            "period": 800
+          }
+        ],
+        "outcomes": {
+          "split": {
+            "events": {
+              "split": "split"
+            },
+            "actions": [
+              {
+                "type": "remove-actor",
+                "args": ["split", "page_number_12", "Neither_of_you", "Which_one_of_us_is_weird", "Finally_Zink_and_Fink", "page_background_L_exit"]
+              },
+              {
+                "type": "add-actor",
+                "args":[
+                  {   
+                    "name": "page_background_R_exit",
+                    "variable": "page_background_R",
+                    "type": "decoration",
+                    "image": "page background R",
+                    "location": [ 320, 38 ],
+                    "scale": [0.01, 1],
+                    "tween": {
+                      "time": 400,
+                      "scale": [1, 1],
+                      "location": [320, 38]
+                    } 
+                  },
+                  {
+                    "name": "page_11_image",
+                    "variable": "page_11_image",
+                    "type": "decoration",
+                    "image": "page 11 image.png",
+                    "location": [ 320, 70 ],
+                    "scale": [0.01, 1],
+                    "tween": {
+                      "time": 400,
+                      "scale": [1, 1],
+                      "location": [350, 70]
+                    } 
+                  },
+                  {
+                    "name": "page_number_11",
+                    "type": "text",
+                    "font": "pageNumber",
+                    "location": [ 320, 415 ],
+                    "wordWrapWidth": 550,
+                    "text": "-11-",
+                    "scale": [0.01, 1],
+                    "tween": {
+                      "time": 400,
+                      "scale": [1, 1],
+                      "location": [470, 415]
+                    } 
+                  }
+                ]
+              }
+            ]
+          },
+          "split2": {
+            "events": {
+              "split2": "split2"
+            },
+            "actions": [
+              {
+                "type": "scene",
+                "args": ["scene6"]
+              }
+            ]
+          }
+        }
+      },
+      "flip7_forward": {
+        "id": "flip7_forward",
+        "title": "flip 7 forward",
+        "background": "background",
+        "actors": [
+          { 
+            "name": "transition_scene_R",
+            "type": "audio",
+            "audio": "book_pageturn05",
+            "variable": "transition_scene_R"
+          },
+          {
+            "name": "background",
+            "variable": "background-var",
+            "type": "decoration",
+            "image": "background.png",
+            "location": [ 0, 0 ] 
+          },
+          {   
+            "name": "page_background_R",
+            "variable": "page_background_R",
+            "type": "decoration",
+            "image": "page background R",
+            "location": [ 320, 38 ]
+          },
+          {
+            "name": "page_15_image",
+            "variable": "page_15_image",
+            "type": "decoration",
+            "image": "page 15 image.png",
+            "location": [ 350, 70 ] 
+          },
+          {
+            "name": "page_number_15",
+            "type": "text",
+            "font": "pageNumber",
+            "location": [ 470, 415 ],
+            "wordWrapWidth": 550,
+            "text": "-15-"
+          },
+          {   
+            "name": "page_background_L",
+            "variable": "page_background_L",
+            "type": "decoration",
+            "image": "page background L",
+            "location": [ 20, 38 ]
+          },
+          {
+            "name": "Finally_Zink_and_Fink",
+            "type": "text",
+            "font": "storyMain",
+            "location": [ 65, 110 ],
+            "wordWrapWidth": 400,
+            "text": "Finally Zink and Fink\nwent home\nto ask their parents."
+          },
+          {
+            "name": "Which_one_of_us_is_weird?",
+            "type": "text",
+            "font": "storyMain",
+            "location": [ 40, 220 ],
+            "wordWrapWidth": 400,
+            "text": "\"Which one of us is weird?\"\nthey asked."
+          },
+          {
+            "name": "Neither_of_you",
+            "type": "text",
+            "font": "storyMain",
+            "location": [ 75, 300 ],
+            "wordWrapWidth": 400,
+            "text": "\"Neither of you\"\ntheir parents said."
+          },
+          {
+            "name": "page_number_12",
+            "type": "text",
+            "font": "pageNumber",
+            "location": [ 150, 415 ],
+            "wordWrapWidth": 550,
+            "text": "-12-"
+          },
+          {   
+            "name": "page_background_R_exit",
+            "variable": "page_background_R",
+            "type": "decoration",
+            "image": "page background R",
+            "location": [ 320, 38 ],
+            "tween": {
+              "time": 400,
+              "location":[320, 38],
+              "scale": [0.01, 1]
+            }
+          },
+          {
+            "name": "page_13_image",
+            "variable": "page_13_image",
+            "type": "decoration",
+            "image": "page 13 image.png",
+            "location": [ 350, 70 ],
+            "tween": {
+              "time": 400,
+              "location":[320, 70],
+              "scale": [0.01, 1]
+            }
+          },
+          {
+            "name": "Whatever_you_are",
+            "type": "text",
+            "font": "storyMain",
+            "location": [ 400, 285 ],
+            "wordWrapWidth": 400,
+            "text": "\"Whatever you are\nis what you are,\"\nsaid their mother.",
+            "tween": {
+              "time": 400,
+              "location":[320, 285],
+              "scale": [0.01, 1]
+            }
+          },
+          {
+            "name": "page_number_13",
+            "type": "text",
+            "font": "pageNumber",
+            "location": [ 470, 415 ],
+            "wordWrapWidth": 550,
+            "text": "-13-",
+            "tween": {
+              "time": 400,
+              "location":[320, 415],
+              "scale": [0.01, 1]
+            }
+          },
+          {
+            "name": "split",
+            "type": "timeline",
+            "variable": "split",
+            "period": 400
+          },
+          {
+            "name": "split2",
+            "type": "timeline",
+            "variable": "split2",
+            "period": 800
+          }
+        ],
+        "outcomes": {
+          "split": {
+            "events": {
+              "split": "split"
+            },
+            "actions": [
+              {
+                "type": "remove-actor",
+                "args": ["split", "page_number_13", "Whatever_you_are", "page_13_image", "page_background_R_exit"]
+              },
+              {
+                "type": "add-actor",
+                "args":[
+                  {   
+                    "name": "page_background_L",
+                    "variable": "page_background_L",
+                    "type": "decoration",
+                    "image": "page background L",
+                    "location": [ 320, 38 ],
+                    "scale": [0.01, 1],
+                    "tween": {
+                      "time": 400,
+                      "location": [20, 38],
+                      "scale": [1,1]
+                    }
+                  },
+                  {
+                    "name": "page_14_image",
+                    "variable": "page_14_image",
+                    "type": "decoration",
+                    "image": "page 14 image.png",
+                    "location": [ 320, 70 ],
+                    "scale": [0.01, 1],
+                    "tween": {
+                      "time": 400,
+                      "location": [105, 70],
+                      "scale": [1,1]
+                    }
+                  },
+                  {
+                    "name": "We're_all_different",
+                    "type": "text",
+                    "font": "storyMain",
+                    "location": [ 320, 250 ],
+                    "wordWrapWidth": 400,
+                    "text": "\"We're all different,\"\nsaid their father.",
+                    "scale": [0.01, 1],
+                    "tween": {
+                      "time": 400,
+                      "location": [80, 250],
+                      "scale": [1,1]
+                    }
+                  },
+                  {
+                    "name": "Being_different",
+                    "type": "text",
+                    "font": "storyMain",
+                    "location": [ 320, 330 ],
+                    "wordWrapWidth": 400,
+                    "text": "\"Being different\nmakes you special.\"",
+                    "scale": [0.01, 1],
+                    "tween": {
+                      "time": 400,
+                      "location": [80, 330],
+                      "scale": [1,1]
+                    }
+                  },
+                  {
+                    "name": "page_number_14",
+                    "type": "text",
+                    "font": "pageNumber",
+                    "location": [ 320, 415 ],
+                    "wordWrapWidth": 550,
+                    "text": "-14-",
+                    "scale": [0.01, 1],
+                    "tween": {
+                      "time": 400,
+                      "location": [150, 415],
+                      "scale": [1,1]
+                    }
+                  }
+                ]
+              }
+            ]
+          },
+          "split2": {
+            "events": {
+              "split2": "split2"
+            },
+            "actions": [
+              {
+                "type": "scene",
+                "args": ["scene8"]
+              }
+            ]
+          }
+        }
+      },
+      "flip7_back": {
+        "id": "flip7_back",
+        "title": "flip 7 back",
+        "background": "background",
+        "actors": [
+          { 
+            "name": "transition_scene_R",
+            "type": "audio",
+            "audio": "book_pageturn05",
+            "variable": "transition_scene_R"
+          },
+          {
+            "name": "background",
+            "variable": "background-var",
+            "type": "decoration",
+            "image": "background.png",
+            "location": [ 0, 0 ] 
+          },
+          {   
+            "name": "page_background_L",
+            "variable": "page_background_L",
+            "type": "decoration",
+            "image": "page background L",
+            "location": [ 20, 38 ]
+          },
+          {
+            "name": "Finally_Zink_and_Fink",
+            "type": "text",
+            "font": "storyMain",
+            "location": [ 65, 110 ],
+            "wordWrapWidth": 400,
+            "text": "Finally Zink and Fink\nwent home\nto ask their parents."
+          },
+          {
+            "name": "Which_one_of_us_is_weird?",
+            "type": "text",
+            "font": "storyMain",
+            "location": [ 40, 220 ],
+            "wordWrapWidth": 400,
+            "text": "\"Which one of us is weird?\"\nthey asked."
+          },
+          {
+            "name": "Neither_of_you",
+            "type": "text",
+            "font": "storyMain",
+            "location": [ 75, 300 ],
+            "wordWrapWidth": 400,
+            "text": "\"Neither of you\"\ntheir parents said."
+          },
+          {
+            "name": "page_number_12",
+            "type": "text",
+            "font": "pageNumber",
+            "location": [ 150, 415 ],
+            "wordWrapWidth": 550,
+            "text": "-12-"
+          },
+          {   
+            "name": "page_background_R",
+            "variable": "page_background_R",
+            "type": "decoration",
+            "image": "page background R",
+            "location": [ 320, 38 ]
+          },
+          {
+            "name": "page_15_image",
+            "variable": "page_15_image",
+            "type": "decoration",
+            "image": "page 15 image.png",
+            "location": [ 350, 70 ] 
+          },
+          {
+            "name": "page_number_15",
+            "type": "text",
+            "font": "pageNumber",
+            "location": [ 470, 415 ],
+            "wordWrapWidth": 550,
+            "text": "-15-"
+          },
+          {   
+            "name": "page_background_L_exit",
+            "variable": "page_background_L",
+            "type": "decoration",
+            "image": "page background L",
+            "location": [ 20, 38 ],
+            "tween": {
+              "time": 400,
+              "location": [320, 38],
+              "scale": [0.01,1]
+            }
+          },
+          {
+            "name": "page_14_image",
+            "variable": "page_14_image",
+            "type": "decoration",
+            "image": "page 14 image.png",
+            "location": [ 105, 70 ],
+            "tween": {
+              "time": 400,
+              "location": [320, 70],
+              "scale": [0.01,1]
+            }
+          },
+          {
+            "name": "We're_all_different",
+            "type": "text",
+            "font": "storyMain",
+            "location": [ 80, 250 ],
+            "wordWrapWidth": 400,
+            "text": "\"We're all different,\"\nsaid their father.",
+            "tween": {
+              "time": 400,
+              "location": [320, 250],
+              "scale": [0.01,1]
+            }
+          },
+          {
+            "name": "Being_different",
+            "type": "text",
+            "font": "storyMain",
+            "location": [ 80, 330 ],
+            "wordWrapWidth": 400,
+            "text": "\"Being different\nmakes you special.\"",
+            "tween": {
+              "time": 400,
+              "location": [320, 330],
+              "scale": [0.01,1]
+            }
+          },
+          {
+            "name": "page_number_14",
+            "type": "text",
+            "font": "pageNumber",
+            "location": [ 150, 415 ],
+            "wordWrapWidth": 550,
+            "text": "-14-",
+            "tween": {
+              "time": 400,
+              "location": [320, 415],
+              "scale": [0.01,1]
+            }
+          },
+          {
+            "name": "split",
+            "type": "timeline",
+            "variable": "split",
+            "period": 400
+          },
+          {
+            "name": "split2",
+            "type": "timeline",
+            "variable": "split2",
+            "period": 800
+          }
+        ],
+        "outcomes": {
+          "split": {
+            "events": {
+              "split": "split"
+            },
+            "actions": [
+              {
+                "type": "remove-actor",
+                "args": ["split", "page_background_L_exit", "page_14_image", "We're_all_different", "Being_different", "page_number_14"]
+              },
+              {
+                "type": "add-actor",
+                "args":[
+                  {   
+                    "name": "page_background_R_exit",
+                    "variable": "page_background_R",
+                    "type": "decoration",
+                    "image": "page background R",
+                    "location": [ 320, 38 ],
+                    "scale": [0.01, 1],
+                    "tween": {
+                      "time": 400,
+                      "location":[320, 38],
+                      "scale": [1, 1]
+                    }
+                  },
+                  {
+                    "name": "page_13_image",
+                    "variable": "page_13_image",
+                    "type": "decoration",
+                    "image": "page 13 image.png",
+                    "location": [ 320, 70 ],
+                    "scale": [0.01, 1],
+                    "tween": {
+                      "time": 400,
+                      "location":[350, 70],
+                      "scale": [1, 1]
+                    }
+                  },
+                  {
+                    "name": "Whatever_you_are",
+                    "type": "text",
+                    "font": "storyMain",
+                    "location": [ 320, 285 ],
+                    "wordWrapWidth": 400,
+                    "text": "\"Whatever you are\nis what you are,\"\nsaid their mother.",
+                    "scale": [0.01, 1],
+                    "tween": {
+                      "time": 400,
+                      "location":[400, 285],
+                      "scale": [1, 1]
+                    }
+                  },
+                  {
+                    "name": "page_number_13",
+                    "type": "text",
+                    "font": "pageNumber",
+                    "location": [ 320, 415 ],
+                    "wordWrapWidth": 550,
+                    "text": "-13-",
+                    "scale": [0.01, 1],
+                    "tween": {
+                      "time": 400,
+                      "location":[470, 415],
+                      "scale": [1, 1]
+                    }
+                  }
+                ]
+              }
+            ]
+          },
+          "split2": {
+            "events": {
+              "split2": "split2"
+            },
+            "actions": [
+              {
+                "type": "scene",
+                "args": ["scene7"]
+              }
+            ]
+          }
+        }
+      },
+      "flip8_forward": {
+        "id": "flip8_forward",
+        "title": "flip 8 forward",
+        "background": "background",
+        "actors": [
+          { 
+            "name": "transition_scene_R",
+            "type": "audio",
+            "audio": "book_pageturn05",
+            "variable": "transition_scene_R"
+          },
+          {
+            "name": "background",
+            "variable": "background-var",
+            "type": "decoration",
+            "image": "background.png",
+            "location": [ 0, 0 ] 
+          },
+          {   
+            "name": "page_background_R",
+            "variable": "page_background_R",
+            "type": "decoration",
+            "image": "page background R",
+            "location": [ 320, 38 ]
+          },
+          {
+            "name": "page_17_image",
+            "variable": "page_17_image",
+            "type": "decoration",
+            "image": "page 17 image.png",
+            "location": [ 350, 70 ] 
+          },
+          {
+            "name": "page_number_17",
+            "type": "text",
+            "font": "pageNumber",
+            "location": [ 470, 415 ],
+            "wordWrapWidth": 550,
+            "text": "-17-"
+          },
+          {   
+            "name": "page_background_L",
+            "variable": "page_background_L",
+            "type": "decoration",
+            "image": "page background L",
+            "location": [ 20, 38 ]
+          },
+          {
+            "name": "page_14_image",
+            "variable": "page_14_image",
+            "type": "decoration",
+            "image": "page 14 image.png",
+            "location": [ 105, 70 ]
+          },
+          {
+            "name": "We're_all_different",
+            "type": "text",
+            "font": "storyMain",
+            "location": [ 80, 250 ],
+            "wordWrapWidth": 400,
+            "text": "\"We're all different,\"\nsaid their father."
+          },
+          {
+            "name": "Being_different",
+            "type": "text",
+            "font": "storyMain",
+            "location": [ 80, 330 ],
+            "wordWrapWidth": 400,
+            "text": "\"Being different\nmakes you special.\""
+          },
+          {
+            "name": "page_number_14",
+            "type": "text",
+            "font": "pageNumber",
+            "location": [ 150, 415 ],
+            "wordWrapWidth": 550,
+            "text": "-14-"
+          },
+          {   
+            "name": "page_background_R_exit",
+            "variable": "page_background_R",
+            "type": "decoration",
+            "image": "page background R",
+            "location": [ 320, 38 ],
+            "tween": {
+              "time": 400,
+              "location": [320, 38],
+              "scale": [0.01, 1]
+            }
+          },
+          {
+            "name": "page_15_image",
+            "variable": "page_15_image",
+            "type": "decoration",
+            "image": "page 15 image.png",
+            "location": [ 350, 70 ],
+            "tween": {
+              "time": 400,
+              "location": [320, 70],
+              "scale": [0.01, 1]
+            }
+          },
+          {
+            "name": "page_number_15",
+            "type": "text",
+            "font": "pageNumber",
+            "location": [ 470, 415 ],
+            "wordWrapWidth": 550,
+            "text": "-15-",
+            "tween": {
+              "time": 400,
+              "location": [320, 415],
+              "scale": [0.01, 1]
+            }
+          },
+          {
+            "name": "split",
+            "type": "timeline",
+            "variable": "split",
+            "period": 400
+          },
+          {
+            "name": "split2",
+            "type": "timeline",
+            "variable": "split2",
+            "period": 800
+          }
+        ],
+        "outcomes": {
+          "split": {
+            "events": {
+              "split": "split"
+            },
+            "actions": [
+              {
+                "type": "remove-actor",
+                "args": ["split", "page_background_R_exit", "page_15_image", "page_number_15"]
+              },
+              {
+                "type": "add-actor",
+                "args":[
+                  {   
+                    "name": "page_background_L",
+                    "variable": "page_background_L",
+                    "type": "decoration",
+                    "image": "page background L",
+                    "location": [ 320, 38 ],
+                    "scale": [0.01, 1],
+                    "tween": {
+                      "time": 400,
+                      "location": [20, 38],
+                      "scale": [1, 1]
+                    }
+                  },
+                  {
+                    "name": "page_16_image",
+                    "variable": "page_16_image",
+                    "type": "decoration",
+                    "image": "page 16 image.png",
+                    "location": [ 320, 70 ],
+                    "scale": [0.01, 1],
+                    "tween": {
+                      "time": 400,
+                      "location": [105, 70],
+                      "scale": [1, 1]
+                    }
+                  },
+                  {
+                    "name": "Then_everyone_nuzzled_...",
+                    "type": "text",
+                    "font": "storyMain",
+                    "location": [ 320, 250 ],
+                    "wordWrapWidth": 400,
+                    "text": "Then everyone nuzzled ...",
+                    "scale": [0.01, 1],
+                    "tween": {
+                      "time": 400,
+                      "location": [60, 250],
+                      "scale": [1, 1]
+                    }
+                  },
+                  {
+                    "name": "page_number_16",
+                    "type": "text",
+                    "font": "pageNumber",
+                    "location": [ 320, 415 ],
+                    "wordWrapWidth": 550,
+                    "text": "-16-",
+                    "scale": [0.01, 1],
+                    "tween": {
+                      "time": 400,
+                      "location": [150, 415],
+                      "scale": [1, 1]
+                    }
+                  }
+                ]
+              }
+            ]
+          },
+          "split2": {
+            "events": {
+              "split2": "split2"
+            },
+            "actions": [
+              {
+                "type": "scene",
+                "args": ["scene9"]
+              }
+            ]
+          }
+        }
+      },
+      "flip8_back": {
+        "id": "flip8_back",
+        "title": "flip 8 back",
+        "background": "background",
+        "actors": [
+          { 
+            "name": "transition_scene_R",
+            "type": "audio",
+            "audio": "book_pageturn05",
+            "variable": "transition_scene_R"
+          },
+          {
+            "name": "background",
+            "variable": "background-var",
+            "type": "decoration",
+            "image": "background.png",
+            "location": [ 0, 0 ] 
+          },
+          {   
+            "name": "page_background_L",
+            "variable": "page_background_L",
+            "type": "decoration",
+            "image": "page background L",
+            "location": [ 20, 38 ]
+          },
+          {
+            "name": "page_14_image",
+            "variable": "page_14_image",
+            "type": "decoration",
+            "image": "page 14 image.png",
+            "location": [ 105, 70 ]
+          },
+          {
+            "name": "We're_all_different",
+            "type": "text",
+            "font": "storyMain",
+            "location": [ 80, 250 ],
+            "wordWrapWidth": 400,
+            "text": "\"We're all different,\"\nsaid their father."
+          },
+          {
+            "name": "Being_different",
+            "type": "text",
+            "font": "storyMain",
+            "location": [ 80, 330 ],
+            "wordWrapWidth": 400,
+            "text": "\"Being different\nmakes you special.\""
+          },
+          {
+            "name": "page_number_14",
+            "type": "text",
+            "font": "pageNumber",
+            "location": [ 150, 415 ],
+            "wordWrapWidth": 550,
+            "text": "-14-"
+          },
+          {   
+            "name": "page_background_R",
+            "variable": "page_background_R",
+            "type": "decoration",
+            "image": "page background R",
+            "location": [ 320, 38 ]
+          },
+          {
+            "name": "page_17_image",
+            "variable": "page_17_image",
+            "type": "decoration",
+            "image": "page 17 image.png",
+            "location": [ 350, 70 ] 
+          },
+          {
+            "name": "page_number_17",
+            "type": "text",
+            "font": "pageNumber",
+            "location": [ 470, 415 ],
+            "wordWrapWidth": 550,
+            "text": "-17-"
+          },
+          {   
+            "name": "page_background_L_exit",
+            "variable": "page_background_L",
+            "type": "decoration",
+            "image": "page background L",
+            "location": [ 20, 38 ],
+            "tween": {
+              "time": 400,
+              "location": [320, 38],
+              "scale": [0.01, 1]
+            }
+          },
+          {
+            "name": "page_16_image",
+            "variable": "page_16_image",
+            "type": "decoration",
+            "image": "page 16 image.png",
+            "location": [ 105, 70 ],
+            "tween": {
+              "time": 400,
+              "location": [320, 70],
+              "scale": [0.01, 1]
+            }
+          },
+          {
+            "name": "Then_everyone_nuzzled",
+            "type": "text",
+            "font": "storyMain",
+            "location": [ 60, 250 ],
+            "wordWrapWidth": 400,
+            "text": "Then everyone nuzzled ...",
+            "tween": {
+              "time": 400,
+              "location": [320, 250],
+              "scale": [0.01, 1]
+            }
+          },
+          {
+            "name": "page_number_16",
+            "type": "text",
+            "font": "pageNumber",
+            "location": [ 150, 415 ],
+            "wordWrapWidth": 550,
+            "text": "-16-",
+            "tween": {
+              "time": 400,
+              "location": [320, 415],
+              "scale": [0.01, 1]
+            }
+          },
+          {
+            "name": "split",
+            "type": "timeline",
+            "variable": "split",
+            "period": 400
+          },
+          {
+            "name": "split2",
+            "type": "timeline",
+            "variable": "split2",
+            "period": 800
+          }
+        ],
+        "outcomes": {
+          "split": {
+            "events": {
+              "split": "split"
+            },
+            "actions": [
+              {
+                "type": "remove-actor",
+                "args": ["split", "page_background_L_exit", "page_16_image", "Then_everyone_nuzzled", "page_number_16"]
+              },
+              {
+                "type": "add-actor",
+                "args":[
+                  {   
+                    "name": "page_background_R",
+                    "variable": "page_background_R",
+                    "type": "decoration",
+                    "image": "page background R",
+                    "location": [ 320, 38 ],
+                    "scale": [0.01, 1],
+                    "tween": {
+                      "time": 400,
+                      "location": [320, 38],
+                      "scale": [1, 1]
+                    }
+                  },
+                  {
+                    "name": "page_15_image",
+                    "variable": "page_15_image",
+                    "type": "decoration",
+                    "image": "page 15 image.png",
+                    "location": [ 320, 70 ],
+                    "scale": [0.01, 1],
+                    "tween": {
+                      "time": 400,
+                      "location": [350, 70],
+                      "scale": [1, 1]
+                    }
+                  },
+                  {
+                    "name": "page_number_15",
+                    "type": "text",
+                    "font": "pageNumber",
+                    "location": [ 320, 415 ],
+                    "wordWrapWidth": 550,
+                    "text": "-15-",
+                    "scale": [0.01, 1],
+                    "tween": {
+                      "time": 400,
+                      "location": [470, 415],
+                      "scale": [1, 1]
+                    }
+                  }
+                ]     
+              }
+            ]
+          },
+          "split2": {
+            "events": {
+              "split2": "split2"
+            },
+            "actions": [
+              {
+                "type": "scene",
+                "args": ["scene8"]
+              }
+            ]
+          }
+        }
+      },
+      "flip9_forward": {
+        "id": "flip9_forward",
+        "title": "flip 9 forward",
+        "background": "background",
+        "actors": [
+          { 
+            "name": "transition_scene_R",
+            "type": "audio",
+            "audio": "book_pageturn05",
+            "variable": "transition_scene_R"
+          },
+          {
+            "name": "background",
+            "variable": "background-var",
+            "type": "decoration",
+            "image": "background.png",
+            "location": [ 0, 0 ] 
+          },  
+          {   
+            "name": "page_background_R",
+            "variable": "page_background_R",
+            "type": "decoration",
+            "image": "page background R",
+            "location": [ 320, 38 ]
+          },
+          {
+            "name": "page_19_image",
+            "variable": "page_19_image",
+            "type": "decoration",
+            "image": "page 19 image.png",
+            "location": [ 350, 70 ] 
+          },
+          {
+            "name": "page_number_19",
+            "type": "text",
+            "font": "pageNumber",
+            "location": [ 470, 415 ],
+            "wordWrapWidth": 550,
+            "text": "-19-"
+          },
+          {   
+            "name": "page_background_L",
+            "variable": "page_background_L",
+            "type": "decoration",
+            "image": "page background L",
+            "location": [ 20, 38 ]
+          },
+          {
+            "name": "page_16_image",
+            "variable": "page_16_image",
+            "type": "decoration",
+            "image": "page 16 image.png",
+            "location": [ 105, 70 ]
+          },
+          {
+            "name": "Then_everyone_nuzzled",
+            "type": "text",
+            "font": "storyMain",
+            "location": [ 60, 250 ],
+            "wordWrapWidth": 400,
+            "text": "Then everyone nuzzled ..."
+          },
+          {
+            "name": "page_number_16",
+            "type": "text",
+            "font": "pageNumber",
+            "location": [ 150, 415 ],
+            "wordWrapWidth": 550,
+            "text": "-16-"
+          },
+          {   
+            "name": "page_background_R_exit",
+            "variable": "page_background_R",
+            "type": "decoration",
+            "image": "page background R",
+            "location": [ 320, 38 ],
+            "tween": {
+              "time": 400,
+              "location": [320, 38],
+              "scale": [0.01, 1]
+            }
+          },
+          {
+            "name": "page_17_image",
+            "variable": "page_17_image",
+            "type": "decoration",
+            "image": "page 17 image.png",
+            "location": [ 350, 70 ],
+            "tween": {
+              "time": 400,
+              "location": [320, 70],
+              "scale": [0.01, 1]
+            }
+          },
+          {
+            "name": "page_number_17",
+            "type": "text",
+            "font": "pageNumber",
+            "location": [ 470, 415 ],
+            "wordWrapWidth": 550,
+            "text": "-17-",
+            "tween": {
+              "time": 400,
+              "location": [320, 415],
+              "scale": [0.01, 1]
+            }
+          },
+          {
+            "name": "split",
+            "type": "timeline",
+            "variable": "split",
+            "period": 400
+          },
+          {
+            "name": "split2",
+            "type": "timeline",
+            "variable": "split2",
+            "period": 800
+          }
+        ],
+        "outcomes": {
+          "split": {
+            "events": {
+              "split": "split"
+            },
+            "actions": [
+              {
+                "type": "remove-actor",
+                "args": ["split", "page_number_17", "page_17_image", "page_background_R_exit"]
+              },
+              {
+                "type": "add-actor",
+                "args":[
+                  {   
+                    "name": "page_background_L",
+                    "variable": "page_background_L",
+                    "type": "decoration",
+                    "image": "page background L",
+                    "location": [ 320, 38 ],
+                    "scale": [0.01, 1],
+                    "tween": {
+                      "time": 400,
+                      "location": [20, 38],
+                      "scale": [1, 1]
+                    } 
+                  },
+                  {
+                    "name": "page_18_image",
+                    "variable": "page_18_image",
+                    "type": "decoration",
+                    "image": "page 18 image.png",
+                    "location": [ 320, 70 ],
+                    "scale": [0.01, 1],
+                    "tween": {
+                      "time": 400,
+                      "location": [105, 70],
+                      "scale": [1, 1]
+                    }  
+                  }, 
+                  {
+                    "name": "and_Zink_and_Fink",
+                    "type": "text",
+                    "font": "storyMain",
+                    "location": [ 320, 250 ],
+                    "wordWrapWidth": 400,
+                    "text": "and Zink and Fink\nwent out to play.",
+                    "scale": [0.01, 1],
+                    "tween": {
+                      "time": 400,
+                      "location": [80, 250],
+                      "scale": [1, 1]
+                    } 
+                  },
+                  {
+                    "name": "page_number_18",
+                    "type": "text",
+                    "font": "pageNumber",
+                    "location": [ 320, 415 ],
+                    "wordWrapWidth": 550,
+                    "text": "-18-",
+                    "scale": [0.01, 1],
+                    "tween": {
+                      "time": 400,
+                      "location": [150, 415],
+                      "scale": [1, 1]
+                    } 
+                  }
+                ]
+              }
+            ]
+          },
+          "split2": {
+            "events": {
+              "split2": "split2"
+            },
+            "actions": [
+              {
+                "type": "scene",
+                "args": ["scene10"]
+              }
+            ]
+          }
+        }
+      },
+      "flip9_back": {
+        "id": "flip9_back",
+        "title": "flip 9 back",
+        "background": "background",
+        "actors": [
+          { 
+            "name": "transition_scene_R",
+            "type": "audio",
+            "audio": "book_pageturn05",
+            "variable": "transition_scene_R"
+          },
+          {
+            "name": "background",
+            "variable": "background-var",
+            "type": "decoration",
+            "image": "background.png",
+            "location": [ 0, 0 ] 
+          },
+          {   
+            "name": "page_background_L",
+            "variable": "page_background_L",
+            "type": "decoration",
+            "image": "page background L",
+            "location": [ 20, 38 ]
+          },
+          {
+            "name": "page_16_image",
+            "variable": "page_16_image",
+            "type": "decoration",
+            "image": "page 16 image.png",
+            "location": [ 105, 70 ]
+          },
+          {
+            "name": "Then_everyone_nuzzled",
+            "type": "text",
+            "font": "storyMain",
+            "location": [ 60, 250 ],
+            "wordWrapWidth": 400,
+            "text": "Then everyone nuzzled ..."
+          },
+          {
+            "name": "page_number_16",
+            "type": "text",
+            "font": "pageNumber",
+            "location": [ 150, 415 ],
+            "wordWrapWidth": 550,
+            "text": "-16-"
+          },
+          {   
+            "name": "page_background_R",
+            "variable": "page_background_R",
+            "type": "decoration",
+            "image": "page background R",
+            "location": [ 320, 38 ]
+          },
+          {
+            "name": "page_19_image",
+            "variable": "page_19_image",
+            "type": "decoration",
+            "image": "page 19 image.png",
+            "location": [ 350, 70 ] 
+          },
+          {
+            "name": "page_number_19",
+            "type": "text",
+            "font": "pageNumber",
+            "location": [ 470, 415 ],
+            "wordWrapWidth": 550,
+            "text": "-19-"
+          },
+          {   
+            "name": "page_background_L_exit",
+            "variable": "page_background_L",
+            "type": "decoration",
+            "image": "page background L",
+            "location": [ 20, 38 ],
+            "tween": {
+              "time": 400,
+              "location": [320, 38],
+              "scale": [0.01, 1]
+            } 
+          },
+          {
+            "name": "page_18_image",
+            "variable": "page_18_image",
+            "type": "decoration",
+            "image": "page 18 image.png",
+            "location": [ 105, 70 ],
+            "tween": {
+              "time": 400,
+              "location": [320, 70],
+              "scale": [0.01, 1]
+            }  
+          }, 
+          {
+            "name": "and_Zink_and_Fink",
+            "type": "text",
+            "font": "storyMain",
+            "location": [ 80, 250 ],
+            "wordWrapWidth": 400,
+            "text": "and Zink and Fink\nwent out to play.",
+            "tween": {
+              "time": 400,
+              "location": [320, 250],
+              "scale": [0.01, 1]
+            } 
+          },
+          {
+            "name": "page_number_18",
+            "type": "text",
+            "font": "pageNumber",
+            "location": [ 150, 415 ],
+            "wordWrapWidth": 550,
+            "text": "-18-",
+            "tween": {
+              "time": 400,
+              "location": [320, 415],
+              "scale": [0.01, 1]
+            } 
+          },
+          {
+            "name": "split",
+            "type": "timeline",
+            "variable": "split",
+            "period": 400
+          },
+          {
+            "name": "split2",
+            "type": "timeline",
+            "variable": "split2",
+            "period": 800
+          }
+        ],
+        "outcomes": {
+          "split": {
+            "events": {
+              "split": "split"
+            },
+            "actions": [
+              {
+                "type": "remove-actor",
+                "args": ["split", "page_background_L_exit", "page_18_image", "and_Zink_and_Fink", "page_number_18"]
+              },
+              {
+                "type": "add-actor",
+                "args":[
+                  {   
+                    "name": "page_background_R",
+                    "variable": "page_background_R",
+                    "type": "decoration",
+                    "image": "page background R",
+                    "location": [ 320, 38 ],
+                    "scale": [0.01, 1],
+                    "tween": {
+                      "time": 400,
+                      "location": [320, 38],
+                      "scale": [1, 1]
+                    }
+                  },
+                  {
+                    "name": "page_17_image",
+                    "variable": "page_17_image",
+                    "type": "decoration",
+                    "image": "page 17 image.png",
+                    "location": [ 320, 70 ],
+                    "scale": [0.01, 1],
+                    "tween": {
+                      "time": 400,
+                      "location": [350, 70],
+                      "scale": [1, 1]
+                    }
+                  },
+                  {
+                    "name": "page_number_17",
+                    "type": "text",
+                    "font": "pageNumber",
+                    "location": [ 320, 415 ],
+                    "wordWrapWidth": 550,
+                    "text": "-17-",
+                    "scale": [0.01, 1],
+                    "tween": {
+                      "time": 400,
+                      "location": [470, 415],
+                      "scale": [1, 1]
+                    }
+                  }
+                ]
+              }
+            ]
+          },
+          "split2": {
+            "events": {
+              "split2": "split2"
+            },
+            "actions": [
+              {
+                "type": "scene",
+                "args": ["scene9"]
+              }
+            ]
+          }
+        }
+      },
+      "flip10_forward": {
+        "id": "flip10_forward",
+        "title": "flip 10 forward",
+        "background": "background",
+        "actors": [
+          { 
+            "name": "transition_scene_R",
+            "type": "audio",
+            "audio": "book_pageturn05",
+            "variable": "transition_scene_R"
+          },
+          {
+            "name": "background",
+            "variable": "background-var",
+            "type": "decoration",
+            "image": "background.png",
+            "location": [ 0, 0 ] 
+          },
+          {   
+            "name": "page_background_L",
+            "variable": "page_background_L",
+            "type": "decoration",
+            "image": "page background L",
+            "location": [ 20, 38 ]
+          },
+          {
+            "name": "page_18_image",
+            "variable": "page_18_image",
+            "type": "decoration",
+            "image": "page 18 image.png",
+            "location": [ 105, 70 ]
+          }, 
+          {
+            "name": "and_Zink_and_Fink",
+            "type": "text",
+            "font": "storyMain",
+            "location": [ 80, 250 ],
+            "wordWrapWidth": 400,
+            "text": "and Zink and Fink\nwent out to play."
+          },
+          {
+            "name": "page_number_18",
+            "type": "text",
+            "font": "pageNumber",
+            "location": [ 150, 415 ],
+            "wordWrapWidth": 550,
+            "text": "-18-"
+          },
+          {   
+            "name": "page_background_R_exit",
+            "variable": "page_background_R",
+            "type": "decoration",
+            "image": "page background R",
+            "location": [ 320, 38 ],
+            "tween": {
+              "time": 400,
+              "location": [320, 38],
+              "scale": [0.01, 1]
+            } 
+          },
+          {
+            "name": "page_19_image",
+            "variable": "page_19_image",
+            "type": "decoration",
+            "image": "page 19 image.png",
+            "location": [ 350, 70 ],
+            "tween": {
+              "time": 400,
+              "location": [320, 70],
+              "scale": [0.01, 1]
+            } 
+          },
+          {
+            "name": "page_number_19",
+            "type": "text",
+            "font": "pageNumber",
+            "location": [ 470, 415 ],
+            "wordWrapWidth": 550,
+            "text": "-19-",
+            "tween": {
+              "time": 400,
+              "location": [320, 415],
+              "scale": [0.01, 1]
+            } 
+          },
+          {
+            "name": "split",
+            "type": "timeline",
+            "variable": "split",
+            "period": 400
+          },
+          {
+            "name": "split2",
+            "type": "timeline",
+            "variable": "split2",
+            "period": 800
+          }
+        ],
+        "outcomes": {
+          "split": {
+            "events": {
+              "split": "split"
+            },
+            "actions": [
+              {
+                "type": "remove-actor",
+                "args": ["split", "page_background_R_exit", "page_19_image", "page_number_19"]
+              },
+              {
+                "type": "add-actor",
+                "args":[
+                  {   
+                    "name": "page_background_L",
+                    "variable": "page_background_L",
+                    "type": "decoration",
+                    "image": "page background L",
+                    "location": [ 320, 38 ],
+                    "scale": [0.01, 1],
+                    "tween": {
+                      "time": 400,
+                      "location": [20, 38],
+                      "scale": [1, 1]
+                    }
+                  },
+                  {
+                    "name": "The_end",
+                    "type": "text",
+                    "font": "storyMain",
+                    "location": [ 320, 215 ],
+                    "wordWrapWidth": 550,
+                    "text": "The end.",
+                    "scale": [0.01, 1],
+                    "tween": {
+                      "time": 400,
+                      "location": [130, 215],
+                      "scale": [1, 1]
+                    }
+                  },
+                  {
+                    "name": "page_number_20",
+                    "type": "text",
+                    "font": "pageNumber",
+                    "location": [ 320, 415 ],
+                    "wordWrapWidth": 550,
+                    "text": "-20-",
+                    "scale": [0.01, 1],
+                    "tween": {
+                      "time": 400,
+                      "location": [150, 415],
+                      "scale": [1, 1]
+                    }
+                  }
+                ]
+              }
+            ]
+          },
+          "split2": {
+            "events": {
+              "split2": "split2"
+            },
+            "actions": [
+              {
+                "type": "scene",
+                "args": ["scene11"]
+              }
+            ]
+          }
+        }
+      },
+      "flip10_back": {
+        "id": "flip10_back",
+        "title": "flip 10 back",
+        "background": "background",
+        "actors": [
+          { 
+            "name": "transition_scene_R",
+            "type": "audio",
+            "audio": "book_pageturn05",
+            "variable": "transition_scene_R"
+          },
+          {
+            "name": "background",
+            "variable": "background-var",
+            "type": "decoration",
+            "image": "background.png",
+            "location": [ 0, 0 ] 
+          },
+          {   
+            "name": "page_background_L",
+            "variable": "page_background_L",
+            "type": "decoration",
+            "image": "page background L",
+            "location": [ 20, 38 ]
+          },
+          {
+            "name": "page_18_image",
+            "variable": "page_18_image",
+            "type": "decoration",
+            "image": "page 18 image.png",
+            "location": [ 105, 70 ]
+          }, 
+          {
+            "name": "page_number_18",
+            "type": "text",
+            "font": "pageNumber",
+            "location": [ 150, 415 ],
+            "wordWrapWidth": 550,
+            "text": "-18-"
+          },
+          {
+            "name": "and_Zink_and_Fink",
+            "type": "text",
+            "font": "storyMain",
+            "location": [ 80, 250 ],
+            "wordWrapWidth": 400,
+            "text": "and Zink and Fink\nwent out to play."
+          },
+          {   
+            "name": "page_background_L_exit",
+            "variable": "page_background_L",
+            "type": "decoration",
+            "image": "page background L",
+            "location": [ 20, 38 ],
+            "tween": {
+              "time": 400,
+              "location": [320, 38],
+              "scale": [0.01, 1]
+            }
+          },
+          {
+            "name": "The_end",
+            "type": "text",
+            "font": "storyMain",
+            "location": [ 130, 215 ],
+            "wordWrapWidth": 550,
+            "text": "The end.",
+            "tween": {
+              "time": 400,
+              "location": [320, 215],
+              "scale": [0.01, 1]
+            }
+          },
+          {
+            "name": "page_number_20",
+            "type": "text",
+            "font": "pageNumber",
+            "location": [ 150, 415 ],
+            "wordWrapWidth": 550,
+            "text": "-20-",
+            "tween": {
+              "time": 400,
+              "location": [320, 415],
+              "scale": [0.01, 1]
+            }
+          },
+          {
+            "name": "split",
+            "type": "timeline",
+            "variable": "split",
+            "period": 400
+          },
+          {
+            "name": "split2",
+            "type": "timeline",
+            "variable": "split2",
+            "period": 800
+          }
+        ],
+        "outcomes": {
+          "split": {
+            "events": {
+              "split": "split"
+            },
+            "actions": [
+              {
+                "type": "remove-actor",
+                "args": ["split", "REMOVE ACTORS FROM LEAVING PAGE"]
+              },
+              {
+                "type": "add-actor",
+                "args":[
+                  {   
+                    "name": "page_background_R",
+                    "variable": "page_background_R",
+                    "type": "decoration",
+                    "image": "page background R",
+                    "location": [ 320, 38 ],
+                    "scale": [0.01, 1],
+                    "tween": {
+                      "time": 400,
+                      "location": [320, 38],
+                      "scale": [1, 1]
+                    } 
+                  },
+                  {
+                    "name": "page_19_image",
+                    "variable": "page_19_image",
+                    "type": "decoration",
+                    "image": "page 19 image.png",
+                    "location": [ 320, 70 ],
+                    "scale": [0.01, 1],
+                    "tween": {
+                      "time": 400,
+                      "location": [350, 70],
+                      "scale": [1, 1]
+                    } 
+                  },
+                  {
+                    "name": "page_number_19",
+                    "type": "text",
+                    "font": "pageNumber",
+                    "location": [ 320, 415 ],
+                    "wordWrapWidth": 550,
+                    "text": "-19-",
+                    "scale": [0.01, 1],
+                    "tween": {
+                      "time": 400,
+                      "location": [470, 415],
+                      "scale": [1, 1]
+                    } 
+                  }
+                ]
+              }
+            ]
+          },
+          "split2": {
+            "events": {
+              "split2": "split2"
+            },
+            "actions": [
+              {
+                "type": "scene",
+                "args": ["scene10"]
+              }
+            ]
+          }
+        }
+      }
+    }
+  }
+}
+
+
+ 

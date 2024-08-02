@@ -1,0 +1,263 @@
+{
+  "play": {
+    "modelType": "basic",
+    "start": "resume_started",
+    "persist": [ "saved_scene" ],
+    "global": {
+      "actors": {},
+      "outcomes": {},
+      "actions": []
+    },
+    "scenes": {
+      "scene1": {
+        "id": "scene1",
+        "title": "Scene 1",
+        "background": "none",
+        "actors": [
+          {
+            "name": "backdrop",
+            "type": "rectangle",
+            "start": [ 0, 0 ],
+            "color": "0x569837",
+            "width": 640,
+            "height": 480,
+            "roundness": "1"
+          },
+          {
+            "name": "video1",
+            "type": "wistia",
+            "location": [ 0, 0 ],
+            "size": [ 640, 414 ],
+            "video" : "9ehk2qn6p9",
+            "hideCloseButton": true,
+            "autoplay": true
+          },
+          {
+            "name": "bg1",
+            "type": "decoration",
+            "image": "bg",
+            "location": [
+              0,
+              414
+            ]
+          }, {
+            "name": "back",
+            "type": "decoration",
+            "image": "no_back",
+            "location": [ 370, 420 ],
+            "scale": [ 1, 1 ]
+          },
+          {
+            "name": "replay",
+            "variable": "replay_button",
+            "type": "button",
+            "image": "replay",
+            "location": [ 455, 425 ],
+            "scale": [ 1, 1 ]
+          },
+          {
+            "name": "next",
+            "variable": "next_button",
+            "type": "button",
+            "image": "next",
+            "location": [ 510, 420 ],
+            "scale": [ 1, 1 ]
+          }
+        ],
+        "outcomes": {
+          "go_next": {
+            "events": {
+              "next_button": "*"
+            },
+            "actions": [
+              {
+                "type": "scene",
+                "args": ["scene2"]
+              }
+            ]
+          },
+          "click_replay": {
+            "events": {
+              "replay_button": "*"
+            },
+            "actions": [
+              { "type": "variable", "args": ["replay_scene", "$current_scene_name"] },
+              {
+                "type": "scene",
+                "args": ["deadscene"]
+              }
+            ]
+          }
+        },
+        "actions": [        ]
+      },
+      "scene2": {
+        "id": "scene2",
+        "title": "Scene 1",
+        "background": "none",
+        "actors": [
+          {
+            "name": "backdrop",
+            "type": "rectangle",
+            "start": [ 0, 0 ],
+            "color": "0x569837",
+            "width": 640,
+            "height": 480,
+            "roundness": "1"
+          },
+          {
+            "name": "video1",
+            "type": "wistia",
+            "location": [ 0, 0 ],
+            "size": [ 640, 414 ],
+            "video" : "c9ygcmvo0z",
+            "hideCloseButton": true,
+            "autoplay": true
+          },
+          {
+            "name": "bg1",
+            "type": "decoration",
+            "image": "bg",
+            "location": [
+              0,
+              414
+            ]
+          },
+          {
+            "name": "back",
+            "variable": "back_button",
+            "type": "button",
+            "image": "back",
+            "location": [ 370, 420 ],
+            "scale": [ 1, 1 ]
+          },
+          {
+            "name": "replay",
+            "variable": "replay_button",
+            "type": "button",
+            "image": "replay",
+            "location": [ 455, 425 ],
+            "scale": [ 1, 1 ]
+          },
+          {
+            "name": "next",
+            "type": "decoration",
+            "image": "no_next",
+            "location": [ 510, 420 ],
+            "scale": [ 1, 1 ]
+          }
+        ],
+        "outcomes": {
+          "click_back": {
+            "events": {
+              "back_button": "*"
+            },
+            "actions": [
+              {
+                "type": "scene",
+                "args": ["scene1"]
+              }
+            ]
+          },
+          "click_replay": {
+            "events": {
+              "replay_button": "*"
+            },
+            "actions": [
+              { "type": "variable", "args": ["replay_scene", "$current_scene_name"] },
+              {
+                "type": "scene",
+                "args": ["deadscene"]
+              }
+            ]
+          }
+        },
+        "actions": [
+          { "type": "variable", "args": [ "saved_scene", "$current_scene_name"] },
+          { "type": "choice", "args": [ "objective_complete", 1] },
+          { "type": "choice", "args": [ "save", 0 ] }
+        ]
+      },
+      "resume_started": {
+        "id": "resume_started",
+        "title": "for resuming half way through",
+        "background": "none",
+        "actors": [
+          {
+            "name": "restart",
+            "variable": "restart_button",
+            "type": "button",
+            "image": "restart",
+            "location": [ 125, "center"]
+          },
+          {
+            "name": "resume",
+            "variable": "resume_button",
+            "type": "button",
+            "image": "resume",
+            "location": [ 325, "center" ]
+          },
+          { "name": "resumeText",
+            "type": "text",
+            "font": "resumeParagraph",
+            "text": "You have already completed this activity.",
+            "location": [ "center", 110 ]}
+        ],
+        "outcomes": {
+          "missing_resume": {
+            "events": {
+              "saved_scene": "undefined"
+            },
+            "actions": [
+              {
+                "type": "scene",
+                "args":["scene1"]
+              }
+            ]
+          },
+          "do_resume": {
+            "events": {
+              "resume_button": "*"
+            },
+            "actions": [
+              {
+                "type": "scene",
+                "args": ["scene2"]
+              }
+            ]
+          },
+          "start_over": {
+            "events": {
+              "restart_button": "*"
+            },
+            "actions": [
+              {
+                "type": "scene",
+                "args": ["scene1"]
+              }
+            ]
+          }
+        },
+        "actions": [
+          { "type": "check-outcomes", "args": [ "saved_scene" ] }
+        ]
+      },
+      "deadscene": {
+        "id": "deadscene",
+        "title": "deadscene",
+        "background": "background",
+        "actors": [],
+        "outcomes": {},
+        "actions": [
+          {
+            "type": "scene",
+            "args": ["$replay_scene"]
+          }
+        ]
+      }
+    }
+  }
+}
+
+
+ 
