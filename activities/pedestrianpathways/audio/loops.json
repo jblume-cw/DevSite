@@ -1,0 +1,18 @@
+{
+  "resources": [
+    "output/SS34pedestrianpathwaysloops/loops.ogg",
+    "output/SS34pedestrianpathwaysloops/loops.m4a"
+  ],
+  "spritemap": {
+    "bass loop": {
+      "start": 0,
+      "end": 6.0547845804988665,
+      "loop": false
+    },
+    "walk loop": {
+      "start": 7,
+      "end": 7.252380952380952,
+      "loop": false
+    }
+  }
+}

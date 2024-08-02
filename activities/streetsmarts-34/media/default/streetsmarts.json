@@ -1,0 +1,148 @@
+{"frames": {
+
+"back-disabled.png":
+{
+	"frame": {"x":803,"y":1,"w":124,"h":54},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":124,"h":54},
+	"sourceSize": {"w":124,"h":54}
+},
+"back-down.png":
+{
+	"frame": {"x":503,"y":374,"w":124,"h":54},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":124,"h":54},
+	"sourceSize": {"w":124,"h":54}
+},
+"back-up.png":
+{
+	"frame": {"x":803,"y":57,"w":124,"h":54},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":124,"h":54},
+	"sourceSize": {"w":124,"h":54}
+},
+"bottom.png":
+{
+	"frame": {"x":1,"y":1,"w":800,"h":102},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":800,"h":102},
+	"sourceSize": {"w":800,"h":102}
+},
+"continue-down.png":
+{
+	"frame": {"x":1,"y":457,"w":154,"h":54},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":154,"h":54},
+	"sourceSize": {"w":154,"h":54}
+},
+"continue-up.png":
+{
+	"frame": {"x":157,"y":457,"w":154,"h":54},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":154,"h":54},
+	"sourceSize": {"w":154,"h":54}
+},
+"logo_StreetSmart.png":
+{
+	"frame": {"x":503,"y":155,"w":412,"h":217},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":412,"h":217},
+	"sourceSize": {"w":412,"h":217}
+},
+"next-disabled.png":
+{
+	"frame": {"x":629,"y":374,"w":124,"h":54},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":124,"h":54},
+	"sourceSize": {"w":124,"h":54}
+},
+"next-down.png":
+{
+	"frame": {"x":755,"y":374,"w":124,"h":54},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":124,"h":54},
+	"sourceSize": {"w":124,"h":54}
+},
+"next-hi.png":
+{
+	"frame": {"x":625,"y":430,"w":124,"h":54},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":124,"h":54},
+	"sourceSize": {"w":124,"h":54}
+},
+"next-up.png":
+{
+	"frame": {"x":751,"y":430,"w":124,"h":54},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":124,"h":54},
+	"sourceSize": {"w":124,"h":54}
+},
+"replay-down.png":
+{
+	"frame": {"x":881,"y":374,"w":54,"h":54},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":54,"h":54},
+	"sourceSize": {"w":54,"h":54}
+},
+"replay-up.png":
+{
+	"frame": {"x":877,"y":430,"w":54,"h":54},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":54,"h":54},
+	"sourceSize": {"w":54,"h":54}
+},
+"resume-box.png":
+{
+	"frame": {"x":1,"y":155,"w":500,"h":300},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":500,"h":300},
+	"sourceSize": {"w":500,"h":300}
+},
+"start-over-down.png":
+{
+	"frame": {"x":313,"y":457,"w":154,"h":54},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":154,"h":54},
+	"sourceSize": {"w":154,"h":54}
+},
+"start-over-up.png":
+{
+	"frame": {"x":469,"y":457,"w":154,"h":54},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":154,"h":54},
+	"sourceSize": {"w":154,"h":54}
+},
+"top.png":
+{
+	"frame": {"x":1,"y":105,"w":800,"h":48},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":800,"h":48},
+	"sourceSize": {"w":800,"h":48}
+}},
+"meta": {
+	"app": "https://www.codeandweb.com/texturepacker",
+	"version": "1.0",
+	"image": "streetsmarts.png",
+	"format": "RGBA8888",
+	"size": {"w":936,"h":512},
+	"scale": "1",
+	"smartupdate": "$TexturePacker:SmartUpdate:2b358003490ecf51aec86727578936be:9e73eb3c206d57e2900cb8ee49b25537:22ff87a3f00e3e12c590c63c5abd95fe$"
+}
+}

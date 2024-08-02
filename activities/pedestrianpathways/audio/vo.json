@@ -1,0 +1,68 @@
+{
+  "resources": [
+    "output/SS34pedestrianpathwaysvo/vo.ogg",
+    "output/SS34pedestrianpathwaysvo/vo.m4a"
+  ],
+  "spritemap": {
+    "All found": {
+      "start": 0,
+      "end": 6.04265306122449,
+      "loop": false
+    },
+    "Hat found": {
+      "start": 7,
+      "end": 8.534761904761904,
+      "loop": false
+    },
+    "Instructions 1": {
+      "start": 9,
+      "end": 18.470680272108844,
+      "loop": false
+    },
+    "Instructions 2": {
+      "start": 19,
+      "end": 28.641337868480726,
+      "loop": false
+    },
+    "Instructions 3": {
+      "start": 29,
+      "end": 34.90283446712018,
+      "loop": false
+    },
+    "Question prompt": {
+      "start": 35,
+      "end": 37.986666666666665,
+      "loop": false
+    },
+    "Stop prompt": {
+      "start": 38,
+      "end": 40.10133786848073,
+      "loop": false
+    },
+    "Stop prompt2": {
+      "start": 41,
+      "end": 43.986666666666665,
+      "loop": false
+    },
+    "Stop sign found": {
+      "start": 44,
+      "end": 46.08,
+      "loop": false
+    },
+    "Vest found": {
+      "start": 47,
+      "end": 48.77068027210884,
+      "loop": false
+    },
+    "Whistle found": {
+      "start": 49,
+      "end": 50.80265306122449,
+      "loop": false
+    },
+    "Win": {
+      "start": 51,
+      "end": 62.92825396825397,
+      "loop": false
+    }
+  }
+}

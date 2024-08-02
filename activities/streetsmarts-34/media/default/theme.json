@@ -1,0 +1,110 @@
+{
+  "texture": "media/default/streetsmarts.png",
+  "textureMap": "media/default/streetsmarts.json",
+  "textureKey": "texture",
+  "data": "media/default/sceneData.json",
+  "fonts" : {
+    "resume-prompt": { 
+      "font": "30px Cabin", 
+      "fill": "#ffffff", 
+      "align": "center", 
+      "fontWeight": "700", 
+      "wordWrap": true, 
+      "wordWrapWidth": 400 
+    },
+    "slide-title": { 
+      "font": "18px Cabin", 
+      "fill": "#ffffff", 
+      "align": "left", 
+      "fontWeight": "500"
+    },
+    "slide-counter": { 
+      "font": "18px Cabin", 
+      "fill": "#ffffff", 
+      "align": "right", 
+      "fontWeight": "500"
+    },
+    "cabin-bold-40-blue": { 
+      "font": "40px Cabin", 
+      "fill": "#2560b9", 
+      "align": "left", 
+      "fontWeight": "700"
+    },
+    "cabin-medium-32-blue": { 
+      "font": "32px Cabin", 
+      "fill": "#2560b9", 
+      "align": "left", 
+      "fontWeight": "500"
+    }
+  },
+  "sceneImages": {
+  },
+  "images": {
+    "back-disabled": "back-disabled.png",
+    "next-disabled": "next-disabled.png",
+    "top-bar": "top.png",
+    "bottom-bar": "bottom.png",
+    "resume-box": "resume-box.png",
+    "logo": "logo_StreetSmart.png"
+  },
+  "buttons": {
+   "next": {
+      "up": "next-up.png",
+      "over": "next-down.png",
+      "out": "next-up.png",
+      "down": "next-down.png"
+    },
+    "next-hi": {
+      "up": "next-hi.png",
+      "over": "next-hi.png",
+      "out": "next-hi.png",
+      "down": "next-hi.png"
+    },
+    "back": {
+      "up": "back-up.png",
+      "over": "back-down.png",
+      "out": "back-up.png",
+      "down": "back-down.png"
+    },
+    "replay": {
+      "up": "replay-up.png",
+      "over": "replay-down.png",
+      "out": "replay-up.png",
+      "down": "replay-down.png"
+    },
+    "continueBtn":{
+      "up": "continue-up.png",
+      "over": "continue-down.png",
+      "out": "continue-up.png",
+      "down": "continue-down.png"
+    },
+    "startOverBtn":{
+      "up": "start-over-up.png",
+      "over": "start-over-down.png",
+      "out": "start-over-up.png",
+      "down": "start-over-down.png"
+    }
+  },
+  "soundKey": "ss34lesson",
+  "soundFile": [ "media/default/lesson-vo.m4a", "media/default/lesson-vo.ogg" ],
+  "sounds": {
+    "silence": [
+      0,
+      1,
+      false,
+      "silence"
+    ],
+    "Slide 1": [
+      1,
+      11.82297052154195,
+      false,
+      "Slide 1"
+    ],
+    "Slide 9": [
+      13,
+      6.79485260770975,
+      false,
+      "Slide 9"
+    ]
+  }
+}

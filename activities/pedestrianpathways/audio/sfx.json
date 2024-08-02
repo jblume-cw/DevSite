@@ -1,0 +1,33 @@
+{
+  "resources": [
+    "output/SS34pedestrianpathwayssfx/sfx.ogg",
+    "output/SS34pedestrianpathwayssfx/sfx.m4a"
+  ],
+  "spritemap": {
+    "dont walk": {
+      "start": 0,
+      "end": 0.23136054421768706,
+      "loop": false
+    },
+    "item pickup": {
+      "start": 1,
+      "end": 2.520272108843537,
+      "loop": false
+    },
+    "question correct": {
+      "start": 3,
+      "end": 4.287233560090703,
+      "loop": false
+    },
+    "question prompt": {
+      "start": 5,
+      "end": 6.529705215419501,
+      "loop": false
+    },
+    "win": {
+      "start": 7,
+      "end": 8.356190476190477,
+      "loop": false
+    }
+  }
+}

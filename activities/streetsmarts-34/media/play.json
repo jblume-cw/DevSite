@@ -1,0 +1,16 @@
+{
+  "name": "SS34 Lesson",
+  "description": "Lesson",
+  "scorm": true,
+  "logging": false,
+  "autoScale": true, 
+  "acts": {
+    "default": {
+      "id": "default",
+      "description": "Every set of acts has a default, which is the act that is started by default.",
+      "name": "HM5 Introduction",
+      "theme": "media/default/theme.json",
+      "objectives": []
+    }
+  }
+}
