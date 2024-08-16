@@ -1,0 +1,796 @@
+{
+  "autoScale": true,
+  "texture": "media/BlockTheBully/texture.png",
+  "textureMap": "media/BlockTheBully/texture.json",
+  "textureKey": "textureBtb",
+  "menuColor": "0xffffff",
+  "carrot": "talk-bubble-carrot.png",
+  "response": {
+    "correct": [
+      {
+        "audio": "question_correct_1",
+        "text": "Correct!"
+      },
+      {
+        "audio": "question_correct_2",
+        "text": "That is correct!"
+      },
+      {
+        "audio": "question_correct_3",
+        "text": "You are correct!"
+      }
+    ],
+    "incorrect": [
+      {
+        "audio": "question_incorrect_1",
+        "text": "Sorry, that's incorrect."
+      },
+      {
+        "audio": "question_incorrect_2",
+        "text": "Incorrect."
+      },
+      {
+        "audio": "question_incorrect_3",
+        "text": "That's incorrect."
+      }
+    ]
+  },
+  "speech": {
+    "round": [
+      {
+        "text": "In the first round the questions are worth 100 points. Get three Xs in a row to win the round and 500 points.\n\nClick one of the squares to start.",
+        "audio": "round_1_intro",
+        "carrot": {
+          "x": 60
+        }
+      },
+      {
+        "text": "Great job! You won the first round!\n\nIn the second round each question is worth 150 points.\n\nClick continue to begin round two.",
+        "audio": "round1_win_mixdown",
+        "carrot": {
+          "x": 60
+        }
+      },
+      {
+        "text": "Great job! You won round two!\n\nIn the third and final round each question is worth 200 points.\n\nClick continue to begin round three.",
+        "audio": "round2_win_mixdown",
+        "carrot": {
+          "x": 60
+        }
+      }
+    ],
+    "bonus": [
+      {
+        "text": "You found the bonus question! Answer it correctly for 200 points!",
+        "audio": "round_1_bonus",
+        "carrot": {
+          "x": 60
+        }
+      },
+      {
+        "text": "You found the bonus question! Answer it correctly for 300 points!",
+        "audio": "round_2_bonus",
+        "carrot": {
+          "x": 60
+        }
+      },
+      {
+        "text": "You found the bonus question! Answer it correctly for 400 points!",
+        "audio": "round_3_bonus",
+        "carrot": {
+          "x": 60
+        }
+      }
+    ],
+    "lose": {
+      "text": "The computer got three Os in a row, so you lose this time around.\n\nClick play again to give it another try.",
+      "audio": "game_lose_mixdown",
+      "carrot": {
+        "x": 60
+      }
+    },
+    "win": {
+      "text": "Great job! You've proven your knowledge of bullying and won all three rounds!\n\nClick play again to start over and try to beat your high score.",
+      "audio": "game_win_mixdown",
+      "carrot": {
+        "x": 60
+      }
+    },
+    "tie": {
+      "text": "Sorry, you did well but didn't get three Xs in a row. Your game is over.\n\nClick play again to give it another try.",
+      "audio": "game_cat_mixdown",
+      "carrot": {
+        "x": 60
+      }
+    }
+  },
+  "menu": {
+    "audio": "splash",
+    "background": "splash-background.png",
+    "announcer": "host-splash.png",
+    "bubble": "talkBubble-menu.png",
+    "text": "Welcome to Block the Bully, the exciting game of tic-tac-toe!\n\nAnswer bullying questions correctly to place Xs on the tic-tac-toe board. Get three Xs in a row to beat the computer and win a round. Win three rounds to win the game.\n\nClick begin to get started."
+  },
+  "play": {
+    "background": "game-background.png",
+    "gridShadow": "gridShadow.png",
+    "announcer": "host-game.png"
+  },
+  "frame": {
+    "foreground": "frame.png"
+  },
+  "square": {
+    "default": "square-up.png",
+    "over": "square-over.png",
+    "normalX": "square-x.png",
+    "highlightX": "square-x-hilight.png",
+    "normalO": "square-o.png",
+    "highlightO": "square-o-hilight.png",
+    "thinking": "square-o-thinking.png",
+    "bonus": "square-bonus.png",
+    "large": "square-blank-large.png"
+  },
+  "questions": {
+    "top": "question-box-top",
+    "middle": "question-box-middle",
+    "bottom": "question-box-bottom"
+  },
+  "bubble": {
+    "top": "talkBubble-top.png",
+    "middle": "talkBubble-middle.png",
+    "bottom": "talkBubble-bottom.png"
+  },
+  "answers": {
+    "top": "option-btn-top",
+    "middle": "option-btn-middle",
+    "bottom": "option-btn-bottom"
+  },
+  "buttons": {
+    "begin": {
+      "over": "begin0002.png",
+      "out": "begin0001.png",
+      "down": "begin0002.png",
+      "up": "begin0002.png"
+    },
+    "continue": {
+      "over": "Contine0002.png",
+      "out": "Contine0001.png",
+      "down": "Contine0002.png",
+      "up": "Contine0002.png"
+    },
+    "playAgain": {
+      "over": "playAgainButton0002.png",
+      "out": "playAgainButton0001.png",
+      "down": "playAgainButton0002.png",
+      "up": "playAgainButton0002.png"
+    },
+    "muteOff": {
+      "over": "MuteOffOver.png",
+      "out": "MuteOffUp.png",
+      "down": "MuteOffOver.png",
+      "up": "MuteOffOver.png"
+    },
+    "muteOn": {
+      "over": "MuteOnOver.png",
+      "out": "MuteOnUp.png",
+      "down": "MuteOnOver.png",
+      "up": "MuteOnOver.png"
+    },
+    "menu": {
+      "over": "school-menu-over.png",
+      "out": "school-menu-up.png",
+      "down": "school-menu-down.png",
+      "up": "school-menu-up.png",
+      "animation": [
+        "school-menu-highlight-0001.png","school-menu-highlight-0002.png","school-menu-highlight-0003.png",
+        "school-menu-highlight-0004.png","school-menu-highlight-0005.png","school-menu-highlight-0006.png",
+        "school-menu-highlight-0007.png","school-menu-highlight-0008.png","school-menu-highlight-0009.png",
+        "school-menu-highlight-0010.png","school-menu-highlight-0011.png","school-menu-highlight-0012.png",
+        "school-menu-highlight-0013.png","school-menu-highlight-0014.png","school-menu-highlight-0015.png",
+        "school-menu-highlight-0001.png","school-menu-highlight-0001.png","school-menu-highlight-0001.png",
+        "school-menu-highlight-0001.png","school-menu-highlight-0001.png","school-menu-highlight-0001.png",
+        "school-menu-highlight-0001.png","school-menu-highlight-0001.png","school-menu-highlight-0001.png",
+        "school-menu-highlight-0001.png","school-menu-highlight-0001.png","school-menu-highlight-0001.png",
+        "school-menu-highlight-0001.png","school-menu-highlight-0001.png","school-menu-highlight-0001.png",
+        "school-menu-highlight-0001.png","school-menu-highlight-0001.png","school-menu-highlight-0001.png",
+        "school-menu-highlight-0001.png","school-menu-highlight-0001.png","school-menu-highlight-0001.png",
+        "school-menu-highlight-0001.png","school-menu-highlight-0001.png","school-menu-highlight-0001.png",
+        "school-menu-highlight-0001.png","school-menu-highlight-0001.png","school-menu-highlight-0001.png",
+        "school-menu-highlight-0001.png","school-menu-highlight-0001.png","school-menu-highlight-0001.png",
+        "school-menu-highlight-0001.png","school-menu-highlight-0001.png","school-menu-highlight-0001.png",
+        "school-menu-highlight-0001.png","school-menu-highlight-0001.png","school-menu-highlight-0001.png",
+        "school-menu-highlight-0001.png","school-menu-highlight-0001.png","school-menu-highlight-0001.png"
+      ]
+    }
+  },
+  "fonts": {
+    "a": {
+      "font": "10pt asapbold",
+      "fill": "black",
+      "align": "left",
+      "wordWrap": true
+    },
+    "bubble": {
+      "font": "10pt asapbold",
+      "fill": "black",
+      "align": "left",
+      "wordWrap": true
+    },
+    "question": {
+      "font": "18pt compacta_blk_btblack",
+      "fill": "white",
+      "align": "left",
+      "wordWrap": true
+    },
+    "answer": {
+      "up": {
+        "font": "14pt compacta_blk_btblack",
+        "fill": "#9BDB02",
+        "align": "left",
+        "wordWrap": true
+      },
+      "over": {
+        "font": "14pt compacta_blk_btblack",
+        "fill": "#ff6600",
+        "align": "left",
+        "wordWrap": true
+      }
+    },
+    "remediation":       {
+        "font": "14pt compacta_blk_btblack",
+        "fill": "white",
+        "align": "left",
+        "wordWrap": true
+
+    },
+    "score": {
+      "font": "16pt compacta_blk_btblack",
+      "fill": "#9BDB02",
+      "align": "left"
+    }
+  },
+  "tints": {
+    "answer": "0xFF9900"
+  },
+  "soundKey": "btbSounds",
+  "soundFile": [
+    "media/BlockTheBully/tictactoe.m4a",
+    "media/BlockTheBully/tictactoe.ogg"
+  ],
+  "sounds": {
+    "silence": [
+      0,
+      3,
+      false,
+      "silence"
+    ],
+    "computer_choose": [
+      4,
+      1.9236734693877553,
+      false,
+      "computer_choose"
+    ],
+    "game_cat_mixdown": [
+      7,
+      36.294058956916096,
+      false,
+      "game_cat_mixdown"
+    ],
+    "game_lose_mixdown": [
+      45,
+      36.2940589569161,
+      false,
+      "game_lose_mixdown"
+    ],
+    "game_show_bell_02": [
+      83,
+      1.3631065759637124,
+      false,
+      "game_show_bell_02"
+    ],
+    "game_show_buzzer_01": [
+      86,
+      0.6160317460317515,
+      false,
+      "game_show_buzzer_01"
+    ],
+    "game_win_mixdown": [
+      88,
+      34.910204081632656,
+      false,
+      "game_win_mixdown"
+    ],
+    "intro_mixdown": [
+      124,
+      21.599501133786845,
+      false,
+      "intro_mixdown"
+    ],
+    "melodic lose 04": [
+      147,
+      2.6082312925170186,
+      false,
+      "melodic lose 04"
+    ],
+    "question_01": [
+      151,
+      6.4306802721088445,
+      false,
+      "question_01"
+    ],
+    "question_02": [
+      159,
+      7.560000000000002,
+      false,
+      "question_02"
+    ],
+    "question_03": [
+      168,
+      14.578684807256224,
+      false,
+      "question_03"
+    ],
+    "question_04": [
+      184,
+      8.2180045351474,
+      false,
+      "question_04"
+    ],
+    "question_05": [
+      194,
+      14.802653061224476,
+      false,
+      "question_05"
+    ],
+    "question_06": [
+      210,
+      10.07068027210883,
+      false,
+      "question_06"
+    ],
+    "question_07": [
+      222,
+      12.31068027210884,
+      false,
+      "question_07"
+    ],
+    "question_08": [
+      236,
+      6.934671201814069,
+      false,
+      "question_08"
+    ],
+    "question_09": [
+      244,
+      12.795986394557815,
+      false,
+      "question_09"
+    ],
+    "question_10": [
+      258,
+      14.009319727891182,
+      false,
+      "question_10"
+    ],
+    "question_11": [
+      274,
+      9.482653061224482,
+      false,
+      "question_11"
+    ],
+    "question_12": [
+      285,
+      8.801337868480744,
+      false,
+      "question_12"
+    ],
+    "question_13": [
+      295,
+      8.334671201814047,
+      false,
+      "question_13"
+    ],
+    "question_14": [
+      305,
+      8.866666666666674,
+      false,
+      "question_14"
+    ],
+    "question_15": [
+      315,
+      8.894671201814049,
+      false,
+      "question_15"
+    ],
+    "question_16": [
+      325,
+      8.418684807256227,
+      false,
+      "question_16"
+    ],
+    "question_17": [
+      335,
+      7.541337868480753,
+      false,
+      "question_17"
+    ],
+    "question_18": [
+      344,
+      13.589319727891166,
+      false,
+      "question_18"
+    ],
+    "question_19": [
+      359,
+      13.150680272108843,
+      false,
+      "question_19"
+    ],
+    "question_20": [
+      374,
+      15.092018140589573,
+      false,
+      "question_20"
+    ],
+    "question_21": [
+      391,
+      15.95999999999998,
+      false,
+      "question_21"
+    ],
+    "question_22": [
+      408,
+      10.108004535147415,
+      false,
+      "question_22"
+    ],
+    "question_23": [
+      420,
+      15.381337868480728,
+      false,
+      "question_23"
+    ],
+    "question_24": [
+      437,
+      13.318684807256261,
+      false,
+      "question_24"
+    ],
+    "question_25": [
+      452,
+      15.624013605442201,
+      false,
+      "question_25"
+    ],
+    "question_26": [
+      469,
+      9.314671201814065,
+      false,
+      "question_26"
+    ],
+    "question_27": [
+      480,
+      8.95999999999998,
+      false,
+      "question_27"
+    ],
+    "question_28": [
+      490,
+      14.093333333333362,
+      false,
+      "question_28"
+    ],
+    "question_29": [
+      506,
+      10.09868480725629,
+      false,
+      "question_29"
+    ],
+    "question_30": [
+      518,
+      7.168004535147361,
+      false,
+      "question_30"
+    ],
+    "question_31": [
+      527,
+      8.922653061224537,
+      false,
+      "question_31"
+    ],
+    "question_32": [
+      537,
+      11.330680272108793,
+      false,
+      "question_32"
+    ],
+    "question_33": [
+      550,
+      14.12834467120183,
+      false,
+      "question_33"
+    ],
+    "question_34": [
+      566,
+      12.292018140589562,
+      false,
+      "question_34"
+    ],
+    "question_correct_1": [
+      580,
+      1.3099999999999454,
+      false,
+      "question_correct_1"
+    ],
+    "question_correct_2": [
+      583,
+      1.9430385487528383,
+      false,
+      "question_correct_2"
+    ],
+    "question_correct_3": [
+      586,
+      2.091337868480764,
+      false,
+      "question_correct_3"
+    ],
+    "question_incorrect_1": [
+      590,
+      2.744625850340185,
+      false,
+      "question_incorrect_1"
+    ],
+    "question_incorrect_2": [
+      594,
+      1.7397732426303492,
+      false,
+      "question_incorrect_2"
+    ],
+    "question_incorrect_3": [
+      597,
+      1.9067573696145246,
+      false,
+      "question_incorrect_3"
+    ],
+    "remediation_01": [
+      600,
+      2.4266666666666197,
+      false,
+      "remediation_01"
+    ],
+    "remediation_02": [
+      604,
+      5.049319727891202,
+      false,
+      "remediation_02"
+    ],
+    "remediation_03": [
+      611,
+      6.085351473922856,
+      false,
+      "remediation_03"
+    ],
+    "remediation_04": [
+      619,
+      3.658684807256236,
+      false,
+      "remediation_04"
+    ],
+    "remediation_05": [
+      624,
+      1.9133333333332985,
+      false,
+      "remediation_05"
+    ],
+    "remediation_06": [
+      627,
+      6.06666666666672,
+      false,
+      "remediation_06"
+    ],
+    "remediation_07": [
+      635,
+      4.638684807256254,
+      false,
+      "remediation_07"
+    ],
+    "remediation_08": [
+      641,
+      3.3786848072562634,
+      false,
+      "remediation_08"
+    ],
+    "remediation_09": [
+      646,
+      8.577346938775463,
+      false,
+      "remediation_09"
+    ],
+    "remediation_10": [
+      656,
+      5.861337868480746,
+      false,
+      "remediation_10"
+    ],
+    "remediation_11": [
+      663,
+      3.966666666666697,
+      false,
+      "remediation_11"
+    ],
+    "remediation_12": [
+      668,
+      4.2653514739229195,
+      false,
+      "remediation_12"
+    ],
+    "remediation_13": [
+      674,
+      3.238684807256277,
+      false,
+      "remediation_13"
+    ],
+    "remediation_14": [
+      679,
+      3.1640136054421646,
+      false,
+      "remediation_14"
+    ],
+    "remediation_15": [
+      684,
+      3.052018140589553,
+      false,
+      "remediation_15"
+    ],
+    "remediation_16": [
+      689,
+      3.126666666666665,
+      false,
+      "remediation_16"
+    ],
+    "remediation_17": [
+      694,
+      3.052018140589553,
+      false,
+      "remediation_17"
+    ],
+    "remediation_18": [
+      699,
+      4.0973469387755586,
+      false,
+      "remediation_18"
+    ],
+    "remediation_19": [
+      705,
+      5.553333333333285,
+      false,
+      "remediation_19"
+    ],
+    "remediation_20": [
+      712,
+      7.065351473922874,
+      false,
+      "remediation_20"
+    ],
+    "remediation_21": [
+      721,
+      3.1173469387755404,
+      false,
+      "remediation_21"
+    ],
+    "remediation_22": [
+      726,
+      5.795986394557872,
+      false,
+      "remediation_22"
+    ],
+    "remediation_23": [
+      733,
+      5.1613378684807,
+      false,
+      "remediation_23"
+    ],
+    "remediation_24": [
+      740,
+      5.992018140589607,
+      false,
+      "remediation_24"
+    ],
+    "remediation_25": [
+      747,
+      4.470680272108893,
+      false,
+      "remediation_25"
+    ],
+    "remediation_26": [
+      753,
+      4.2000000000000455,
+      false,
+      "remediation_26"
+    ],
+    "remediation_27": [
+      759,
+      4.872018140589603,
+      false,
+      "remediation_27"
+    ],
+    "remediation_28": [
+      765,
+      3.8453514739228467,
+      false,
+      "remediation_28"
+    ],
+    "remediation_29": [
+      770,
+      5.54401360544216,
+      false,
+      "remediation_29"
+    ],
+    "remediation_30": [
+      777,
+      5.058684807256213,
+      false,
+      "remediation_30"
+    ],
+    "remediation_31": [
+      784,
+      8.978684807256286,
+      false,
+      "remediation_31"
+    ],
+    "remediation_32": [
+      794,
+      7.130680272108862,
+      false,
+      "remediation_32"
+    ],
+    "remediation_33": [
+      803,
+      4.162653061224546,
+      false,
+      "remediation_33"
+    ],
+    "remediation_34": [
+      809,
+      8.045351473922892,
+      false,
+      "remediation_34"
+    ],
+    "round1_win_mixdown": [
+      819,
+      12.520929705215394,
+      false,
+      "round1_win_mixdown"
+    ],
+    "round2_win_mixdown": [
+      833,
+      13.216258503401377,
+      false,
+      "round2_win_mixdown"
+    ],
+    "round_1_bonus": [
+      848,
+      5.264013605442187,
+      false,
+      "round_1_bonus"
+    ],
+    "round_1_intro": [
+      855,
+      9.95634920634916,
+      false,
+      "round_1_intro"
+    ],
+    "round_2_bonus": [
+      866,
+      5.039999999999964,
+      false,
+      "round_2_bonus"
+    ],
+    "round_3_bonus": [
+      873,
+      5.296666666666624,
+      false,
+      "round_3_bonus"
+    ]
+  }
+}

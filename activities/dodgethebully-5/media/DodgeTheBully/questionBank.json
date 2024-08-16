@@ -1,0 +1,415 @@
+{
+  "instructionText": {
+    "0": [
+      {
+        "text": "The object of Link 4 Zink is to line up four of your tiles before the computer lines up four of its tiles. Your tiles are spotted, link Zink the zebra, while the computer's tiles are striped.",
+        "attributes": {"fontWeight": "bold"}
+      }
+    ],
+    "1": [
+      {
+        "text": "Start the game by clicking the column into which you would like to drop your first tile. You will then have to answer a question about bullying.",
+        "attributes": {"fontWeight": "bold"}
+      }
+    ],
+    "2": [{"text": "If you get the question wrong, the tile will show stripes."}],
+    "3": [{"text": "If you get the question right it will show spots."}],
+    "4": [{"text": "After you answer the question, the computer will drop a striped tile into an open column. It will then be your turn to drop another tile and answer another question. This process will be repeated until you win by aligning four spotted tiles, or the computer wins by aligning four striped tiles."}],
+    "5": [{"text": "Tiles can be aligned vertically ... "}],
+    "6": [{"text": "horizontally"}],
+    "7": [{"text": "or diagonally"}],
+    "8": [{"text": "That's all there is to it. Click the play button when you're ready to start the game."}]
+  },
+  "questions": {
+    "question": [
+      {
+        "text": "Which of the following is an example of cyberbullying?",
+        "option": [
+          {
+            "text": "Posting mean comments on someone's facebook page.",
+            "feedback": "Almost. This is an example of cyberbullying, but so are the other choices."
+          },
+          {
+            "text": "Sending a threatening text message.",
+            "feedback": "Almost. This is an example of cyberbullying, but so are the other choices."
+          },
+          {
+            "text": "Forwarding a rumor online.",
+            "feedback": "Almost. This is an example of cyberbullying, but so are the other choices."
+          },
+          {
+            "correct": "true",
+            "text": "All of the above.",
+            "feedback": "You're right. These are all examples of cyberbullying."
+          }
+        ]
+      },
+      {
+        "text": "Calling someone “gay” is an example of sexual harassment.",
+        "option": [
+          {
+            "correct": "true",
+            "text": "True.",
+            "feedback": "Correct. Commenting on someone else's sexual orientation is considered sexual harassment."
+          },
+          {
+            "text": "False.",
+            "feedback": "Wrong answer. Commenting on someone else's sexual orientation is considered sexual harassment."
+          }
+        ]
+      },
+      {
+        "text": "When a friend says he or she is just kidding after saying something disrespectful to you, then it's not considered bullying.",
+        "option": [
+          {
+            "text": "True.",
+            "feedback": "Oops. Actually, friends do sometimes bully one another. Saying it's a joke doesn't make it any less hurtful."
+          },
+          {
+            "correct": "true",
+            "text": "False.",
+            "feedback": "You're right. Sometimes friends do bully one another. Saying it's a joke doesn't make it any less hurtful."
+          }
+        ]
+      },
+      {
+        "text": "Which of the following is an example of a comeback?",
+        "option": [
+          {
+            "text": "Telling a teacher about a bullying incident.",
+            "feedback": "Nope. Although telling an adult is important, this is not an example of a comeback."
+          },
+          {
+            "correct": "true",
+            "text": "Telling a bully to leave you alone.",
+            "feedback": "Great job! That's one way to use a comeback."
+          },
+          {
+            "text": "Crying.",
+            "feedback": "Sorry. A comeback is when you stand up for yourself by saying something assertive."
+          },
+          {
+            "text": "All of the above.",
+            "feedback": "Wrong answer. Telling a bully to leave you alone is an example of a comeback."
+          }
+        ]
+      },
+      {
+        "text": "Being nice to a friend in private but mean to him or her in public is a type of bullying.",
+        "option": [
+          {
+            "correct": "true",
+            "text": "True.",
+            "feedback": "You got it. This is not being a true friend."
+          },
+          {
+            "text": "False.",
+            "feedback": "Not really. This is not being a true friend."
+          }
+        ]
+      },
+      {
+        "text": "Telling an adult about a bullying situation is considered tattling/snitching.",
+        "option": [
+          {
+            "text": "True.",
+            "feedback": "Wrong answer. Telling an adult about a bullying situation is never snitching. It's the right thing to do."
+          },
+          {
+            "correct": "true",
+            "text": "False.",
+            "feedback": "Correct! Telling an adult about a bullying situation is never snitching. It's the right thing to do."
+          }
+        ]
+      },
+      {
+        "text": "Which of the following is a possible long term effect of being a bully:",
+        "option": [
+          {
+            "correct": "true",
+            "text": "Getting in trouble with the law.",
+            "feedback": "That's true. One study shows 60% of boys who were bullies in middle school ended up with at least one criminal conviction by the time they were 24 years old."
+          },
+          {
+            "text": "Higher grades in college.",
+            "feedback": "No way. Getting in trouble with the law is much more likely to be a consequence for bullies than having good grades."
+          },
+          {
+            "text": "A close relationship with friends.",
+            "feedback": "That's not it. Bullying is not likely to help build close friendships but it is show to help lead bullies towards unlawful behavior that can mean criminal convictions later in life."
+          }
+        ]
+      },
+      {
+        "text": "Which of the following is an example of how bullying can affect the victim?",
+        "option": [
+          {
+            "text": "He or she gets better grades.",
+            "feedback": "Incorrect. Sometimes the victim has a harder time concentrating on schoolwork and their grades go down."
+          },
+          {
+            "correct": "true",
+            "text": "He or she is afraid to go to school.",
+            "feedback": "Correct.  Sometimes the victim is so bothered by the bullying that they are afraid to go to school."
+          },
+          {
+            "text": "He or she feels more confident.",
+            "feedback": "Not quite. Often, the opposite is true and they feel less confident."
+          }
+        ]
+      },
+      {
+        "text": "You see someone at school being bullied. What is the best thing to do?",
+        "option": [
+          {
+            "text": "Ignore it.",
+            "feedback": "Wrong. Ignoring it will not help the situation."
+          },
+          {
+            "text": "Walk away.",
+            "feedback": "Wrong. Walking away will not help the situation."
+          },
+          {
+            "correct": "true",
+            "text": "Help the victim.",
+            "feedback": "Right on! Standing up for the victim or getting an adult to help is always a good thing."
+          }
+        ]
+      },
+      {
+        "text": "You tell an adult about someone making fun of you and he or she tells you to just laugh it off. What should you do?",
+        "option": [
+          {
+            "text": "Laugh it off the next time it happens.",
+            "feedback": "That won't work. If you're bothered by it you should find another adult who will help you."
+          },
+          {
+            "correct": "true",
+            "text": "Find another adult to talk to.",
+            "feedback": "You got it! If one adult doesn't listen, find one who will."
+          },
+          {
+            "text": "Nothing.",
+            "feedback": "That won't work. If you're bothered by it you should find another adult who will help you."
+          }
+        ]
+      },
+      {
+        "text": "A classmate says something about your body that makes you uncomfortable. What should you do?",
+        "option": [
+          {
+            "correct": "true",
+            "text": "Firmly tell them to stop, then tell an adult.",
+            "feedback": "You got it! Unwanted comments about your body are considered sexual harassment."
+          },
+          {
+            "text": "Ignore it.",
+            "feedback": "No way. Unwanted comments about your body are considered sexual harassment and you need to tell them to stop."
+          },
+          {
+            "text": "Try to avoid that person in the future.",
+            "feedback": "That won't work. Unwanted comments about your body are considered sexual harassment and you should tell an adult."
+          }
+        ]
+      },
+      {
+        "text": "Which of the following could be included in a school-wide anti-bullying campaign?",
+        "option": [
+          {
+            "text": "Anti-bullying posters.",
+            "feedback": "Not quite. Announcements and rules should also be part of a school-wide anti-bullying campaign."
+          },
+          {
+            "text": "Announcements.",
+            "feedback": "Not quite. Posters and rules should also be part of a school-wide anti-bullying campaign."
+          },
+          {
+            "text": "School and classroom rules.",
+            "feedback": "Not quite. Announcements and posters should also be part of a school-wide anti-bullying campaign."
+          },
+          {
+            "correct": "true",
+            "text": "All of the above.",
+            "feedback": "Awesome! All of these need to be part of a school-wide anti-bullying campaign."
+          }
+        ]
+      },
+      {
+        "text": "Posting pictures of someone online, without their consent, could be considered ________.",
+        "option": [
+          {
+            "text": "Sharing.",
+            "feedback": "Nope. This could be considered cyberbullying."
+          },
+          {
+            "correct": "true",
+            "text": "Cyberbullying.",
+            "feedback": "You got it. Cyberbullying includes posting pictures or unwanted comments, forwarding text messages, and harassing IMs."
+          },
+          {
+            "text": "Snitching.",
+            "feedback": "Nope. This could be considered cyberbullying."
+          }
+        ]
+      },
+      {
+        "text": "Cyberbullies are anonymous and cannot be identified.",
+        "option": [
+          {
+            "text": "True.",
+            "feedback": "That's not right. Every computer has an address that can be traced and its users can be identified."
+          },
+          {
+            "correct": "true",
+            "text": "False.",
+            "feedback": "That's right! Every computer has an address that can be traced and its users can be identified."
+          }
+        ]
+      },
+      {
+        "text": "Both boys and girls can be bullies.",
+        "option": [
+          {
+            "correct": "true",
+            "text": "True.",
+            "feedback": "You got it. Bullying behaviors may look different from boys and girls but both genders can be bullies!"
+          },
+          {
+            "text": "False.",
+            "feedback": "Sorry. Bullying behaviors may look different from boys and girls but both genders can be bullies!"
+          }
+        ]
+      },
+      {
+        "text": "If bystanders choose to ignore bullying, and not help the victims, what can happen?",
+        "option": [
+          {
+            "text": "The bullies will get bored and stop.",
+            "feedback": "Not true. If no one helps the victim, bullying often gets worse."
+          },
+          {
+            "text": "Eventually someone will help.",
+            "feedback": "That's not likely. If every bystander thinks someone else will do something to help, things may never get better for the victim because nobody will step in."
+          },
+          {
+            "correct": "true",
+            "text": "The bullying will get worse.",
+            "feedback": "That's what can happen. When no one steps up to help the victim, the bullying often escalates."
+          }
+        ]
+      },
+      {
+        "text": "Which of the following is a way to create an anti-bullying climate at school?",
+        "option": [
+          {
+            "text": "Don't ignore bullying.",
+            "feedback": "That's true but telling an adult and standing up to your peers are also important!"
+          },
+          {
+            "text": "Tell an adult about bullying that you see.",
+            "feedback": "Almost. While telling an adult is important, so is refusing to ignore bullying and standing up to your peers about bullying."
+          },
+          {
+            "text": "Tell your peers that you won't stand for bullying.",
+            "feedback": "That's not the best answer. That's a good step, but telling and adult and refusing to ignore bullying are also important."
+          },
+          {
+            "correct": "true",
+            "text": "All of the above.",
+            "feedback": "Absolutely! All of these things are important for creating an anti-bullying climate at your school."
+          }
+        ]
+      },
+      {
+        "text": "Examples of bullying include:",
+        "option": [
+          {
+            "text": "Defacing someone's notebook.",
+            "feedback": "That's not the right answer. This is bullying, but so are teasing and spreading rumors."
+          },
+          {
+            "text": "Teasing someone.",
+            "feedback": "That's not the right answer. This is bullying, but so are defacing a notebook and spreading rumors."
+          },
+          {
+            "text": "Spreading rumors.",
+            "feedback": "That's not the right answer. This is bullying, but so are defacing a notebook and teasing someone."
+          },
+          {
+            "correct": "true",
+            "text": "All of the above.",
+            "feedback": "You got it! All of these things are examples of bullying."
+          }
+        ]
+      },
+      {
+        "text": "It's possible for girls to sexually harass boys.",
+        "option": [
+          {
+            "correct": "true",
+            "text": "True.",
+            "feedback": "You got that right! Anyone can be a sexual harasser of anyone else if they touch or make unwanted comments about their body, sexual orientation or behavior."
+          },
+          {
+            "text": "False.",
+            "feedback": "No way! Anyone can be a sexual harasser of anyone else if they touch or make unwanted comments about their body, sexual orientation or behavior."
+          }
+        ]
+      },
+      {
+        "text": "What can happen if a victim doesn't get help after being bullied?",
+        "option": [
+          {
+            "text": "They'll get over it.",
+            "feedback": "I don't think so. A victim who never gets help is likely to become depressed, withdrawn or even become a bully."
+          },
+          {
+            "text": "They can become depressed and withdrawn.",
+            "feedback": "Almost. This is true but so is another answer: they may turn into a bully."
+          },
+          {
+            "text": "They may turn into a bully.",
+            "feedback": "Almost. This is true but so is another answer: they may become depressed and withdrawn."
+          },
+          {
+            "correct": "true",
+            "text": "B and C.",
+            "feedback": "That is right! The effects of bullying on a victim can create many worse problems if they never get help."
+          }
+        ]
+      },
+      {
+        "text": "Teasing someone about something that's true is not considered bullying.",
+        "option": [
+          {
+            "text": "True.",
+            "feedback": "Not right. Even if something is true, teasing someone is bullying if they feel badly and it is repeated to hurt their feelings."
+          },
+          {
+            "correct": "true",
+            "text": "False.",
+            "feedback": "You got it! Even if something is true, teasing someone is bullying if they feel badly and it is repeated to hurt their feelings."
+          }
+        ]
+      },
+      {
+        "text": "What are the four important messages that Zink the zebra teaches?",
+        "option": [
+          {
+            "correct": "true",
+            "text": "Respect, tolerance, empathy, acceptance.",
+            "feedback": "Awesome! Zink reminds us to have respect, tolerance, empathy and acceptance for people who are different than ourselves."
+          },
+          {
+            "text": "Honesty, truth, sympathy, being helpful.",
+            "feedback": "Sorry, that was a tough one.  Zink reminds us to have respect, tolerance, empathy and acceptance for people who are different than ourselves."
+          },
+          {
+            "text": "Respect, empathy, hygiene, good citizenship.",
+            "feedback": "Sorry, that was a tough one.   Zink reminds us to have respect, tolerance, empathy and acceptance for people who are different than ourselves."
+          }
+        ]
+      }
+    ]
+  }
+}

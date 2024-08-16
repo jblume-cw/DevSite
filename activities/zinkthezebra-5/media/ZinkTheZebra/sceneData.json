@@ -1,0 +1,405 @@
+{
+  "play": {
+    "start": "zink_1",
+    "resume": "zink_resume",
+    "showPlayThrough": false,
+    "scenes": {
+      "zink_resume": {
+        "id": "zink_resume",
+        "background": "resumeBackground",
+        "title": "This is the resume scene.",
+        "actors": [
+          {
+            "name": "sub-title",
+            "type": "text",
+            "font": "zink_text_resume",
+            "location": [ 204, 155 ],
+            "text": "You have completed part of this lesson"
+          },
+          {
+            "name": "resumeButton",
+            "type": "button",
+            "image": "resume",
+            "location": [ 155, 235],
+            "variable": "resume_button"
+          },
+          {
+            "name": "restartButton",
+            "type": "button",
+            "image": "restart",
+            "location": [ 155, 285 ],
+            "variable": "resume_button"
+          },
+          {
+            "name": "bottomPanel",
+            "type": "blocker",
+            "location": [ 0, 480 ],
+            "size": [ 640, 200 ],
+            "blockerTint" : "0xFFFFFF",
+            "blockerAlpha" : 1.0
+          }
+        ],
+        "outcomes": {
+          "do_restart": {
+            "events": { "resume_button": "restartButton" },
+            "actions": [ { "type": "scene", "args": [ "zink_1" ] } ]
+          },
+          "do_resume": {
+            "events": { "resume_button": "resumeButton" },
+            "actions": [ { "type": "scene", "args": [ "$restore_scene" ] } ]
+          }
+        }
+      },
+      "zink_1": {
+        "id": "zink_intro",
+        "background": "actNowBackground",
+        "title": "Zink the Zebra",
+        "actors": [
+          {
+            "name": "Zink Header",
+            "type": "text",
+            "font": "zink_header",
+            "location": [ 24, 7 ],
+            "text": "Zink the Zebra"
+          },
+          {
+            "name": "ZinkLessonSlide_01a",
+            "type": "audio",
+            "audio": ["ZinkLessonSlide_01a"],
+            "variable": "ZinkLessonSlide_01a"
+          },
+          {
+            "name": "zink1",
+            "type": "decoration",
+            "image": "zink1",
+            "key": "decorations",
+            "location": [ 40, 112 ],
+            "scale": [ 0.78, 0.78 ],
+            "angle": -3
+          },
+          {
+            "name": "Understanding",
+            "type": "text",
+            "font": "zink_text_medium",
+            "location": [ 366, 124 ],
+            "text": "Understanding",
+            "startDelay": 3000
+          },
+          {
+            "name": "Respect",
+            "type": "text",
+            "font": "zink_text_medium",
+            "location": [ 366, 184 ],
+            "text": "Respect",
+            "startDelay": 3900
+          },
+          {
+            "name": "Compassion",
+            "type": "text",
+            "font": "zink_text_medium",
+            "location": [ 366, 244 ],
+            "text": "Compassion",
+            "startDelay": 5000
+          },
+          {
+            "name": "Acceptance",
+            "type": "text",
+            "font": "zink_text_medium",
+            "location": [ 366, 304 ],
+            "text": "Acceptance",
+            "startDelay": 6000
+          },
+          {
+            "name": "mutebutton",
+            "type": "toggle-button",
+            "images": {
+              "on": "muteOff",
+              "off": "muteOn"
+            },
+            "location": [ 9, 435 ],
+            "scale": [ 1.0, 1.0 ],
+            "variable": "mute_game",
+            "values": {
+              "on": "mute_on",
+              "off": "mute_off"
+            },
+            "active": true
+          },
+          {
+            "name": "backButtonDisabled",
+            "type": "decoration",
+            "image": "backDisabled",
+            "key": "decorations",
+            "location": [ 337, 435 ],
+            "scale": [ 1.0, 1.0 ]
+          },
+          {
+            "name": "forwardButton",
+            "type": "button",
+            "image": "next",
+            "location": [ 512, 436 ],
+            "variable": "zink_1_showNext"
+          },
+          {
+            "name": "replay",
+            "type": "button",
+            "image": "replay",
+            "location": [ 466, 435 ],
+            "variable": "zink_1_replay"
+          },
+          {
+            "name": "bottomPanel",
+            "type": "blocker",
+            "location": [ 0, 480 ],
+            "size": [ 640, 200 ],
+            "blockerTint" : "0xFFFFFF",
+            "blockerAlpha" : 1.0
+          }
+        ],
+        "outcomes": {
+          "sound_ZinkLessonSlide_01a_finished_shimmer_next": {
+            "events": { "ZinkLessonSlide_01a": "played" },
+            "actions": [
+              { "type": "remove-actor", "args": ["forwardButton"] },
+              { "type": "add-actor", "args": [
+                {
+                  "name": "forwardButtonShimmer",
+                  "type": "button",
+                  "image": "next",
+                  "animated": true,
+                  "animationRepeat": 4000,
+                  "animationFrameRate": 30,
+                  "location": [ 512, 436 ],
+                  "variable": "zink_1_showNext"
+                }
+              ] }
+            ]
+          },
+          "replay_button": {
+            "events": { "zink_1_replay": "*" },
+            "actions": [
+              { "type": "scene", "args": [ "empty_replay_scene" ] },
+              { "type": "scene", "args": [ "zink_1" ] }
+            ]
+          },
+          "forward_button": {
+            "events": { "zink_1_showNext": "*" },
+            "actions": [ { "type": "scene", "args": [ "zink_2" ] } ]
+          }
+        }
+      },
+      "zink_2": {
+        "id": "zink_2",
+        "background": "actNowBackground",
+        "title": "Zink the Zebra",
+        "actors": [
+          {
+            "name": "Zink Header",
+            "type": "text",
+            "font": "zink_header",
+            "location": [ 24, 7 ],
+            "text": "Zink the Zebra"
+          },
+          {
+            "name": "ZinkLessonSlide_02a",
+            "type": "audio",
+            "audio": ["ZinkLessonSlide_02a"],
+            "variable": "ZinkLessonSlide_02a"
+          },
+          {
+            "name": "zink2",
+            "type": "decoration",
+            "image": "zink2",
+            "key": "decorations",
+            "location": [ 333, 92 ],
+            "scale": [ 0.78, 0.78 ],
+            "angle": 4
+          },
+          {
+            "name": "WhateverYouAre",
+            "type": "text",
+            "font": "zink_text_medium_wrap_30",
+            "location": [ 40, 150 ],
+            "text": "\"Whatever you are is what you are.  We're all different and being different makes you special.\"",
+            "startDelay": 12000
+          },
+          {
+            "name": "mutebutton",
+            "type": "toggle-button",
+            "images": {
+              "on": "muteOff",
+              "off": "muteOn"
+            },
+            "location": [ 9, 435 ],
+            "scale": [ 1.0, 1.0 ],
+            "variable": "mute_game",
+            "values": {
+              "on": "mute_on",
+              "off": "mute_off"
+            },
+            "active": true
+          },
+          {
+            "name": "backButton",
+            "type": "button",
+            "image": "back",
+            "location": [ 337, 435 ],
+            "variable": "zink_2_showPrevious"
+          },
+          {
+            "name": "forwardButton",
+            "type": "button",
+            "image": "next",
+            "location": [ 512, 436 ],
+            "variable": "zink_2_showNext"
+          },
+          {
+            "name": "replay",
+            "type": "button",
+            "image": "replay",
+            "location": [ 466, 435 ],
+            "variable": "zink_2_replay"
+          },
+          {
+            "name": "bottomPanel",
+            "type": "blocker",
+            "location": [ 0, 480 ],
+            "size": [ 640, 200 ],
+            "blockerTint" : "0xFFFFFF",
+            "blockerAlpha" : 1.0
+          }
+        ],
+        "outcomes": {
+          "sound_ZinkLessonSlide_02a_finished_shimmer_next": {
+            "events": { "ZinkLessonSlide_02a": "played" },
+            "actions": [
+              { "type": "remove-actor", "args": ["forwardButton"] },
+              { "type": "add-actor", "args": [
+                {
+                  "name": "forwardButtonShimmer",
+                  "type": "button",
+                  "image": "next",
+                  "animated": true,
+                  "animationRepeat": 4000,
+                  "animationFrameRate": 30,
+                  "location": [ 512, 436 ],
+                  "variable": "zink_2_showNext"
+                }
+              ] }
+            ]
+          },
+          "replay_button": {
+            "events": { "zink_2_replay": "*" },
+            "actions": [
+              { "type": "scene", "args": [ "empty_replay_scene" ] },
+              { "type": "scene", "args": [ "zink_2" ] }
+            ]
+          },
+          "back_button": {
+            "events": { "zink_2_showPrevious": "*" },
+            "actions": [ { "type": "scene", "args": [ "zink_1" ] } ]
+          },
+          "forward_button": {
+            "events": { "zink_2_showNext": "*" },
+            "actions": [ { "type": "scene", "args": [ "zink_3" ] } ]
+          }
+        }
+      },
+      "zink_3": {
+        "id": "zink_3",
+        "background": "actNowBackground",
+        "title": "Zink the Zebra",
+        "actors": [
+          {
+            "name": "Zink Header",
+            "type": "text",
+            "font": "zink_header",
+            "location": [ 24, 7 ],
+            "text": "Zink the Zebra"
+          },
+          {
+            "name": "ZinkLessonSlide_03a",
+            "type": "audio",
+            "audio": ["ZinkLessonSlide_03a"],
+            "variable": "ZinkLessonSlide_03a"
+          },
+          {
+            "name": "zink3",
+            "type": "decoration",
+            "image": "zink3",
+            "key": "decorations",
+            "location": [ 176, 100 ],
+            "scale": [ 0.83, 0.83 ]
+          },
+          {
+            "name": "mutebutton",
+            "type": "toggle-button",
+            "images": {
+              "on": "muteOff",
+              "off": "muteOn"
+            },
+            "location": [ 9, 435 ],
+            "scale": [ 1.0, 1.0 ],
+            "variable": "mute_game",
+            "values": {
+              "on": "mute_on",
+              "off": "mute_off"
+            },
+            "active": true
+          },
+          {
+            "name": "backButton",
+            "type": "button",
+            "image": "back",
+            "location": [ 337, 435 ],
+            "variable": "zink_3_showPrevious"
+          },
+          {
+            "name": "nextDisabled",
+            "type": "decoration",
+            "image": "nextDisabled",
+            "key": "decorations",
+            "location": [ 512, 436 ],
+            "scale": [ 1.0, 1.0 ]
+          },
+          {
+            "name": "replay",
+            "type": "button",
+            "image": "replay",
+            "location": [ 466, 435 ],
+            "variable": "zink_3_replay"
+          },
+          {
+            "name": "bottomPanel",
+            "type": "blocker",
+            "location": [ 0, 480 ],
+            "size": [ 640, 200 ],
+            "blockerTint" : "0xFFFFFF",
+            "blockerAlpha" : 1.0
+          }
+        ],
+        "actions": [
+          { "type": "choice", "args": [ "objective_complete", 1] },
+          { "type": "choice", "args": [ "save", 0 ] }
+        ],
+        "outcomes": {
+          "replay_button": {
+            "events": { "zink_3_replay": "*" },
+            "actions": [
+              { "type": "scene", "args": [ "empty_replay_scene" ] },
+              { "type": "scene", "args": [ "zink_3" ] }
+            ]
+          },
+          "back_button": {
+            "events": { "zink_3_showPrevious": "*" },
+            "actions": [ { "type": "scene", "args": [ "zink_2" ] } ]
+          }
+        }
+      },
+      "empty_replay_scene": {
+        "id": "empty_replay_scene",
+        "description": "since a scene change request to the current scene is ignored, first change to this empty scene"
+      }
+    }
+  }
+}

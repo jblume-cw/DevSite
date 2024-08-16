@@ -1,0 +1,247 @@
+{
+  "autoScale": true,
+  "texture": "media/DodgeTheBully/texture.png",
+  "textureMap": "media/DodgeTheBully/texture.json",
+  "textureKey": "textureDtb",
+  "menuColor": "0xffffff",
+  "sign": {
+    "broken": "target-arm-no-sign.png",
+    "fullWhite": "target-graphic.png",
+    "fullGreen": "target-sign-green.png"
+  },
+  "dodgeball": "dodgeball.png",
+  "play": {
+    "background": "game-background.png",
+    "bleachersFront": "bleachers-row-1.png",
+    "bleachersMiddle": "bleachers-row-2.png",
+    "bleachersBack": "bleachers-row-3.png",
+    "scoreboard": "score-board.png"
+  },
+  "popup": {
+    "background": "pop-up window.png"
+  },
+  "frame": {
+    "foreground": "game-frame.png"
+  },
+  "menu": {
+    "background": "title_screen.png",
+    "text": "Can you eliminate bullying behaviors from your school?\n\nThrow the ball at bullying behaviors and get 10 points for each one you hit. Be careful though - if you hit an act of friendship you will lose 10 points. Score at least 100 points before the timer runs out and you'll move on to the next round.\n\nGood luck!"
+  },
+  "buttons": {
+    "begin": {
+      "over": "PlayButton0002.png",
+      "out": "PlayButton0001.png",
+      "down": "PlayButton0002.png",
+      "up": "PlayButton0002.png"
+    },
+    "go": {
+      "over": "GoButton0002.png",
+      "out": "GoButton0001.png",
+      "down": "GoButton0002.png",
+      "up": "GoButton0002.png"
+    },
+    "tryAgain": {
+      "over": "TryAgain0002.png",
+      "out": "TryAgain0001.png",
+      "down": "TryAgain0002.png",
+      "up": "TryAgain0002.png"
+    },
+    "muteOn": {
+      "over": "sound-off-over.png",
+      "out": "sound-off-up.png",
+      "down": "sound-off-over.png",
+      "up": "sound-off-over.png"
+    },
+    "muteOff": {
+      "over": "sound-on-over.png",
+      "out": "sound-on-up.png",
+      "down": "sound-on-over.png",
+      "up": "sound-on-over.png"
+    },
+    "menu": {
+      "over": "school-menu-over.png",
+      "out": "school-menu-up.png",
+      "down": "school-menu-down.png",
+      "up": "school-menu-up.png",
+      "animation": [
+        "school-menu-highlight-0001.png","school-menu-highlight-0002.png","school-menu-highlight-0003.png",
+        "school-menu-highlight-0004.png","school-menu-highlight-0005.png","school-menu-highlight-0006.png",
+        "school-menu-highlight-0007.png","school-menu-highlight-0008.png","school-menu-highlight-0009.png",
+        "school-menu-highlight-0010.png","school-menu-highlight-0011.png","school-menu-highlight-0012.png",
+        "school-menu-highlight-0013.png","school-menu-highlight-0014.png","school-menu-highlight-0015.png",
+        "school-menu-highlight-0001.png","school-menu-highlight-0001.png","school-menu-highlight-0001.png",
+        "school-menu-highlight-0001.png","school-menu-highlight-0001.png","school-menu-highlight-0001.png",
+        "school-menu-highlight-0001.png","school-menu-highlight-0001.png","school-menu-highlight-0001.png",
+        "school-menu-highlight-0001.png","school-menu-highlight-0001.png","school-menu-highlight-0001.png",
+        "school-menu-highlight-0001.png","school-menu-highlight-0001.png","school-menu-highlight-0001.png",
+        "school-menu-highlight-0001.png","school-menu-highlight-0001.png","school-menu-highlight-0001.png",
+        "school-menu-highlight-0001.png","school-menu-highlight-0001.png","school-menu-highlight-0001.png",
+        "school-menu-highlight-0001.png","school-menu-highlight-0001.png","school-menu-highlight-0001.png",
+        "school-menu-highlight-0001.png","school-menu-highlight-0001.png","school-menu-highlight-0001.png",
+        "school-menu-highlight-0001.png","school-menu-highlight-0001.png","school-menu-highlight-0001.png",
+        "school-menu-highlight-0001.png","school-menu-highlight-0001.png","school-menu-highlight-0001.png",
+        "school-menu-highlight-0001.png","school-menu-highlight-0001.png","school-menu-highlight-0001.png",
+        "school-menu-highlight-0001.png","school-menu-highlight-0001.png","school-menu-highlight-0001.png"
+      ]
+    }
+  },
+  "fonts": {
+    "popup": {
+      "heading": {
+        "font": "32pt compacta_blk_btblack",
+        "fill": "#D50001",
+        "align": "center"
+      },
+      "headingSmall": {
+        "font": "16pt compacta_blk_btblack",
+        "fill": "#D50001",
+        "align": "center"
+      },
+      "body": {
+        "font": "18pt impress_btregular",
+        "fill": "#000000",
+        "align": "center",
+        "wordWrap": true
+      },
+      "bodySmall": {
+        "font": "12pt impress_btregular",
+        "fill": "#000000",
+        "align": "center",
+        "wordWrap": true
+      },
+      "scoreLabel": {
+        "font": "16pt compacta_blk_btblack",
+        "fill": "#000000",
+        "align": "left"
+      },
+      "score": {
+        "font": "16pt compacta_blk_btblack",
+        "fill": "#D50001",
+        "align": "left"
+      }
+    },
+    "menu": {
+      "font": "14pt impress_btregular",
+      "fill": "#000000",
+      "align": "left",
+      "wordWrap": true
+    },
+    "sign": {
+      "normal": {
+        "font": "10pt impress_btregular",
+        "fill": "black",
+        "align": "center",
+        "wordWrap": true
+      },
+      "bonusLabel": {
+        "font": "12pt impress_btregular",
+        "fill": "black",
+        "align": "center"
+      },
+      "bonus": {
+        "font": "12pt impress_btregular",
+        "fill": "#33CCFF",
+        "align": "center"
+      }
+    },
+    "score": {
+      "font": "16pt compacta_blk_btblack",
+      "fill": "#33CCFF",
+      "align": "left"
+    }
+  },
+  "soundKey": "dtbSounds",
+  "soundFile": [ "media/DodgeTheBully/dodgethebully.m4a", "media/DodgeTheBully/dodgethebully.ogg" ],
+  "sounds": {
+    "silence": [
+      0,
+      3,
+      false,
+      "silence"
+    ],
+    "db_end_of_level": [
+      4,
+      3.4603628117913834,
+      false,
+      "db_end_of_level"
+    ],
+    "db_endofgame": [
+      9,
+      8.64,
+      false,
+      "db_endofgame"
+    ],
+    "db_incorrect": [
+      19,
+      0.3491609977324259,
+      false,
+      "db_incorrect"
+    ],
+    "db_intro": [
+      21,
+      8.556961451247165,
+      false,
+      "db_intro"
+    ],
+    "db_level1": [
+      31,
+      7.579070294784579,
+      true,
+      "db_level1"
+    ],
+    "db_paper1": [
+      40,
+      0.6426303854875286,
+      false,
+      "db_paper1"
+    ],
+    "db_throw6": [
+      42,
+      0.19140589569160937,
+      false,
+      "db_throw6"
+    ],
+    "instructions": [
+      44,
+      19.773333333333333,
+      false,
+      "instructions"
+    ],
+    "intro-loop": [
+      65,
+      8.556961451247162,
+      true,
+      "intro-loop"
+    ],
+    "level-2-intro_mixdown": [
+      75,
+      15,
+      false,
+      "level-2-intro_mixdown"
+    ],
+    "level-3-intro_mixdown": [
+      91,
+      6.628752834467122,
+      false,
+      "level-3-intro_mixdown"
+    ],
+    "level_1_splash": [
+      99,
+      4.832018140589568,
+      false,
+      "level_1_splash"
+    ],
+    "lose_mixdown": [
+      105,
+      8.709886621315192,
+      false,
+      "lose_mixdown"
+    ],
+    "win_mixdown": [
+      115,
+      8.64,
+      false,
+      "win_mixdown"
+    ]
+  }
+}

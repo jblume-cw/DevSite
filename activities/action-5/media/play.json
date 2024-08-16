@@ -1,0 +1,15 @@
+{
+  "name": "Action",
+  "scorm": false,
+  "logging": false,
+  "autoScale": true,
+  "description": "This file contains a description of the Action lesson as a standalone play. Modified for playback without graphic menu.",
+  "acts": {
+    "default": {
+      "id": "default",
+      "description": "Action lesson",
+      "name": "Action",
+      "theme": "media/Action/theme.json"
+    }
+  }
+}

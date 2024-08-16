@@ -1,0 +1,206 @@
+{
+
+  "developer_notes": [
+    "sounds.slide_12 duration data modified to cut off menu reference. Source audio not edited. Original duration: 12.538684807256232"
+  ],
+
+  "texture": "media/WhatIsBullying/texture.png",
+  "textureMap": "media/WhatIsBullying/texture.json",
+  "textureKey": "wib_5_texture",
+  "data": "media/WhatIsBullying/sceneData.json",
+  "fonts" : {
+    "wib_header": { "font": "38px nobileregular", "fill": "#E3CFF8",  "fontWeight": "bold", "align": "left",
+      "shadowX": 5, "shadowY": 4, "shadowColor": "rgba(0,0,0,1)", "shadowBlur": 3 },
+    "wib_header_smaller": { "font": "28px nobileregular", "fill": "#E3CFF8",  "fontWeight": "bold", "align": "left",
+      "shadowX": 5, "shadowY": 4, "shadowColor": "rgba(0,0,0,1)", "shadowBlur": 3 },
+    "wib_textCaps_solid": { "font": "56px nobileregular", "fill": "#0A7676",  "fontWeight": "bold", "align": "left" },
+    "wib_text_extra_large_bold": { "font": "44px nobileregular", "fill": "#0A7676",  "fontWeight": "bold", "align": "left" },
+    "wib_text_large_bold_solid": { "font": "40px nobileregular", "fill": "#0A7676",  "fontWeight": "bold", "align": "left" },
+    "wib_text_large_bold_transparent": { "font": "40px nobileregular", "fill": "#0A7676",  "fontWeight": "bold",
+      "align": "left", "alpha": 0.5 },
+    "wib_text_medium": { "font": "31px nobileregular", "fill": "#0A7676",  "fontWeight": "normal", "align": "left" },
+    "wib_text_medium_smaller": { "font": "26px nobileregular", "fill": "#0A7676",  "fontWeight": "normal", "align": "left", "lineSpacing": -7 },
+    "wib_text_small": { "font": "16px nobileregular", "fill": "#0A7676",  "fontWeight": "normal",
+      "align": "left", "wordWrap": true, "wordWrapWidth": 300, "lineSpacing": -7 },
+    "wib_text_normal": { "font": "18px nobileregular", "fill": "#0A7676",  "fontWeight": "normal",
+      "align": "left", "lineSpacing": -7 },
+    "wib_text_resume": { "font": "18px nobileregular", "fill": "#7A1ADC",  "fontWeight": "normal",
+      "align": "center", "lineSpacing": -7, "wordWrap":true,"wordWrapWidth": 240 }
+  },
+  "images": {
+    "bystanderLabel": "bystander.png",
+    "victimLabel": "victim.png",
+    "bullyLabel": "bully.png",
+    "slide8Still": "idStillSlide8.png",
+    "slide9Still": "idStillSlide9.png",
+    "bystanderDrop8l": "bystanderHighliteSlide8_left.png",
+    "bystanderDrop8l_label": "bystanderTag.png",
+    "bystanderDrop8r": "bystanderHighliteSlide8_right.png",
+    "bullyDrop8": "bullyHiliteSlide8.png",
+    "bullyDrop8_label": "bullyTag.png",
+    "victimDrop8": "victimHiliteSlide8.png",
+    "victimDrop8_label": "victimTag.png",
+    "bystanderDrop9": "bystanderHiliteSlide9.png",
+    "bystanderDrop9_label": "bystanderTag_single.png",
+    "bullyDrop9": "bullyHiliteSlide9.png",
+    "bullyDrop9_label": "bullyTag.png",
+    "victimDrop9": "victimHighliteSlide9.png",
+    "victimDrop9_label": "victimTag.png",
+    "decorations": {
+      "resumeForeground": "resume-box.png",
+      "rachel": "rachel.png",
+      "backDisabled": "backDisabled.png",
+      "cj": "cj.png",
+      "computer": "computer.png",
+      "denise": "denise.png",
+      "kate": "kate.png",
+      "felicia": "felicia.png",
+      "Symbol2": "Symbol2.png",
+      "Symbol1": "Symbol1.png",
+      "nextDisabled": "NextDisabled.png",
+      "raj": "raj.png",
+      "videoFramePurple": "imageBorder.png",
+      "videoFrameOrange": "videoFrameOrange.png"
+    }
+  },
+  "sceneImages": {
+    "actNowBackground": "background.png",
+    "resumeBackground": "resume-background.png"
+  },
+  "buttons": {
+    "back": {
+      "up": "backUp.png",
+      "over": "backOver.png",
+      "out": "backUp.png",
+      "down": "backDown.png"
+    },
+    "muteOff": {
+      "up": "muteOffUp.png",
+      "over": "muteOffOver.png",
+      "out": "muteOffUp.png",
+      "down": "muteOffDown.png"
+    },
+    "muteOn": {
+      "up": "muteOnUp.png",
+      "over": "muteOnOver.png",
+      "out": "muteOnUp.png",
+      "down": "muteOnDown.png"
+    },
+    "next": {
+      "up": "nextUp.png",
+      "over": "nextOver.png",
+      "out": "nextUp.png",
+      "down": "nextDown.png"
+    },
+    "replay": {
+      "up": "replayUp.png",
+      "over": "replayOver.png",
+      "out": "replayUp.png",
+      "down": "replayDown.png"
+    },
+    "schoolMenu": {
+      "up": "SchoolMenu0001.png",
+      "over": "SchoolMenu0002.png",
+      "out": "SchoolMenu0001.png",
+      "down": "SchoolMenu0003.png"
+    },
+    "worksheet": {
+      "up": "worksheet0001.png",
+      "over": "worksheet0002.png",
+      "out": "worksheet0001.png",
+      "down": "worksheet0003.png"
+    },
+    "yes": {
+      "up": "yesButton0001.png",
+      "over": "yesButton0002.png",
+      "out": "yesButton0001.png",
+      "down": "yesButton0003.png"
+    },
+    "no": {
+      "up": "noButton0001.png",
+      "over": "noButton0002.png",
+      "out": "noButton0001.png",
+      "down": "noButton0003.png"
+    },
+    "videoClose": {
+      "up": "video-close.png",
+      "over": "video-close-over.png",
+      "out": "video-close.png",
+      "down": "video-close-down.png"
+    },
+    "restart": {
+      "up": "restart-over.png",
+      "over": "restart-over.png",
+      "out": "restart-up.png",
+      "down": "restart-down.png"
+    },
+    "resume": {
+      "up": "resume-over.png",
+      "over": "resume-over.png",
+      "out": "resume-up.png",
+      "down": "resume-down.png"
+    }
+  },
+  "buttonAnimations": {
+    "next": [
+      "next-highlight-0001.png",
+      "next-highlight-0002.png",
+      "next-highlight-0003.png",
+      "next-highlight-0004.png",
+      "next-highlight-0005.png",
+      "next-highlight-0006.png",
+      "next-highlight-0007.png",
+      "next-highlight-0008.png",
+      "next-highlight-0009.png",
+      "next-highlight-0010.png",
+      "next-highlight-0011.png",
+      "next-highlight-0012.png",
+      "next-highlight-0013.png",
+      "next-highlight-0014.png",
+      "next-highlight-0015.png"
+    ],
+    "schoolMenu": [
+      "school-menu-highlight-0001.png",
+      "school-menu-highlight-0002.png",
+      "school-menu-highlight-0003.png",
+      "school-menu-highlight-0004.png",
+      "school-menu-highlight-0005.png",
+      "school-menu-highlight-0006.png",
+      "school-menu-highlight-0007.png",
+      "school-menu-highlight-0008.png",
+      "school-menu-highlight-0009.png",
+      "school-menu-highlight-0010.png",
+      "school-menu-highlight-0011.png",
+      "school-menu-highlight-0012.png",
+      "school-menu-highlight-0013.png",
+      "school-menu-highlight-0014.png",
+      "school-menu-highlight-0015.png"
+    ]
+  },
+  "soundKey": "wib_5_sounds",
+  "soundFile": [ "media/WhatIsBullying/wib.m4a", "media/WhatIsBullying/wib.ogg" ],
+  "sounds": {
+    "silence": [ 0,      3,      false,      "silence"    ],
+    "slide_0": [ 5,      16.389319727891156,      false,      "slide_0"    ],
+    "slide_1": [ 24,      26.59734693877551,      false,      "slide_1"    ],
+    "slide_10": [ 53,      1.8880045351473953,      false,      "slide_10"    ],
+    "slide_11": [ 57,      2.0693197278911555,      false,      "slide_11"    ],
+    "slide_12": [ 62,      8.8,      false,      "slide_12"    ],
+    "slide_2": [ 77,      27.157346938775504,      false,      "slide_2"    ],
+    "slide_3": [ 107,      23.4026530612245,      false,      "slide_3"    ],
+    "slide_3_no": [ 133,      11.70133786848072,      false,      "slide_3_no"    ],
+    "slide_3_yes": [ 147,      11.381337868480728,      false,      "slide_3_yes"    ],
+    "slide_4_no": [ 161,      12.095986394557826,      false,      "slide_4_no"    ],
+    "slide_4_question": [ 176,      18.879999999999995,      false,      "slide_4_question"    ],
+    "slide_4_yes": [ 197,      18.133333333333326,      false,      "slide_4_yes"    ],
+    "slide_5": [ 218,     43.96800453514737,      false,      "slide_5"    ],
+    "slide_6": [ 264,      38.43201814058955,      false,      "slide_6"    ],
+    "slide_7": [ 305,      78.77333333333331,      false,      "slide_7"    ],
+    "slide_8_correct": [ 386,      0.682653061224471,      false,      "slide_8_correct"    ],
+    "slide_8_incorrect": [ 389,      1.4720181405895687,      false,      "slide_8_incorrect"    ],
+    "slide_8_instruction": [ 393,      4.2880045351473655,      false,      "slide_8_instruction"    ],
+    "slide_8_intro": [ 400,      5.1200000000000045,      false,      "slide_8_intro"    ],
+    "slide_9_instruction": [ 408,      4.218684807256238,      false,      "slide_9_instruction"    ],
+    "slide_9_intro": [ 415,      5.088004535147377,      false,      "slide_9_intro"    ]
+  }
+}

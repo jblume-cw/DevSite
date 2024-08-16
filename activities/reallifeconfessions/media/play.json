@@ -1,0 +1,15 @@
+{
+  "name": "Real Life Confessions",
+  "scorm": false,
+  "logging": false,
+  "autoScale": true,
+  "description": "This file contains a description of the Real Life Confessions lesson as a standalone play. Modified to play without graphic menu.",
+  "acts": {
+    "default": {
+      "id": "default",
+      "description": "Real Life Confessions lesson",
+      "name": "Real Life Confessions",
+      "theme": "media/RealLifeConfessions/theme.json"
+    }
+  }
+}

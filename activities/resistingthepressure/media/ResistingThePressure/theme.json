@@ -1,0 +1,48 @@
+{
+    "texture": "media/ResistingThePressure/texture.png",
+    "textureMap": "media/ResistingThePressure/texture.json",
+    "textureKey": "rtp_5_texture",
+    "data": "media/ResistingThePressure/sceneData.json",
+    "fonts": {
+        "resist": {
+            "font": "36px nobileregular",
+            "fill": "#E3CFF8",
+            "fontWeight": "bold",
+            "shadowX": 3, "shadowY": 3, "shadowColor": "rgba(0,0,0,0.9)"
+        }
+    },
+    "images": {
+        "decorations": {
+        }
+    },
+    "sceneImages": {
+        "resistingThePressureBackground": "background.png"
+    },
+    "buttons": {
+        "schoolMenu": {
+            "up": "school-menu-over.png",
+            "over": "school-menu-over.png",
+            "out": "school-menu-up.png",
+            "down": "school-menu-down.png"
+        }
+    },
+    "buttonAnimations": {
+        "schoolMenu": [
+            "school-menu-highlight-0001.png",
+            "school-menu-highlight-0002.png",
+            "school-menu-highlight-0003.png",
+            "school-menu-highlight-0004.png",
+            "school-menu-highlight-0005.png",
+            "school-menu-highlight-0006.png",
+            "school-menu-highlight-0007.png",
+            "school-menu-highlight-0008.png",
+            "school-menu-highlight-0009.png",
+            "school-menu-highlight-0010.png",
+            "school-menu-highlight-0011.png",
+            "school-menu-highlight-0012.png",
+            "school-menu-highlight-0013.png",
+            "school-menu-highlight-0014.png",
+            "school-menu-highlight-0015.png"
+        ]
+    }
+}

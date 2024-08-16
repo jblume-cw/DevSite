@@ -1,0 +1,2270 @@
+{
+  "play": {
+    "start": "wib_intro",
+    "resume": "wib_resume",
+    "showPlayThrough": false,
+    "scenes": {
+      "wib_resume": {
+        "id": "wib_resume",
+        "background": "resumeBackground",
+        "title": "This is the resume scene.",
+        "actors": [
+          {
+            "name": "resumebox",
+            "type": "decoration",
+            "image": "resumeForeground",
+            "key": "decorations",
+            "location": [ 119, 114 ]
+          },
+          {
+            "name": "sub-title",
+            "type": "text",
+            "font": "wib_text_resume",
+            "location": [ 204, 168 ],
+            "text": "You have completed part of this lesson"
+          },
+          {
+            "name": "resumeButton",
+            "type": "button",
+            "image": "resume",
+            "location": [ 155, 235],
+            "variable": "resume_button"
+          },
+          {
+            "name": "restartButton",
+            "type": "button",
+            "image": "restart",
+            "location": [ 155, 285 ],
+            "variable": "resume_button"
+          },
+          {
+            "name": "bottomPanel",
+            "type": "blocker",
+            "location": [ 0, 480 ],
+            "size": [ 640, 200 ],
+            "blockerTint" : "0xFFFFFF",
+            "blockerAlpha" : 1.0
+          }
+        ],
+        "outcomes": {
+          "do_restart": {
+            "events": { "resume_button": "restartButton" },
+            "actions": [ { "type": "scene", "args": [ "$start_scene" ] } ]
+          },
+          "do_resume": {
+            "events": { "resume_button": "resumeButton" },
+            "actions": [ { "type": "scene", "args": [ "$restore_scene" ] } ]
+          }
+        }
+      },
+      "wib_intro": {
+        "id": "wib_intro",
+        "background": "actNowBackground",
+        "title": "What Is bullying?",
+        "actors": [
+          {
+            "name": "What Is BullyingHeader",
+            "type": "text",
+            "font": "wib_header",
+            "location": [ 15, 7 ],
+            "text": "What Is bullying?"
+          },
+          {
+            "name": "slide_0",
+            "type": "audio",
+            "audio": ["slide_0"],
+            "variable": "sound_0_a"
+          },
+          {
+            "name": "sub-title",
+            "type": "text",
+            "font": "wib_text_large_bold_solid",
+            "location": [ 330, 165 ],
+            "wordWrapWidth": 300,
+            "text": "What is bullying?"
+          },
+          {
+            "name": "rachel",
+            "type": "decoration",
+            "image": "rachel",
+            "key": "decorations",
+            "location": [ 25, 138 ]
+          },
+          {
+            "name": "worksheetButton",
+            "type": "url-button",
+            "image": "worksheet",
+            "location": [ 333, 329 ],
+            "url": "wib_wksht_5th.pdf",
+            "variable": "wib_intro_worksheet"
+          },
+          {
+            "name": "mutebutton",
+            "type": "toggle-button",
+            "images": {
+              "on": "muteOff",
+              "off": "muteOn"
+            },
+            "location": [ 9, 435 ],
+            "scale": [ 1.0, 1.0 ],
+            "variable": "mute_game",
+            "values": {
+              "on": "mute_on",
+              "off": "mute_off"
+            },
+            "active": true
+          },
+          {
+            "name": "backButtonDisabled",
+            "type": "decoration",
+            "image": "backDisabled",
+            "key": "decorations",
+            "location": [ 337, 435 ],
+            "scale": [ 1.0, 1.0 ]
+          },
+          {
+            "name": "forwardButton",
+            "type": "button",
+            "image": "next",
+            "location": [ 512, 436 ],
+            "variable": "wib_intro_showNext"
+          },
+          {
+            "name": "replay",
+            "type": "button",
+            "image": "replay",
+            "location": [ 466, 435 ],
+            "variable": "wib_intro_replay"
+          },
+          {
+            "name": "bottomPanel",
+            "type": "blocker",
+            "location": [ 0, 480 ],
+            "size": [ 640, 200 ],
+            "blockerTint" : "0xFFFFFF",
+            "blockerAlpha" : 1.0
+          }
+        ],
+        "outcomes": {
+          "sound_0_b_finished_shimmer_next": {
+            "events": { "sound_0_a": "played" },
+            "actions": [
+              { "type": "remove-actor", "args": ["forwardButton"] },
+              { "type": "add-actor", "args": [
+                {
+                  "name": "forwardButtonShimmer",
+                  "type": "button",
+                  "image": "next",
+                  "animated": true,
+                  "animationRepeat": 4000,
+                  "animationFrameRate": 30,
+                  "location": [ 512, 436 ],
+                  "variable": "wib_intro_showNext"
+                }
+              ] }
+            ]
+          },
+          "replay_button": {
+            "events": { "wib_intro_replay": "*" },
+            "actions": [
+              { "type": "scene", "args": [ "empty_replay_scene" ] },
+              { "type": "scene", "args": [ "wib_intro" ] }
+            ]
+          },
+          "forward_button": {
+            "events": { "wib_intro_showNext": "*" },
+            "actions": [ { "type": "scene", "args": [ "definition_of_bullying" ] } ]
+          }
+        }
+      },
+      "definition_of_bullying": {
+        "id": "definition_of_bullying",
+        "background": "actNowBackground",
+        "title": "Definition of bullying",
+        "actors": [
+          {
+            "name": "wibHeader",
+            "type": "text",
+            "font": "wib_header",
+            "location": [ 19, 7 ],
+            "text": "Definition of bullying"
+          },
+          {
+            "name": "cj",
+            "type": "decoration",
+            "image": "cj",
+            "key": "decorations",
+            "location": [ 15, 120 ]
+          },
+          {
+            "name": "slide_1_text_1",
+            "type": "text",
+            "startDelay": 1100,
+            "bullet": true,
+            "font": "wib_text_medium_smaller",
+            "location": [ 305,  160 ],
+            "text": "Imbalance of power"
+          },
+          {
+            "name": "slide_1_text_2",
+            "type": "text",
+            "startDelay": 1100,
+            "bullet": true,
+            "font": "wib_text_medium_smaller",
+            "location": [ 305,  205 ],
+            "text": "Intentional"
+          },
+          {
+            "name": "slide_1_text_3",
+            "type": "text",
+            "startDelay": 1100,
+            "bullet": true,
+            "font": "wib_text_medium_smaller",
+            "location": [ 305,  250 ],
+            "text": "Repeated over time"
+          },
+          {
+            "name": "slide_1_a",
+            "type": "audio",
+            "audio": ["slide_1"],
+            "variable": "sound_1_a"
+          },
+          {
+            "name": "mutebutton",
+            "type": "toggle-button",
+            "images": {
+              "on": "muteOff",
+              "off": "muteOn"
+            },
+            "location": [ 9, 435 ],
+            "scale": [ 1.0, 1.0 ],
+            "variable": "mute_game",
+            "values": {
+              "on": "mute_on",
+              "off": "mute_off"
+            },
+            "active": true
+          },
+          {
+            "name": "backButton",
+            "type": "button",
+            "image": "back",
+            "location": [ 337, 435 ],
+            "variable": "definition_of_bullying_showPrevious"
+          },
+          {
+            "name": "forwardButton",
+            "type": "button",
+            "image": "next",
+            "location": [ 512, 436 ],
+            "variable": "definition_of_bullying_showNext"
+          },
+          {
+            "name": "replay",
+            "type": "button",
+            "image": "replay",
+            "location": [ 466, 435 ],
+            "variable": "definition_of_bullying_replay"
+          },
+          {
+            "name": "bottomPanel",
+            "type": "blocker",
+            "location": [ 0, 480 ],
+            "size": [ 640, 200 ],
+            "blockerTint" : "0xFFFFFF",
+            "blockerAlpha" : 1.0
+          }
+        ],
+        "outcomes": {
+          "sound_1_a_finished_shimmer_next": {
+            "events": { "sound_1_a": "played" },
+            "actions": [
+              { "type": "remove-actor", "args": ["forwardButton"] },
+              { "type": "add-actor", "args": [
+                {
+                  "name": "forwardButtonShimmer",
+                  "type": "button",
+                  "image": "next",
+                  "animated": true,
+                  "animationRepeat": 4000,
+                  "animationFrameRate": 30,
+                  "location": [ 512, 436 ],
+                  "variable": "definition_of_bullying_showNext"
+                }
+              ] }
+            ]
+          },
+          "replay_button": {
+            "events": { "definition_of_bullying_replay": "*" },
+            "actions": [
+              { "type": "scene", "args": [ "empty_replay_scene" ] },
+              { "type": "scene", "args": [ "definition_of_bullying" ] }
+            ]
+          },
+          "back_button": {
+            "events": { "definition_of_bullying_showPrevious": "*" },
+            "actions": [ { "type": "scene", "args": [ "wib_intro" ] } ]
+          },
+          "forward_button": {
+            "events": { "definition_of_bullying_showNext": "*" },
+            "actions": [ { "type": "scene", "args": [ "what_is_frenemy" ] } ]
+          }
+        }
+      },
+      "what_is_frenemy": {
+        "id": "what_is_frenemy",
+        "background": "actNowBackground",
+        "title": "What is a frenemy?",
+        "actors": [
+          {
+            "name": "frenemy_header",
+            "type": "text",
+            "font": "wib_header",
+            "location": [ 19, 7 ],
+            "text": "What's a frenemy?"
+          },
+          {
+            "name": "sound_2",
+            "type": "audio",
+            "audio": ["slide_2"],
+            "variable": "sound_2"
+          },
+          {
+            "name": "text_2_1",
+            "type": "text",
+            "font": "wib_text_medium_smaller",
+            "location": [ 35,  120 ],
+            "text": "Acts differently when others are around",
+            "bullet": true
+          },
+          {
+            "name": "text_2_2",
+            "type": "text",
+            "font": "wib_text_medium_smaller",
+            "location": [ 35,  160 ],
+            "text": "Teases as a joke, but does it a lot",
+            "bullet": true
+          },
+          {
+            "name": "text_2_3",
+            "type": "text",
+            "font": "wib_text_medium_smaller",
+            "location": [ 35,  200 ],
+            "text": "Ignores you or leaves you out",
+            "bullet": true
+          },
+          {
+            "name": "text_2_4",
+            "type": "text",
+            "font": "wib_text_medium_smaller",
+            "location": [ 35,  240 ],
+            "text": "Breaks your trust",
+            "bullet": true
+          },
+          {
+            "name": "text_2_5",
+            "type": "text",
+            "font": "wib_text_medium_smaller",
+            "location": [ 35,  280 ],
+            "text": "Not a true friend",
+            "bullet": true
+          },
+          {
+            "name": "mutebutton",
+            "type": "toggle-button",
+            "images": {
+              "on": "muteOff",
+              "off": "muteOn"
+            },
+            "location": [ 9, 435 ],
+            "scale": [ 1.0, 1.0 ],
+            "variable": "mute_game",
+            "values": {
+              "on": "mute_on",
+              "off": "mute_off"
+            },
+            "active": true
+          },
+          {
+            "name": "backButton",
+            "type": "button",
+            "image": "back",
+            "location": [ 337, 435 ],
+            "variable": "frenemy_showPrevious"
+          },
+          {
+            "name": "forwardButton",
+            "type": "button",
+            "image": "next",
+            "location": [ 512, 436 ],
+            "variable": "frenemy_showNext"
+          },
+          {
+            "name": "replay",
+            "type": "button",
+            "image": "replay",
+            "location": [ 466, 435 ],
+            "variable": "frenemy_replay"
+          },
+          {
+            "name": "bottomPanel",
+            "type": "blocker",
+            "location": [ 0, 480 ],
+            "size": [ 640, 200 ],
+            "blockerTint" : "0xFFFFFF",
+            "blockerAlpha" : 1.0
+          }
+        ],
+        "outcomes": {
+          "sound_2_finished_shimmer_next": {
+            "events": { "sound_2": "played" },
+            "actions": [
+              { "type": "remove-actor", "args": ["forwardButton"] },
+              { "type": "add-actor", "args": [
+                {
+                  "name": "forwardButtonShimmer",
+                  "type": "button",
+                  "image": "next",
+                  "animated": true,
+                  "animationRepeat": 4000,
+                  "animationFrameRate": 30,
+                  "location": [ 512, 436 ],
+                  "variable": "frenemy_showNext"
+                }
+              ] }
+            ]
+          },
+          "replay_button": {
+            "events": { "frenemy_replay": "*" },
+            "actions": [
+              { "type": "scene", "args": [ "empty_replay_scene" ] },
+              { "type": "scene", "args": [ "what_is_frenemy" ] }
+            ]
+          },
+          "back_button": {
+            "events": { "frenemy_showPrevious": "*" },
+            "actions": [ { "type": "scene", "args": [ "definition_of_bullying" ] } ]
+          },
+          "forward_button": {
+            "events": { "frenemy_showNext": "*" },
+            "actions": [ { "type": "scene", "args": [ "is_it_bullying_1" ] } ]
+          }
+        }
+      },
+      "is_it_bullying_1": {
+        "id": "is_it_bullying_1",
+        "background": "actNowBackground",
+        "title": "Is it bullying 1",
+        "actors": [
+          {
+            "name": "is_it_header",
+            "type": "text",
+            "font": "wib_header",
+            "location": [ 19, 7 ],
+            "text": "Is it bullying?"
+          },
+          {
+            "name": "is_it_question",
+            "type": "text",
+            "font": "wib_text_small",
+            "wordWrapWidth": 585,
+            "location": [ 25, 90 ],
+            "text": "Adam is rushing to class and he runs right into Jen, causing her books to go all over the place. He yells \"sorry\" over his shoulder, but doesn't stop to help Jen.\n\nIs this bullying?"
+          },
+          {
+            "name": "sound_3",
+            "type": "audio",
+            "audio": ["slide_3"],
+            "variable": "sound_3"
+          },
+          {
+            "name": "mutebutton",
+            "type": "toggle-button",
+            "images": {
+              "on": "muteOff",
+              "off": "muteOn"
+            },
+            "location": [ 9, 435 ],
+            "scale": [ 1.0, 1.0 ],
+            "variable": "mute_game",
+            "values": {
+              "on": "mute_on",
+              "off": "mute_off"
+            },
+            "active": true
+          },
+          {
+            "name": "yesButton",
+            "type": "button",
+            "image": "yes",
+            "location": [ 191, 230 ],
+            "variable": "is_it_bullying_yes"
+          },
+          {
+            "name": "noButton",
+            "type": "button",
+            "image": "no",
+            "location": [ 332, 230 ],
+            "variable": "is_it_bullying_no"
+          },
+          {
+            "name": "backButton",
+            "type": "button",
+            "image": "back",
+            "location": [ 337, 435 ],
+            "variable": "bullying_1_showPrevious"
+          },
+          {
+            "name": "forwardButton",
+            "type": "button",
+            "image": "next",
+            "location": [ 512, 436 ],
+            "variable": "bullying_1_showNext"
+          },
+          {
+            "name": "replay",
+            "type": "button",
+            "image": "replay",
+            "location": [ 466, 435 ],
+            "variable": "bullying_1_replay"
+          },
+          {
+            "name": "bottomPanel",
+            "type": "blocker",
+            "location": [ 0, 480 ],
+            "size": [ 640, 200 ],
+            "blockerTint" : "0xFFFFFF",
+            "blockerAlpha" : 1.0
+          }
+        ],
+        "outcomes": {
+          "is_it_1_yes_answer": {
+            "events": { "is_it_bullying_yes": "*" },
+            "actions": [
+              { "type": "remove-actor", "args": ["no_answer_text_1"] },
+              { "type": "remove-actor", "args": ["answer_audio_1"] },
+              { "type": "variable", "args": ["is_it_bullying_no", null ] },
+              { "type": "add-actor", "args": [
+                {
+                  "name": "yes_answer_text_1",
+                  "type": "text",
+                  "font": "wib_text_small",
+                  "wordWrapWidth": 585,
+                  "location": [ 25, 295 ],
+                  "text": "Not quite. Although Adam should have stopped to help Jen, it sounds like this was an accident. Remember that bullying is intentional and usually repeated over time."
+                }
+              ] },
+              { "type": "add-actor", "args": [
+                {
+                  "name": "answer_audio_1",
+                  "type": "audio",
+                  "audio": ["slide_3_yes"],
+                  "variable": "answer_audio_1"
+                }
+              ] }
+            ]
+          },
+          "is_it_1_no_answer": {
+            "events": { "is_it_bullying_no": "*" },
+            "actions": [
+              { "type": "remove-actor", "args": ["yes_answer_text_1"] },
+              { "type": "remove-actor", "args": ["answer_audio_1"] },
+              { "type": "variable", "args": ["is_it_bullying_yes", null ] },
+              { "type": "add-actor", "args": [
+                {
+                  "name": "no_answer_text_1",
+                  "type": "text",
+                  "font": "wib_text_small",
+                  "wordWrapWidth": 585,
+                  "location": [ 25, 295 ],
+                  "text": "Great job! It sounds like this was an accident. Adam didn't run into Jen on purpose. And remember that bullying is intentional and usually repeated over time."
+                }
+              ] },
+              { "type": "add-actor", "args": [
+                {
+                  "name": "answer_audio_1",
+                  "type": "audio",
+                  "audio": ["slide_3_no"],
+                  "variable": "answer_audio_1"
+                }
+              ] }
+            ]
+          },
+          "sound_3_finished_shimmer_next": {
+            "events": { "answer_audio_1": "played" },
+            "actions": [
+              { "type": "remove-actor", "args": ["forwardButton"] },
+              { "type": "add-actor", "args": [
+                {
+                  "name": "forwardButtonShimmer",
+                  "type": "button",
+                  "image": "next",
+                  "animated": true,
+                  "animationRepeat": 4000,
+                  "animationFrameRate": 30,
+                  "location": [ 512, 436 ],
+                  "variable": "bullying_1_showNext"
+                }
+              ] }
+            ]
+          },
+          "replay_button": {
+            "events": { "bullying_1_replay": "*" },
+            "actions": [
+              { "type": "scene", "args": [ "empty_replay_scene" ] },
+              { "type": "variable", "args": ["is_it_bullying_no", null ] },
+              { "type": "variable", "args": ["is_it_bullying_yes", null ] },
+              { "type": "scene", "args": [ "is_it_bullying_1" ] }
+            ]
+          },
+          "back_button": {
+            "events": { "bullying_1_showPrevious": "*" },
+            "actions": [ { "type": "scene", "args": [ "what_is_frenemy" ] } ]
+          },
+          "forward_button": {
+            "events": { "bullying_1_showNext": "*" },
+            "actions": [
+              { "type": "variable", "args": ["is_it_bullying_no", null ] },
+              { "type": "variable", "args": ["is_it_bullying_yes", null ] },
+              { "type": "scene", "args": [ "is_it_bullying_2" ] }
+            ]
+          }
+        }
+      },
+      "is_it_bullying_2": {
+        "id": "is_it_bullying_2",
+        "background": "actNowBackground",
+        "title": "Is it bullying 2",
+        "actors": [
+          {
+            "name": "is_it_header2",
+            "type": "text",
+            "font": "wib_header",
+            "location": [ 19, 7 ],
+            "text": "Is it bullying?"
+          },
+          {
+            "name": "is_it_question",
+            "type": "text",
+            "font": "wib_text_small",
+            "wordWrapWidth": 590,
+            "location": [ 25, 85 ],
+            "text": "Ava takes Tonya's snack from her backpack. Tonya says, \"Hey, give that back. I didn't say it was ok yesterday and it's not ok today.\" Ava responds, \"How come it was ok last year, but not this year?\"\n\nIs this bullying?"
+          },
+          {
+            "name": "sound_4",
+            "type": "audio",
+            "audio": ["slide_4_question"],
+            "variable": "sound_4"
+          },
+          {
+            "name": "yesButton",
+            "type": "button",
+            "image": "yes",
+            "location": [ 191, 240 ],
+            "variable": "is_it_bullying_yes"
+          },
+          {
+            "name": "noButton",
+            "type": "button",
+            "image": "no",
+            "location": [ 332, 240 ],
+            "variable": "is_it_bullying_no"
+          },
+          {
+            "name": "mutebutton",
+            "type": "toggle-button",
+            "images": {
+              "on": "muteOff",
+              "off": "muteOn"
+            },
+            "location": [ 9, 435 ],
+            "scale": [ 1.0, 1.0 ],
+            "variable": "mute_game",
+            "values": {
+              "on": "mute_on",
+              "off": "mute_off"
+            },
+            "active": true
+          },
+          {
+            "name": "backButton",
+            "type": "button",
+            "image": "back",
+            "location": [ 337, 435 ],
+            "variable": "bullying_2_showPrevious"
+          },
+          {
+            "name": "forwardButton",
+            "type": "button",
+            "image": "next",
+            "location": [ 512, 436 ],
+            "variable": "bullying_2_showNext"
+          },
+          {
+            "name": "replay",
+            "type": "button",
+            "image": "replay",
+            "location": [ 466, 435 ],
+            "variable": "bullying_2_replay"
+          },
+          {
+            "name": "bottomPanel",
+            "type": "blocker",
+            "location": [ 0, 480 ],
+            "size": [ 640, 200 ],
+            "blockerTint" : "0xFFFFFF",
+            "blockerAlpha" : 1.0
+          }
+        ],
+        "outcomes": {
+          "is_it_2_yes_answer": {
+            "events": { "is_it_bullying_yes": "*" },
+            "actions": [
+              { "type": "remove-actor", "args": ["no_answer_text_2"] },
+              { "type": "remove-actor", "args": ["answer_audio_2"] },
+              { "type": "variable", "args": ["is_it_bullying_no", null ] },
+              { "type": "add-actor", "args": [
+                {
+                  "name": "yes_answer_text_2",
+                  "type": "text",
+                  "font": "wib_text_small",
+                  "wordWrapWidth": 585,
+                  "location": [ 25, 295 ],
+                  "text": "Super! Even if Tonya allowed Ava to take her snacks last year, she clearly has said no twice this year. This is bullying because Ava is not respecting Tonya and is taking her personal property. Ava's intent is to hurt Tonya."
+                }
+              ] },
+              { "type": "add-actor", "args": [
+                {
+                  "name": "answer_audio_2",
+                  "type": "audio",
+                  "audio": ["slide_4_yes"],
+                  "variable": "answer_audio_1"
+                }
+              ] }
+            ]
+          },
+          "is_it_2_no_answer": {
+            "events": { "is_it_bullying_no": "*" },
+            "actions": [
+              { "type": "remove-actor", "args": ["yes_answer_text_2"] },
+              { "type": "remove-actor", "args": ["answer_audio_2"] },
+              { "type": "variable", "args": ["is_it_bullying_yes", null ] },
+              { "type": "add-actor", "args": [
+                {
+                  "name": "no_answer_text_2",
+                  "type": "text",
+                  "font": "wib_text_small",
+                  "wordWrapWidth": 585,
+                  "location": [ 25, 295 ],
+                  "text": "Try again. Even though Tonya didn't say anything last year, she's making it clear that it's not ok anymore. This is a repeated act with an intent to hurt Tonya."
+                }
+              ] },
+              { "type": "add-actor", "args": [
+                {
+                  "name": "answer_audio_2",
+                  "type": "audio",
+                  "audio": ["slide_4_no"],
+                  "variable": "answer_audio_2"
+                }
+              ] }
+            ]
+          },
+          "sound_4_finished_shimmer_next": {
+            "events": { "answer_audio_2": "played" },
+            "actions": [
+              { "type": "remove-actor", "args": ["forwardButton"] },
+              { "type": "add-actor", "args": [
+                {
+                  "name": "forwardButtonShimmer",
+                  "type": "button",
+                  "image": "next",
+                  "animated": true,
+                  "animationRepeat": 4000,
+                  "animationFrameRate": 30,
+                  "location": [ 512, 436 ],
+                  "variable": "bullying_2_showNext"
+                }
+              ] }
+            ]
+          },
+          "replay_button": {
+            "events": { "bullying_2_replay": "*" },
+            "actions": [
+              { "type": "scene", "args": [ "empty_replay_scene" ] },
+              { "type": "variable", "args": ["is_it_bullying_no", null ] },
+              { "type": "variable", "args": ["is_it_bullying_yes", null ] },
+              { "type": "scene", "args": [ "is_it_bullying_2" ] }
+            ]
+          },
+          "back_button": {
+            "events": { "bullying_2_showPrevious": "*" },
+            "actions": [ { "type": "scene", "args": [ "is_it_bullying_1" ] } ]
+          },
+          "forward_button": {
+            "events": { "bullying_2_showNext": "*" },
+            "actions": [
+              { "type": "variable", "args": ["is_it_bullying_no", null ] },
+              { "type": "variable", "args": ["is_it_bullying_yes", null ] },
+              { "type": "scene", "args": [ "what_does_bullying_look_like" ] } ]
+          }
+        }
+      },
+      "what_does_bullying_look_like": {
+        "id": "what_does_bullying_look_like",
+        "background": "actNowBackground",
+        "title": "What does bullying look like?",
+        "actors": [
+          {
+            "name": "look_likeHeader",
+            "type": "text",
+            "font": "wib_header_smaller",
+            "location": [ 19, 15 ],
+            "text": "What does bullying look like?"
+          },
+          {
+            "name": "text_6_1",
+            "type": "text",
+            "font": "wib_text_medium_smaller",
+            "location": [ 48,  85 ],
+            "text": "Direct bullying",
+            "startDelay": 7100
+          },
+          {
+            "name": "text_6_1_a",
+            "type": "text",
+            "font": "wib_text_normal",
+            "location": [ 65,  128 ],
+            "text": "Name calling",
+            "bullet": true,
+            "startDelay": 7100
+          },
+          {
+            "name": "text_6_1_b",
+            "type": "text",
+            "font": "wib_text_normal",
+            "location": [ 65,  158 ],
+            "text": "Insults",
+            "bullet": true,
+            "startDelay": 7100
+          },
+          {
+            "name": "text_6_1_c",
+            "type": "text",
+            "font": "wib_text_normal",
+            "location": [ 65,  188 ],
+            "text": "Threats",
+            "bullet": true,
+            "startDelay": 7100
+          },
+          {
+            "name": "text_6_1_d",
+            "type": "text",
+            "font": "wib_text_normal",
+            "location": [ 65,  218 ],
+            "text": "Physically harming someone",
+            "bullet": true,
+            "startDelay": 7100
+          },
+          {
+            "name": "text_6_1_e",
+            "type": "text",
+            "font": "wib_text_normal",
+            "location": [ 65,  248 ],
+            "text": "Damaging someone's personal property",
+            "bullet": true,
+            "startDelay": 7100
+          },
+          {
+            "name": "text_6_2",
+            "type": "text",
+            "font": "wib_text_medium_smaller",
+            "location": [ 48,  285 ],
+            "text": "Indirect bullying",
+            "startDelay": 26000
+          },
+          {
+            "name": "text_6_2_a",
+            "type": "text",
+            "font": "wib_text_normal",
+            "location": [ 65,  328 ],
+            "text": "Spreading rumors (at school or on the internet)",
+            "bullet": true,
+            "startDelay": 26000
+          },
+          {
+            "name": "text_6_2_a",
+            "type": "text",
+            "font": "wib_text_normal",
+            "location": [ 65,  358 ],
+            "text": "Excluding someone",
+            "bullet": true,
+            "startDelay": 26000
+          },
+          {
+            "name": "text_6_2_a",
+            "type": "text",
+            "font": "wib_text_normal",
+            "location": [ 65,  388 ],
+            "text": "Gossiping",
+            "bullet": true,
+            "startDelay": 26000
+          },
+          {
+            "name": "sound_5",
+            "type": "audio",
+            "audio": ["slide_5"],
+            "variable": "sound_5"
+          },
+          {
+            "name": "mutebutton",
+            "type": "toggle-button",
+            "images": {
+              "on": "muteOff",
+              "off": "muteOn"
+            },
+            "location": [ 9, 435 ],
+            "scale": [ 1.0, 1.0 ],
+            "variable": "mute_game",
+            "values": {
+              "on": "mute_on",
+              "off": "mute_off"
+            },
+            "active": true
+          },
+          {
+            "name": "backButton",
+            "type": "button",
+            "image": "back",
+            "location": [ 337, 435 ],
+            "variable": "look_like_showPrevious"
+          },
+          {
+            "name": "forwardButton",
+            "type": "button",
+            "image": "next",
+            "location": [ 512, 436 ],
+            "variable": "look_like_showNext"
+          },
+          {
+            "name": "replay",
+            "type": "button",
+            "image": "replay",
+            "location": [ 466, 435 ],
+            "variable": "look_like_replay"
+          },
+          {
+            "name": "bottomPanel",
+            "type": "blocker",
+            "location": [ 0, 480 ],
+            "size": [ 640, 200 ],
+            "blockerTint" : "0xFFFFFF",
+            "blockerAlpha" : 1.0
+          }
+        ],
+        "outcomes": {
+          "sound_5_finished_shimmer_next": {
+            "events": { "sound_5": "played" },
+            "actions": [
+              { "type": "remove-actor", "args": ["forwardButton"] },
+              { "type": "add-actor", "args": [
+                {
+                  "name": "forwardButtonShimmer",
+                  "type": "button",
+                  "image": "next",
+                  "animated": true,
+                  "animationRepeat": 4000,
+                  "animationFrameRate": 30,
+                  "location": [ 512, 436 ],
+                  "variable": "look_like_showNext"
+                }
+              ] }
+            ]
+          },
+          "replay_button": {
+            "events": { "look_like_replay": "*" },
+            "actions": [
+              { "type": "scene", "args": [ "empty_replay_scene" ] },
+              { "type": "scene", "args": [ "what_does_bullying_look_like" ] }
+            ]
+          },
+          "back_button": {
+            "events": { "look_like_showPrevious": "*" },
+            "actions": [ { "type": "scene", "args": [ "is_it_bullying_2" ] } ]
+          },
+          "forward_button": {
+            "events": { "look_like_showNext": "*" },
+            "actions": [ { "type": "scene", "args": [ "cyberbullying" ] } ]
+          }
+        }
+      },
+      "cyberbullying": {
+        "id": "cyberbullying",
+        "background": "actNowBackground",
+        "title": "Cyberbullying",
+        "actors": [
+          {
+            "name": "cyberbullyingHeader",
+            "type": "text",
+            "font": "wib_header",
+            "location": [ 19, 7 ],
+            "text": "Cyberbullying "
+          },
+          {
+            "name": "sub-title",
+            "type": "text",
+            "font": "wib_text_medium",
+            "location": [ 20, 85 ],
+            "text": "Bully uses technology to bully others"
+          },
+          {
+            "name": "image_bg_1",
+            "type": "decoration",
+            "image": "videoFramePurple",
+            "key": "decorations",
+            "location": [ 118, 144 ],
+            "scale": [ 1.1, 1.1 ]
+          },
+          {
+            "name": "computer_1",
+            "type": "decoration",
+            "image": "computer",
+            "key": "decorations",
+            "location": [ 126, 150 ],
+            "scale": [ 0.5, 0.5 ]
+          },
+          {
+            "name": "sound_6",
+            "type": "audio",
+            "audio": ["slide_6"],
+            "variable": "sound_6"
+          },
+          {
+            "name": "mutebutton",
+            "type": "toggle-button",
+            "images": {
+              "on": "muteOff",
+              "off": "muteOn"
+            },
+            "location": [ 9, 435 ],
+            "scale": [ 1.0, 1.0 ],
+            "variable": "mute_game",
+            "values": {
+              "on": "mute_on",
+              "off": "mute_off"
+            },
+            "active": true
+          },
+          {
+            "name": "backButton",
+            "type": "button",
+            "image": "back",
+            "location": [ 337, 435 ],
+            "variable": "cyberbullying_showPrevious"
+          },
+          {
+            "name": "forwardButton",
+            "type": "button",
+            "image": "next",
+            "location": [ 512, 436 ],
+            "variable": "cyberbullying_showNext"
+          },
+          {
+            "name": "replay",
+            "type": "button",
+            "image": "replay",
+            "location": [ 466, 435 ],
+            "variable": "cyberbullying_replay"
+          },
+          {
+            "name": "bottomPanel",
+            "type": "blocker",
+            "location": [ 0, 480 ],
+            "size": [ 640, 200 ],
+            "blockerTint" : "0xFFFFFF",
+            "blockerAlpha" : 1.0
+          }
+        ],
+        "outcomes": {
+          "sound_0_b_finished_shimmer_next": {
+            "events": { "sound_6": "played" },
+            "actions": [
+              { "type": "remove-actor", "args": ["forwardButton"] },
+              { "type": "add-actor", "args": [
+                {
+                  "name": "forwardButtonShimmer",
+                  "type": "button",
+                  "image": "next",
+                  "animated": true,
+                  "animationRepeat": 4000,
+                  "animationFrameRate": 30,
+                  "location": [ 512, 436 ],
+                  "variable": "cyberbullying_showNext"
+                }
+              ] }
+            ]
+          },
+          "replay_button": {
+            "events": { "cyberbullying_replay": "*" },
+            "actions": [
+              { "type": "scene", "args": [ "empty_replay_scene" ] },
+              { "type": "scene", "args": [ "cyberbullying" ] }
+            ]
+          },
+          "back_button": {
+            "events": { "cyberbullying_showPrevious": "*" },
+            "actions": [ { "type": "scene", "args": [ "what_does_bullying_look_like" ] } ]
+          },
+          "forward_button": {
+            "events": { "cyberbullying_showNext": "*" },
+            "actions": [ { "type": "scene", "args": [ "who_is_involved_1" ] } ]
+          }
+        }
+      },
+      "who_is_involved_1": {
+        "id": "who_is_involved_1",
+        "background": "actNowBackground",
+        "title": "Who is involved 1",
+        "actors": [
+          {
+            "name": "involved_1_Header",
+            "type": "text",
+            "font": "wib_header",
+            "location": [ 19, 7 ],
+            "text": "Who is involved?"
+          },
+          {
+            "name": "felicia",
+            "type": "decoration",
+            "image": "felicia",
+            "key": "decorations",
+            "location": [ 30, 175 ]
+          },
+          {
+            "name": "Symbol2",
+            "type": "decoration",
+            "image": "Symbol2",
+            "key": "decorations",
+            "location": [ 135, 171 ]
+          },
+          {
+            "name": "Symbol1",
+            "type": "decoration",
+            "image": "Symbol1",
+            "key": "decorations",
+            "location": [ 267, 170 ]
+          },
+          {
+            "name": "slide_8_text_1",
+            "type": "text",
+            "startDelay": 6100,
+            "bullet": true,
+            "font": "wib_text_medium_smaller",
+            "location": [ 400,  170 ],
+            "text": "Bully"
+          },
+          {
+            "name": "slide_8_text_2",
+            "type": "text",
+            "startDelay": 11100,
+            "bullet": true,
+            "font": "wib_text_medium_smaller",
+            "location": [ 400,  225 ],
+            "text": "Victim"
+          },
+          {
+            "name": "slide_8_text_3",
+            "type": "text",
+            "startDelay": 19100,
+            "bullet": true,
+            "font": "wib_text_medium_smaller",
+            "location": [ 400,  280 ],
+            "text": "Bystander"
+          },
+          {
+            "name": "sound_7",
+            "type": "audio",
+            "audio": ["slide_7"],
+            "variable": "sound_7"
+          },
+          {
+            "name": "mutebutton",
+            "type": "toggle-button",
+            "images": {
+              "on": "muteOff",
+              "off": "muteOn"
+            },
+            "location": [ 9, 435 ],
+            "scale": [ 1.0, 1.0 ],
+            "variable": "mute_game",
+            "values": {
+              "on": "mute_on",
+              "off": "mute_off"
+            },
+            "active": true
+          },
+          {
+            "name": "backButton",
+            "type": "button",
+            "image": "back",
+            "location": [ 337, 435 ],
+            "variable": "involved_1_showPrevious"
+          },
+          {
+            "name": "forwardButton",
+            "type": "button",
+            "image": "next",
+            "location": [ 512, 436 ],
+            "variable": "involved_1_showNext"
+          },
+          {
+            "name": "replay",
+            "type": "button",
+            "image": "replay",
+            "location": [ 466, 435 ],
+            "variable": "involved_1_replay"
+          },
+          {
+            "name": "bottomPanel",
+            "type": "blocker",
+            "location": [ 0, 480 ],
+            "size": [ 640, 200 ],
+            "blockerTint" : "0xFFFFFF",
+            "blockerAlpha" : 1.0
+          }
+        ],
+        "outcomes": {
+          "sound_7_finished_shimmer_next": {
+            "events": { "sound_7": "played" },
+            "actions": [
+              { "type": "remove-actor", "args": ["forwardButton"] },
+              { "type": "add-actor", "args": [
+                {
+                  "name": "forwardButtonShimmer",
+                  "type": "button",
+                  "image": "next",
+                  "animated": true,
+                  "animationRepeat": 4000,
+                  "animationFrameRate": 30,
+                  "location": [ 512, 436 ],
+                  "variable": "involved_1_showNext"
+                }
+              ] }
+            ]
+          },
+          "replay_button": {
+            "events": { "involved_1_replay": "*" },
+            "actions": [
+              { "type": "scene", "args": [ "empty_replay_scene" ] },
+              { "type": "scene", "args": [ "who_is_involved_1" ] }
+            ]
+          },
+          "back_button": {
+            "events": { "involved_1_showPrevious": "*" },
+            "actions": [ { "type": "scene", "args": [ "cyberbullying" ] } ]
+          },
+          "forward_button": {
+            "events": { "involved_1_showNext": "*" },
+            "actions": [ { "type": "scene", "args": [ "who_is_involved_2" ] } ]
+          }
+        }
+      },
+      "who_is_involved_2": {
+        "id": "who_is_involved_2",
+        "background": "actNowBackground",
+        "title": "Who is involved 2",
+        "actors": [
+          {
+            "name": "involved_2_Header",
+            "type": "text",
+            "font": "wib_header",
+            "location": [ 19, 7 ],
+            "text": "Who is involved?"
+          },
+          {
+            "name": "involved_2_text_1",
+            "type": "text",
+            "font": "wib_text_normal",
+            "location": [ 33, 129 ],
+            "wordWrapWidth": 235,
+            "text": "Let's see if you can identify who is involved in this bullying situation?"
+          },
+          {
+            "name": "image_bg_1",
+            "type": "decoration",
+            "image": "videoFramePurple",
+            "key": "decorations",
+            "location": [ 274, 116 ],
+            "scale": [ 1.0, 1.0 ]
+          },
+          {
+            "name": "video_who_is_involed_1",
+            "type": "wistia",
+            "location": [ 281, 122 ],
+            "hideCloseButton": true,
+            "size": [ 320, 240 ],
+            "video": "gjx2ij9fxt",
+            "blockerAlpha" : 0.0,
+            "blockInput": false,
+            "variable": "video_wii_1"
+          },
+          {
+            "name": "slide_9_intro",
+            "type": "audio",
+            "audio": ["slide_9_intro"],
+            "variable": "slide_9_intro"
+          },
+          {
+            "name": "mutebutton",
+            "type": "toggle-button",
+            "images": {
+              "on": "muteOff",
+              "off": "muteOn"
+            },
+            "location": [ 9, 435 ],
+            "scale": [ 1.0, 1.0 ],
+            "variable": "mute_game",
+            "values": {
+              "on": "mute_on",
+              "off": "mute_off"
+            },
+            "active": true
+          },
+          {
+            "name": "backButton",
+            "type": "button",
+            "image": "back",
+            "location": [ 337, 435 ],
+            "variable": "involved_2_showPrevious"
+          },
+          {
+            "name": "forwardButton",
+            "type": "button",
+            "image": "next",
+            "location": [ 512, 436 ],
+            "variable": "involved_2_showNext"
+          },
+          {
+            "name": "replay",
+            "type": "button",
+            "image": "replay",
+            "location": [ 466, 435 ],
+            "variable": "involved_2_replay"
+          },
+          {
+            "name": "bottomPanel",
+            "type": "blocker",
+            "location": [ 0, 480 ],
+            "size": [ 640, 200 ],
+            "blockerTint" : "0xFFFFFF",
+            "blockerAlpha" : 1.0
+          }
+        ],
+        "outcomes": {
+          "video_played": {
+            "events": { "video_wii_1": "finished" },
+            "actions": [
+              { "type": "remove-actor", "args": ["involved_2_text_1"] },
+              { "type": "remove-actor", "args": ["video_who_is_involed_1"] },
+              { "type": "add-actor", "args": [
+                {
+                  "name": "wii_still_1",
+                  "type": "decoration",
+                  "image": "slide8Still",
+                  "location": [ 281, 122 ]
+                }
+              ] },
+              { "type": "add-actor", "args": [
+                {
+                  "name": "wii_1_bully",
+                  "type": "drag",
+                  "images": { "normal": "bullyLabel",
+                    "dragging": "bullyLabel",
+                    "overlap": "bullyLabel"},
+                  "location": [ 80, 195 ],
+                  "variable": "drag_1"
+                }
+              ] },
+              { "type": "add-actor", "args": [
+                {
+                  "name": "wii_1_victim",
+                  "type": "drag",
+                  "images": { "normal": "victimLabel",
+                    "dragging": "victimLabel",
+                    "overlap": "victimLabel"},
+                  "location": [ 80, 240 ],
+                  "variable": "drag_2"
+                }
+              ] },
+              { "type": "add-actor", "args": [
+                {
+                  "name": "wii_1_bystander",
+                  "type": "drag",
+                  "images": { "normal": "bystanderLabel",
+                    "dragging": "bystanderLabel",
+                    "overlap": "bystanderLabel"},
+                  "location": [ 80, 285 ],
+                  "variable": "drag_2"
+                }
+              ] },
+              { "type": "add-actor", "args": [
+                {
+                  "name": "wii_1_bystander_answer",
+                  "type": "drop",
+                  "images": {
+                    "overlap": "bystanderDrop8l"
+                  },
+                  "location": [ 292, 164 ],
+                  "variable": "drop_bystander"
+                }
+              ] },
+              { "type": "add-actor", "args": [
+                {
+                  "name": "wii_1_bystander_answer",
+                  "type": "drop",
+                  "images": {
+                    "overlap": "bystanderDrop8r"},
+                  "location": [ 537, 165 ],
+                  "variable": "drop_bystander"
+                }
+              ] },
+              { "type": "add-actor", "args": [
+                {
+                  "name": "wii_1_bully_answer",
+                  "type": "drop",
+                  "images": {
+                    "overlap": "bullyDrop8"},
+                  "location": [ 485, 170 ],
+                  "variable": "drop_bully"
+                }
+              ] },
+              { "type": "add-actor", "args": [
+                {
+                  "name": "wii_1_victim_answer",
+                  "type": "drop",
+                  "images": {
+                    "overlap": "victimDrop8"},
+                  "location": [ 484, 308 ],
+                  "variable": "drop_victim"
+                }
+              ] },
+              { "type": "add-actor", "args": [
+                {
+                  "name": "involved_2_text_isntr",
+                  "type": "text",
+                  "font": "wib_text_small",
+                  "location": [ 33, 107 ],
+                  "wordWrapWidth": 235,
+                  "text": "Drag and drop each label on the character it best describes."
+                }
+              ] },
+              { "type": "add-actor", "args": [
+                {
+                  "name": "slide_8_instruction",
+                  "type": "audio",
+                  "audio": ["slide_8_instruction"],
+                  "variable": "slide_8_instruction"
+                }
+              ] }
+            ]
+          },
+          "bully_answer_correct": {
+            "events": { "drop_bully" : "wii_1_bully" },
+            "actions": [
+              { "type": "remove-actor", "args": ["wii_1_bully"] },
+              { "type": "remove-actor", "args": ["slide_8_incorrect"] },
+              { "type": "remove-actor", "args": ["slide_8_correct"] },
+              { "type": "remove-actor", "args": ["involved_2_text_2"] },
+              { "type": "add-actor", "args": [
+                {
+                  "name": "slide_8_correct",
+                  "type": "audio",
+                  "audio": ["slide_8_correct"],
+                  "variable": "slide_8_correct"
+                }
+              ] },
+              { "type": "add-actor", "args": [
+                {
+                  "name": "involved_2_text_2",
+                  "type": "text",
+                  "font": "wib_text_small",
+                  "location": [ 33, 355 ],
+                  "wordWrapWidth": 235,
+                  "text": "Correct!"
+                }
+              ] },
+              { "type": "add-actor", "args": [
+                {
+                  "name": "bully_correct_8_1",
+                  "type": "decoration",
+                  "image": "bullyDrop8",
+                  "location": [ 485, 170 ]
+                }
+              ] },
+              { "type": "add-actor", "args": [
+                {
+                  "name": "bully_correct_8_1",
+                  "type": "decoration",
+                  "image": "bullyDrop8_label",
+                  "location": [ 465, 150 ]
+                }
+              ] }
+            ]
+          },
+          "victim_answer_correct": {
+            "events": { "drop_victim" : "wii_1_victim" },
+            "actions": [
+              { "type": "remove-actor", "args": ["wii_1_victim"] },
+              { "type": "remove-actor", "args": ["slide_8_incorrect"] },
+              { "type": "remove-actor", "args": ["slide_8_correct"] },
+              { "type": "remove-actor", "args": ["involved_2_text_2"] },
+              { "type": "add-actor", "args": [
+                {
+                  "name": "slide_8_correct",
+                  "type": "audio",
+                  "audio": ["slide_8_correct"],
+                  "variable": "slide_8_correct"
+                }
+              ] },
+              { "type": "add-actor", "args": [
+                {
+                  "name": "involved_2_text_2",
+                  "type": "text",
+                  "font": "wib_text_small",
+                  "location": [ 33, 355 ],
+                  "wordWrapWidth": 235,
+                  "text": "Correct!"
+                }
+              ] },
+              { "type": "add-actor", "args": [
+                {
+                  "name": "bully_correct_8_1",
+                  "type": "decoration",
+                  "image": "victimDrop8",
+                  "location": [ 484, 308 ]
+                }
+              ] },
+              { "type": "add-actor", "args": [
+                {
+                  "name": "bully_correct_8_1",
+                  "type": "decoration",
+                  "image": "victimDrop8_label",
+                  "location": [ 465, 288 ]
+                }
+              ] }
+            ]
+          },
+          "bystander_answer_correct": {
+            "events": { "drop_bystander" : "wii_1_bystander" },
+            "actions": [
+              { "type": "remove-actor", "args": ["wii_1_bystander"] },
+              { "type": "remove-actor", "args": ["slide_8_incorrect"] },
+              { "type": "remove-actor", "args": ["slide_8_correct"] },
+              { "type": "remove-actor", "args": ["involved_2_text_2"] },
+              { "type": "add-actor", "args": [
+                {
+                  "name": "slide_8_correct",
+                  "type": "audio",
+                  "audio": ["slide_8_correct"],
+                  "variable": "slide_8_correct"
+                }
+              ] },
+              { "type": "add-actor", "args": [
+                {
+                  "name": "involved_2_text_2",
+                  "type": "text",
+                  "font": "wib_text_small",
+                  "location": [ 33, 355 ],
+                  "wordWrapWidth": 235,
+                  "text": "Correct!"
+                }
+              ] },
+              { "type": "add-actor", "args": [
+                {
+                  "name": "bystander_correct_8_1",
+                  "type": "decoration",
+                  "image": "bystanderDrop8l",
+                  "location": [ 292, 164 ]
+                }
+              ] },
+              { "type": "add-actor", "args": [
+                {
+                  "name": "bystander_correct_8_2",
+                  "type": "decoration",
+                  "image": "bystanderDrop8r",
+                  "location": [ 537, 165 ]
+                }
+              ] },
+              { "type": "add-actor", "args": [
+                {
+                  "name": "bystander_label_8_1",
+                  "type": "decoration",
+                  "image": "bystanderDrop8l_label",
+                  "location": [ 324, 122 ]
+                }
+              ] }
+            ]
+          },
+          "bully_answer_incorrect": {
+            "events": { "drop_bully" : ["wii_1_bystander", "wii_1_victim"] },
+            "actions": [
+              { "type": "remove-actor", "args": ["slide_8_incorrect"] },
+              { "type": "remove-actor", "args": ["slide_8_correct"] },
+              { "type": "remove-actor", "args": ["involved_2_text_2"] },
+              { "type": "variable", "args": [ "drop_bully", null] },
+              { "type": "add-actor", "args": [
+                {
+                  "name": "slide_8_incorrect",
+                  "type": "audio",
+                  "audio": ["slide_8_incorrect"],
+                  "variable": "slide_8_incorrect"
+                }
+              ] },
+              { "type": "add-actor", "args": [
+                {
+                  "name": "involved_2_text_2",
+                  "type": "text",
+                  "font": "wib_text_small",
+                  "location": [ 33, 355 ],
+                  "wordWrapWidth": 235,
+                  "text": "That's incorrect!"
+                }
+              ] }
+            ]
+          },
+          "victim_answer_incorrect": {
+            "events": { "drop_victim" : ["wii_1_bystander", "wii_1_bully"] },
+            "actions": [
+              { "type": "remove-actor", "args": ["slide_8_incorrect"] },
+              { "type": "remove-actor", "args": ["slide_8_correct"] },
+              { "type": "remove-actor", "args": ["involved_2_text_2"] },
+              { "type": "variable", "args": [ "drop_victim", null] },
+              { "type": "add-actor", "args": [
+                {
+                  "name": "slide_8_incorrect",
+                  "type": "audio",
+                  "audio": ["slide_8_incorrect"],
+                  "variable": "slide_8_incorrect"
+                }
+              ] },
+              { "type": "add-actor", "args": [
+                {
+                  "name": "involved_2_text_2",
+                  "type": "text",
+                  "font": "wib_text_small",
+                  "location": [ 33, 355 ],
+                  "wordWrapWidth": 235,
+                  "text": "That's incorrect!"
+                }
+              ] }
+            ]
+          },
+          "bystander_answer_incorrect": {
+            "events": { "drop_bystander" : ["wii_1_bully", "wii_1_victim"] },
+            "actions": [
+              { "type": "remove-actor", "args": ["slide_8_incorrect"] },
+              { "type": "remove-actor", "args": ["slide_8_correct"] },
+              { "type": "remove-actor", "args": ["involved_2_text_2"] },
+              { "type": "variable", "args": [ "drop_bystander", null] },
+              { "type": "add-actor", "args": [
+                {
+                  "name": "slide_8_incorrect",
+                  "type": "audio",
+                  "audio": ["slide_8_incorrect"],
+                  "variable": "slide_8_incorrect"
+                }
+              ] },
+              { "type": "add-actor", "args": [
+                {
+                  "name": "involved_2_text_2",
+                  "type": "text",
+                  "font": "wib_text_small",
+                  "location": [ 33, 355 ],
+                  "wordWrapWidth": 235,
+                  "text": "That's incorrect!"
+                }
+              ] }
+            ]
+          },
+          "slide_9_intro_finished_shimmer_next": {
+            "events": { "drop_bystander": "wii_1_bystander", "drop_victim": "wii_1_victim", "drop_bully": "wii_1_bully" },
+            "actions": [
+              { "type": "remove-actor", "args": ["forwardButton"] },
+              { "type": "add-actor", "args": [
+                {
+                  "name": "forwardButtonShimmer",
+                  "type": "button",
+                  "image": "next",
+                  "animated": true,
+                  "animationRepeat": 4000,
+                  "animationFrameRate": 30,
+                  "location": [ 512, 436 ],
+                  "variable": "involved_2_showNext"
+                }
+              ] }
+            ]
+          },
+          "replay_button": {
+            "events": { "involved_2_replay": "*" },
+            "actions": [
+              { "type": "scene", "args": [ "empty_replay_scene" ] },
+              { "type": "scene", "args": [ "who_is_involved_2" ] }
+            ]
+          },
+          "back_button": {
+            "events": { "involved_2_showPrevious": "*" },
+            "actions": [ { "type": "scene", "args": [ "who_is_involved_1" ] } ]
+          },
+          "forward_button": {
+            "events": { "involved_2_showNext": "*" },
+            "actions": [ { "type": "scene", "args": [ "who_is_involved_3" ] } ]
+          }
+        }
+      },
+      "who_is_involved_3": {
+        "id": "who_is_involved_3",
+        "background": "actNowBackground",
+        "title": "Who is involved 3",
+        "actors": [
+          {
+            "name": "involved_3_Header",
+            "type": "text",
+            "font": "wib_header",
+            "location": [ 19, 7 ],
+            "text": "Who is involved?"
+          },
+          {
+            "name": "involved_3_text_1",
+            "type": "text",
+            "font": "wib_text_normal",
+            "location": [ 33, 129 ],
+            "wordWrapWidth": 235,
+            "text": "Let's see if you can identify who is involved in this bullying situation?"
+          },
+          {
+            "name": "image_bg_1",
+            "type": "decoration",
+            "image": "videoFramePurple",
+            "key": "decorations",
+            "location": [ 274, 116 ],
+            "scale": [ 1.0, 1.0 ]
+          },
+          {
+            "name": "video_who_is_involed_2",
+            "type": "wistia",
+            "location": [ 281, 122 ],
+            "hideCloseButton": true,
+            "size": [ 320, 240 ],
+            "video": "mkzmzspw0i",
+            "blockerAlpha" : 0.0,
+            "blockInput": false,
+            "variable": "video_wii_2"
+          },
+          {
+            "name": "slide_9_intro",
+            "type": "audio",
+            "audio": ["slide_9_intro"],
+            "variable": "slide_9_intro"
+          },
+          {
+            "name": "mutebutton",
+            "type": "toggle-button",
+            "images": {
+              "on": "muteOff",
+              "off": "muteOn"
+            },
+            "location": [ 9, 435 ],
+            "scale": [ 1.0, 1.0 ],
+            "variable": "mute_game",
+            "values": {
+              "on": "mute_on",
+              "off": "mute_off"
+            },
+            "active": true
+          },
+          {
+            "name": "backButton",
+            "type": "button",
+            "image": "back",
+            "location": [ 337, 435 ],
+            "variable": "involved_3_showPrevious"
+          },
+          {
+            "name": "forwardButton",
+            "type": "button",
+            "image": "next",
+            "location": [ 512, 436 ],
+            "variable": "involved_3_showNext"
+          },
+          {
+            "name": "replay",
+            "type": "button",
+            "image": "replay",
+            "location": [ 466, 435 ],
+            "variable": "involved_3_replay"
+          },
+          {
+            "name": "bottomPanel",
+            "type": "blocker",
+            "location": [ 0, 480 ],
+            "size": [ 640, 200 ],
+            "blockerTint" : "0xFFFFFF",
+            "blockerAlpha" : 1.0
+          }
+        ],
+        "outcomes": {
+          "video_played": {
+            "events": { "video_wii_2": "finished" },
+            "actions": [
+              { "type": "remove-actor", "args": ["involved_3_text_1"] },
+              { "type": "remove-actor", "args": ["video_who_is_involed_2"] },
+              { "type": "add-actor", "args": [
+                {
+                  "name": "wii_still_2",
+                  "type": "decoration",
+                  "image": "slide9Still",
+                  "location": [ 281, 122 ]
+                }
+              ] },
+              { "type": "add-actor", "args": [
+                {
+                  "name": "wii_2_bully",
+                  "type": "drag",
+                  "images": { "normal": "bullyLabel",
+                    "dragging": "bullyLabel",
+                    "overlap": "bullyLabel"},
+                  "location": [ 80, 195 ],
+                  "variable": "drag_1"
+                }
+              ] },
+              { "type": "add-actor", "args": [
+                {
+                  "name": "wii_2_victim",
+                  "type": "drag",
+                  "images": { "normal": "victimLabel",
+                    "dragging": "victimLabel",
+                    "overlap": "victimLabel"},
+                  "location": [ 80, 240 ],
+                  "variable": "drag_2"
+                }
+              ] },
+              { "type": "add-actor", "args": [
+                {
+                  "name": "wii_2_bystander",
+                  "type": "drag",
+                  "images": { "normal": "bystanderLabel",
+                    "dragging": "bystanderLabel",
+                    "overlap": "bystanderLabel"},
+                  "location": [ 80, 285 ],
+                  "variable": "drag_2"
+                }
+              ] },
+              { "type": "add-actor", "args": [
+                {
+                  "name": "wii_2_bystander_answer",
+                  "type": "drop",
+                  "images": {
+                    "overlap": "bystanderDrop9"
+                  },
+                  "location": [ 508, 227 ],
+                  "variable": "drop_bystander"
+                }
+              ] },
+              { "type": "add-actor", "args": [
+                {
+                  "name": "wii_2_bully_answer",
+                  "type": "drop",
+                  "images": {
+                    "overlap": "bullyDrop9"},
+                  "location": [ 277, 132 ],
+                  "variable": "drop_bully"
+                }
+              ] },
+              { "type": "add-actor", "args": [
+                {
+                  "name": "wii_2_victim_answer",
+                  "type": "drop",
+                  "images": {
+                    "overlap": "victimDrop9"},
+                  "location": [ 393, 209 ],
+                  "variable": "drop_victim"
+                }
+              ] },
+              { "type": "add-actor", "args": [
+                {
+                  "name": "involved_3_text_isntr",
+                  "type": "text",
+                  "font": "wib_text_small",
+                  "location": [ 33, 107 ],
+                  "wordWrapWidth": 235,
+                  "text": "Drag and drop each label on the character it best describes."
+                }
+              ] },
+              { "type": "add-actor", "args": [
+                {
+                  "name": "slide_8_instruction",
+                  "type": "audio",
+                  "audio": ["slide_8_instruction"],
+                  "variable": "slide_8_instruction"
+                }
+              ] }
+            ]
+          },
+          "bully_answer_correct": {
+            "events": { "drop_bully" : "wii_2_bully" },
+            "actions": [
+              { "type": "remove-actor", "args": ["wii_2_bully"] },
+              { "type": "remove-actor", "args": ["slide_8_incorrect"] },
+              { "type": "remove-actor", "args": ["slide_8_correct"] },
+              { "type": "remove-actor", "args": ["involved_3_text_2"] },
+              { "type": "add-actor", "args": [
+                {
+                  "name": "slide_8_correct",
+                  "type": "audio",
+                  "audio": ["slide_8_correct"],
+                  "variable": "slide_8_correct"
+                }
+              ] },
+              { "type": "add-actor", "args": [
+                {
+                  "name": "involved_3_text_2",
+                  "type": "text",
+                  "font": "wib_text_small",
+                  "location": [ 33, 355 ],
+                  "wordWrapWidth": 235,
+                  "text": "Correct!"
+                }
+              ] },
+              { "type": "add-actor", "args": [
+                {
+                  "name": "bully_correct_8_1",
+                  "type": "decoration",
+                  "image": "bullyDrop9",
+                  "location": [ 277, 132 ]
+                }
+              ] },
+              { "type": "add-actor", "args": [
+                {
+                  "name": "bully_correct_8_1",
+                  "type": "decoration",
+                  "image": "bullyDrop9_label",
+                  "location": [ 412, 137 ]
+                }
+              ] }
+            ]
+          },
+          "victim_answer_correct": {
+            "events": { "drop_victim" : "wii_2_victim" },
+            "actions": [
+              { "type": "remove-actor", "args": ["wii_2_victim"] },
+              { "type": "remove-actor", "args": ["slide_8_incorrect"] },
+              { "type": "remove-actor", "args": ["slide_8_correct"] },
+              { "type": "remove-actor", "args": ["involved_3_text_2"] },
+              { "type": "add-actor", "args": [
+                {
+                  "name": "slide_8_correct",
+                  "type": "audio",
+                  "audio": ["slide_8_correct"],
+                  "variable": "slide_8_correct"
+                }
+              ] },
+              { "type": "add-actor", "args": [
+                {
+                  "name": "involved_3_text_2",
+                  "type": "text",
+                  "font": "wib_text_small",
+                  "location": [ 33, 355 ],
+                  "wordWrapWidth": 235,
+                  "text": "Correct!"
+                }
+              ] },
+              { "type": "add-actor", "args": [
+                {
+                  "name": "bully_correct_8_1",
+                  "type": "decoration",
+                  "image": "victimDrop9",
+                  "location": [ 393, 209 ]
+                }
+              ] },
+              { "type": "add-actor", "args": [
+                {
+                  "name": "bully_correct_8_1",
+                  "type": "decoration",
+                  "image": "victimDrop9_label",
+                  "location": [ 440, 340 ]
+                }
+              ] }
+            ]
+          },
+          "bystander_answer_correct": {
+            "events": { "drop_bystander" : "wii_2_bystander" },
+            "actions": [
+              { "type": "remove-actor", "args": ["wii_2_bystander"] },
+              { "type": "remove-actor", "args": ["slide_8_incorrect"] },
+              { "type": "remove-actor", "args": ["slide_8_correct"] },
+              { "type": "remove-actor", "args": ["involved_3_text_2"] },
+              { "type": "add-actor", "args": [
+                {
+                  "name": "slide_8_correct",
+                  "type": "audio",
+                  "audio": ["slide_8_correct"],
+                  "variable": "slide_8_correct"
+                }
+              ] },
+              { "type": "add-actor", "args": [
+                {
+                  "name": "involved_3_text_2",
+                  "type": "text",
+                  "font": "wib_text_small",
+                  "location": [ 33, 355 ],
+                  "wordWrapWidth": 235,
+                  "text": "Correct!"
+                }
+              ] },
+              { "type": "add-actor", "args": [
+                {
+                  "name": "bystander_correct_8_1",
+                  "type": "decoration",
+                  "image": "bystanderDrop9",
+                  "location": [ 508, 227 ]
+                }
+              ] },
+              { "type": "add-actor", "args": [
+                {
+                  "name": "bystander_label_8_1",
+                  "type": "decoration",
+                  "image": "bystanderDrop9_label",
+                  "location": [ 552, 201 ]
+                }
+              ] }
+            ]
+          },
+          "bully_answer_incorrect": {
+            "events": { "drop_bully" : ["wii_2_bystander", "wii_2_victim"] },
+            "actions": [
+              { "type": "remove-actor", "args": ["slide_8_incorrect"] },
+              { "type": "remove-actor", "args": ["slide_8_correct"] },
+              { "type": "remove-actor", "args": ["involved_3_text_2"] },
+              { "type": "variable", "args": [ "drop_bully", null] },
+              { "type": "add-actor", "args": [
+                {
+                  "name": "slide_8_incorrect",
+                  "type": "audio",
+                  "audio": ["slide_8_incorrect"],
+                  "variable": "slide_8_incorrect"
+                }
+              ] },
+              { "type": "add-actor", "args": [
+                {
+                  "name": "involved_3_text_2",
+                  "type": "text",
+                  "font": "wib_text_small",
+                  "location": [ 33, 355 ],
+                  "wordWrapWidth": 235,
+                  "text": "That's incorrect!"
+                }
+              ] }
+            ]
+          },
+          "victim_answer_incorrect": {
+            "events": { "drop_victim" : ["wii_2_bystander", "wii_2_bully"] },
+            "actions": [
+              { "type": "remove-actor", "args": ["slide_8_incorrect"] },
+              { "type": "remove-actor", "args": ["slide_8_correct"] },
+              { "type": "remove-actor", "args": ["involved_3_text_2"] },
+              { "type": "variable", "args": [ "drop_victim", null] },
+              { "type": "add-actor", "args": [
+                {
+                  "name": "slide_8_incorrect",
+                  "type": "audio",
+                  "audio": ["slide_8_incorrect"],
+                  "variable": "slide_8_incorrect"
+                }
+              ] },
+              { "type": "add-actor", "args": [
+                {
+                  "name": "involved_3_text_2",
+                  "type": "text",
+                  "font": "wib_text_small",
+                  "location": [ 33, 355 ],
+                  "wordWrapWidth": 235,
+                  "text": "That's incorrect!"
+                }
+              ] }
+            ]
+          },
+          "bystander_answer_incorrect": {
+            "events": { "drop_bystander" : ["wii_2_bully", "wii_2_victim"] },
+            "actions": [
+              { "type": "remove-actor", "args": ["slide_8_incorrect"] },
+              { "type": "remove-actor", "args": ["slide_8_correct"] },
+              { "type": "remove-actor", "args": ["involved_3_text_2"] },
+              { "type": "variable", "args": [ "drop_bystander", null] },
+              { "type": "add-actor", "args": [
+                {
+                  "name": "slide_8_incorrect",
+                  "type": "audio",
+                  "audio": ["slide_8_incorrect"],
+                  "variable": "slide_8_incorrect"
+                }
+              ] },
+              { "type": "add-actor", "args": [
+                {
+                  "name": "involved_3_text_2",
+                  "type": "text",
+                  "font": "wib_text_small",
+                  "location": [ 33, 355 ],
+                  "wordWrapWidth": 235,
+                  "text": "That's incorrect!"
+                }
+              ] }
+            ]
+          },
+          "slide_9_intro_finished_shimmer_next": {
+            "events": { "drop_bystander": "wii_2_bystander", "drop_victim": "wii_2_victim", "drop_bully": "wii_2_bully" },
+            "actions": [
+              { "type": "remove-actor", "args": ["forwardButton"] },
+              { "type": "add-actor", "args": [
+                {
+                  "name": "forwardButtonShimmer",
+                  "type": "button",
+                  "image": "next",
+                  "animated": true,
+                  "animationRepeat": 4000,
+                  "animationFrameRate": 30,
+                  "location": [ 512, 436 ],
+                  "variable": "involved_3_showNext"
+                }
+              ] }
+            ]
+          },
+          "replay_button": {
+            "events": { "involved_3_replay": "*" },
+            "actions": [
+              { "type": "scene", "args": [ "empty_replay_scene" ] },
+              { "type": "scene", "args": [ "who_is_involved_3" ] }
+            ]
+          },
+          "back_button": {
+            "events": { "involved_3_showPrevious": "*" },
+            "actions": [ { "type": "scene", "args": [ "who_is_involved_2" ] } ]
+          },
+          "forward_button": {
+            "events": { "involved_3_showNext": "*" },
+            "actions": [ { "type": "scene", "args": [ "move_on" ] } ]
+          }
+        }
+      },
+      "move_on": {
+        "id": "move_on",
+        "background": "actNowBackground",
+        "title": "Move on",
+        "actors": [
+          {
+            "name": "move_on_header",
+            "type": "text",
+            "font": "wib_header",
+            "location": [ 19, 7 ],
+            "text": "What is bullying?"
+          },
+          {
+            "name": "sound_12",
+            "type": "audio",
+            "audio": ["slide_12"],
+            "variable": "sound_12"
+          },
+          {
+            "name": "rachel",
+            "type": "decoration",
+            "image": "rachel",
+            "key": "decorations",
+            "location": [ 30, 130 ],
+            "scale": [ 1.0, 1.0 ]
+          },
+          {
+            "name": "Good job!",
+            "type": "text",
+            "font": "wib_text_extra_large_bold",
+            "location": [ 320, 160 ],
+            "text": "Good job!"
+          },
+          {
+            "name": "Return to the menu",
+            "type": "text",
+            "font": "wib_text_medium_smaller",
+            "location": [ 320, 235 ],
+            "wordWrapWidth": 300,
+            "text": "You have completed this lesson."
+          },
+          {
+            "name": "mutebutton",
+            "type": "toggle-button",
+            "images": {
+              "on": "muteOff",
+              "off": "muteOn"
+            },
+            "location": [ 9, 435 ],
+            "scale": [ 1.0, 1.0 ],
+            "variable": "mute_game",
+            "values": {
+              "on": "mute_on",
+              "off": "mute_off"
+            },
+            "active": true
+          },
+          {
+            "name": "backButton",
+            "type": "button",
+            "image": "back",
+            "location": [ 337, 435 ],
+            "variable": "move_on_showPrevious"
+          },
+          {
+            "name": "nextDisabled",
+            "type": "decoration",
+            "image": "nextDisabled",
+            "key": "decorations",
+            "location": [ 512, 436 ],
+            "scale": [ 1.0, 1.0 ]
+          },
+          {
+            "name": "replay",
+            "type": "button",
+            "image": "replay",
+            "location": [ 466, 435 ],
+            "variable": "move_on_replay"
+          },
+          {
+            "name": "bottomPanel",
+            "type": "blocker",
+            "location": [ 0, 480 ],
+            "size": [ 640, 200 ],
+            "blockerTint" : "0xFFFFFF",
+            "blockerAlpha" : 1.0
+          }
+        ],
+        "actions": [
+          { "type": "choice", "args": [ "objective_complete", 1] },
+          { "type": "choice", "args": [ "save", 0 ] }
+        ],
+        "outcomes": {
+          "replay_button": {
+            "events": { "move_on_replay": "*" },
+            "actions": [
+              { "type": "scene", "args": [ "empty_replay_scene" ] },
+              { "type": "scene", "args": [ "move_on" ] }
+            ]
+          },
+          "back_button": {
+            "events": { "move_on_showPrevious": "*" },
+            "actions": [ { "type": "scene", "args": [ "who_is_involved_3" ] } ]
+          }
+        }
+      },
+      "empty_replay_scene": {
+        "id": "empty_replay_scene",
+        "description": "since a scene change request to the current scene is ignored, first change to this empty scene"
+      }
+    }
+  }
+}

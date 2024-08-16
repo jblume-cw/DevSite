@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta property="og:title" content="Children's Hospital Apps Test Page">
+    <title>Test Page</title>
+  
+    <script src="engine/APIWrapper.js"></script>
+    <script src="engine/phaser.js"></script>
+    <script src="engine/scene-engine.min.js"></script>
+
+    <link rel="stylesheet" href="Nobile-Bold/stylesheet.css" type="text/css" charset="utf-8" />
+    <style type="text/css">
+        body{
+            font-family: 'nobileregular';
+        }
+    </style>
+
+    <link rel="stylesheet" href="Walter-Turncoat/stylesheet.css" type="text/css" charset="utf-8" />
+    <style type="text/css">
+        body{
+            font-family: 'walterturncoat';
+        }
+    </style>
+
+</head>
+<body>
+<div id="preloadFont" style="position: absolute; left: -1000em;">.</div>
+<div id="preloadFontNobileRegular" style="position: absolute; left: -1000em; font-family:nobileregular;">.</div>
+<div id="preloadFontWalterTurncoat" style="position: absolute; left: -1000em; font-family:walterturncoat;">.</div>
+<div id="game"></div>
+<script>document.write('<script src="//' + window.location.hostname + ':3018/livereload.js"><\/script>');</script>
+<script type="text/javascript">SceneEngine('game', 640, 510);</script>
+</body>
+</html>

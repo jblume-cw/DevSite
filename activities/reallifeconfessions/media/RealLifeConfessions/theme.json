@@ -1,0 +1,217 @@
+{
+
+  "developer_notes": [
+    "sounds.sound_6 duration data modified to cut off menu reference. Source audio unchanged. Original duration: 49.74666666666667."
+  ],
+
+  "texture": "media/RealLifeConfessions/texture.png",
+  "textureMap": "media/RealLifeConfessions/texture.json",
+  "textureKey": "rlc_5_texture",
+  "data": "media/RealLifeConfessions/sceneData.json",
+  "fonts": {
+    "realLifeConfessions_text_resume": { "font": "22px asapregular", "fill": "#575757",  "fontWeight": "bold",
+      "align": "center", "lineSpacing": -4, "wordWrap":true, "wordWrapWidth": 240 },
+    "realLifeConfessions_textCaps_extra_large_solid": { "font": "88px asapbold", "fill": "#9CDC03",
+      "fontWeight": "normal", "align": "left" },
+    "realLifeConfessions_textCaps_extra_large_transparent": { "font": "88px asapbold", "fill": "#9CDC03",
+      "fontWeight": "normal", "align": "left", "alpha": 0.3 },
+    "realLifeConfessions_text_extra_large_solid": { "font": "52px asapbold", "fill": "#9CDC03",
+      "fontWeight": "normal", "align": "left" },
+    "realLifeConfessions_text_extra_large_transparent": { "font": "52px asapbold", "fill": "#9CDC03",
+      "fontWeight": "normal", "align": "left", "alpha": 0.3 },
+    "realLifeConfessions_text_large": { "font": "60px asapbold", "fill": "#9CDC03",
+      "fontWeight": "bold", "align": "left" },
+    "realLifeConfessions_text_medium": { "font": "42px asapbold", "fill": "#9CDC03",
+      "fontWeight": "bold", "align": "left" },
+    "realLifeConfessions_text_medium_smaller": { "font": "28px asapbold", "fill": "#9CDC03",
+      "fontWeight": "normal", "align": "left" },
+    "realLifeConfessions_text_small_wrap_400": { "font": "22px asapbold", "fill": "#9CDC03",
+      "fontWeight": "normal", "align": "left", "wordWrap": true, "wordWrapWidth": 400, "lineSpacing": -5 },
+    "realLifeConfessions_text_small_wrap_250": { "font": "22px asapbold", "fill": "#9CDC03",
+      "fontWeight": "normal", "align": "left", "wordWrap": true, "wordWrapWidth": 250, "lineSpacing": -7 },
+    "realLifeConfessions_text_smaller_wrap_250": { "font": "21px asapbold", "fill": "#9CDC03",
+      "fontWeight": "normal", "align": "left", "wordWrap": true, "wordWrapWidth": 250, "lineSpacing": -7 },
+    "realLifeConfessions_text_smaller_wrap_260": { "font": "21px asapbold", "fill": "#9CDC03",
+      "fontWeight": "normal", "align": "left", "wordWrap": true, "wordWrapWidth": 260, "lineSpacing": -7 },
+    "realLifeConfessions_character_name": { "font": "32px walterturncoat", "fill": "#FFFFFF",
+      "fontWeight": "bold", "align": "left" },
+    "realLifeConfessions_checklist_header": { "font": "16px walterturncoat", "fill": "#333333",
+      "fontWeight": "bold", "align": "left" },
+    "realLifeConfessions_checklist_text": { "font": "12px asapregular", "fill": "#333333",
+      "fontWeight": "normal", "align": "left" },
+    "realLifeConfessions_move_on_header": { "font": "60px asapbold", "fill": "#9CDC03",
+      "fontWeight": "normal", "align": "left" },
+    "realLifeConfessions_move_on_text_wrap_250": { "font": "25px asapbold", "fill": "#9CDC03",
+      "fontWeight": "normal", "align": "left", "wordWrap": true, "wordWrapWidth": 250, "lineSpacing": -4 }
+  },
+  "unusedFonts" : {
+    "speech_bubble": { "font": "16px Helvetica", "fill": "black", "align": "center", "fontWeight": "bold" }
+  },
+  "images": {
+    "decorations": {
+      "backButtonDisabled": "back-disabled.png",
+      "checkboxChecked": "checkbox-checked.png",
+      "checkboxUnchecked": "checkbox-unchecked.png",
+      "checklistBackground": "checklist-background.png",
+      "chrisStill": "chris-still.png",
+      "downArrow": "down-arrow.png",
+      "emilyStill": "emily-still.png",
+      "jordanStill": "jordan-still.png",
+      "laketia": "laketia.png",
+      "mollieMai": "mollie-mai.png",
+      "nextDisabled": "next-disabled.png",
+      "ramon": "ramon.png",
+      "videoFrame": "video-frame.png"
+    }
+  },
+  "sceneImages": {
+    "actNowBackground": "background.png",
+    "resumeBackground": "resume-dialog-background.png"
+  },
+  "buttons": {
+    "back": {
+      "up": "back-up.png",
+      "over": "back-up.png",
+      "out": "back-up.png",
+      "down": "back-down.png"
+    },
+    "checkboxUnchecked": {
+      "up": "checkbox-unchecked.png",
+      "over": "checkbox-unchecked.png",
+      "out": "checkbox-unchecked.png",
+      "down": "checkbox-unchecked.png"
+    },
+    "checkboxChecked": {
+      "up": "checkbox-checked.png",
+      "over": "checkbox-checked.png",
+      "out": "checkbox-checked.png",
+      "down": "checkbox-checked.png"
+    },
+    "compare": {
+      "up": "compare-up.png",
+      "over": "compare-up.png",
+      "out": "compare-up.png",
+      "down": "compare-down.png"
+    },
+    "muteOff": {
+      "up": "sound-on-up.png",
+      "over": "sound-on-up.png",
+      "out": "sound-on-up.png",
+      "down": "sound-on-down.png"
+    },
+    "muteOn": {
+      "up": "sound-off-up.png",
+      "over": "sound-off-up.png",
+      "out": "sound-off-up.png",
+      "down": "sound-off-down.png"
+    },
+    "next": {
+      "up": "next-up.png",
+      "over": "next-up.png",
+      "out": "next-up.png",
+      "down": "next-down.png"
+    },
+    "replay": {
+      "up": "replay-up.png",
+      "over": "replay-up.png",
+      "out": "replay-up.png",
+      "down": "replay-down.png"
+    },
+    "restart": {
+      "up": "restart-up.png",
+      "over": "restart-over.png",
+      "out": "restart-up.png",
+      "down": "restart-down.png"
+    },
+    "resume": {
+      "up": "resume-up.png",
+      "over": "resume-over.png",
+      "out": "resume-up.png",
+      "down": "resume-down.png"
+    },
+    "schoolMenu": {
+      "up": "SchoolMenu0001.png",
+      "over": "SchoolMenu0002.png",
+      "out": "SchoolMenu0001.png",
+      "down": "SchoolMenu0003.png"
+    },
+    "videoClose": {
+      "up": "video-close.png",
+      "over": "video-close-over.png",
+      "out": "video-close.png",
+      "down": "video-close-down.png"
+    }
+  },
+  "buttonAnimations": {
+    "next": [
+      "next-highlight-0001.png",
+      "next-highlight-0002.png",
+      "next-highlight-0003.png",
+      "next-highlight-0004.png",
+      "next-highlight-0005.png",
+      "next-highlight-0006.png",
+      "next-highlight-0007.png",
+      "next-highlight-0008.png",
+      "next-highlight-0009.png",
+      "next-highlight-0010.png",
+      "next-highlight-0011.png",
+      "next-highlight-0012.png",
+      "next-highlight-0013.png",
+      "next-highlight-0014.png",
+      "next-highlight-0015.png"
+    ],
+    "schoolMenu": [
+      "school-menu-highlight-0001.png",
+      "school-menu-highlight-0002.png",
+      "school-menu-highlight-0003.png",
+      "school-menu-highlight-0004.png",
+      "school-menu-highlight-0005.png",
+      "school-menu-highlight-0006.png",
+      "school-menu-highlight-0007.png",
+      "school-menu-highlight-0008.png",
+      "school-menu-highlight-0009.png",
+      "school-menu-highlight-0010.png",
+      "school-menu-highlight-0011.png",
+      "school-menu-highlight-0012.png",
+      "school-menu-highlight-0013.png",
+      "school-menu-highlight-0014.png",
+      "school-menu-highlight-0015.png"
+    ]
+  },
+  "unused": {
+    "restart": {
+      "up": "restart-up.png",
+      "over": "restart-up.png",
+      "out": "restart-up.png",
+      "down": "restart-down.png"
+    },
+    "resumeDialogBackground": "resume-dialog-background.png",
+    "resume": {
+      "up": "resume-up.png",
+      "over": "resume-up.png",
+      "out": "resume-up.png",
+      "down": "resume-down.png"
+    }
+  },
+  "soundKey": "rlc_5_sounds",
+  "soundFile": [ "media/RealLifeConfessions/realLifeConfessions.m4a", "media/RealLifeConfessions/realLifeConfessions.ogg" ],
+  "sounds": {
+    "silence":          [   0,   3,                  false, "silence" ],
+    "chris":            [   4,  22.6881179138322,    false, "chris" ],
+    "chris_bio":        [  28,  11.969999999999999,  false, "chris_bio" ],
+    "chris_direction":  [  41,   4.480000000000004,  false, "chris_direction" ],
+    "emily":            [  47,  22.442063492063497,  false, "emily" ],
+    "emily_bio":        [  71,   9.454671201814051,  false, "emily_bio" ],
+    "emily_direction":  [  82,   4.7973469387755046, false, "emily_direction" ],
+    "jordan":           [  88,  26.91850340136054,   false, "jordan" ],
+    "jordan_bio":       [ 116,  16.426666666666677,  false, "jordan_bio" ],
+    "jordan_direction": [ 134,   4.5733333333333235, false, "jordan_direction" ],
+    "sound_0":          [ 140,  25.554671201814074,  false, "slide_0" ],
+    "sound_1_a":        [ 167,  11.3,                false, "slide_1" ],
+    "sound_1_b":        [ 178.3, 2.130680272108845,  false, "slide_1" ],
+    "sound_2":          [ 182,  12.712018140589578,  false, "slide_2" ],
+    "sound_3":          [ 196,  79.67868480725622,   false, "slide_3" ],
+    "sound_4":          [ 277,  15.614671201814076,  false, "slide_4" ],
+    "sound_6":          [ 294,  45,                  false, "slide_6" ]
+  }
+}

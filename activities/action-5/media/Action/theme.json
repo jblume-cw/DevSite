@@ -1,0 +1,185 @@
+{
+  "developer_notes": [
+    "sounds.sound_9 duration data modified to cut off menu mention. Source audio not changed. Original duration: 7.70931972789117"
+  ],
+
+  "texture": "media/Action/texture.png",
+  "textureMap": "media/Action/texture.json",
+  "textureKey": "action_5_texture",
+  "data": "media/Action/sceneData.json",
+  "fonts" : {
+    "action_text_resume": { "font": "18px nobileregular", "fill": "#8E3CE3",  "fontWeight": "normal",
+      "align": "center", "lineSpacing": -9, "wordWrap":true, "wordWrapWidth": 240 },
+    "action_header": { "font": "40px nobileregular", "fill": "#E3CFF8",  "fontWeight": "normal", "align": "left",
+      "shadowX": 5, "shadowY": 4, "shadowColor": "rgba(0,0,0,1)", "shadowBlur": 3 },
+    "action_header_smaller": { "font": "36px nobileregular", "fill": "#E3CFF8",  "fontWeight": "normal", "align": "left",
+      "shadowX": 5, "shadowY": 4, "shadowColor": "rgba(0,0,0,1)", "shadowBlur": 3 },
+    "action_textCaps_solid": { "font": "56px nobileregular", "fill": "#0A7676",  "fontWeight": "bold", "align": "left" },
+    "action_text_extra_large_bold": { "font": "44px nobileregular", "fill": "#0A7676",  "fontWeight": "bold", "align": "left" },
+    "action_text_large_bold_solid": { "font": "40px nobileregular", "fill": "#0A7676",  "fontWeight": "bold", "align": "left" },
+    "action_text_large_bold_transparent": { "font": "40px nobileregular", "fill": "#0A7676",  "fontWeight": "bold",
+      "align": "left", "alpha": 0.5 },
+    "action_text_medium": { "font": "31px nobileregular", "fill": "#0A7676",  "fontWeight": "normal", "align": "left" },
+    "action_text_medium_smaller": { "font": "29px nobileregular", "fill": "#0A7676",  "fontWeight": "normal", "align": "left" },
+    "action_text_small_wrap": { "font": "24px nobileregular", "fill": "#0A7676",  "fontWeight": "normal",
+      "align": "left", "wordWrap": true, "wordWrapWidth": 300, "lineSpacing": -7 },
+    "speech_bubble": { "font": "16px Helvetica", "fill": "black", "align": "center", "fontWeight": "bold" }
+  },
+  "images": {
+    "decorations": {
+      "backDisabled": "backDisabled.png",
+      "cj": "cj.png",
+      "cjEyesUp": "CJEyesUp.png",
+      "denise": "denise.png",
+      "kate": "kate.png",
+      "lakitia": "lakitia.png",
+      "mollieMai": "mollieMai.png",
+      "nextDisabled": "NextDisabled.png",
+      "raj": "raj.png",
+      "rajArmUp": "rajArmUp.png",
+      "ramon": "ramon.png",
+      "resumeDialogBox": "resume-box.png",
+      "talkBubble": "talkBubble.png",
+      "travis": "travis.png",
+      "videoFramePurple": "imageBorder.png",
+      "videoFrameOrange": "videoFrameOrange.png",
+      "viewAgreementComebackInactive": "view-agreement-comeback-inactive.png",
+      "viewNoReactionComebackInactive": "view-no-reaction-comeback-inactive.png",
+      "viewStrongAssertiveComebackInactive": "view-strong-assertive-comeback-inactive.png"
+    }
+  },
+  "sceneImages": {
+    "actNowBackground": "background.png",
+    "resumeBackground": "resume-background-lesson.png"
+  },
+  "buttons": {
+    "back": {
+      "up": "backUp.png",
+      "over": "backOver.png",
+      "out": "backUp.png",
+      "down": "backDown.png"
+    },
+    "muteOff": {
+      "up": "muteOffUp.png",
+      "over": "muteOffOver.png",
+      "out": "muteOffUp.png",
+      "down": "muteOffDown.png"
+    },
+    "muteOn": {
+      "up": "muteOnUp.png",
+      "over": "muteOnOver.png",
+      "out": "muteOnUp.png",
+      "down": "muteOnDown.png"
+    },
+    "next": {
+      "up": "nextUp.png",
+      "over": "nextOver.png",
+      "out": "nextUp.png",
+      "down": "nextDown.png"
+    },
+    "replay": {
+      "up": "replayUp.png",
+      "over": "replayOver.png",
+      "out": "replayUp.png",
+      "down": "replayDown.png"
+    },
+    "restart": {
+      "up": "restart-up.png",
+      "over": "restart-over.png",
+      "out": "restart-up.png",
+      "down": "restart-down.png"
+    },
+    "resume": {
+      "up": "resume-up.png",
+      "over": "resume-over.png",
+      "out": "resume-up.png",
+      "down": "resume-down.png"
+    },
+    "schoolMenu": {
+      "up": "SchoolMenu0001.png",
+      "over": "SchoolMenu0002.png",
+      "out": "SchoolMenu0001.png",
+      "down": "SchoolMenu0003.png"
+    },
+    "worksheet": {
+      "up": "worksheet0001.png",
+      "over": "worksheet0002.png",
+      "out": "worksheet0001.png",
+      "down": "worksheet0003.png"
+    },
+    "viewAgreementComeback": {
+      "up": "view-agreement-comeback-up.png",
+      "over": "view-agreement-comeback-over.png",
+      "out": "view-agreement-comeback-up.png",
+      "down": "view-agreement-comeback-down.png"
+    },
+    "viewNoReactionComeback": {
+      "up": "view-no-reaction-comeback-up.png",
+      "over": "view-no-reaction-comeback-over.png",
+      "out": "view-no-reaction-comeback-up.png",
+      "down": "view-no-reaction-comeback-down.png"
+    },
+    "viewStrongAssertiveComeback": {
+      "up": "view-strong-assertive-comeback-up.png",
+      "over": "view-strong-assertive-comeback-over.png",
+      "out": "view-strong-assertive-comeback-up.png",
+      "down": "view-strong-assertive-comeback-down.png"
+    }
+  },
+  "buttonAnimations": {
+    "next": [
+      "next-highlight-0001.png",
+      "next-highlight-0002.png",
+      "next-highlight-0003.png",
+      "next-highlight-0004.png",
+      "next-highlight-0005.png",
+      "next-highlight-0006.png",
+      "next-highlight-0007.png",
+      "next-highlight-0008.png",
+      "next-highlight-0009.png",
+      "next-highlight-0010.png",
+      "next-highlight-0011.png",
+      "next-highlight-0012.png",
+      "next-highlight-0013.png",
+      "next-highlight-0014.png",
+      "next-highlight-0015.png"
+    ],
+    "schoolMenu": [
+      "school-menu-highlight-0001.png",
+      "school-menu-highlight-0002.png",
+      "school-menu-highlight-0003.png",
+      "school-menu-highlight-0004.png",
+      "school-menu-highlight-0005.png",
+      "school-menu-highlight-0006.png",
+      "school-menu-highlight-0007.png",
+      "school-menu-highlight-0008.png",
+      "school-menu-highlight-0009.png",
+      "school-menu-highlight-0010.png",
+      "school-menu-highlight-0011.png",
+      "school-menu-highlight-0012.png",
+      "school-menu-highlight-0013.png",
+      "school-menu-highlight-0014.png",
+      "school-menu-highlight-0015.png"
+    ]
+  },
+  "soundKey": "action_5_sounds",
+  "soundFile": [ "media/Action/action.m4a", "media/Action/action.ogg" ],
+  "sounds": {
+    "silence":   [   0,      3,                 false, "silence" ],
+    "sound_0_a": [   4,     24.3,               false, "slide_0, Starts at 4, lasts 24.3 seconds, doesn't loop" ],
+    "sound_0_b": [  28.3,   13.26666666666667,  false, "slide_0" ],
+    "sound_1_a": [  43,      5.265,             false, "slide_1" ],
+    "sound_1_b": [  48.265, 10.735,             false, "slide_1" ],
+    "sound_1_c": [  59,     24.016666666666666, false, "slide_1" ],
+    "sound_2":   [  85,     18.63868480725624,  false, "slide_2" ],
+    "sound_3":   [ 105,     29.484013605442186, false, "slide_3" ],
+    "sound_4":   [ 136,     19.039999999999992, false, "slide_4" ],
+    "sound_5":   [ 157,     22.595986394557826, false, "slide_5" ],
+    "sound_6":   [ 181,      9.249319727891162, false, "slide_6" ],
+    "sound_7_a": [ 192,     18,                 false, "slide_7" ],
+    "sound_7_b": [ 210,     22,                 false, "slide_7" ],
+    "sound_7_c": [ 232,     11.678684807256246, false, "slide_7" ],
+    "sound_8":   [ 245,      4.144013605442183, false, "slide_8" ],
+    "sound_9":   [ 251,      4,                 false, "slide_9" ]
+  }
+}

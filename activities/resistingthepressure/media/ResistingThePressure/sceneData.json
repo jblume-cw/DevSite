@@ -1,0 +1,47 @@
+{
+  "play": {
+    "start": "resisting_video",
+    "showPlayThrough": false,
+    "scenes": {
+      "resisting_video": {
+        "id": "hoZink_intro",
+        "background": "resistingThePressureBackground",
+        "title": "Resisting the Pressure",
+        "actors": [
+            {
+                "name": "Resisting Header",
+                "type": "text",
+                "font": "resist",
+                "location": [ "center", 15 ],
+                "text": "Resisting the Pressure"
+            },
+            {
+                "name": "video_resisting",
+                "type": "wistia",
+                "location": [0 , 100 ],
+                "size": [ 640, 360 ],
+                "video": "lpy1v235c3",
+                "blockerAlpha" : 0.0,
+                "blockInput": false,
+                "autoplay": true,
+                "hideCloseButton": true
+            },
+            {
+                "name": "bottomPanel",
+                "type": "blocker",
+                "location": [ 0, 480 ],
+                "size": [ 640, 200 ],
+                "blockerTint" : "0xFFFFFF",
+                "blockerAlpha" : 1.0
+            }
+        ],
+        "outcomes": {
+        },
+        "actions": [
+          { "type": "choice", "args": [ "objective_complete", 1] },
+          { "type": "choice", "args": [ "save", 0 ] }
+        ]
+      }
+    }
+  }
+}

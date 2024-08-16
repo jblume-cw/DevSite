@@ -1,0 +1,1484 @@
+{
+  "play": {
+    "start": "tell_intro",
+    "resume": "tell_resume",
+    "showPlayThrough": false,
+    "scenes": {
+      "tell_resume": {
+        "id": "tell_resume",
+        "background": "resumeBackground",
+        "title": "This is the resume scene.",
+        "actors": [
+          {
+            "name": "resumeDialogBox",
+            "type": "decoration",
+            "image": "resumeDialogBox",
+            "key": "decorations",
+            "location": [ 119, 114 ],
+            "scale": [ 1.0, 1.0 ]
+          },
+          {
+            "name": "sub-title",
+            "type": "text",
+            "font": "tell_text_resume",
+            "location": [ 203, 155 ],
+            "text": "You have completed part of this lesson"
+          },
+          {
+            "name": "resumeButton",
+            "type": "button",
+            "image": "resume",
+            "location": [ 155, 235],
+            "variable": "resume_button"
+          },
+          {
+            "name": "restartButton",
+            "type": "button",
+            "image": "restart",
+            "location": [ 155, 285 ],
+            "variable": "resume_button"
+          },
+          {
+            "name": "bottomPanel",
+            "type": "blocker",
+            "location": [ 0, 480 ],
+            "size": [ 640, 200 ],
+            "blockerTint" : "0xFFFFFF",
+            "blockerAlpha" : 1.0
+          }
+        ],
+        "outcomes": {
+          "do_restart": {
+            "events": { "resume_button": "restartButton" },
+            "actions": [ { "type": "scene", "args": [ "tell_intro" ] } ]
+          },
+          "do_resume": {
+            "events": { "resume_button": "resumeButton" },
+            "actions": [ { "type": "scene", "args": [ "$restore_scene" ] } ]
+          }
+        }
+      },
+      "tell_intro": {
+        "id": "tell_intro",
+        "background": "actNowBackground",
+        "title": "Tell",
+        "actors": [
+          {
+            "name": "Tell Header",
+            "type": "text",
+            "font": "tell_header",
+            "location": [ 19, 7 ],
+            "text": "A.C.T. - Tell "
+          },
+          {
+            "name": "sound_0",
+            "type": "audio",
+            "audio": ["sound_0"],
+            "variable": "sound_0"
+          },
+          {
+            "name": "A.C.T. text A",
+            "type": "text",
+            "font": "tell_textCaps_solid",
+            "location": [ 355, 126 ],
+            "text": "A"
+          },
+          {
+            "name": "A.C.T. text ction",
+            "type": "text",
+            "font": "tell_text_large_bold_transparent",
+            "location": [ 399, 146 ],
+            "text": "ction"
+          },
+          {
+            "name": "A.C.T. text C",
+            "type": "text",
+            "font": "tell_textCaps_solid",
+            "location": [ 357, 187 ],
+            "text": "C"
+          },
+          {
+            "name": "A.C.T. text are",
+            "type": "text",
+            "font": "tell_text_large_bold_transparent",
+            "location": [ 399, 207 ],
+            "text": "are"
+          },
+          {
+            "name": "A.C.T. text T",
+            "type": "text",
+            "font": "tell_textCaps_solid",
+            "location": [ 361, 248 ],
+            "text": "T"
+          },
+          {
+            "name": "A.C.T. text ell",
+            "type": "text",
+            "font": "tell_text_large_bold_solid",
+            "location": [ 399, 268 ],
+            "text": "ell"
+          },
+          {
+            "name": "travis",
+            "type": "decoration",
+            "image": "travis",
+            "key": "decorations",
+            "location": [ 70, 134 ],
+            "scale": [ 1.55, 1.55 ]
+          },
+          {
+            "name": "worksheetButton",
+            "type": "url-button",
+            "image": "worksheet",
+            "location": [ 350, 360 ],
+            "url": "Tell_wksht_5th.pdf",
+            "variable": "tell_intro_worksheet"
+          },
+          {
+            "name": "mutebutton",
+            "type": "toggle-button",
+            "images": {
+              "on": "muteOff",
+              "off": "muteOn"
+            },
+            "location": [ 9, 435 ],
+            "scale": [ 1.0, 1.0 ],
+            "variable": "mute_game",
+            "values": {
+              "on": "mute_on",
+              "off": "mute_off"
+            },
+            "active": true
+          },
+          {
+            "name": "backButtonDisabled",
+            "type": "decoration",
+            "image": "backDisabled",
+            "key": "decorations",
+            "location": [ 337, 435 ],
+            "scale": [ 1.0, 1.0 ]
+          },
+          {
+            "name": "forwardButton",
+            "type": "button",
+            "image": "next",
+            "location": [ 512, 436 ],
+            "variable": "tell_intro_showNext"
+          },
+          {
+            "name": "replay",
+            "type": "button",
+            "image": "replay",
+            "location": [ 466, 435 ],
+            "variable": "tell_intro_replay"
+          },
+          {
+            "name": "bottomPanel",
+            "type": "blocker",
+            "location": [ 0, 480 ],
+            "size": [ 640, 200 ],
+            "blockerTint" : "0xFFFFFF",
+            "blockerAlpha" : 1.0
+          }
+        ],
+        "outcomes": {
+          "sound_0_finished_shimmer_next": {
+            "events": { "sound_0": "played" },
+            "actions": [
+              { "type": "remove-actor", "args": ["forwardButton"] },
+              { "type": "add-actor", "args": [
+                {
+                  "name": "forwardButtonShimmer",
+                  "type": "button",
+                  "image": "next",
+                  "animated": true,
+                  "animationRepeat": 4000,
+                  "animationFrameRate": 30,
+                  "location": [ 512, 436 ],
+                  "variable": "tell_intro_showNext"
+                }
+              ] }
+            ]
+          },
+          "replay_button": {
+            "events": { "tell_intro_replay": "*" },
+            "actions": [
+              { "type": "scene", "args": [ "empty_replay_scene" ] },
+              { "type": "scene", "args": [ "tell_intro" ] }
+            ]
+          },
+          "forward_button": {
+            "events": { "tell_intro_showNext": "*" },
+            "actions": [ { "type": "scene", "args": [ "tell" ] } ]
+          }
+        }
+      },
+      "tell": {
+        "id": "tell",
+        "background": "actNowBackground",
+        "title": "Tell",
+        "actors": [
+          {
+            "name": "Tell Header",
+            "type": "text",
+            "font": "tell_header",
+            "location": [ 19, 7 ],
+            "text": "Tell "
+          },
+          {
+            "name": "sound_1",
+            "type": "audio",
+            "audio": ["sound_1"],
+            "variable": "sound_1"
+          },
+          {
+            "name": "ian",
+            "type": "decoration",
+            "image": "ian",
+            "key": "decorations",
+            "location": [ 130, 155 ],
+            "scale": [ 0.88, 0.88 ]
+          },
+          {
+            "name": "talkBubble",
+            "type": "decoration",
+            "image": "talkBubble",
+            "key": "decorations",
+            "location": [ 318, 125 ],
+            "scale": [ 1.0, 1.0 ]
+          },
+          {
+            "name": "I need to talk to you",
+            "type": "text",
+            "font": "speech_bubble",
+            "location": [ 356, 158 ],
+            "text": "Miss Lee, I need to talk to you about something."
+          },
+          {
+            "name": "mutebutton",
+            "type": "toggle-button",
+            "images": {
+              "on": "muteOff",
+              "off": "muteOn"
+            },
+            "location": [ 9, 435 ],
+            "scale": [ 1.0, 1.0 ],
+            "variable": "mute_game",
+            "values": {
+              "on": "mute_on",
+              "off": "mute_off"
+            },
+            "active": true
+          },
+          {
+            "name": "backButton",
+            "type": "button",
+            "image": "back",
+            "location": [ 337, 435 ],
+            "variable": "tell_showPrevious"
+          },
+          {
+            "name": "forwardButton",
+            "type": "button",
+            "image": "next",
+            "location": [ 512, 436 ],
+            "variable": "tell_showNext"
+          },
+          {
+            "name": "replay",
+            "type": "button",
+            "image": "replay",
+            "location": [ 466, 435 ],
+            "variable": "tell_replay"
+          },
+          {
+            "name": "bottomPanel",
+            "type": "blocker",
+            "location": [ 0, 480 ],
+            "size": [ 640, 200 ],
+            "blockerTint" : "0xFFFFFF",
+            "blockerAlpha" : 1.0
+          }
+        ],
+        "outcomes": {
+          "sound_1_finished_shimmer_next": {
+            "events": { "sound_1": "played" },
+            "actions": [
+              { "type": "remove-actor", "args": ["forwardButton"] },
+              { "type": "add-actor", "args": [
+                {
+                  "name": "forwardButtonShimmer",
+                  "type": "button",
+                  "image": "next",
+                  "animated": true,
+                  "animationRepeat": 4000,
+                  "animationFrameRate": 30,
+                  "location": [ 512, 436 ],
+                  "variable": "tell_showNext"
+                }
+              ] }
+            ]
+          },
+          "replay_button": {
+            "events": { "tell_replay": "*" },
+            "actions": [
+              { "type": "scene", "args": [ "empty_replay_scene" ] },
+              { "type": "scene", "args": [ "tell" ] }
+            ]
+          },
+          "back_button": {
+            "events": { "tell_showPrevious": "*" },
+            "actions": [ { "type": "scene", "args": [ "tell_intro" ] } ]
+          },
+          "forward_button": {
+            "events": { "tell_showNext": "*" },
+            "actions": [ { "type": "scene", "args": [ "trusted_adults" ] } ]
+          }
+        }
+      },
+      "trusted_adults": {
+        "id": "trusted_adults",
+        "background": "actNowBackground",
+        "title": "Trusted Adults",
+        "actors": [
+          {
+            "name": "Tell Header",
+            "type": "text",
+            "font": "tell_header",
+            "location": [ 19, 7 ],
+            "text": "Trusted Adults "
+          },
+          {
+            "name": "sound_2",
+            "type": "audio",
+            "audio": ["sound_2"],
+            "variable": "sound_2"
+          },
+          {
+            "name": "mrLin",
+            "type": "decoration",
+            "image": "mrLin",
+            "key": "decorations",
+            "location": [ 44, 100 ],
+            "scale": [ 1.0, 1.0 ]
+          },
+          {
+            "name": "everyonesResponsibility",
+            "type": "text",
+            "font": "tell_text_smaller_wrap_323",
+            "location": [ 236,  145 ],
+            "bullet": true,
+            "text": "It's everyone's responsibility to tell an adult when they see bullying."
+          },
+          {
+            "name": "everyonesResponsibility",
+            "type": "text",
+            "font": "tell_text_smaller_wrap_323",
+            "location": [ 236,  275 ],
+            "bullet": true,
+            "text": "If one adult doesn't listen, find another adult."
+          },
+          {
+            "name": "mutebutton",
+            "type": "toggle-button",
+            "images": {
+              "on": "muteOff",
+              "off": "muteOn"
+            },
+            "location": [ 9, 435 ],
+            "scale": [ 1.0, 1.0 ],
+            "variable": "mute_game",
+            "values": {
+              "on": "mute_on",
+              "off": "mute_off"
+            },
+            "active": true
+          },
+          {
+            "name": "backButton",
+            "type": "button",
+            "image": "back",
+            "location": [ 337, 435 ],
+            "variable": "trusted_adults_showPrevious"
+          },
+          {
+            "name": "forwardButton",
+            "type": "button",
+            "image": "next",
+            "location": [ 512, 436 ],
+            "variable": "trusted_adults_showNext"
+          },
+          {
+            "name": "replay",
+            "type": "button",
+            "image": "replay",
+            "location": [ 466, 435 ],
+            "variable": "trusted_adults_replay"
+          },
+          {
+            "name": "bottomPanel",
+            "type": "blocker",
+            "location": [ 0, 480 ],
+            "size": [ 640, 200 ],
+            "blockerTint" : "0xFFFFFF",
+            "blockerAlpha" : 1.0
+          }
+        ],
+        "outcomes": {
+          "sound_2_finished_shimmer_next": {
+            "events": { "sound_2": "played" },
+            "actions": [
+              { "type": "remove-actor", "args": ["forwardButton"] },
+              { "type": "add-actor", "args": [
+                {
+                  "name": "forwardButtonShimmer",
+                  "type": "button",
+                  "image": "next",
+                  "animated": true,
+                  "animationRepeat": 4000,
+                  "animationFrameRate": 30,
+                  "location": [ 512, 436 ],
+                  "variable": "trusted_adults_showNext"
+                }
+              ] }
+            ]
+          },
+          "replay_button": {
+            "events": { "trusted_adults_replay": "*" },
+            "actions": [
+              { "type": "scene", "args": [ "empty_replay_scene" ] },
+              { "type": "scene", "args": [ "trusted_adults" ] }
+            ]
+          },
+          "back_button": {
+            "events": { "trusted_adults_showPrevious": "*" },
+            "actions": [ { "type": "scene", "args": [ "tell" ] } ]
+          },
+          "forward_button": {
+            "events": { "trusted_adults_showNext": "*" },
+            "actions": [ { "type": "scene", "args": [ "tattling_vs_telling_intro" ] } ]
+          }
+        }
+      },
+      "tattling_vs_telling_intro": {
+        "id": "tattling_vs_telling_intro",
+        "background": "actNowBackground",
+        "title": "Tattling vs. Telling",
+        "actors": [
+          {
+            "name": "Tell Header",
+            "type": "text",
+            "font": "tell_header",
+            "location": [ 19, 7 ],
+            "text": "Tattling vs. telling "
+          },
+          {
+            "name": "sound_3",
+            "type": "audio",
+            "audio": ["sound_3"],
+            "variable": "sound_3"
+          },
+          {
+            "name": "denise",
+            "type": "decoration",
+            "image": "denise",
+            "key": "decorations",
+            "location": [ 502, 125 ],
+            "scale": [ -0.63, 0.63 ]
+          },
+          {
+            "name": "ramon",
+            "type": "decoration",
+            "image": "ramon",
+            "key": "decorations",
+            "location": [ 598, 160 ],
+            "scale": [ -0.4, 0.4 ]
+          },
+          {
+            "name": "Tattling",
+            "type": "text",
+            "font": "tell_text_smaller_wrap",
+            "location": [ 33, 135 ],
+            "bullet": true,
+            "text": "Tattling: trying to get someone in trouble over something unimportant.",
+            "startDelay": 11000
+          },
+          {
+            "name": "Telling",
+            "type": "text",
+            "font": "tell_text_smaller_wrap",
+            "location": [ 33,  255 ],
+            "bullet": true,
+            "text": "Telling: talking to an adult when there's a serious situation and someone could get hurt.",
+            "startDelay": 18000
+          },
+          {
+            "name": "mutebutton",
+            "type": "toggle-button",
+            "images": {
+              "on": "muteOff",
+              "off": "muteOn"
+            },
+            "location": [ 9, 435 ],
+            "scale": [ 1.0, 1.0 ],
+            "variable": "mute_game",
+            "values": {
+              "on": "mute_on",
+              "off": "mute_off"
+            },
+            "active": true
+          },
+          {
+            "name": "backButton",
+            "type": "button",
+            "image": "back",
+            "location": [ 337, 435 ],
+            "variable": "tattling_vs_telling_intro_showPrevious"
+          },
+          {
+            "name": "forwardButton",
+            "type": "button",
+            "image": "next",
+            "location": [ 512, 436 ],
+            "variable": "tattling_vs_telling_intro_showNext"
+          },
+          {
+            "name": "replay",
+            "type": "button",
+            "image": "replay",
+            "location": [ 466, 435 ],
+            "variable": "tattling_vs_telling_intro_replay"
+          },
+          {
+            "name": "bottomPanel",
+            "type": "blocker",
+            "location": [ 0, 480 ],
+            "size": [ 640, 200 ],
+            "blockerTint" : "0xFFFFFF",
+            "blockerAlpha" : 1.0
+          }
+        ],
+        "outcomes": {
+          "sound_3_finished_shimmer_next": {
+            "events": { "sound_3": "played" },
+            "actions": [
+              { "type": "remove-actor", "args": ["forwardButton"] },
+              { "type": "add-actor", "args": [
+                {
+                  "name": "forwardButtonShimmer",
+                  "type": "button",
+                  "image": "next",
+                  "animated": true,
+                  "animationRepeat": 4000,
+                  "animationFrameRate": 30,
+                  "location": [ 512, 436 ],
+                  "variable": "tattling_vs_telling_intro_showNext"
+                }
+              ] }
+            ]
+          },
+          "replay_button": {
+            "events": { "tattling_vs_telling_intro_replay": "*" },
+            "actions": [
+              { "type": "scene", "args": [ "empty_replay_scene" ] },
+              { "type": "scene", "args": [ "tattling_vs_telling_intro" ] }
+            ]
+          },
+          "back_button": {
+            "events": { "tattling_vs_telling_intro_showPrevious": "*" },
+            "actions": [ { "type": "scene", "args": [ "trusted_adults" ] } ]
+          },
+          "forward_button": {
+            "events": { "tattling_vs_telling_intro_showNext": "*" },
+            "actions": [ { "type": "scene", "args": [ "tattling_or_telling_question_1" ] } ]
+          }
+        }
+      },
+      "tattling_or_telling_question_1": {
+        "id": "tattling_or_telling_question_1",
+        "background": "actNowBackground",
+        "title": "Tattling or Telling Question 1",
+        "actors": [
+          {
+            "name": "Tell Header",
+            "type": "text",
+            "font": "tell_header",
+            "location": [ 19, 7 ],
+            "text": "Tattling or telling? "
+          },
+          {
+            "name": "sound_4_question",
+            "type": "audio",
+            "audio": ["sound_4_question"],
+            "variable": "sound_4_question"
+          },
+          {
+            "name": "Situation",
+            "type": "text",
+            "font": "tell_text_very_small_wrap_550",
+            "location": [ 33, 85 ],
+            "text": "During class, Devon took an extra treat from the treat jar on the teacher's desk.  Keisha goes to the teacher and says, \"Mr. Frommel, Devon took an extra treat and everyone else only got one.\""
+          },
+          {
+            "name": "Question",
+            "type": "text",
+            "font": "tell_text_very_small_wrap_550",
+            "location": [ 33, 196 ],
+            "text": "Is this tattling or telling?"
+          },
+          {
+            "name": "tattling",
+            "type": "button",
+            "image": "tattling",
+            "location": [ 183, 244 ],
+            "variable": "tattling_or_telling_response_1"
+          },
+          {
+            "name": "telling",
+            "type": "button",
+            "image": "telling",
+            "location": [ 332, 244 ],
+            "variable": "tattling_or_telling_response_1"
+          },
+          {
+            "name": "mutebutton",
+            "type": "toggle-button",
+            "images": {
+              "on": "muteOff",
+              "off": "muteOn"
+            },
+            "location": [ 9, 435 ],
+            "scale": [ 1.0, 1.0 ],
+            "variable": "mute_game",
+            "values": {
+              "on": "mute_on",
+              "off": "mute_off"
+            },
+            "active": true
+          },
+          {
+            "name": "backButton",
+            "type": "button",
+            "image": "back",
+            "location": [ 337, 435 ],
+            "variable": "tattling_or_telling_question_1_showPrevious"
+          },
+          {
+            "name": "forwardButton",
+            "type": "button",
+            "image": "next",
+            "location": [ 512, 436 ],
+            "variable": "tattling_or_telling_question_1_showNext"
+          },
+          {
+            "name": "replay",
+            "type": "button",
+            "image": "replay",
+            "location": [ 466, 435 ],
+            "variable": "tattling_or_telling_question_1_replay"
+          },
+          {
+            "name": "bottomPanel",
+            "type": "blocker",
+            "location": [ 0, 480 ],
+            "size": [ 640, 200 ],
+            "blockerTint" : "0xFFFFFF",
+            "blockerAlpha" : 1.0
+          }
+        ],
+        "outcomes": {
+          "correct_answer": {
+            "events": { "tattling_or_telling_response_1": "tattling" },
+            "actions": [
+              { "type": "remove-actor", "args": ["feedback_situation_1"] },
+              { "type": "add-actor", "args": [
+                {
+                  "name": "sound_4_tattling",
+                  "type": "audio",
+                  "audio": ["sound_4_tattling"],
+                  "variable": "sound_4_feedback"
+                }
+              ] },
+              { "type": "add-actor", "args": [
+                {
+                  "name": "feedback_situation_1",
+                  "type": "text",
+                  "font": "tell_text_very_small_wrap_550",
+                  "location": [ 33, 294 ],
+                  "text": "Great job! This is not a dangerous situation where someone could get hurt. It sounds like Keisha is just trying to get Devon in trouble."
+                }
+              ] }
+            ]
+          },
+          "incorrect_answer": {
+            "events": { "tattling_or_telling_response_1": "telling" },
+            "actions": [
+              { "type": "remove-actor", "args": ["feedback_situation_1"] },
+              { "type": "add-actor", "args": [
+                {
+                  "name": "sound_4_telling",
+                  "type": "audio",
+                  "audio": ["sound_4_telling"],
+                  "variable": "sound_4_feedback"
+                }
+              ] },
+              { "type": "add-actor", "args": [
+                {
+                  "name": "feedback_situation_1",
+                  "type": "text",
+                  "font": "tell_text_very_small_wrap_550",
+                  "location": [ 33, 294 ],
+                  "text": "Try again. While taking an extra treat was probably not a good idea, this isn't an unsafe situation. It sounds more like tattling."
+                }
+              ] }
+            ]
+          },
+          "sound_4_feedback_finished_shimmer_next": {
+            "events": { "sound_4_feedback": "played" },
+            "actions": [
+              { "type": "remove-actor", "args": ["forwardButton"] },
+              { "type": "add-actor", "args": [
+                {
+                  "name": "forwardButtonShimmer",
+                  "type": "button",
+                  "image": "next",
+                  "animated": true,
+                  "animationRepeat": 4000,
+                  "animationFrameRate": 30,
+                  "location": [ 512, 436 ],
+                  "variable": "tattling_or_telling_question_1_showNext"
+                }
+              ] }
+            ]
+          },
+          "replay_button": {
+            "events": { "tattling_or_telling_question_1_replay": "*" },
+            "actions": [
+              { "type": "scene", "args": [ "empty_replay_scene" ] },
+              { "type": "scene", "args": [ "tattling_or_telling_question_1" ] }
+            ]
+          },
+          "back_button": {
+            "events": { "tattling_or_telling_question_1_showPrevious": "*" },
+            "actions": [ { "type": "scene", "args": [ "tattling_vs_telling_intro" ] } ]
+          },
+          "forward_button": {
+            "events": { "tattling_or_telling_question_1_showNext": "*" },
+            "actions": [ { "type": "scene", "args": [ "tattling_or_telling_question_2" ] } ]
+          }
+        }
+      },
+      "tattling_or_telling_question_2": {
+        "id": "tattling_or_telling_question_2",
+        "background": "actNowBackground",
+        "title": "Tattling or Telling Question 2",
+        "actors": [
+          {
+            "name": "Tell Header",
+            "type": "text",
+            "font": "tell_header",
+            "location": [ 19, 7 ],
+            "text": "Tattling or telling? "
+          },
+          {
+            "name": "sound_5_question",
+            "type": "audio",
+            "audio": ["sound_5_question"],
+            "variable": "sound_5_question"
+          },
+          {
+            "name": "Situation",
+            "type": "text",
+            "font": "tell_text_very_small_wrap_550",
+            "location": [ 33, 85 ],
+            "text": "Chad raises his hand in class and says, \"Mrs. Howard, Nick isn't listening, he has his headphones on.\""
+          },
+          {
+            "name": "Question",
+            "type": "text",
+            "font": "tell_text_very_small_wrap_550",
+            "location": [ 33, 150 ],
+            "text": "Is this tattling or telling?"
+          },
+          {
+            "name": "tattling",
+            "type": "button",
+            "image": "tattling",
+            "location": [ 183, 215 ],
+            "variable": "tattling_or_telling_response_2"
+          },
+          {
+            "name": "telling",
+            "type": "button",
+            "image": "telling",
+            "location": [ 332, 215 ],
+            "variable": "tattling_or_telling_response_2"
+          },
+          {
+            "name": "mutebutton",
+            "type": "toggle-button",
+            "images": {
+              "on": "muteOff",
+              "off": "muteOn"
+            },
+            "location": [ 9, 435 ],
+            "scale": [ 1.0, 1.0 ],
+            "variable": "mute_game",
+            "values": {
+              "on": "mute_on",
+              "off": "mute_off"
+            },
+            "active": true
+          },
+          {
+            "name": "backButton",
+            "type": "button",
+            "image": "back",
+            "location": [ 337, 435 ],
+            "variable": "tattling_or_telling_question_2_showPrevious"
+          },
+          {
+            "name": "forwardButton",
+            "type": "button",
+            "image": "next",
+            "location": [ 512, 436 ],
+            "variable": "tattling_or_telling_question_2_showNext"
+          },
+          {
+            "name": "replay",
+            "type": "button",
+            "image": "replay",
+            "location": [ 466, 435 ],
+            "variable": "tattling_or_telling_question_2_replay"
+          },
+          {
+            "name": "bottomPanel",
+            "type": "blocker",
+            "location": [ 0, 480 ],
+            "size": [ 640, 200 ],
+            "blockerTint" : "0xFFFFFF",
+            "blockerAlpha" : 1.0
+          }
+        ],
+        "outcomes": {
+          "correct_answer": {
+            "events": { "tattling_or_telling_response_2": "tattling" },
+            "actions": [
+              { "type": "remove-actor", "args": ["feedback_situation_2"] },
+              { "type": "add-actor", "args": [
+                {
+                  "name": "sound_5_tattling",
+                  "type": "audio",
+                  "audio": ["sound_5_tattling"],
+                  "variable": "sound_5_feedback"
+                }
+              ] },
+              { "type": "add-actor", "args": [
+                {
+                  "name": "feedback_situation_2",
+                  "type": "text",
+                  "font": "tell_text_very_small_wrap_550",
+                  "location": [ 33, 294 ],
+                  "text": "Fantastic! While not appropriate to wear headphones during class, this is not a dangerous situation. This is tattling."
+                }
+              ] }
+            ]
+          },
+          "incorrect_answer": {
+            "events": { "tattling_or_telling_response_2": "telling" },
+            "actions": [
+              { "type": "remove-actor", "args": ["feedback_situation_2"] },
+              { "type": "add-actor", "args": [
+                {
+                  "name": "sound_5_telling",
+                  "type": "audio",
+                  "audio": ["sound_5_telling"],
+                  "variable": "sound_5_feedback"
+                }
+              ] },
+              { "type": "add-actor", "args": [
+                {
+                  "name": "feedback_situation_2",
+                  "type": "text",
+                  "font": "tell_text_very_small_wrap_550",
+                  "location": [ 33, 294 ],
+                  "text": "Try again. Nick isn't hurting anyone. It sounds like Chad is just trying to get Nick in trouble."
+                }
+              ] }
+            ]
+          },
+          "sound_5_feedback_finished_shimmer_next": {
+            "events": { "sound_5_feedback": "played" },
+            "actions": [
+              { "type": "remove-actor", "args": ["forwardButton"] },
+              { "type": "add-actor", "args": [
+                {
+                  "name": "forwardButtonShimmer",
+                  "type": "button",
+                  "image": "next",
+                  "animated": true,
+                  "animationRepeat": 4000,
+                  "animationFrameRate": 30,
+                  "location": [ 512, 436 ],
+                  "variable": "tattling_or_telling_question_2_showNext"
+                }
+              ] }
+            ]
+          },
+          "replay_button": {
+            "events": { "tattling_or_telling_question_2_replay": "*" },
+            "actions": [
+              { "type": "scene", "args": [ "empty_replay_scene" ] },
+              { "type": "scene", "args": [ "tattling_or_telling_question_2" ] }
+            ]
+          },
+          "back_button": {
+            "events": { "tattling_or_telling_question_2_showPrevious": "*" },
+            "actions": [ { "type": "scene", "args": [ "tattling_or_telling_question_1" ] } ]
+          },
+          "forward_button": {
+            "events": { "tattling_or_telling_question_2_showNext": "*" },
+            "actions": [ { "type": "scene", "args": [ "tattling_or_telling_question_3" ] } ]
+          }
+        }
+      },
+      "tattling_or_telling_question_3": {
+        "id": "tattling_or_telling_question_3",
+        "background": "actNowBackground",
+        "title": "Tattling or Telling Question 3",
+        "actors": [
+          {
+            "name": "Tell Header",
+            "type": "text",
+            "font": "tell_header",
+            "location": [ 19, 7 ],
+            "text": "Tattling or telling? "
+          },
+          {
+            "name": "sound_6_question",
+            "type": "audio",
+            "audio": ["sound_6_question"],
+            "variable": "sound_6_question"
+          },
+          {
+            "name": "Situation",
+            "type": "text",
+            "font": "tell_text_very_small_wrap_550",
+            "location": [ 33, 85 ],
+            "text": "Eva is always asking Vanessa for money for a snack after school. She tells Vanessa that if she doesn’t give her the money she won't be her friend anymore. Vanessa decides to talk to her mom about it."
+          },
+          {
+            "name": "Question",
+            "type": "text",
+            "font": "tell_text_very_small_wrap_550",
+            "location": [ 33, 196 ],
+            "text": "Is this tattling or telling?"
+          },
+          {
+            "name": "tattling",
+            "type": "button",
+            "image": "tattling",
+            "location": [ 183, 244 ],
+            "variable": "tattling_or_telling_response_3"
+          },
+          {
+            "name": "telling",
+            "type": "button",
+            "image": "telling",
+            "location": [ 332, 244 ],
+            "variable": "tattling_or_telling_response_3"
+          },
+          {
+            "name": "mutebutton",
+            "type": "toggle-button",
+            "images": {
+              "on": "muteOff",
+              "off": "muteOn"
+            },
+            "location": [ 9, 435 ],
+            "scale": [ 1.0, 1.0 ],
+            "variable": "mute_game",
+            "values": {
+              "on": "mute_on",
+              "off": "mute_off"
+            },
+            "active": true
+          },
+          {
+            "name": "backButton",
+            "type": "button",
+            "image": "back",
+            "location": [ 337, 435 ],
+            "variable": "tattling_or_telling_question_3_showPrevious"
+          },
+          {
+            "name": "forwardButton",
+            "type": "button",
+            "image": "next",
+            "location": [ 512, 436 ],
+            "variable": "tattling_or_telling_question_3_showNext"
+          },
+          {
+            "name": "replay",
+            "type": "button",
+            "image": "replay",
+            "location": [ 466, 435 ],
+            "variable": "tattling_or_telling_question_3_replay"
+          },
+          {
+            "name": "bottomPanel",
+            "type": "blocker",
+            "location": [ 0, 480 ],
+            "size": [ 640, 200 ],
+            "blockerTint" : "0xFFFFFF",
+            "blockerAlpha" : 1.0
+          }
+        ],
+        "outcomes": {
+          "incorrect_answer": {
+            "events": { "tattling_or_telling_response_3": "tattling" },
+            "actions": [
+              { "type": "remove-actor", "args": ["feedback_situation_3"] },
+              { "type": "add-actor", "args": [
+                {
+                  "name": "sound_6_tattling",
+                  "type": "audio",
+                  "audio": ["sound_6_tattling"],
+                  "variable": "sound_6_feedback"
+                }
+              ] },
+              { "type": "add-actor", "args": [
+                {
+                  "name": "feedback_situation_3",
+                  "type": "text",
+                  "font": "tell_text_very_small_wrap_550",
+                  "location": [ 33, 294 ],
+                  "text": "Try again. It sounds like this has been going on for a while and that Eva is bullying Vanessa. It's a good thing that Vanessa is telling her mom."
+                }
+              ] }
+            ]
+          },
+          "correct_answer": {
+            "events": { "tattling_or_telling_response_3": "telling" },
+            "actions": [
+              { "type": "remove-actor", "args": ["feedback_situation_3"] },
+              { "type": "add-actor", "args": [
+                {
+                  "name": "sound_6_telling",
+                  "type": "audio",
+                  "audio": ["sound_6_telling"],
+                  "variable": "sound_6_feedback"
+                }
+              ] },
+              { "type": "add-actor", "args": [
+                {
+                  "name": "feedback_situation_3",
+                  "type": "text",
+                  "font": "tell_text_very_small_wrap_550",
+                  "location": [ 33, 294 ],
+                  "text": "Good job! it sounds like Eva is being a \"frenemy\" and is bullying Vanessa for snack money. It's important to get an adult involved in situations like this."
+                }
+              ] }
+            ]
+          },
+          "sound_6_feedback_finished_shimmer_next": {
+            "events": { "sound_6_feedback": "played" },
+            "actions": [
+              { "type": "remove-actor", "args": ["forwardButton"] },
+              { "type": "add-actor", "args": [
+                {
+                  "name": "forwardButtonShimmer",
+                  "type": "button",
+                  "image": "next",
+                  "animated": true,
+                  "animationRepeat": 4000,
+                  "animationFrameRate": 30,
+                  "location": [ 512, 436 ],
+                  "variable": "tattling_or_telling_question_3_showNext"
+                }
+              ] }
+            ]
+          },
+          "replay_button": {
+            "events": { "tattling_or_telling_question_3_replay": "*" },
+            "actions": [
+              { "type": "scene", "args": [ "empty_replay_scene" ] },
+              { "type": "scene", "args": [ "tattling_or_telling_question_3" ] }
+            ]
+          },
+          "back_button": {
+            "events": { "tattling_or_telling_question_3_showPrevious": "*" },
+            "actions": [ { "type": "scene", "args": [ "tattling_or_telling_question_2" ] } ]
+          },
+          "forward_button": {
+            "events": { "tattling_or_telling_question_3_showNext": "*" },
+            "actions": [ { "type": "scene", "args": [ "telling_an_adult_example_1" ] } ]
+          }
+        }
+      },
+      "telling_an_adult_example_1": {
+        "id": "telling_an_adult_example_1",
+        "background": "actNowBackground",
+        "title": "Telling an adult example 1",
+        "actors": [
+          {
+            "name": "Tell Header",
+            "type": "text",
+            "font": "tell_header",
+            "location": [ 19, 7 ],
+            "text": "Telling an adult "
+          },
+          {
+            "name": "sound_7",
+            "type": "audio",
+            "audio": ["sound_7"],
+            "variable": "sound_7"
+          },
+          {
+            "name": "videoFramePurple",
+            "type": "decoration",
+            "image": "videoFramePurple",
+            "key": "decorations",
+            "location": [ 152, 124 ],
+            "scale": [ 1.0, 1.0 ]
+          },
+          {
+            "name": "video_telling_an_adult_example_1",
+            "type": "wistia",
+            "location": [ 159, 129 ],
+            "size": [ 320, 240 ],
+            "video": "ridbwlc05i",
+            "closeButtonLocation" : [ -100, -100 ],
+            "variable": "video_telling_an_adult_example_1",
+            "blockerAlpha" : 0.0,
+            "blockInput": false
+          },
+          {
+            "name": "mutebutton",
+            "type": "toggle-button",
+            "images": {
+              "on": "muteOff",
+              "off": "muteOn"
+            },
+            "location": [ 9, 435 ],
+            "scale": [ 1.0, 1.0 ],
+            "variable": "mute_game",
+            "values": {
+              "on": "mute_on",
+              "off": "mute_off"
+            },
+            "active": true
+          },
+          {
+            "name": "backButton",
+            "type": "button",
+            "image": "back",
+            "location": [ 337, 435 ],
+            "variable": "telling_an_adult_showPrevious"
+          },
+          {
+            "name": "forwardButton",
+            "type": "button",
+            "image": "next",
+            "location": [ 512, 436 ],
+            "variable": "telling_an_adult_showNext"
+          },
+          {
+            "name": "replay",
+            "type": "button",
+            "image": "replay",
+            "location": [ 466, 435 ],
+            "variable": "telling_an_adult_replay"
+          },
+          {
+            "name": "bottomPanel",
+            "type": "blocker",
+            "location": [ 0, 480 ],
+            "size": [ 640, 200 ],
+            "blockerTint" : "0xFFFFFF",
+            "blockerAlpha" : 1.0
+          }
+        ],
+        "outcomes": {
+          "video_example_1_finished_shimmer_next": {
+            "events": { "video_telling_an_adult_example_1": "finished" },
+            "actions": [
+              { "type": "remove-actor", "args": ["forwardButton"] },
+              { "type": "remove-actor", "args": ["forwardButtonShimmer"] },
+              { "type": "add-actor", "args": [
+                {
+                  "name": "forwardButtonShimmer",
+                  "type": "button",
+                  "image": "next",
+                  "animated": true,
+                  "animationRepeat": 4000,
+                  "animationFrameRate": 30,
+                  "location": [ 512, 436 ],
+                  "variable": "telling_an_adult_showNext"
+                }
+              ] }
+            ]
+          },
+          "replay_button": {
+            "events": { "telling_an_adult_replay": "*" },
+            "actions": [
+              { "type": "remove-actor", "args": ["video_telling_an_adult_example_1"] },
+              { "type": "scene", "args": [ "empty_replay_scene" ] },
+              { "type": "scene", "args": [ "telling_an_adult_example_1" ] }
+            ]
+          },
+          "back_button": {
+            "events": { "telling_an_adult_showPrevious": "*" },
+            "actions": [
+              { "type": "remove-actor", "args": ["video_telling_an_adult_example_1"] },
+              { "type": "scene", "args": [ "tattling_or_telling_question_3" ] }
+            ]
+          },
+          "forward_button": {
+            "events": { "telling_an_adult_showNext": "*" },
+            "actions": [
+              { "type": "remove-actor", "args": ["video_telling_an_adult_example_1"] },
+              { "type": "scene", "args": [ "telling_an_adult_example_2" ] }
+            ]
+          }
+        }
+      },
+      "telling_an_adult_example_2": {
+        "id": "telling_an_adult_example_2",
+        "background": "actNowBackground",
+        "title": "Telling an adult example 2",
+        "actors": [
+          {
+            "name": "Tell Header",
+            "type": "text",
+            "font": "tell_header",
+            "location": [ 19, 7 ],
+            "text": "Telling an adult "
+          },
+          {
+            "name": "sound_8",
+            "type": "audio",
+            "audio": ["sound_8"],
+            "variable": "sound_8"
+          },
+          {
+            "name": "videoFramePurple",
+            "type": "decoration",
+            "image": "videoFramePurple",
+            "key": "decorations",
+            "location": [ 152, 124 ],
+            "scale": [ 1.0, 1.0 ]
+          },
+          {
+            "name": "video_telling_an_adult_example_2",
+            "type": "wistia",
+            "location": [ 159, 129 ],
+            "size": [ 320, 240 ],
+            "video": "h3ybfygp3s",
+            "closeButtonLocation" : [ -100, -100 ],
+            "variable": "video_telling_an_adult_example_2",
+            "blockerAlpha" : 0.0,
+            "blockInput": false
+          },
+          {
+            "name": "mutebutton",
+            "type": "toggle-button",
+            "images": {
+              "on": "muteOff",
+              "off": "muteOn"
+            },
+            "location": [ 9, 435 ],
+            "scale": [ 1.0, 1.0 ],
+            "variable": "mute_game",
+            "values": {
+              "on": "mute_on",
+              "off": "mute_off"
+            },
+            "active": true
+          },
+          {
+            "name": "backButton",
+            "type": "button",
+            "image": "back",
+            "location": [ 337, 435 ],
+            "variable": "telling_an_adult_example_2_showPrevious"
+          },
+          {
+            "name": "forwardButton",
+            "type": "button",
+            "image": "next",
+            "location": [ 512, 436 ],
+            "variable": "telling_an_adult_example_2_showNext"
+          },
+          {
+            "name": "replay",
+            "type": "button",
+            "image": "replay",
+            "location": [ 466, 435 ],
+            "variable": "telling_an_adult_example_2_replay"
+          },
+          {
+            "name": "bottomPanel",
+            "type": "blocker",
+            "location": [ 0, 480 ],
+            "size": [ 640, 200 ],
+            "blockerTint" : "0xFFFFFF",
+            "blockerAlpha" : 1.0
+          }
+        ],
+        "outcomes": {
+          "video_example_2_finished_shimmer_next": {
+            "events": { "video_telling_an_adult_example_2": "finished" },
+            "actions": [
+              { "type": "remove-actor", "args": ["forwardButton"] },
+              { "type": "remove-actor", "args": ["forwardButtonShimmer"] },
+              { "type": "add-actor", "args": [
+                {
+                  "name": "forwardButtonShimmer",
+                  "type": "button",
+                  "image": "next",
+                  "animated": true,
+                  "animationRepeat": 4000,
+                  "animationFrameRate": 30,
+                  "location": [ 512, 436 ],
+                  "variable": "telling_an_adult_example_2_showNext"
+                }
+              ] }
+            ]
+          },
+          "replay_button": {
+            "events": { "telling_an_adult_example_2_replay": "*" },
+            "actions": [
+              { "type": "remove-actor", "args": ["video_telling_an_adult_example_2"] },
+              { "type": "scene", "args": [ "empty_replay_scene" ] },
+              { "type": "scene", "args": [ "telling_an_adult_example_2" ] }
+            ]
+          },
+          "back_button": {
+            "events": { "telling_an_adult_example_2_showPrevious": "*" },
+            "actions": [
+              { "type": "remove-actor", "args": ["video_telling_an_adult_example_2"] },
+              { "type": "scene", "args": [ "telling_an_adult_example_1" ] }
+            ]
+          },
+          "forward_button": {
+            "events": { "telling_an_adult_example_2_showNext": "*" },
+            "actions": [
+              { "type": "remove-actor", "args": ["video_telling_an_adult_example_2"] },
+              { "type": "scene", "args": [ "move_on" ] }
+            ]
+          }
+        }
+      },
+      "move_on": {
+        "id": "move_on",
+        "background": "actNowBackground",
+        "title": "Move on",
+        "actors": [
+          {
+            "name": "Tell Header",
+            "type": "text",
+            "font": "tell_header",
+            "location": [ 19, 7 ],
+            "text": "Tell "
+          },
+          {
+            "name": "sound_9",
+            "type": "audio",
+            "audio": ["sound_9"],
+            "variable": "sound_9"
+          },
+          {
+            "name": "travis",
+            "type": "decoration",
+            "image": "travis",
+            "key": "decorations",
+            "location": [ 70, 182 ],
+            "scale": [ 1.65, 1.65 ]
+          },
+          {
+            "name": "Good job!",
+            "type": "text",
+            "font": "tell_text_extra_large_bold",
+            "location": [ 340, 167 ],
+            "text": "Good job!"
+          },
+          {
+            "name": "Return to the menu",
+            "type": "text",
+            "font": "tell_text_small_wrap",
+            "location": [ 340, 237 ],
+            "text": "You have completed this lesson."
+          },
+          {
+            "name": "mutebutton",
+            "type": "toggle-button",
+            "images": {
+              "on": "muteOff",
+              "off": "muteOn"
+            },
+            "location": [ 9, 435 ],
+            "scale": [ 1.0, 1.0 ],
+            "variable": "mute_game",
+            "values": {
+              "on": "mute_on",
+              "off": "mute_off"
+            },
+            "active": true
+          },
+          {
+            "name": "backButton",
+            "type": "button",
+            "image": "back",
+            "location": [ 337, 435 ],
+            "variable": "move_on_showPrevious"
+          },
+          {
+            "name": "nextDisabled",
+            "type": "decoration",
+            "image": "nextDisabled",
+            "key": "decorations",
+            "location": [ 512, 436 ],
+            "scale": [ 1.0, 1.0 ]
+          },
+          {
+            "name": "replay",
+            "type": "button",
+            "image": "replay",
+            "location": [ 466, 435 ],
+            "variable": "move_on_replay"
+          },
+          {
+            "name": "bottomPanel",
+            "type": "blocker",
+            "location": [ 0, 480 ],
+            "size": [ 640, 200 ],
+            "blockerTint" : "0xFFFFFF",
+            "blockerAlpha" : 1.0
+          }
+        ],
+        "actions": [
+          { "type": "choice", "args": [ "objective_complete", 1] },
+          { "type": "choice", "args": [ "save", 0 ] }
+        ],
+        "outcomes": {
+          "replay_button": {
+            "events": { "move_on_replay": "*" },
+            "actions": [
+              { "type": "scene", "args": [ "empty_replay_scene" ] },
+              { "type": "scene", "args": [ "move_on" ] }
+            ]
+          },
+          "back_button": {
+            "events": { "move_on_showPrevious": "*" },
+            "actions": [ { "type": "scene", "args": [ "telling_an_adult_example_2" ] } ]
+          }
+        }
+      },
+      "empty_replay_scene": {
+        "id": "empty_replay_scene",
+        "description": "since a scene change request to the current scene is ignored, first change to this empty scene"
+      }
+    }
+  }
+}

@@ -1,0 +1,184 @@
+{
+
+  "developer_notes": [
+    "sounds.sound_9 duration modified to cut off mention of menu. Source audio not changed. Original duration: 16.944013605442194"
+  ],
+
+  "texture": "media/Tell/texture.png",
+  "textureMap": "media/Tell/texture.json",
+  "textureKey": "tell_5_texture",
+  "data": "media/Tell/sceneData.json",
+  "fonts": {
+    "tell_text_resume": { "font": "18px nobileregular", "fill": "#8E3CE3",  "fontWeight": "normal",
+      "align": "center", "lineSpacing": -9, "wordWrap":true, "wordWrapWidth": 240 },
+    "tell_header": { "font": "40px nobileregular", "fill": "#E3CFF8",  "fontWeight": "normal", "align": "left",
+      "shadowX": 5, "shadowY": 4, "shadowColor": "rgba(0,0,0,1)", "shadowBlur": 3 },
+    "tell_textCaps_solid": { "font": "56px nobileregular", "fill": "#0A7676",  "fontWeight": "bold", "align": "left" },
+    "tell_text_extra_large_bold": { "font": "44px nobileregular", "fill": "#0A7676",  "fontWeight": "bold", "align": "left" },
+    "tell_text_large_bold_transparent": { "font": "40px nobileregular", "fill": "#0A7676",  "fontWeight": "bold",
+      "align": "left", "alpha": 0.5 },
+    "tell_text_large_bold_solid": { "font": "40px nobileregular", "fill": "#0A7676",  "fontWeight": "bold", "align": "left" },
+    "tell_text_small_wrap": { "font": "24px nobileregular", "fill": "#0A7676",  "fontWeight": "normal",
+      "align": "left", "wordWrap": true, "wordWrapWidth": 300, "lineSpacing": -7 },
+    "tell_text_smaller_wrap_323": { "font": "21px nobileregular", "fill": "#0A7676",  "fontWeight": "normal",
+      "align": "left", "wordWrap": true, "wordWrapWidth": 323, "lineSpacing": -4 },
+    "tell_text_smaller_wrap": { "font": "21px nobileregular", "fill": "#0A7676",  "fontWeight": "normal",
+      "align": "left", "wordWrap": true, "wordWrapWidth": 290, "lineSpacing": -6 },
+    "tell_text_very_small_wrap_550": { "font": "17px nobileregular", "fill": "#0A7676",  "fontWeight": "normal",
+      "align": "left", "wordWrap": true, "wordWrapWidth": 550, "lineSpacing": -8 },
+    "speech_bubble": { "font": "14px Helvetica", "fill": "black", "fontWeight": "bold",
+      "align": "center", "wordWrap": true, "wordWrapWidth": 150, "lineSpacing": -4 }
+  },
+  "images": {
+    "decorations": {
+      "backDisabled": "backDisabled.png",
+      "denise": "denise.png",
+      "ian": "Ian.png",
+      "mrLin": "mrLin.png",
+      "nextDisabled": "NextDisabled.png",
+      "ramon": "ramon.png",
+      "resumeDialogBox": "resume-box.png",
+      "talkBubble": "talkBubble.png",
+      "travis": "travis.png",
+      "videoFramePurple": "imageBorder.png"
+    }
+  },
+  "sceneImages": {
+    "actNowBackground": "background.png",
+    "resumeBackground": "resume-background-lesson.png"
+  },
+  "buttons": {
+    "back": {
+      "up": "backUp.png",
+      "over": "backOver.png",
+      "out": "backUp.png",
+      "down": "backDown.png"
+    },
+    "muteOff": {
+      "up": "muteOffUp.png",
+      "over": "muteOffOver.png",
+      "out": "muteOffUp.png",
+      "down": "muteOffDown.png"
+    },
+    "muteOn": {
+      "up": "muteOnUp.png",
+      "over": "muteOnOver.png",
+      "out": "muteOnUp.png",
+      "down": "muteOnDown.png"
+    },
+    "next": {
+      "up": "nextUp.png",
+      "over": "nextOver.png",
+      "out": "nextUp.png",
+      "down": "nextDown.png"
+    },
+    "replay": {
+      "up": "replayUp.png",
+      "over": "replayOver.png",
+      "out": "replayUp.png",
+      "down": "replayDown.png"
+    },
+    "restart": {
+      "up": "restart-up.png",
+      "over": "restart-over.png",
+      "out": "restart-up.png",
+      "down": "restart-down.png"
+    },
+    "resume": {
+      "up": "resume-up.png",
+      "over": "resume-over.png",
+      "out": "resume-up.png",
+      "down": "resume-down.png"
+    },
+    "schoolMenu": {
+      "up": "SchoolMenu0001.png",
+      "over": "SchoolMenu0002.png",
+      "out": "SchoolMenu0001.png",
+      "down": "SchoolMenu0003.png"
+    },
+    "tattling": {
+      "up": "tattling0001.png",
+      "over": "tattling0002.png",
+      "out": "tattling0001.png",
+      "down": "tattling0003.png"
+    },
+    "telling": {
+      "up": "telling0001.png",
+      "over": "telling0002.png",
+      "out": "telling0001.png",
+      "down": "telling0003.png"
+    },
+    "worksheet": {
+      "up": "worksheet0001.png",
+      "over": "worksheet0002.png",
+      "out": "worksheet0001.png",
+      "down": "worksheet0003.png"
+    },
+    "videoClose": {
+      "up": "video-close.png",
+      "over": "video-close-over.png",
+      "out": "video-close.png",
+      "down": "video-close-down.png"
+    }
+  },
+  "buttonAnimations": {
+    "next": [
+      "next-highlight-0001.png",
+      "next-highlight-0002.png",
+      "next-highlight-0003.png",
+      "next-highlight-0004.png",
+      "next-highlight-0005.png",
+      "next-highlight-0006.png",
+      "next-highlight-0007.png",
+      "next-highlight-0008.png",
+      "next-highlight-0009.png",
+      "next-highlight-0010.png",
+      "next-highlight-0011.png",
+      "next-highlight-0012.png",
+      "next-highlight-0013.png",
+      "next-highlight-0014.png",
+      "next-highlight-0015.png"
+    ],
+    "schoolMenu": [
+      "school-menu-highlight-0001.png",
+      "school-menu-highlight-0002.png",
+      "school-menu-highlight-0003.png",
+      "school-menu-highlight-0004.png",
+      "school-menu-highlight-0005.png",
+      "school-menu-highlight-0006.png",
+      "school-menu-highlight-0007.png",
+      "school-menu-highlight-0008.png",
+      "school-menu-highlight-0009.png",
+      "school-menu-highlight-0010.png",
+      "school-menu-highlight-0011.png",
+      "school-menu-highlight-0012.png",
+      "school-menu-highlight-0013.png",
+      "school-menu-highlight-0014.png",
+      "school-menu-highlight-0015.png"
+    ]
+  },
+  "unused": {
+    "loaderDisplay": "loaderDisplay.png"
+  },
+  "soundKey": "tell_5_sounds",
+  "soundFile": [ "media/Tell/tell.m4a", "media/tell/tell.ogg" ],
+  "sounds": {
+    "silence":          [   0, 3,                  false, "silence" ],
+    "sound_0":          [   4, 35.69598639455782,  false, "slide_0, Starts at 4, lasts 35.69598639455782 seconds, doesn't loop"],
+    "sound_1":          [  41, 19.290680272108844, false, "slide_1" ],
+    "sound_2":          [  62, 42.30666666666667,  false, "slide_2" ],
+    "sound_3":          [ 106, 33.835986394557835, false, "slide_3" ],
+    "sound_4_question": [ 141, 21.14133786848072,  false, "slide_4_question" ],
+    "sound_4_tattling": [ 164, 9.120000000000005,  false, "slide_4_tattling" ],
+    "sound_4_telling":  [ 175, 9.664013605442165,  false, "slide_4_telling" ],
+    "sound_5_question": [ 186, 16.7253514739229,   false, "slide_5_question" ],
+    "sound_5_tattling": [ 204, 8.71467120181407,   false, "slide_5_tattling" ],
+    "sound_5_telling":  [ 214, 7.082653061224477,  false, "slide_5_telling" ],
+    "sound_6_question": [ 223, 23.354671201814057, false, "slide_6_question" ],
+    "sound_6_tattling": [ 248, 9.637346938775522,  false, "slide_6_tattling" ],
+    "sound_6_telling":  [ 259, 10.842653061224496, false, "slide_6_telling" ],
+    "sound_7":          [ 271, 3.8133333333333326, false, "slide_7" ],
+    "sound_8":          [ 276, 9.104013605442162,  false, "slide_8" ],
+    "sound_9":          [ 287, 13,                 false, "slide_9" ]
+  }
+}

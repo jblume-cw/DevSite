@@ -1,0 +1,124 @@
+{
+  "texture": "media/ZinkTheZebra/texture.png",
+  "textureMap": "media/ZinkTheZebra/texture.json",
+  "textureKey": "ztz_5_texture",
+  "data": "media/ZinkTheZebra/sceneData.json",
+  "fonts": {
+    "zink_text_resume": { "font": "18px nobileregular", "fill": "#FFFFFF",  "fontWeight": "normal",
+      "align": "center", "lineSpacing": -9, "wordWrap":true, "wordWrapWidth": 240 },
+    "zink_header": { "font": "50px walterturncoat", "fill": "#FFFDD8",  "fontWeight": "normal", "align": "left" },
+    "zink_text_medium": { "font": "29px walterturncoat", "fill": "#FFFFFF",  "fontWeight": "normal", "align": "left" },
+    "zink_text_medium_wrap_30": { "font": "22px walterturncoat", "fill": "#FFFFFF",  "fontWeight": "normal",
+      "align": "center", "wordWrap": true, "wordWrapWidth": 250, "lineSpacing": 4 }
+  },
+  "images": {
+    "decorations": {
+      "backDisabled": "backDisabled.png",
+      "nextDisabled": "NextDisabled.png",
+      "zink1": "zink1.png",
+      "zink2": "zink2.png",
+      "zink3": "zink3.png"
+    }
+  },
+  "sceneImages": {
+    "actNowBackground": "slide-background.png",
+    "resumeBackground": "resume-background.png"
+  },
+  "buttons": {
+    "back": {
+      "up": "backUp.png",
+      "over": "backOver.png",
+      "out": "backUp.png",
+      "down": "backDown.png"
+    },
+    "muteOff": {
+      "up": "muteOffUp.png",
+      "over": "muteOffOver.png",
+      "out": "muteOffUp.png",
+      "down": "muteOffDown.png"
+    },
+    "muteOn": {
+      "up": "muteOnUp.png",
+      "over": "muteOnOver.png",
+      "out": "muteOnUp.png",
+      "down": "muteOnDown.png"
+    },
+    "next": {
+      "up": "nextUp.png",
+      "over": "nextOver.png",
+      "out": "nextUp.png",
+      "down": "nextDown.png"
+    },
+    "replay": {
+      "up": "replayUp.png",
+      "over": "replayOver.png",
+      "out": "replayUp.png",
+      "down": "replayDown.png"
+    },
+    "restart": {
+      "up": "restart-up.png",
+      "over": "restart-over.png",
+      "out": "restart-up.png",
+      "down": "restart-down.png"
+    },
+    "resume": {
+      "up": "resume-up.png",
+      "over": "resume-over.png",
+      "out": "resume-up.png",
+      "down": "resume-down.png"
+    },
+    "schoolMenu": {
+      "up": "SchoolMenu0001.png",
+      "over": "SchoolMenu0002.png",
+      "out": "SchoolMenu0001.png",
+      "down": "SchoolMenu0003.png"
+    }
+  },
+  "buttonAnimations": {
+    "next": [
+      "next-highlight-0001.png",
+      "next-highlight-0002.png",
+      "next-highlight-0003.png",
+      "next-highlight-0004.png",
+      "next-highlight-0005.png",
+      "next-highlight-0006.png",
+      "next-highlight-0007.png",
+      "next-highlight-0008.png",
+      "next-highlight-0009.png",
+      "next-highlight-0010.png",
+      "next-highlight-0011.png",
+      "next-highlight-0012.png",
+      "next-highlight-0013.png",
+      "next-highlight-0014.png",
+      "next-highlight-0015.png"
+    ],
+    "schoolMenu": [
+      "school-menu-highlight-0001.png",
+      "school-menu-highlight-0002.png",
+      "school-menu-highlight-0003.png",
+      "school-menu-highlight-0004.png",
+      "school-menu-highlight-0005.png",
+      "school-menu-highlight-0006.png",
+      "school-menu-highlight-0007.png",
+      "school-menu-highlight-0008.png",
+      "school-menu-highlight-0009.png",
+      "school-menu-highlight-0010.png",
+      "school-menu-highlight-0011.png",
+      "school-menu-highlight-0012.png",
+      "school-menu-highlight-0013.png",
+      "school-menu-highlight-0014.png",
+      "school-menu-highlight-0015.png"
+    ]
+  },
+  "soundKey": "zinkTheZebra_5_Sounds",
+  "soundFile": [ "media/ZinkTheZebra/zinkTheZebra.m4a", "media/ZinkTheZebra/zinkTheZebra.ogg" ],
+  "sounds": {
+    "silence": [ 0, 3, false, "silence" ],
+    "ZinkLessonSlide_01": [ 4, 20.41848072562358, false, "ZinkLessonSlide_01, Starts at 4, lasts 20.41848072562358 seconds, doesn't loop"],
+    "ZinkLessonSlide_01a": [ 26, 20.640725623582767, false, "ZinkLessonSlide_01a" ],
+    "ZinkLessonSlide_02": [ 48, 19.20052154195011, false, "ZinkLessonSlide_02" ],
+    "ZinkLessonSlide_02a": [ 69, 17.663877551020406, false, "ZinkLessonSlide_02a" ],
+    "ZinkLessonSlide_03": [ 88, 13.213333333333338, false, "ZinkLessonSlide_03" ],
+    "ZinkLessonSlide_03a": [ 103, 12.343333333333334, false, "ZinkLessonSlide_03a" ]
+  }
+}

@@ -1,0 +1,2661 @@
+{
+  "play": {
+    "start": "realLifeConfessions_intro",
+    "resume": "realLifeConfessions_resume",
+    "showPlayThrough": false,
+    "scenes": {
+      "realLifeConfessions_resume": {
+        "id": "realLifeConfessions_resume",
+        "background": "resumeBackground",
+        "title": "This is the resume scene.",
+        "actors": [
+          {
+            "name": "sub-title",
+            "type": "text",
+            "font": "realLifeConfessions_text_resume",
+            "location": [ 212, 155 ],
+            "text": "You have completed part of this lesson"
+          },
+          {
+            "name": "resumeButton",
+            "type": "button",
+            "image": "resume",
+            "location": [ 155, 240],
+            "variable": "resume_button"
+          },
+          {
+            "name": "restartButton",
+            "type": "button",
+            "image": "restart",
+            "location": [ 155, 280 ],
+            "variable": "resume_button"
+          },
+          {
+            "name": "bottomPanel",
+            "type": "blocker",
+            "location": [ 0, 480 ],
+            "size": [ 640, 200 ],
+            "blockerTint" : "0xFFFFFF",
+            "blockerAlpha" : 1.0
+          }
+        ],
+        "outcomes": {
+          "do_restart": {
+            "events": { "resume_button": "restartButton" },
+            "actions": [ { "type": "scene", "args": [ "realLifeConfessions_intro" ] } ]
+          },
+          "do_resume": {
+            "events": { "resume_button": "resumeButton" },
+            "actions": [ { "type": "scene", "args": [ "$restore_scene" ] } ]
+          }
+        }
+      },
+      "realLifeConfessions_intro": {
+        "id": "realLifeConfessions_intro",
+        "background": "actNowBackground",
+        "title": "Real Life Confessions",
+        "actors": [
+          {
+            "name": "sound_0",
+            "type": "audio",
+            "audio": ["sound_0"],
+            "variable": "sound_0"
+          },
+          {
+            "name": "emilyStill",
+            "type": "decoration",
+            "image": "emilyStill",
+            "key": "decorations",
+            "location": [ 20, 147 ],
+            "scale": [ 1.0, 1.0 ]
+          },
+          {
+            "name": "chrisStill",
+            "type": "decoration",
+            "image": "chrisStill",
+            "key": "decorations",
+            "location": [ 218, 247 ],
+            "scale": [ 1.0, 1.0 ]
+          },
+          {
+            "name": "jordanStill",
+            "type": "decoration",
+            "image": "jordanStill",
+            "key": "decorations",
+            "location": [ 416, 144 ],
+            "scale": [ 1.0, 1.0 ]
+          },
+          {
+            "name": "mutebutton",
+            "type": "toggle-button",
+            "images": {
+              "on": "muteOff",
+              "off": "muteOn"
+            },
+            "location": [ 15, 448 ],
+            "scale": [ 1.0, 1.0 ],
+            "variable": "mute_game",
+            "values": {
+              "on": "mute_on",
+              "off": "mute_off"
+            },
+            "active": true
+          },
+          {
+            "name": "backButtonDisabled",
+            "type": "decoration",
+            "image": "backButtonDisabled",
+            "key": "decorations",
+            "location": [ 415, 448 ],
+            "scale": [ 1.0, 1.0 ]
+          },
+          {
+            "name": "forward",
+            "type": "button",
+            "image": "next",
+            "location": [ 550, 448 ],
+            "variable": "realLifeConfessions_intro_showNext"
+          },
+          {
+            "name": "replay",
+            "type": "button",
+            "image": "replay",
+            "location": [ 510, 448 ],
+            "variable": "realLifeConfessions_intro_replay"
+          },
+          {
+            "name": "bottomPanel",
+            "type": "blocker",
+            "location": [ 0, 480 ],
+            "size": [ 640, 200 ],
+            "blockerTint" : "0xFFFFFF",
+            "blockerAlpha" : 1.0
+          }
+        ],
+        "outcomes": {
+          "sound_0_finished_shimmer_next": {
+            "events": { "sound_0": "played" },
+            "actions": [
+              { "type": "remove-actor", "args": ["forwardButton"] },
+              { "type": "add-actor", "args": [
+                {
+                  "name": "forwardButtonShimmer",
+                  "type": "button",
+                  "image": "next",
+                  "animated": true,
+                  "animationRepeat": 4000,
+                  "animationFrameRate": 30,
+                  "location": [ 550, 448 ],
+                  "variable": "realLifeConfessions_intro_showNext"
+                }
+              ] }
+            ]
+          },
+          "replay_button": {
+            "events": { "realLifeConfessions_intro_replay": "*" },
+            "actions": [
+              { "type": "scene", "args": [ "empty_replay_scene" ] },
+              { "type": "scene", "args": [ "realLifeConfessions_intro" ] }
+            ]
+          },
+          "forward_button": {
+            "events": { "realLifeConfessions_intro_showNext": "*" },
+            "actions": [ { "type": "scene", "args": [ "actionCareTell" ] } ]
+          }
+        }
+      },
+      "actionCareTell": {
+        "id": "actionCareTell",
+        "background": "actNowBackground",
+        "title": "Action Care Tell",
+        "actors": [
+          {
+            "name": "sound_1_a",
+            "type": "audio",
+            "audio": ["sound_1_a"],
+            "variable": "sound_1_a"
+          },
+          {
+            "name": "A_",
+            "type": "text",
+            "font": "realLifeConfessions_textCaps_extra_large_solid",
+            "location": [ 237, 145 ],
+            "text": "A"
+          },
+          {
+            "name": "_ction",
+            "type": "text",
+            "font": "realLifeConfessions_text_extra_large_solid",
+            "location": [ 295, 174 ],
+            "text": "ction"
+          },
+          {
+            "name": "C_",
+            "type": "text",
+            "font": "realLifeConfessions_textCaps_extra_large_solid",
+            "location": [ 236, 230 ],
+            "text": "C"
+          },
+          {
+            "name": "_are",
+            "type": "text",
+            "font": "realLifeConfessions_text_extra_large_solid",
+            "location": [ 295, 259 ],
+            "text": "are"
+          },
+          {
+            "name": "T_",
+            "type": "text",
+            "font": "realLifeConfessions_textCaps_extra_large_solid",
+            "location": [ 240, 315 ],
+            "text": "T"
+          },
+          {
+            "name": "_ell",
+            "type": "text",
+            "font": "realLifeConfessions_text_extra_large_solid",
+            "location": [ 295, 344 ],
+            "text": "ell"
+          },
+          {
+            "name": "mutebutton",
+            "type": "toggle-button",
+            "images": {
+              "on": "muteOff",
+              "off": "muteOn"
+            },
+            "location": [ 15, 448 ],
+            "scale": [ 1.0, 1.0 ],
+            "variable": "mute_game",
+            "values": {
+              "on": "mute_on",
+              "off": "mute_off"
+            },
+            "active": true
+          },
+          {
+            "name": "backButton",
+            "type": "button",
+            "image": "back",
+            "location": [ 415, 448 ],
+            "variable": "actionCareTell_showPrevious"
+          },
+          {
+            "name": "forward",
+            "type": "button",
+            "image": "next",
+            "location": [ 550, 448 ],
+            "variable": "actionCareTell_showNext"
+          },
+          {
+            "name": "replay",
+            "type": "button",
+            "image": "replay",
+            "location": [ 510, 448 ],
+            "variable": "actionCareTell_replay"
+          },
+          {
+            "name": "bottomPanel",
+            "type": "blocker",
+            "location": [ 0, 480 ],
+            "size": [ 640, 200 ],
+            "blockerTint" : "0xFFFFFF",
+            "blockerAlpha" : 1.0
+          }
+        ],
+        "outcomes": {
+          "sound_1_a_finished": {
+            "events": { "sound_1_a": "played" },
+            "actions": [
+              { "type": "add-actor", "args": [
+                {
+                  "name": "sound_01_b",
+                  "type": "audio",
+                  "audio": ["sound_1_b"],
+                  "variable": "sound_1_b"
+                }
+              ] },
+              { "type": "remove-actor", "args": ["A_"] },
+              { "type": "add-actor", "args": [
+                {
+                  "name": "A_ transparent",
+                  "type": "text",
+                  "font": "realLifeConfessions_textCaps_extra_large_transparent",
+                  "location": [ 237, 145 ],
+                  "text": "A"
+                }
+              ] },
+              { "type": "remove-actor", "args": ["_ction"] },
+              { "type": "add-actor", "args": [
+                {
+                  "name": "_ction transparent",
+                  "type": "text",
+                  "font": "realLifeConfessions_text_extra_large_transparent",
+                  "location": [ 295, 174 ],
+                  "text": "ction"
+                }
+              ] },
+              { "type": "remove-actor", "args": ["T_"] },
+              { "type": "add-actor", "args": [
+                {
+                  "name": "T_ transparent",
+                  "type": "text",
+                  "font": "realLifeConfessions_textCaps_extra_large_transparent",
+                  "location": [ 240, 315 ],
+                  "text": "T"
+                }
+              ] },
+              { "type": "remove-actor", "args": ["_ell"] },
+              { "type": "add-actor", "args": [
+                {
+                  "name": "_ell transparent",
+                  "type": "text",
+                  "font": "realLifeConfessions_text_extra_large_transparent",
+                  "location": [ 295, 344 ],
+                  "text": "ell"
+                }
+              ] }
+            ]
+          },
+          "sound_1_b_finished_shimmer_next": {
+            "events": { "sound_1_b": "played" },
+            "actions": [
+              { "type": "remove-actor", "args": ["forwardButton"] },
+              { "type": "add-actor", "args": [
+                {
+                  "name": "forwardButtonShimmer",
+                  "type": "button",
+                  "image": "next",
+                  "animated": true,
+                  "animationRepeat": 4000,
+                  "animationFrameRate": 30,
+                  "location": [ 550, 448 ],
+                  "variable": "actionCareTell_showNext"
+                }
+              ] }
+            ]
+          },
+          "replay_button": {
+            "events": { "actionCareTell_replay": "*" },
+            "actions": [
+              { "type": "scene", "args": [ "empty_replay_scene" ] },
+              { "type": "scene", "args": [ "actionCareTell" ] }
+            ]
+          },
+          "back_button": {
+            "events": { "actionCareTell_showPrevious": "*" },
+            "actions": [ { "type": "scene", "args": [ "realLifeConfessions_intro" ] } ]
+          },
+          "forward_button": {
+            "events": { "actionCareTell_showNext": "*" },
+            "actions": [ { "type": "scene", "args": [ "care" ] } ]
+          }
+        }
+      },
+      "care": {
+        "id": "care",
+        "background": "actNowBackground",
+        "title": "Care",
+        "actors": [
+          {
+            "name": "sound_2",
+            "type": "audio",
+            "audio": ["sound_2"],
+            "variable": "sound_2"
+          },
+          {
+            "name": "mollieMai",
+            "type": "decoration",
+            "image": "mollieMai",
+            "key": "decorations",
+            "location": [ 120, 145 ],
+            "scale": [ 0.98, 0.98 ]
+          },
+          {
+            "name": "Care",
+            "type": "text",
+            "font": "realLifeConfessions_text_large",
+            "location": [ 295, 150 ],
+            "text": "Care"
+          },
+          {
+            "name": "Victims",
+            "type": "text",
+            "font": "realLifeConfessions_text_medium",
+            "location": [ 332,  220 ],
+            "text": "Victims",
+            "bullet": true
+          },
+          {
+            "name": "Bystanders",
+            "type": "text",
+            "font": "realLifeConfessions_text_medium",
+            "location": [ 332,  275 ],
+            "text": "Bystanders",
+            "bullet": true
+          },
+          {
+            "name": "Bullies",
+            "type": "text",
+            "font": "realLifeConfessions_text_medium",
+            "location": [ 332,  330 ],
+            "text": "Bullies",
+            "bullet": true
+          },
+          {
+            "name": "mutebutton",
+            "type": "toggle-button",
+            "images": {
+              "on": "muteOff",
+              "off": "muteOn"
+            },
+            "location": [ 15, 448 ],
+            "scale": [ 1.0, 1.0 ],
+            "variable": "mute_game",
+            "values": {
+              "on": "mute_on",
+              "off": "mute_off"
+            },
+            "active": true
+          },
+          {
+            "name": "backButton",
+            "type": "button",
+            "image": "back",
+            "location": [ 415, 448 ],
+            "variable": "care_showPrevious"
+          },
+          {
+            "name": "forward",
+            "type": "button",
+            "image": "next",
+            "location": [ 550, 448 ],
+            "variable": "care_showNext"
+          },
+          {
+            "name": "replay",
+            "type": "button",
+            "image": "replay",
+            "location": [ 510, 448 ],
+            "variable": "care_replay"
+          },
+          {
+            "name": "bottomPanel",
+            "type": "blocker",
+            "location": [ 0, 480 ],
+            "size": [ 640, 200 ],
+            "blockerTint" : "0xFFFFFF",
+            "blockerAlpha" : 1.0
+          }
+        ],
+        "outcomes": {
+          "sound_2_finished_shimmer_next": {
+            "events": { "sound_2": "played" },
+            "actions": [
+              { "type": "remove-actor", "args": ["forwardButton"] },
+              { "type": "add-actor", "args": [
+                {
+                  "name": "forwardButtonShimmer",
+                  "type": "button",
+                  "image": "next",
+                  "animated": true,
+                  "animationRepeat": 4000,
+                  "animationFrameRate": 30,
+                  "location": [ 550, 448 ],
+                  "variable": "care_showNext"
+                }
+              ] }
+            ]
+          },
+          "replay_button": {
+            "events": { "care_replay": "*" },
+            "actions": [
+              { "type": "scene", "args": [ "empty_replay_scene" ] },
+              { "type": "scene", "args": [ "care" ] }
+            ]
+          },
+          "back_button": {
+            "events": { "care_showPrevious": "*" },
+            "actions": [ { "type": "scene", "args": [ "actionCareTell" ] } ]
+          },
+          "forward_button": {
+            "events": { "care_showNext": "*" },
+            "actions": [ { "type": "scene", "args": [ "bystander_can_help" ] } ]
+          }
+        }
+      },
+      "bystander_can_help": {
+        "id": "bystander_can_help",
+        "background": "actNowBackground",
+        "title": "Things a bystander can do to help",
+        "actors": [
+          {
+            "name": "sound_3",
+            "type": "audio",
+            "audio": ["sound_3"],
+            "variable": "sound_3"
+          },
+          {
+            "name": "Things a bystander can do to help",
+            "type": "text",
+            "font": "realLifeConfessions_text_medium_smaller",
+            "location": [ 20, 145 ],
+            "text": "Things a bystander can do to help:"
+          },
+          {
+            "name": "Help the victim get away from the bully.",
+            "type": "text",
+            "font": "realLifeConfessions_text_small_wrap_400",
+            "location": [ 50,  200 ],
+            "text": "Help the victim get away from the bully.",
+            "bullet": true,
+            "startDelay": 13500
+          },
+          {
+            "name": "Talk to the victim later.",
+            "type": "text",
+            "font": "realLifeConfessions_text_small_wrap_400",
+            "location": [ 50,  250 ],
+            "text": "Talk to the victim later.",
+            "bullet": true,
+            "startDelay": 23000
+          },
+          {
+            "name": "Invite the victim to join your group.",
+            "type": "text",
+            "font": "realLifeConfessions_text_small_wrap_400",
+            "location": [ 50,  300 ],
+            "text": "Invite the victim to join your group.",
+            "bullet": true,
+            "startDelay": 38500
+          },
+          {
+            "name": "Offer to go with the victim to report the bullying.",
+            "type": "text",
+            "font": "realLifeConfessions_text_small_wrap_400",
+            "location": [ 50,  350 ],
+            "text": "Offer to go with the victim to report the bullying.",
+            "bullet": true,
+            "startDelay": 47000
+          },
+          {
+            "name": "ramon",
+            "type": "decoration",
+            "image": "ramon",
+            "key": "decorations",
+            "location": [ 500, 125 ],
+            "scale": [ 1.0, 1.0 ]
+          },
+          {
+            "name": "mutebutton",
+            "type": "toggle-button",
+            "images": {
+              "on": "muteOff",
+              "off": "muteOn"
+            },
+            "location": [ 15, 448 ],
+            "scale": [ 1.0, 1.0 ],
+            "variable": "mute_game",
+            "values": {
+              "on": "mute_on",
+              "off": "mute_off"
+            },
+            "active": true
+          },
+          {
+            "name": "backButton",
+            "type": "button",
+            "image": "back",
+            "location": [ 415, 448 ],
+            "variable": "bystander_can_help_showPrevious"
+          },
+          {
+            "name": "forward",
+            "type": "button",
+            "image": "next",
+            "location": [ 550, 448 ],
+            "variable": "bystander_can_help_showNext"
+          },
+          {
+            "name": "replay",
+            "type": "button",
+            "image": "replay",
+            "location": [ 510, 448 ],
+            "variable": "bystander_can_help_replay"
+          },
+          {
+            "name": "bottomPanel",
+            "type": "blocker",
+            "location": [ 0, 480 ],
+            "size": [ 640, 200 ],
+            "blockerTint" : "0xFFFFFF",
+            "blockerAlpha" : 1.0
+          }
+        ],
+        "outcomes": {
+          "sound_3_finished_shimmer_next": {
+            "events": { "sound_3": "played" },
+            "actions": [
+              { "type": "remove-actor", "args": ["forwardButton"] },
+              { "type": "add-actor", "args": [
+                {
+                  "name": "forwardButtonShimmer",
+                  "type": "button",
+                  "image": "next",
+                  "animated": true,
+                  "animationRepeat": 4000,
+                  "animationFrameRate": 30,
+                  "location": [ 550, 448 ],
+                  "variable": "bystander_can_help_showNext"
+                }
+              ] }
+            ]
+          },
+          "replay_button": {
+            "events": { "bystander_can_help_replay": "*" },
+            "actions": [
+              { "type": "scene", "args": [ "empty_replay_scene" ] },
+              { "type": "scene", "args": [ "bystander_can_help" ] }
+            ]
+          },
+          "back_button": {
+            "events": { "bystander_can_help_showPrevious": "*" },
+            "actions": [ { "type": "scene", "args": [ "care" ] } ]
+          },
+          "forward_button": {
+            "events": { "bystander_can_help_showNext": "*" },
+            "actions": [ { "type": "scene", "args": [ "inside_look_intro" ] } ]
+          }
+        }
+      },
+      "inside_look_intro": {
+        "id": "inside_look_intro",
+        "background": "actNowBackground",
+        "title": "Get an inside look",
+        "actors": [
+          {
+            "name": "sound_4",
+            "type": "audio",
+            "audio": ["sound_4"],
+            "variable": "sound_4"
+          },
+          {
+            "name": "emilyStill",
+            "type": "decoration",
+            "image": "emilyStill",
+            "key": "decorations",
+            "location": [ 20, 147 ],
+            "scale": [ 1.0, 1.0 ]
+          },
+          {
+            "name": "chrisStill",
+            "type": "decoration",
+            "image": "chrisStill",
+            "key": "decorations",
+            "location": [ 218, 247 ],
+            "scale": [ 1.0, 1.0 ]
+          },
+          {
+            "name": "jordanStill",
+            "type": "decoration",
+            "image": "jordanStill",
+            "key": "decorations",
+            "location": [ 416, 144 ],
+            "scale": [ 1.0, 1.0 ]
+          },
+          {
+            "name": "mutebutton",
+            "type": "toggle-button",
+            "images": {
+              "on": "muteOff",
+              "off": "muteOn"
+            },
+            "location": [ 15, 448 ],
+            "scale": [ 1.0, 1.0 ],
+            "variable": "mute_game",
+            "values": {
+              "on": "mute_on",
+              "off": "mute_off"
+            },
+            "active": true
+          },
+          {
+            "name": "backButton",
+            "type": "button",
+            "image": "back",
+            "location": [ 415, 448 ],
+            "variable": "inside_look_intro_showPrevious"
+          },
+          {
+            "name": "forward",
+            "type": "button",
+            "image": "next",
+            "location": [ 550, 448 ],
+            "variable": "inside_look_intro_showNext"
+          },
+          {
+            "name": "replay",
+            "type": "button",
+            "image": "replay",
+            "location": [ 510, 448 ],
+            "variable": "inside_look_intro_replay"
+          },
+          {
+            "name": "bottomPanel",
+            "type": "blocker",
+            "location": [ 0, 480 ],
+            "size": [ 640, 200 ],
+            "blockerTint" : "0xFFFFFF",
+            "blockerAlpha" : 1.0
+          }
+        ],
+        "outcomes": {
+          "sound_4_finished_shimmer_next": {
+            "events": { "sound_4": "played" },
+            "actions": [
+              { "type": "remove-actor", "args": ["forwardButton"] },
+              { "type": "add-actor", "args": [
+                {
+                  "name": "forwardButtonShimmer",
+                  "type": "button",
+                  "image": "next",
+                  "animated": true,
+                  "animationRepeat": 4000,
+                  "animationFrameRate": 30,
+                  "location": [ 550, 448 ],
+                  "variable": "inside_look_intro_showNext"
+                }
+              ] }
+            ]
+          },
+          "replay_button": {
+            "events": { "inside_look_intro_replay": "*" },
+            "actions": [
+              { "type": "scene", "args": [ "empty_replay_scene" ] },
+              { "type": "scene", "args": [ "inside_look_intro" ] }
+            ]
+          },
+          "back_button": {
+            "events": { "inside_look_intro_showPrevious": "*" },
+            "actions": [ { "type": "scene", "args": [ "bystander_can_help" ] } ]
+          },
+          "forward_button": {
+            "events": { "inside_look_intro_showNext": "*" },
+            "actions": [ { "type": "scene", "args": [ "meet_emily" ] } ]
+          }
+        }
+      },
+      "meet_emily": {
+        "id": "meet_emily",
+        "background": "actNowBackground",
+        "title": "Emily",
+        "actors": [
+          {
+            "name": "emily_bio",
+            "type": "audio",
+            "audio": ["emily_bio"],
+            "variable": "emily_bio"
+          },
+          {
+            "name": "Emily title",
+            "type": "text",
+            "font": "realLifeConfessions_character_name",
+            "location": [ 90, 132 ],
+            "text": "EMILY "
+          },
+          {
+            "name": "Lives with her mom and younger brother",
+            "type": "text",
+            "font": "realLifeConfessions_text_small_wrap_250",
+            "location": [ 25,  188 ],
+            "text": "Lives with her mom and younger brother",
+            "bullet": true
+          },
+          {
+            "name": "Likes to dance and play the flute",
+            "type": "text",
+            "font": "realLifeConfessions_text_small_wrap_250",
+            "location": [ 25,  258 ],
+            "text": "Likes to dance and play the flute",
+            "bullet": true
+          },
+          {
+            "name": "Does just ok in school",
+            "type": "text",
+            "font": "realLifeConfessions_text_small_wrap_250",
+            "location": [ 25,  328 ],
+            "text": "Does just ok in school",
+            "bullet": true
+          },
+          {
+            "name": "Studies a lot",
+            "type": "text",
+            "font": "realLifeConfessions_text_small_wrap_250",
+            "location": [ 25,  368 ],
+            "text": "Studies a lot",
+            "bullet": true
+          },
+          {
+            "name": "mutebutton",
+            "type": "toggle-button",
+            "images": {
+              "on": "muteOff",
+              "off": "muteOn"
+            },
+            "location": [ 15, 448 ],
+            "scale": [ 1.0, 1.0 ],
+            "variable": "mute_game",
+            "values": {
+              "on": "mute_on",
+              "off": "mute_off"
+            },
+            "active": true
+          },
+          {
+            "name": "backButton",
+            "type": "button",
+            "image": "back",
+            "location": [ 415, 448 ],
+            "variable": "meet_emily_showPrevious"
+          },
+          {
+            "name": "forward",
+            "type": "button",
+            "image": "next",
+            "location": [ 550, 448 ],
+            "variable": "meet_emily_showNext"
+          },
+          {
+            "name": "replay",
+            "type": "button",
+            "image": "replay",
+            "location": [ 510, 448 ],
+            "variable": "meet_emily_replay"
+          },
+          {
+            "name": "bottomPanel",
+            "type": "blocker",
+            "location": [ 0, 480 ],
+            "size": [ 640, 200 ],
+            "blockerTint" : "0xFFFFFF",
+            "blockerAlpha" : 1.0
+          },
+          {
+            "name": "videoFrame",
+            "type": "decoration",
+            "image": "videoFrame",
+            "key": "decorations",
+            "location": [ 296, 145 ],
+            "scale": [ 1.0, 1.0 ]
+          },
+          {
+            "name": "meet_emily_video_emily",
+            "type": "wistia",
+            "location": [ 300, 156 ],
+            "size": [ 320, 240 ],
+            "closeButtonLocation" : [ -100, -100 ],
+            "video": "rmj55m7oc8",
+            "variable": "meet_emily_video_emily",
+            "blockerAlpha" : 0.0,
+            "blockInput": false
+          }
+        ],
+        "outcomes": {
+          "meetEmilyVideoEnds": {
+            "events": { "meet_emily_video_emily": "finished" },
+            "actions": [
+              { "type": "remove-actor", "args": ["meet_emily_video_emily"] },
+              { "type": "remove-actor", "args": ["Emily title"] },
+              { "type": "remove-actor", "args": ["Lives with her mom and younger brother"] },
+              { "type": "remove-actor", "args": ["Likes to dance and play the flute"] },
+              { "type": "remove-actor", "args": ["Does just ok in school"] },
+              { "type": "remove-actor", "args": ["Studies a lot"] },
+              { "type": "add-actor", "args": [
+                {
+                  "name": "emily_direction",
+                  "type": "audio",
+                  "audio": ["emily_direction"],
+                  "variable": "emily_direction"
+                }
+              ] },
+              { "type": "add-actor", "args": [
+                {
+                  "name": "checklistBackground",
+                  "type": "decoration",
+                  "image": "checklistBackground",
+                  "key": "decorations",
+                  "location": [ 9, 95 ],
+                  "scale": [ 1.0, 1.0 ]
+                }
+              ] },
+              { "type": "add-actor", "args": [
+                {
+                  "name": "Checklist",
+                  "type": "text",
+                  "font": "realLifeConfessions_checklist_header",
+                  "location": [ 20,  103 ],
+                  "text": "CHECKLIST"
+                }
+              ] },
+              { "type": "add-actor", "args": [
+                {
+                  "name": "downArrow1",
+                  "type": "decoration",
+                  "image": "downArrow",
+                  "key": "decorations",
+                  "location": [ 24, 124 ],
+                  "scale": [ 1.0, 1.0 ]
+                }
+              ] },
+              { "type": "add-actor", "args": [
+                {
+                  "name": "checklistButton1",
+                  "type": "toggle-button",
+                  "images": {
+                    "on": "checkboxChecked",
+                    "off": "checkboxUnchecked"
+                  },
+                  "location": [ 19, 141 ],
+                  "scale": [ 1.0, 1.0 ],
+                  "variable": "checklistButton1",
+                  "values": {
+                    "on": "checkbox_on",
+                    "off": "checkbox_off"
+                  }
+                }
+              ] },
+              { "type": "add-actor", "args": [
+                {
+                  "name": "checklistButton2",
+                  "type": "toggle-button",
+                  "images": {
+                    "on": "checkboxChecked",
+                    "off": "checkboxUnchecked"
+                  },
+                  "location": [ 19, 171 ],
+                  "scale": [ 1.0, 1.0 ],
+                  "variable": "checklistButton2",
+                  "values": {
+                    "on": "checkbox_on",
+                    "off": "checkbox_off"
+                  }
+                }
+              ] },
+              { "type": "add-actor", "args": [
+                {
+                  "name": "checklistButton3",
+                  "type": "toggle-button",
+                  "images": {
+                    "on": "checkboxChecked",
+                    "off": "checkboxUnchecked"
+                  },
+                  "location": [ 19, 201 ],
+                  "scale": [ 1.0, 1.0 ],
+                  "variable": "checklistButton3",
+                  "values": {
+                    "on": "checkbox_on",
+                    "off": "checkbox_off"
+                  }
+                }
+              ] },
+              { "type": "add-actor", "args": [
+                {
+                  "name": "checklistButton4",
+                  "type": "toggle-button",
+                  "images": {
+                    "on": "checkboxChecked",
+                    "off": "checkboxUnchecked"
+                  },
+                  "location": [ 19, 231 ],
+                  "scale": [ 1.0, 1.0 ],
+                  "variable": "checklistButton4",
+                  "values": {
+                    "on": "checkbox_on",
+                    "off": "checkbox_off"
+                  }
+                }
+              ] },
+              { "type": "add-actor", "args": [
+                {
+                  "name": "checklistButton5",
+                  "type": "toggle-button",
+                  "images": {
+                    "on": "checkboxChecked",
+                    "off": "checkboxUnchecked"
+                  },
+                  "location": [ 19, 261 ],
+                  "scale": [ 1.0, 1.0 ],
+                  "variable": "checklistButton5",
+                  "values": {
+                    "on": "checkbox_on",
+                    "off": "checkbox_off"
+                  }
+                }
+              ] },
+              { "type": "add-actor", "args": [
+                {
+                  "name": "checklistButton6",
+                  "type": "toggle-button",
+                  "images": {
+                    "on": "checkboxChecked",
+                    "off": "checkboxUnchecked"
+                  },
+                  "location": [ 19, 291 ],
+                  "scale": [ 1.0, 1.0 ],
+                  "variable": "checklistButton6",
+                  "values": {
+                    "on": "checkbox_on",
+                    "off": "checkbox_off"
+                  }
+                }
+              ] },
+              { "type": "add-actor", "args": [
+                {
+                  "name": "checklistButton7",
+                  "type": "toggle-button",
+                  "images": {
+                    "on": "checkboxChecked",
+                    "off": "checkboxUnchecked"
+                  },
+                  "location": [ 19, 321 ],
+                  "scale": [ 1.0, 1.0 ],
+                  "variable": "checklistButton7",
+                  "values": {
+                    "on": "checkbox_on",
+                    "off": "checkbox_off"
+                  }
+                }
+              ] },
+              { "type": "add-actor", "args": [
+                {
+                  "name": "checklistButton8",
+                  "type": "toggle-button",
+                  "images": {
+                    "on": "checkboxChecked",
+                    "off": "checkboxUnchecked"
+                  },
+                  "location": [ 19, 351 ],
+                  "scale": [ 1.0, 1.0 ],
+                  "variable": "checklistButton8",
+                  "values": {
+                    "on": "checkbox_on",
+                    "off": "checkbox_off"
+                  }
+                }
+              ] },
+              { "type": "add-actor", "args": [
+                {
+                  "name": "checklistButton9",
+                  "type": "toggle-button",
+                  "images": {
+                    "on": "checkboxChecked",
+                    "off": "checkboxUnchecked"
+                  },
+                  "location": [ 19, 381 ],
+                  "scale": [ 1.0, 1.0 ],
+                  "variable": "checklistButton9",
+                  "values": {
+                    "on": "checkbox_on",
+                    "off": "checkbox_off"
+                  }
+                }
+              ] },
+              { "type": "add-actor", "args": [
+                {
+                  "name": "checklistText1",
+                  "type": "text",
+                  "font": "realLifeConfessions_checklist_text",
+                  "location": [ 58,  147 ],
+                  "text": "Popular"
+                }
+              ] },
+              { "type": "add-actor", "args": [
+                {
+                  "name": "checklistText2",
+                  "type": "text",
+                  "font": "realLifeConfessions_checklist_text",
+                  "location": [ 58,  177 ],
+                  "text": "Lonely"
+                }
+              ] },
+              { "type": "add-actor", "args": [
+                {
+                  "name": "checklistText3",
+                  "type": "text",
+                  "font": "realLifeConfessions_checklist_text",
+                  "location": [ 58,  207 ],
+                  "text": "Low self-esteem"
+                }
+              ] },
+              { "type": "add-actor", "args": [
+                {
+                  "name": "checklistText4",
+                  "type": "text",
+                  "font": "realLifeConfessions_checklist_text",
+                  "location": [ 58,  237 ],
+                  "text": "Excited about middle school"
+                }
+              ] },
+              { "type": "add-actor", "args": [
+                {
+                  "name": "checklistText5",
+                  "type": "text",
+                  "font": "realLifeConfessions_checklist_text",
+                  "location": [ 58,  267 ],
+                  "text": "Makes friends easily"
+                }
+              ] },
+              { "type": "add-actor", "args": [
+                {
+                  "name": "checklistText6",
+                  "type": "text",
+                  "font": "realLifeConfessions_checklist_text",
+                  "location": [ 58,  297 ],
+                  "text": "Confident"
+                }
+              ] },
+              { "type": "add-actor", "args": [
+                {
+                  "name": "checklistText7",
+                  "type": "text",
+                  "font": "realLifeConfessions_checklist_text",
+                  "location": [ 58,  327 ],
+                  "text": "Worried about making friends"
+                }
+              ] },
+              { "type": "add-actor", "args": [
+                {
+                  "name": "checklistText8",
+                  "type": "text",
+                  "font": "realLifeConfessions_checklist_text",
+                  "location": [ 58,  357 ],
+                  "text": "Victim"
+                }
+              ] },
+              { "type": "add-actor", "args": [
+                {
+                  "name": "checklistText9",
+                  "type": "text",
+                  "font": "realLifeConfessions_checklist_text",
+                  "location": [ 58,  387 ],
+                  "text": "Bystander"
+                }
+              ] },
+              { "type": "add-actor", "args": [
+                {
+                  "name": "compareButton",
+                  "type": "button",
+                  "image": "compare",
+                  "location": [ 74, 411 ],
+                  "variable": "compare_emily_compare_button"
+                }
+              ] },
+              { "type": "add-actor", "args": [
+                {
+                  "name": "videoFrame",
+                  "type": "decoration",
+                  "image": "videoFrame",
+                  "key": "decorations",
+                  "location": [ 296, 145 ],
+                  "scale": [ 1.0, 1.0 ]
+                }
+              ] },
+              { "type": "add-actor", "args": [
+                {
+                  "name": "compare_emily_video_emily",
+                  "type": "wistia",
+                  "location": [ 300, 156 ],
+                  "size": [ 320, 240 ],
+                  "video": "rmj55m7oc8",
+                  "closeButtonLocation" : [ -100, -100 ],
+                  "variable": "compare_emily_video_emily",
+                  "blockerAlpha" : 0.0,
+                  "blockInput": false
+                }
+              ] }
+            ]
+          },
+          "compare_button": {
+            "events": { "compare_emily_compare_button": "*" },
+            "actions": [
+              { "type": "add-actor", "args": [
+                {
+                  "name": "emilyPrincipalComments",
+                  "type": "audio",
+                  "audio": ["emily"],
+                  "variable": "emilyPrincipalComments"
+                }
+              ] },
+              { "type": "add-actor", "args": [
+                {
+                  "name": "Principal's List",
+                  "type": "text",
+                  "font": "realLifeConfessions_checklist_header",
+                  "location": [ 134,  103 ],
+                  "text": "PRINCIPAL'S LIST"
+                }
+              ] },
+              { "type": "add-actor", "args": [
+                {
+                  "name": "downArrow2",
+                  "type": "decoration",
+                  "image": "downArrow",
+                  "key": "decorations",
+                  "location": [ 252, 124 ],
+                  "scale": [ 1.0, 1.0 ]
+                }
+              ] },
+              { "type": "add-actor", "args": [
+                {
+                  "name": "checkboxPrincipal1",
+                  "type": "decoration",
+                  "image": "checkboxUnchecked",
+                  "key": "decorations",
+                  "location": [ 248, 141 ],
+                  "scale": [ 1.0, 1.0 ]
+                }
+              ] },
+              { "type": "add-actor", "args": [
+                {
+                  "name": "checkboxPrincipal2",
+                  "type": "decoration",
+                  "image": "checkboxChecked",
+                  "key": "decorations",
+                  "location": [ 248, 171 ],
+                  "scale": [ 1.0, 1.0 ]
+                }
+              ] },
+              { "type": "add-actor", "args": [
+                {
+                  "name": "checkboxPrincipal3",
+                  "type": "decoration",
+                  "image": "checkboxChecked",
+                  "key": "decorations",
+                  "location": [ 248, 201 ],
+                  "scale": [ 1.0, 1.0 ]
+                }
+              ] },
+              { "type": "add-actor", "args": [
+                {
+                  "name": "checkboxPrincipal4",
+                  "type": "decoration",
+                  "image": "checkboxUnchecked",
+                  "key": "decorations",
+                  "location": [ 248, 231 ],
+                  "scale": [ 1.0, 1.0 ]
+                }
+              ] },
+              { "type": "add-actor", "args": [
+                {
+                  "name": "checkboxPrincipal5",
+                  "type": "decoration",
+                  "image": "checkboxUnchecked",
+                  "key": "decorations",
+                  "location": [ 248, 261 ],
+                  "scale": [ 1.0, 1.0 ]
+                }
+              ] },
+              { "type": "add-actor", "args": [
+                {
+                  "name": "checkboxPrincipal6",
+                  "type": "decoration",
+                  "image": "checkboxUnchecked",
+                  "key": "decorations",
+                  "location": [ 248, 291 ],
+                  "scale": [ 1.0, 1.0 ]
+                }
+              ] },
+              { "type": "add-actor", "args": [
+                {
+                  "name": "checkboxPrincipal7",
+                  "type": "decoration",
+                  "image": "checkboxChecked",
+                  "key": "decorations",
+                  "location": [ 248, 321 ],
+                  "scale": [ 1.0, 1.0 ]
+                }
+              ] },
+              { "type": "add-actor", "args": [
+                {
+                  "name": "checkboxPrincipal8",
+                  "type": "decoration",
+                  "image": "checkboxChecked",
+                  "key": "decorations",
+                  "location": [ 248, 351 ],
+                  "scale": [ 1.0, 1.0 ]
+                }
+              ] },
+              { "type": "add-actor", "args": [
+                {
+                  "name": "checkboxPrincipal9",
+                  "type": "decoration",
+                  "image": "checkboxUnchecked",
+                  "key": "decorations",
+                  "location": [ 248, 381 ],
+                  "scale": [ 1.0, 1.0 ]
+                }
+              ] }
+            ]
+          },
+          "sound_emilyPrincipalComments_finished_shimmer_next": {
+            "events": { "emilyPrincipalComments": "played" },
+            "actions": [
+              { "type": "remove-actor", "args": ["forwardButton"] },
+              { "type": "add-actor", "args": [
+                {
+                  "name": "forwardButtonShimmer",
+                  "type": "button",
+                  "image": "next",
+                  "animated": true,
+                  "animationRepeat": 4000,
+                  "animationFrameRate": 30,
+                  "location": [ 550, 448 ],
+                  "variable": "meet_emily_showNext"
+                }
+              ] }
+            ]
+          },
+          "replay_button": {
+            "events": { "meet_emily_replay": "*" },
+            "actions": [
+              { "type": "remove-actor", "args": ["meet_emily_video_emily"] },
+              { "type": "remove-actor", "args": ["compare_emily_video_emily"] },
+              { "type": "scene", "args": [ "empty_replay_scene" ] },
+              { "type": "scene", "args": [ "meet_emily" ] }
+            ]
+          },
+          "back_button": {
+            "events": { "meet_emily_showPrevious": "*" },
+            "actions": [
+              { "type": "remove-actor", "args": ["meet_emily_video_emily"] },
+              { "type": "remove-actor", "args": ["compare_emily_video_emily"] },
+              { "type": "scene", "args": [ "inside_look_intro" ] }
+            ]
+          },
+          "forward_button": {
+            "events": { "meet_emily_showNext": "*" },
+            "actions": [
+              { "type": "remove-actor", "args": ["meet_emily_video_emily"] },
+              { "type": "remove-actor", "args": ["compare_emily_video_emily"] },
+              { "type": "scene", "args": [ "meet_chris" ] }
+            ]
+          }
+        }
+      },
+      "meet_chris": {
+        "id": "meet_chris",
+        "background": "actNowBackground",
+        "title": "Chris",
+        "actors": [
+          {
+            "name": "chris_bio",
+            "type": "audio",
+            "audio": ["chris_bio"],
+            "variable": "chris_bio"
+          },
+          {
+            "name": "Chris title",
+            "type": "text",
+            "font": "realLifeConfessions_character_name",
+            "location": [ 90, 132 ],
+            "text": "CHRIS "
+          },
+          {
+            "name": "Lives with his mom and dad",
+            "type": "text",
+            "font": "realLifeConfessions_text_smaller_wrap_250",
+            "location": [ 16,  190 ],
+            "text": "Lives with his mom and dad",
+            "bullet": true
+          },
+          {
+            "name": "Only child",
+            "type": "text",
+            "font": "realLifeConfessions_text_smaller_wrap_260",
+            "location": [ 16,  250 ],
+            "text": "Only child",
+            "bullet": true
+          },
+          {
+            "name": "Likes to play video games, skateboard and read",
+            "type": "text",
+            "font": "realLifeConfessions_text_smaller_wrap_260",
+            "location": [ 16,  286 ],
+            "text": "Likes to play video games, skateboard and read",
+            "bullet": true
+          },
+          {
+            "name": "Does well in school",
+            "type": "text",
+            "font": "realLifeConfessions_text_smaller_wrap_260",
+            "location": [ 16,  346 ],
+            "text": "Does well in school",
+            "bullet": true
+          },
+          {
+            "name": "Doesn’t like to see bullying",
+            "type": "text",
+            "font": "realLifeConfessions_text_smaller_wrap_260",
+            "location": [ 16,  382 ],
+            "text": "Doesn’t like to see bullying",
+            "bullet": true
+          },
+          {
+            "name": "mutebutton",
+            "type": "toggle-button",
+            "images": {
+              "on": "muteOff",
+              "off": "muteOn"
+            },
+            "location": [ 15, 448 ],
+            "scale": [ 1.0, 1.0 ],
+            "variable": "mute_game",
+            "values": {
+              "on": "mute_on",
+              "off": "mute_off"
+            },
+            "active": true
+          },
+          {
+            "name": "backButton",
+            "type": "button",
+            "image": "back",
+            "location": [ 415, 448 ],
+            "variable": "meet_chris_showPrevious"
+          },
+          {
+            "name": "forward",
+            "type": "button",
+            "image": "next",
+            "location": [ 550, 448 ],
+            "variable": "meet_chris_showNext"
+          },
+          {
+            "name": "replay",
+            "type": "button",
+            "image": "replay",
+            "location": [ 510, 448 ],
+            "variable": "meet_chris_replay"
+          },
+          {
+            "name": "bottomPanel",
+            "type": "blocker",
+            "location": [ 0, 480 ],
+            "size": [ 640, 200 ],
+            "blockerTint" : "0xFFFFFF",
+            "blockerAlpha" : 1.0
+          },
+          {
+            "name": "videoFrame",
+            "type": "decoration",
+            "image": "videoFrame",
+            "key": "decorations",
+            "location": [ 296, 145 ],
+            "scale": [ 1.0, 1.0 ]
+          },
+          {
+            "name": "meet_chris_video_chris",
+            "type": "wistia",
+            "location": [ 300, 156 ],
+            "size": [ 320, 240 ],
+            "closeButtonLocation" : [ -100, -100 ],
+            "video": "b6kujecjaf",
+            "variable": "meet_chris_video_chris",
+            "blockerAlpha" : 0.0,
+            "blockInput": false
+          }
+        ],
+        "outcomes": {
+          "meetChrisVideoEnds": {
+            "events": { "meet_chris_video_chris": "finished" },
+            "actions": [
+              { "type": "remove-actor", "args": ["meet_chris_video_chris"] },
+              { "type": "remove-actor", "args": ["Chris title"] },
+              { "type": "remove-actor", "args": ["Lives with his mom and dad"] },
+              { "type": "remove-actor", "args": ["Only child"] },
+              { "type": "remove-actor", "args": ["Likes to play video games, skateboard and read"] },
+              { "type": "remove-actor", "args": ["Does well in school"] },
+              { "type": "remove-actor", "args": ["Doesn’t like to see bullying"] },
+              { "type": "add-actor", "args": [
+                {
+                  "name": "chris_direction",
+                  "type": "audio",
+                  "audio": ["chris_direction"],
+                  "variable": "chris_direction"
+                }
+              ] },
+              { "type": "add-actor", "args": [
+                {
+                  "name": "checklistBackground",
+                  "type": "decoration",
+                  "image": "checklistBackground",
+                  "key": "decorations",
+                  "location": [ 9, 95 ],
+                  "scale": [ 1.0, 1.0 ]
+                }
+              ] },
+              { "type": "add-actor", "args": [
+                {
+                  "name": "Checklist",
+                  "type": "text",
+                  "font": "realLifeConfessions_checklist_header",
+                  "location": [ 20,  104 ],
+                  "text": "CHECKLIST"
+                }
+              ] },
+              { "type": "add-actor", "args": [
+                {
+                  "name": "downArrow1",
+                  "type": "decoration",
+                  "image": "downArrow",
+                  "key": "decorations",
+                  "location": [ 24, 124 ],
+                  "scale": [ 1.0, 1.0 ]
+                }
+              ] },
+              { "type": "add-actor", "args": [
+                {
+                  "name": "checklistButton1",
+                  "type": "toggle-button",
+                  "images": {
+                    "on": "checkboxChecked",
+                    "off": "checkboxUnchecked"
+                  },
+                  "location": [ 19, 141 ],
+                  "scale": [ 1.0, 1.0 ],
+                  "variable": "checklistButton1",
+                  "values": {
+                    "on": "checkbox_on",
+                    "off": "checkbox_off"
+                  }
+                }
+              ] },
+              { "type": "add-actor", "args": [
+                {
+                  "name": "checklistButton2",
+                  "type": "toggle-button",
+                  "images": {
+                    "on": "checkboxChecked",
+                    "off": "checkboxUnchecked"
+                  },
+                  "location": [ 19, 171 ],
+                  "scale": [ 1.0, 1.0 ],
+                  "variable": "checklistButton2",
+                  "values": {
+                    "on": "checkbox_on",
+                    "off": "checkbox_off"
+                  }
+                }
+              ] },
+              { "type": "add-actor", "args": [
+                {
+                  "name": "checklistButton3",
+                  "type": "toggle-button",
+                  "images": {
+                    "on": "checkboxChecked",
+                    "off": "checkboxUnchecked"
+                  },
+                  "location": [ 19, 201 ],
+                  "scale": [ 1.0, 1.0 ],
+                  "variable": "checklistButton3",
+                  "values": {
+                    "on": "checkbox_on",
+                    "off": "checkbox_off"
+                  }
+                }
+              ] },
+              { "type": "add-actor", "args": [
+                {
+                  "name": "checklistButton4",
+                  "type": "toggle-button",
+                  "images": {
+                    "on": "checkboxChecked",
+                    "off": "checkboxUnchecked"
+                  },
+                  "location": [ 19, 231 ],
+                  "scale": [ 1.0, 1.0 ],
+                  "variable": "checklistButton4",
+                  "values": {
+                    "on": "checkbox_on",
+                    "off": "checkbox_off"
+                  }
+                }
+              ] },
+              { "type": "add-actor", "args": [
+                {
+                  "name": "checklistButton5",
+                  "type": "toggle-button",
+                  "images": {
+                    "on": "checkboxChecked",
+                    "off": "checkboxUnchecked"
+                  },
+                  "location": [ 19, 261 ],
+                  "scale": [ 1.0, 1.0 ],
+                  "variable": "checklistButton5",
+                  "values": {
+                    "on": "checkbox_on",
+                    "off": "checkbox_off"
+                  }
+                }
+              ] },
+              { "type": "add-actor", "args": [
+                {
+                  "name": "checklistButton6",
+                  "type": "toggle-button",
+                  "images": {
+                    "on": "checkboxChecked",
+                    "off": "checkboxUnchecked"
+                  },
+                  "location": [ 19, 291 ],
+                  "scale": [ 1.0, 1.0 ],
+                  "variable": "checklistButton6",
+                  "values": {
+                    "on": "checkbox_on",
+                    "off": "checkbox_off"
+                  }
+                }
+              ] },
+              { "type": "add-actor", "args": [
+                {
+                  "name": "checklistButton7",
+                  "type": "toggle-button",
+                  "images": {
+                    "on": "checkboxChecked",
+                    "off": "checkboxUnchecked"
+                  },
+                  "location": [ 19, 321 ],
+                  "scale": [ 1.0, 1.0 ],
+                  "variable": "checklistButton7",
+                  "values": {
+                    "on": "checkbox_on",
+                    "off": "checkbox_off"
+                  }
+                }
+              ] },
+              { "type": "add-actor", "args": [
+                {
+                  "name": "checklistButton8",
+                  "type": "toggle-button",
+                  "images": {
+                    "on": "checkboxChecked",
+                    "off": "checkboxUnchecked"
+                  },
+                  "location": [ 19, 351 ],
+                  "scale": [ 1.0, 1.0 ],
+                  "variable": "checklistButton8",
+                  "values": {
+                    "on": "checkbox_on",
+                    "off": "checkbox_off"
+                  }
+                }
+              ] },
+              { "type": "add-actor", "args": [
+                {
+                  "name": "checklistButton9",
+                  "type": "toggle-button",
+                  "images": {
+                    "on": "checkboxChecked",
+                    "off": "checkboxUnchecked"
+                  },
+                  "location": [ 19, 381 ],
+                  "scale": [ 1.0, 1.0 ],
+                  "variable": "checklistButton9",
+                  "values": {
+                    "on": "checkbox_on",
+                    "off": "checkbox_off"
+                  }
+                }
+              ] },
+              { "type": "add-actor", "args": [
+                {
+                  "name": "checklistText1",
+                  "type": "text",
+                  "font": "realLifeConfessions_checklist_text",
+                  "location": [ 58,  147 ],
+                  "text": "Popular"
+                }
+              ] },
+              { "type": "add-actor", "args": [
+                {
+                  "name": "checklistText2",
+                  "type": "text",
+                  "font": "realLifeConfessions_checklist_text",
+                  "location": [ 58,  177 ],
+                  "text": "Considerate of others"
+                }
+              ] },
+              { "type": "add-actor", "args": [
+                {
+                  "name": "checklistText3",
+                  "type": "text",
+                  "font": "realLifeConfessions_checklist_text",
+                  "location": [ 58,  207 ],
+                  "text": "Responsible"
+                }
+              ] },
+              { "type": "add-actor", "args": [
+                {
+                  "name": "checklistText4",
+                  "type": "text",
+                  "font": "realLifeConfessions_checklist_text",
+                  "location": [ 58,  237 ],
+                  "text": "Bothered by bullies"
+                }
+              ] },
+              { "type": "add-actor", "args": [
+                {
+                  "name": "checklistText5",
+                  "type": "text",
+                  "font": "realLifeConfessions_checklist_text",
+                  "location": [ 58,  267 ],
+                  "text": "Loves school"
+                }
+              ] },
+              { "type": "add-actor", "args": [
+                {
+                  "name": "checklistText6",
+                  "type": "text",
+                  "font": "realLifeConfessions_checklist_text",
+                  "location": [ 58,  297 ],
+                  "text": "Bully"
+                }
+              ] },
+              { "type": "add-actor", "args": [
+                {
+                  "name": "checklistText7",
+                  "type": "text",
+                  "font": "realLifeConfessions_checklist_text",
+                  "location": [ 58,  327 ],
+                  "text": "Bystander"
+                }
+              ] },
+              { "type": "add-actor", "args": [
+                {
+                  "name": "checklistText8",
+                  "type": "text",
+                  "font": "realLifeConfessions_checklist_text",
+                  "location": [ 58,  357 ],
+                  "text": "Not bothered by bullies"
+                }
+              ] },
+              { "type": "add-actor", "args": [
+                {
+                  "name": "checklistText9",
+                  "type": "text",
+                  "font": "realLifeConfessions_checklist_text",
+                  "location": [ 58,  387 ],
+                  "text": "Ignores bully situations"
+                }
+              ] },
+              { "type": "add-actor", "args": [
+                {
+                  "name": "compareButton",
+                  "type": "button",
+                  "image": "compare",
+                  "location": [ 74, 411 ],
+                  "variable": "compare_chris_compare_button"
+                }
+              ] },
+              { "type": "add-actor", "args": [
+                {
+                  "name": "videoFrame",
+                  "type": "decoration",
+                  "image": "videoFrame",
+                  "key": "decorations",
+                  "location": [ 296, 145 ],
+                  "scale": [ 1.0, 1.0 ]
+                }
+              ] },
+              { "type": "add-actor", "args": [
+                {
+                  "name": "compare_chris_video_chris",
+                  "type": "wistia",
+                  "location": [ 300, 156 ],
+                  "size": [ 320, 240 ],
+                  "video": "b6kujecjaf",
+                  "closeButtonLocation" : [ -100, -100 ],
+                  "variable": "compare_chris_video_chris",
+                  "blockerAlpha" : 0.0,
+                  "blockInput": false
+                }
+              ] }
+            ]
+          },
+          "compare_button": {
+            "events": { "compare_chris_compare_button": "*" },
+            "actions": [
+              { "type": "add-actor", "args": [
+                {
+                  "name": "chrisPrincipalComments",
+                  "type": "audio",
+                  "audio": ["chris"],
+                  "variable": "chrisPrincipalComments"
+                }
+              ] },
+              { "type": "add-actor", "args": [
+                {
+                  "name": "Principal's List",
+                  "type": "text",
+                  "font": "realLifeConfessions_checklist_header",
+                  "location": [ 140,  104 ],
+                  "text": "PRINCIPAL'S LIST"
+                }
+              ] },
+              { "type": "add-actor", "args": [
+                {
+                  "name": "downArrow2",
+                  "type": "decoration",
+                  "image": "downArrow",
+                  "key": "decorations",
+                  "location": [ 252, 124 ],
+                  "scale": [ 1.0, 1.0 ]
+                }
+              ] },
+              { "type": "add-actor", "args": [
+                {
+                  "name": "checkboxPrincipal1",
+                  "type": "decoration",
+                  "image": "checkboxUnchecked",
+                  "key": "decorations",
+                  "location": [ 248, 141 ],
+                  "scale": [ 1.0, 1.0 ]
+                }
+              ] },
+              { "type": "add-actor", "args": [
+                {
+                  "name": "checkboxPrincipal2",
+                  "type": "decoration",
+                  "image": "checkboxChecked",
+                  "key": "decorations",
+                  "location": [ 248, 171 ],
+                  "scale": [ 1.0, 1.0 ]
+                }
+              ] },
+              { "type": "add-actor", "args": [
+                {
+                  "name": "checkboxPrincipal3",
+                  "type": "decoration",
+                  "image": "checkboxChecked",
+                  "key": "decorations",
+                  "location": [ 248, 201 ],
+                  "scale": [ 1.0, 1.0 ]
+                }
+              ] },
+              { "type": "add-actor", "args": [
+                {
+                  "name": "checkboxPrincipal4",
+                  "type": "decoration",
+                  "image": "checkboxChecked",
+                  "key": "decorations",
+                  "location": [ 248, 231 ],
+                  "scale": [ 1.0, 1.0 ]
+                }
+              ] },
+              { "type": "add-actor", "args": [
+                {
+                  "name": "checkboxPrincipal5",
+                  "type": "decoration",
+                  "image": "checkboxUnchecked",
+                  "key": "decorations",
+                  "location": [ 248, 261 ],
+                  "scale": [ 1.0, 1.0 ]
+                }
+              ] },
+              { "type": "add-actor", "args": [
+                {
+                  "name": "checkboxPrincipal6",
+                  "type": "decoration",
+                  "image": "checkboxUnchecked",
+                  "key": "decorations",
+                  "location": [ 248, 291 ],
+                  "scale": [ 1.0, 1.0 ]
+                }
+              ] },
+              { "type": "add-actor", "args": [
+                {
+                  "name": "checkboxPrincipal7",
+                  "type": "decoration",
+                  "image": "checkboxChecked",
+                  "key": "decorations",
+                  "location": [ 248, 321 ],
+                  "scale": [ 1.0, 1.0 ]
+                }
+              ] },
+              { "type": "add-actor", "args": [
+                {
+                  "name": "checkboxPrincipal8",
+                  "type": "decoration",
+                  "image": "checkboxUnchecked",
+                  "key": "decorations",
+                  "location": [ 248, 351 ],
+                  "scale": [ 1.0, 1.0 ]
+                }
+              ] },
+              { "type": "add-actor", "args": [
+                {
+                  "name": "checkboxPrincipal9",
+                  "type": "decoration",
+                  "image": "checkboxUnchecked",
+                  "key": "decorations",
+                  "location": [ 248, 381 ],
+                  "scale": [ 1.0, 1.0 ]
+                }
+              ] }
+            ]
+          },
+          "sound_chrisPrincipalComments_finished_shimmer_next": {
+            "events": { "chrisPrincipalComments": "played" },
+            "actions": [
+              { "type": "remove-actor", "args": ["forwardButton"] },
+              { "type": "add-actor", "args": [
+                {
+                  "name": "forwardButtonShimmer",
+                  "type": "button",
+                  "image": "next",
+                  "animated": true,
+                  "animationRepeat": 4000,
+                  "animationFrameRate": 30,
+                  "location": [ 550, 448 ],
+                  "variable": "meet_chris_showNext"
+                }
+              ] }
+            ]
+          },
+          "replay_button": {
+            "events": { "meet_chris_replay": "*" },
+            "actions": [
+              { "type": "remove-actor", "args": ["meet_chris_video_chris"] },
+              { "type": "remove-actor", "args": ["compare_chris_video_chris"] },
+              { "type": "scene", "args": [ "empty_replay_scene" ] },
+              { "type": "scene", "args": [ "meet_chris" ] }
+            ]
+          },
+          "back_button": {
+            "events": { "meet_chris_showPrevious": "*" },
+            "actions": [
+              { "type": "remove-actor", "args": ["meet_chris_video_chris"] },
+              { "type": "remove-actor", "args": ["compare_chris_video_chris"] },
+              { "type": "scene", "args": [ "meet_emily" ] }
+            ]
+          },
+          "forward_button": {
+            "events": { "meet_chris_showNext": "*" },
+            "actions": [
+              { "type": "remove-actor", "args": ["meet_chris_video_chris"] },
+              { "type": "remove-actor", "args": ["compare_chris_video_chris"] },
+              { "type": "scene", "args": [ "meet_jordan" ] }
+            ]
+          }
+        }
+      },
+      "meet_jordan": {
+        "id": "meet_jordan",
+        "background": "actNowBackground",
+        "title": "Jordan",
+        "actors": [
+          {
+            "name": "jordan_bio",
+            "type": "audio",
+            "audio": ["jordan_bio"],
+            "variable": "jordan_bio"
+          },
+          {
+            "name": "Jordan title",
+            "type": "text",
+            "font": "realLifeConfessions_character_name",
+            "location": [ 80, 132 ],
+            "text": "JORDAN "
+          },
+          {
+            "name": "Lives with his mom, dad, brothers and sister",
+            "type": "text",
+            "font": "realLifeConfessions_text_smaller_wrap_260",
+            "location": [ 16,  190 ],
+            "text": "Lives with his mom, dad, brothers and sister",
+            "bullet": true
+          },
+          {
+            "name": "Good at sports",
+            "type": "text",
+            "font": "realLifeConfessions_text_smaller_wrap_260",
+            "location": [ 16,  250 ],
+            "text": "Good at sports",
+            "bullet": true
+          },
+          {
+            "name": "Likes to play video games and watch sports",
+            "type": "text",
+            "font": "realLifeConfessions_text_smaller_wrap_260",
+            "location": [ 16,  286 ],
+            "text": "Likes to play video games and watch sports",
+            "bullet": true
+          },
+          {
+            "name": "Doesn't care about school",
+            "type": "text",
+            "font": "realLifeConfessions_text_smaller_wrap_260",
+            "location": [ 16,  346 ],
+            "text": "Doesn't care about school",
+            "bullet": true
+          },
+          {
+            "name": "Has lots of friends",
+            "type": "text",
+            "font": "realLifeConfessions_text_smaller_wrap_260",
+            "location": [ 16,  382 ],
+            "text": "Has lots of friends",
+            "bullet": true
+          },
+          {
+            "name": "mutebutton",
+            "type": "toggle-button",
+            "images": {
+              "on": "muteOff",
+              "off": "muteOn"
+            },
+            "location": [ 15, 448 ],
+            "scale": [ 1.0, 1.0 ],
+            "variable": "mute_game",
+            "values": {
+              "on": "mute_on",
+              "off": "mute_off"
+            },
+            "active": true
+          },
+          {
+            "name": "backButton",
+            "type": "button",
+            "image": "back",
+            "location": [ 415, 448 ],
+            "variable": "meet_jordan_showPrevious"
+          },
+          {
+            "name": "forward",
+            "type": "button",
+            "image": "next",
+            "location": [ 550, 448 ],
+            "variable": "meet_jordan_showNext"
+          },
+          {
+            "name": "replay",
+            "type": "button",
+            "image": "replay",
+            "location": [ 510, 448 ],
+            "variable": "meet_jordan_replay"
+          },
+          {
+            "name": "bottomPanel",
+            "type": "blocker",
+            "location": [ 0, 480 ],
+            "size": [ 640, 200 ],
+            "blockerTint" : "0xFFFFFF",
+            "blockerAlpha" : 1.0
+          },
+          {
+            "name": "videoFrame",
+            "type": "decoration",
+            "image": "videoFrame",
+            "key": "decorations",
+            "location": [ 296, 145 ],
+            "scale": [ 1.0, 1.0 ]
+          },
+          {
+            "name": "meet_jordan_video_jordan",
+            "type": "wistia",
+            "location": [ 300, 156 ],
+            "size": [ 320, 240 ],
+            "closeButtonLocation" : [ -100, -100 ],
+            "video": "bzk594xmo9",
+            "variable": "meet_jordan_video_jordan",
+            "blockerAlpha" : 0.0,
+            "blockInput": false
+          }
+        ],
+        "outcomes": {
+          "meetJordanVideoEnds": {
+            "events": { "meet_jordan_video_jordan": "finished" },
+            "actions": [
+              { "type": "remove-actor", "args": ["meet_jordan_video_jordan"] },
+              { "type": "remove-actor", "args": ["Jordan title"] },
+              { "type": "remove-actor", "args": ["Lives with his mom, dad, brothers and sister"] },
+              { "type": "remove-actor", "args": ["Good at sports"] },
+              { "type": "remove-actor", "args": ["Likes to play video games and watch sports"] },
+              { "type": "remove-actor", "args": ["Doesn't care about school"] },
+              { "type": "remove-actor", "args": ["Has lots of friends"] },
+              { "type": "add-actor", "args": [
+                {
+                  "name": "jordan_direction",
+                  "type": "audio",
+                  "audio": ["jordan_direction"],
+                  "variable": "jordan_direction"
+                }
+              ] },
+              { "type": "add-actor", "args": [
+                {
+                  "name": "checklistBackground",
+                  "type": "decoration",
+                  "image": "checklistBackground",
+                  "key": "decorations",
+                  "location": [ 9, 95 ],
+                  "scale": [ 1.0, 1.0 ]
+                }
+              ] },
+              { "type": "add-actor", "args": [
+                {
+                  "name": "Checklist",
+                  "type": "text",
+                  "font": "realLifeConfessions_checklist_header",
+                  "location": [ 20,  104 ],
+                  "text": "CHECKLIST"
+                }
+              ] },
+              { "type": "add-actor", "args": [
+                {
+                  "name": "downArrow1",
+                  "type": "decoration",
+                  "image": "downArrow",
+                  "key": "decorations",
+                  "location": [ 24, 124 ],
+                  "scale": [ 1.0, 1.0 ]
+                }
+              ] },
+              { "type": "add-actor", "args": [
+                {
+                  "name": "checklistButton1",
+                  "type": "toggle-button",
+                  "images": {
+                    "on": "checkboxChecked",
+                    "off": "checkboxUnchecked"
+                  },
+                  "location": [ 19, 141 ],
+                  "scale": [ 1.0, 1.0 ],
+                  "variable": "checklistButton1",
+                  "values": {
+                    "on": "checkbox_on",
+                    "off": "checkbox_off"
+                  }
+                }
+              ] },
+              { "type": "add-actor", "args": [
+                {
+                  "name": "checklistButton2",
+                  "type": "toggle-button",
+                  "images": {
+                    "on": "checkboxChecked",
+                    "off": "checkboxUnchecked"
+                  },
+                  "location": [ 19, 171 ],
+                  "scale": [ 1.0, 1.0 ],
+                  "variable": "checklistButton2",
+                  "values": {
+                    "on": "checkbox_on",
+                    "off": "checkbox_off"
+                  }
+                }
+              ] },
+              { "type": "add-actor", "args": [
+                {
+                  "name": "checklistButton3",
+                  "type": "toggle-button",
+                  "images": {
+                    "on": "checkboxChecked",
+                    "off": "checkboxUnchecked"
+                  },
+                  "location": [ 19, 201 ],
+                  "scale": [ 1.0, 1.0 ],
+                  "variable": "checklistButton3",
+                  "values": {
+                    "on": "checkbox_on",
+                    "off": "checkbox_off"
+                  }
+                }
+              ] },
+              { "type": "add-actor", "args": [
+                {
+                  "name": "checklistButton4",
+                  "type": "toggle-button",
+                  "images": {
+                    "on": "checkboxChecked",
+                    "off": "checkboxUnchecked"
+                  },
+                  "location": [ 19, 231 ],
+                  "scale": [ 1.0, 1.0 ],
+                  "variable": "checklistButton4",
+                  "values": {
+                    "on": "checkbox_on",
+                    "off": "checkbox_off"
+                  }
+                }
+              ] },
+              { "type": "add-actor", "args": [
+                {
+                  "name": "checklistButton5",
+                  "type": "toggle-button",
+                  "images": {
+                    "on": "checkboxChecked",
+                    "off": "checkboxUnchecked"
+                  },
+                  "location": [ 19, 261 ],
+                  "scale": [ 1.0, 1.0 ],
+                  "variable": "checklistButton5",
+                  "values": {
+                    "on": "checkbox_on",
+                    "off": "checkbox_off"
+                  }
+                }
+              ] },
+              { "type": "add-actor", "args": [
+                {
+                  "name": "checklistButton6",
+                  "type": "toggle-button",
+                  "images": {
+                    "on": "checkboxChecked",
+                    "off": "checkboxUnchecked"
+                  },
+                  "location": [ 19, 291 ],
+                  "scale": [ 1.0, 1.0 ],
+                  "variable": "checklistButton6",
+                  "values": {
+                    "on": "checkbox_on",
+                    "off": "checkbox_off"
+                  }
+                }
+              ] },
+              { "type": "add-actor", "args": [
+                {
+                  "name": "checklistButton7",
+                  "type": "toggle-button",
+                  "images": {
+                    "on": "checkboxChecked",
+                    "off": "checkboxUnchecked"
+                  },
+                  "location": [ 19, 321 ],
+                  "scale": [ 1.0, 1.0 ],
+                  "variable": "checklistButton7",
+                  "values": {
+                    "on": "checkbox_on",
+                    "off": "checkbox_off"
+                  }
+                }
+              ] },
+              { "type": "add-actor", "args": [
+                {
+                  "name": "checklistButton8",
+                  "type": "toggle-button",
+                  "images": {
+                    "on": "checkboxChecked",
+                    "off": "checkboxUnchecked"
+                  },
+                  "location": [ 19, 351 ],
+                  "scale": [ 1.0, 1.0 ],
+                  "variable": "checklistButton8",
+                  "values": {
+                    "on": "checkbox_on",
+                    "off": "checkbox_off"
+                  }
+                }
+              ] },
+              { "type": "add-actor", "args": [
+                {
+                  "name": "checklistButton9",
+                  "type": "toggle-button",
+                  "images": {
+                    "on": "checkboxChecked",
+                    "off": "checkboxUnchecked"
+                  },
+                  "location": [ 19, 381 ],
+                  "scale": [ 1.0, 1.0 ],
+                  "variable": "checklistButton9",
+                  "values": {
+                    "on": "checkbox_on",
+                    "off": "checkbox_off"
+                  }
+                }
+              ] },
+              { "type": "add-actor", "args": [
+                {
+                  "name": "checklistText1",
+                  "type": "text",
+                  "font": "realLifeConfessions_checklist_text",
+                  "location": [ 58,  147 ],
+                  "text": "Popular"
+                }
+              ] },
+              { "type": "add-actor", "args": [
+                {
+                  "name": "checklistText2",
+                  "type": "text",
+                  "font": "realLifeConfessions_checklist_text",
+                  "location": [ 58,  177 ],
+                  "text": "Shy"
+                }
+              ] },
+              { "type": "add-actor", "args": [
+                {
+                  "name": "checklistText3",
+                  "type": "text",
+                  "font": "realLifeConfessions_checklist_text",
+                  "location": [ 58,  207 ],
+                  "text": "Youngest child"
+                }
+              ] },
+              { "type": "add-actor", "args": [
+                {
+                  "name": "checklistText4",
+                  "type": "text",
+                  "font": "realLifeConfessions_checklist_text",
+                  "location": [ 58,  237 ],
+                  "text": "Picked on by older brothers"
+                }
+              ] },
+              { "type": "add-actor", "args": [
+                {
+                  "name": "checklistText5",
+                  "type": "text",
+                  "font": "realLifeConfessions_checklist_text",
+                  "location": [ 58,  267 ],
+                  "text": "Angry"
+                }
+              ] },
+              { "type": "add-actor", "args": [
+                {
+                  "name": "checklistText6",
+                  "type": "text",
+                  "font": "realLifeConfessions_checklist_text",
+                  "location": [ 58,  297 ],
+                  "text": "Picks on younger sister"
+                }
+              ] },
+              { "type": "add-actor", "args": [
+                {
+                  "name": "checklistText7",
+                  "type": "text",
+                  "font": "realLifeConfessions_checklist_text",
+                  "location": [ 58,  327 ],
+                  "text": "Good relationship with Dad"
+                }
+              ] },
+              { "type": "add-actor", "args": [
+                {
+                  "name": "checklistText8",
+                  "type": "text",
+                  "font": "realLifeConfessions_checklist_text",
+                  "location": [ 58,  357 ],
+                  "text": "Bully"
+                }
+              ] },
+              { "type": "add-actor", "args": [
+                {
+                  "name": "checklistText9",
+                  "type": "text",
+                  "font": "realLifeConfessions_checklist_text",
+                  "location": [ 58,  387 ],
+                  "text": "Victim"
+                }
+              ] },
+              { "type": "add-actor", "args": [
+                {
+                  "name": "compareButton",
+                  "type": "button",
+                  "image": "compare",
+                  "location": [ 74, 411 ],
+                  "variable": "compare_jordan_compare_button"
+                }
+              ] },
+              { "type": "add-actor", "args": [
+                {
+                  "name": "videoFrame",
+                  "type": "decoration",
+                  "image": "videoFrame",
+                  "key": "decorations",
+                  "location": [ 296, 145 ],
+                  "scale": [ 1.0, 1.0 ]
+                }
+              ] },
+              { "type": "add-actor", "args": [
+                {
+                  "name": "compare_jordan_video_jordan",
+                  "type": "wistia",
+                  "location": [ 300, 156 ],
+                  "size": [ 320, 240 ],
+                  "video": "bzk594xmo9",
+                  "closeButtonLocation" : [ -100, -100 ],
+                  "variable": "compare_jordan_video_jordan",
+                  "blockerAlpha" : 0.0,
+                  "blockInput": false
+                }
+              ] }
+            ]
+          },
+          "compare_button": {
+            "events": { "compare_jordan_compare_button": "*" },
+            "actions": [
+              { "type": "add-actor", "args": [
+                {
+                  "name": "jordanPrincipalComments",
+                  "type": "audio",
+                  "audio": ["jordan"],
+                  "variable": "jordanPrincipalComments"
+                }
+              ] },
+              { "type": "add-actor", "args": [
+                {
+                  "name": "Principal's List",
+                  "type": "text",
+                  "font": "realLifeConfessions_checklist_header",
+                  "location": [ 140,  104 ],
+                  "text": "PRINCIPAL'S LIST"
+                }
+              ] },
+              { "type": "add-actor", "args": [
+                {
+                  "name": "downArrow2",
+                  "type": "decoration",
+                  "image": "downArrow",
+                  "key": "decorations",
+                  "location": [ 252, 124 ],
+                  "scale": [ 1.0, 1.0 ]
+                }
+              ] },
+              { "type": "add-actor", "args": [
+                {
+                  "name": "checkboxPrincipal1",
+                  "type": "decoration",
+                  "image": "checkboxChecked",
+                  "key": "decorations",
+                  "location": [ 248, 141 ],
+                  "scale": [ 1.0, 1.0 ]
+                }
+              ] },
+              { "type": "add-actor", "args": [
+                {
+                  "name": "checkboxPrincipal2",
+                  "type": "decoration",
+                  "image": "checkboxUnchecked",
+                  "key": "decorations",
+                  "location": [ 248, 171 ],
+                  "scale": [ 1.0, 1.0 ]
+                }
+              ] },
+              { "type": "add-actor", "args": [
+                {
+                  "name": "checkboxPrincipal3",
+                  "type": "decoration",
+                  "image": "checkboxUnchecked",
+                  "key": "decorations",
+                  "location": [ 248, 201 ],
+                  "scale": [ 1.0, 1.0 ]
+                }
+              ] },
+              { "type": "add-actor", "args": [
+                {
+                  "name": "checkboxPrincipal4",
+                  "type": "decoration",
+                  "image": "checkboxChecked",
+                  "key": "decorations",
+                  "location": [ 248, 231 ],
+                  "scale": [ 1.0, 1.0 ]
+                }
+              ] },
+              { "type": "add-actor", "args": [
+                {
+                  "name": "checkboxPrincipal5",
+                  "type": "decoration",
+                  "image": "checkboxChecked",
+                  "key": "decorations",
+                  "location": [ 248, 261 ],
+                  "scale": [ 1.0, 1.0 ]
+                }
+              ] },
+              { "type": "add-actor", "args": [
+                {
+                  "name": "checkboxPrincipal6",
+                  "type": "decoration",
+                  "image": "checkboxUnchecked",
+                  "key": "decorations",
+                  "location": [ 248, 291 ],
+                  "scale": [ 1.0, 1.0 ]
+                }
+              ] },
+              { "type": "add-actor", "args": [
+                {
+                  "name": "checkboxPrincipal7",
+                  "type": "decoration",
+                  "image": "checkboxUnchecked",
+                  "key": "decorations",
+                  "location": [ 248, 321 ],
+                  "scale": [ 1.0, 1.0 ]
+                }
+              ] },
+              { "type": "add-actor", "args": [
+                {
+                  "name": "checkboxPrincipal8",
+                  "type": "decoration",
+                  "image": "checkboxChecked",
+                  "key": "decorations",
+                  "location": [ 248, 351 ],
+                  "scale": [ 1.0, 1.0 ]
+                }
+              ] },
+              { "type": "add-actor", "args": [
+                {
+                  "name": "checkboxPrincipal9",
+                  "type": "decoration",
+                  "image": "checkboxUnchecked",
+                  "key": "decorations",
+                  "location": [ 248, 381 ],
+                  "scale": [ 1.0, 1.0 ]
+                }
+              ] }
+            ]
+          },
+          "sound_jordanPrincipalComments_finished_shimmer_next": {
+            "events": { "jordanPrincipalComments": "played" },
+            "actions": [
+              { "type": "remove-actor", "args": ["forwardButton"] },
+              { "type": "add-actor", "args": [
+                {
+                  "name": "forwardButtonShimmer",
+                  "type": "button",
+                  "image": "next",
+                  "animated": true,
+                  "animationRepeat": 4000,
+                  "animationFrameRate": 30,
+                  "location": [ 550, 448 ],
+                  "variable": "meet_jordan_showNext"
+                }
+              ] }
+            ]
+          },
+          "replay_button": {
+            "events": { "meet_jordan_replay": "*" },
+            "actions": [
+              { "type": "remove-actor", "args": ["meet_jordan_video_jordan"] },
+              { "type": "remove-actor", "args": ["compare_jordan_video_jordan"] },
+              { "type": "scene", "args": [ "empty_replay_scene" ] },
+              { "type": "scene", "args": [ "meet_jordan" ] }
+            ]
+          },
+          "back_button": {
+            "events": { "meet_jordan_showPrevious": "*" },
+            "actions": [
+              { "type": "remove-actor", "args": ["meet_jordan_video_jordan"] },
+              { "type": "remove-actor", "args": ["compare_jordan_video_jordan"] },
+              { "type": "scene", "args": [ "meet_chris" ] }
+            ]
+          },
+          "forward_button": {
+            "events": { "meet_jordan_showNext": "*" },
+            "actions": [
+              { "type": "remove-actor", "args": ["meet_jordan_video_jordan"] },
+              { "type": "remove-actor", "args": ["compare_jordan_video_jordan"] },
+              { "type": "scene", "args": [ "move_on" ] }
+            ]
+          }
+        }
+      },
+      "move_on": {
+        "id": "move_on",
+        "background": "actNowBackground",
+        "title": "Move on",
+        "actors": [
+          {
+            "name": "sound_6",
+            "type": "audio",
+            "audio": ["sound_6"],
+            "variable": "sound_6"
+          },
+          {
+            "name": "laketia",
+            "type": "decoration",
+            "image": "laketia",
+            "key": "decorations",
+            "location": [ 69, 106 ],
+            "scale": [ 1.0, 1.0 ]
+          },
+          {
+            "name": "Good job!",
+            "type": "text",
+            "font": "realLifeConfessions_move_on_header",
+            "location": [ 292, 145 ],
+            "text": "Good job!"
+          },
+          {
+            "name": "Return to the menu",
+            "type": "text",
+            "font": "realLifeConfessions_move_on_text_wrap_250",
+            "location": [ 292, 227 ],
+            "text": "You have completed this lesson."
+          },
+          {
+            "name": "mutebutton",
+            "type": "toggle-button",
+            "images": {
+              "on": "muteOff",
+              "off": "muteOn"
+            },
+            "location": [ 15, 448 ],
+            "scale": [ 1.0, 1.0 ],
+            "variable": "mute_game",
+            "values": {
+              "on": "mute_on",
+              "off": "mute_off"
+            },
+            "active": true
+          },
+          {
+            "name": "backButton",
+            "type": "button",
+            "image": "back",
+            "location": [ 415, 448 ],
+            "variable": "move_on_showPrevious"
+          },
+          {
+            "name": "forwardDisabled",
+            "type": "decoration",
+            "image": "nextDisabled",
+            "key": "decorations",
+            "location": [ 550, 448 ],
+            "scale": [ 1.0, 1.0 ]
+          },
+          {
+            "name": "replay",
+            "type": "button",
+            "image": "replay",
+            "location": [ 510, 448 ],
+            "variable": "move_on_replay"
+          },
+          {
+            "name": "bottomPanel",
+            "type": "blocker",
+            "location": [ 0, 480 ],
+            "size": [ 640, 200 ],
+            "blockerTint" : "0xFFFFFF",
+            "blockerAlpha" : 1.0
+          }
+        ],
+        "actions": [
+          { "type": "choice", "args": [ "objective_complete", 1] },
+          { "type": "choice", "args": [ "save", 0 ] }
+        ],
+        "outcomes": {
+          "replay_button": {
+            "events": { "move_on_replay": "*" },
+            "actions": [
+              { "type": "scene", "args": [ "empty_replay_scene" ] },
+              { "type": "scene", "args": [ "move_on" ] }
+            ]
+          },
+          "back_button": {
+            "events": { "move_on_showPrevious": "*" },
+            "actions": [ { "type": "scene", "args": [ "meet_jordan" ] } ]
+          }
+        }
+      },
+      "empty_replay_scene": {
+        "id": "empty_replay_scene",
+        "description": "since a scene change request to the current scene is ignored, first change to this empty scene"
+      }
+    }
+  }
+}

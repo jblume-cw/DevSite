@@ -1,0 +1,1786 @@
+{
+  "play": {
+    "start": "action_intro",
+    "resume": "action_resume",
+    "showPlayThrough": false,
+    "scenes": {
+      "action_resume": {
+        "id": "action_resume",
+        "background": "resumeBackground",
+        "title": "This is the resume scene.",
+        "actors": [
+          {
+            "name": "resumeDialogBox",
+            "type": "decoration",
+            "image": "resumeDialogBox",
+            "key": "decorations",
+            "location": [ 119, 114 ],
+            "scale": [ 1.0, 1.0 ]
+          },
+          {
+            "name": "sub-title",
+            "type": "text",
+            "font": "action_text_resume",
+            "location": [ 204, 155 ],
+            "text": "You have completed part of this lesson"
+          },
+          {
+            "name": "resumeButton",
+            "type": "button",
+            "image": "resume",
+            "location": [ 155, 235],
+            "variable": "resume_button"
+          },
+          {
+            "name": "restartButton",
+            "type": "button",
+            "image": "restart",
+            "location": [ 155, 285 ],
+            "variable": "resume_button"
+          },
+          {
+            "name": "bottomPanel",
+            "type": "blocker",
+            "location": [ 0, 480 ],
+            "size": [ 640, 200 ],
+            "blockerTint" : "0xFFFFFF",
+            "blockerAlpha" : 1.0
+          }
+        ],
+        "outcomes": {
+          "do_restart": {
+            "events": { "resume_button": "restartButton" },
+            "actions": [ { "type": "scene", "args": [ "action_intro" ] } ]
+          },
+          "do_resume": {
+            "events": { "resume_button": "resumeButton" },
+            "actions": [ { "type": "scene", "args": [ "$restore_scene" ] } ]
+          }
+        }
+      },
+      "action_intro": {
+        "id": "action_intro",
+        "background": "actNowBackground",
+        "title": "Action",
+        "actors": [
+          {
+            "name": "Action Header",
+            "type": "text",
+            "font": "action_header",
+            "location": [ 19, 7 ],
+            "text": "A.C.T. - Action "
+          },
+          {
+            "name": "sound_0_a",
+            "type": "audio",
+            "audio": ["sound_0_a"],
+            "variable": "sound_0_a"
+          },
+          {
+            "name": "A.C.T. text A",
+            "type": "text",
+            "font": "action_textCaps_solid",
+            "location": [ 338, 90 ],
+            "text": "A"
+          },
+          {
+            "name": "A.C.T. text ction",
+            "type": "text",
+            "font": "action_text_large_bold_solid",
+            "location": [ 382, 110 ],
+            "text": "ction",
+            "startDelay": 1000
+          },
+          {
+            "name": "A.C.T. text C",
+            "type": "text",
+            "font": "action_textCaps_solid",
+            "location": [ 340, 151 ],
+            "text": "C"
+          },
+          {
+            "name": "A.C.T. text are",
+            "type": "text",
+            "font": "action_text_large_bold_solid",
+            "location": [ 382, 171 ],
+            "text": "are",
+            "startDelay": 2000
+          },
+          {
+            "name": "A.C.T. text T",
+            "type": "text",
+            "font": "action_textCaps_solid",
+            "location": [ 344, 212 ],
+            "text": "T"
+          },
+          {
+            "name": "A.C.T. text ell",
+            "type": "text",
+            "font": "action_text_large_bold_solid",
+            "location": [ 382, 232 ],
+            "text": "ell",
+            "startDelay":3000
+          },
+          {
+            "name": "ramon",
+            "type": "decoration",
+            "image": "ramon",
+            "key": "decorations",
+            "location": [ 80, 118 ],
+            "scale": [ 1.0, 1.0 ]
+          },
+          {
+            "name": "worksheetButton",
+            "type": "url-button",
+            "image": "worksheet",
+            "location": [ 333, 329 ],
+            "url": "Action_wksht_5th.pdf",
+            "variable": "action_intro_worksheet"
+          },
+          {
+            "name": "mutebutton",
+            "type": "toggle-button",
+            "images": {
+              "on": "muteOff",
+              "off": "muteOn"
+            },
+            "location": [ 9, 435 ],
+            "scale": [ 1.0, 1.0 ],
+            "variable": "mute_game",
+            "values": {
+              "on": "mute_on",
+              "off": "mute_off"
+            },
+            "active": true
+          },
+          {
+            "name": "backButtonDisabled",
+            "type": "decoration",
+            "image": "backDisabled",
+            "key": "decorations",
+            "location": [ 337, 435 ],
+            "scale": [ 1.0, 1.0 ]
+          },
+          {
+            "name": "forwardButton",
+            "type": "button",
+            "image": "next",
+            "location": [ 512, 436 ],
+            "variable": "action_intro_showNext"
+          },
+          {
+            "name": "replay",
+            "type": "button",
+            "image": "replay",
+            "location": [ 466, 435 ],
+            "variable": "action_intro_replay"
+          },
+          {
+            "name": "bottomPanel",
+            "type": "blocker",
+            "location": [ 0, 480 ],
+            "size": [ 640, 200 ],
+            "blockerTint" : "0xFFFFFF",
+            "blockerAlpha" : 1.0
+          }
+        ],
+        "outcomes": {
+          "sound_0_a_finished": {
+            "events": { "sound_0_a": "played" },
+            "actions": [
+              { "type": "add-actor", "args": [
+                {
+                  "name": "sound_0_b",
+                  "type": "audio",
+                  "audio": ["sound_0_b"],
+                  "variable": "sound_0_b"
+                }
+              ] },
+              { "type": "remove-actor", "args": ["A.C.T. text are"] },
+              { "type": "add-actor", "args": [
+                {
+                  "name": "A.C.T. text are",
+                  "type": "text",
+                  "font": "action_text_large_bold_transparent",
+                  "location": [ 382,  171 ],
+                  "text": "are"
+                }
+              ] },
+              { "type": "remove-actor", "args": ["A.C.T. text ell"] },
+              { "type": "add-actor", "args": [
+                {
+                  "name": "A.C.T. text ell",
+                  "type": "text",
+                  "font": "action_text_large_bold_transparent",
+                  "location": [ 382, 232 ],
+                  "text": "ell"
+                }
+              ] }
+            ]
+          },
+          "sound_0_b_finished_shimmer_next": {
+            "events": { "sound_0_b": "played" },
+            "actions": [
+              { "type": "remove-actor", "args": ["forwardButton"] },
+              { "type": "add-actor", "args": [
+                {
+                  "name": "forwardButtonShimmer",
+                  "type": "button",
+                  "image": "next",
+                  "animated": true,
+                  "animationRepeat": 4000,
+                  "animationFrameRate": 30,
+                  "location": [ 512, 436 ],
+                  "variable": "action_intro_showNext"
+                }
+              ] }
+            ]
+          },
+          "replay_button": {
+            "events": { "action_intro_replay": "*" },
+            "actions": [
+              { "type": "scene", "args": [ "empty_replay_scene" ] },
+              { "type": "scene", "args": [ "action_intro" ] }
+            ]
+          },
+          "forward_button": {
+            "events": { "action_intro_showNext": "*" },
+            "actions": [ { "type": "scene", "args": [ "ways_to_take_action" ] } ]
+          }
+        }
+      },
+      "ways_to_take_action": {
+        "id": "ways_to_take_action",
+        "background": "actNowBackground",
+        "title": "Ways to take action",
+        "actors": [
+          {
+            "name": "Action Header",
+            "type": "text",
+            "font": "action_header",
+            "location": [ 19, 7 ],
+            "text": "Ways to take action "
+          },
+          {
+            "name": "sound_1_a",
+            "type": "audio",
+            "audio": ["sound_1_a"],
+            "variable": "sound_1_a"
+          },
+          {
+            "name": "mutebutton",
+            "type": "toggle-button",
+            "images": {
+              "on": "muteOff",
+              "off": "muteOn"
+            },
+            "location": [ 9, 435 ],
+            "scale": [ 1.0, 1.0 ],
+            "variable": "mute_game",
+            "values": {
+              "on": "mute_on",
+              "off": "mute_off"
+            },
+            "active": true
+          },
+          {
+            "name": "backButton",
+            "type": "button",
+            "image": "back",
+            "location": [ 337, 435 ],
+            "variable": "waysToTakeAction_showPrevious"
+          },
+          {
+            "name": "forwardButton",
+            "type": "button",
+            "image": "next",
+            "location": [ 512, 436 ],
+            "variable": "waysToTakeAction_showNext"
+          },
+          {
+            "name": "replay",
+            "type": "button",
+            "image": "replay",
+            "location": [ 466, 435 ],
+            "variable": "waysToTakeAction_replay"
+          },
+          {
+            "name": "bottomPanel",
+            "type": "blocker",
+            "location": [ 0, 480 ],
+            "size": [ 640, 200 ],
+            "blockerTint" : "0xFFFFFF",
+            "blockerAlpha" : 1.0
+          }
+        ],
+        "outcomes": {
+          "sound_1_a_finished": {
+            "events": { "sound_1_a": "played" },
+            "actions": [
+              { "type": "add-actor", "args": [
+                {
+                  "name": "sound_1_b",
+                  "type": "audio",
+                  "audio": ["sound_1_b"],
+                  "variable": "sound_1_b"
+                }
+              ] },
+              { "type": "add-actor", "args": [
+                {
+                  "name": "raj",
+                  "type": "decoration",
+                  "image": "raj",
+                  "key": "decorations",
+                  "location": [ 165, 230 ],
+                  "scale": [ -1.15, 1.15 ]
+                }
+              ] },
+              { "type": "add-actor", "args": [
+                {
+                  "name": "lakitia",
+                  "type": "decoration",
+                  "image": "lakitia",
+                  "key": "decorations",
+                  "location": [ 350, 223 ],
+                  "scale": [ -0.6, 0.6 ]
+                }
+              ] },
+              { "type": "add-actor", "args": [
+                {
+                  "name": "1. Speak up",
+                  "type": "text",
+                  "font": "action_text_medium_smaller",
+                  "location": [ 381,  189 ],
+                  "text": "1. Speak up"
+                }
+              ] },
+              { "type": "remove-actor", "args": ["bottomPanel"] },
+              { "type": "add-actor", "args": [
+                {
+                  "name": "bottomPanel",
+                  "type": "blocker",
+                  "location": [ 0, 480 ],
+                  "size": [ 640, 200 ],
+                  "blockerTint" : "0xFFFFFF",
+                  "blockerAlpha" : 1.0
+                }
+              ] },
+              { "type": "remove-actor", "args": ["default"] }
+            ]
+          },
+          "sound_1_b_finished": {
+            "events": { "sound_1_b": "played" },
+            "actions": [
+              { "type": "add-actor", "args": [
+                {
+                  "name": "sound_1_c",
+                  "type": "audio",
+                  "audio": ["sound_1_c"],
+                  "variable": "sound_1_c"
+                }
+              ] },
+              { "type": "remove-actor", "args": ["lakitia"] },
+              { "type": "add-actor", "args": [
+                {
+                  "name": "denise",
+                  "type": "decoration",
+                  "image": "denise",
+                  "key": "decorations",
+                  "location": [ 200, 184 ],
+                  "scale": [ 0.75, 0.75 ]
+                }
+              ] },
+              { "type": "add-actor", "args": [
+                {
+                  "name": "2. Seek help",
+                  "type": "text",
+                  "font": "action_text_medium_smaller",
+                  "location": [ 381,  240 ],
+                  "text": "2. Seek help"
+                }
+              ] },
+              { "type": "remove-actor", "args": ["bottomPanel"] },
+              { "type": "add-actor", "args": [
+                {
+                  "name": "bottomPanel",
+                  "type": "blocker",
+                  "location": [ 0, 480 ],
+                  "size": [ 640, 200 ],
+                  "blockerTint" : "0xFFFFFF",
+                  "blockerAlpha" : 1.0
+                }
+              ] },
+              { "type": "remove-actor", "args": ["default"] }
+            ]
+          },
+          "sound_1_c_finished_shimmer_next": {
+            "events": { "sound_1_c": "played" },
+            "actions": [
+              { "type": "remove-actor", "args": ["forwardButton"] },
+              { "type": "add-actor", "args": [
+                {
+                  "name": "forwardButtonShimmer",
+                  "type": "button",
+                  "image": "next",
+                  "animated": true,
+                  "animationRepeat": 4000,
+                  "animationFrameRate": 30,
+                  "location": [ 512, 436 ],
+                  "variable": "waysToTakeAction_showNext"
+                }
+              ] }
+            ]
+          },
+          "replay_button": {
+            "events": { "waysToTakeAction_replay": "*" },
+            "actions": [
+              { "type": "scene", "args": [ "empty_replay_scene" ] },
+              { "type": "scene", "args": [ "ways_to_take_action" ] }
+            ]
+          },
+          "back_button": {
+            "events": { "waysToTakeAction_showPrevious": "*" },
+            "actions": [ { "type": "scene", "args": [ "action_intro" ] } ]
+          },
+          "forward_button": {
+            "events": { "waysToTakeAction_showNext": "*" },
+            "actions": [ { "type": "scene", "args": [ "comebacks" ] } ]
+          }
+        }
+      },
+      "comebacks": {
+        "id": "comebacks",
+        "background": "actNowBackground",
+        "title": "Comebacks",
+        "actors": [
+          {
+            "name": "Action Header",
+            "type": "text",
+            "font": "action_header",
+            "location": [ 19, 7 ],
+            "text": "Comebacks "
+          },
+          {
+            "name": "sound_2",
+            "type": "audio",
+            "audio": ["sound_2"],
+            "variable": "sound_2"
+          },
+          {
+            "name": "travis",
+            "type": "decoration",
+            "image": "travis",
+            "key": "decorations",
+            "location": [ 70, 154 ],
+            "scale": [ 1.35, 1.35 ]
+          },
+          {
+            "name": "No reaction",
+            "type": "text",
+            "font": "action_text_medium",
+            "location": [ 280,  160 ],
+            "text": "No reaction",
+            "bullet": true,
+            "startDelay": 9500
+          },
+          {
+            "name": "Agreement",
+            "type": "text",
+            "font": "action_text_medium",
+            "location": [ 280,  220 ],
+            "text": "Agreement",
+            "bullet": true,
+            "startDelay": 12000
+          },
+          {
+            "name": "Strong assertive",
+            "type": "text",
+            "font": "action_text_medium",
+            "location": [ 280,  280 ],
+            "text": "Strong assertive",
+            "bullet": true,
+            "startDelay": 14000
+          },
+          {
+            "name": "mutebutton",
+            "type": "toggle-button",
+            "images": {
+              "on": "muteOff",
+              "off": "muteOn"
+            },
+            "location": [ 9, 435 ],
+            "scale": [ 1.0, 1.0 ],
+            "variable": "mute_game",
+            "values": {
+              "on": "mute_on",
+              "off": "mute_off"
+            },
+            "active": true
+          },
+          {
+            "name": "backButton",
+            "type": "button",
+            "image": "back",
+            "location": [ 337, 435 ],
+            "variable": "comebacks_showPrevious"
+          },
+          {
+            "name": "forwardButton",
+            "type": "button",
+            "image": "next",
+            "location": [ 512, 436 ],
+            "variable": "comebacks_showNext"
+          },
+          {
+            "name": "replay",
+            "type": "button",
+            "image": "replay",
+            "location": [ 466, 435 ],
+            "variable": "comebacks_replay"
+          },
+          {
+            "name": "bottomPanel",
+            "type": "blocker",
+            "location": [ 0, 480 ],
+            "size": [ 640, 200 ],
+            "blockerTint" : "0xFFFFFF",
+            "blockerAlpha" : 1.0
+          }
+        ],
+        "outcomes": {
+          "sound_2_finished_shimmer_next": {
+            "events": { "sound_2": "played" },
+            "actions": [
+              { "type": "remove-actor", "args": ["forwardButton"] },
+              { "type": "add-actor", "args": [
+                {
+                  "name": "forwardButtonShimmer",
+                  "type": "button",
+                  "image": "next",
+                  "animated": true,
+                  "animationRepeat": 4000,
+                  "animationFrameRate": 30,
+                  "location": [ 512, 436 ],
+                  "variable": "comebacks_showNext"
+                }
+              ] }
+            ]
+          },
+          "replay_button": {
+            "events": { "comebacks_replay": "*" },
+            "actions": [
+              { "type": "scene", "args": [ "empty_replay_scene" ] },
+              { "type": "scene", "args": [ "comebacks" ] }
+            ]
+          },
+          "back_button": {
+            "events": { "comebacks_showPrevious": "*" },
+            "actions": [ { "type": "scene", "args": [ "ways_to_take_action" ] } ]
+          },
+          "forward_button": {
+            "events": { "comebacks_showNext": "*" },
+            "actions": [ { "type": "scene", "args": [ "no_reaction_comeback" ] } ]
+          }
+        }
+      },
+      "no_reaction_comeback": {
+        "id": "no_reaction_comeback",
+        "background": "actNowBackground",
+        "title": "No reaction comeback",
+        "actors": [
+          {
+            "name": "Action Header",
+            "type": "text",
+            "font": "action_header",
+            "location": [ 19, 7 ],
+            "text": "No reaction comeback "
+          },
+          {
+            "name": "sound_3",
+            "type": "audio",
+            "audio": ["sound_3"],
+            "variable": "sound_3"
+          },
+          {
+            "name": "ramon",
+            "type": "decoration",
+            "image": "ramon",
+            "key": "decorations",
+            "location": [ 200, 140 ],
+            "scale": [ 0.48, 0.48 ]
+          },
+          {
+            "name": "talkBubble",
+            "type": "decoration",
+            "image": "talkBubble",
+            "key": "decorations",
+            "location": [ 320, 110 ],
+            "scale": [ 1.0, 1.0 ]
+          },
+          {
+            "name": "So what?",
+            "type": "text",
+            "font": "speech_bubble",
+            "location": [ 387, 159 ],
+            "text": "So what?"
+          },
+          {
+            "name": "mutebutton",
+            "type": "toggle-button",
+            "images": {
+              "on": "muteOff",
+              "off": "muteOn"
+            },
+            "location": [ 9, 435 ],
+            "scale": [ 1.0, 1.0 ],
+            "variable": "mute_game",
+            "values": {
+              "on": "mute_on",
+              "off": "mute_off"
+            },
+            "active": true
+          },
+          {
+            "name": "backButton",
+            "type": "button",
+            "image": "back",
+            "location": [ 337, 435 ],
+            "variable": "no_reaction_comeback_showPrevious"
+          },
+          {
+            "name": "forwardButton",
+            "type": "button",
+            "image": "next",
+            "location": [ 512, 436 ],
+            "variable": "no_reaction_comeback_showNext"
+          },
+          {
+            "name": "replay",
+            "type": "button",
+            "image": "replay",
+            "location": [ 466, 435 ],
+            "variable": "no_reaction_comeback_replay"
+          },
+          {
+            "name": "bottomPanel",
+            "type": "blocker",
+            "location": [ 0, 480 ],
+            "size": [ 640, 200 ],
+            "blockerTint" : "0xFFFFFF",
+            "blockerAlpha" : 1.0
+          }
+        ],
+        "outcomes": {
+          "sound_3_finished_shimmer_next": {
+            "events": { "sound_3": "played" },
+            "actions": [
+              { "type": "remove-actor", "args": ["forwardButton"] },
+              { "type": "add-actor", "args": [
+                {
+                  "name": "forwardButtonShimmer",
+                  "type": "button",
+                  "image": "next",
+                  "animated": true,
+                  "animationRepeat": 4000,
+                  "animationFrameRate": 30,
+                  "location": [ 512, 436 ],
+                  "variable": "no_reaction_comeback_showNext"
+                }
+              ] }
+            ]
+          },
+          "replay_button": {
+            "events": { "no_reaction_comeback_replay": "*" },
+            "actions": [
+              { "type": "scene", "args": [ "empty_replay_scene" ] },
+              { "type": "scene", "args": [ "no_reaction_comeback" ] }
+            ]
+          },
+          "back_button": {
+            "events": { "no_reaction_comeback_showPrevious": "*" },
+            "actions": [ { "type": "scene", "args": [ "comebacks" ] } ]
+          },
+          "forward_button": {
+            "events": { "no_reaction_comeback_showNext": "*" },
+            "actions": [ { "type": "scene", "args": [ "agreement_comeback" ] } ]
+          }
+        }
+      },
+      "agreement_comeback": {
+        "id": "agreement_comeback",
+        "background": "actNowBackground",
+        "title": "Agreement comeback",
+        "actors": [
+          {
+            "name": "Action Header",
+            "type": "text",
+            "font": "action_header",
+            "location": [ 19, 7 ],
+            "text": "Agreement comeback "
+          },
+          {
+            "name": "sound_4",
+            "type": "audio",
+            "audio": ["sound_4"],
+            "variable": "sound_4"
+          },
+          {
+            "name": "mollieMai",
+            "type": "decoration",
+            "image": "mollieMai",
+            "key": "decorations",
+            "location": [ 140, 139 ],
+            "scale": [ 0.63, 0.63 ]
+          },
+          {
+            "name": "talkBubble",
+            "type": "decoration",
+            "image": "talkBubble",
+            "key": "decorations",
+            "location": [ 320, 99 ],
+            "scale": [ 1.0, 1.0 ]
+          },
+          {
+            "name": "You are so right.",
+            "type": "text",
+            "font": "speech_bubble",
+            "location": [ 363, 149 ],
+            "text": "You are so right."
+          },
+          {
+            "name": "mutebutton",
+            "type": "toggle-button",
+            "images": {
+              "on": "muteOff",
+              "off": "muteOn"
+            },
+            "location": [ 9, 435 ],
+            "scale": [ 1.0, 1.0 ],
+            "variable": "mute_game",
+            "values": {
+              "on": "mute_on",
+              "off": "mute_off"
+            },
+            "active": true
+          },
+          {
+            "name": "backButton",
+            "type": "button",
+            "image": "back",
+            "location": [ 337, 435 ],
+            "variable": "agreement_comeback_showPrevious"
+          },
+          {
+            "name": "forwardButton",
+            "type": "button",
+            "image": "next",
+            "location": [ 512, 436 ],
+            "variable": "agreement_comeback_showNext"
+          },
+          {
+            "name": "replay",
+            "type": "button",
+            "image": "replay",
+            "location": [ 466, 435 ],
+            "variable": "agreement_comeback_replay"
+          },
+          {
+            "name": "bottomPanel",
+            "type": "blocker",
+            "location": [ 0, 480 ],
+            "size": [ 640, 200 ],
+            "blockerTint" : "0xFFFFFF",
+            "blockerAlpha" : 1.0
+          }
+        ],
+        "outcomes": {
+          "sound_4_finished_shimmer_next": {
+            "events": { "sound_4": "played" },
+            "actions": [
+              { "type": "remove-actor", "args": ["forwardButton"] },
+              { "type": "add-actor", "args": [
+                {
+                  "name": "forwardButtonShimmer",
+                  "type": "button",
+                  "image": "next",
+                  "animated": true,
+                  "animationRepeat": 4000,
+                  "animationFrameRate": 30,
+                  "location": [ 512, 436 ],
+                  "variable": "agreement_comeback_showNext"
+                }
+              ] }
+            ]
+          },
+          "replay_button": {
+            "events": { "agreement_comeback_replay": "*" },
+            "actions": [
+              { "type": "scene", "args": [ "empty_replay_scene" ] },
+              { "type": "scene", "args": [ "agreement_comeback" ] }
+            ]
+          },
+          "back_button": {
+            "events": { "agreement_comeback_showPrevious": "*" },
+            "actions": [ { "type": "scene", "args": [ "no_reaction_comeback" ] } ]
+          },
+          "forward_button": {
+            "events": { "agreement_comeback_showNext": "*" },
+            "actions": [ { "type": "scene", "args": [ "strong_assertive_comeback" ] } ]
+          }
+        }
+      },
+      "strong_assertive_comeback": {
+        "id": "strong_assertive_comeback",
+        "background": "actNowBackground",
+        "title": "Strong assertive comeback",
+        "actors": [
+          {
+            "name": "Action Header",
+            "type": "text",
+            "font": "action_header_smaller",
+            "location": [ 19, 7 ],
+            "text": "Strong assertive comeback "
+          },
+          {
+            "name": "sound_5",
+            "type": "audio",
+            "audio": ["sound_5"],
+            "variable": "sound_5"
+          },
+          {
+            "name": "kate",
+            "type": "decoration",
+            "image": "kate",
+            "key": "decorations",
+            "location": [ 290, 145 ],
+            "scale": [ -0.95, 0.95 ]
+          },
+          {
+            "name": "talkBubble",
+            "type": "decoration",
+            "image": "talkBubble",
+            "key": "decorations",
+            "location": [ 310, 109 ],
+            "scale": [ 1.0, 1.0 ]
+          },
+          {
+            "name": "Stop it!",
+            "type": "text",
+            "font": "speech_bubble",
+            "location": [ 384, 159 ],
+            "text": "Stop it!"
+          },
+          {
+            "name": "mutebutton",
+            "type": "toggle-button",
+            "images": {
+              "on": "muteOff",
+              "off": "muteOn"
+            },
+            "location": [ 9, 435 ],
+            "scale": [ 1.0, 1.0 ],
+            "variable": "mute_game",
+            "values": {
+              "on": "mute_on",
+              "off": "mute_off"
+            },
+            "active": true
+          },
+          {
+            "name": "backButton",
+            "type": "button",
+            "image": "back",
+            "location": [ 337, 435 ],
+            "variable": "strong_assertive_comeback_showPrevious"
+          },
+          {
+            "name": "forwardButton",
+            "type": "button",
+            "image": "next",
+            "location": [ 512, 436 ],
+            "variable": "strong_assertive_comeback_showNext"
+          },
+          {
+            "name": "replay",
+            "type": "button",
+            "image": "replay",
+            "location": [ 466, 435 ],
+            "variable": "strong_assertive_comeback_replay"
+          },
+          {
+            "name": "bottomPanel",
+            "type": "blocker",
+            "location": [ 0, 480 ],
+            "size": [ 640, 200 ],
+            "blockerTint" : "0xFFFFFF",
+            "blockerAlpha" : 1.0
+          }
+        ],
+        "outcomes": {
+          "sound_5_finished_shimmer_next": {
+            "events": { "sound_5": "played" },
+            "actions": [
+              { "type": "remove-actor", "args": ["forwardButton"] },
+              { "type": "add-actor", "args": [
+                {
+                  "name": "forwardButtonShimmer",
+                  "type": "button",
+                  "image": "next",
+                  "animated": true,
+                  "animationRepeat": 4000,
+                  "animationFrameRate": 30,
+                  "location": [ 512, 436 ],
+                  "variable": "strong_assertive_comeback_showNext"
+                }
+              ] }
+            ]
+          },
+          "replay_button": {
+            "events": { "strong_assertive_comeback_replay": "*" },
+            "actions": [
+              { "type": "scene", "args": [ "empty_replay_scene" ] },
+              { "type": "scene", "args": [ "strong_assertive_comeback" ] }
+            ]
+          },
+          "back_button": {
+            "events": { "strong_assertive_comeback_showPrevious": "*" },
+            "actions": [ { "type": "scene", "args": [ "agreement_comeback" ] } ]
+          },
+          "forward_button": {
+            "events": { "strong_assertive_comeback_showNext": "*" },
+            "actions": [ { "type": "scene", "args": [ "comeback_examples" ] } ]
+          }
+        }
+      },
+      "comeback_examples": {
+        "id": "comeback_examples",
+        "background": "actNowBackground",
+        "title": "Comebacks",
+        "actions": [
+          { "type": "variable", "args": ["currentComebackVideo", "video_girls_bullying", false] }
+        ],
+        "actors": [
+          {
+            "name": "Action Header",
+            "type": "text",
+            "font": "action_header",
+            "location": [ 19, 7 ],
+            "text": "Comebacks "
+          },
+          {
+            "name": "sound_6",
+            "type": "audio",
+            "audio": ["sound_6"],
+            "variable": "sound_6"
+          },
+          {
+            "name": "videoFrameOrange",
+            "type": "decoration",
+            "image": "videoFrameOrange",
+            "key": "decorations",
+            "location": [ 20, 121 ],
+            "scale": [ 1.0, 1.0 ]
+          },
+          {
+            "name": "video_girls_bullying",
+            "type": "wistia",
+            "location": [ 27, 127 ],
+            "size": [ 320, 240 ],
+            "video": "8yypy4wk3l",
+            "hideCloseButton": true,
+            "variable": "video_girls_bullying",
+            "blockerAlpha" : 0.0,
+            "blockInput": false
+          },
+          {
+            "name": "mutebutton",
+            "type": "toggle-button",
+            "images": {
+              "on": "muteOff",
+              "off": "muteOn"
+            },
+            "location": [ 9, 435 ],
+            "scale": [ 1.0, 1.0 ],
+            "variable": "mute_game",
+            "values": {
+              "on": "mute_on",
+              "off": "mute_off"
+            },
+            "active": true
+          },
+          {
+            "name": "backButton",
+            "type": "button",
+            "image": "back",
+            "location": [ 337, 435 ],
+            "variable": "comeback_examples_showPrevious"
+          },
+          {
+            "name": "forwardButton",
+            "type": "button",
+            "image": "next",
+            "location": [ 512, 436 ],
+            "variable": "comeback_examples_showNext"
+          },
+          {
+            "name": "replay",
+            "type": "button",
+            "image": "replay",
+            "location": [ 466, 435 ],
+            "variable": "comeback_examples_replay"
+          },
+          {
+            "name": "bottomPanel",
+            "type": "blocker",
+            "location": [ 0, 480 ],
+            "size": [ 640, 200 ],
+            "blockerTint" : "0xFFFFFF",
+            "blockerAlpha" : 1.0
+          }
+        ],
+        "outcomes": {
+          "videoGirlsBullyingEnds": {
+            "events": { "video_girls_bullying": "finished" },
+            "actions": [
+              { "type": "add-actor", "args": [
+                {
+                  "name": "viewAgreementComebackButton",
+                  "type": "button",
+                  "image": "viewAgreementComeback",
+                  "location": [ 358, 174 ],
+                  "variable": "viewAgreement"
+                }
+              ] },
+              { "type": "add-actor", "args": [
+                {
+                  "name": "viewNoReactionComebackButton",
+                  "type": "button",
+                  "image": "viewNoReactionComeback",
+                  "location": [ 358, 219 ],
+                  "variable": "viewNoReaction"
+                }
+              ] },
+              { "type": "add-actor", "args": [
+                {
+                  "name": "viewStrongAssertiveComebackButton",
+                  "type": "button",
+                  "image": "viewStrongAssertiveComeback",
+                  "location": [ 358, 264 ],
+                  "variable": "viewStrongAssertive"
+                }
+              ] }
+            ]
+          },
+          "viewAgreementExample": {
+            "events": { "viewAgreement": "*" },
+            "actions": [
+              { "type": "remove-actor", "args": ["$currentComebackVideo"] },
+              { "type": "remove-actor", "args": ["viewNoReactionComebackButtonInactive"] },
+              { "type": "remove-actor", "args": ["viewStrongAssertiveComebackButtonInactive"] },
+              { "type": "remove-actor", "args": ["viewAgreementComebackButton"] },
+              { "type": "remove-actor", "args": ["viewNoReactionComebackButton"] },
+              { "type": "remove-actor", "args": ["viewStrongAssertiveComebackButton"] },
+              { "type": "add-actor", "args": [
+                {
+                  "name": "viewAgreementComebackButtonInactive",
+                  "type": "decoration",
+                  "image": "viewAgreementComebackInactive",
+                  "key": "decorations",
+                  "location": [ 358, 174 ],
+                  "scale": [ 1.0, 1.0 ]
+                }
+              ] },
+              { "type": "add-actor", "args": [
+                {
+                  "name": "viewNoReactionComebackButton",
+                  "type": "button",
+                  "image": "viewNoReactionComeback",
+                  "location": [ 358, 219 ],
+                  "variable": "viewNoReaction"
+                }
+              ] },
+              { "type": "add-actor", "args": [
+                {
+                  "name": "viewStrongAssertiveComebackButton",
+                  "type": "button",
+                  "image": "viewStrongAssertiveComeback",
+                  "location": [ 358, 264 ],
+                  "variable": "viewStrongAssertive"
+                }
+              ] },
+              { "type": "add-actor", "args": [
+                {
+                  "name": "video_agreementComeback",
+                  "type": "wistia",
+                  "location": [ 27, 127 ],
+                  "size": [ 320, 240 ],
+                  "video": "mxqowryacn",
+                  "autoplay": true,
+                  "hideCloseButton": true,
+                  "variable": "video_agreementComeback",
+                  "blockerAlpha" : 0.0,
+                  "blockInput": false
+                }
+              ] },
+              { "type": "variable", "args": ["currentComebackVideo", "video_agreementComeback", false] }
+            ]
+          },
+          "viewNoReactionExample": {
+            "events": { "viewNoReaction": "*" },
+            "actions": [
+              { "type": "remove-actor", "args": ["$currentComebackVideo"] },
+              { "type": "remove-actor", "args": ["viewAgreementComebackButtonInactive"] },
+              { "type": "remove-actor", "args": ["viewStrongAssertiveComebackButtonInactive"] },
+              { "type": "remove-actor", "args": ["viewAgreementComebackButton"] },
+              { "type": "remove-actor", "args": ["viewNoReactionComebackButton"] },
+              { "type": "remove-actor", "args": ["viewStrongAssertiveComebackButton"] },
+              { "type": "add-actor", "args": [
+                {
+                  "name": "viewAgreementComebackButton",
+                  "type": "button",
+                  "image": "viewAgreementComeback",
+                  "location": [ 358, 174 ],
+                  "variable": "viewAgreement"
+                }
+              ] },
+              { "type": "add-actor", "args": [
+                {
+                  "name": "viewNoReactionComebackButtonInactive",
+                  "type": "decoration",
+                  "image": "viewNoReactionComebackInactive",
+                  "key": "decorations",
+                  "location": [ 358, 219 ],
+                  "scale": [ 1.0, 1.0 ]
+                }
+              ] },
+              { "type": "add-actor", "args": [
+                {
+                  "name": "viewStrongAssertiveComebackButton",
+                  "type": "button",
+                  "image": "viewStrongAssertiveComeback",
+                  "location": [ 358, 264 ],
+                  "variable": "viewStrongAssertive"
+                }
+              ] },
+              { "type": "add-actor", "args": [
+                {
+                  "name": "video_noReactionComeback",
+                  "type": "wistia",
+                  "location": [ 27, 127 ],
+                  "size": [ 320, 240 ],
+                  "video": "lndkvyp0gg",
+                  "autoplay": true,
+                  "hideCloseButton": true,
+                  "variable": "video_noReactionComeback",
+                  "blockerAlpha" : 0.0,
+                  "blockInput": false
+                }
+              ] },
+              { "type": "variable", "args": ["currentComebackVideo", "video_noReactionComeback", false] }
+            ]
+          },
+          "viewStrongAssertiveExample": {
+            "events": { "viewStrongAssertive": "*" },
+            "actions": [
+              { "type": "remove-actor", "args": ["$currentComebackVideo"] },
+              { "type": "remove-actor", "args": ["viewAgreementComebackButtonInactive"] },
+              { "type": "remove-actor", "args": ["viewNoReactionComebackButtonInactive"] },
+              { "type": "remove-actor", "args": ["viewAgreementComebackButton"] },
+              { "type": "remove-actor", "args": ["viewNoReactionComebackButton"] },
+              { "type": "remove-actor", "args": ["viewStrongAssertiveComebackButton"] },
+              { "type": "add-actor", "args": [
+                {
+                  "name": "viewAgreementComebackButton",
+                  "type": "button",
+                  "image": "viewAgreementComeback",
+                  "location": [ 358, 174 ],
+                  "variable": "viewAgreement"
+                }
+              ] },
+              { "type": "add-actor", "args": [
+                {
+                  "name": "viewNoReactionComebackButton",
+                  "type": "button",
+                  "image": "viewNoReactionComeback",
+                  "location": [ 358, 219 ],
+                  "variable": "viewNoReaction"
+                }
+              ] },
+              { "type": "add-actor", "args": [
+                {
+                  "name": "viewStrongAssertiveComebackButtonInactive",
+                  "type": "decoration",
+                  "image": "viewStrongAssertiveComebackInactive",
+                  "key": "decorations",
+                  "location": [ 358, 264 ],
+                  "scale": [ 1.0, 1.0 ]
+                }
+              ] },
+              { "type": "add-actor", "args": [
+                {
+                  "name": "video_strongAssertiveComeback",
+                  "type": "wistia",
+                  "location": [ 27, 127 ],
+                  "size": [ 320, 240 ],
+                  "video": "g7coaxl90h",
+                  "autoplay": true,
+                  "hideCloseButton": true,
+                  "variable": "video_strongAssertiveComeback",
+                  "blockerAlpha" : 0.0,
+                  "blockInput": false
+                }
+              ] },
+              { "type": "variable", "args": ["currentComebackVideo", "video_strongAssertiveComeback", false] }
+            ]
+          },
+          "sound_6_finished_shimmer_next": {
+            "events": { "sound_6": "played",
+              "video_girls_bullying": [ "finished", "closed" ],
+              "video_agreementComeback": [ "finished", "closed" ],
+              "video_noReactionComeback": [ "finished", "closed" ],
+              "video_strongAssertiveComeback": [ "finished", "closed" ] },
+            "actions": [
+              { "type": "remove-actor", "args": ["forwardButton"] },
+              { "type": "add-actor", "args": [
+                {
+                  "name": "forwardButtonShimmer",
+                  "type": "button",
+                  "image": "next",
+                  "animated": true,
+                  "animationRepeat": 4000,
+                  "animationFrameRate": 30,
+                  "location": [ 512, 436 ],
+                  "variable": "comeback_examples_showNext"
+                }
+              ] }
+            ]
+          },
+          "replay_button": {
+            "events": { "comeback_examples_replay": "*" },
+            "actions": [
+              { "type": "scene", "args": [ "empty_replay_scene" ] },
+              { "type": "scene", "args": [ "comeback_examples" ] }
+            ]
+          },
+          "back_button": {
+            "events": { "comeback_examples_showPrevious": "*" },
+            "actions": [ { "type": "scene", "args": [ "strong_assertive_comeback" ] } ]
+          },
+          "forward_button": {
+            "events": { "comeback_examples_showNext": "*" },
+            "actions": [ { "type": "scene", "args": [ "seek_help" ] } ]
+          }
+        }
+      },
+      "seek_help": {
+        "id": "seek_help",
+        "background": "actNowBackground",
+        "title": "Seek Help",
+        "actors": [
+          {
+            "name": "Action Header",
+            "type": "text",
+            "font": "action_header",
+            "location": [ 19, 7 ],
+            "text": "Seek Help "
+          },
+          {
+            "name": "sound_7_a",
+            "type": "audio",
+            "audio": ["sound_7_a"],
+            "variable": "sound_7_a"
+          },
+          {
+            "name": "cj",
+            "type": "decoration",
+            "image": "cj",
+            "key": "decorations",
+            "location": [ 200, 200 ],
+            "scale": [ 0.53, 0.53 ]
+          },
+          {
+            "name": "mutebutton",
+            "type": "toggle-button",
+            "images": {
+              "on": "muteOff",
+              "off": "muteOn"
+            },
+            "location": [ 9, 435 ],
+            "scale": [ 1.0, 1.0 ],
+            "variable": "mute_game",
+            "values": {
+              "on": "mute_on",
+              "off": "mute_off"
+            },
+            "active": true
+          },
+          {
+            "name": "backButton",
+            "type": "button",
+            "image": "back",
+            "location": [ 337, 435 ],
+            "variable": "seek_help_showPrevious"
+          },
+          {
+            "name": "forwardButton",
+            "type": "button",
+            "image": "next",
+            "location": [ 512, 436 ],
+            "variable": "seek_help_showNext"
+          },
+          {
+            "name": "replay",
+            "type": "button",
+            "image": "replay",
+            "location": [ 466, 435 ],
+            "variable": "seek_help_replay"
+          },
+          {
+            "name": "bottomPanel",
+            "type": "blocker",
+            "location": [ 0, 480 ],
+            "size": [ 640, 200 ],
+            "blockerTint" : "0xFFFFFF",
+            "blockerAlpha" : 1.0
+          }
+        ],
+        "outcomes": {
+          "sound_7_a_finished": {
+            "events": { "sound_7_a": "played" },
+            "actions": [
+              { "type": "add-actor", "args": [
+                {
+                  "name": "sound_7_b",
+                  "type": "audio",
+                  "audio": ["sound_7_b"],
+                  "variable": "sound_7_b"
+                }
+              ] },
+              { "type": "remove-actor", "args": ["cj"] },
+              { "type": "add-actor", "args": [
+                {
+                  "name": "cjEyesUp",
+                  "type": "decoration",
+                  "image": "cjEyesUp",
+                  "key": "decorations",
+                  "location": [ 200, 200 ],
+                  "scale": [ 0.53, 0.53 ]
+                }
+              ] },
+              { "type": "add-actor", "args": [
+                {
+                  "name": "denise",
+                  "type": "decoration",
+                  "image": "denise",
+                  "key": "decorations",
+                  "location": [ 400, 130 ],
+                  "scale": [ 0.81, 0.81 ]
+                }
+              ] },
+              { "type": "add-actor", "args": [
+                {
+                  "name": "Trusted adults",
+                  "type": "text",
+                  "font": "action_text_medium",
+                  "location": [ 41,  100 ],
+                  "bullet": true,
+                  "text": "Trusted adults"
+                }
+              ] },
+              { "type": "remove-actor", "args": ["backButton"] },
+              { "type": "add-actor", "args": [
+                {
+                  "name": "backButton",
+                  "type": "button",
+                  "image": "back",
+                  "location": [ 337, 435 ],
+                  "variable": "seek_help_showPrevious"
+                }
+              ] },
+              { "type": "remove-actor", "args": ["forwardButton"] },
+              { "type": "add-actor", "args": [
+                {
+                  "name": "forwardButton",
+                  "type": "button",
+                  "image": "next",
+                  "location": [ 512, 436 ],
+                  "variable": "seek_help_showNext"
+                }
+              ] },
+              { "type": "remove-actor", "args": ["replay"] },
+              { "type": "add-actor", "args": [
+                {
+                  "name": "replay",
+                  "type": "button",
+                  "image": "replay",
+                  "location": [ 466, 435 ],
+                  "variable": "seek_help_replay"
+                }
+              ] },
+              { "type": "remove-actor", "args": ["bottomPanel"] },
+              { "type": "add-actor", "args": [
+                {
+                  "name": "bottomPanel",
+                  "type": "blocker",
+                  "location": [ 0, 480 ],
+                  "size": [ 640, 200 ],
+                  "blockerTint" : "0xFFFFFF",
+                  "blockerAlpha" : 1.0
+                }
+              ] },
+              { "type": "remove-actor", "args": ["default"] }
+            ]
+          },
+          "sound_7_b_finished": {
+            "events": { "sound_7_b": "played" },
+            "actions": [
+              { "type": "remove-actor", "args": ["denise"] },
+              { "type": "add-actor", "args": [
+                {
+                  "name": "sound_7_c",
+                  "type": "audio",
+                  "audio": ["sound_7_c"],
+                  "variable": "sound_7_c"
+                }
+              ] },
+              { "type": "remove-actor", "args": ["cjEyesUp"] },
+              { "type": "add-actor", "args": [
+                {
+                  "name": "cj",
+                  "type": "decoration",
+                  "image": "cj",
+                  "key": "decorations",
+                  "location": [ 200, 200 ],
+                  "scale": [ 0.53, 0.53 ]
+                }
+              ] },
+              { "type": "add-actor", "args": [
+                {
+                  "name": "rajArmUp",
+                  "type": "decoration",
+                  "image": "rajArmUp",
+                  "key": "decorations",
+                  "location": [ 547, 203 ],
+                  "scale": [ -0.58, 0.58 ]
+                }
+              ] },
+              { "type": "add-actor", "args": [
+                {
+                  "name": "Friends",
+                  "type": "text",
+                  "font": "action_text_medium",
+                  "location": [ 41,  150 ],
+                  "bullet": true,
+                  "text": "Friends"
+                }
+              ] },
+              { "type": "remove-actor", "args": ["backButton"] },
+              { "type": "add-actor", "args": [
+                {
+                  "name": "backButton",
+                  "type": "button",
+                  "image": "back",
+                  "location": [ 337, 435 ],
+                  "variable": "seek_help_showPrevious"
+                }
+              ] },
+              { "type": "remove-actor", "args": ["forwardButton"] },
+              { "type": "add-actor", "args": [
+                {
+                  "name": "forwardButton",
+                  "type": "button",
+                  "image": "next",
+                  "location": [ 512, 436 ],
+                  "variable": "seek_help_showNext"
+                }
+              ] },
+              { "type": "remove-actor", "args": ["replay"] },
+              { "type": "add-actor", "args": [
+                {
+                  "name": "replay",
+                  "type": "button",
+                  "image": "replay",
+                  "location": [ 466, 435 ],
+                  "variable": "seek_help_replay"
+                }
+              ] },
+              { "type": "remove-actor", "args": ["bottomPanel"] },
+              { "type": "add-actor", "args": [
+                {
+                  "name": "bottomPanel",
+                  "type": "blocker",
+                  "location": [ 0, 480 ],
+                  "size": [ 640, 200 ],
+                  "blockerTint" : "0xFFFFFF",
+                  "blockerAlpha" : 1.0
+                }
+              ] },
+              { "type": "remove-actor", "args": ["default"] }
+            ]
+          },
+          "sound_7_c_finished_shimmer_next": {
+            "events": { "sound_7_c": "played" },
+            "actions": [
+              { "type": "remove-actor", "args": ["forwardButton"] },
+              { "type": "add-actor", "args": [
+                {
+                  "name": "forwardButtonShimmer",
+                  "type": "button",
+                  "image": "next",
+                  "animated": true,
+                  "animationRepeat": 4000,
+                  "animationFrameRate": 30,
+                  "location": [ 512, 436 ],
+                  "variable": "seek_help_showNext"
+                }
+              ] }
+            ]
+          },
+          "replay_button": {
+            "events": { "seek_help_replay": "*" },
+            "actions": [
+              { "type": "scene", "args": [ "empty_replay_scene" ] },
+              { "type": "scene", "args": [ "seek_help" ] }
+            ]
+          },
+          "back_button": {
+            "events": { "seek_help_showPrevious": "*" },
+            "actions": [ { "type": "scene", "args": [ "comeback_examples" ] } ]
+          },
+          "forward_button": {
+            "events": { "seek_help_showNext": "*" },
+            "actions": [ { "type": "scene", "args": [ "seek_help_from_a_friend" ] } ]
+          }
+        }
+      },
+      "seek_help_from_a_friend": {
+        "id": "seek_help_from_a_friend",
+        "background": "actNowBackground",
+        "title": "Seek help from a friend",
+        "actors": [
+          {
+            "name": "Action Header",
+            "type": "text",
+            "font": "action_header",
+            "location": [ 19, 7 ],
+            "text": "Seek help from a friend "
+          },
+          {
+            "name": "sound_8",
+            "type": "audio",
+            "audio": ["sound_8"],
+            "variable": "sound_8"
+          },
+          {
+            "name": "videoFramePurple",
+            "type": "decoration",
+            "image": "videoFramePurple",
+            "key": "decorations",
+            "location": [ 152, 124 ],
+            "scale": [ 1.0, 1.0 ]
+          },
+          {
+            "name": "video_seek_help",
+            "type": "wistia",
+            "location": [ 159, 129 ],
+            "size": [ 320, 240 ],
+            "video": "1bw03u7dur",
+            "hideCloseButton": true,
+            "variable": "video_seek_help",
+            "blockerAlpha" : 0.0,
+            "blockInput": false
+          },
+          {
+            "name": "mutebutton",
+            "type": "toggle-button",
+            "images": {
+              "on": "muteOff",
+              "off": "muteOn"
+            },
+            "location": [ 9, 435 ],
+            "scale": [ 1.0, 1.0 ],
+            "variable": "mute_game",
+            "values": {
+              "on": "mute_on",
+              "off": "mute_off"
+            },
+            "active": true
+          },
+          {
+            "name": "backButton",
+            "type": "button",
+            "image": "back",
+            "location": [ 337, 435 ],
+            "variable": "seek_help_from_a_friend_showPrevious"
+          },
+          {
+            "name": "forwardButton",
+            "type": "button",
+            "image": "next",
+            "location": [ 512, 436 ],
+            "variable": "seek_help_from_a_friend_showNext"
+          },
+          {
+            "name": "replay",
+            "type": "button",
+            "image": "replay",
+            "location": [ 466, 435 ],
+            "variable": "seek_help_from_a_friend_replay"
+          },
+          {
+            "name": "bottomPanel",
+            "type": "blocker",
+            "location": [ 0, 480 ],
+            "size": [ 640, 200 ],
+            "blockerTint" : "0xFFFFFF",
+            "blockerAlpha" : 1.0
+          }
+        ],
+        "outcomes": {
+          "sound_8_finished_shimmer_next": {
+            "events": { "sound_8": "played", "video_seek_help": "finished" },
+            "actions": [
+              { "type": "remove-actor", "args": ["forwardButton"] },
+              { "type": "add-actor", "args": [
+                {
+                  "name": "forwardButtonShimmer",
+                  "type": "button",
+                  "image": "next",
+                  "animated": true,
+                  "animationRepeat": 4000,
+                  "animationFrameRate": 30,
+                  "location": [ 512, 436 ],
+                  "variable": "seek_help_from_a_friend_showNext"
+                }
+              ] }
+            ]
+          },
+          "replay_button": {
+            "events": { "seek_help_from_a_friend_replay": "*" },
+            "actions": [
+              { "type": "scene", "args": [ "empty_replay_scene" ] },
+              { "type": "scene", "args": [ "seek_help_from_a_friend" ] }
+            ]
+          },
+          "back_button": {
+            "events": { "seek_help_from_a_friend_showPrevious": "*" },
+            "actions": [ { "type": "scene", "args": [ "seek_help" ] } ]
+          },
+          "forward_button": {
+            "events": { "seek_help_from_a_friend_showNext": "*" },
+            "actions": [ { "type": "scene", "args": [ "move_on" ] } ]
+          }
+        }
+      },
+      "move_on": {
+        "id": "move_on",
+        "background": "actNowBackground",
+        "title": "Move on",
+        "actors": [
+          {
+            "name": "Action Header",
+            "type": "text",
+            "font": "action_header",
+            "location": [ 19, 7 ],
+            "text": "Action "
+          },
+          {
+            "name": "sound_9",
+            "type": "audio",
+            "audio": ["sound_9"],
+            "variable": "sound_9"
+          },
+          {
+            "name": "ramon",
+            "type": "decoration",
+            "image": "ramon",
+            "key": "decorations",
+            "location": [ 100, 120 ],
+            "scale": [ 1.0, 1.0 ]
+          },
+          {
+            "name": "Good job!",
+            "type": "text",
+            "font": "action_text_extra_large_bold",
+            "location": [ 340, 160 ],
+            "text": "Good job!"
+          },
+          {
+            "name": "Return to the menu",
+            "type": "text",
+            "font": "action_text_small_wrap",
+            "location": [ 340, 235 ],
+            "text": "You have completed this lesson."
+          },
+          {
+            "name": "mutebutton",
+            "type": "toggle-button",
+            "images": {
+              "on": "muteOff",
+              "off": "muteOn"
+            },
+            "location": [ 9, 435 ],
+            "scale": [ 1.0, 1.0 ],
+            "variable": "mute_game",
+            "values": {
+              "on": "mute_on",
+              "off": "mute_off"
+            },
+            "active": true
+          },
+          {
+            "name": "backButton",
+            "type": "button",
+            "image": "back",
+            "location": [ 337, 435 ],
+            "variable": "move_on_showPrevious"
+          },
+          {
+            "name": "nextDisabled",
+            "type": "decoration",
+            "image": "nextDisabled",
+            "key": "decorations",
+            "location": [ 512, 436 ],
+            "scale": [ 1.0, 1.0 ]
+          },
+          {
+            "name": "replay",
+            "type": "button",
+            "image": "replay",
+            "location": [ 466, 435 ],
+            "variable": "move_on_replay"
+          },
+          {
+            "name": "bottomPanel",
+            "type": "blocker",
+            "location": [ 0, 480 ],
+            "size": [ 640, 200 ],
+            "blockerTint" : "0xFFFFFF",
+            "blockerAlpha" : 1.0
+          }
+        ],
+        "actions": [
+          { "type": "choice", "args": [ "objective_complete", 1] },
+          { "type": "choice", "args": [ "save", 0 ] }
+        ],
+        "outcomes": {
+          "replay_button": {
+            "events": { "move_on_replay": "*" },
+            "actions": [
+              { "type": "scene", "args": [ "empty_replay_scene" ] },
+              { "type": "scene", "args": [ "move_on" ] }
+            ]
+          },
+          "back_button": {
+            "events": { "move_on_showPrevious": "*" },
+            "actions": [ { "type": "scene", "args": [ "seek_help_from_a_friend" ] } ]
+          }
+        }
+      },
+      "empty_replay_scene": {
+        "id": "empty_replay_scene",
+        "description": "since a scene change request to the current scene is ignored, first change to this empty scene"
+      }
+    }
+  }
+}

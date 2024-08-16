@@ -1,0 +1,536 @@
+{
+  "gamedata": {
+    "questions": [
+      {
+        "audioPath": "question_01",
+        "text": "Bullying is always intentional.",
+        "option": [
+          {
+            "correct": "true",
+            "text": "True"
+          },
+          { "text": "False" }
+        ],
+        "remediation": {
+          "audioPath": "remediation_01",
+          "text": "Bullying is always intentional."
+        }
+      },
+      {
+        "audioPath": "question_02",
+        "text": "When bullying occurs there is always a difference in power.",
+        "option": [
+          {
+            "correct": "true",
+            "text": "True"
+          },
+          { "text": "False" }
+        ],
+        "remediation": {
+          "audioPath": "remediation_02",
+          "text": "Part of the definition of bullying is that bullies have more power than their victims."
+        }
+      },
+      {
+        "audioPath": "question_03",
+        "text": "A friend who acts differently when others are around and often ignores you or leaves you out is called a:",
+        "option": [
+          { "text": "Best friend" },
+          {
+            "correct": "true",
+            "text": "Frenemy"
+          },
+          { "text": "Bystander" }
+        ],
+        "remediation": {
+          "audioPath": "remediation_03",
+          "text": "A friend who acts differently when others are around, or ignores you is called a frenemy."
+        }
+      },
+      {
+        "audioPath": "question_04",
+        "text": "Sometimes acting like a frenemy is a normal part of true friendship.",
+        "option": [
+          { "text": "True" },
+          {
+            "correct": "true",
+            "text": "False"
+          }
+        ],
+        "remediation": {
+          "audioPath": "remediation_04",
+          "text": "Being a frenemy is not how true friends treat each other."
+        }
+      },
+      {
+        "audioPath": "question_05",
+        "text": "Lindsey’s friend Ava teases her a lot. At first it didn’t bother Lindsey, but now it does. She’s told Ava to stop, but she won’t. Is this bullying?",
+        "option": [
+          {
+            "correct": "true",
+            "text": "Yes"
+          },
+          { "text": "No" }
+        ],
+        "remediation": {
+          "audioPath": "remediation_05",
+          "text": "This is an example of bullying."
+        }
+      },
+      {
+        "audioPath": "question_06",
+        "text": "Which of the following is an example of indirect bullying?",
+        "option": [
+          { "text": "Threats" },
+          { "text": "Name calling" },
+          {
+            "correct": "true",
+            "text": "Gossiping"
+          }
+        ],
+        "remediation": {
+          "audioPath": "remediation_06",
+          "text": "Gossiping, or talking about someone behind their backs, is an example of indirect bullying."
+        }
+      },
+      {
+        "audioPath": "question_07",
+        "text": "Which of the following is an example of direct bullying?",
+        "option": [
+          { "text": "Excluding someone" },
+          { "text": "Spreading rumors" },
+          {
+            "correct": "true",
+            "text": "Damaging someone’s personal property"
+          }
+        ],
+        "remediation": {
+          "audioPath": "remediation_07",
+          "text": "Damaging someone’s personal property is an example of direct bullying."
+        }
+      },
+      {
+        "audioPath": "question_08",
+        "text": "Indirect bullying is done face to face.",
+        "option": [
+          { "text": "True" },
+          {
+            "correct": "true",
+            "text": "False"
+          }
+        ],
+        "remediation": {
+          "audioPath": "remediation_08",
+          "text": "Indirect bullying is done behind someone’s back."
+        }
+      },
+      {
+        "audioPath": "question_09",
+        "text": "What is it called when a bully uses technology to bully others?",
+        "option": [
+          { "text": "Computer bullying" },
+          {
+            "correct": "true",
+            "text": "Cyberbullying"
+          },
+          { "text": "Online bullying" }
+        ],
+        "remediation": {
+          "audioPath": "remediation_09",
+          "text": "When a bully uses technology, like a computer, the internet or a cell phone to bully others, it’s called cyberbullying."
+        }
+      },
+      {
+        "audioPath": "question_10",
+        "text": "Which of the following is an example of cyberbullying?",
+        "option": [
+          { "text": "Sending mean text messages" },
+          { "text": "Spreading rumors online" },
+          {
+            "correct": "true",
+            "text": "Both a and b are cyberbullying"
+          }
+        ],
+        "remediation": {
+          "audioPath": "remediation_10",
+          "text": "Both sending mean texts and spreading rumors online are examples of cyberbulling."
+        }
+      },
+      {
+        "audioPath": "question_11",
+        "text": "A person who intentionally harms another person is known as a:",
+        "option": [
+          { "text": "Victim" },
+          {
+            "correct": "true",
+            "text": "Bully"
+          },
+          { "text": "Bystander" }
+        ],
+        "remediation": {
+          "audioPath": "remediation_11",
+          "text": "A person who intentionally harms another person is called a bully."
+        }
+      },
+      {
+        "audioPath": "question_12",
+        "text": "Someone who observes a bullying situation is a:",
+        "option": [
+          { "text": "Victim" },
+          { "text": "Friend" },
+          {
+            "correct": "true",
+            "text": "Bystander"
+          }
+        ],
+        "remediation": {
+          "audioPath": "remediation_12",
+          "text": "Someone who observes a bullying situation is called a bystander."
+        }
+      },
+      {
+        "audioPath": "question_13",
+        "text": "The target of a bully is known as the:",
+        "option": [
+          {
+            "correct": "true",
+            "text": "Victim"
+          },
+          { "text": "Bully" },
+          { "text": "Bystander" }
+        ],
+        "remediation": {
+          "audioPath": "remediation_13",
+          "text": "The target of a bully is known as the victim."
+        }
+      },
+      {
+        "audioPath": "question_14",
+        "text": "The \"C\" in A.C.T. stands for:",
+        "option": [
+          { "text": "Caution" },
+          {
+            "correct": "true",
+            "text": "Care"
+          },
+          { "text": "Compromise" }
+        ],
+        "remediation": {
+          "audioPath": "remediation_14",
+          "text": "The \"C\" in A.C.T. stands for care."
+        }
+      },
+      {
+        "audioPath": "question_15",
+        "text": "The \"A\" in A.C.T. stands for:",
+        "option": [
+          { "text": "Accept" },
+          {
+            "correct": "true",
+            "text": "Action"
+          },
+          { "text": "Applause" }
+        ],
+        "remediation": {
+          "audioPath": "remediation_15",
+          "text": "The \"A\" in A.C.T. stands for action."
+        }
+      },
+      {
+        "audioPath": "question_16",
+        "text": "The \"T\" in A.C.T. stands for:",
+        "option": [
+          { "text": "Tattle" },
+          {
+            "correct": "true",
+            "text": "Tell"
+          },
+          { "text": "Try" }
+        ],
+        "remediation": {
+          "audioPath": "remediation_16",
+          "text": "The \"T\" in A.C.T. stands for tell."
+        }
+      },
+      {
+        "audioPath": "question_17",
+        "text": "Bullying is typically not repeated over time.",
+        "option": [
+          { "text": "True" },
+          {
+            "correct": "true",
+            "text": "False"
+          }
+        ],
+        "remediation": {
+          "audioPath": "remediation_17",
+          "text": "Bullying is usually repeated over time."
+        }
+      },
+      {
+        "audioPath": "question_18",
+        "text": "Two ways to take action and stop a bullying situation are:",
+        "option": [
+          {
+            "correct": "true",
+            "text": "Speak up and seek help"
+          },
+          { "text": "Resist and fight back" },
+          { "text": "Hide and do nothing" }
+        ],
+        "remediation": {
+          "audioPath": "remediation_18",
+          "text": "Speaking up and seeking help are two ways to take action."
+        }
+      },
+      {
+        "audioPath": "question_19",
+        "text": "Firmly telling the bully to \"knock it off\" is an example of a:",
+        "option": [
+          { "text": "No reaction comeback" },
+          { "text": "Agreement comeback" },
+          {
+            "correct": "true",
+            "text": "Strong assertive comeback"
+          }
+        ],
+        "remediation": {
+          "audioPath": "remediation_19",
+          "text": "Firmly telling a bully to \"knock it off\" is an example of a strong assertive comeback."
+        }
+      },
+      {
+        "audioPath": "question_20",
+        "text": "Responding to a bully by saying \"whatever\" in a normal voice would be an example of a:",
+        "option": [
+          {
+            "correct": "true",
+            "text": "No reaction comeback"
+          },
+          { "text": "Agreement comeback" },
+          { "text": "Strong assertive comeback" }
+        ],
+        "remediation": {
+          "audioPath": "remediation_20",
+          "text": "Responding to a bully by saying \"whatever\" in a normal voice is an example of a no reaction comeback."
+        }
+      },
+      {
+        "audioPath": "question_21",
+        "text": "If a bully is making fun of you and you respond by saying \"You’re right\", you are using which type of comeback?",
+        "option": [
+          { "text": "No reaction comeback" },
+          {
+            "correct": "true",
+            "text": "Agreement comeback"
+          },
+          { "text": "Strong assertive comeback" }
+        ],
+        "remediation": {
+          "audioPath": "remediation_21",
+          "text": "Saying \"you’re right\" is an agreement comeback."
+        }
+      },
+      {
+        "audioPath": "question_22",
+        "text": "It’s important to tell an adult about a bullying situation, even if the bullying has stopped.",
+        "option": [
+          {
+            "correct": "true",
+            "text": "True"
+          },
+          { "text": "False" }
+        ],
+        "remediation": {
+          "audioPath": "remediation_22",
+          "text": "It is important to tell an adult about a bullying situation, even if the bullying has stopped."
+        }
+      },
+      {
+        "audioPath": "question_23",
+        "text": "Which of the following can show a victim that you care?",
+        "option": [
+          {
+            "correct": "true",
+            "text": "Offering to go with the victim to report the bullying"
+          },
+          { "text": "Walking away from the bullying situation" },
+          { "text": "Not laughing at what the bully is doing" }
+        ],
+        "remediation": {
+          "audioPath": "remediation_23",
+          "text": "Offering to go with the victim to report the bullying shows the victim that you care."
+        }
+      },
+      {
+        "audioPath": "question_24",
+        "text": "Which of these is the best way to show a victim that you care?",
+        "option": [
+          { "text": "Refusing to be the bully’s friend" },
+          {
+            "correct": "true",
+            "text": "Talking to the victim later on"
+          },
+          { "text": "Sending them an e-card" }
+        ],
+        "remediation": {
+          "audioPath": "remediation_24",
+          "text": "Talking to the victim later on to offer your support is a great way to show the victim that you care."
+        }
+      },
+      {
+        "audioPath": "question_25",
+        "text": "Which of the following can show a victim that you care?",
+        "option": [
+          { "text": "Smiling at them as they are being bullied" },
+          { "text": "Writing a note to the bully telling them they are mean" },
+          {
+            "correct": "true",
+            "text": "Inviting the victim to join your group"
+          }
+        ],
+        "remediation": {
+          "audioPath": "remediation_25",
+          "text": "Inviting the victim to join your group really shows the victim that you care."
+        }
+      },
+      {
+        "audioPath": "question_26",
+        "text": "Which of these is usually done just to try and get someone in trouble?",
+        "option": [
+          {
+            "correct": "true",
+            "text": "Tattling"
+          },
+          { "text": "Telling" }
+        ],
+        "remediation": {
+          "audioPath": "remediation_26",
+          "text": "Tattling is usually done just to try and get someone in trouble."
+        }
+      },
+      {
+        "audioPath": "question_27",
+        "text": "It is every student’s responsibility to tell an adult when they see bullying.",
+        "option": [
+          {
+            "correct": "true",
+            "text": "True"
+          },
+          { "text": "False" }
+        ],
+        "remediation": {
+          "audioPath": "remediation_27",
+          "text": "It is every student’s responsibility to tell an adult when they see bullying."
+        }
+      },
+      {
+        "audioPath": "question_28",
+        "text": "In gym class as Tyler passed the basketball to David, it hit him in the head. Tyler said he was sorry and the game continued. Is this bullying?",
+        "option": [
+          { "text": "Yes" },
+          {
+            "correct": "true",
+            "text": "No"
+          }
+        ],
+        "remediation": {
+          "audioPath": "remediation_28",
+          "text": "This is not bullying. It sounds like it was an accident."
+        }
+      },
+      {
+        "audioPath": "question_29",
+        "text": "When you use an agreement comeback, you are not giving the bully the response that they’re looking for.",
+        "option": [
+          {
+            "correct": "true",
+            "text": "True"
+          },
+          { "text": "False" }
+        ],
+        "remediation": {
+          "audioPath": "remediation_29",
+          "text": "When you use an agreement comeback you are not giving the bully the response that they’re looking for."
+        }
+      },
+      {
+        "audioPath": "question_30",
+        "text": "Tattling is just another name for telling.",
+        "option": [
+          { "text": "True" },
+          {
+            "correct": "true",
+            "text": "False"
+          }
+        ],
+        "remediation": {
+          "audioPath": "remediation_30",
+          "text": "Telling is very important when someone could get hurt and it is not tattling."
+        }
+      },
+      {
+        "audioPath": "question_31",
+        "text": "To minimize a bullying situation, the best thing to do is nothing.",
+        "option": [
+          { "text": "True" },
+          {
+            "correct": "true",
+            "text": "False"
+          }
+        ],
+        "remediation": {
+          "audioPath": "remediation_31",
+          "text": "Doing nothing will not stop bullying. Remember A.C.T. to take Action, Care for the victim and Tell an adult."
+        }
+      },
+      {
+        "audioPath": "question_32",
+        "text": "When using a no reaction comeback, you should respond calmly, as if the bully is not bothering you at all.",
+        "option": [
+          {
+            "correct": "true",
+            "text": "True"
+          },
+          { "text": "False" }
+        ],
+        "remediation": {
+          "audioPath": "remediation_32",
+          "text": "When using a no reaction comeback, you need to respond calmly, as if the bully is not bothering you at all."
+        }
+      },
+      {
+        "audioPath": "question_33",
+        "text": "A.C.T. stands for",
+        "option": [
+          { "text": "Always Create Trust" },
+          {
+            "correct": "true",
+            "text": "Action Care Tell"
+          },
+          { "text": "Act Correct Truth" }
+        ],
+        "remediation": {
+          "audioPath": "remediation_33",
+          "text": "A.C.T. stands for Action Care Tell."
+        }
+      },
+      {
+        "audioPath": "question_34",
+        "text": "A.C.T. is a way to help",
+        "option": [
+          { "text": "Follow the rules at school" },
+          { "text": "Students get into a good college" },
+          {
+            "correct": "true",
+            "text": "End bullying at your school"
+          }
+        ],
+        "remediation": {
+          "audioPath": "remediation_34",
+          "text": "A.C.T. is a way to help end bullying at your school when everyone remembers: Action, Care, Tell!"
+        }
+      }
+    ]
+  }
+}
