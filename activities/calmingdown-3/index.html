@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<meta property="og:title" content="Act Now: CALMING DOWN" />
+		<title>Act Now: CALMING DOWN</title>
+		<script>
+			const _environmentSettings = {
+				assetPath: "",
+				scormEnabled: false,
+			};
+		</script>
+		<script src="engine/APIWrapper.js"></script>
+		<script src="engine/phaser.js"></script>
+		<script src="engine/scene-engine.min.js"></script>
+
+		<link
+			href="https://fonts.googleapis.com/css?family=Caveat+Brush"
+			rel="stylesheet"
+		/>
+		<link
+			href="https://fonts.googleapis.com/css?family=Caveat+Brush"
+			rel="preload"
+			as="style"
+		/>
+
+		<style type="text/css">
+			#caveatbrush {
+				font-family: "Caveat Brush";
+			}
+		</style>
+		<style>
+			body {
+				margin: 0;
+				padding: 0;
+			}
+			.container {
+				position: relative;
+			}
+			.gameItem {
+				top: 0;
+				left: 0;
+			}
+		</style>
+	</head>
+	<body>
+		<div
+			id="caveatbrush"
+			style="
+				position: absolute;
+				left: -1000em;
+				font-family: 'Caveat Brush', sans-serif;
+			"
+		>
+			.
+		</div>
+
+		<div id="gameContainer" class="container">
+			<div id="game" class="gameItem" style="z-index: 100"></div>
+		</div>
+
+		<script type="text/javascript" defer>
+			SceneEngine("game", 640, 480);
+		</script>
+	</body>
+</html>

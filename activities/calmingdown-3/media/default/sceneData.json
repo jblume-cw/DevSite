@@ -1,0 +1,2064 @@
+{
+  "play": {
+    "modelType": "basic",
+    "start": "resume_started",
+    "persist": [ "saved_scene" ],
+    "global": {
+      "actors": {},
+      "outcomes": {},
+      "actions": []
+    },
+    "scenes": {
+      "scene1": {
+        "id": "scene1",
+        "title": "Scene 1",
+        "background": "g3-background",
+        "actors": [
+          {
+            "name": "backDisabled",
+            "type": "decoration",
+            "image": "backDisabled",
+            "location": [
+              290,
+              420
+            ]
+          },
+          {
+            "name": "feelings",
+            "type": "text",
+            "font": "green-bold-lg",
+            "location": [
+              230,
+              120
+            ],
+            "text": "FEELINGS",
+            "tween": {
+              "time": 1000,
+              "delay": 3000,
+              "location": [
+                100,
+                120
+              ]
+            }
+          },
+          {
+            "name": "emotions",
+            "type": "text",
+            "font": "green-bold-lg",
+            "location": [
+              305,
+              120
+            ],
+            "startDelay": 4000,
+            "text": "=  EMOTIONS"
+          },
+          {
+            "name": "Delighted",
+            "type": "text",
+            "font": "yellow-md",
+            "location": [
+              450,
+              40
+            ],
+            "angle": 8,
+            "startDelay": 8000,
+            "text": "Delighted"
+          },
+          {
+            "name": "Angry",
+            "type": "text",
+            "font": "red-md",
+            "location": [
+              60,
+              220
+            ],
+            "angle": -8,
+            "startDelay": 9000,
+            "text": "Angry"
+          },
+          {
+            "name": "Glad",
+            "type": "text",
+            "font": "orange-md",
+            "location": [
+              250,
+              220
+            ],
+            "angle": -8,
+            "startDelay": 10000,
+            "text": "Glad"
+          },
+          {
+            "name": "Annoyed",
+            "type": "text",
+            "font": "purple-md",
+            "location": [
+              240,
+              40
+            ],
+            "angle": -8,
+            "startDelay": 11000,
+            "text": "Annoyed"
+          },
+          {
+            "name": "Gloomy",
+            "type": "text",
+            "font": "blue-md",
+            "location": [
+              350,
+              180
+            ],
+            "angle": 8,
+            "startDelay": 12000,
+            "text": "Gloomy"
+          },
+          {
+            "name": "Anxious",
+            "type": "text",
+            "font": "purple-md",
+            "location": [
+              450,
+              220
+            ],
+            "angle": -8,
+            "startDelay": 13000,
+            "text": "Anxious"
+          },
+          {
+            "name": "Thrilled",
+            "type": "text",
+            "font": "yellow-md",
+            "location": [
+              150,
+              180
+            ],
+            "angle": 8,
+            "startDelay": 14000,
+            "text": "Thrilled"
+          },
+          {
+            "name": "Sad",
+            "type": "text",
+            "font": "blue-md",
+            "location": [
+              160,
+              75
+            ],
+            "angle": 8,
+            "startDelay": 15000,
+            "text": "Sad"
+          },
+          {
+            "name": "Excited",
+            "type": "text",
+            "font": "orange-md",
+            "location": [
+              350,
+              80
+            ],
+            "angle": -8,
+            "startDelay": 16000,
+            "text": "Excited"
+          },
+          {
+            "name": "Furious",
+            "type": "text",
+            "font": "red-md",
+            "location": [
+              50,
+              40
+            ],
+            "angle": -8,
+            "startDelay": 17000,
+            "text": "Furious"
+          },
+          {
+            "name": "slide_01",
+            "type": "audio",
+            "audio": "slide_01",
+            "variable": "slide_01"
+          },
+          {
+            "name": "replay",
+            "type": "button",
+            "image": "replay",
+            "location": [
+              430,
+              420
+            ],
+            "variable": "replay_button"
+          },
+          {
+            "name": "next",
+            "type": "button",
+            "image": "next",
+            "location": [
+              480,
+              420
+            ],
+            "variable": "next_button"
+          },
+          {
+            "name": "s1-pageFade-upper",
+            "type": "fadeout",
+            "location": [
+              45,
+              30
+            ],
+            "size": [
+              545,
+              100
+            ],
+            "blockerTint": "0xffffff",
+            "fadePeriod": 1000,
+            "startDelay": 31000,
+            "variable": "s1-pageFade-upper"
+          },
+          {
+            "name": "s1-pageFade-lower",
+            "type": "fadeout",
+            "location": [
+              60,
+              130
+            ],
+            "size": [
+              500,
+              140
+            ],
+            "blockerTint": "0xffffff",
+            "fadePeriod": 1000,
+            "startDelay": 31000,
+            "variable": "s1-pageFade-lower"
+          },
+          {
+            "name": "Anger",
+            "type": "text",
+            "font": "black-bold-xlg",
+            "location": [
+              "center",
+              100
+            ],
+            "startDelay": 32000,
+            "text": "Anger"
+          }
+        ],
+        "outcomes": {
+          "go_next": {
+            "events": {
+              "next_button": "*"
+            },
+            "actions": [
+              {
+                "type": "scene",
+                "args": [
+                  "scene2"
+                ]
+              }
+            ]
+          },
+          "click_replay": {
+            "events": {
+              "replay_button": "*"
+            },
+            "actions": [
+              { "type": "variable", "args": ["replay_scene", "$current_scene_name"] },
+              {
+                "type": "scene",
+                "args": ["deadscene"]
+              }
+            ]        
+          },
+          "animate-next": {
+            "events": {
+              "slide_01": "played"
+            },
+            "actions": [
+              {
+                "type": "add-actor",
+                "args": [
+                  {
+                    "name": "next",
+                    "animated": true,
+                    "animationLoop": true,
+                    "animationRepeat": 5000,
+                    "type": "button",
+                    "image": "next",
+                    "location": [
+                      480,
+                      420
+                    ],
+                    "variable": "next_button"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        "actions": [
+          { "type": "variable", "args": [ "saved_scene", "$current_scene_name"] }
+        ]
+      },
+      "scene2": {
+        "id": "scene2",
+        "title": "Scene 2",
+        "background": "g3-background",
+        "actors": [
+          {
+            "name": "Anger",
+            "type": "text",
+            "font": "black-bold-xlg",
+            "location": [
+              "center",
+              100
+            ],
+            "text": "Anger",
+            "tween": {
+              "time": 1000,
+              "delay": 31000,
+              "location": [
+                160,
+                100
+              ]
+            }
+          },
+          {
+            "name": "Anger-r1",
+            "type": "text",
+            "font": "green-md",
+            "location": [
+              285,
+              100
+            ],
+            "startDelay": 32000,
+            "text": "Yell and scream"
+          },
+          {
+            "name": "Anger-r2",
+            "type": "text",
+            "font": "green-md",
+            "location": [
+              280,
+              130
+            ],
+            "startDelay": 34000,
+            "text": "Throw something"
+          },
+          {
+            "name": "Anger-r3",
+            "type": "text",
+            "font": "green-md",
+            "location": [
+              290,
+              160
+            ],
+            "startDelay": 35000,
+            "text": "Hit someone"
+          },
+          {
+            "name": "buster-scaled",
+            "type": "decoration",
+            "image": "buster-scaled",
+            "location": [
+              220,
+              0
+            ],
+            "startDelay": 39000,
+            "scale": [
+              1.4,
+              1.4
+            ],
+            "tween": {
+              "time": 500,
+              "scale": [
+                0.9,
+                0.9
+              ],
+              "location": [
+                270,
+                35
+              ]
+            }
+          },
+          {
+            "name": "s2-pageFade-upper",
+            "type": "fadeout",
+            "location": [
+              45,
+              30
+            ],
+            "size": [
+              545,
+              100
+            ],
+            "blockerTint": "0xffffff",
+            "fadePeriod": 1000,
+            "startDelay": 46000,
+            "variable": "s1-pageFade-upper"
+          },
+          {
+            "name": "s2-pageFade-lower",
+            "type": "fadeout",
+            "location": [
+              60,
+              130
+            ],
+            "size": [
+              500,
+              140
+            ],
+            "blockerTint": "0xffffff",
+            "fadePeriod": 1000,
+            "startDelay": 46000,
+            "variable": "s1-pageFade-lower"
+          },
+          {
+            "name": "s2-end-title",
+            "type": "text",
+            "font": "blue-bold-xlg",
+            "location": [
+              190,
+              10
+            ],
+            "startDelay": 47000,
+            "text": "Calm down",
+            "tween": {
+              "time": 1000,
+              "location": [
+                190,
+                100
+              ]
+            }
+          },
+          {
+            "name": "back",
+            "type": "button",
+            "image": "back",
+            "location": [
+              290,
+              420
+            ],
+            "variable": "back_button"
+          },
+          {
+            "name": "slide_02",
+            "type": "audio",
+            "audio": "slide_02",
+            "variable": "slide_02"
+          },
+          {
+            "name": "replay",
+            "type": "button",
+            "image": "replay",
+            "location": [
+              430,
+              420
+            ],
+            "variable": "replay_button"
+          },
+          {
+            "name": "next",
+            "type": "button",
+            "image": "next",
+            "location": [
+              480,
+              420
+            ],
+            "variable": "next_button"
+          }
+        ],
+        "outcomes": {
+          "go_next": {
+            "events": {
+              "next_button": "*"
+            },
+            "actions": [
+              {
+                "type": "scene",
+                "args": [
+                  "scene3"
+                ]
+              }
+            ]
+          },
+          "click_replay": {
+            "events": {
+              "replay_button": "*"
+            },
+            "actions": [
+              { "type": "variable", "args": ["replay_scene", "$current_scene_name"] },
+              {
+                "type": "scene",
+                "args": ["deadscene"]
+              }
+            ]        
+          },
+          "go_back": {
+            "events": {
+              "back_button": "*"
+            },
+            "actions": [
+              {
+                "type": "scene",
+                "args": [
+                  "scene1"
+                ]
+              }
+            ]
+          },
+          "animate-next": {
+            "events": {
+              "slide_02": "played"
+            },
+            "actions": [
+              {
+                "type": "add-actor",
+                "args": [
+                  {
+                    "name": "next",
+                    "animated": true,
+                    "animationLoop": true,
+                    "animationRepeat": 5000,
+                    "type": "button",
+                    "image": "next",
+                    "location": [
+                      480,
+                      420
+                    ],
+                    "variable": "next_button"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        "actions": [
+          { "type": "variable", "args": [ "saved_scene", "$current_scene_name"] }
+        ]
+      },
+      "scene3": {
+        "id": "scene3",
+        "title": "Scene 3",
+        "background": "g3-background",
+        "actors": [
+          {
+            "name": "s3-title",
+            "type": "text",
+            "font": "black-bold-md",
+            "location": [
+              "center",
+              40
+            ],
+            "text": "How to calm down when you're angry"
+          },
+          {
+            "name": "s3-footer",
+            "type": "text",
+            "font": "black-bold-sm",
+            "location": [
+              "center",
+              220
+            ],
+            "startDelay": 42000,
+            "text": "Which of these ideas might work for you?"
+          },
+          {
+            "name": "s3-c1-r1",
+            "type": "text",
+            "font": "green-sm",
+            "bullet":true,
+            "location": [
+              90,
+              85
+            ],
+            "text": "Count to 10.",
+            "startDelay": 8000
+          },
+          {
+            "name": "s3-c1-r2",
+            "type": "text",
+            "font": "green-sm",
+            "bullet":true,
+            "startDelay": 16000,
+            "location": [
+              90,
+              115
+            ],
+            "text": "Do something active."
+          },
+          {
+            "name": "s3-c1-r3",
+            "type": "text",
+            "font": "green-sm",
+            "bullet":true,
+            "startDelay": 23000,
+            "location": [
+              90,
+              145
+            ],
+            "text": "Sing."
+          },
+          {
+            "name": "s3-c1-r4",
+            "type": "text",
+            "font": "green-sm",
+            "bullet":true,
+            "startDelay": 31000,
+            "location": [
+              90,
+              175
+            ],
+            "text": "Do something else."
+          },
+          {
+            "name": "s3-c2-r1",
+            "type": "text",
+            "font": "green-sm",
+            "bullet":true,
+            "location": [
+              320,
+              85
+            ],
+            "startDelay": 10000,
+            "text": "Take deep breaths."
+          },
+          {
+            "name": "s3-c2-r2",
+            "type": "text",
+            "font": "green-sm",
+            "bullet":true,
+            "location": [
+              320,
+              115
+            ],
+            "startDelay": 20000,
+            "text": "Draw a picture."
+          },
+          {
+            "name": "s3-c2-r3",
+            "type": "text",
+            "font": "green-sm",
+            "bullet":true,
+            "startDelay": 26000,
+            "location": [
+              320,
+              145
+            ],
+            "text": "Think about happy things."
+          },
+          {
+            "name": "s3-c2-r4",
+            "type": "text",
+            "font": "green-sm",
+            "bullet":true,
+            "startDelay": 37000,
+            "location": [
+              320,
+              175
+            ],
+            "text": "Talk to someone you trust."
+          },
+          {
+            "name": "slide_03",
+            "type": "audio",
+            "audio": "slide_03",
+            "variable": "slide_03"
+          },
+          {
+            "name": "back",
+            "type": "button",
+            "image": "back",
+            "location": [
+              290,
+              420
+            ],
+            "variable": "back_button"
+          },
+          {
+            "name": "replay",
+            "type": "button",
+            "image": "replay",
+            "location": [
+              430,
+              420
+            ],
+            "variable": "replay_button"
+          },
+          {
+            "name": "next",
+            "type": "button",
+            "image": "next",
+            "location": [
+              480,
+              420
+            ],
+            "variable": "next_button"
+          }
+        ],
+        "outcomes": {
+          "go_next": {
+            "events": {
+              "next_button": "*"
+            },
+            "actions": [
+              {
+                "type": "scene",
+                "args": [
+                  "scene4"
+                ]
+              }
+            ]
+          },
+          "click_replay": {
+            "events": {
+              "replay_button": "*"
+            },
+            "actions": [
+              { "type": "variable", "args": ["replay_scene", "$current_scene_name"] },
+              {
+                "type": "scene",
+                "args": ["deadscene"]
+              }
+            ]        
+          },
+          "go_back": {
+            "events": {
+              "back_button": "*"
+            },
+            "actions": [
+              {
+                "type": "scene",
+                "args": [
+                  "scene2"
+                ]
+              }
+            ]
+          },
+          "animate-next": {
+            "events": {
+              "slide_03": "played"
+            },
+            "actions": [
+              {
+                "type": "add-actor",
+                "args": [
+                  {
+                    "name": "next",
+                    "animated": true,
+                    "animationLoop": true,
+                    "animationRepeat": 5000,
+                    "type": "button",
+                    "image": "next",
+                    "location": [
+                      480,
+                      420
+                    ],
+                    "variable": "next_button"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        "actions": [
+          { "type": "variable", "args": [ "saved_scene", "$current_scene_name"] }
+        ]
+      },
+      "scene4": {
+        "id": "scene4",
+        "title": "Scene 4",
+        "background": "g3-background",
+        "actors": [
+          {
+            "name": "s3-title",
+            "type": "text",
+            "font": "green-bold-lg",
+            "location": [
+              "center",
+              50
+            ],
+            "text": "What works for others"
+          },
+          {
+            "name": "slide_04",
+            "type": "audio",
+            "audio": "slide_04",
+            "variable": "slide_04"
+          },
+          {
+            "name": "mollie",
+            "type": "button-character",
+            "image": "mollie",
+            "speechAnimation": true,
+            "location": [180,215 ],
+            "speechAudio": "slide04_mollie",
+            "variable": "mollie"
+          },
+          {
+            "name": "raj",
+            "type": "button-character",
+            "image": "raj",
+            "speechAnimation": true,
+            "location": [40,195 ],
+            "speechAudio": "slide04_raj",
+            "variable": "raj"
+          },
+          {
+            "name": "kate",
+            "type": "button-character",
+            "image": "kate",
+            "speechAnimation": true,
+            "location": [360, 175  ],
+            "speechAudio": "slide04_kate",
+            "variable": "kate"
+          },
+          {
+            "name": "cj",
+            "type": "button-character",
+            "image": "cj",
+            "speechAnimation": true,
+            "location": [495,150 ],
+            "speechAudio": "slide04_cj",
+            "variable": "cj"
+          },
+          {
+            "name": "back",
+            "type": "button",
+            "image": "back",
+            "location": [
+              290,
+              420
+            ],
+            "variable": "back_button"
+          },
+          {
+            "name": "replay",
+            "type": "button",
+            "image": "replay",
+            "location": [
+              430,
+              420
+            ],
+            "variable": "replay_button"
+          },
+          {
+            "name": "next",
+            "type": "button",
+            "image": "next",
+            "location": [
+              480,
+              420
+            ],
+            "variable": "next_button"
+          }
+        ],
+        "outcomes": {
+          "kate-talk":{
+            "events":{"kate":"*"},
+            "actions":[{
+              "type": "add-actor",
+              "args":[{
+                "name": "slide04_kate",  
+                "type": "audio",  
+                "audio": "slide04_kate",   
+                "variable": "slide04_kate"
+                }]
+            },
+            { "type": "variable", "args":["kate", null]}]
+          },
+          "cj-talk":{
+            "events":{"cj":"*"},
+            "actions":[{
+              "type": "add-actor",
+              "args":[{
+                "name": "slide04_cj",  
+                "type": "audio",  
+                "audio": "slide04_cj",   
+                "variable": "slide04_cj"
+                }]
+            },
+            { "type": "variable", "args":["cj", null]}]
+          },
+          "raj-talk":{
+            "events":{"raj":"*"},
+            "actions":[{
+              "type": "add-actor",
+              "args":[{
+                "name": "slide04_raj",  
+                "type": "audio",  
+                "audio": "slide04_raj",   
+                "variable": "slide04_raj"
+                }]
+            },
+            { "type": "variable", "args":["raj", null]}]
+          },
+          "mollie-talk":{
+            "events":{"mollie":"*"},
+            "actions":[{
+              "type": "add-actor",
+              "args":[{
+                "name": "slide04_mollie",  
+                "type": "audio",  
+                "audio": "slide04_mollie",   
+                "variable": "slide04_mollie"
+                }]
+            },
+            { "type": "variable", "args":["mollie", null]}]
+          },
+          "go_next": {
+            "events": {
+              "next_button": "*"
+            },
+            "actions": [
+              {
+                "type": "scene",
+                "args": [
+                  "scene5"
+                ]
+              }
+            ]
+          },
+          "go_back": {
+            "events": {
+              "back_button": "*"
+            },
+            "actions": [
+              {
+                "type": "scene",
+                "args": [
+                  "scene3"
+                ]
+              }
+            ]
+          },
+          "click_replay": {
+            "events": {
+              "replay_button": "*"
+            },
+            "actions": [
+              { "type": "variable", "args": ["replay_scene", "$current_scene_name"] },
+              {
+                "type": "scene",
+                "args": ["deadscene"]
+              }
+            ]        
+          },
+          "animate-next": {
+            "events": {
+              "slide04_raj": "played",
+              "slide04_cj": "played",
+              "slide04_mollie": "played",
+              "slide04_kate": "played"
+            },
+            "actions": [
+              {
+                "type": "add-actor",
+                "args": [
+                  {
+                    "name": "next",
+                    "animated": true,
+                    "animationLoop": true,
+                    "animationRepeat": 5000,
+                    "type": "button",
+                    "image": "next",
+                    "location": [
+                      480,
+                      420
+                    ],
+                    "variable": "next_button"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        "actions": [
+          { "type": "variable", "args": [ "saved_scene", "$current_scene_name"] }
+        ]
+      },
+      "scene5": {
+        "id": "scene5",
+        "title": "Scene 5",
+        "background": "g3-background",
+        "actors": [
+          {
+            "name": "slide_05",
+            "type": "audio",
+            "audio": "slide_05",
+            "variable": "slide_05"
+          },
+          {
+            "name": "s5-title",
+            "type": "text",
+            "font": "black-bold-md",
+            "location": [
+              "center",
+              40
+            ],
+            "text": "Practice calming down"
+          },
+          {
+            "name": "s3-r1",
+            "type": "text",
+            "font": "green-sm",
+            "bullet": true,            
+            "startDelay": 5000,
+            "location": [
+              100,
+              100
+            ],
+            "text": "Pretend you are angry."
+          },
+          {
+            "name": "s3-r2",
+            "type": "text",
+            "font": "green-sm",
+            "startDelay": 15000,
+            "bullet": true,
+            "location": [
+              100,
+              140
+            ],
+            "text": "Make your hands into fists."
+          },
+          {
+            "name": "s3-r3",
+            "type": "text",
+            "font": "green-sm",
+            "bullet": true,
+            "startDelay": 18000,
+            "location": [
+              100,
+              180
+            ],
+            "text": "Tighten all your muscles."
+          },
+          {
+            "name": "s3-r3",
+            "type": "text",
+            "font": "green-sm",
+            "bullet": true,
+            "startDelay": 21000,
+            "location": [
+              100,
+              220
+            ],
+            "text": "Make your best mad face."
+          },
+          {
+            "name": "angry",
+            "type": "decoration",
+            "startDelay": 21000,
+            "image": "angry",
+            "location": [
+              400,
+              100
+            ]
+          },
+          {
+            "name": "back",
+            "type": "button",
+            "image": "back",
+            "location": [
+              290,
+              420
+            ],
+            "variable": "back_button"
+          },
+          {
+            "name": "replay",
+            "type": "button",
+            "image": "replay",
+            "location": [
+              430,
+              420
+            ],
+            "variable": "replay_button"
+          },
+          {
+            "name": "next",
+            "type": "button",
+            "image": "next",
+            "location": [
+              480,
+              420
+            ],
+            "variable": "next_button"
+          }
+        ],
+        "outcomes": {
+          "go_next": {
+            "events": {
+              "next_button": "*"
+            },
+            "actions": [
+              {
+                "type": "scene",
+                "args": [
+                  "scene6"
+                ]
+              }
+            ]
+          },
+          "click_replay": {
+            "events": {
+              "replay_button": "*"
+            },
+            "actions": [
+              { "type": "variable", "args": ["replay_scene", "$current_scene_name"] },
+              {
+                "type": "scene",
+                "args": ["deadscene"]
+              }
+            ]        
+          },
+          "go_back": {
+            "events": {
+              "back_button": "*"
+            },
+            "actions": [
+              {
+                "type": "scene",
+                "args": [
+                  "scene4"
+                ]
+              }
+            ]
+          },
+          "animate-next": {
+            "events": {
+              "slide_05": "played"
+            },
+            "actions": [
+              {
+                "type": "add-actor",
+                "args": [
+                  {
+                    "name": "next",
+                    "animated": true,
+                    "animationLoop": true,
+                    "animationRepeat": 5000,
+                    "type": "button",
+                    "image": "next",
+                    "location": [
+                      480,
+                      420
+                    ],
+                    "variable": "next_button"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        "actions": [
+          { "type": "variable", "args": [ "saved_scene", "$current_scene_name"] }
+        ]
+      },
+      "scene6": {
+        "id": "scene6",
+        "title": "Scene 6",
+        "background": "g3-background",
+        "actors": [
+          {
+            "name": "s6-title",
+            "type": "text",
+            "font": "black-bold-md",
+            "location": [
+              "center",
+              40
+            ],
+            "text": "Practice calming down"
+          
+          },
+          {
+            "name": "slide_06",
+            "type": "audio",
+            "audio": "slide_06",
+            "variable": "slide_06"
+          },
+          {
+            "name": "face-start",
+            "type": "decoration",
+            "image": "angry",
+            "location": [
+              400,
+              100
+            ],
+            "tween": {
+              "time": 1000,
+              "delay": 3000,
+              "alpha": 0.01
+            }
+          },
+          {
+            "name": "face",
+            "type": "decoration",
+            "image": "relaxed-open",
+            "location": [
+              400,
+              100
+            ],
+            "alpha": 0.01,
+            "tween": {
+              "time": 1000,
+              "delay": 3000,
+              "alpha": 1
+            }
+          },
+          {
+            "name": "s6-0",
+            "variable": "s6-0",
+            "type": "timeline",
+            "period": 4000
+          },
+          {
+            "name": "s6-1",
+            "variable": "s6-1",
+            "type": "timeline",
+            "period": 7000
+          },
+          {
+            "name": "s6-2",
+            "variable": "s6-2",
+            "type": "timeline",
+            "period": 12000
+          },
+          {
+            "name": "s6-3",
+            "variable": "s6-3",
+            "type": "timeline",
+            "period": 15000
+          },
+          {
+            "name": "s6-4",
+            "variable": "s6-4",
+            "type": "timeline",
+            "period": 18000
+          },
+          {
+            "name": "s6-5",
+            "variable": "s6-5",
+            "type": "timeline",
+            "period": 21000
+          },
+          {
+            "name": "s6-6",
+            "variable": "s6-6",
+            "type": "timeline",
+            "period": 43000
+          },
+          {
+            "name": "s6-7",
+            "variable": "s6-7",
+            "type": "timeline",
+            "period": 48000
+          },
+          {
+            "name": "s6-8",
+            "variable": "s6-8",
+            "type": "timeline",
+            "period": 58000
+          },
+          {
+            "name": "s6-9",
+            "variable": "s6-9",
+            "type": "timeline",
+            "period": 65000
+          },
+          {
+            "name": "s6-10",
+            "variable": "s6-10",
+            "type": "timeline",
+            "period": 74000
+          },
+          {
+            "name": "s6-11",
+            "variable": "s6-11",
+            "type": "timeline",
+            "period": 83000
+          },
+          {
+            "name": "s6-12",
+            "variable": "s6-12",
+            "type": "timeline",
+            "period": 90000
+          },
+          {
+            "name": "s6-13",
+            "variable": "s6-13",
+            "type": "timeline",
+            "period": 96000
+          },
+          {
+            "name": "s6-14",
+            "variable": "s6-14",
+            "type": "timeline",
+            "period": 99000
+          },
+          {
+            "name": "s6-15",
+            "variable": "s6-15",
+            "type": "timeline",
+            "period": 102000
+          },
+          {
+            "name": "back",
+            "type": "button",
+            "image": "back",
+            "location": [
+              290,
+              420
+            ],
+            "variable": "back_button"
+          },
+          {
+            "name": "replay",
+            "type": "button",
+            "image": "replay",
+            "location": [
+              430,
+              420
+            ],
+            "variable": "replay_button"
+          },
+          {
+            "name": "next",
+            "type": "button",
+            "image": "next",
+            "location": [
+              480,
+              420
+            ],
+            "variable": "next_button"
+          }
+        ],
+        "outcomes": {
+          "s6-0":{
+            "events": {
+              "s6-0": "*"
+            },
+            "actions": [
+              {
+                "type": "remove-actor",
+                "args": ["face-start"]
+              },
+              {
+                "type": "add-actor",
+                "args": [
+                  {
+                    "name": "s-text",
+                    "type": "text",
+                    "font": "green-bold-sm",
+                    "location": [
+                      100,
+                      160
+                    ],
+                    "text": "Relax your body."
+                  }
+                ]
+              }
+            ]
+            
+          },
+          "s6-1":{
+            "events": {
+              "s6-1": "*"
+            },
+            "actions": [
+              {
+                "type": "remove-actor",
+                "args": ["s-text","face"]
+              },
+              {
+                "type": "add-actor",
+                "args": [
+                  {
+                    "name": "s-text",
+                    "type": "text",
+                    "font": "green-bold-sm",
+                    "location": [
+                      100,
+                      160
+                    ],
+                    "text": "Close your eyes."
+                  
+                  },
+                  {
+                    "name": "face",
+                    "type": "decoration",
+                    "image": "relaxed-closed",
+                    "location": [
+                      400,
+                      100
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          "s6-2":{
+            "events": {
+              "s6-2": "*"
+            },
+            "actions": [
+              {
+                "type": "remove-actor",
+                "args": ["s-text"]
+              },
+              {
+                "type": "add-actor",
+                "args": [
+                  {
+                    "name": "s-text",
+                    "type": "text",
+                    "font": "green-bold-sm",
+                    "location": [
+                      100,
+                      160
+                    ],
+                    "text": "Breathe in."
+                  
+                  }
+                ]
+              }
+            ]
+          },
+          "s6-3":{
+            "events": {
+              "s6-3": "*"
+            },
+            "actions": [
+              {
+                "type": "remove-actor",
+                "args": ["s-text"]
+              },
+              {
+                "type": "add-actor",
+                "args": [
+                  {
+                    "name": "s-text",
+                    "type": "text",
+                    "font": "green-bold-sm",
+                    "location": [
+                      100,
+                      160
+                    ],
+                    "text": "Breathe out."
+                  
+                  }
+                ]
+              }
+            ]
+          },
+          "s6-4":{
+            "events": {
+              "s6-4": "*"
+            },
+            "actions": [
+              {
+                "type": "remove-actor",
+                "args": ["s-text"]
+              }
+            ]
+          },
+          "s6-5":{
+            "events": {
+              "s6-5": "*"
+            },
+            "actions": [
+              {
+                "type": "remove-actor",
+                "args": ["s-text"]
+              },
+              {
+                "type": "add-actor",
+                "args": [
+                  {
+                    "name": "s-text",
+                    "type": "text",
+                    "font": "green-bold-sm",
+                    "location": [
+                      100,
+                      160
+                    ],
+                    "text": "Picture something nice."
+                  
+                  }
+                ]
+              }
+            ]
+          },
+          "s6-6":{
+            "events": {
+              "s6-6": "*"
+            },
+            "actions": [
+              {
+                "type": "remove-actor",
+                "args": ["s-text","face"]
+              },
+              {
+                "type": "add-actor",
+                "args": [
+                  {
+                    "name": "s-text",
+                    "type": "text",
+                    "font": "green-bold-sm",
+                    "location": [
+                      100,
+                      160
+                    ],
+                    "text": "Open your eyes."
+                  
+                  },
+                  {
+                    "name": "face",
+                    "type": "decoration",
+                    "image": "relaxed-open",
+                    "location": [
+                      400,
+                      100
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          "s6-7":{
+            "events": {
+              "s6-7": "*"
+            },
+            "actions": [
+              {
+                "type": "remove-actor",
+                "args": ["s-text"]
+              },
+              {
+                "type": "add-actor",
+                "args": [
+                  {
+                    "name": "s-text",
+                    "type": "text",
+                    "font": "green-bold-sm",
+                    "location": [
+                      100,
+                      160
+                    ],
+                    "text": "Stand up."
+                  
+                  }
+                ]
+              }
+            ]
+          },
+          "s6-8":{
+            "events": {
+              "s6-8": "*"
+            },
+            "actions": [
+              {
+                "type": "remove-actor",
+                "args": ["s-text"]
+              },
+              {
+                "type": "add-actor",
+                "args": [
+                  {
+                    "name": "s-text",
+                    "type": "text",
+                    "font": "green-bold-sm",
+                    "location": [
+                      100,
+                      160
+                    ],
+                    "text": "Reach up for the sky."
+                  
+                  }
+                ]
+              }
+            ]
+          },
+          "s6-9":{
+            "events": {
+              "s6-9": "*"
+            },
+            "actions": [
+              {
+                "type": "remove-actor",
+                "args": ["s-text"]
+              },
+              {
+                "type": "add-actor",
+                "args": [
+                  {
+                    "name": "s-text",
+                    "type": "text",
+                    "font": "green-bold-sm",
+                    "location": [
+                      100,
+                      160
+                    ],
+                    "text": "Touch your toes."
+                  
+                  }
+                ]
+              }
+            ]
+          },
+          "s6-10":{
+            "events": {
+              "s6-10": "*"
+            },
+            "actions": [
+              {
+                "type": "remove-actor",
+                "args": ["s-text"]
+              },
+              {
+                "type": "add-actor",
+                "args": [
+                  {
+                    "name": "s-text",
+                    "type": "text",
+                    "font": "green-bold-sm",
+                    "location": [
+                      100,
+                      160
+                    ],
+                    "text": "Touch your left foot."
+                  
+                  }
+                ]
+              }
+            ]
+          },
+          "s6-11":{
+            "events": {
+              "s6-11": "*"
+            },
+            "actions": [
+              {
+                "type": "remove-actor",
+                "args": ["s-text"]
+              },
+              {
+                "type": "add-actor",
+                "args": [
+                  {
+                    "name": "s-text",
+                    "type": "text",
+                    "font": "green-bold-sm",
+                    "location": [
+                      100,
+                      160
+                    ],
+                    "text": "Touch your right foot."
+                  
+                  }
+                ]
+              }
+            ]
+          },
+          "s6-12":{
+            "events": {
+              "s6-12": "*"
+            },
+            "actions": [
+              {
+                "type": "remove-actor",
+                "args": ["s-text"]
+              },
+              {
+                "type": "add-actor",
+                "args": [
+                  {
+                    "name": "s-text",
+                    "type": "text",
+                    "font": "green-bold-sm",
+                    "location": [
+                      100,
+                      160
+                    ],
+                    "text": "Stand up straight."
+                  
+                  }
+                ]
+              }
+            ]
+          },
+          "s6-13":{
+            "events": {
+              "s6-13": "*"
+            },
+            "actions": [
+              {
+                "type": "remove-actor",
+                "args": ["s-text"]
+              },
+              {
+                "type": "add-actor",
+                "args": [
+                  {
+                    "name": "s-text",
+                    "type": "text",
+                    "font": "green-bold-sm",
+                    "location": [
+                      60,
+                      160
+                    ],
+                    "text": "Wiggle your fingers and toes."
+                  
+                  }
+                ]
+              }
+            ]
+          },
+          "s6-14":{
+            "events": {
+              "s6-14": "*"
+            },
+            "actions": [
+              {
+                "type": "remove-actor",
+                "args": ["s-text"]
+              },
+              {
+                "type": "add-actor",
+                "args": [
+                  {
+                    "name": "s-text",
+                    "type": "text",
+                    "font": "green-bold-sm",
+                    "location": [
+                      100,
+                      160
+                    ],
+                    "text": "Roll your neck around."
+                  
+                  }
+                ]
+              }
+            ]
+          },
+          "s6-15":{
+            "events": {
+              "s6-15": "*"
+            },
+            "actions": [
+              {
+                "type": "remove-actor",
+                "args": ["s-text","face"]
+              },
+              {
+                "type": "add-actor",
+                "args": [
+                  {
+                    "name": "s-text",
+                    "type": "text",
+                    "font": "green-bold-sm",
+                    "location": [
+                      100,
+                      160
+                    ],
+                    "text": "Good job!"
+                  
+                  },
+                  {
+                    "name": "face",
+                    "type": "decoration",
+                    "image": "happy",
+                    "location": [
+                      400,
+                      100
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          "go_next": {
+            "events": {
+              "next_button": "*"
+            },
+            "actions": [
+              {
+                "type": "scene",
+                "args": [
+                  "scene7"
+                ]
+              }
+            ]
+          },
+          "click_replay": {
+            "events": {
+              "replay_button": "*"
+            },
+            "actions": [
+              { "type": "variable", "args": ["replay_scene", "$current_scene_name"] },
+              {
+                "type": "scene",
+                "args": ["deadscene"]
+              }
+            ]        
+          },
+          "go_back": {
+            "events": {
+              "back_button": "*"
+            },
+            "actions": [
+              {
+                "type": "scene",
+                "args": [
+                  "scene5"
+                ]
+              }
+            ]
+          },
+          "animate-next": {
+            "events": {
+              "slide_06": "*"
+            },
+            "actions": [
+              {
+                "type": "add-actor",
+                "args": [
+                  {
+                    "name": "next",
+                    "animated": true,
+                    "animationLoop": true,
+                    "animationRepeat": 5000,
+                    "type": "button",
+                    "image": "next",
+                    "location": [
+                      480,
+                      420
+                    ],
+                    "variable": "next_button"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        "actions": [
+          { "type": "variable", "args": [ "saved_scene", "$current_scene_name"] }
+        ]
+      },
+      "scene7": {
+        "id": "scene7",
+        "title": "Scene 7",
+        "background": "g3-background",
+        "actors": [
+          {  
+            "name": "slide_07",  
+            "type": "audio",  
+            "audio": "slide_07",   
+            "variable": "slide_07"   
+          },
+          {
+            "name": "scene7-Header",
+            "type": "text",
+            "text": "Good Job!",
+            "font": "green-bold-lg",
+            "location": [230,120]
+          },
+          {
+            "name": "backButton",
+            "type": "button",
+            "image": "back",
+            "location": [ 280, 410 ],
+            "variable": "back_button"
+          },
+          {
+            "name": "replayButton",
+            "type": "button",
+            "image": "replay",
+            "location": [ 420, 410 ],
+            "variable": "replay_button"
+          },
+          {
+            "name": "next",
+            "type": "decoration",
+            "image": "nextDisabled",
+            "location": [470, 410 ]
+          },
+          {
+            "name": "teacher",
+            "type": "text",
+            "font": "green-sm-shrt",
+            "location": [ "center", 215 ],
+            "wordWrapWidth": 500,
+            "text": "Teachers: follow up on this lesson with offline activities found in your Act Now! Teacher's Guide."
+          }
+        ],
+        "outcomes": {          
+          "go_back":{
+            "events":  {"back_button": "*"} ,
+            "actions" : [
+              { "type": "scene", "args": [ "scene6"] }
+            ]
+          },
+          "click_replay": {
+            "events": {
+              "replay_button": "*"
+            },
+            "actions": [
+              { "type": "variable", "args": ["replay_scene", "$current_scene_name"] },
+              {
+                "type": "scene",
+                "args": ["deadscene"]
+              }
+            ]        
+          }
+        },
+        "actions": [
+          { "type": "variable", "args": [ "saved_scene", "$current_scene_name"] },
+          { "type": "choice", "args": [ "objective_complete", 1] },
+          { "type": "choice", "args": [ "save", 0 ] }
+        ]
+      },
+      "resume_started": {
+        "id": "resume_started",
+        "title": "for resuming part way through",
+        "background": "none",
+        "actors": [
+          {
+            "name": "restart",
+            "variable": "restart",
+            "type": "button",
+            "image": "restart",
+            "location": [ 180, 230 ]
+          },
+          {
+            "name": "resume",
+            "variable": "resume",
+            "type": "button",
+            "image": "resume",
+            "location": [ 330, 230 ]
+          },
+          { 
+            "name": "resume-message",
+            "type": "text",
+            "font": "resume-message",
+            "text": "You have already completed part of this lesson",
+            "location": [ "center", 160 ]
+          }
+        ],
+        "outcomes": {
+          "has_resume": {
+            "events": {
+              "saved_scene": "undefined"
+            },
+            "actions": [
+              {
+                "type": "scene",
+                "args": ["scene1"]
+              }
+            ]
+          },
+          "finished": {
+            "events": {
+              "saved_scene": "scene7"
+            },
+            "actions": [
+              {
+                "type": "scene",
+                "args": ["resume_finished"]
+              }
+            ]
+          },
+          "start_over": {
+            "events": {
+              "restart": "*"
+            },
+            "actions": [
+              {
+                "type": "scene",
+                "args": ["scene1"]
+              }
+            ]
+          },
+          "resume_scene": {
+            "events": {
+              "resume": "*"
+            },
+            "actions": [
+              {
+                "type": "scene",
+                "args": ["$saved_scene"]
+              }
+            ]
+          }
+        },
+        "actions": [
+          { "type": "check-outcomes", "args": [ "saved_scene" ] }
+        ]
+      },
+      "resume_finished": {
+        "id": "resume_finished",
+        "title": "finished",
+        "background": "none",
+        "actors": [
+          {
+            "name": "restart",
+            "variable": "restart",
+            "type": "button",
+            "image": "restart",
+            "location": [ 180, 230 ]
+          },
+          {
+            "name": "resume",
+            "variable": "resume",
+            "type": "button",
+            "image": "resume",
+            "location": [ 330, 230 ]
+          },
+          { 
+            "name": "resume-message",
+            "type": "text",
+            "font": "resume-message",
+            "text": "You have already completed this lesson",
+            "location": [ "center", 160 ]
+          }
+        ],
+        "outcomes": {
+          "start_over": {
+            "events": {
+              "restart": "*"
+            },
+            "actions": [
+              {
+                "type": "scene",
+                "args": ["scene1"]
+              }
+            ]
+          },
+          "resume_scene": {
+            "events": {
+              "resume": "*"
+            },
+            "actions": [
+              {
+                "type": "scene",
+                "args": ["scene7"]
+              }
+            ]
+          }
+        }
+      },
+      "deadscene": {
+        "id": "deadscene",
+        "title": "deadscene",
+        "background": "background",
+        "actors": [],
+        "outcomes": {},
+        "actions": [
+          {
+            "type": "scene",
+            "args": ["$replay_scene"]
+          }
+        ]
+      }
+    } 
+  } 
+}

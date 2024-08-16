@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta property="og:title" content="Children's Hospital Comic Strip Creator">
+    <title>Comic Strip Creator</title>
+    <script src="engine/APIWrapper.js"></script>
+    <script src="engine/phaser.js"></script>
+    <script src="engine/phaser-input.js"></script>
+    <script src="engine/jspdf.debug.js"></script>
+    <script src="engine/csc.min.js"></script>
+    <script src="engine/csc.act.min.js"></script>
+
+    <link href="https://fonts.googleapis.com/css?family=Architects+Daughter" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Cairo" rel="stylesheet">
+
+    <style type="text/css">
+        .cairo {
+            font-family: 'Cairo', sans-serif;
+        }
+
+        .daughter {
+            font-family: 'Architects Daughter', cursive;
+        }
+
+        .container {
+            position: relative;
+        }
+        
+        body{
+            margin: 0;
+            padding: 0;
+        }
+
+        .gameItem {
+            top: 0;
+            left: 0;
+        }
+    </style>
+</head>
+<body>
+<div id="preloadpalette" style="position: absolute; left: -1000em;" class="cairo">.</div>
+<div id="preloadpalette2" style="position: absolute; left: -1000em;" class="daughter">.</div>
+<div id="gameContainer" class="container">
+    <div id="game" class="gameItem" style="z-index: 100;"></div>
+</div>
+</body>
+</html>

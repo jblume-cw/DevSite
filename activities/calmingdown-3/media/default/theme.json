@@ -1,0 +1,206 @@
+{
+  "texture": "media/default/texture.png",
+  "textureMap": "media/default/texture.json",
+  "textureKey": "texture",
+  "data": "media/default/sceneData.json",
+  "fonts" : {
+    "black-bold-xlg":   {"font": "70px Caveat Brush", "fill": "#333333", "fontWeight": "800", "align": "center" ,"wordWrap": true, "wordWrapWidth": 500   },
+    "black-bold-lg":    {"font": "50px Caveat Brush", "fill": "#333333", "fontWeight": "800", "align": "center" ,"wordWrap": true, "wordWrapWidth": 500   },
+    "black-bold-md":    {"font": "36px Caveat Brush", "fill": "#333333", "fontWeight": "800", "align": "center" ,"wordWrap": true, "wordWrapWidth": 500   },
+    "black-bold-sm":    {"font": "30px Caveat Brush", "fill": "#333333", "fontWeight": "800", "align": "center" ,"wordWrap": true, "wordWrapWidth": 500   },
+    "orange-md":        {"font": "36px Caveat Brush", "fill": "#E75C00", "fontWeight": "400", "align": "center" ,"wordWrap": true, "wordWrapWidth": 500   },
+    "purple-md":        {"font": "36px Caveat Brush", "fill": "#734D99", "fontWeight": "400", "align": "center" ,"wordWrap": true, "wordWrapWidth": 500   },
+    "blue-md":          {"font": "36px Caveat Brush", "fill": "#269EC6", "fontWeight": "400", "align": "center" ,"wordWrap": true, "wordWrapWidth": 500   },
+    "blue-bold-xlg":    {"font": "70px Caveat Brush", "fill": "#269EC6", "fontWeight": "800", "align": "center" ,"wordWrap": true, "wordWrapWidth": 500   },
+    "red-md":           {"font": "36px Caveat Brush", "fill": "#BB002F", "fontWeight": "400", "align": "center" ,"wordWrap": true, "wordWrapWidth": 500   },
+    "green-bold-lg":    {"font": "50px Caveat Brush", "fill": "#4B9700", "fontWeight": "800", "align": "center" ,"wordWrap": true, "wordWrapWidth": 500   },
+    "green-md":         {"font": "36px Caveat Brush", "fill": "#4B9700", "fontWeight": "400", "align": "center" ,"wordWrap": true, "wordWrapWidth": 500   },
+    "green-bold-sm":    {"font": "30px Caveat Brush", "fill": "#4B9700", "fontWeight": "800", "align": "center" ,"wordWrap": true, "wordWrapWidth": 500   },
+    "green-sm":         {"font": "26px Caveat Brush", "fill": "#4B9700", "fontWeight": "400", "align": "center" ,"wordWrap": true, "wordWrapWidth": 500   },
+    "yellow-md":        {"font": "36px Caveat Brush", "fill": "#EAB600", "fontWeight": "400", "align": "center" ,"wordWrap": true, "wordWrapWidth": 500   },
+    "resume-message": { "font": "28px Caveat Brush", "fill": "#269EC6", "align": "left" ,"wordWrap": true, "wordWrapWidth": 700 } ,
+    "green-sm-shrt":    {"font": "24px Caveat Brush", "fill": "#4B9700", "fontWeight": "400", "align": "center" ,"wordWrap": true, "wordWrapWidth": 500, "lineSpacing": -5   }
+  
+  },
+  "images": {
+    "angry":"angry.png",
+    "buster-scaled":"buster-scaled.png",
+    "backDisabled": "BackDisabled.png",
+    "nextDisabled": "NextDisabled.png",
+    "relaxed-open":"relaxed.png",
+    "relaxed-closed":"relaxed - eyes closed.png",
+    "happy":"happy.png",
+    "actorImages": {
+      "cj":"cj btn0001.png",
+      "cj-talk":"cj btn0001.png",      
+      "mollie":"mollie btn0001.png",
+      "mollie-talk":"mollie btn0001.png",
+      "kate":"KateHead.png",
+      "kate-talk":"KateHead.png",
+      "raj":"RajHead.png",
+      "raj-talk":"RajHead.png"
+    }
+  },
+  "logo": "splash-bg.png",
+  "buttons": {
+    "back": {
+     "up": "BackUp.png",
+     "over":"BackOver.png",
+     "down":"BackDown.png",
+     "out": "BackUp.png"
+    },
+     "next": {
+     "up": "NextUp.png",
+     "over": "NextOver.png",
+     "down": "NextDown.png",
+     "out": "NextUp.png"
+    },
+     "replay": {
+     "up": "ReplayUp.png",
+     "over": "ReplayOver.png",
+     "down": "ReplayDown.png",
+     "out": "ReplayUp.png"
+    },
+    "resume":{
+      "up": "ResumeUp.png",
+      "over": "ResumeOver.png",
+      "down": "ResumeDown.png",
+      "out": "ResumeUp.png"
+    },
+    "restart":{
+      "up": "RestartUp.png",
+      "over": "RestartOver.png",
+      "down": "RestartDown.png",
+      "out": "RestartUp.png"
+    },
+    "raj": {
+      "up": "raj btn0001.png",
+      "over": "raj btn0001.png",
+      "out": "raj btn0001.png",
+      "down": "raj btn0002.png"
+    },
+    "mollie": {
+      "up": "mollie btn0001.png",
+      "over": "mollie btn0001.png",
+      "out": "mollie btn0001.png",
+      "down": "mollie btn0002.png"
+    },
+   "kate":{
+      "up": "kate btn0001.png",
+      "over": "kate btn0001.png",
+      "out": "kate btn0001.png",
+      "down": "kate btn0002.png"
+      },
+   "cj":{
+      "up": "cj btn0001.png",
+      "over": "cj btn0001.png",
+      "out": "cj btn0001.png",
+      "down": "cj btn0002.png"
+      }
+  },
+  "buttonAnimations":{
+    "next":[
+          "NextUp-hi0001.png","NextUp-hi0002.png","NextUp-hi0003.png","NextUp-hi0004.png",
+          "NextUp-hi0005.png","NextUp-hi0006.png","NextUp-hi0007.png","NextUp-hi0008.png",
+          "NextUp-hi0009.png","NextUp-hi0010.png","NextUp-hi0011.png","NextUp-hi0012.png",
+          "NextUp-hi0013.png"
+      ]
+  },
+  "sceneImages": {
+    "g3-background": "g3-background.png"
+  },
+  "speechAnimations": {
+    "kate": {
+      "images": ["kate mouth frame0001.png", "kate mouth frame0002.png","kate mouth frame0002.png", "kate mouth frame0003.png"],
+      "mouthOffset": [30, 80]
+    },
+    "raj": {
+      "images": ["raj mouth frame0001.png", "raj mouth frame0002.png","raj mouth frame0002.png", "raj mouth frame0003.png"],
+      "mouthOffset": [75, 80]
+    },
+    "cj":{
+      "images": ["cj mouth frame0001.png", "cj mouth frame0002.png","cj mouth frame0002.png", "cj mouth frame0003.png", "cj mouth frame0004.png"],
+      "mouthOffset": [27, 75]  
+    },
+    "mollie":{
+      "images": ["mollie mouth frame0001.png", "mollie mouth frame0002.png","mollie mouth frame0002.png", "mollie mouth frame0003.png"],
+      "mouthOffset": [70, 69]  
+    }
+  },
+  "soundKey": "activity-sounds",
+  "soundFile": [ "media/default/calming-down.m4a", "media/default/calming-down.ogg" ],
+  "sounds": {
+    "slide_01": [
+      0,
+      42.28768707482993,
+      false,
+      "slide_01"
+    ],
+    "slide_02": [
+      43,
+      48.01532879818595,
+      false,
+      "slide_02"
+    ],
+    "slide_03": [
+      92,
+      44.570839002267576,
+      false,
+      "slide_03"
+    ],
+    "slide_04": [
+      137,
+      8.699999999999989,
+      false,
+      "slide_04"
+    ],
+    "slide_05": [
+      146,
+      32.508344671201826,
+      false,
+      "slide_05"
+    ],
+    "slide_06": [
+      179,
+      121.55834467120178,
+      false,
+      "slide_06"
+    ],
+    "slide_07": [
+      301,
+      3.062925170068013,
+      false,
+      "slide_07"
+    ],
+    "slide04_cj": [
+      305,
+      7.45598639455784,
+      false,
+      "slide04_cj"
+    ],
+    "slide04_kate": [
+      313,
+      20.06918367346941,
+      false,
+      "slide04_kate"
+    ],
+    "slide04_mollie": [
+      334,
+      7.530680272108839,
+      false,
+      "slide04_mollie"
+    ],
+    "slide04_raj": [
+      342,
+      6.698684807256257,
+      false,
+      "slide04_raj"
+    ]
+  },
+  "soundSyncData":{
+    "slide04_cj":[0,0,4,2,2,0,2,3,3,3,3,4,3,4,3,2,2,3,3,2,3,2,4,4,3,3,4,2,4,3,3,4,2,2,2,2,3,4,4,4,4,3,2,3,4,4,0,4,4,4,4,3,2,3,4,4,3,4,4,4,3,3,3,3,3,4,3,3,4,2,2,2,2,2,0,0],
+    "slide04_kate":[0,0,3,2,3,2,3,3,3,0,0,2,3,2,3,3,3,3,3,2,2,3,2,2,3,2,3,3,3,0,3,3,2,2,0,0,0,0,0,0,0,2,2,3,2,2,2,3,2,3,2,3,3,3,3,2,2,3,2,3,3,0,0,0,0,0,3,2,3,3,0,2,3,2,3,3,2,2,0,2,2,3,3,3,2,3,3,3,0,3,3,3,3,3,0,0,0,0,0,0,0,2,2,3,0,2,2,2,3,2,0,0,0,3,3,3,2,3,3,2,2,3,3,0,0,2,2,2,3,3,2,3,2,2,3,3,3,2,3,3,3,2,0,3,2,3,0,0,2,2,3,3,3,3,3,2,3,0,0,2,2,3,2,3,2,3,2,2,3,3,3,2,2,0,0,0,0,0,0,0,0,3,2,3,2,3,3,0,2,3,3,3,3,2,3,2,3,2,2,2,0],
+    "slide04_mollie":[0,3,3,2,2,3,2,2,0,3,2,2,2,0,3,3,2,3,2,3,2,3,2,3,2,3,2,3,2,2,2,2,2,2,2,0,0,0,0,2,3,2,3,2,3,2,2,3,2,3,3,0,0,3,2,3,3,2,3,2,3,3,3,3,2,0,3,2,2,2,3,2,2,2,0,0],
+    "slide04_raj":[0,0,3,3,2,3,2,3,2,0,2,2,3,0,2,3,3,3,3,0,0,3,2,3,3,3,3,2,3,2,3,2,3,2,3,2,2,2,2,2,0,0,0,3,2,3,2,3,2,0,0,3,3,2,3,2,3,3,2,2,2,2,2,3,2,2,2]
+  }
+}

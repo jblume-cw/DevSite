@@ -1,0 +1,108 @@
+{"frames": {
+
+"BasementSprite.png":
+{
+	"frame": {"x":1225,"y":1,"w":580,"h":357},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":580,"h":357},
+	"sourceSize": {"w":580,"h":357}
+},
+"CafeteriaSprite.png":
+{
+	"frame": {"x":1,"y":842,"w":580,"h":356},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":580,"h":356},
+	"sourceSize": {"w":580,"h":356}
+},
+"Classroom2Sprite.png":
+{
+	"frame": {"x":583,"y":720,"w":579,"h":357},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":579,"h":357},
+	"sourceSize": {"w":579,"h":357}
+},
+"ClassroomSprite.png":
+{
+	"frame": {"x":643,"y":1,"w":580,"h":358},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":580,"h":358},
+	"sourceSize": {"w":580,"h":358}
+},
+"creator-background.png":
+{
+	"frame": {"x":1,"y":1,"w":640,"h":480},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":640,"h":480},
+	"sourceSize": {"w":640,"h":480}
+},
+"GymSprite.png":
+{
+	"frame": {"x":1,"y":1200,"w":578,"h":356},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":578,"h":356},
+	"sourceSize": {"w":578,"h":356}
+},
+"Hallway2Sprite.png":
+{
+	"frame": {"x":1225,"y":360,"w":580,"h":357},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":580,"h":357},
+	"sourceSize": {"w":580,"h":357}
+},
+"HallwaySprite.png":
+{
+	"frame": {"x":1164,"y":1078,"w":578,"h":357},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":578,"h":357},
+	"sourceSize": {"w":578,"h":357}
+},
+"LibrarySprite.png":
+{
+	"frame": {"x":643,"y":361,"w":580,"h":357},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":580,"h":357},
+	"sourceSize": {"w":580,"h":357}
+},
+"LivingroomSprite.png":
+{
+	"frame": {"x":1,"y":483,"w":580,"h":357},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":580,"h":357},
+	"sourceSize": {"w":580,"h":357}
+},
+"School2Sprite.png":
+{
+	"frame": {"x":1225,"y":719,"w":580,"h":357},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":580,"h":357},
+	"sourceSize": {"w":580,"h":357}
+},
+"SchoolSprite.png":
+{
+	"frame": {"x":583,"y":1079,"w":578,"h":357},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":578,"h":357},
+	"sourceSize": {"w":578,"h":357}
+}},
+"meta": {
+	"app": "https://www.codeandweb.com/texturepacker",
+	"version": "1.0",
+	"image": "texture-bg.png",
+	"format": "RGBA8888",
+	"size": {"w":1806,"h":1557},
+	"scale": "1",
+	"smartupdate": "$TexturePacker:SmartUpdate:1c08815726e898cff5828bd3eb1e1d66:766339d057143a343fbfdc8ddcf306b3:5c241ea195c12d38e87a752a96172477$"
+}
+}

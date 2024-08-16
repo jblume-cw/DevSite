@@ -1,0 +1,236 @@
+{
+  "texture": "media/default/texture.png",
+  "textureMap": "media/default/texture.json",
+  "textureKey": "texture",
+  "data": "media/default/sceneData.json",
+  "fonts" : {
+    "black-bold-xlg": { "font": "70px Cairo", "fontWeight": "bold","fill": "#333333", "align": "center","wordWrap": true, "wordWrapWidth": 900  },
+    "black-bold-lg": { "font": "60px Cairo", "fontWeight": "bold","fill": "#333333", "align": "center","wordWrap": true, "wordWrapWidth": 900  },
+    "green-bold-md": { "font": "30px Cairo", "fontWeight": "bold","fill": "#4B9700", "align": "center","wordWrap": true, "wordWrapWidth": 900  },
+    "black-bold-lgMdLg": { "font": "46px Cairo", "fontWeight": "bold","fill": "#333333", "align": "center","wordWrap": true, "wordWrapWidth": 900  },
+    "black-bold-mdLg": { "font": "40px Cairo", "fontWeight": "bold","fill": "#333333", "align": "center","wordWrap": true, "wordWrapWidth": 900  },
+    "black-bold-sm": { "font": "24px Cairo", "fontWeight": "bold","fill": "#333333", "align": "center","wordWrap": true, "wordWrapWidth": 900  },
+    "light-blue-bold-sm": { "font": "24px Cairo", "fontWeight": "bold","fill": "#94D7EB", "align": "center","wordWrap": true, "wordWrapWidth": 900  },
+    "dark-blue-bold-sm": { "font": "24px Cairo", "fontWeight": "bold","fill": "#0198CC", "align": "center","wordWrap": true, "wordWrapWidth": 900  },
+    "green-bold-sm": { "font": "24px Cairo", "fontWeight": "bold","fill": "#4B9700", "align": "center","wordWrap": true, "wordWrapWidth": 900  },
+    "light-green-bold-sm":{ "font": "24px Cairo", "fontWeight": "bold","fill": "#B1D79B", "align": "center","wordWrap": true, "wordWrapWidth": 900  },
+    "black-bold-xsm": { "font": "20px Cairo", "fontWeight": "bold","fill": "#333333", "align": "left","wordWrap": true, "wordWrapWidth": 900  },
+    "resume-message": { "font": "28px Cairo", "fill": "#734D99", "align": "left" ,"wordWrap": true, "wordWrapWidth": 700 }
+    },
+  "images": {
+    "backDisabled":"BackDisabled.png",
+    "cjTalker":"CJTalker.png",
+    "kateTalker":"KateTalker.png",
+    "nextDisabled":"NextDisabled.png",
+    "underline":"underline.png",
+    "actorImages": {
+      "cj":"CJTalker.png",
+      "cj-talk":"CJTalker.png",      
+      "kate":"KateTalker.png",
+      "kate-talk":"KateTalker.png"
+    }
+  },
+  "logo": "splash-bg.png",
+  "buttons": {
+    "back":{
+      "up":"BackUp.png",
+      "over":"BackOver.png",
+      "out" : "BackUp.png",
+      "down" : "BackDown.png"
+    },
+    "next": {
+      "up": "NextUp.png",
+      "over": "NextOver.png",
+      "out" : "NextUp.png",
+      "down" : "NextDown.png"
+    },
+    "replay":{
+      "up": "ReplayUp.png",
+      "over": "ReplayOver.png",
+      "out" : "ReplayUp.png",
+      "down" : "ReplayDown.png"
+    },
+    "restart":{
+      "up": "RestartUp.png",
+      "over" : "RestartOver.png",
+      "out" : "RestartUp.png",
+      "down" : "RestartDown.png"
+    },
+    "resume" :{
+      "up":"ResumeUp.png",
+      "over": "ResumeOver.png",
+      "out": "ResumeUp.png",
+      "down": "ResumeDown.png"
+    },
+    "pushing":{
+      "up":"pushing0001.png",
+      "over": "pushing0002.png",
+      "out": "pushing0001.png",
+      "down": "pushing0001.png"
+    },
+    "bumping":{
+      "up":"bumping0001.png",
+      "over": "bumping0002.png",
+      "out": "bumping0001.png",
+      "down": "bumping0001.png"
+    },
+    "rumors":{
+      "up":"spreading-rumors0001.png",
+      "over": "spreading-rumors0002.png",
+      "out": "spreading-rumors0001.png",
+      "down": "spreading-rumors0001.png"
+    },
+    "tattling":{
+      "up":"tattling0001.png",
+      "over": "tattling0002.png",
+      "out": "tattling0001.png",
+      "down": "tattling0001.png"
+    },
+    "disagreement":{
+      "up":"disagreement-with-a-friend0001.png",
+      "over": "disagreement-with-a-friend0002.png",
+      "out": "disagreement-with-a-friend0001.png",
+      "down": "disagreement-with-a-friend0001.png"
+    },
+    "teasing":{
+      "up":"teasing0001.png",
+      "over": "teasing0002.png",
+      "out": "teasing0001.png",
+      "down": "teasing0001.png"
+    },
+    "excluding":{
+      "up":"excluding someone0001.png",
+      "over": "excluding someone0002.png",
+      "out": "excluding someone0001.png",
+      "down": "excluding someone0001.png"
+    },
+    "ruining":{
+      "up":"ruining-someones-things0001.png",
+      "over": "ruining-someones-things0002.png",
+      "out": "ruining-someones-things0001.png",
+      "down": "ruining-someones-things0001.png"
+    }
+  },
+  "buttonAnimations":{
+    "next":[
+          "NextUp-hi0001.png","NextUp-hi0002.png","NextUp-hi0003.png","NextUp-hi0004.png",
+          "NextUp-hi0005.png","NextUp-hi0006.png","NextUp-hi0007.png","NextUp-hi0008.png",
+          "NextUp-hi0009.png","NextUp-hi0010.png","NextUp-hi0011.png","NextUp-hi0012.png",
+          "NextUp-hi0013.png"
+      ]
+  },
+  "sceneImages": {
+    "bullyingBackground": "bullying-background.png"
+  },
+  "speechAnimations": {
+    "kate": {
+      "images": ["KateTalker-mouth0001.png", "KateTalker-mouth0002.png","KateTalker-mouth0002.png", "KateTalker-mouth0003.png", "KateTalker-mouth0003.png"],
+      "mouthOffset": [28, 81]
+    },
+    "cj":{
+      "images": ["CJTalker-mouth0001.png", "CJTalker-mouth0002.png","CJTalker-mouth0002.png", "CJTalker-mouth0003.png", "CJTalker-mouth0003.png"],
+      "mouthOffset": [65, 74]  
+    }
+  },
+  "soundKey": "activity-sounds",
+  "soundFile": [ "media/default/bullying.m4a", "media/default/bullying.ogg" ],
+  "sounds": {
+    "slide_01": [
+      0,
+      58.55,
+      false,
+      "slide_01"
+    ],
+    "slide_02": [
+      59,
+      40.33333333333334,
+      false,
+      "slide_02"
+    ],
+    "slide_04": [
+      100,
+      67.6583446712018,
+      false,
+      "slide_04"
+    ],
+    "slide_05": [
+      168,
+      2.7087074829931908,
+      false,
+      "slide_05"
+    ],
+    "slide03_cj_bumping": [
+      171,
+      18.38931972789115,
+      false,
+      "slide03_cj_bumping"
+    ],
+    "slide03_cj_disagreement": [
+      190,
+      9.637346938775522,
+      false,
+      "slide03_cj_disagreement"
+    ],
+    "slide03_cj_excluding": [
+      200,
+      7.2373469387755165,
+      false,
+      "slide03_cj_excluding"
+    ],
+    "slide03_cj_pushing": [
+      208,
+      5.1413378684807185,
+      false,
+      "slide03_cj_pushing"
+    ],
+    "slide03_cj_teasing": [
+      214,
+      8.57068027210883,
+      false,
+      "slide03_cj_teasing"
+    ],
+    "slide03_cj": [
+      223,
+      7.25333333333333,
+      false,
+      "slide03_cj"
+    ],
+    "slide03_kate_ruining": [
+      231,
+      8.490680272108847,
+      false,
+      "slide03_kate_ruining"
+    ],
+    "slide03_kate_rumors": [
+      240,
+      14.634671201814058,
+      false,
+      "slide03_kate_rumors"
+    ],
+    "slide03_kate_tattling": [
+      255,
+      13.482653061224482,
+      false,
+      "slide03_kate_tattling"
+    ],
+    "slide03_kate": [
+      269,
+      3.306666666666672,
+      false,
+      "slide03_kate"
+    ]
+  },
+  "soundSyncData":{
+    "slide03_cj_bumping":[0,2,3,3,2,3,3,2,4,4,4,4,0,3,4,3,3,4,4,2,0,4,3,2,2,2,3,3,2,3,4,4,4,3,4,4,2,2,2,2,4,4,2,2,2,2,2,4,2,2,3,3,3,2,2,2,0,0,2,2,2,0,4,3,4,4,4,4,4,3,4,2,0,2,2,2,2,4,3,2,4,4,3,3,4,2,2,3,4,3,2,3,2,3,3,4,4,3,2,3,2,2,3,3,3,2,3,3,3,4,4,0,3,3,4,2,3,2,2,2,0,0,2,4,2,3,4,3,3,4,4,3,2,2,3,2,3,3,3,3,2,4,4,4,0,0,4,4,3,2,3,2,2,3,4,3,2,3,4,2,4,4,4,4,4,3,2,3,2,3,3,0,0,2,4,4,2,2,0,3,0,3,3,3],
+    "slide03_cj":[0,0,4,3,4,4,4,4,2,4,2,4,2,3,2,4,0,4,2,3,3,2,2,2,2,3,3,2,2,0,0,0,0,0,4,3,4,2,3,4,3,2,2,0,2,3,3,2,2,2,3,0,3,4,2,2,3,3,3,3,3,4,4,4,4,3,2,2,4,4,0,4,4],
+    "slide03_kate":[0,0,3,2,3,2,3,2,2,2,3,2,3,2,2,3,2,3,3,2,3,2,3,3,3,2,3,3,2,2,2,0],
+    "slide03_cj_pushing":[4,2,4,2,0,0,0,2,4,3,3,2,3,4,4,3,2,2,2,2,2,2,2,2,2,4,4,3,3,3,4,4,4,2,2,0,4,0,2,2,2,2,4,4,2,4,4,4,4,4],
+    "slide03_cj_disagreement":[0,2,2,2,0,2,2,4,4,2,2,2,4,3,4,4,4,4,3,3,3,3,4,2,4,4,4,4,4,2,3,4,4,4,4,4,4,3,2,4,3,0,4,3,3,3,3,4,4,2,3,3,3,0,2,4,2,2,0,4,2,4,4,4,4,4,0,4,4,4,3,4,4,4,4,4,3,2,2,3,4,4,2,2,3,4,2,2,2,2,2,2,2,2,2],
+    "slide03_cj_excluding":[0,4,2,3,3,0,0,0,2,2,2,4,3,4,3,2,4,3,0,0,3,2,2,3,4,4,4,4,3,3,4,4,4,4,4,4,2,3,4,2,4,3,4,2,2,0,4,3,3,3,4,4,4,3,4,4,2,2,3,2,2,2,3,4,3,3,3,3,0,4,4,4,4],
+    "slide03_cj_teasing":[0,4,2,4,2,2,0,2,2,3,2,2,3,3,3,4,3,2,2,2,3,3,3,3,3,3,2,4,4,3,4,3,4,3,4,4,4,4,4,3,4,3,4,4,3,2,3,3,3,4,4,2,2,0,2,0,3,2,4,4,3,4,4,3,4,2,2,2,3,2,2,3,4,3,2,2,2,2,2,4,2,2,2,2,2,2],
+    "slide03_kate_ruining":[2,3,2,3,3,0,0,3,2,3,2,2,2,2,3,3,3,0,2,2,3,2,0,3,2,2,2,2,0,0,3,3,3,2,3,3,3,3,3,2,2,3,3,0,0,0,0,0,0,0,3,3,3,0,0,2,3,2,2,2,2,0,3,0,0,2,3,2,3,3,0,0,2,3,3,2,2,2,3,2,2,2,2],
+    "slide03_kate_rumors":[2,2,3,2,3,3,0,0,0,3,0,2,3,2,2,3,2,3,3,0,2,3,2,2,3,2,3,3,2,2,3,3,3,3,0,0,0,0,0,0,2,3,2,2,3,3,0,2,3,3,3,3,0,0,2,3,3,2,3,3,3,0,2,3,0,0,0,0,0,2,3,2,3,0,2,0,2,2,3,2,3,3,0,3,0,0,0,0,0,2,3,0,3,3,2,2,2,3,3,3,0,2,3,0,0,3,3,0,0,3,2,3,2,3,0,0,2,3,3,2,0,3,2,2,2,3,2,2,3,0,3,2,0,0,0,3,0,2,3,0,3,2,3,3,0],
+    "slide03_kate_tattling":[0,0,3,2,0,2,0,0,3,2,3,3,3,2,3,3,0,0,0,3,2,2,2,2,0,2,3,2,2,2,2,3,0,3,0,0,0,0,0,0,3,2,3,2,2,0,0,3,3,3,3,2,2,2,3,3,3,3,2,2,2,3,2,3,2,3,3,3,3,2,2,2,0,0,0,0,0,2,3,0,2,3,2,3,3,2,3,3,3,2,3,3,3,0,0,0,0,0,0,0,2,3,2,2,3,2,3,2,2,2,2,2,2,0,0,0,0,0,2,2,3,0,0,2,3,2,3,2,2,2,3,2,2,2,0]
+    
+  }
+}

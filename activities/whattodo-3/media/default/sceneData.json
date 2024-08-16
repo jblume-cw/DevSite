@@ -1,0 +1,1494 @@
+{
+  "play": {
+    "modelType": "basic",
+    "start": "resume_started",
+    "persist": [ "saved_scene" ],
+    "global": {
+      "actors": {},
+      "outcomes": {},
+      "actions": []
+    },
+    "scenes": {
+      "scene1": {
+        "id": "scene1",
+        "title": "Scene 1",
+        "background": "bullyingBackground",
+        "actors": [
+          {
+            "name": "introText-Title",
+            "type": "text",
+            "text": "WHAT TO DO",
+            "font": "introTitle",
+            "location": [ "center", 75 ],
+            "wordWrapWidth": 500
+          },
+          {
+            "name": "timeline-scene1-1",
+            "type": "timeline",
+            "period": 35000,
+            "variable": "timeline-scene1-1"
+          },
+        	{  
+            "name": "slide_01",  
+            "type": "audio",  
+            "audio": "slide_01",   
+            "variable": "slide_01"   
+          },
+          {
+            "name": "introText-Subtitle",
+            "type": "text",
+            "text": "Positive ways that a bystander can help someone being bullied",
+            "font": "introSubtitle",
+            "location": ["center", 150 ],
+            "wordWrapWidth": 500,
+            "startDelay": 1500
+          },
+          {
+            "name": "backDisabled",
+            "type": "decoration",
+            "image": "backDisabled",
+            "location": [ 280, 410 ]
+          },
+          {
+            "name": "replayButton",
+            "type": "button",
+            "image": "replay",
+            "location": [ 420, 410 ],
+            "variable": "replay_button"
+          },
+          {
+            "name": "next",
+            "type": "button",
+            "image": "next",
+            "location": [ 470, 410 ],
+            "variable": "next_button"
+          }
+
+        ],
+        "outcomes": {
+          "go_next": {
+            "events":  {"next_button": "*"} ,
+            "actions" : [
+              { "type": "scene", "args": [ "scene2"] }
+            ]
+          },
+          "click_replay": {
+            "events": {
+              "replay_button": "*"
+            },
+            "actions": [
+              { "type": "variable", "args": ["replay_scene", "$current_scene_name"] },
+              {
+                "type": "scene",
+                "args": ["deadscene"]
+              }
+            ]        
+          },
+          "timeline-scene1-1":{
+            "events":{"timeline-scene1-1": "*" },
+            "actions" : [
+              { "type": "remove-actor", "args": [ "introText-Title","introText-Subtitle"] },
+              {
+                "type": "add-actor",
+                "args":[{
+                  "name": "introText-End-Title",
+                  "type": "text",
+                  "text": "What should you do?",
+                  "font": "introHeader",
+                  "location": [ "center", 75 ],
+                  "wordWrapWidth": 500
+                },
+                {
+                  "name": "introText-End-List_r1",
+                  "type": "text",
+                  "text": "You should do something to help.",
+                  "bullet": true,
+                  "font": "introList",
+                  "location": [ 70, 145 ],
+                  "wordWrapWidth": 500,
+                  "startDelay": 3000
+                },
+                {
+                  "name": "introText-End-List_r2",
+                  "type": "text",
+                  "text": "Put your arm around her and walk away with her.",
+                  "bullet": true,
+                  "font": "introList",
+                  "location": [ 70, 185 ],
+                  "wordWrapWidth": 500,
+                  "startDelay": 7000
+                },
+                {
+                  "name": "introText-End-List_r3",
+                  "type": "text",
+                  "text": "Tell Marley that she was rude.",
+                  "bullet": true,
+                  "font": "introList",
+                  "location": [ 70, 265 ],
+                  "wordWrapWidth": 500,
+                  "startDelay": 12000
+                },
+                {
+                  "name": "introText-End-List_r4",
+                  "type": "text",
+                  "text": "Tell the teacher what happened.",
+                  "bullet": true,
+                  "font": "introList",
+                  "location": [ 70, 305 ],
+                  "wordWrapWidth": 500,
+                  "startDelay": 17000
+                }
+              ]
+
+              }
+            ]
+          },
+          "animate-next":{
+            "events":{"slide_01": "*" },
+            "actions" : [
+              { "type": "remove-actor", "args": [ "next"] },
+              {
+                "type": "add-actor",
+                "args":[{
+                    "name": "next",
+                    "animated":true,
+                    "animationLoop":true,
+                    "animationRepeat" : 5000,
+                    "type": "button",
+                    "image": "next",
+                    "location": [ 470, 410 ],
+                    "variable": "next_button"
+                }]
+            }]
+          }
+        },
+        "actions": [            
+          { "type": "variable", "args": [ "saved_scene", "$current_scene_name"] }
+        ]
+      },
+      "scene2": {
+        "id": "scene2",
+        "title": "Scene 2",
+        "background": "bullyingBackground",
+        "actors": [
+          {
+            "name": "kate",  
+            "type": "no-input-character",  
+            "image": "kate",  
+            "variable": "kate",
+            "speechAudio":"slide02a",
+            "speechAnimation": true,
+            "location": [35, 300 ]  
+          },
+          {  
+            "name": "slide02a",  
+            "type": "audio",  
+            "audio": "slide02a",   
+            "variable": "slide02a"   
+          },
+          {
+            "name": "videoFrame",
+            "type": "decoration",
+            "image": "videoFrame",
+            "location": [130, 50],
+            "scale": [ 0.99, 1]
+          },
+          {
+            "name": "3whattodo2",
+            "type": "decoration",
+            "image": "3whattodo2",
+            "location": [135, 55]
+          },
+          {
+            "name": "backButton",
+            "type": "button",
+            "image": "back",
+            "location": [ 280, 410 ],
+            "variable": "back_button"
+          },
+          {
+            "name": "replayButton",
+            "type": "button",
+            "image": "replay",
+            "location": [ 420, 410 ],
+            "variable": "replay_button"
+          },
+          {
+            "name": "next",
+            "type": "button",
+            "image": "next",
+            "location": [ 470, 410 ],
+            "variable": "next_button"
+          }
+
+        ],
+        "outcomes": {
+          "go_next": {
+            "events":  {"next_button": "*"} ,
+            "actions" : [
+              { "type": "scene", "args": [ "scene3"] }
+            ]
+          },
+          "go_back":{
+            "events":  {"back_button": "*"} ,
+            "actions" : [
+              { "type": "scene", "args": [ "scene1"] }
+            ]
+          },
+          "click_replay": {
+            "events": {
+              "replay_button": "*"
+            },
+            "actions": [
+              { "type": "variable", "args": ["replay_scene", "$current_scene_name"] },
+              {
+                "type": "scene",
+                "args": ["deadscene"]
+              }
+            ]        
+          },
+          "end_audio":{
+            "events":{"slide02a":"played"},
+            "actions":[
+              {
+                "type": "add-actor",
+                "args":[
+                  {  
+                    "name": "video_scene_2",  
+                    "type": "wistia",  
+                    "location": [135, 55],  
+                    "size": [436, 240],  
+                    "video": "umr7k7y055",  
+                    "hideCloseButton": true,  
+                    "variable": "video_scene_2",  
+                    "blockerAlpha": 0.0,
+                    "autoplay": true
+                  }
+                ]
+              }
+            ]
+          },
+          "end_play_video":{
+            "events":{"video_scene_2": "*" },
+            "actions":[
+              { "type": "remove-actor", "args": [ "kate", "video_scene_2"] },
+              {
+                "type": "add-actor",
+                "args":[
+                  {  
+                    "name": "kate2",  
+                    "type": "no-input-character",  
+                    "image": "kate",  
+                    "variable": "kate2",
+                    "speechAudio":"slide02b",
+                    "speechAnimation": true,
+                    "location": [35, 300 ]
+                  },
+                  {  
+                    "name": "slide02b",  
+                    "type": "audio",  
+                    "audio": "slide02b",   
+                    "variable": "slide02b"   
+                  }]
+              }
+            ]
+          },
+          "animate-next":{
+            "events":{"slide02b": "*" },
+            "actions" : [
+              { "type": "remove-actor", "args": [ "next"] },
+              {
+                "type": "add-actor",
+                "args":[{
+                    "name": "next",
+                    "animated":true,
+                    "animationLoop":true,
+                    "animationRepeat" : 5000,
+                    "type": "button",
+                    "image": "next",
+                    "location": [ 470, 410 ],
+                    "variable": "next_button"
+                }]
+            }]
+          }
+
+        },
+        "actions": [
+          { "type": "variable", "args": [ "saved_scene", "$current_scene_name"] }
+        ]
+      },
+      "scene3": {
+        "id": "scene3",
+        "title": "Scene 3",
+        "background": "bullyingBackground",
+        "actors": [
+          {  
+            "name": "slide_03",  
+            "type": "audio",  
+            "audio": "slide_03",   
+            "variable": "slide_03"   
+          },
+          {
+            "name": "scene3-Header",
+            "type": "text",
+            "text": "If you are a victim of bullying:",
+            "font": "slideHeaderBlack",
+            "location": [ "center", 60 ],
+            "wordWrapWidth": 500
+          },
+          {
+            "name": "scene3-List-r1",
+            "type": "text",
+            "text": "Be assertive.",
+            "bullet":true,
+            "font": "slideContentGreen",
+            "location": [ "center", 105 ],
+            "wordWrapWidth": 500,
+            "startDelay" :8000
+          },
+          {
+            "name": "scene3-List-r2",
+            "type": "text",
+            "text": "Use an I statement.",
+            "bullet":true,
+            "font": "slideContentGreen",
+            "location": [ "center", 150 ],
+            "wordWrapWidth": 500,
+            "startDelay" :25000
+          },
+          {
+            "name": "Scene3-Footer",
+            "type": "text",
+            "text": "\"I don't like it when you do that and I want you to stop.\"",
+            "font": "slideHeaderBlack",
+            "location": [ "center", 280 ],
+            "wordWrapWidth": 500,
+            "startDelay" :30000
+          },
+          {
+            "name": "timeline-scene3-1",
+            "type": "timeline",
+            "period": 37000,
+            "variable": "timeline-scene3"
+          },
+          {
+            "name": "timeline-scene3-2",
+            "type": "timeline",
+            "period": 37200,
+            "variable": "timeline-scene3"
+          },
+          {
+            "name": "timeline-scene3-3",
+            "type": "timeline",
+            "period": 37400,
+            "variable": "timeline-scene3"
+          },
+          {
+            "name": "timeline-scene3-4",
+            "type": "timeline",
+            "period": 37600,
+            "variable": "timeline-scene3"
+          },
+          {
+            "name": "timeline-scene3-5",
+            "type": "timeline",
+            "period": 37800,
+            "variable": "timeline-scene3"
+          },
+          {
+            "name": "timeline-scene3-6",
+            "type": "timeline",
+            "period": 38000,
+            "variable": "timeline-scene3"
+          },
+          {
+            "name": "timeline-scene3-7",
+            "type": "timeline",
+            "period": 38200,
+            "variable": "timeline-scene3"
+          },
+          {
+            "name": "timeline-scene3-8",
+            "type": "timeline",
+            "period": 38400,
+            "variable": "timeline-scene3"
+          },
+          {
+            "name": "timeline-scene3-9",
+            "type": "timeline",
+            "period": 39100,
+            "variable": "timeline-scene3"
+          },
+          {
+            "name": "timeline-scene3-10",
+            "type": "timeline",
+            "period": 39300,
+            "variable": "timeline-scene3"
+          },
+          {
+            "name": "timeline-scene3-11",
+            "type": "timeline",
+            "period": 39500,
+            "variable": "timeline-scene3"
+          },
+          {
+            "name": "timeline-scene3-12",
+            "type": "timeline",
+            "period": 39700,
+            "variable": "timeline-scene3"
+          },
+          {
+            "name": "timeline-scene3-13",
+            "type": "timeline",
+            "period": 39900,
+            "variable": "timeline-scene3"
+          },
+          {
+            "name": "timeline-scene3-14",
+            "type": "timeline",
+            "period": 40100,
+            "variable": "timeline-scene3"
+          },
+          {
+            "name": "timeline-scene3-end",
+            "type": "timeline",
+            "period": 40600,
+            "variable": "timeline-scene3"
+          },
+          {
+            "name": "backButton",
+            "type": "button",
+            "image": "back",
+            "location": [ 280, 410 ],
+            "variable": "back_button"
+          },
+          {
+            "name": "replayButton",
+            "type": "button",
+            "image": "replay",
+            "location": [ 420, 410 ],
+            "variable": "replay_button"
+          },
+          {
+            "name": "next",
+            "type": "button",
+            "image": "next",
+            "location": [ 470, 410 ],
+            "variable": "next_button"
+          }
+
+        ],
+        "outcomes": {          
+          "go_next": {
+            "events":  {"next_button": "*"} ,
+            "actions" : [
+              { "type": "scene", "args": [ "scene4"] }
+            ]
+          },
+          "go_back":{
+            "events":  {"back_button": "*"} ,
+            "actions" : [
+              { "type": "scene", "args": [ "scene2"] }
+            ]
+          },
+          "click_replay": {
+            "events": {
+              "replay_button": "*"
+            },
+            "actions": [
+              { "type": "variable", "args": ["replay_scene", "$current_scene_name"] },
+              {
+                "type": "scene",
+                "args": ["deadscene"]
+              }
+            ]        
+          },
+          "timeline-scene3-1":{
+              "events":{"timeline-scene3":"timeline-scene3-1"},
+              "actions":[{
+                "type": "add-actor",
+                "args":[          {
+                  "name": "Scene3-Footer-Alt1",
+                  "type": "text",
+                  "text": "I",
+                  "font": "slideHeaderGreen",
+                  "location": [ 101, 280 ]
+                }]
+               }]
+          },
+          "timeline-scene3-2":{
+            "events":{"timeline-scene3":"timeline-scene3-2"},
+            "actions":[{
+              "type": "add-actor",
+              "args":[{
+                "name": "Scene3-Footer-Alt2",
+                "type": "text",
+                "text": "don't",
+                "font": "slideHeaderGreen",
+                "location": [ 120, 280 ]
+              }]
+             },
+             { "type": "remove-actor", "args": [ "Scene3-Footer-Alt1"] }
+            ]
+          },
+          "timeline-scene3-3":{
+            "events":{"timeline-scene3":"timeline-scene3-3"},
+            "actions":[{
+              "type": "add-actor",
+              "args":[{
+                "name": "Scene3-Footer-Alt3",
+                "type": "text",
+                "text": "like",
+                "font": "slideHeaderGreen",
+                "location": [ 201, 280 ]
+              }]
+             },
+             { "type": "remove-actor", "args": [ "Scene3-Footer-Alt2"] }
+            ]
+          },
+          "timeline-scene3-4":{
+            "events":{"timeline-scene3":"timeline-scene3-4"},
+            "actions":[{
+              "type": "add-actor",
+              "args":[          {
+                "name": "Scene3-Footer-Alt4",
+                "type": "text",
+                "text": "it",
+                "font": "slideHeaderGreen",
+                "location": [ 261, 280 ]
+              }]
+             },
+             { "type": "remove-actor", "args": [ "Scene3-Footer-Alt3"] }
+            ]
+          },
+          "timeline-scene3-5":{
+            "events":{"timeline-scene3":"timeline-scene3-5"},
+            "actions":[{
+              "type": "add-actor",
+              "args":[                    {
+                "name": "Scene3-Footer-Alt5",
+                "type": "text",
+                "text": "when",
+                "font": "slideHeaderGreen",
+                "location": [ 290, 280 ]
+              }]
+             },
+             { "type": "remove-actor", "args": [ "Scene3-Footer-Alt4"] }
+            ]
+          },
+          "timeline-scene3-6":{
+            "events":{"timeline-scene3":"timeline-scene3-6"},
+            "actions":[{
+              "type": "add-actor",
+              "args":[                    {
+                "name": "Scene3-Footer-Alt6",
+                "type": "text",
+                "text": "you",
+                "font": "slideHeaderGreen",
+                "location": [ 379, 280 ]
+              }]
+             },
+             { "type": "remove-actor", "args": [ "Scene3-Footer-Alt5"] }
+            ]
+          },
+          "timeline-scene3-7":{
+            "events":{"timeline-scene3":"timeline-scene3-7"},
+            "actions":[{
+              "type": "add-actor",
+              "args":[                    {
+                "name": "Scene3-Footer-Alt7",
+                "type": "text",
+                "text": "do",
+                "font": "slideHeaderGreen",
+                "location": [ 440, 280 ]
+              }]
+             },
+             { "type": "remove-actor", "args": [ "Scene3-Footer-Alt6"] }
+            ]
+          },
+          "timeline-scene3-8":{
+            "events":{"timeline-scene3":"timeline-scene3-8"},
+            "actions":[{
+              "type": "add-actor",
+              "args":[                    {
+                "name": "Scene3-Footer-Alt8",
+                "type": "text",
+                "text": "that",
+                "font": "slideHeaderGreen",
+                "location": [ 485, 280 ]
+              }]
+             },
+             { "type": "remove-actor", "args": [ "Scene3-Footer-Alt7"] }
+            ]
+          },
+          "timeline-scene3-9":{
+            "events":{"timeline-scene3":"timeline-scene3-9"},
+            "actions":[{
+              "type": "add-actor",
+              "args":[                    {
+                "name": "Scene3-Footer-Alt9",
+                "type": "text",
+                "text": "and",
+                "font": "slideHeaderGreen",
+                "location": [ 145, 327 ]
+              }]
+             },
+             { "type": "remove-actor", "args": [ "Scene3-Footer-Alt8"] }
+            ]
+          },
+          "timeline-scene3-10":{
+            "events":{"timeline-scene3":"timeline-scene3-10"},
+            "actions":[{
+              "type": "add-actor",
+              "args":[                    {
+                "name": "Scene3-Footer-Alt10",
+                "type": "text",
+                "text": "I",
+                "font": "slideHeaderGreen",
+                "location": [ 206, 327 ]
+              }]
+             },
+             { "type": "remove-actor", "args": [ "Scene3-Footer-Alt9"] }
+            ]
+          },
+          "timeline-scene3-11":{
+            "events":{"timeline-scene3":"timeline-scene3-11"},
+            "actions":[{
+              "type": "add-actor",
+              "args":[                    {
+                "name": "Scene3-Footer-Alt11",
+                "type": "text",
+                "text": "want",
+                "font": "slideHeaderGreen",
+                "location": [ 223, 327 ]
+              }]
+             },
+             { "type": "remove-actor", "args": [ "Scene3-Footer-Alt10"] }
+            ]
+          },
+          "timeline-scene3-12":{
+            "events":{"timeline-scene3":"timeline-scene3-12"},
+            "actions":[{
+              "type": "add-actor",
+              "args":[                    {
+                "name": "Scene3-Footer-Alt12",
+                "type": "text",
+                "text": "you",
+                "font": "slideHeaderGreen",
+                "location": [305, 327 ]
+              }]
+             },
+             { "type": "remove-actor", "args": [ "Scene3-Footer-Alt11"] }
+            ]
+          },
+          "timeline-scene3-13":{
+            "events":{"timeline-scene3":"timeline-scene3-13"},
+            "actions":[{
+              "type": "add-actor",
+              "args":[                    {
+                "name": "Scene3-Footer-Alt13",
+                "type": "text",
+                "text": "to",
+                "font": "slideHeaderGreen",
+                "location": [ 368, 327 ]
+              }]
+             },
+             { "type": "remove-actor", "args": [ "Scene3-Footer-Alt12"] }
+            ]
+          },
+          "timeline-scene3-14":{
+            "events":{"timeline-scene3":"timeline-scene3-14"},
+            "actions":[{
+              "type": "add-actor",
+              "args":[                    {
+                "name": "Scene3-Footer-Alt14",
+                "type": "text",
+                "text": "stop.",
+                "font": "slideHeaderGreen",
+                "location": [ 404, 327 ]
+              }]
+             },
+             { "type": "remove-actor", "args": [ "Scene3-Footer-Alt13"] }
+            ]
+          },
+          "timeline-scene3-end":{
+            "events":{"timeline-scene3":"timeline-scene3-end"},
+            "actions":[
+             { "type": "remove-actor", "args": [ "Scene3-Footer-Alt14"] }
+            ]
+          },
+          "animate-next":{
+            "events":{"slide_03": "*" },
+            "actions" : [
+              { "type": "remove-actor", "args": [ "next"] },
+              {
+                "type": "add-actor",
+                "args":[{
+                    "name": "next",
+                    "animated":true,
+                    "animationLoop":true,
+                    "animationRepeat" : 5000,
+                    "type": "button",
+                    "image": "next",
+                    "location": [ 470, 410 ],
+                    "variable": "next_button"
+                }]
+            }]
+          }
+        },
+        "actions": [
+          { "type": "variable", "args": [ "saved_scene", "$current_scene_name"] }
+        ]
+      },
+      "scene4": {
+        "id": "scene4",
+        "title": "Scene 4",
+        "background": "bullyingBackground",
+        "actors": [
+          {
+            "name": "raj",  
+            "type": "no-input-character",  
+            "image": "raj",  
+            "variable": "raj",
+            "speechAudio":"slide04a",
+            "speechAnimation": true,
+            "location": [35, 300 ] 
+          },
+          {  
+            "name": "slide04a",  
+            "type": "audio",  
+            "audio": "slide04a",   
+            "variable": "slide04a"   
+          },
+          {
+            "name": "videoFrame",
+            "type": "decoration",
+            "image": "videoFrame",
+            "location": [130, 50],
+            "scale": [ 0.99, 1]
+          },
+          {
+            "name": "3whattodo4",
+            "type": "decoration",
+            "image": "3whattodo4",
+            "location": [135, 55]
+          },
+          {
+            "name": "backButton",
+            "type": "button",
+            "image": "back",
+            "location": [ 280, 410 ],
+            "variable": "back_button"
+          },
+          {
+            "name": "replayButton",
+            "type": "button",
+            "image": "replay",
+            "location": [ 420, 410 ],
+            "variable": "replay_button"
+          },
+          {
+            "name": "next",
+            "type": "button",
+            "image": "next",
+            "location": [ 470, 410 ],
+            "variable": "next_button"
+          }
+
+        ],
+        "outcomes": {
+
+          "go_back":{
+            "events":  {"back_button": "*"} ,
+            "actions" : [
+              { "type": "scene", "args": [ "scene3"] }
+            ]
+          },
+          "click_replay": {
+            "events": {
+              "replay_button": "*"
+            },
+            "actions": [
+              { "type": "variable", "args": ["replay_scene", "$current_scene_name"] },
+              {
+                "type": "scene",
+                "args": ["deadscene"]
+              }
+            ]        
+          },
+          "go_next": {
+            "events":  {"next_button": "*"} ,
+            "actions" : [
+              { "type": "scene", "args": [ "scene5"] }
+            ]
+          },
+          "end_play_audio":{
+            "events":{"slide04a": "*" },
+            "actions":[
+              {
+                "type": "add-actor",
+                "args":[
+                  {  
+                    "name": "video_scene_4",  
+                    "type": "wistia",  
+                    "location": [135, 55],  
+                    "size": [436, 240],  
+                    "video": "3oy23jbo2h",  
+                    "hideCloseButton": true,  
+                    "variable": "video_scene_4",  
+                    "blockerAlpha": 0.0,
+                    "autoplay": true
+                  }
+                  ]
+              }
+            ]
+          },
+          "end_play_video":{
+            "events":{"video_scene_4": "*" },
+            "actions":[
+              { "type": "remove-actor", "args": [ "raj", "video_scene_4"] },
+              {
+                "type": "add-actor",
+                "args":[
+                  {
+                    "name": "raj",  
+                    "type": "no-input-character",  
+                    "image": "raj",  
+                    "variable": "raj",
+                    "speechAudio":"slide04b",
+                    "speechAnimation": true,
+                    "location": [35, 300 ]
+                  },
+                  {  
+                    "name": "slide04b",  
+                    "type": "audio",  
+                    "audio": "slide04b",   
+                    "variable": "slide04b"   
+                  }]
+              }
+            ]
+          },
+          "animate-next":{
+            "events":{"slide04b": "*" },
+            "actions" : [
+              { "type": "remove-actor", "args": [ "next"] },
+              {
+                "type": "add-actor",
+                "args":[{
+                    "name": "next",
+                    "animated":true,
+                    "animationLoop":true,
+                    "animationRepeat" : 5000,
+                    "type": "button",
+                    "image": "next",
+                    "location": [ 470, 410 ],
+                    "variable": "next_button"
+                }]
+            }]
+          }
+        },
+        "actions": [
+          { "type": "variable", "args": [ "saved_scene", "$current_scene_name"] }
+        ]
+      },
+      "scene5": {
+        "id": "scene5",
+        "title": "Scene 5",
+        "background": "bullyingBackground",
+        "actors": [
+          {  
+            "name": "slide_05",  
+            "type": "audio",  
+            "audio": "slide_05",   
+            "variable": "slide_05"   
+          },
+          {
+            "name": "scene5-Header",
+            "type": "text",
+            "text": "We need to tell an adult any time we see bullying happen.",
+            "font": "slideHeaderBlack",
+            "location": [ "center", 40 ],
+            "wordWrapWidth": 500
+          },
+          {
+            "name": "scene5-Left-List-Header",
+            "type": "text",
+            "text": "At school:",
+            "font": "slideContentGreen",
+            "location": [ 70, 155 ],
+            "wordWrapWidth": 250,
+            "startDelay" :21000
+          },
+          {
+            "name": "scene5-Left-List-r1",
+            "type": "text",
+            "text": "Teacher",
+            "font": "slideContentGreenList",
+            "location": [ 100, 195 ],
+            "bullet" : true,
+            "wordWrapWidth": 250,
+            "startDelay" :22700
+          },
+          {
+            "name": "scene5-Left-List-r2",
+            "type": "text",
+            "text": "Nurse",
+            "font": "slideContentGreenList",
+            "location": [ 100, 225 ],
+            "bullet" : true,
+            "wordWrapWidth": 250,
+            "startDelay" :24000
+          },
+          {
+            "name": "scene5-Left-List-r3",
+            "type": "text",
+            "text": "Volunteer",
+            "font": "slideContentGreenList",
+            "location": [ 100, 255 ],
+            "bullet" : true,
+            "wordWrapWidth": 250,
+            "startDelay" :25000
+          },
+          {
+            "name": "scene5-Left-List-r4a",
+            "type": "text",
+            "text": "Playground",
+            "font": "slideContentGreenList",
+            "location": [ 100, 285 ],
+            "bullet" : true,
+            "wordWrapWidth": 250,
+            "startDelay" :26500
+          },
+          {
+            "name": "scene5-Left-List-r4b",
+            "type": "text",
+            "text": "supervisor",
+            "font": "slideContentGreenList",
+            "location": [ 125, 315 ],
+            "wordWrapWidth": 250,
+            "startDelay" :26500
+          },
+          {
+            "name": "scene5-Left-List-r5",
+            "type": "text",
+            "text": "Principal",
+            "font": "slideContentGreenList",
+            "location": [ 100, 345 ],
+            "bullet" : true,
+            "wordWrapWidth": 250,
+            "startDelay" :28000
+          },
+          {
+            "name": "scene5-Right-List-Header",
+            "type": "text",
+            "text": "Outside of school:",
+            "font": "slideContentGreen",
+            "location": [ 310, 155 ],
+            "wordWrapWidth": 450,
+            "startDelay" :30000
+          },
+          {
+            "name": "scene5-Right-List-r1",
+            "type": "text",
+            "text": "Mom",
+            "font": "slideContentGreenList",
+            "location": [ 340, 195 ],
+            "bullet":true,
+            "wordWrapWidth": 250,
+            "startDelay" :31500
+          },
+          {
+            "name": "scene5-Right-List-r2",
+            "type": "text",
+            "text": "Dad",
+            "font": "slideContentGreenList",
+            "location": [ 340, 225 ],
+            "bullet":true,
+            "wordWrapWidth": 250,
+            "startDelay" :32500
+          },
+          {
+            "name": "scene5-Right-List-r3",
+            "type": "text",
+            "text": "Guardian",
+            "font": "slideContentGreenList",
+            "location": [ 340, 255 ],
+            "bullet":true,
+            "wordWrapWidth": 250,
+            "startDelay" :33000
+          },
+          {
+            "name": "scene5-Right-List-r4",
+            "type": "text",
+            "text": "Grandma",
+            "font": "slideContentGreenList",
+            "location": [ 340, 285 ],
+            "bullet":true,
+            "wordWrapWidth": 250,
+            "startDelay" :34000
+          },
+          {
+            "name": "scene5-Right-List-r5",
+            "type": "text",
+            "text": "Grandpa",
+            "font": "slideContentGreenList",
+            "location": [ 340, 315 ],
+            "bullet":true,
+            "wordWrapWidth": 250,
+            "startDelay" :35000
+          },
+          {
+            "name": "scene5-Right-List-r6",
+            "type": "text",
+            "text": "Aunt or uncle",
+            "font": "slideContentGreenList",
+            "location": [ 340, 345 ],
+            "bullet":true,
+            "wordWrapWidth": 250,
+            "startDelay" :36000
+          },
+          {
+            "name": "backButton",
+            "type": "button",
+            "image": "back",
+            "location": [ 280, 410 ],
+            "variable": "back_button"
+          },
+          {
+            "name": "replayButton",
+            "type": "button",
+            "image": "replay",
+            "location": [ 420, 410 ],
+            "variable": "replay_button"
+          },
+          {
+            "name": "next",
+            "type": "button",
+            "image": "next",
+            "location": [ 470, 410 ],
+            "variable": "next_button"
+          }
+
+        ],
+        "outcomes": {          
+          "go_next": {
+            "events":  {"next_button": "*"} ,
+            "actions" : [
+              { "type": "scene", "args": [ "scene6"] }
+            ]
+          },
+          "go_resume": {
+            "events":  {"lesson_location": "*"} ,
+            "actions" : [
+              { "type": "scene", "args": [ "$lesson_location"] }
+            ]
+          },
+          "go_back":{
+            "events":  {"back_button": "*"} ,
+            "actions" : [
+              { "type": "scene", "args": [ "scene4"] }
+            ]
+          },
+          "click_replay": {
+            "events": {
+              "replay_button": "*"
+            },
+            "actions": [
+              { "type": "variable", "args": ["replay_scene", "$current_scene_name"] },
+              {
+                "type": "scene",
+                "args": ["deadscene"]
+              }
+            ]        
+          },
+          "animate-next":{
+            "events":{"slide_05": "*" },
+            "actions" : [
+              { "type": "remove-actor", "args": [ "next"] },
+              {
+                "type": "add-actor",
+                "args":[{
+                    "name": "next",
+                    "animated":true,
+                    "animationLoop":true,
+                    "animationRepeat" : 5000,
+                    "type": "button",
+                    "image": "next",
+                    "location": [ 470, 410 ],
+                    "variable": "next_button"
+                }]
+            }]
+          }
+        },
+        "actions": [
+          { "type": "variable", "args": [ "saved_scene", "$current_scene_name"] }
+        ]
+      },
+      "scene6": {
+        "id": "scene6",
+        "title": "Scene 6",
+        "background": "bullyingBackground",
+        "actors": [
+          {  
+            "name": "slide_06",  
+            "type": "audio",  
+            "audio": "slide_06",   
+            "variable": "slide_06"   
+          },
+          {
+            "name": "mollie",
+            "type": "button-character",
+            "image": "mollie",
+            "speechAnimation": true,
+            "location": [ 150, 160  ],
+            "speechAudio": "slide06_mollie",
+            "variable": "mollie"
+          },
+          {
+            "name": "cj",
+            "type": "button-character",
+            "image": "cj",
+            "speechAnimation": true,
+            "location": [ 390, 100  ],
+            "speechAudio": "slide06_cj",
+            "variable": "cj"
+          },
+          {
+            "name": "backButton",
+            "type": "button",
+            "image": "back",
+            "location": [ 280, 410 ],
+            "variable": "back_button"
+          },
+          {
+            "name": "replayButton",
+            "type": "button",
+            "image": "replay",
+            "location": [ 420, 410 ],
+            "variable": "replay_button"
+          },
+          {
+            "name": "next",
+            "type": "button",
+            "image": "next",
+            "location": [ 470, 410 ],
+            "variable": "next_button"
+          }
+
+        ],
+        "outcomes": {          
+          "go_next": {
+            "events":  {"next_button": "*"} ,
+            "actions" : [
+              { "type": "scene", "args": [ "scene7"] }
+            ]
+          },
+          "go_resume": {
+            "events":  {"lesson_location": "*"} ,
+            "actions" : [
+              { "type": "scene", "args": [ "$lesson_location"] }
+            ]
+          },
+          "go_back":{
+            "events":  {"back_button": "*"} ,
+            "actions" : [
+              { "type": "scene", "args": [ "scene5"] }
+            ]
+          },
+          "click_replay": {
+            "events": {
+              "replay_button": "*"
+            },
+            "actions": [
+              { "type": "variable", "args": ["replay_scene", "$current_scene_name"] },
+              {
+                "type": "scene",
+                "args": ["deadscene"]
+              }
+            ]        
+          },
+          "mollie_click":{
+            "events":{"mollie": "*" },
+            "actions":[
+              { "type": "variable", "args": [ "mollie", ""] },
+              {
+                "type": "add-actor",
+                "args":[
+                  {  
+                    "name": "slide06_mollie",  
+                    "type": "audio",  
+                    "audio": "slide06_mollie",   
+                    "variable": "mollie_audio"  ,
+                    "startDelay":1
+                  }
+                  ]
+              }
+            ]
+          },
+          "cj_click":{
+            "events":{"cj": "*" },
+            "actions":[
+              { "type": "variable", "args": [ "cj", ""] },
+              {
+                "type": "add-actor",
+                "args":[
+                  {  
+                    "name": "slide06_cj",  
+                    "type": "audio",  
+                    "audio": "slide06_cj",   
+                    "variable": "cj_audio" ,
+                    "startDelay":1
+                  }
+                  ]
+              }
+            ]
+          },
+          "animate-next":{
+            "events":{"cj_audio": "*","mollie_audio": "*"},
+            "actions" : [
+              { "type": "remove-actor", "args": [ "next"] },
+              {
+                "type": "add-actor",
+                "args":[{
+                    "name": "next",
+                    "animated":true,
+                    "animationLoop":true,
+                    "animationRepeat" : 5000,
+                    "type": "button",
+                    "image": "next",
+                    "location": [ 470, 410 ],
+                    "variable": "next_button"
+                }]
+            }]
+          }
+        },
+        "actions": [
+          { "type": "variable", "args": [ "saved_scene", "$current_scene_name"] }
+        ]
+      },
+      "scene7": {
+        "id": "scene7",
+        "title": "Scene 7",
+        "background": "bullyingBackground",
+        "actors": [
+          {  
+            "name": "slide_07",  
+            "type": "audio",  
+            "audio": "slide_07",   
+            "variable": "slide_07"   
+          },
+          {
+            "name": "scene7-Header",
+            "type": "text",
+            "text": "Good Job!",
+            "font": "introTitle",
+            "location": [ "center", 160],
+            "wordWrapWidth": 500
+          },
+          {
+            "name": "scene7-Footer",
+            "type": "text",
+            "text": "Teacher: follow up on this lesson with offline\nactivities found in your Act Now! Teacher's Guide.",
+            "font": "noteContentBlack",
+            "location": [ "center", 345 ],
+            "wordWrapWidth": 500
+          },
+          {
+            "name": "backButton",
+            "type": "button",
+            "image": "back",
+            "location": [ 280, 410 ],
+            "variable": "back_button"
+          },
+          {
+            "name": "replayButton",
+            "type": "button",
+            "image": "replay",
+            "location": [ 420, 410 ],
+            "variable": "replay_button"
+          },
+          {
+            "name": "next",
+            "type": "decoration",
+            "image": "nextDisabled",
+            "location": [470, 410 ]
+          }
+
+        ],
+        "outcomes": {          
+          "go_back":{
+            "events":  {"back_button": "*"} ,
+            "actions" : [
+              { "type": "scene", "args": [ "scene6"] }
+            ]
+          },
+          "go_resume": {
+            "events":  {"lesson_location": "*"} ,
+            "actions" : [
+              { "type": "scene", "args": [ "$lesson_location"] }
+            ]
+          },
+          "click_replay": {
+            "events": {
+              "replay_button": "*"
+            },
+            "actions": [
+              { "type": "variable", "args": ["replay_scene", "$current_scene_name"] },
+              {
+                "type": "scene",
+                "args": ["deadscene"]
+              }
+            ]        
+          }
+        },
+        "actions": [
+          { "type": "variable", "args": [ "saved_scene", "$current_scene_name"] },
+          { "type": "choice", "args": [ "objective_complete", 1] },
+          { "type": "choice", "args": [ "save", 0 ] }
+        ]
+      },
+      "resume_started": {
+        "id": "resume_started",
+        "title": "for resuming part way through",
+        "background": "none",
+        "actors": [
+          {
+            "name": "restart",
+            "variable": "restart",
+            "type": "button",
+            "image": "restart",
+            "location": [ 180, 230 ]
+          },
+          {
+            "name": "resume",
+            "variable": "resume",
+            "type": "button",
+            "image": "resume",
+            "location": [ 330, 230 ]
+          },
+          { 
+            "name": "resume-message",
+            "type": "text",
+            "font": "resume-message",
+            "text": "You have already completed part of this lesson",
+            "location": [ "center", 160 ]
+          }
+        ],
+        "outcomes": {
+          "has_resume": {
+            "events": {
+              "saved_scene": "undefined"
+            },
+            "actions": [
+              {
+                "type": "scene",
+                "args": ["scene1"]
+              }
+            ]
+          },
+          "finished": {
+            "events": {
+              "saved_scene": "scene7"
+            },
+            "actions": [
+              {
+                "type": "scene",
+                "args": ["resume_finished"]
+              }
+            ]
+          },
+          "start_over": {
+            "events": {
+              "restart": "*"
+            },
+            "actions": [
+              {
+                "type": "scene",
+                "args": ["scene1"]
+              }
+            ]
+          },
+          "resume_scene": {
+            "events": {
+              "resume": "*"
+            },
+            "actions": [
+              {
+                "type": "scene",
+                "args": ["$saved_scene"]
+              }
+            ]
+          }
+        },
+        "actions": [
+          { "type": "check-outcomes", "args": [ "saved_scene" ] }
+        ]
+      },
+      "resume_finished": {
+        "id": "resume_finished",
+        "title": "finished",
+        "background": "none",
+        "actors": [
+          {
+            "name": "restart",
+            "variable": "restart",
+            "type": "button",
+            "image": "restart",
+            "location": [ 180, 230 ]
+          },
+          {
+            "name": "resume",
+            "variable": "resume",
+            "type": "button",
+            "image": "resume",
+            "location": [ 330, 230 ]
+          },
+          { 
+            "name": "resume-message",
+            "type": "text",
+            "font": "resume-message",
+            "text": "You have already completed this lesson",
+            "location": [ "center", 160 ]
+          }
+        ],
+        "outcomes": {
+          "start_over": {
+            "events": {
+              "restart": "*"
+            },
+            "actions": [
+              {
+                "type": "scene",
+                "args": ["scene1"]
+              }
+            ]
+          },
+          "resume_scene": {
+            "events": {
+              "resume": "*"
+            },
+            "actions": [
+              {
+                "type": "scene",
+                "args": ["scene7"]
+              }
+            ]
+          }
+        }
+      },
+      "deadscene": {
+        "id": "deadscene",
+        "title": "deadscene",
+        "background": "background",
+        "actors": [],
+        "outcomes": {},
+        "actions": [
+          {
+            "type": "scene",
+            "args": ["$replay_scene"]
+          }
+        ]
+      }
+    } 
+  } 
+}

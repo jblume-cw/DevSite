@@ -1,0 +1,285 @@
+{
+  "texture": "media/default/texture.png",
+  "textureMap": "media/default/texture.json",
+  "textureKey": "texture",
+  "data": "media/default/sceneData.json",
+  "fonts" : {
+    "introTitle": { "font": "70px Cairo", "fontWeight": "bold","fill": "#333333", "align": "center","wordWrap": true, "wordWrapWidth": 1500  },
+    "introHeader": { "font": "50px Cairo", "fontWeight": "bold","fill": "#333333", "align": "center","wordWrap": true, "wordWrapWidth": 1500  },
+    "introSubtitle": { "font": "30px Cairo", "fontWeight": "normal","fill": "#4B9700", "align": "center" ,"wordWrap": true, "wordWrapWidth": 1500 },
+    "introList":{ "font": "30px Cairo", "fontWeight": "normal","fill": "#4B9700", "align": "left" ,"wordWrap": true, "wordWrapWidth": 1500 },
+    "slideHeaderBlack": { "font": "36px Cairo", "fontWeight": "bold","fill": "#333333", "align": "center","wordWrap": true, "wordWrapWidth": 1500  },
+    "slideHeaderGreen": { "font": "36px Cairo", "fontWeight": "bold","fill": "#4B9700", "align": "center","wordWrap": true, "wordWrapWidth": 1500  },
+    "slideContentGreenLg": { "font": "30px Cairo", "fontWeight": "bold","fill": "#4B9700", "align": "left" ,"wordWrap": true, "wordWrapWidth": 1500 },
+    "slideContentBlackLg": { "font": "30px Cairo", "fontWeight": "bold","fill": "#333333", "align": "left" ,"wordWrap": true, "wordWrapWidth": 1500 },
+    "slideContentGreenMd": { "font": "26px Cairo", "fontWeight": "bold","fill": "#4B9700", "align": "left" ,"wordWrap": true, "wordWrapWidth": 1500 },
+    "slideContentBlackMd": { "font": "26px Cairo", "fontWeight": "bold","fill": "#333333", "align": "left" ,"wordWrap": true, "wordWrapWidth": 1500 },
+    "dropContentGreen": { "font": "18px Cairo", "fontWeight": "bold","fill": "#4B9700", "align": "left" ,"wordWrap": true, "wordWrapWidth": 1500 },
+    "noteContentBlack": { "font": "22px Cairo", "fontWeight": "bold","fill": "#333333", "align": "left","wordWrap": true, "wordWrapWidth": 1400  },
+    "resume-message": { "font": "28px Cairo", "fill": "#734D99", "align": "left" ,"wordWrap": true, "wordWrapWidth": 700 }
+    
+  },
+  "images": {
+    "ad":"ad.png",
+    "ad2":"ad2.png",
+    "bullyingBackground": "bullying-background.png",
+    "backDisabled": "BackDisabled.png",
+    "backOver":"BackOver.png",
+    "backUp":"BackUp.png",
+    "buddy":"buddy.png",
+    "bully":"bully.png",
+    "callNames":"call names.png",
+    "caring":"caring.png",
+    "cjBtn-Animation" : {
+        "animation":[
+          "cj btn0001.png","cj btn0002.png"
+        ]
+    },
+    "cj":"cj btn0001.png",
+    "cjMouth-Animation":{
+        "animation":[
+          "cj mouth frame0001.png","cj mouth frame0002.png",
+          "cj mouth frame0003.png","cj mouth frame0004.png" 
+        ]
+    },
+    "draw":"draw.png",
+    "exclude":"exclude.png",
+    "forgiving":"forgiving.png",
+    "friend":"friend.png",
+    "fun":"fun.png",
+    "funny":"funny.png",
+    "hangOut":"hang out.png",
+    "helpful":"helpful.png",
+    "kateHead": "KateHead.png",
+    "kateHeadTalk-Animation" : {
+        "animation":[
+          "KateHeadTalker-mouth0001.png","KateHeadTalker-mouth0002.png",
+          "KateHeadTalker-mouth0003.png" 
+        ]
+    },
+    "kind":"kind.png",
+    "listener":"listener.png",
+    "mollie" :"mollie btn0001.png",
+    "mollieBtn-Animation" :{
+      "animation":[
+        "mollie btn0001.png","mollie btn0002.png"
+      ]
+    },
+    "mollieMouth-Animation" :{
+      "animation":[
+        "mollie mouth frame0001.png","mollie mouth frame0002.png",
+        "mollie mouth frame0003.png"
+        ]
+    },
+    "nextDisabled" :"NextDisabled.png",
+    "nextOver" : "NextOver.png",
+    "nextUp" : "NextUp.png",
+    "nextUp-Animation" : {
+        "animation": [
+          "NextUp-hi0001.png","NextUp-hi0002.png","NextUp-hi0003.png","NextUp-hi0004.png",
+          "NextUp-hi0005.png","NextUp-hi0006.png","NextUp-hi0007.png","NextUp-hi0008.png",
+          "NextUp-hi0009.png","NextUp-hi0010.png","NextUp-hi0011.png","NextUp-hi0012.png",
+          "NextUp-hi0013.png"
+        ]
+    },
+    "pal":"pal.png",
+    "playGames": "play games.png",
+    "rajHead":"RajHead.png",
+    "rajMouth-Animation":{
+      "animation":[
+        "raj mouth frame0001.png","raj mouth frame0002.png",
+        "raj mouth frame0003.png" 
+      ]
+    },
+    "replayOver":"ReplayOver.png",
+    "replayUp":"ReplayUp.png",
+    "restartUp":"RestartUp.png",
+    "restartOver":"RestartOver.png",
+    "resumeUp":"ResumeUp.png",
+    "resumeOver":"ResumeOver.png",
+    "rideBikes": "ride bikes.png",
+    "tease": "tease.png",
+    "termTarget": "term target.png",
+    "watchMovies": "watch movies.png",
+    "videoFrame":"videoframe.png",
+    "actorImages": {
+      "cj":"cj btn0001.png",
+      "cj2":"cj btn0001.png",
+      "cj-talk":"cj btn0001.png",      
+      "mollie":"mollie btn0001.png",
+      "mollie-talk":"mollie btn0001.png",
+      "kate":"KateHead.png",
+      "kate-talk":"KateHead.png",
+      "raj":"RajHead.png",
+      "raj-talk":"RajHead.png"
+    }
+    
+  },
+  "logo": "splash-bg.png",
+  "buttons": {
+    "back":{
+      "up":"BackUp.png",
+      "over":"BackOver.png",
+      "out" : "BackUp.png",
+      "down" : "BackDown.png"
+    },
+    "next": {
+      "up": "NextUp.png",
+      "over": "NextOver.png",
+      "out" : "NextUp.png",
+      "down" : "NextDown.png"
+    },
+    "replay":{
+      "up": "ReplayUp.png",
+      "over": "ReplayOver.png",
+      "out" : "ReplayUp.png",
+      "down" : "ReplayDown.png"
+    },
+    "restart":{
+      "up": "RestartUp.png",
+      "over" : "RestartOver.png",
+      "out" : "RestartUp.png",
+      "down" : "RestartDown.png"
+    },
+    "resume" :{
+      "up":"ResumeUp.png",
+      "over": "ResumeOver.png",
+      "out": "ResumeUp.png",
+      "down": "ResumeDown.png"
+    },
+    "raj":{
+      "up":"raj btn0001.png",
+      "over":"raj btn0001.png",
+      "out":"raj btn0001.png",
+      "down":"raj btn0002.png"
+    },
+    "cj":{
+       "up":"cj btn0001.png",
+       "over":"cj btn0001.png",
+       "out":"cj btn0001.png",
+       "down":"cj btn0002.png"
+    },
+    "mollie":{
+        "up":"mollie btn0001.png",
+        "over":"mollie btn0001.png",
+        "out":"mollie btn0001.png",
+        "down": "mollie btn0002.png"
+    },
+    "kate":{
+      "up":"kate btn0001.png",
+      "over":"kate btn0001.png",
+      "out":"kate btn0001.png",
+      "down": "kate btn0002.png"
+    }
+  },
+  "buttonAnimations":{
+    "next":[
+          "NextUp-hi0001.png","NextUp-hi0002.png","NextUp-hi0003.png","NextUp-hi0004.png",
+          "NextUp-hi0005.png","NextUp-hi0006.png","NextUp-hi0007.png","NextUp-hi0008.png",
+          "NextUp-hi0009.png","NextUp-hi0010.png","NextUp-hi0011.png","NextUp-hi0012.png",
+          "NextUp-hi0013.png"
+      ]
+  },
+  "sceneImages": {
+    "bullyingBackground": "bullying-background.png"
+  },
+  "speechAnimations": {
+    "kate": {
+      "images": ["kate mouth frame0001.png", "kate mouth frame0002.png","kate mouth frame0002.png", "kate mouth frame0003.png"],
+      "mouthOffset": [30, 82]
+    },
+    "raj": {
+      "images": ["raj mouth frame0001.png", "raj mouth frame0002.png","raj mouth frame0002.png", "raj mouth frame0003.png"],
+      "mouthOffset": [75, 82]
+    },
+    "cj":{
+      "images": ["cj mouth frame0001.png", "cj mouth frame0002.png","cj mouth frame0002.png", "cj mouth frame0003.png", "cj mouth frame0004.png"],
+      "mouthOffset": [27, 75]  
+    },
+    "cj2":{
+      "images": ["cj mouth frame0001.png", "cj mouth frame0002.png","cj mouth frame0002.png", "cj mouth frame0003.png", "cj mouth frame0004.png"],
+      "mouthOffset": [25, 75]  
+    },
+    "mollie":{
+      "images": ["mollie mouth frame0001.png", "mollie mouth frame0002.png","mollie mouth frame0002.png", "mollie mouth frame0003.png"],
+      "mouthOffset": [70, 69]  
+    }
+  },
+  "soundKey": "activity-sounds",
+  "soundFile": [ "media/default/friends.m4a", "media/default/friends.ogg" ],
+  "sounds": {
+    "slide_01": [
+      0,
+      20.241678004535146,
+      false,
+      "slide_01"
+    ],
+    "slide_01a": [
+      21,
+      2.1833333333333336,
+      false,
+      "slide_01a"
+    ],
+    "slide_02": [
+      24,
+      51.95,
+      false,
+      "slide_02"
+    ],
+    "slide_03": [
+      76,
+      48.04167800453516,
+      false,
+      "slide_03"
+    ],
+    "slide_04": [
+      125,
+      50.695124716553295,
+      false,
+      "slide_04"
+    ],
+    "slide_05": [
+      176,
+      7.853650793650786,
+      false,
+      "slide_05"
+    ],
+    "slide_06": [
+      184,
+      2.6701360544217607,
+      false,
+      "slide_06"
+    ],
+    "slide01_cj": [
+      187,
+      7.645351473922915,
+      false,
+      "slide01_cj"
+    ],
+    "slide01_kate": [
+      195,
+      10.848004535147396,
+      false,
+      "slide01_kate"
+    ],
+    "slide01_mollie": [
+      206,
+      6.997346938775507,
+      false,
+      "slide01_mollie"
+    ],
+    "slide01_raj": [
+      213,
+      6.246893424036273,
+      false,
+      "slide01_raj"
+    ]
+  },
+  "soundSyncData":{
+    "slide01_cj":[0,3,2,3,2,3,3,3,3,2,4,4,2,2,3,3,3,3,3,3,3,0,4,4,3,0,4,4,0,3,3,4,4,3,2,4,4,3,3,3,3,2,2,4,2,2,2,2,4,2,4,2,4,3,4,4,4,4,4,4,4,4,4,3,2,3,3,3,2,2,3,2,2,0,3,3],
+    "slide01_kate":[0,0,3,2,2,2,3,2,2,2,2,0,3,3,0,2,3,3,2,2,2,3,2,3,0,0,2,3,0,2,2,2,2,3,2,3,2,2,0,0,0,2,3,3,2,3,3,2,3,2,2,3,3,2,2,3,2,2,0,0,0,0,0,0,0,2,3,2,2,2,3,2,3,3,3,2,3,3,3,3,3,3,3,3,3,2,2,0,0,0,0,0,0,3,2,3,3,2,3,2,3,2,2,3,3,3,3,0,0],
+    "slide01_mollie":[0,3,2,3,2,3,3,3,2,3,3,3,3,3,2,0,2,0,0,2,2,3,2,3,2,3,3,2,3,2,2,3,3,2,3,2,2,2,3,3,3,3,0,2,3,2,3,3,3,3,0,3,0,0,3,2,3,2,3,3,2,2,2,3,2,2,3,2,2,0],
+    "slide01_raj":[0,0,2,2,2,3,3,3,2,3,2,3,3,3,2,0,2,0,2,2,2,3,2,2,3,2,3,3,2,3,3,0,0,0,3,2,3,2,2,3,3,3,2,2,0,0,0,2,3,2,3,2,2,2,2,0,3,3,3,3,3,3,0],
+    "slide_04":[0,0,2,3,2,2,2,0,2,3,2,2,2,2,2,2,2,4,4,3,2,3,2,2,3,2,2,3,4,3,3,3,2,2,2,3,3,0,4,4,3,3,3,0,0,3,2,2,3,3,4,3,3,2,3,4,3,0,3,4,3,3,4,4,4,4,4,4,4,4,4,4,2,3,2,2,3,3,2,2,3,3,4,2,2,2,2,3,3,3,2,2,2,0,0,0,0,0,4,2,3,2,2,2,4,4,4,2,3,3,3,3,4,4,2,2,2,2,2,2,4,2,3,4,3,0,2,3,4,4,4,4,4,4,0,2,4,2,3,3,4,4,3,3,3,3,3,3,0,0,0,0,2,2,4,2,3,3,0,0,0,0,0,0,0,0,0,0,0,0,4,2,2,3,0,0,2,2,4,2,2,3,2,2,2,3,3,4,4,4,2,4,3,2,2,4,4,2,2,4,2,4,0,2,4,0,4,4,4,4,4,4,4,2,2,2,4,4,2,2,3,4,3,0,3,4,3,4,3,4,3,4,2,2,2,2,0,4,0,4,4,4,4,2,4,4,2,4,2,2,4,4,4,4,3,4,4,3,3,2,3,2,2,3,2,4,4,2,3,4,2,0,3,3,4,4,4,4,4,0,0,2,2,4,4,3,0,4,3,4,2,2,3,3,2,2,2,2,2,2,4,3,2,3,4,4,4,4,4,2,2,2,4,2,4,4,2,3,2,2,4,3,3,2,4,3,3,3,4,3,4,4,3,2,2,3,2,4,2,3,4,4,4,4,2,2,0,0,0,0,0,4,2,4,3,2,4,3,2,3,2,3,2,2,2,2,4,4,3,3,3,3,4,4,4,4,4,4,4,0,0,0,0,3,2,2,0,4,4,2,2,2,3,4,3,3,3,3,3,0,2,3,4,2,2,3,3,2,4,2,4,4,3,3,3,0,0,0,0,0,3,4,4,4,4,4,0,4,2,4,2,3,3,3,4,0,4,2,3,4,2,2,2,2,4,4,4,4,3,2,0,3,3,2,2,0,0,2,2,2,2,0,0,0,0,0,0,0,0,4,2,2,4,2,4,3,2,2,4,2,2,0,0,2,2,0,3,3,3,4,4,0,0,0,3,2,3,2,3,3,4,3,4,3,4,2,2]
+  }
+}

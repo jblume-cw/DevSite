@@ -1,0 +1,628 @@
+{
+  "autoScale": true,
+  "texture": "media/csc/texture.png",
+  "textureMap": "media/csc/texture.json",
+  "textureKey": "cscTextureKey",
+  "textureBg": "media/csc/texture-bg.png",
+  "textureBgMap": "media/csc/texture-bg.json",
+  "textureBgKey": "cscTextureKeyBg",
+  "textureShape": "media/csc/texture-shape.png",
+  "textureShapeMap": "media/csc/texture-shape.json",
+  "textureShapeKey": "cscTextureKeyShape",
+  "defaultComic": "ZAPCJ3263~274~1~1~0^TSq1459~162~-1~1~0~14~160~Click on me or the text bubbles to rotate, flip, move, resize and make edits.^TSq1460~304~-1~-1~0~14~160~Use the panel navigator at the bottom of the screen to view, edit, add and delete panels from your comic strip.^TNa1132~121~1~1~0~14~160~In this sample comic strip, CJ will teach you how to use the Comic Strip Creator.|ZBTSq1152.6~226.18360655737706~1~-1~0~15~170~Click the tools button to change the background, add characters, add text or change the shape of each panel.^TSq1492.59999999999997~226.18360655737706~-1~-1~0~15~170~Click the save button to save the comic strip you are working on and finish it later.^PCJ4332~239~-1~1~0|ZCPCJ4174~225~1~1~0^TSq1396.6~133.18360655737703~-1~1~0~15~170~Click the print button to print and share your comic strip.^TSq1389~269.8032786885246~-1~-1~0~15~170~Click the clear button to delete this comic strip and start your own.",
+  "selectionBox": {
+    "minWidth": 155,
+    "margin": 15
+  },
+  "images": {
+    "textEntryBg": "text-entry-bg.png"
+  },
+  "entities": {
+    "places": [
+      {
+        "id": "A",
+        "selector": ["BasementSelector0001.png", "BasementSelector0002.png"],
+        "element": "BasementSprite.png"
+      },
+      {
+        "id": "B",
+        "selector": ["CafeteriaSelector0001.png", "CafeteriaSelector0002.png"],
+        "element": "CafeteriaSprite.png"
+      },
+      {
+        "id": "C",
+        "selector": ["ClassroomSelector0001.png", "ClassroomSelector0002.png"],
+        "element": "ClassroomSprite.png"
+      },
+      {
+        "id": "D",
+        "selector": ["Classroom2Selector0001.png", "Classroom2Selector0002.png"],
+        "element": "Classroom2Sprite.png"
+      },
+      {
+        "id": "E",
+        "selector": ["GymSelector0001.png", "GymSelector0002.png"],
+        "element": "GymSprite.png"
+      },
+      {
+        "id": "F",
+        "selector": ["HallwaySelector0001.png", "HallwaySelector0002.png"],
+        "element": "HallwaySprite.png"
+      },
+      {
+        "id": "G",
+        "selector": ["Hallway2Selector0001.png", "Hallway2Selector0002.png"],
+        "element": "Hallway2Sprite.png"
+      },
+      {
+        "id": "H",
+        "selector": ["LibrarySelector0001.png", "LibrarySelector0002.png"],
+        "element": "LibrarySprite.png"
+      },
+      {
+        "id": "I",
+        "selector": ["LivingroomSelector0001.png", "LivingroomSelector0002.png"],
+        "element": "LivingroomSprite.png"
+      },
+      {
+        "id": "J",
+        "selector": ["SchoolSelector0001.png", "SchoolSelector0002.png"],
+        "element": "SchoolSprite.png"
+      },
+      {
+        "id": "K",
+        "selector": ["School2Selector0001.png", "School2Selector0002.png"],
+        "element": "School2Sprite.png"
+      }
+    ],
+    "people": [
+      {
+        "id": "CJ1",
+        "selector": ["CJAngryClosedSelector0001.png", "CJAngryClosedSelector0002.png"],
+        "element": "CJAngryClosedSprite.png"
+      },
+      {
+        "id": "CJ2",
+        "selector": ["CJAngryOpenSelector0001.png", "CJAngryOpenSelector0002.png"],
+        "element": "CJAngryOpenSprite.png"
+      },
+      {
+        "id": "CJ3",
+        "selector": ["CJClosedSelector0001.png", "CJClosedSelector0002.png"],
+        "element": "CJClosedSprite.png"
+      },
+      {
+        "id": "CJ4",
+        "selector": ["CJHappySelector0001.png", "CJHappySelector0002.png"],
+        "element": "CJHappySprite.png"
+      },
+      {
+        "id": "Ka1",
+        "selector": ["KateAngryClosedSelector0001.png", "KateAngryClosedSelector0002.png"],
+        "element": "KateAngryClosedSprite.png"
+      },
+      {
+        "id": "Ka2",
+        "selector": ["KateAngryOpenSelector0001.png", "KateAngryOpenSelector0002.png"],
+        "element": "KateAngryOpenSprite.png"
+      },
+      {
+        "id": "Ka3",
+        "selector": ["KateHappyClosedSelector0001.png", "KateHappyClosedSelector0002.png"],
+        "element": "KateHappyClosedSprite.png"
+      },
+      {
+        "id": "Ka4",
+        "selector": ["KateHappyOpenSelector0001.png", "KateHappyOpenSelector0002.png"],
+        "element": "KateHappyOpenSprite.png"
+      },
+      {
+        "id": "Ra1",
+        "selector": ["RajAngryClosedSelector0001.png", "RajAngryClosedSelector0002.png"],
+        "element": "RajAngryClosedSprite.png"
+      },
+      {
+        "id": "Ra2",
+        "selector": ["RajAngryOpenSelector0001.png", "RajAngryOpenSelector0002.png"],
+        "element": "RajAngryOpenSprite.png"
+      },
+      {
+        "id": "Ra3",
+        "selector": ["RajHappyClosedSelector0001.png", "RajHappyClosedSelector0002.png"],
+        "element": "RajHappyClosedSprite.png"
+      },
+      {
+        "id": "Ra4",
+        "selector": ["RajHappyOpenSelector0001.png", "RajHappyOpenSelector0002.png"],
+        "element": "RajHappyOpenSprite.png"
+      },
+      {
+        "id": "Mo1",
+        "selector": ["MollieAngryClosedSelector0001.png", "MollieAngryClosedSelector0002.png"],
+        "element": "MollieAngryClosedSprite.png"
+      },
+      {
+        "id": "Mo2",
+        "selector": ["MollieAngryOpenSelector0001.png", "MollieAngryOpenSelector0002.png"],
+        "element": "MollieAngryOpenSprite.png"
+      },
+      {
+        "id": "Mo3",
+        "selector": ["MollieHappyClosedSelector0001.png", "MollieHappyClosedSelector0002.png"],
+        "element": "MollieHappyClosedSprite.png"
+      },
+      {
+        "id": "Mo4",
+        "selector": ["MollieHappyOpenSelector0001.png", "MollieHappyOpenSelector0002.png"],
+        "element": "MollieHappyOpenSprite.png"
+      },
+      {
+        "id": "Ma1",
+        "selector": ["ManHappyClosedSelector0001.png", "ManHappyClosedSelector0002.png"],
+        "element": "ManHappyClosedSprite.png"
+      },
+      {
+        "id": "Ma2",
+        "selector": ["ManHappyOpenSelector0001.png", "ManHappyOpenSelector0002.png"],
+        "element": "ManHappyOpenSprite.png"
+      },
+      {
+        "id": "Wo1",
+        "selector": ["WomanHappyClosedSelector0001.png", "WomanHappyClosedSelector0002.png"],
+        "element": "WomanHappyClosedSprite.png"
+      },
+      {
+        "id": "Wo2",
+        "selector": ["WomanHappyOpenSelector0001.png", "WomanHappyOpenSelector0002.png"],
+        "element": "WomanHappyOpenSprite.png"
+      },
+      {
+        "id": "Co1",
+        "selector": ["CopHappyClosedSelector0001.png", "CopHappyClosedSelector0002.png"],
+        "element": "CopHappyClosedSprite.png"
+      },
+      {
+        "id": "Co2",
+        "selector": ["CopHappyOpenSelector0001.png", "CopHappyOpenSelector0002.png"],
+        "element": "CopHappyOpenSprite.png"
+      }
+    ],
+    "text": [
+      {
+        "id": "Sq1",
+        "selector": ["BubbleSquareLRCornerSelector0001.png", "BubbleSquareLRCornerSelector0002.png"],
+        "element": "rect-bubble-lg.png",
+        "carrot": { "element": "rect bubble carrot corner.png", "x": 250, "y": 25 },
+        "padding": 1.2,
+        "anchor": [0.5, 0.5],
+        "aspectWindow": [1.45, 1.55]
+      },
+      {
+        "id": "Sq2",
+        "selector": ["BubbleSquareLRSelector0001.png", "BubbleSquareLRSelector0002.png"],
+        "element": "rect-bubble-lg.png",
+        "carrot": { "element": "rect bubble carrot side.png", "x": 250, "y": -30 },
+        "padding": 1.2,
+        "anchor": [0.5, 0.5],
+        "aspectWindow": [1.45, 1.55]
+      },
+      {
+        "id": "Sq3",
+        "selector": ["BubbleSquareTBCornerSelector0001.png", "BubbleSquareTBCornerSelector0002.png"],
+        "element": "rect-bubble-lg.png",
+        "carrot": { "element": "rect bubble carrot bottom corner.png", "x": 30, "y": 150 },
+        "padding": 1.2,
+        "anchor": [0.5, 0.5],
+        "aspectWindow": [1.45, 1.55]
+      },
+      {
+        "id": "Sq4",
+        "selector": ["BubbleSquareTBSelector0001.png", "BubbleSquareTBSelector0002.png"],
+        "element": "rect-bubble-lg.png",
+        "carrot": { "element": "rect bubble carrot bottom.png", "x": -30, "y": 150 },
+        "padding": 1.2,
+        "anchor": [0.5, 0.5],
+        "aspectWindow": [1.45, 1.55]
+      },
+      {
+        "id": "Ov1",
+        "selector": ["BubbleOvalCornerSelector0001.png", "BubbleOvalCornerSelector0002.png"],
+        "element": "oval-bubble-lg.png",
+        "carrot": { "element": "oval bubble carrot corner.png", "x": 140, "y": 100 },
+        "padding": 1.4,
+        "anchor": [0.5, 0.45],
+        "aspectWindow": [1.45, 1.55]
+      },
+      {
+        "id": "Ov2",
+        "selector": ["BubbleOvalLRSelector0001.png", "BubbleOvalLRSelector0002.png"],
+        "element": "oval-bubble-lg.png",
+        "carrot": { "element": "oval bubble carrot side.png", "x": 245, "y": -37 },
+        "padding": 1.4,
+        "anchor": [0.5, 0.45],
+        "aspectWindow": [1.45, 1.55]
+      },
+      {
+        "id": "Ov3",
+        "selector": ["BubbleOvalTBSelector0001.png", "BubbleOvalTBSelector0002.png"],
+        "element": "oval-bubble-lg.png",
+        "carrot": { "element": "oval bubble carrot bottom.png", "x": -35, "y": 145 },
+        "padding": 1.4,
+        "anchor": [0.5, 0.45],
+        "aspectWindow": [1.45, 1.55]
+      },
+      {
+        "id": "Cl1",
+        "selector": ["BubbleCloudCornerSelector0001.png", "BubbleCloudCornerSelector0002.png"],
+        "element": "cloud-bubble-lg.png",
+        "carrot": { "element": "cloud bubble carrot corner.png", "x": 131, "y": 160 },
+        "padding": 1.5,
+        "anchor": [0.5, 0.4],
+        "aspectWindow": [1.45, 1.55]
+      },
+      {
+        "id": "Cl2",
+        "selector": ["BubbleCloudLRSelector0001.png", "BubbleCloudLRSelector0002.png"],
+        "element": "cloud-bubble-lg.png",
+        "carrot": { "element": "cloud bubble carrot side.png", "x": 235, "y": 0 },
+        "padding": 1.5,
+        "anchor": [0.5, 0.4],
+        "aspectWindow": [1.45, 1.55]
+      },
+      {
+        "id": "Cl3",
+        "selector": ["BubbleCloudTBSelector0001.png", "BubbleCloudTBSelector0002.png"],
+        "element": "cloud-bubble-lg.png",
+        "carrot": { "element": "cloud bubble carrot bottom.png", "x": -30, "y": 210 },
+        "padding": 1.5,
+        "anchor": [0.5, 0.4],
+        "aspectWindow": [1.45, 1.55]
+      },
+      {
+        "id": "St1",
+        "selector": ["BubbleStarCornerSelector0001.png", "BubbleStarCornerSelector0002.png"],
+        "element": "star-bubble-lg.png",
+        "carrot": { "element": "burst bubble upright carrot corner.png", "x": 0, "y": 165 },
+        "padding": 1.5,
+        "anchor": [0.5, 0.25],
+        "aspectWindow": [1.45, 1.55]
+      },
+      {
+        "id": "St2",
+        "selector": ["BubbleStarLRSelector0001.png", "BubbleStarLRSelector0002.png"],
+        "element": "star-bubble-lg-sideways.png",
+        "carrot": { "element": "burst bubble sideways carrot side.png", "x": 165, "y": -90 },
+        "padding": 1.5,
+        "anchor": [0.375, 0.45],
+        "aspectWindow": [1.2, 1.4]
+      },
+      {
+        "id": "St3",
+        "selector": ["BubbleStarTBSelector0001.png", "BubbleStarTBSelector0002.png"],
+        "element": "star-bubble-lg.png",
+        "carrot": { "element": "burst bubble upright carrot bottom.png", "x": -35, "y": 160 },
+        "padding": 1.5,
+        "anchor": [0.5, 0.25],
+        "aspectWindow": [1.45, 1.55]
+      },
+      {
+        "id": "Na1",
+        "selector": ["BubbleNarrationSelector0001.png", "BubbleNarrationSelector0002.png"],
+        "element": "rect-bubble-lg.png",
+        "carrot": { "element": "", "x": 0, "y": 0 },
+        "padding": 1.3,
+        "anchor": [0.5, 0.45],
+        "aspectWindow": [1.45, 1.55]
+      }
+    ],
+    "shapes": [
+      {
+        "id": "A",
+        "selector": ["PanelRectSelector0001.png", "PanelRectSelector0002.png"],
+        "mask": "PanelRectFrame2.png",
+        "border": "PanelRectFrame.png"
+      },
+      {
+        "id": "B",
+        "selector": ["PanelOvalSelector0001.png", "PanelOvalSelector0002.png"],
+        "mask": "PanelOvalFrame2.png",
+        "border": "PanelOvalFrame.png"
+      },
+      {
+        "id": "C",
+        "selector": ["PanelCloudSelector0001.png", "PanelCloudSelector0002.png"],
+        "mask": "PanelCloudFrame2.png",
+        "border": "PanelCloudFrame.png"
+      },
+      {
+        "id": "D",
+        "selector": ["PanelCloud2Selector0001.png", "PanelCloud2Selector0002.png"],
+        "mask": "PanelCloud2Frame2.png",
+        "border": "PanelCloud2Frame.png"
+      },
+      {
+        "id": "E",
+        "selector": ["PanelStarSelector0001.png", "PanelStarSelector0002.png"],
+        "mask": "PanelStarFrame2.png",
+        "border": "PanelStarFrame.png"
+      }
+    ]
+  },
+  "defaults": {
+    "border": "A",
+    "background": "",
+    "x": 320,
+    "y": 240,
+    "font": "normal"
+  },
+  "text": {
+    "introHeading": "Welcome to Comic Strip Creator.",
+    "introText": "In this activity, you will create a comic strip showing an anti-bullying message. You could create examples of people standing up for someone being bullied, showing care for a victim, standing up for themselves, using an \"I statement\", or anything you can imagine that has a positive message. When you are done you can print your comic strip to share what you have created.",
+    "playText": "Click the begin button to get started."
+  },
+  "backgrounds": {
+    "menu": "instructions-background.png",
+    "play": "creator-background.png",
+    "sceneBar": "panel surround.png",
+    "toolBar": "ToolsBackground.png",
+    "selectorBox": "sprite selector box.png",
+    "dialog": "dialog bg.png"
+  },
+  "editButtons": [
+    "edit_delete",
+    "edit_zup", "edit_zdown", "edit_scaleup", "edit_scaledown",
+    "edit_rotatecw", "edit_rotateccw", "edit_flipx", "edit_flipy"
+  ],
+  "buttons": {
+    "begin": {
+      "over": "btn_begin0002.png",
+      "out": "btn_begin0001.png",
+      "down": "btn_begin0002.png",
+      "up": "btn_begin0001.png"
+    },
+    "cancel": {
+      "over": "btn_cancel0002.png",
+      "out": "btn_cancel0001.png",
+      "down": "btn_cancel0002.png",
+      "up": "btn_cancel0001.png"
+    },
+    "clear": {
+      "over": "ClearButton0002.png",
+      "out": "ClearButton0001.png",
+      "down": "ClearButton0002.png",
+      "up": "ClearButton0001.png",
+      "x": 479,
+      "y": 3
+    },
+    "close": {
+      "over": "CloseX0002.png",
+      "out": "CloseX0001.png",
+      "down": "CloseX0002.png",
+      "up": "CloseX0001.png"
+    },
+    "ok": {
+      "over": "ok_btn0002.png",
+      "out": "ok_btn0001.png",
+      "down": "ok_btn0002.png",
+      "up": "ok_btn0001.png"
+    },
+    "print": {
+      "over": "PrintButton0002.png",
+      "out": "PrintButton0001.png",
+      "down": "PrintButton0002.png",
+      "up": "PrintButton0001.png",
+      "x": 321,
+      "y": 3
+    },
+    "save": {
+      "over": "SaveButton0002.png",
+      "out": "SaveButton0001.png",
+      "down": "SaveButton0002.png",
+      "up": "SaveButton0001.png",
+      "x": 163,
+      "y": 3
+    },
+    "tools": {
+      "over": "ToolsButton0002.png",
+      "out": "ToolsButton0001.png",
+      "down": "ToolsButton0002.png",
+      "up": "ToolsButton0001.png",
+      "x": 5,
+      "y": 3
+    },
+    "leftArrow": {
+      "over": "LeftArrow0002.png",
+      "out": "LeftArrow0001.png",
+      "down": "LeftArrow0002.png",
+      "up": "LeftArrow0001.png",
+      "deactivated": "LeftArrow deactivaated.png",
+      "comment": "this is spelled wrong in the packed texture, so its spelled wrong here to match..."
+    },
+    "rightArrow": {
+      "over": "RightArrow0002.png",
+      "out": "RightArrow0001.png",
+      "down": "RightArrow0002.png",
+      "up": "RightArrow0001.png",
+      "deactivated": "RightArrow deactivated.png"
+    },
+    "addPanel": {
+      "over": "AddPanel0002.png",
+      "out": "AddPanel0001.png",
+      "down": "AddPanel0002.png",
+      "up": "AddPanel0001.png"
+    },
+    "selectPanel": {
+      "over": "PanelNavigationButtonDisplay0003.png",
+      "out": "PanelNavigationButtonDisplay0001.png",
+      "down": "PanelNavigationButtonDisplay0003.png",
+      "up": "PanelNavigationButtonDisplay0001.png"
+    },
+    "selectedPanel": {
+      "over": "PanelNavigationButtonDisplay0004.png",
+      "out": "PanelNavigationButtonDisplay0002.png",
+      "down": "PanelNavigationButtonDisplay0004.png",
+      "up": "PanelNavigationButtonDisplay0004.png"
+    },
+    "places": {
+      "over": "places button0002.png",
+      "out": "places button0001.png",
+      "down": "places button0002.png",
+      "up": "places button0001.png"
+    },
+    "people": {
+      "over": "people button0002.png",
+      "out": "people button0001.png",
+      "down": "people button0002.png",
+      "up": "people button0001.png"
+    },
+    "text": {
+      "over": "text button0002.png",
+      "out": "text button0001.png",
+      "down": "text button0002.png",
+      "up": "text button0001.png"
+    },
+    "shapes": {
+      "over": "shape button0002.png",
+      "out": "shape button0001.png",
+      "down": "shape button0002.png",
+      "up": "shape button0001.png"
+    },
+    "edit_delete": {
+      "over": "btn_delete0002.png",
+      "out": "btn_delete0001.png",
+      "down": "btn_delete0002.png",
+      "up": "btn_delete0001.png",
+      "x": 0,
+      "y": 0
+    },
+    "edit_zup": {
+      "over": "btn_moveForeground0002.png",
+      "out": "btn_moveForeground0001.png",
+      "down": "btn_moveForeground0002.png",
+      "up": "btn_moveForeground0001.png",
+      "x": 1,
+      "y": 0
+    },
+    "edit_zdown": {
+      "over": "btn_moveBackground0002.png",
+      "out": "btn_moveBackground0001.png",
+      "down": "btn_moveBackground0002.png",
+      "up": "btn_moveBackground0001.png",
+      "x": 2,
+      "y": 0
+    },
+    "edit_scaleup": {
+      "over": "btn_scaleUp0002.png",
+      "out": "btn_scaleUp0001.png",
+      "down": "btn_scaleUp0002.png",
+      "up": "btn_scaleUp0001.png",
+      "x": 3,
+      "y": 0
+    },
+    "edit_scaledown": {
+      "over": "btn_scaleBack0002.png",
+      "out": "btn_scaleBack0001.png",
+      "down": "btn_scaleBack0002.png",
+      "up": "btn_scaleBack0001.png",
+      "x": 4,
+      "y": 0
+    },
+    "edit_rotatecw": {
+      "over": "btn_rotateCW0002.png",
+      "out": "btn_rotateCW0001.png",
+      "down": "btn_rotateCW0002.png",
+      "up": "btn_rotateCW0001.png",
+      "x": 0,
+      "y": 1
+    },
+    "edit_rotateccw": {
+      "over": "btn_rotateCCW0002.png",
+      "out": "btn_rotateCCW0001.png",
+      "down": "btn_rotateCCW0002.png",
+      "up": "btn_rotateCCW0001.png",
+      "x": 0,
+      "y": 2
+    },
+    "edit_flipx": {
+      "over": "btn_flipHorz0002.png",
+      "out": "btn_flipHorz0001.png",
+      "down": "btn_flipHorz0002.png",
+      "up": "btn_flipHorz0001.png",
+      "x": 0,
+      "y": 3
+    },
+    "edit_flipy": {
+      "over": "btn_flipVert0002.png",
+      "out": "btn_flipVert0001.png",
+      "down": "btn_flipVert0002.png",
+      "up": "btn_flipVert0001.png",
+      "x": 0,
+      "y": 4
+    },
+    "submit": {
+      "over": "SubmitButton0002.png",
+      "out": "SubmitButton0001.png",
+      "down": "SubmitButton0002.png",
+      "up": "SubmitButton0001.png",
+      "x": 0,
+      "y": 4
+    }
+  },
+  "fonts": {
+    "normal": {
+      "font": "14px 'Architects Daughter', cursive",
+      "fill": "black",
+      "align": "center",
+      "fontWeight": "bold",
+      "wordWrap": true
+    },
+    "bubble": {
+      "font": "@px 'Architects Daughter', cursive",
+      "fill": "black",
+      "align": "center",
+      "fontWeight": "bold",
+      "wordWrap": true
+    },
+    "introHeading": {
+      "font": "22px 'Cairo', sans-serif",
+      "fill": "black",
+      "align": "center",
+      "fontWeight": "bold"
+    },
+    "dialog": {
+      "font": "22px 'Cairo', sans-serif",
+      "fill": "black",
+      "align": "center",
+      "fontWeight": "bold",
+      "wordWrap": true,
+      "wordWrapWidth": 280
+    },
+    "introText": {
+      "font": "14px 'Cairo', sans-serif",
+      "fill": "black",
+      "align": "center",
+      "fontWeight": "bold",
+      "wordWrap": true,
+      "wordWrapWidth": 530
+    },
+    "introPlayText": {
+      "font": "18px 'Cairo', sans-serif",
+      "fill": "black",
+      "align": "center",
+      "fontWeight": "bold"
+    }
+  },
+  "soundKey": "cscSounds",
+  "soundFile": [
+    "media/csc/comic-strip-creator.m4a",
+    "media/csc/comic-strip-creator.ogg"
+  ],
+  "sounds": {
+    "instructions": [
+      0,
+      28.183333333333334,
+      false,
+      "instructions"
+    ]
+  }
+}
