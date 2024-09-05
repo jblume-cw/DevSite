@@ -1,0 +1,418 @@
+{
+  "resources": [
+    "output/HM4treasurehunt/treasurehunt-audio.ogg",
+    "output/HM4treasurehunt/treasurehunt-audio.m4a"
+  ],
+  "spritemap": {
+    "Batteries to flashlight": {
+      "start": 0,
+      "end": 1.7813378684807257,
+      "loop": false
+    },
+    "Bucket repeat": {
+      "start": 2,
+      "end": 5.381337868480726,
+      "loop": false
+    },
+    "Bucket to fountain": {
+      "start": 6,
+      "end": 7.535986394557823,
+      "loop": false
+    },
+    "Buried intro": {
+      "start": 8,
+      "end": 11.786666666666667,
+      "loop": false
+    },
+    "Carrot to horse": {
+      "start": 12,
+      "end": 13.674671201814059,
+      "loop": false
+    },
+    "Cave wrong": {
+      "start": 14,
+      "end": 17.51467120181406,
+      "loop": false
+    },
+    "Choose next location": {
+      "start": 18,
+      "end": 19.86265306122449,
+      "loop": false
+    },
+    "Cowboy repeat": {
+      "start": 20,
+      "end": 23.818684807256236,
+      "loop": false
+    },
+    "Cowboy wrong": {
+      "start": 24,
+      "end": 27.349319727891157,
+      "loop": false
+    },
+    "Dirt wrong": {
+      "start": 28,
+      "end": 31.893333333333334,
+      "loop": false
+    },
+    "Empty help buried": {
+      "start": 32,
+      "end": 34.03045351473923,
+      "loop": false
+    },
+    "Empty help hidden": {
+      "start": 35,
+      "end": 37.34984126984127,
+      "loop": false
+    },
+    "Empty help sunken": {
+      "start": 38,
+      "end": 39.99764172335601,
+      "loop": false
+    },
+    "Empty supplies bucket": {
+      "start": 40,
+      "end": 43.45301587301587,
+      "loop": false
+    },
+    "Empty supplies hidden": {
+      "start": 44,
+      "end": 47.424399092970525,
+      "loop": false
+    },
+    "Empty supplies sunken": {
+      "start": 48,
+      "end": 51.76571428571429,
+      "loop": false
+    },
+    "Farmer repeat": {
+      "start": 52,
+      "end": 55.658684807256236,
+      "loop": false
+    },
+    "Farmer wrong": {
+      "start": 56,
+      "end": 59.64800453514739,
+      "loop": false
+    },
+    "Flashlight repeat": {
+      "start": 60,
+      "end": 63.221337868480724,
+      "loop": false
+    },
+    "Flashlight to cave": {
+      "start": 64,
+      "end": 65.7173469387755,
+      "loop": false
+    },
+    "Flashlight wrong": {
+      "start": 66,
+      "end": 69.34401360544217,
+      "loop": false
+    },
+    "Found buried": {
+      "start": 70,
+      "end": 74.3989342403628,
+      "loop": false
+    },
+    "Found hidden": {
+      "start": 75,
+      "end": 79.41839002267574,
+      "loop": false
+    },
+    "Found sunken": {
+      "start": 80,
+      "end": 84.47437641723356,
+      "loop": false
+    },
+    "Fountain wrong": {
+      "start": 85,
+      "end": 88.38133786848073,
+      "loop": false
+    },
+    "Fountian repeat": {
+      "start": 89,
+      "end": 92.60535147392291,
+      "loop": false
+    },
+    "Garden repeat": {
+      "start": 93,
+      "end": 96.14666666666666,
+      "loop": false
+    },
+    "Get batteries": {
+      "start": 97,
+      "end": 100.83467120181406,
+      "loop": false
+    },
+    "Get carrot": {
+      "start": 101,
+      "end": 102.79201814058958,
+      "loop": false
+    },
+    "Get flashlight": {
+      "start": 103,
+      "end": 107.18133786848072,
+      "loop": false
+    },
+    "Get horse": {
+      "start": 108,
+      "end": 112.01068027210884,
+      "loop": false
+    },
+    "Get key": {
+      "start": 113,
+      "end": 114.17868480725623,
+      "loop": false
+    },
+    "Get money": {
+      "start": 115,
+      "end": 118.08265306122449,
+      "loop": false
+    },
+    "Get screwdriver": {
+      "start": 119,
+      "end": 123,
+      "loop": false
+    },
+    "Get SCUBA": {
+      "start": 123,
+      "end": 126.00265306122449,
+      "loop": false
+    },
+    "Get seeds": {
+      "start": 127,
+      "end": 131.78401360544217,
+      "loop": false
+    },
+    "Get shovel": {
+      "start": 132,
+      "end": 134.65068027210884,
+      "loop": false
+    },
+    "Get up bucket": {
+      "start": 135,
+      "end": 136.01868480725625,
+      "loop": false
+    },
+    "Get water": {
+      "start": 137,
+      "end": 138.46666666666667,
+      "loop": false
+    },
+    "Help batteries": {
+      "start": 139,
+      "end": 142.5626530612245,
+      "loop": false
+    },
+    "Help bucket": {
+      "start": 143,
+      "end": 147.29333333333332,
+      "loop": false
+    },
+    "Help carrot": {
+      "start": 148,
+      "end": 151.91467120181406,
+      "loop": false
+    },
+    "Help flashlight": {
+      "start": 152,
+      "end": 155.8453514739229,
+      "loop": false
+    },
+    "Help horse": {
+      "start": 156,
+      "end": 159.42401360544218,
+      "loop": false
+    },
+    "Help key": {
+      "start": 160,
+      "end": 162.84401360544217,
+      "loop": false
+    },
+    "Help money": {
+      "start": 163,
+      "end": 166.52068027210885,
+      "loop": false
+    },
+    "Help screwdriver": {
+      "start": 167,
+      "end": 171,
+      "loop": false
+    },
+    "Help SCUBA": {
+      "start": 171,
+      "end": 174.42133786848072,
+      "loop": false
+    },
+    "Help seeds": {
+      "start": 175,
+      "end": 178.66931972789115,
+      "loop": false
+    },
+    "Help shovel": {
+      "start": 179,
+      "end": 183.14931972789117,
+      "loop": false
+    },
+    "Help water": {
+      "start": 184,
+      "end": 187.95201814058956,
+      "loop": false
+    },
+    "Hidden intro": {
+      "start": 188,
+      "end": 192.06133786848073,
+      "loop": false
+    },
+    "Horse repeat": {
+      "start": 193,
+      "end": 196.14666666666668,
+      "loop": false
+    },
+    "Horse to cowboy": {
+      "start": 197,
+      "end": 198.48800453514738,
+      "loop": false
+    },
+    "Horse wrong": {
+      "start": 199,
+      "end": 202.92793650793652,
+      "loop": false
+    },
+    "Instructions 1": {
+      "start": 203,
+      "end": 204.70666666666668,
+      "loop": false
+    },
+    "Instructions 2": {
+      "start": 205,
+      "end": 210.89868480725625,
+      "loop": false
+    },
+    "Instructions 3": {
+      "start": 211,
+      "end": 218.23718820861677,
+      "loop": false
+    },
+    "Instructions 4": {
+      "start": 219,
+      "end": 223.09467120181407,
+      "loop": false
+    },
+    "Instructions 5": {
+      "start": 224,
+      "end": 233.89444444444445,
+      "loop": false
+    },
+    "Instructions 6 buried": {
+      "start": 234,
+      "end": 238.06401360544217,
+      "loop": false
+    },
+    "Instructions 6 hidden": {
+      "start": 239,
+      "end": 243.5226530612245,
+      "loop": false
+    },
+    "Instructions 6 sunken": {
+      "start": 244,
+      "end": 248.21868480725624,
+      "loop": false
+    },
+    "Key repeat": {
+      "start": 249,
+      "end": 251.90133786848074,
+      "loop": false
+    },
+    "Key to toolbox": {
+      "start": 252,
+      "end": 253.74401360544218,
+      "loop": false
+    },
+    "Lake wrong": {
+      "start": 254,
+      "end": 257.85068027210883,
+      "loop": false
+    },
+    "Menu": {
+      "start": 258,
+      "end": 259.05333333333334,
+      "loop": false
+    },
+    "Money to SCUBA": {
+      "start": 260,
+      "end": 261.69598639455785,
+      "loop": false
+    },
+    "Plant repeat": {
+      "start": 262,
+      "end": 265.53068027210884,
+      "loop": false
+    },
+    "Plant wrong": {
+      "start": 266,
+      "end": 269.6053514739229,
+      "loop": false
+    },
+    "Radio repeat": {
+      "start": 270,
+      "end": 273.4026530612245,
+      "loop": false
+    },
+    "Radio wrong": {
+      "start": 274,
+      "end": 278.2986848072562,
+      "loop": false
+    },
+    "Screwdriver to radio": {
+      "start": 279,
+      "end": 281.30931972789114,
+      "loop": false
+    },
+    "SCUBA repeat": {
+      "start": 282,
+      "end": 285.3813378684807,
+      "loop": false
+    },
+    "SCUBA to lake": {
+      "start": 286,
+      "end": 287.7013378684807,
+      "loop": false
+    },
+    "SCUBA wrong": {
+      "start": 288,
+      "end": 292.39467120181405,
+      "loop": false
+    },
+    "Seeds to farmer": {
+      "start": 293,
+      "end": 294.70666666666665,
+      "loop": false
+    },
+    "Shovel to dirt": {
+      "start": 295,
+      "end": 296.8026530612245,
+      "loop": false
+    },
+    "Splash": {
+      "start": 297,
+      "end": 301.39467120181405,
+      "loop": false
+    },
+    "Sunken intro": {
+      "start": 302,
+      "end": 305.8880045351474,
+      "loop": false
+    },
+    "Toolbox repeat": {
+      "start": 306,
+      "end": 309.3813378684807,
+      "loop": false
+    },
+    "Water Bucket to plant": {
+      "start": 310,
+      "end": 311.8933333333333,
+      "loop": false
+    }
+  }
+}

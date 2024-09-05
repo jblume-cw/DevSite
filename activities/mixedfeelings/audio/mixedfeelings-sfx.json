@@ -1,0 +1,38 @@
+{
+  "resources": [
+    "output/HM4mixedfeelingssfx/mixedfeelings-sfx.ogg",
+    "output/HM4mixedfeelingssfx/mixedfeelings-sfx.m4a"
+  ],
+  "spritemap": {
+    "correct": {
+      "start": 0,
+      "end": 0.5001360544217687,
+      "loop": false
+    },
+    "drop": {
+      "start": 1,
+      "end": 1.2514965986394557,
+      "loop": false
+    },
+    "fragmentpop": {
+      "start": 2,
+      "end": 3.4112698412698412,
+      "loop": false
+    },
+    "hint": {
+      "start": 4,
+      "end": 4.59984126984127,
+      "loop": false
+    },
+    "jeweldisappear": {
+      "start": 5,
+      "end": 5.2496825396825395,
+      "loop": false
+    },
+    "jeweltoslot": {
+      "start": 6,
+      "end": 6.599886621315193,
+      "loop": false
+    }
+  }
+}

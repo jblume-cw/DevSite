@@ -1,0 +1,734 @@
+{
+	"textures": [
+		{
+			"image": "general.png",
+			"format": "RGBA8888",
+			"size": {
+				"w": 979,
+				"h": 896
+			},
+			"scale": 1,
+			"frames": [
+				{
+					"filename": "background.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 800,
+						"h": 600
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 800,
+						"h": 600
+					},
+					"frame": {
+						"x": 1,
+						"y": 1,
+						"w": 800,
+						"h": 600
+					}
+				},
+				{
+					"filename": "logo.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 494,
+						"h": 200
+					},
+					"spriteSourceSize": {
+						"x": 4,
+						"y": 1,
+						"w": 486,
+						"h": 197
+					},
+					"frame": {
+						"x": 1,
+						"y": 603,
+						"w": 486,
+						"h": 197
+					}
+				},
+				{
+					"filename": "instructionsOver.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 147,
+						"h": 33
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 147,
+						"h": 32
+					},
+					"frame": {
+						"x": 489,
+						"y": 603,
+						"w": 147,
+						"h": 32
+					}
+				},
+				{
+					"filename": "dropTarget.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 134,
+						"h": 134
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 134,
+						"h": 133
+					},
+					"frame": {
+						"x": 638,
+						"y": 603,
+						"w": 134,
+						"h": 133
+					}
+				},
+				{
+					"filename": "dropTargetHi.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 134,
+						"h": 134
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 134,
+						"h": 133
+					},
+					"frame": {
+						"x": 489,
+						"y": 637,
+						"w": 134,
+						"h": 133
+					}
+				},
+				{
+					"filename": "dropTargetCorrect.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 110,
+						"h": 130
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 110,
+						"h": 121
+					},
+					"frame": {
+						"x": 774,
+						"y": 603,
+						"w": 110,
+						"h": 121
+					}
+				},
+				{
+					"filename": "playOver.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 113,
+						"h": 114
+					},
+					"spriteSourceSize": {
+						"x": 1,
+						"y": 2,
+						"w": 111,
+						"h": 110
+					},
+					"frame": {
+						"x": 774,
+						"y": 726,
+						"w": 111,
+						"h": 110
+					}
+				},
+				{
+					"filename": "dropTargetIncorrect.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 110,
+						"h": 130
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 110,
+						"h": 121
+					},
+					"frame": {
+						"x": 625,
+						"y": 738,
+						"w": 110,
+						"h": 121
+					}
+				},
+				{
+					"filename": "playUp.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 113,
+						"h": 114
+					},
+					"spriteSourceSize": {
+						"x": 1,
+						"y": 2,
+						"w": 111,
+						"h": 110
+					},
+					"frame": {
+						"x": 489,
+						"y": 772,
+						"w": 111,
+						"h": 110
+					}
+				},
+				{
+					"filename": "instructionsUp.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 147,
+						"h": 33
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 147,
+						"h": 32
+					},
+					"frame": {
+						"x": 737,
+						"y": 838,
+						"w": 147,
+						"h": 32
+					}
+				},
+				{
+					"filename": "menuOver.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 82,
+						"h": 30
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 82,
+						"h": 30
+					},
+					"frame": {
+						"x": 886,
+						"y": 838,
+						"w": 82,
+						"h": 30
+					}
+				},
+				{
+					"filename": "menuUp.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 82,
+						"h": 30
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 82,
+						"h": 30
+					},
+					"frame": {
+						"x": 602,
+						"y": 861,
+						"w": 82,
+						"h": 30
+					}
+				},
+				{
+					"filename": "jewel4Slot.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 26,
+						"h": 27
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 26,
+						"h": 27
+					},
+					"frame": {
+						"x": 686,
+						"y": 861,
+						"w": 26,
+						"h": 27
+					}
+				},
+				{
+					"filename": "jewel2Slot.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 19,
+						"h": 27
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 19,
+						"h": 27
+					},
+					"frame": {
+						"x": 714,
+						"y": 861,
+						"w": 19,
+						"h": 27
+					}
+				},
+				{
+					"filename": "jewel1Slot.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 26,
+						"h": 25
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 26,
+						"h": 25
+					},
+					"frame": {
+						"x": 886,
+						"y": 870,
+						"w": 26,
+						"h": 25
+					}
+				},
+				{
+					"filename": "jewel3Slot.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 25,
+						"h": 25
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 25,
+						"h": 25
+					},
+					"frame": {
+						"x": 914,
+						"y": 870,
+						"w": 25,
+						"h": 25
+					}
+				},
+				{
+					"filename": "circle4.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 95,
+						"h": 95
+					},
+					"spriteSourceSize": {
+						"x": 1,
+						"y": 1,
+						"w": 93,
+						"h": 93
+					},
+					"frame": {
+						"x": 1,
+						"y": 802,
+						"w": 93,
+						"h": 93
+					}
+				},
+				{
+					"filename": "circle4Hi.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 96,
+						"h": 95
+					},
+					"spriteSourceSize": {
+						"x": 1,
+						"y": 1,
+						"w": 93,
+						"h": 93
+					},
+					"frame": {
+						"x": 96,
+						"y": 802,
+						"w": 93,
+						"h": 93
+					}
+				},
+				{
+					"filename": "jewel4SlotLg.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 93,
+						"h": 92
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 93,
+						"h": 92
+					},
+					"frame": {
+						"x": 191,
+						"y": 802,
+						"w": 93,
+						"h": 92
+					}
+				},
+				{
+					"filename": "circle1.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 96,
+						"h": 95
+					},
+					"spriteSourceSize": {
+						"x": 2,
+						"y": 2,
+						"w": 92,
+						"h": 92
+					},
+					"frame": {
+						"x": 286,
+						"y": 802,
+						"w": 92,
+						"h": 92
+					}
+				},
+				{
+					"filename": "circle1Hi.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 96,
+						"h": 95
+					},
+					"spriteSourceSize": {
+						"x": 2,
+						"y": 2,
+						"w": 92,
+						"h": 92
+					},
+					"frame": {
+						"x": 380,
+						"y": 802,
+						"w": 92,
+						"h": 92
+					}
+				},
+				{
+					"filename": "puzzleOver.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 114,
+						"h": 114
+					},
+					"spriteSourceSize": {
+						"x": 2,
+						"y": 2,
+						"w": 110,
+						"h": 110
+					},
+					"frame": {
+						"x": 803,
+						"y": 1,
+						"w": 110,
+						"h": 110
+					}
+				},
+				{
+					"filename": "puzzleUp.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 114,
+						"h": 114
+					},
+					"spriteSourceSize": {
+						"x": 2,
+						"y": 2,
+						"w": 110,
+						"h": 110
+					},
+					"frame": {
+						"x": 803,
+						"y": 113,
+						"w": 110,
+						"h": 110
+					}
+				},
+				{
+					"filename": "jewel2SlotLg.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 66,
+						"h": 94
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 66,
+						"h": 94
+					},
+					"frame": {
+						"x": 803,
+						"y": 225,
+						"w": 66,
+						"h": 94
+					}
+				},
+				{
+					"filename": "circle2.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 95,
+						"h": 95
+					},
+					"spriteSourceSize": {
+						"x": 1,
+						"y": 2,
+						"w": 92,
+						"h": 92
+					},
+					"frame": {
+						"x": 803,
+						"y": 321,
+						"w": 92,
+						"h": 92
+					}
+				},
+				{
+					"filename": "circle2Hi.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 96,
+						"h": 95
+					},
+					"spriteSourceSize": {
+						"x": 1,
+						"y": 2,
+						"w": 92,
+						"h": 92
+					},
+					"frame": {
+						"x": 871,
+						"y": 225,
+						"w": 92,
+						"h": 92
+					}
+				},
+				{
+					"filename": "circle3.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 95,
+						"h": 96
+					},
+					"spriteSourceSize": {
+						"x": 1,
+						"y": 2,
+						"w": 92,
+						"h": 92
+					},
+					"frame": {
+						"x": 803,
+						"y": 415,
+						"w": 92,
+						"h": 92
+					}
+				},
+				{
+					"filename": "jewel1SlotLg.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 92,
+						"h": 92
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 92,
+						"h": 92
+					},
+					"frame": {
+						"x": 803,
+						"y": 509,
+						"w": 92,
+						"h": 92
+					}
+				},
+				{
+					"filename": "jewel3SlotLg.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 92,
+						"h": 92
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 92,
+						"h": 92
+					},
+					"frame": {
+						"x": 886,
+						"y": 603,
+						"w": 92,
+						"h": 92
+					}
+				},
+				{
+					"filename": "circle3Hi.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 96,
+						"h": 95
+					},
+					"spriteSourceSize": {
+						"x": 1,
+						"y": 2,
+						"w": 91,
+						"h": 91
+					},
+					"frame": {
+						"x": 887,
+						"y": 697,
+						"w": 91,
+						"h": 91
+					}
+				},
+				{
+					"filename": "hintDisabled.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 75,
+						"h": 30
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 75,
+						"h": 30
+					},
+					"frame": {
+						"x": 887,
+						"y": 790,
+						"w": 75,
+						"h": 30
+					}
+				},
+				{
+					"filename": "glare.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 39,
+						"h": 39
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 1,
+						"w": 39,
+						"h": 38
+					},
+					"frame": {
+						"x": 915,
+						"y": 1,
+						"w": 39,
+						"h": 38
+					}
+				},
+				{
+					"filename": "hintOver.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 75,
+						"h": 30
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 75,
+						"h": 30
+					},
+					"frame": {
+						"x": 897,
+						"y": 319,
+						"w": 75,
+						"h": 30
+					}
+				},
+				{
+					"filename": "hintUp.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 75,
+						"h": 30
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 75,
+						"h": 30
+					},
+					"frame": {
+						"x": 897,
+						"y": 351,
+						"w": 75,
+						"h": 30
+					}
+				}
+			]
+		}
+	],
+	"meta": {
+		"app": "https://www.codeandweb.com/texturepacker",
+		"version": "3.0",
+		"smartupdate": "$TexturePacker:SmartUpdate:2752c3aa1826867be1d36adc771ee0ac:86516b899adb6a496bb8017de21d0345:49afdaefc8003509a7dad15a6a269fdc$"
+	}
+}

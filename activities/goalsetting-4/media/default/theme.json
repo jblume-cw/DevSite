@@ -1,0 +1,134 @@
+{
+  "texture": "media/default/goalsetting-sprites.png",
+  "textureMap": "media/default/goalsetting-sprites.json",
+  "textureKey": "texture",
+  "data": "media/default/sceneData.json",
+  "fonts" : {
+    "lesson-title": { 
+      "font": "32px Lato", 
+      "fill": "#6e6591", 
+      "align": "left", 
+      "fontWeight": "400", 
+      "wordWrap": false 
+    },
+    "resume-prompt": { 
+      "font": "30px Lato", 
+      "fill": "#333333", 
+      "align": "center", 
+      "fontWeight": "900", 
+      "wordWrap": true, 
+      "wordWrapWidth": 400 
+    },
+    "lato-black-42-purple": { 
+      "font": "42px Lato", 
+      "fill": "#4b457a", 
+      "fontWeight": "900" 
+    },
+    "lato-reg-30-purple": { 
+      "font": "30px Lato", 
+      "fill": "#4b457a",
+      "fontWeight": "400"
+    },
+    "lato-black-42-white": { 
+      "font": "42px Lato", 
+      "fill": "#ffffff",
+      "fontWeight": "900"
+    },
+    "lato-reg-36-white": { 
+      "font": "36px Lato", 
+      "fill": "#ffffff",
+      "fontWeight": "400"
+    }
+  },
+  "sceneImages": {
+  },
+  "images": {
+    "back-disabled": "back disabled.png",
+    "next-disabled": "next disabled.png",
+    "top-bar": "top-bg.png",
+    "bottom-bar": "bottom-bg.png",
+    "resume-box": "resume-box.png",
+    "bg-gold": "bg-gold.png",
+    "bg-blue": "bg-blue.png",
+    "checkbox": "checkbox.png",
+    "checkmark": "checkmark.png",
+    "quinn-adult": "quinn-adult.png",
+    "paper": "paper.png",
+    "text-goal": "text-goal.png",
+    "text-monday": "text-monday.png",
+    "text-thursday": "text-thursday.png",
+    "text-saturday": "text-saturday.png"
+  },
+  "buttons": {
+   "next": {
+      "up": "next up.png",
+      "over": "next over.png",
+      "out": "next up.png",
+      "down": "next down.png"
+    },
+    "next-hi": {
+      "up": "next up hi.png",
+      "over": "next over hi.png",
+      "out": "next up hi.png",
+      "down": "next down hi.png"
+    },
+    "back": {
+      "up": "back up.png",
+      "over": "back over.png",
+      "out": "back up.png",
+      "down": "back down.png"
+    },
+    "replay": {
+      "up": "replay up.png",
+      "over": "replay over.png",
+      "out": "replay up.png",
+      "down": "replay down.png"
+    },
+    "worksheet": {
+      "up": "worksheet up.png",
+      "over": "worksheet over.png",
+      "out": "worksheet up.png",
+      "down": "worksheet down.png"
+    },
+    "continueBtn":{
+      "up": "continue up.png",
+      "over": "continue over.png",
+      "out": "continue up.png",
+      "down": "continue down.png"
+    },
+    "startOverBtn":{
+      "up": "start over up.png",
+      "over": "start over over.png",
+      "out": "start over up.png",
+      "down": "start over down.png"
+    }
+  },
+  "soundKey": "goalsetting",
+  "soundFile": [ "media/default/goalsetting-vo.m4a", "media/default/goalsetting-vo.ogg" ],
+  "sounds": {
+    "silence": [
+      0,
+      1,
+      false,
+      "silence"
+    ],
+    "Slide 2": [
+      1,
+      16.86297052154195,
+      false,
+      "Slide 2"
+    ],
+    "Slide 3": [
+      18,
+      21.347256235827665,
+      false,
+      "Slide 3"
+    ],
+    "Slide 4": [
+      40,
+      25.029319727891163,
+      false,
+      "Slide 4"
+    ]
+  }
+}

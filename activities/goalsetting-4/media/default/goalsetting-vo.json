@@ -1,0 +1,28 @@
+{
+  "sprite": {
+    "silence": [
+      0,
+      1,
+      false,
+      "silence"
+    ],
+    "Slide 2": [
+      1,
+      16.86297052154195,
+      false,
+      "Slide 2"
+    ],
+    "Slide 3": [
+      18,
+      21.347256235827665,
+      false,
+      "Slide 3"
+    ],
+    "Slide 4": [
+      40,
+      25.029319727891163,
+      false,
+      "Slide 4"
+    ]
+  }
+}

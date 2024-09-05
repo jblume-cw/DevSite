@@ -1,0 +1,129 @@
+{
+  "texture": "media/default/mindfulness-sprites.png",
+  "textureMap": "media/default/mindfulness-sprites.json",
+  "textureKey": "texture",
+  "data": "media/default/sceneData.json",
+  "fonts" : {
+    "lesson-title": { 
+      "font": "32px Lato", 
+      "fill": "#6e6591", 
+      "align": "left", 
+      "fontWeight": "400", 
+      "wordWrap": false 
+    },
+    "resume-prompt": { 
+      "font": "30px Lato", 
+      "fill": "#333333", 
+      "align": "center", 
+      "fontWeight": "900", 
+      "wordWrap": true, 
+      "wordWrapWidth": 400 
+    },
+    "lato-black-48-purple": { 
+      "font": "48px Lato", 
+      "fill": "#4b457a",
+      "fontWeight": "900"
+    },
+    "lato-reg-36-purple": { 
+      "font": "36px Lato", 
+      "fill": "#4b457a",
+      "fontWeight": "400"
+    },
+    "lato-black-60-purple": { 
+      "font": "60px Lato", 
+      "fill": "#4b457a",
+      "fontWeight": "900"
+    }
+  },
+  "sceneImages": {
+  },
+  "images": {
+    "back-disabled": "back disabled.png",
+    "next-disabled": "next disabled.png",
+    "top-bar": "top-bg.png",
+    "bottom-bar": "bottom-bg.png",
+    "resume-box": "resume-box.png",
+    "bg-yellow": "bg-yellow.png",
+    "glitter-jar": "glitter-jar.png",
+    "mindful-eating": "mindful-eating.png",
+    "quinn-yoga": "quinn-yoga.png"
+  },
+  "buttons": {
+   "next": {
+      "up": "next up.png",
+      "over": "next over.png",
+      "out": "next up.png",
+      "down": "next down.png"
+    },
+    "next-hi": {
+      "up": "next up hi.png",
+      "over": "next over hi.png",
+      "out": "next up hi.png",
+      "down": "next down hi.png"
+    },
+    "back": {
+      "up": "back up.png",
+      "over": "back over.png",
+      "out": "back up.png",
+      "down": "back down.png"
+    },
+    "replay": {
+      "up": "replay up.png",
+      "over": "replay over.png",
+      "out": "replay up.png",
+      "down": "replay down.png"
+    },
+    "worksheet": {
+      "up": "worksheet up.png",
+      "over": "worksheet over.png",
+      "out": "worksheet up.png",
+      "down": "worksheet down.png"
+    },
+    "continueBtn":{
+      "up": "continue up.png",
+      "over": "continue over.png",
+      "out": "continue up.png",
+      "down": "continue down.png"
+    },
+    "startOverBtn":{
+      "up": "start over up.png",
+      "over": "start over over.png",
+      "out": "start over up.png",
+      "down": "start over down.png"
+    }
+  },
+  "soundKey": "introduction",
+  "soundFile": [ "media/default/mindfulness-vo.m4a", "media/default/mindfulness-vo.ogg" ],
+  "sounds": {
+    "silence": [
+      0,
+      1,
+      false,
+      "silence"
+    ],
+    "Slide 2": [
+      1,
+      19.497256235827663,
+      false,
+      "Slide 2"
+    ],
+    "Slide 3": [
+      21,
+      16.954444444444448,
+      false,
+      "Slide 3"
+    ],
+    "Slide 5": [
+      38,
+      28.602653061224487,
+      false,
+      "Slide 5"
+    ],
+    "Slide 6": [
+      67,
+      19.39521541950114,
+      false,
+      "Slide 6"
+    ]
+  }
+}

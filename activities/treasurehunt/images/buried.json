@@ -1,0 +1,587 @@
+{
+	"textures": [
+		{
+			"image": "buried.png",
+			"format": "RGBA8888",
+			"size": {
+				"w": 1688,
+				"h": 984
+			},
+			"scale": 1,
+			"frames": [
+				{
+					"filename": "treasureBackground.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 800,
+						"h": 600
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 800,
+						"h": 600
+					},
+					"frame": {
+						"x": 1,
+						"y": 1,
+						"w": 800,
+						"h": 600
+					}
+				},
+				{
+					"filename": "mapBuried.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 782,
+						"h": 588
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 782,
+						"h": 588
+					},
+					"frame": {
+						"x": 803,
+						"y": 1,
+						"w": 782,
+						"h": 588
+					}
+				},
+				{
+					"filename": "dirt0.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 459,
+						"h": 198
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 459,
+						"h": 198
+					},
+					"frame": {
+						"x": 1,
+						"y": 603,
+						"w": 459,
+						"h": 198
+					}
+				},
+				{
+					"filename": "mound.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 369,
+						"h": 180
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 369,
+						"h": 180
+					},
+					"frame": {
+						"x": 1,
+						"y": 803,
+						"w": 369,
+						"h": 180
+					}
+				},
+				{
+					"filename": "dirt1.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 371,
+						"h": 125
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 371,
+						"h": 125
+					},
+					"frame": {
+						"x": 462,
+						"y": 603,
+						"w": 371,
+						"h": 125
+					}
+				},
+				{
+					"filename": "dirt2.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 215,
+						"h": 139
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 215,
+						"h": 139
+					},
+					"frame": {
+						"x": 835,
+						"y": 591,
+						"w": 215,
+						"h": 139
+					}
+				},
+				{
+					"filename": "bucketUsed.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 89,
+						"h": 250
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 89,
+						"h": 250
+					},
+					"frame": {
+						"x": 1587,
+						"y": 1,
+						"w": 89,
+						"h": 250
+					}
+				},
+				{
+					"filename": "bucketFullUp.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 108,
+						"h": 124
+					},
+					"spriteSourceSize": {
+						"x": 5,
+						"y": 7,
+						"w": 100,
+						"h": 114
+					},
+					"frame": {
+						"x": 1587,
+						"y": 253,
+						"w": 100,
+						"h": 114
+					}
+				},
+				{
+					"filename": "bucketOver.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 108,
+						"h": 125
+					},
+					"spriteSourceSize": {
+						"x": 5,
+						"y": 8,
+						"w": 100,
+						"h": 114
+					},
+					"frame": {
+						"x": 1587,
+						"y": 369,
+						"w": 100,
+						"h": 114
+					}
+				},
+				{
+					"filename": "farmerUnused.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 184,
+						"h": 296
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 176,
+						"h": 296
+					},
+					"frame": {
+						"x": 1052,
+						"y": 591,
+						"w": 176,
+						"h": 296
+					}
+				},
+				{
+					"filename": "farmerUsed.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 175,
+						"h": 258
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 175,
+						"h": 258
+					},
+					"frame": {
+						"x": 1230,
+						"y": 591,
+						"w": 175,
+						"h": 258
+					}
+				},
+				{
+					"filename": "fountainUnused.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 174,
+						"h": 227
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 174,
+						"h": 227
+					},
+					"frame": {
+						"x": 1407,
+						"y": 591,
+						"w": 174,
+						"h": 227
+					}
+				},
+				{
+					"filename": "fountainUsed.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 174,
+						"h": 173
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 174,
+						"h": 173
+					},
+					"frame": {
+						"x": 372,
+						"y": 803,
+						"w": 174,
+						"h": 173
+					}
+				},
+				{
+					"filename": "plantUsed.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 143,
+						"h": 238
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 143,
+						"h": 238
+					},
+					"frame": {
+						"x": 548,
+						"y": 730,
+						"w": 143,
+						"h": 238
+					}
+				},
+				{
+					"filename": "bucketUnused.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 133,
+						"h": 250
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 133,
+						"h": 250
+					},
+					"frame": {
+						"x": 693,
+						"y": 730,
+						"w": 133,
+						"h": 250
+					}
+				},
+				{
+					"filename": "dirt3.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 183,
+						"h": 111
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 183,
+						"h": 111
+					},
+					"frame": {
+						"x": 828,
+						"y": 732,
+						"w": 183,
+						"h": 111
+					}
+				},
+				{
+					"filename": "seedsOver.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 135,
+						"h": 127
+					},
+					"spriteSourceSize": {
+						"x": 7,
+						"y": 6,
+						"w": 122,
+						"h": 115
+					},
+					"frame": {
+						"x": 828,
+						"y": 845,
+						"w": 122,
+						"h": 115
+					}
+				},
+				{
+					"filename": "bucketFullOver.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 109,
+						"h": 124
+					},
+					"spriteSourceSize": {
+						"x": 5,
+						"y": 7,
+						"w": 99,
+						"h": 114
+					},
+					"frame": {
+						"x": 1587,
+						"y": 485,
+						"w": 99,
+						"h": 114
+					}
+				},
+				{
+					"filename": "bucketUp.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 109,
+						"h": 125
+					},
+					"spriteSourceSize": {
+						"x": 5,
+						"y": 8,
+						"w": 99,
+						"h": 114
+					},
+					"frame": {
+						"x": 1583,
+						"y": 601,
+						"w": 99,
+						"h": 114
+					}
+				},
+				{
+					"filename": "seedsUp.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 134,
+						"h": 127
+					},
+					"spriteSourceSize": {
+						"x": 6,
+						"y": 6,
+						"w": 122,
+						"h": 115
+					},
+					"frame": {
+						"x": 1230,
+						"y": 851,
+						"w": 122,
+						"h": 115
+					}
+				},
+				{
+					"filename": "plantUnused.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 109,
+						"h": 124
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 109,
+						"h": 124
+					},
+					"frame": {
+						"x": 1354,
+						"y": 851,
+						"w": 109,
+						"h": 124
+					}
+				},
+				{
+					"filename": "shovelOver.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 122,
+						"h": 152
+					},
+					"spriteSourceSize": {
+						"x": 8,
+						"y": 7,
+						"w": 109,
+						"h": 140
+					},
+					"frame": {
+						"x": 1465,
+						"y": 820,
+						"w": 109,
+						"h": 140
+					}
+				},
+				{
+					"filename": "shovel.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 61,
+						"h": 92
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 61,
+						"h": 92
+					},
+					"frame": {
+						"x": 1583,
+						"y": 717,
+						"w": 61,
+						"h": 92
+					}
+				},
+				{
+					"filename": "shovelUp.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 122,
+						"h": 152
+					},
+					"spriteSourceSize": {
+						"x": 8,
+						"y": 7,
+						"w": 109,
+						"h": 140
+					},
+					"frame": {
+						"x": 1576,
+						"y": 820,
+						"w": 109,
+						"h": 140
+					}
+				},
+				{
+					"filename": "seeds.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 74,
+						"h": 67
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 74,
+						"h": 67
+					},
+					"frame": {
+						"x": 462,
+						"y": 730,
+						"w": 74,
+						"h": 67
+					}
+				},
+				{
+					"filename": "bucket.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 48,
+						"h": 64
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 48,
+						"h": 64
+					},
+					"frame": {
+						"x": 952,
+						"y": 845,
+						"w": 48,
+						"h": 64
+					}
+				},
+				{
+					"filename": "bucketFull.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 48,
+						"h": 64
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 48,
+						"h": 64
+					},
+					"frame": {
+						"x": 1002,
+						"y": 845,
+						"w": 48,
+						"h": 64
+					}
+				}
+			]
+		}
+	],
+	"meta": {
+		"app": "https://www.codeandweb.com/texturepacker",
+		"version": "3.0",
+		"smartupdate": "$TexturePacker:SmartUpdate:174b9acba845f641e59df5fb54afad8e:a716e2998f83433273c81a74df5a388a:b982c425ccf1e161d3a78de07bf66b6b$"
+	}
+}

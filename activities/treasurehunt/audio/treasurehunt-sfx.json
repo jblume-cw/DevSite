@@ -1,0 +1,33 @@
+{
+  "resources": [
+    "output/HM4treasurehuntsfx/treasurehunt-sfx.ogg",
+    "output/HM4treasurehuntsfx/treasurehunt-sfx.m4a"
+  ],
+  "spritemap": {
+    "correct": {
+      "start": 0,
+      "end": 1.0382993197278911,
+      "loop": false
+    },
+    "shovel": {
+      "start": 2,
+      "end": 2.565328798185941,
+      "loop": false
+    },
+    "supplyitem": {
+      "start": 3,
+      "end": 3.7449206349206348,
+      "loop": false
+    },
+    "travel": {
+      "start": 4,
+      "end": 10.866621315192743,
+      "loop": false
+    },
+    "treasure": {
+      "start": 11,
+      "end": 14.89514739229025,
+      "loop": false
+    }
+  }
+}

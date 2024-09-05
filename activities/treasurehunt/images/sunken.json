@@ -1,0 +1,566 @@
+{
+	"textures": [
+		{
+			"image": "sunken.png",
+			"format": "RGBA8888",
+			"size": {
+				"w": 1826,
+				"h": 1424
+			},
+			"scale": 1,
+			"frames": [
+				{
+					"filename": "rays.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 800,
+						"h": 600
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 800,
+						"h": 600
+					},
+					"frame": {
+						"x": 1,
+						"y": 1,
+						"w": 800,
+						"h": 600
+					}
+				},
+				{
+					"filename": "water.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 800,
+						"h": 540
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 800,
+						"h": 540
+					},
+					"frame": {
+						"x": 803,
+						"y": 1,
+						"w": 800,
+						"h": 540
+					}
+				},
+				{
+					"filename": "scubaOver.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 132,
+						"h": 131
+					},
+					"spriteSourceSize": {
+						"x": 6,
+						"y": 4,
+						"w": 123,
+						"h": 120
+					},
+					"frame": {
+						"x": 1605,
+						"y": 1,
+						"w": 123,
+						"h": 120
+					}
+				},
+				{
+					"filename": "carrotOver.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 100,
+						"h": 143
+					},
+					"spriteSourceSize": {
+						"x": 6,
+						"y": 6,
+						"w": 89,
+						"h": 129
+					},
+					"frame": {
+						"x": 1730,
+						"y": 1,
+						"w": 89,
+						"h": 129
+					}
+				},
+				{
+					"filename": "scubaUp.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 132,
+						"h": 131
+					},
+					"spriteSourceSize": {
+						"x": 6,
+						"y": 4,
+						"w": 123,
+						"h": 120
+					},
+					"frame": {
+						"x": 1605,
+						"y": 123,
+						"w": 123,
+						"h": 120
+					}
+				},
+				{
+					"filename": "carrotUp.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 99,
+						"h": 143
+					},
+					"spriteSourceSize": {
+						"x": 6,
+						"y": 6,
+						"w": 89,
+						"h": 129
+					},
+					"frame": {
+						"x": 1730,
+						"y": 132,
+						"w": 89,
+						"h": 129
+					}
+				},
+				{
+					"filename": "horseOver.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 126,
+						"h": 150
+					},
+					"spriteSourceSize": {
+						"x": 4,
+						"y": 6,
+						"w": 116,
+						"h": 140
+					},
+					"frame": {
+						"x": 1605,
+						"y": 245,
+						"w": 116,
+						"h": 140
+					}
+				},
+				{
+					"filename": "moneyOver.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 109,
+						"h": 152
+					},
+					"spriteSourceSize": {
+						"x": 5,
+						"y": 6,
+						"w": 100,
+						"h": 143
+					},
+					"frame": {
+						"x": 1723,
+						"y": 263,
+						"w": 100,
+						"h": 143
+					}
+				},
+				{
+					"filename": "horseUp.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 126,
+						"h": 150
+					},
+					"spriteSourceSize": {
+						"x": 5,
+						"y": 6,
+						"w": 116,
+						"h": 140
+					},
+					"frame": {
+						"x": 1605,
+						"y": 387,
+						"w": 116,
+						"h": 140
+					}
+				},
+				{
+					"filename": "moneyUp.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 109,
+						"h": 152
+					},
+					"spriteSourceSize": {
+						"x": 5,
+						"y": 6,
+						"w": 100,
+						"h": 143
+					},
+					"frame": {
+						"x": 1723,
+						"y": 408,
+						"w": 100,
+						"h": 143
+					}
+				},
+				{
+					"filename": "cowboyUnused.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 103,
+						"h": 238
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 103,
+						"h": 238
+					},
+					"frame": {
+						"x": 1605,
+						"y": 529,
+						"w": 103,
+						"h": 238
+					}
+				},
+				{
+					"filename": "treasure.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 800,
+						"h": 479
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 800,
+						"h": 479
+					},
+					"frame": {
+						"x": 803,
+						"y": 543,
+						"w": 800,
+						"h": 479
+					}
+				},
+				{
+					"filename": "mapSunken.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 782,
+						"h": 588
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 782,
+						"h": 588
+					},
+					"frame": {
+						"x": 1,
+						"y": 603,
+						"w": 782,
+						"h": 588
+					}
+				},
+				{
+					"filename": "scubaUnused.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 295,
+						"h": 213
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 295,
+						"h": 213
+					},
+					"frame": {
+						"x": 1,
+						"y": 1193,
+						"w": 295,
+						"h": 213
+					}
+				},
+				{
+					"filename": "scubaUsed.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 295,
+						"h": 213
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 295,
+						"h": 213
+					},
+					"frame": {
+						"x": 298,
+						"y": 1193,
+						"w": 295,
+						"h": 213
+					}
+				},
+				{
+					"filename": "gardenUnused.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 238,
+						"h": 197
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 238,
+						"h": 197
+					},
+					"frame": {
+						"x": 595,
+						"y": 1193,
+						"w": 238,
+						"h": 197
+					}
+				},
+				{
+					"filename": "fish.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 650,
+						"h": 159
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 650,
+						"h": 159
+					},
+					"frame": {
+						"x": 785,
+						"y": 1024,
+						"w": 650,
+						"h": 159
+					}
+				},
+				{
+					"filename": "lake.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 388,
+						"h": 132
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 388,
+						"h": 132
+					},
+					"frame": {
+						"x": 1437,
+						"y": 1024,
+						"w": 388,
+						"h": 132
+					}
+				},
+				{
+					"filename": "cowboyUsed.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 235,
+						"h": 238
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 235,
+						"h": 238
+					},
+					"frame": {
+						"x": 835,
+						"y": 1185,
+						"w": 235,
+						"h": 238
+					}
+				},
+				{
+					"filename": "horseUnused.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 252,
+						"h": 231
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 243,
+						"h": 231
+					},
+					"frame": {
+						"x": 1072,
+						"y": 1185,
+						"w": 243,
+						"h": 231
+					}
+				},
+				{
+					"filename": "horseUsed.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 242,
+						"h": 231
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 242,
+						"h": 231
+					},
+					"frame": {
+						"x": 1317,
+						"y": 1185,
+						"w": 242,
+						"h": 231
+					}
+				},
+				{
+					"filename": "gardenUsed.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 238,
+						"h": 197
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 238,
+						"h": 197
+					},
+					"frame": {
+						"x": 1561,
+						"y": 1158,
+						"w": 238,
+						"h": 197
+					}
+				},
+				{
+					"filename": "scuba.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 72,
+						"h": 70
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 72,
+						"h": 70
+					},
+					"frame": {
+						"x": 1710,
+						"y": 553,
+						"w": 72,
+						"h": 70
+					}
+				},
+				{
+					"filename": "carrot.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 39,
+						"h": 83
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 39,
+						"h": 83
+					},
+					"frame": {
+						"x": 1784,
+						"y": 553,
+						"w": 39,
+						"h": 83
+					}
+				},
+				{
+					"filename": "horse.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 65,
+						"h": 90
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 65,
+						"h": 90
+					},
+					"frame": {
+						"x": 1710,
+						"y": 625,
+						"w": 65,
+						"h": 90
+					}
+				},
+				{
+					"filename": "money.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 48,
+						"h": 92
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 48,
+						"h": 92
+					},
+					"frame": {
+						"x": 1777,
+						"y": 638,
+						"w": 48,
+						"h": 92
+					}
+				}
+			]
+		}
+	],
+	"meta": {
+		"app": "https://www.codeandweb.com/texturepacker",
+		"version": "3.0",
+		"smartupdate": "$TexturePacker:SmartUpdate:94f94b5829d649ee7457bf49695fdbd4:dc1d322877d90c6a84190ce185465846:d20fcfbe5ab33aca0d488fa96cafcde6$"
+	}
+}

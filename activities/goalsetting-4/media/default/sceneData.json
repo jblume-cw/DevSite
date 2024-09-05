@@ -1,0 +1,647 @@
+{
+	"play": {
+    	"start": "resumeFork",
+    	"persist": [ "lessonLocation" ],
+    	"modelType": "basic",
+    	"showPlaythrough": false,
+    	"global": {
+    		"actors": {
+				"topBar": {
+					"name": "topBar",
+					"type": "decoration",
+					"image": "top-bar",
+					"location": [0, 0]
+				},
+				"bottomBar": {
+					"name": "bottomBar",
+					"type": "decoration",
+					"image": "bottom-bar",
+					"location": [0, 515]
+				},
+				"lessonTitle":{
+					"name": "lessonTitle",
+					"type": "text",
+					"text": "Goal Setting",
+					"font": "lesson-title",
+					"location": [ 19, 16 ]
+				},
+				"backBtn": {
+					"name": "backBtn",
+					"type": "button",
+					"variable": "backBtn",
+					"image": "back",
+					"location": [422, 538]
+				},
+				"backBtnDisabled": {
+					"name": "backBtnDisabled",
+					"type": "decoration",
+					"image": "back-disabled",
+					"location": [422, 538]
+				},
+				"replayBtn": {
+					"name": "replayBtn",
+					"type": "button",
+					"variable": "replayBtn",
+					"image": "replay",
+					"location": [569, 527]
+				},
+				"nextBtn": {
+					"name": "nextBtn",
+					"type": "button",
+					"image": "next",
+					"variable": "nextBtn",
+					"location": [644, 538]
+				},
+				"nextBtnHi": {
+					"name": "nextBtnHi",
+					"type": "button",
+					"image": "next-hi",
+					"variable": "nextBtn",
+					"location": [644, 538]
+				},
+				"nextBtnDisabled": {
+					"name": "nextBtnDisabled",
+					"type": "decoration",
+					"image": "next-disabled",
+					"location": [644, 538]
+				},
+				"worksheetBtn": {
+					"name": "worksheetBtn",
+					"type": "button",
+					"image": "worksheet",
+					"variable": "worksheetBtn",
+					"location": [22, 531]
+				},
+				"contentBackdrop": {
+					"name": "contentBackdrop",
+					"type": "rectangle",
+					"start": [ 0, 65 ],
+					"color": "0xf9f9f9",
+					"width": 800,
+					"height": 450,
+					"roundness": "1"
+				}
+			},
+			"outcomes": [],
+			"actions": []
+    	},
+		"scenes": {
+			"resumeFork": {
+				"id": "resumeFork",
+				"background": "none",
+				"actors": [
+					{
+						"name": "backdrop",
+						"type": "rectangle",
+						"start": [ 0, 0 ],
+						"color": "0xf8f8f8",
+						"width": 800,
+						"height": 600,
+						"roundness": "10"
+					},
+					{
+						"name": "resumeBox",
+						"type": "decoration",
+						"image": "resume-box",
+						"location": [168, 88]
+					},
+					{
+						"name": "resumePrompt",
+						"type": "text",
+						"text": "You have already completed part of this lesson.",
+						"font": "resume-prompt",
+						"location": [203, 197]
+					},
+					{
+						"name": "continueBtn",
+						"type": "button",
+						"location": [284, 339],
+						"image": "continueBtn",
+						"variable": "continueBtn"
+					},
+					{
+						"name": "startOverBtn",
+						"type": "button",
+						"location": [284, 287],
+						"image": "startOverBtn",
+						"variable": "startOverBtn"
+					}
+				],
+				"outcomes": {
+					"skipResume": {
+						"events": { "lessonLocation": "undefined" },
+						"actions": [
+							{ "type": "scene", "args": ["slide1"] }
+						]
+					},
+					"continue": {
+						"events": { "continueBtn": "*" },
+						"actions": [
+							{ "type": "scene", "args": [ "$lessonLocation" ] }
+						]
+					},
+					"startOver": {
+						"events": { "startOverBtn": "*" },
+						"actions": [
+							{ "type": "scene", "args": [ "slide1" ] }
+						]
+					}
+				},
+				"actions": [
+					{ "type": "check-outcomes", "args": [ "lessonLocation" ] }
+				]
+			},
+
+			"slide1": {
+		        "id": "slide1",
+		        "background": "none",
+		        "actors": [
+		        	{ "type": "reference", "name": "contentBackdrop" },
+		        	{ "type": "reference", "name": "topBar" },
+					{ "type": "reference", "name": "bottomBar" },
+		        	{ "type": "reference", "name": "lessonTitle" },
+					{ "type": "reference", "name": "nextBtn" },
+					{ "type": "reference", "name": "replayBtn" },
+					{ "type": "reference", "name": "backBtnDisabled" }, 
+					{
+						"name": "worksheetBtn",
+						"type": "url-button",
+						"image": "worksheet",
+						"variable": "worksheetBtn",
+						"location": [22, 531],
+						"url": "GoalSettingLessonWorksheet.pdf"
+					},            
+					{
+						"name": "slide1Animation",
+						"type": "wistia",
+						"location": [0, 65],
+						"size": [800, 450],
+						"video": "tdt6zlahw7",
+						"hideCloseButton": true,
+						"variable": "slide1Animation",
+						"blockerAlpha": 0.0,
+						"autoplay": true
+					}
+		        ],
+				"outcomes": {
+					"nextClicked" : {
+						"events": { "nextBtn": "*" },
+						"actions": [ 
+							{ "type": "choice", "args": [ "nextBtn", 0, true ] },
+							{ "type": "scene", "args": [ "slide2" ] }
+						]
+					},
+					"replayClicked": {
+						"events": { "replayBtn": "*" },
+						"actions": [
+							{ "type": "choice", "args": [ "replayBtn", 0, true ] },
+							{ "type": "scene", "args": [ "emptyReplayScene" ] },
+							{ "type": "scene", "args": [ "slide1" ] }
+						]
+					},
+					"animationFinished": {
+						"events": { "slide1Animation": "finished" },
+						"actions": [
+							{ "type": "remove-actor", "args": ["nextBtn"] },
+							{ "type": "add-actor", "args": [
+								{
+									"name": "nextBtnHi",
+									"type": "reference"
+								}
+							] }
+						]
+					}
+				},
+				"actions": []
+		    },
+
+			"slide2": {
+		        "id": "slide2",
+		        "background": "none",
+		        "actors": [
+		        	{ "type": "reference", "name": "topBar" },
+					{ "type": "reference", "name": "bottomBar" },
+		        	{ "type": "reference", "name": "lessonTitle" },
+					{ "type": "reference", "name": "nextBtn" },
+					{ "type": "reference", "name": "backBtn" },
+					{ "type": "reference", "name": "replayBtn" },
+					{
+						"name": "bg-gold",
+						"type": "decoration",
+						"image": "bg-gold",
+						"location": [ 0, 65 ]
+					},
+					{
+						"name": "realistic-and-specific",
+						"type": "text",
+						"text": "Goals should be specific and realistic.",
+						"font": "lato-black-42-purple",
+						"align": "center",
+						"location": ["center", 253]
+					},
+					{
+						"name": "slide2VO",
+						"type": "audio",
+						"audio": [ "Slide 2" ],
+						"variable": "slide2VO",
+						"startDelay": 0
+					}
+		        ],
+				"outcomes": {
+					"nextClicked" : {
+						"events": { "nextBtn": "*" },
+						"actions": [ 
+							{ "type": "choice", "args": [ "nextBtn", 0, true ] },
+							{ "type": "scene", "args": [ "slide3" ] }
+						]
+					},
+					"backClicked" : {
+						"events": { "backBtn": "*" },
+						"actions": [ 
+							{ "type": "choice", "args": [ "backBtn", 0, true ] },
+							{ "type": "scene", "args": [ "slide1" ] }
+						]
+					},
+					"replayClicked": {
+						"events": { "replayBtn": "*" },
+						"actions": [
+							{ "type": "choice", "args": [ "replayBtn", 0, true ] },
+							{ "type": "scene", "args": [ "emptyReplayScene" ] },
+							{ "type": "scene", "args": [ "slide2" ] }
+						]
+					},
+					"voFinished": {
+						"events": { "slide2VO": "played" },
+						"actions": [
+							{ "type": "remove-actor", "args": ["nextBtn"] },
+							{ "type": "add-actor", "args": [
+								{
+									"name": "nextBtnHi",
+									"type": "reference"
+								}
+							] }
+						]
+					}
+				},
+				"actions": [
+					{ "type": "variable", "args": [ "lessonLocation", "$current_scene_name" ] }
+				]
+		    },
+
+			"slide3": {
+		        "id": "slide3",
+		        "background": "none",
+		        "actors": [
+		        	{ "type": "reference", "name": "topBar" },
+					{ "type": "reference", "name": "bottomBar" },
+		        	{ "type": "reference", "name": "lessonTitle" },
+					{ "type": "reference", "name": "nextBtn" },
+					{ "type": "reference", "name": "backBtn" },
+					{ "type": "reference", "name": "replayBtn" },
+					{
+						"name": "bg-gold",
+						"type": "decoration",
+						"image": "bg-gold",
+						"location": [ 0, 65 ]
+					},
+					{
+						"name": "paper",
+						"type": "decoration",
+						"image": "paper",
+						"location": [ 347, 87 ]
+					},
+					{
+						"name": "goal-setting",
+						"type": "text",
+						"text": "Goal setting",
+						"font": "lato-black-42-purple",
+						"align": "center",
+						"location": [29, 112]
+					},
+					{
+						"name": "bullet1",
+						"type": "text",
+						"text": "Write it down.",
+						"font": "lato-reg-30-purple",
+						"location": [39, 173],
+						"bullet": true,
+						"startDelay": 3653
+					},
+					{
+						"name": "goal",
+						"type": "decoration",
+						"image": "text-goal",
+						"location": [ 418, 127 ],
+						"startDelay": 3653
+					},
+					{
+						"name": "bullet2",
+						"type": "text",
+						"text": "Make a plan.",
+						"font": "lato-reg-30-purple",
+						"location": [39, 223],
+						"bullet": true,
+						"startDelay": 5095
+					},
+					{
+						"name": "monday-cbx",
+						"type": "decoration",
+						"image": "checkbox",
+						"location": [ 427, 252 ],
+						"startDelay": 5095
+					},
+					{
+						"name": "monday",
+						"type": "decoration",
+						"image": "text-monday",
+						"location": [ 464, 252 ],
+						"startDelay": 5095
+					},
+					{
+						"name": "thursday-cbx",
+						"type": "decoration",
+						"image": "checkbox",
+						"location": [ 427, 342 ],
+						"startDelay": 5095
+					},
+					{
+						"name": "thursday",
+						"type": "decoration",
+						"image": "text-thursday",
+						"location": [ 465, 342 ],
+						"startDelay": 5095
+					},
+					{
+						"name": "saturday-cbx",
+						"type": "decoration",
+						"image": "checkbox",
+						"location": [ 427, 432 ],
+						"startDelay": 5095
+					},
+					{
+						"name": "saturday",
+						"type": "decoration",
+						"image": "text-saturday",
+						"location": [ 465, 432 ],
+						"startDelay": 5095
+					},
+					{
+						"name": "bullet3",
+						"type": "text",
+						"text": "Track your progress.",
+						"font": "lato-reg-30-purple",
+						"location": [39, 273],
+						"bullet": true,
+						"startDelay": 7700
+					},
+					{
+						"name": "monday-check",
+						"type": "decoration",
+						"image": "checkmark",
+						"location": [ 428, 244 ],
+						"startDelay": 8200
+					},
+					{
+						"name": "thursday-check",
+						"type": "decoration",
+						"image": "checkmark",
+						"location": [ 428, 334 ],
+						"startDelay": 8700
+					},
+					{
+						"name": "saturday-check",
+						"type": "decoration",
+						"image": "checkmark",
+						"location": [ 428, 424 ],
+						"startDelay": 9200
+					},
+					{
+						"name": "slide3VO",
+						"type": "audio",
+						"audio": [ "Slide 3" ],
+						"variable": "slide3VO",
+						"startDelay": 0
+					}
+		        ],
+				"outcomes": {
+					"nextClicked" : {
+						"events": { "nextBtn": "*" },
+						"actions": [ 
+							{ "type": "choice", "args": [ "nextBtn", 0, true ] },
+							{ "type": "scene", "args": [ "slide4" ] }
+						]
+					},
+					"backClicked" : {
+						"events": { "backBtn": "*" },
+						"actions": [ 
+							{ "type": "choice", "args": [ "backBtn", 0, true ] },
+							{ "type": "scene", "args": [ "slide2" ] }
+						]
+					},
+					"replayClicked": {
+						"events": { "replayBtn": "*" },
+						"actions": [
+							{ "type": "choice", "args": [ "replayBtn", 0, true ] },
+							{ "type": "scene", "args": [ "emptyReplayScene" ] },
+							{ "type": "scene", "args": [ "slide3" ] }
+						]
+					},
+					"voFinished": {
+						"events": { "slide3VO": "played" },
+						"actions": [
+							{ "type": "remove-actor", "args": ["nextBtn"] },
+							{ "type": "add-actor", "args": [
+								{
+									"name": "nextBtnHi",
+									"type": "reference"
+								}
+							] }
+						]
+					}
+				},
+				"actions": [
+					{ "type": "variable", "args": [ "lessonLocation", "$current_scene_name" ] }
+				]
+		    },
+
+			"slide4": {
+		        "id": "slide4",
+		        "background": "none",
+		        "actors": [
+		        	{ "type": "reference", "name": "topBar" },
+					{ "type": "reference", "name": "bottomBar" },
+		        	{ "type": "reference", "name": "lessonTitle" },
+					{ "type": "reference", "name": "nextBtn" },
+					{ "type": "reference", "name": "backBtn" },
+					{ "type": "reference", "name": "replayBtn" },
+					{
+						"name": "bg-blue",
+						"type": "decoration",
+						"image": "bg-blue",
+						"location": [ 0, 65 ]
+					},
+					{
+						"name": "quinn-adult",
+						"type": "decoration",
+						"image": "quinn-adult",
+						"location": [ 461, 65 ]
+					},
+					{
+						"name": "getting-help",
+						"type": "text",
+						"text": "Getting help",
+						"font": "lato-black-42-white",
+						"location": [39, 101]
+					},
+					{
+						"name": "bullet1",
+						"type": "text",
+						"text": "Parent",
+						"font": "lato-reg-36-white",
+						"location": [69, 167],
+						"bullet": true,
+						"startDelay": 12510
+					},
+					{
+						"name": "bullet2",
+						"type": "text",
+						"text": "Other family member",
+						"font": "lato-reg-36-white",
+						"location": [69, 227],
+						"bullet": true,
+						"startDelay": 13215
+					},
+					{
+						"name": "bullet3",
+						"type": "text",
+						"text": "Teacher",
+						"font": "lato-reg-36-white",
+						"location": [69, 287],
+						"bullet": true,
+						"startDelay": 17403
+					},
+					{
+						"name": "bullet4",
+						"type": "text",
+						"text": "School nurse",
+						"font": "lato-reg-36-white",
+						"location": [69, 347],
+						"bullet": true,
+						"startDelay": 18171
+					},
+					{
+						"name": "bullet5",
+						"type": "text",
+						"text": "School counselor",
+						"font": "lato-reg-36-white",
+						"location": [69, 407],
+						"bullet": true,
+						"startDelay": 19132
+					},
+					{
+						"name": "slide4VO",
+						"type": "audio",
+						"audio": [ "Slide 4" ],
+						"variable": "slide4VO",
+						"startDelay": 0
+					}
+		        ],
+				"outcomes": {
+					"nextClicked" : {
+						"events": { "nextBtn": "*" },
+						"actions": [ 
+							{ "type": "choice", "args": [ "nextBtn", 0, true ] },
+							{ "type": "scene", "args": [ "slide5" ] }
+						]
+					},
+					"backClicked" : {
+						"events": { "backBtn": "*" },
+						"actions": [ 
+							{ "type": "choice", "args": [ "backBtn", 0, true ] },
+							{ "type": "scene", "args": [ "slide3" ] }
+						]
+					},
+					"replayClicked": {
+						"events": { "replayBtn": "*" },
+						"actions": [
+							{ "type": "choice", "args": [ "replayBtn", 0, true ] },
+							{ "type": "scene", "args": [ "emptyReplayScene" ] },
+							{ "type": "scene", "args": [ "slide4" ] }
+						]
+					},
+					"voFinished": {
+						"events": { "slide4VO": "played" },
+						"actions": [
+							{ "type": "remove-actor", "args": ["nextBtn"] },
+							{ "type": "add-actor", "args": [
+								{
+									"name": "nextBtnHi",
+									"type": "reference"
+								}
+							] }
+						]
+					}
+				},
+				"actions": [
+					{ "type": "variable", "args": [ "lessonLocation", "$current_scene_name" ] }
+				]
+		    },
+
+			"slide5": {
+		        "id": "slide5",
+		        "background": "none",
+		        "actors": [
+		        	{ "type": "reference", "name": "contentBackdrop" },
+		        	{ "type": "reference", "name": "topBar" },
+					{ "type": "reference", "name": "bottomBar" },
+		        	{ "type": "reference", "name": "lessonTitle" },
+					{ "type": "reference", "name": "replayBtn" },
+					{ "type": "reference", "name": "backBtn" },
+					{ "type": "reference", "name": "nextBtnDisabled" },       
+					{
+						"name": "slide5Animation",
+						"type": "wistia",
+						"location": [0, 65],
+						"size": [800, 450],
+						"video": "8nk7benc2k",
+						"hideCloseButton": true,
+						"variable": "slide5Animation",
+						"blockerAlpha": 0.0,
+						"autoplay": true
+					}
+		        ],
+				"outcomes": {
+					"backClicked" : {
+						"events": { "backBtn": "*" },
+						"actions": [ 
+							{ "type": "choice", "args": [ "backBtn", 0, true ] },
+							{ "type": "scene", "args": [ "slide4" ] }
+						]
+					},
+					"replayClicked": {
+						"events": { "replayBtn": "*" },
+						"actions": [
+							{ "type": "choice", "args": [ "replayBtn", 0, true ] },
+							{ "type": "scene", "args": [ "emptyReplayScene" ] },
+							{ "type": "scene", "args": [ "slide5" ] }
+						]
+					}
+				},
+				"actions": [
+					{ "type": "variable", "args": [ "lessonLocation", "$current_scene_name" ] },
+					{ "type": "choice", "args": [ "objective_complete", 1] },
+          			{ "type": "choice", "args": [ "save", 0 ] }
+				]
+		    },
+
+			"emptyReplayScene": {
+				"id": "emptyReplayScene",
+				"description": "since a scene change request to the current scene is ignored, first change to this empty scene",
+				"background": "none",
+				"actors": [ ],
+				"outcomes": { },
+				"actions": [ ]
+			}
+		}
+    }
+}

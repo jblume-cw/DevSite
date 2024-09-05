@@ -1,0 +1,22 @@
+{
+  "sprite": {
+    "silence": [
+      0,
+      1,
+      false,
+      "silence"
+    ],
+    "Slide 2": [
+      1,
+      10.629319727891156,
+      false,
+      "Slide 2"
+    ],
+    "Slide 3A Miguel": [
+      12,
+      10.341337868480725,
+      false,
+      "Slide 3A Miguel"
+    ]
+  }
+}

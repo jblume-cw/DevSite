@@ -1,0 +1,923 @@
+{
+	"textures": [
+		{
+			"image": "general.png",
+			"format": "RGBA8888",
+			"size": {
+				"w": 998,
+				"h": 1646
+			},
+			"scale": 1,
+			"frames": [
+				{
+					"filename": "ground.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 800,
+						"h": 600
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 800,
+						"h": 600
+					},
+					"frame": {
+						"x": 1,
+						"y": 1,
+						"w": 800,
+						"h": 600
+					}
+				},
+				{
+					"filename": "menuCircle.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 194,
+						"h": 194
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 194,
+						"h": 194
+					},
+					"frame": {
+						"x": 803,
+						"y": 1,
+						"w": 194,
+						"h": 194
+					}
+				},
+				{
+					"filename": "suppliesBox.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 170,
+						"h": 177
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 170,
+						"h": 177
+					},
+					"frame": {
+						"x": 803,
+						"y": 197,
+						"w": 170,
+						"h": 177
+					}
+				},
+				{
+					"filename": "menuButtonDetailHidden.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 163,
+						"h": 105
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 163,
+						"h": 105
+					},
+					"frame": {
+						"x": 803,
+						"y": 376,
+						"w": 163,
+						"h": 105
+					}
+				},
+				{
+					"filename": "menuButtonDetailBuried.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 161,
+						"h": 102
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 161,
+						"h": 102
+					},
+					"frame": {
+						"x": 803,
+						"y": 483,
+						"w": 161,
+						"h": 102
+					}
+				},
+				{
+					"filename": "button4over.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 31,
+						"h": 23
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 31,
+						"h": 23
+					},
+					"frame": {
+						"x": 966,
+						"y": 483,
+						"w": 31,
+						"h": 23
+					}
+				},
+				{
+					"filename": "button4up.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 31,
+						"h": 23
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 31,
+						"h": 23
+					},
+					"frame": {
+						"x": 966,
+						"y": 508,
+						"w": 31,
+						"h": 23
+					}
+				},
+				{
+					"filename": "menuButtonDetailSunken.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 168,
+						"h": 79
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 168,
+						"h": 79
+					},
+					"frame": {
+						"x": 803,
+						"y": 587,
+						"w": 168,
+						"h": 79
+					}
+				},
+				{
+					"filename": "blankMap.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 754,
+						"h": 558
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 754,
+						"h": 558
+					},
+					"frame": {
+						"x": 1,
+						"y": 603,
+						"w": 754,
+						"h": 558
+					}
+				},
+				{
+					"filename": "locationDotOver.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 40,
+						"h": 40
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 40,
+						"h": 40
+					},
+					"frame": {
+						"x": 757,
+						"y": 603,
+						"w": 40,
+						"h": 40
+					}
+				},
+				{
+					"filename": "check.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 37,
+						"h": 39
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 37,
+						"h": 39
+					},
+					"frame": {
+						"x": 757,
+						"y": 645,
+						"w": 37,
+						"h": 39
+					}
+				},
+				{
+					"filename": "button7over.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 196,
+						"h": 78
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 196,
+						"h": 78
+					},
+					"frame": {
+						"x": 796,
+						"y": 668,
+						"w": 196,
+						"h": 78
+					}
+				},
+				{
+					"filename": "gamePiece.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 37,
+						"h": 39
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 37,
+						"h": 39
+					},
+					"frame": {
+						"x": 757,
+						"y": 686,
+						"w": 37,
+						"h": 39
+					}
+				},
+				{
+					"filename": "gem.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 37,
+						"h": 36
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 37,
+						"h": 36
+					},
+					"frame": {
+						"x": 757,
+						"y": 727,
+						"w": 37,
+						"h": 36
+					}
+				},
+				{
+					"filename": "button7up.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 196,
+						"h": 78
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 196,
+						"h": 78
+					},
+					"frame": {
+						"x": 796,
+						"y": 748,
+						"w": 196,
+						"h": 78
+					}
+				},
+				{
+					"filename": "locationDot.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 36,
+						"h": 36
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 36,
+						"h": 36
+					},
+					"frame": {
+						"x": 757,
+						"y": 765,
+						"w": 36,
+						"h": 36
+					}
+				},
+				{
+					"filename": "treasureSplash.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 240,
+						"h": 209
+					},
+					"spriteSourceSize": {
+						"x": 19,
+						"y": 13,
+						"w": 221,
+						"h": 193
+					},
+					"frame": {
+						"x": 757,
+						"y": 828,
+						"w": 221,
+						"h": 193
+					}
+				},
+				{
+					"filename": "button1up.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 224,
+						"h": 72
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 224,
+						"h": 72
+					},
+					"frame": {
+						"x": 757,
+						"y": 1023,
+						"w": 224,
+						"h": 72
+					}
+				},
+				{
+					"filename": "button1over.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 224,
+						"h": 71
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 224,
+						"h": 71
+					},
+					"frame": {
+						"x": 757,
+						"y": 1097,
+						"w": 224,
+						"h": 71
+					}
+				},
+				{
+					"filename": "logo.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 734,
+						"h": 319
+					},
+					"spriteSourceSize": {
+						"x": 7,
+						"y": 9,
+						"w": 720,
+						"h": 303
+					},
+					"frame": {
+						"x": 1,
+						"y": 1163,
+						"w": 720,
+						"h": 303
+					}
+				},
+				{
+					"filename": "notificationBox.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 630,
+						"h": 134
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 630,
+						"h": 134
+					},
+					"frame": {
+						"x": 1,
+						"y": 1468,
+						"w": 630,
+						"h": 134
+					}
+				},
+				{
+					"filename": "button8over.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 244,
+						"h": 41
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 244,
+						"h": 41
+					},
+					"frame": {
+						"x": 1,
+						"y": 1604,
+						"w": 244,
+						"h": 41
+					}
+				},
+				{
+					"filename": "button8up.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 244,
+						"h": 41
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 244,
+						"h": 41
+					},
+					"frame": {
+						"x": 247,
+						"y": 1604,
+						"w": 244,
+						"h": 41
+					}
+				},
+				{
+					"filename": "button3over.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 167,
+						"h": 41
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 167,
+						"h": 41
+					},
+					"frame": {
+						"x": 493,
+						"y": 1604,
+						"w": 167,
+						"h": 41
+					}
+				},
+				{
+					"filename": "helpHeader.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 224,
+						"h": 91
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 9,
+						"w": 224,
+						"h": 68
+					},
+					"frame": {
+						"x": 633,
+						"y": 1468,
+						"w": 224,
+						"h": 68
+					}
+				},
+				{
+					"filename": "button3up.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 167,
+						"h": 41
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 167,
+						"h": 41
+					},
+					"frame": {
+						"x": 633,
+						"y": 1538,
+						"w": 167,
+						"h": 41
+					}
+				},
+				{
+					"filename": "jewels1.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 178,
+						"h": 67
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 178,
+						"h": 67
+					},
+					"frame": {
+						"x": 802,
+						"y": 1538,
+						"w": 178,
+						"h": 67
+					}
+				},
+				{
+					"filename": "button6over.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 127,
+						"h": 53
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 127,
+						"h": 53
+					},
+					"frame": {
+						"x": 662,
+						"y": 1581,
+						"w": 127,
+						"h": 53
+					}
+				},
+				{
+					"filename": "button5over.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 85,
+						"h": 35
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 85,
+						"h": 35
+					},
+					"frame": {
+						"x": 791,
+						"y": 1607,
+						"w": 85,
+						"h": 35
+					}
+				},
+				{
+					"filename": "button5up.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 85,
+						"h": 35
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 85,
+						"h": 35
+					},
+					"frame": {
+						"x": 878,
+						"y": 1607,
+						"w": 85,
+						"h": 35
+					}
+				},
+				{
+					"filename": "button6up.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 127,
+						"h": 53
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 127,
+						"h": 53
+					},
+					"frame": {
+						"x": 859,
+						"y": 1170,
+						"w": 127,
+						"h": 53
+					}
+				},
+				{
+					"filename": "finger.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 99,
+						"h": 71
+					},
+					"spriteSourceSize": {
+						"x": 2,
+						"y": 1,
+						"w": 96,
+						"h": 69
+					},
+					"frame": {
+						"x": 723,
+						"y": 1170,
+						"w": 96,
+						"h": 69
+					}
+				},
+				{
+					"filename": "jewels2.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 154,
+						"h": 74
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 154,
+						"h": 74
+					},
+					"frame": {
+						"x": 821,
+						"y": 1225,
+						"w": 154,
+						"h": 74
+					}
+				},
+				{
+					"filename": "help.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 81,
+						"h": 74
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 81,
+						"h": 74
+					},
+					"frame": {
+						"x": 723,
+						"y": 1241,
+						"w": 81,
+						"h": 74
+					}
+				},
+				{
+					"filename": "button9over.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 155,
+						"h": 41
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 155,
+						"h": 41
+					},
+					"frame": {
+						"x": 806,
+						"y": 1301,
+						"w": 155,
+						"h": 41
+					}
+				},
+				{
+					"filename": "rotator.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 45,
+						"h": 47
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 45,
+						"h": 47
+					},
+					"frame": {
+						"x": 723,
+						"y": 1317,
+						"w": 45,
+						"h": 47
+					}
+				},
+				{
+					"filename": "button9up.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 155,
+						"h": 41
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 155,
+						"h": 41
+					},
+					"frame": {
+						"x": 723,
+						"y": 1366,
+						"w": 155,
+						"h": 41
+					}
+				},
+				{
+					"filename": "button10over.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 125,
+						"h": 41
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 125,
+						"h": 41
+					},
+					"frame": {
+						"x": 723,
+						"y": 1409,
+						"w": 125,
+						"h": 41
+					}
+				},
+				{
+					"filename": "button10up.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 125,
+						"h": 41
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 125,
+						"h": 41
+					},
+					"frame": {
+						"x": 850,
+						"y": 1409,
+						"w": 125,
+						"h": 41
+					}
+				},
+				{
+					"filename": "button2over.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 96,
+						"h": 40
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 96,
+						"h": 40
+					},
+					"frame": {
+						"x": 880,
+						"y": 1344,
+						"w": 96,
+						"h": 40
+					}
+				},
+				{
+					"filename": "button2up.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 96,
+						"h": 40
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 96,
+						"h": 40
+					},
+					"frame": {
+						"x": 859,
+						"y": 1452,
+						"w": 96,
+						"h": 40
+					}
+				},
+				{
+					"filename": "button11over.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 45,
+						"h": 38
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 45,
+						"h": 38
+					},
+					"frame": {
+						"x": 859,
+						"y": 1494,
+						"w": 45,
+						"h": 38
+					}
+				},
+				{
+					"filename": "button11up.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 45,
+						"h": 38
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 45,
+						"h": 38
+					},
+					"frame": {
+						"x": 906,
+						"y": 1494,
+						"w": 45,
+						"h": 38
+					}
+				}
+			]
+		}
+	],
+	"meta": {
+		"app": "https://www.codeandweb.com/texturepacker",
+		"version": "3.0",
+		"smartupdate": "$TexturePacker:SmartUpdate:2593b92e9bcf0132824a11595f6f7755:c5a8e5c0cd0b66f85568abe7c3a108a6:49afdaefc8003509a7dad15a6a269fdc$"
+	}
+}

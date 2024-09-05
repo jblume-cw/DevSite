@@ -1,0 +1,52 @@
+{
+  "sprite": {
+    "silence": [
+      0,
+      1,
+      false,
+      "silence"
+    ],
+    "Slide 2": [
+      1,
+      11.544104308390022,
+      false,
+      "Slide 2"
+    ],
+    "Slide 3a": [
+      13,
+      9.690453514739229,
+      false,
+      "Slide 3a"
+    ],
+    "Slide 3b": [
+      23,
+      2.4353741496598644,
+      false,
+      "Slide 3b"
+    ],
+    "Slide 3c": [
+      26,
+      16.121768707482993,
+      false,
+      "Slide 3c"
+    ],
+    "Slide 5a": [
+      43,
+      10.846507936507933,
+      false,
+      "Slide 5a"
+    ],
+    "Slide 5b": [
+      54,
+      4.045986394557822,
+      false,
+      "Slide 5b"
+    ],
+    "Slide 6": [
+      59,
+      25.696598639455786,
+      false,
+      "Slide 6"
+    ]
+  }
+}

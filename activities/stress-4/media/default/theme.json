@@ -1,0 +1,149 @@
+{
+  "texture": "media/default/stress-sprites.png",
+  "textureMap": "media/default/stress-sprites.json",
+  "textureKey": "texture",
+  "data": "media/default/sceneData.json",
+  "fonts" : {
+    "lesson-title": { 
+      "font": "32px Lato", 
+      "fill": "#6e6591", 
+      "align": "left", 
+      "fontWeight": "400", 
+      "wordWrap": false 
+    },
+    "resume-prompt": { 
+      "font": "30px Lato", 
+      "fill": "#333333", 
+      "align": "center", 
+      "fontWeight": "900", 
+      "wordWrap": true, 
+      "wordWrapWidth": 400 
+    },
+    "lato-black-36-purple": { 
+      "font": "36px Lato", 
+      "fill": "#4b457a",
+      "fontWeight": "900"
+    },
+    "lato-reg-28-purple": { 
+      "font": "24px Lato", 
+      "fill": "#4b457a",
+      "fontWeight": "400"
+    }
+  },
+  "sceneImages": {
+  },
+  "images": {
+    "back-disabled": "back disabled.png",
+    "next-disabled": "next disabled.png",
+    "top-bar": "top-bg.png",
+    "bottom-bar": "bottom-bg.png",
+    "resume-box": "resume-box.png",
+    "bg-purple": "bg-purple.png",
+    "bg-blue": "bg-blue.png",
+    "devonte-stressed": "devonte-stressed.png",
+    "paper": "paper.png",
+    "quinn-adult": "quinn-adult.png",
+    "quinn-desk-body": "quinn-desk-body.png",
+    "quinn-head-happy": "quinn-head-happy.png",
+    "quinn-head-stressed": "quinn-head-stressed.png",
+    "thought-activities": "thought-activities.png",
+    "thought-presentation": "thought-presentation.png",
+    "thought-stressors": "thought-stressors.png"
+  },
+  "buttons": {
+   "next": {
+      "up": "next up.png",
+      "over": "next over.png",
+      "out": "next up.png",
+      "down": "next down.png"
+    },
+    "next-hi": {
+      "up": "next up hi.png",
+      "over": "next over hi.png",
+      "out": "next up hi.png",
+      "down": "next down hi.png"
+    },
+    "back": {
+      "up": "back up.png",
+      "over": "back over.png",
+      "out": "back up.png",
+      "down": "back down.png"
+    },
+    "replay": {
+      "up": "replay up.png",
+      "over": "replay over.png",
+      "out": "replay up.png",
+      "down": "replay down.png"
+    },
+    "worksheet": {
+      "up": "worksheet up.png",
+      "over": "worksheet over.png",
+      "out": "worksheet up.png",
+      "down": "worksheet down.png"
+    },
+    "continueBtn":{
+      "up": "continue up.png",
+      "over": "continue over.png",
+      "out": "continue up.png",
+      "down": "continue down.png"
+    },
+    "startOverBtn":{
+      "up": "start over up.png",
+      "over": "start over over.png",
+      "out": "start over up.png",
+      "down": "start over down.png"
+    }
+  },
+  "soundKey": "stress",
+  "soundFile": [ "media/default/stress-vo.m4a", "media/default/stress-vo.ogg" ],
+  "sounds": {
+    "silence": [
+      0,
+      1,
+      false,
+      "silence"
+    ],
+    "Slide 2": [
+      1,
+      11.544104308390022,
+      false,
+      "Slide 2"
+    ],
+    "Slide 3a": [
+      13,
+      9.690453514739229,
+      false,
+      "Slide 3a"
+    ],
+    "Slide 3b": [
+      23,
+      2.4353741496598644,
+      false,
+      "Slide 3b"
+    ],
+    "Slide 3c": [
+      26,
+      16.121768707482993,
+      false,
+      "Slide 3c"
+    ],
+    "Slide 5a": [
+      43,
+      10.846507936507933,
+      false,
+      "Slide 5a"
+    ],
+    "Slide 5b": [
+      54,
+      4.045986394557822,
+      false,
+      "Slide 5b"
+    ],
+    "Slide 6": [
+      59,
+      25.696598639455786,
+      false,
+      "Slide 6"
+    ]
+  }
+}

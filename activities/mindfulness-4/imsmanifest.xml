@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest identifier="HM4_mindfulness"
+	xmlns="http://www.imsproject.org/xsd/imscp_rootv1p1p2" 
+	xmlns:imsmd="http://www.imsglobal.org/xsd/imsmd_rootv1p2p1" 
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xmlns:adlcp="http://www.adlnet.org/xsd/adlcp_rootv1p2" 
+	xsi:schemaLocation="http://www.imsproject.org/xsd/imscp_rootv1p1p2 imscp_rootv1p1p2.xsd 
+		http://www.imsglobal.org/xsd/imsmd_rootv1p2p1 imsmd_rootv1p2p1.xsd 
+		http://www.adlnet.org/xsd/adlcp_rootv1p2 adlcp_rootv1p2.xsd" >
+
+	<organizations default="HM4">
+	<organization identifier="HM4" structure="hierarchical">
+		<item identifier="HM4_mindfulness" identifierref="HM4_mindfulness" isvisible="true">
+			<title>Mindfulness</title>
+		</item>
+	</organization>
+</organizations>
+
+  <resources>
+    <resource identifier="HM4_mindfulness" type="webcontent" adlcp:scormtype="sco" href="index.html">
+      <file href="index.html" />
+    </resource>
+  </resources>
+	
+</manifest>
+

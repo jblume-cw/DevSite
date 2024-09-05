@@ -1,0 +1,225 @@
+{
+  "texture": "media/default/feelings-sprites.png",
+  "textureMap": "media/default/feelings-sprites.json",
+  "textureKey": "texture",
+  "data": "media/default/sceneData.json",
+  "fonts" : {
+    "lesson-title": { 
+      "font": "32px Lato", 
+      "fill": "#6e6591", 
+      "align": "left", 
+      "fontWeight": "400", 
+      "wordWrap": false 
+    },
+    "resume-prompt": { 
+      "font": "30px Lato", 
+      "fill": "#333333", 
+      "align": "center", 
+      "fontWeight": "900", 
+      "wordWrap": true, 
+      "wordWrapWidth": 400 
+    },
+    "lato-black-36-purple": { 
+      "font": "36px Lato", 
+      "fill": "#4b457a", 
+      "fontWeight": "900"
+    },
+    "lato-reg-24-purple": { 
+      "font": "24px Lato", 
+      "fill": "#4b457a", 
+      "fontWeight": "400"
+    },
+    "lato-black-36-white": { 
+      "font": "36px Lato", 
+      "fill": "#ffffff",
+      "fontWeight": "900"
+    },
+    "lato-black-42-purple": { 
+      "font": "42px Lato", 
+      "fill": "#4b457a", 
+      "fontWeight": "900"
+    },
+    "lato-reg-28-purple": { 
+      "font": "28px Lato", 
+      "fill": "#4b457a",
+      "fontWeight": "400"
+    },
+    "lato-reg-28-purple-2": { 
+      "font": "28px Lato", 
+      "fill": "#4b457a", 
+      "align": "left", 
+      "fontWeight": "400"
+    },
+    "lato-black-60-white": { 
+      "font": "60px Lato", 
+      "fill": "#ffffff",
+      "fontWeight": "900"
+    }
+  },
+  "sceneImages": {
+  },
+  "images": {
+    "back-disabled": "back disabled.png",
+    "next-disabled": "next disabled.png",
+    "top-bar": "top-bg.png",
+    "bottom-bar": "bottom-bg.png",
+    "resume-box": "resume-box.png",
+    "bg-yellow": "bg-yellow.png",
+    "bg-purple": "bg-purple.png",
+    "word-cloud": "word-cloud.png",
+    "devonte-angry": "devonte-angry.png",
+    "devonte-calm": "devonte-calm.png",
+    "miguel-break": "miguel-break.png",
+    "miguel-calm": "miguel-calm.png",
+    "miguel-express": "miguel-express.png",
+    "quinn-worried": "quinn-worried.png",
+    "figure-out": "figure-out.png",
+    "make-it-better": "make-it-better.png",
+    "ask-for-help": "ask-for-help.png",
+    "paper": "paper.png",
+    "quinn-anxious": "quinn-anxious.png",
+    "quinn-adult": "quinn-adult.png",
+    "quinn-up": "quinn-up.png",
+    "quinn-over": "quinn-over.png",
+    "devonte-up": "devonte-up.png",
+    "devonte-over": "devonte-over.png",
+    "miguel-up": "miguel-up.png",
+    "miguel-over": "miguel-over.png",
+    "angry-up": "angry-up.png",
+    "angry-drag": "angry-drag.png",
+    "excited-up": "excited-up.png",
+    "excited-drag": "excited-drag.png",
+    "sad-up": "sad-up.png",
+    "sad-drag": "sad-drag.png",
+    "lunch-table-1": "lunch-table-1.png",
+    "lunch-table-2": "lunch-table-2.png",
+    "lunch-thought": "lunch-thought.png",
+    "post-it": "post-it.png"
+  },
+  "buttons": {
+   "next": {
+      "up": "next up.png",
+      "over": "next over.png",
+      "out": "next up.png",
+      "down": "next down.png"
+    },
+    "next-hi": {
+      "up": "next up hi.png",
+      "over": "next over hi.png",
+      "out": "next up hi.png",
+      "down": "next down hi.png"
+    },
+    "back": {
+      "up": "back up.png",
+      "over": "back over.png",
+      "out": "back up.png",
+      "down": "back down.png"
+    },
+    "replay": {
+      "up": "replay up.png",
+      "over": "replay over.png",
+      "out": "replay up.png",
+      "down": "replay down.png"
+    },
+    "worksheet": {
+      "up": "worksheet up.png",
+      "over": "worksheet over.png",
+      "out": "worksheet up.png",
+      "down": "worksheet down.png"
+    },
+    "continueBtn":{
+      "up": "continue up.png",
+      "over": "continue over.png",
+      "out": "continue up.png",
+      "down": "continue down.png"
+    },
+    "startOverBtn":{
+      "up": "start over up.png",
+      "over": "start over over.png",
+      "out": "start over up.png",
+      "down": "start over down.png"
+    }
+  },
+  "soundKey": "introduction",
+  "soundFile": [ "media/default/feelings-vo.m4a", "media/default/feelings-vo.ogg" ],
+  "sounds": {
+    "silence": [
+      0,
+      1,
+      false,
+      "silence"
+    ],
+    "Slide 2": [
+      1,
+      17.941111111111113,
+      false,
+      "Slide 2"
+    ],
+    "Slide 3a": [
+      19,
+      16.958820861678007,
+      false,
+      "Slide 3a"
+    ],
+    "Slide 3b": [
+      36,
+      3.2877777777777766,
+      false,
+      "Slide 3b"
+    ],
+    "Slide 4": [
+      40,
+      33.588095238095235,
+      false,
+      "Slide 4"
+    ],
+    "Slide 5": [
+      74,
+      13.693378684807257,
+      false,
+      "Slide 5"
+    ],
+    "Slide 6": [
+      88,
+      48.23666666666668,
+      false,
+      "Slide 6"
+    ],
+    "Slide 7a": [
+      137,
+      12.638412698412708,
+      false,
+      "Slide 7a"
+    ],
+    "Slide 7b": [
+      150,
+      17.970952380952383,
+      false,
+      "Slide 7b"
+    ],
+    "Slide 8a": [
+      168,
+      39.28290249433107,
+      false,
+      "Slide 8a"
+    ],
+    "Slide 8b": [
+      208,
+      2.591111111111104,
+      false,
+      "Slide 8b"
+    ],
+    "Slide 9a": [
+      211,
+      16.456462585034018,
+      false,
+      "Slide 9a"
+    ],
+    "Slide 9b": [
+      228,
+      22.601428571428585,
+      false,
+      "Slide 9b"
+    ]
+  }
+}

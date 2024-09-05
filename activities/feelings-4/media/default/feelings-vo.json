@@ -1,0 +1,82 @@
+{
+  "sprite": {
+    "silence": [
+      0,
+      1,
+      false,
+      "silence"
+    ],
+    "Slide 2": [
+      1,
+      17.941111111111113,
+      false,
+      "Slide 2"
+    ],
+    "Slide 3a": [
+      19,
+      16.958820861678007,
+      false,
+      "Slide 3a"
+    ],
+    "Slide 3b": [
+      36,
+      3.2877777777777766,
+      false,
+      "Slide 3b"
+    ],
+    "Slide 4": [
+      40,
+      33.588095238095235,
+      false,
+      "Slide 4"
+    ],
+    "Slide 5": [
+      74,
+      13.693378684807257,
+      false,
+      "Slide 5"
+    ],
+    "Slide 6": [
+      88,
+      48.23666666666668,
+      false,
+      "Slide 6"
+    ],
+    "Slide 7a": [
+      137,
+      12.638412698412708,
+      false,
+      "Slide 7a"
+    ],
+    "Slide 7b": [
+      150,
+      17.970952380952383,
+      false,
+      "Slide 7b"
+    ],
+    "Slide 8a": [
+      168,
+      39.28290249433107,
+      false,
+      "Slide 8a"
+    ],
+    "Slide 8b": [
+      208,
+      2.591111111111104,
+      false,
+      "Slide 8b"
+    ],
+    "Slide 9a": [
+      211,
+      16.456462585034018,
+      false,
+      "Slide 9a"
+    ],
+    "Slide 9b": [
+      228,
+      22.601428571428585,
+      false,
+      "Slide 9b"
+    ]
+  }
+}

@@ -1,0 +1,335 @@
+{
+	"textures": [
+		{
+			"image": "jewel4.png",
+			"format": "RGBA8888",
+			"size": {
+				"w": 225,
+				"h": 375
+			},
+			"scale": 1,
+			"frames": [
+				{
+					"filename": "jewel40001.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 77,
+						"h": 77
+					},
+					"spriteSourceSize": {
+						"x": 2,
+						"y": 1,
+						"w": 73,
+						"h": 73
+					},
+					"frame": {
+						"x": 1,
+						"y": 1,
+						"w": 73,
+						"h": 73
+					}
+				},
+				{
+					"filename": "jewel40002.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 77,
+						"h": 77
+					},
+					"spriteSourceSize": {
+						"x": 2,
+						"y": 1,
+						"w": 73,
+						"h": 73
+					},
+					"frame": {
+						"x": 76,
+						"y": 1,
+						"w": 73,
+						"h": 73
+					}
+				},
+				{
+					"filename": "jewel40003.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 77,
+						"h": 77
+					},
+					"spriteSourceSize": {
+						"x": 2,
+						"y": 1,
+						"w": 73,
+						"h": 73
+					},
+					"frame": {
+						"x": 151,
+						"y": 1,
+						"w": 73,
+						"h": 73
+					}
+				},
+				{
+					"filename": "jewel40004.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 77,
+						"h": 77
+					},
+					"spriteSourceSize": {
+						"x": 2,
+						"y": 1,
+						"w": 73,
+						"h": 73
+					},
+					"frame": {
+						"x": 1,
+						"y": 76,
+						"w": 73,
+						"h": 73
+					}
+				},
+				{
+					"filename": "jewel40005.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 77,
+						"h": 77
+					},
+					"spriteSourceSize": {
+						"x": 2,
+						"y": 1,
+						"w": 73,
+						"h": 73
+					},
+					"frame": {
+						"x": 76,
+						"y": 76,
+						"w": 73,
+						"h": 73
+					}
+				},
+				{
+					"filename": "jewel40006.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 77,
+						"h": 77
+					},
+					"spriteSourceSize": {
+						"x": 2,
+						"y": 1,
+						"w": 73,
+						"h": 73
+					},
+					"frame": {
+						"x": 151,
+						"y": 76,
+						"w": 73,
+						"h": 73
+					}
+				},
+				{
+					"filename": "jewel40007.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 77,
+						"h": 77
+					},
+					"spriteSourceSize": {
+						"x": 2,
+						"y": 1,
+						"w": 73,
+						"h": 73
+					},
+					"frame": {
+						"x": 1,
+						"y": 151,
+						"w": 73,
+						"h": 73
+					}
+				},
+				{
+					"filename": "jewel40008.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 77,
+						"h": 77
+					},
+					"spriteSourceSize": {
+						"x": 2,
+						"y": 1,
+						"w": 73,
+						"h": 73
+					},
+					"frame": {
+						"x": 76,
+						"y": 151,
+						"w": 73,
+						"h": 73
+					}
+				},
+				{
+					"filename": "jewel40009.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 77,
+						"h": 77
+					},
+					"spriteSourceSize": {
+						"x": 2,
+						"y": 1,
+						"w": 73,
+						"h": 73
+					},
+					"frame": {
+						"x": 151,
+						"y": 151,
+						"w": 73,
+						"h": 73
+					}
+				},
+				{
+					"filename": "jewel40010.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 77,
+						"h": 77
+					},
+					"spriteSourceSize": {
+						"x": 2,
+						"y": 1,
+						"w": 73,
+						"h": 73
+					},
+					"frame": {
+						"x": 1,
+						"y": 226,
+						"w": 73,
+						"h": 73
+					}
+				},
+				{
+					"filename": "jewel40011.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 77,
+						"h": 77
+					},
+					"spriteSourceSize": {
+						"x": 2,
+						"y": 1,
+						"w": 73,
+						"h": 73
+					},
+					"frame": {
+						"x": 76,
+						"y": 226,
+						"w": 73,
+						"h": 73
+					}
+				},
+				{
+					"filename": "jewel40012.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 77,
+						"h": 77
+					},
+					"spriteSourceSize": {
+						"x": 2,
+						"y": 1,
+						"w": 73,
+						"h": 73
+					},
+					"frame": {
+						"x": 151,
+						"y": 226,
+						"w": 73,
+						"h": 73
+					}
+				},
+				{
+					"filename": "jewel40013.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 77,
+						"h": 77
+					},
+					"spriteSourceSize": {
+						"x": 2,
+						"y": 1,
+						"w": 73,
+						"h": 73
+					},
+					"frame": {
+						"x": 1,
+						"y": 301,
+						"w": 73,
+						"h": 73
+					}
+				},
+				{
+					"filename": "jewel40014.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 77,
+						"h": 77
+					},
+					"spriteSourceSize": {
+						"x": 2,
+						"y": 1,
+						"w": 73,
+						"h": 73
+					},
+					"frame": {
+						"x": 76,
+						"y": 301,
+						"w": 73,
+						"h": 73
+					}
+				},
+				{
+					"filename": "jewel40015.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 77,
+						"h": 77
+					},
+					"spriteSourceSize": {
+						"x": 2,
+						"y": 1,
+						"w": 73,
+						"h": 73
+					},
+					"frame": {
+						"x": 151,
+						"y": 301,
+						"w": 73,
+						"h": 73
+					}
+				}
+			]
+		}
+	],
+	"meta": {
+		"app": "https://www.codeandweb.com/texturepacker",
+		"version": "3.0",
+		"smartupdate": "$TexturePacker:SmartUpdate:8aea79d64801b35594ca4ed781fc00bd:b51bd16dbb08c6008e31fcefe20095ba:0587c640b2f82089172c00699d7da34b$"
+	}
+}
