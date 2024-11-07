@@ -1,0 +1,44 @@
+{"frames": {
+
+"background-endscreen.png":
+{
+	"frame": {"x":1,"y":1,"w":800,"h":600},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":800,"h":600},
+	"sourceSize": {"w":800,"h":600}
+},
+"tryagain-scale-down.png":
+{
+	"frame": {"x":1,"y":603,"w":225,"h":50},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":225,"h":50},
+	"sourceSize": {"w":225,"h":50}
+},
+"tryagain-scale-hover.png":
+{
+	"frame": {"x":228,"y":603,"w":225,"h":50},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":225,"h":50},
+	"sourceSize": {"w":225,"h":50}
+},
+"tryagain-scale.png":
+{
+	"frame": {"x":455,"y":603,"w":225,"h":50},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":225,"h":50},
+	"sourceSize": {"w":225,"h":50}
+}},
+"meta": {
+	"app": "http://www.codeandweb.com/texturepacker",
+	"version": "1.0",
+	"image": "gameend.png",
+	"format": "RGBA8888",
+	"size": {"w":802,"h":654},
+	"scale": "1",
+	"smartupdate": "$TexturePacker:SmartUpdate:d09f98a465762727ee1faa783be0f1be:34953f516fef8ac9fd38123eb09684f6:9d6548f6181c9e016ca26e2eb6303c59$"
+}
+}

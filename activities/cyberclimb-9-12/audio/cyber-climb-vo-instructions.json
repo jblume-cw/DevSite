@@ -1,0 +1,43 @@
+{
+  "resources": [
+    "output/CCVO/cyber-climb-vo-instructions.ogg",
+    "output/CCVO/cyber-climb-vo-instructions.m4a"
+  ],
+  "spritemap": {
+    "Continue": {
+      "start": 0,
+      "end": 1.8091836734693878,
+      "loop": false
+    },
+    "Instructions": {
+      "start": 2,
+      "end": 28.40045351473923,
+      "loop": false
+    },
+    "Lose-edit": {
+      "start": 29,
+      "end": 31.87079365079365,
+      "loop": false
+    },
+    "Splash": {
+      "start": 32,
+      "end": 37.65179138321996,
+      "loop": false
+    },
+    "Win level 2": {
+      "start": 38,
+      "end": 42.2975283446712,
+      "loop": false
+    },
+    "Win level 3": {
+      "start": 43,
+      "end": 46.64349206349206,
+      "loop": false
+    },
+    "WinLevel1-edit": {
+      "start": 47,
+      "end": 53.06308390022676,
+      "loop": false
+    }
+  }
+}

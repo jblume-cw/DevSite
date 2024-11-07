@@ -1,0 +1,60 @@
+{"frames": {
+
+"background-question-correct.png":
+{
+	"frame": {"x":1,"y":1,"w":800,"h":600},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":800,"h":600},
+	"sourceSize": {"w":800,"h":600}
+},
+"background-question-incorrect.png":
+{
+	"frame": {"x":1,"y":603,"w":800,"h":600},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":800,"h":600},
+	"sourceSize": {"w":800,"h":600}
+},
+"background-question.png":
+{
+	"frame": {"x":1,"y":1205,"w":800,"h":600},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":800,"h":600},
+	"sourceSize": {"w":800,"h":600}
+},
+"continue-button.png":
+{
+	"frame": {"x":1,"y":1807,"w":246,"h":55},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":246,"h":55},
+	"sourceSize": {"w":246,"h":55}
+},
+"continue-down.png":
+{
+	"frame": {"x":249,"y":1807,"w":246,"h":55},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":246,"h":55},
+	"sourceSize": {"w":246,"h":55}
+},
+"continue-hover.png":
+{
+	"frame": {"x":497,"y":1807,"w":246,"h":55},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":246,"h":55},
+	"sourceSize": {"w":246,"h":55}
+}},
+"meta": {
+	"app": "http://www.codeandweb.com/texturepacker",
+	"version": "1.0",
+	"image": "question.png",
+	"format": "RGBA8888",
+	"size": {"w":802,"h":1863},
+	"scale": "1",
+	"smartupdate": "$TexturePacker:SmartUpdate:e61cc6a0f7a547ff4d260d7045369677:e244f307b44f48eafb5cbcd64e396559:de07ebd873503c725be391e57793e511$"
+}
+}

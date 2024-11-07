@@ -1,0 +1,48 @@
+{
+  "resources": [
+    "output/CCVO/cyber-climb-sfx.ogg",
+    "output/CCVO/cyber-climb-sfx.m4a"
+  ],
+  "spritemap": {
+    "Child's Nightmare": {
+      "start": 0,
+      "end": 90.48090702947846,
+      "loop": true
+    },
+    "coin": {
+      "start": 91,
+      "end": 91.28734693877551,
+      "loop": false
+    },
+    "Intergalactic Odyssey": {
+      "start": 92,
+      "end": 180.00217687074831,
+      "loop": true
+    },
+    "Interplanetary Odyssey": {
+      "start": 181,
+      "end": 290.7273469387755,
+      "loop": true
+    },
+    "Interstellar Odyssey": {
+      "start": 291,
+      "end": 395.012335600907,
+      "loop": true
+    },
+    "bubble": {
+      "start": 396,
+      "end": 396.49997732426306,
+      "loop": false
+    },
+    "jump": {
+      "start": 397,
+      "end": 397.3233106575964,
+      "loop": false
+    },
+    "lose": {
+      "start": 398,
+      "end": 400.9747392290249,
+      "loop": false
+    }
+  }
+}
