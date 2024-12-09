@@ -1,0 +1,48 @@
+{
+  "resources": [
+    "output/HM6whatcharacteristicsdoyousee/whatcharacteristicsdoyousee-vo.ogg",
+    "output/HM6whatcharacteristicsdoyousee/whatcharacteristicsdoyousee-vo.m4a"
+  ],
+  "spritemap": {
+    "Conclusion": {
+      "start": 0,
+      "end": 8.778684807256235,
+      "loop": false
+    },
+    "Intro": {
+      "start": 9,
+      "end": 20.07201814058957,
+      "loop": false
+    },
+    "Question 1 remediation": {
+      "start": 21,
+      "end": 30.775986394557822,
+      "loop": false
+    },
+    "Question 1": {
+      "start": 31,
+      "end": 51.59734693877551,
+      "loop": false
+    },
+    "Question 2 remediation": {
+      "start": 52,
+      "end": 66.18666666666667,
+      "loop": false
+    },
+    "Question 2": {
+      "start": 67,
+      "end": 85.19734693877551,
+      "loop": false
+    },
+    "Question 3 remediation": {
+      "start": 86,
+      "end": 98.99201814058956,
+      "loop": false
+    },
+    "Question 3": {
+      "start": 99,
+      "end": 120.2137641723356,
+      "loop": false
+    }
+  }
+}

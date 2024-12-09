@@ -1,0 +1,83 @@
+{
+  "resources": [
+    "output/HM6influencesdefinition/influencesdefinition-vo.ogg",
+    "output/HM6influencesdefinition/influencesdefinition-vo.m4a"
+  ],
+  "spritemap": {
+    "Slide 1": {
+      "start": 0,
+      "end": 9.909319727891157,
+      "loop": false
+    },
+    "Slide 10": {
+      "start": 10,
+      "end": 11.104013605442177,
+      "loop": false
+    },
+    "Slide 11": {
+      "start": 12,
+      "end": 12.83201814058957,
+      "loop": false
+    },
+    "Slide 12": {
+      "start": 13,
+      "end": 13.688004535147392,
+      "loop": false
+    },
+    "Slide 13": {
+      "start": 14,
+      "end": 14.71467120181406,
+      "loop": false
+    },
+    "Slide 14": {
+      "start": 15,
+      "end": 15.91734693877551,
+      "loop": false
+    },
+    "Slide 15": {
+      "start": 16,
+      "end": 25.824013605442175,
+      "loop": false
+    },
+    "Slide 2": {
+      "start": 26,
+      "end": 27.204013605442178,
+      "loop": false
+    },
+    "Slide 3": {
+      "start": 28,
+      "end": 28.746666666666666,
+      "loop": false
+    },
+    "Slide 4": {
+      "start": 29,
+      "end": 29.725351473922903,
+      "loop": false
+    },
+    "Slide 5": {
+      "start": 30,
+      "end": 30.91201814058957,
+      "loop": false
+    },
+    "Slide 6": {
+      "start": 31,
+      "end": 31.810680272108844,
+      "loop": false
+    },
+    "Slide 7": {
+      "start": 32,
+      "end": 32.94401360544218,
+      "loop": false
+    },
+    "Slide 8": {
+      "start": 33,
+      "end": 33.8853514739229,
+      "loop": false
+    },
+    "Slide 9": {
+      "start": 34,
+      "end": 34.93868480725624,
+      "loop": false
+    }
+  }
+}

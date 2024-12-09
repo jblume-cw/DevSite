@@ -1,0 +1,38 @@
+{
+  "resources": [
+    "output/HM6factsaboutfeelings/factsaboutfeelings-vo.ogg",
+    "output/HM6factsaboutfeelings/factsaboutfeelings-vo.m4a"
+  ],
+  "spritemap": {
+    "Slide 1": {
+      "start": 0,
+      "end": 7.1466666666666665,
+      "loop": false
+    },
+    "Slide 2": {
+      "start": 8,
+      "end": 16.6453514739229,
+      "loop": false
+    },
+    "Slide 3": {
+      "start": 17,
+      "end": 22.70514739229025,
+      "loop": false
+    },
+    "Slide 4": {
+      "start": 23,
+      "end": 29.698684807256235,
+      "loop": false
+    },
+    "Slide 5": {
+      "start": 30,
+      "end": 37.40800453514739,
+      "loop": false
+    },
+    "Slide 6": {
+      "start": 38,
+      "end": 42.40800453514739,
+      "loop": false
+    }
+  }
+}

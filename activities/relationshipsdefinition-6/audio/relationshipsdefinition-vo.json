@@ -1,0 +1,33 @@
+{
+  "resources": [
+    "output/HM6relationshipsdefinition/relationshipsdefinition-vo.ogg",
+    "output/HM6relationshipsdefinition/relationshipsdefinition-vo.m4a"
+  ],
+  "spritemap": {
+    "Slide 01": {
+      "start": 0,
+      "end": 6.101337868480726,
+      "loop": false
+    },
+    "Slide 02": {
+      "start": 7,
+      "end": 29.31734693877551,
+      "loop": false
+    },
+    "Slide 03": {
+      "start": 30,
+      "end": 44.06641723356009,
+      "loop": false
+    },
+    "Slide 04": {
+      "start": 45,
+      "end": 59.27734693877551,
+      "loop": false
+    },
+    "Slide 05": {
+      "start": 60,
+      "end": 66.45333333333333,
+      "loop": false
+    }
+  }
+}
