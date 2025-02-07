@@ -1,0 +1,118 @@
+{
+	"resources": [
+		"output/student-success-45/vo.ogg",
+		"output/student-success-45/vo.m4a"
+	],
+	"spritemap": {
+		"silence": {
+			"start": 0,
+			"end": 1,
+			"loop": false
+		},
+		"Slide 10": {
+			"start": 2,
+			"end": 14.03734693877551,
+			"loop": false
+		},
+		"Slide 11": {
+			"start": 16,
+			"end": 25.375986394557824,
+			"loop": false
+		},
+		"Slide 19": {
+			"start": 27,
+			"end": 39.40800453514739,
+			"loop": false
+		},
+		"Slide 2": {
+			"start": 41,
+			"end": 47.08800453514739,
+			"loop": false
+		},
+		"Slide 28": {
+			"start": 49,
+			"end": 55.08800453514739,
+			"loop": false
+		},
+		"Slide 29": {
+			"start": 57,
+			"end": 72.46666666666667,
+			"loop": false
+		},
+		"Slide 3": {
+			"start": 74,
+			"end": 89.46666666666667,
+			"loop": false
+		},
+		"Slide 30": {
+			"start": 91,
+			"end": 101.02401360544218,
+			"loop": false
+		},
+		"Slide 31": {
+			"start": 103,
+			"end": 114.66133786848073,
+			"loop": false
+		},
+		"Slide 32": {
+			"start": 116,
+			"end": 130.51201814058956,
+			"loop": false
+		},
+		"Slide 33": {
+			"start": 132,
+			"end": 141.52,
+			"loop": false
+		},
+		"Slide 34": {
+			"start": 143,
+			"end": 153.6334693877551,
+			"loop": false
+		},
+		"Slide 35": {
+			"start": 155,
+			"end": 161.69609977324262,
+			"loop": false
+		},
+		"Slide 36": {
+			"start": 163,
+			"end": 175.0373469387755,
+			"loop": false
+		},
+		"Slide 37": {
+			"start": 177,
+			"end": 183.48,
+			"loop": false
+		},
+		"Slide 4": {
+			"start": 185,
+			"end": 195.02401360544218,
+			"loop": false
+		},
+		"Slide 5": {
+			"start": 197,
+			"end": 208.66133786848073,
+			"loop": false
+		},
+		"Slide 6": {
+			"start": 210,
+			"end": 224.51201814058956,
+			"loop": false
+		},
+		"Slide 7": {
+			"start": 226,
+			"end": 235.52,
+			"loop": false
+		},
+		"Slide 8": {
+			"start": 237,
+			"end": 247.6334693877551,
+			"loop": false
+		},
+		"Slide 9": {
+			"start": 249,
+			"end": 255.69609977324262,
+			"loop": false
+		}
+	}
+}
