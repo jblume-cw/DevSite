@@ -1,0 +1,132 @@
+{"frames": {
+
+"HowCanYouStopBullying/w0100.jpg":
+{
+	"frame": {"x":2,"y":528,"w":439,"h":316},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":439,"h":316},
+	"sourceSize": {"w":439,"h":316}
+},
+"HowCanYouStopBullying/w0200.jpg":
+{
+	"frame": {"x":703,"y":2,"w":301,"h":321},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":301,"h":321},
+	"sourceSize": {"w":301,"h":321}
+},
+"HowCanYouStopBullying/w0300.jpg":
+{
+	"frame": {"x":746,"y":648,"w":301,"h":278},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":301,"h":278},
+	"sourceSize": {"w":301,"h":278}
+},
+"HowCanYouStopBullying/w0400.jpg":
+{
+	"frame": {"x":443,"y":528,"w":301,"h":321},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":301,"h":321},
+	"sourceSize": {"w":301,"h":321}
+},
+"HowCanYouStopBullying/w0500.jpg":
+{
+	"frame": {"x":746,"y":325,"w":301,"h":321},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":301,"h":321},
+	"sourceSize": {"w":301,"h":321}
+},
+"get-the-facts-back-over.png":
+{
+	"frame": {"x":189,"y":846,"w":97,"h":64},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":97,"h":64},
+	"sourceSize": {"w":97,"h":64}
+},
+"get-the-facts-back.png":
+{
+	"frame": {"x":568,"y":851,"w":88,"h":58},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":4,"y":3,"w":88,"h":58},
+	"sourceSize": {"w":97,"h":64}
+},
+"get-the-facts-background.png":
+{
+	"frame": {"x":2,"y":2,"w":699,"h":524},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":0,"y":0,"w":699,"h":524},
+	"sourceSize": {"w":700,"h":525}
+},
+"get-the-facts-exit.png":
+{
+	"frame": {"x":658,"y":909,"w":45,"h":37},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":45,"h":37},
+	"sourceSize": {"w":45,"h":37}
+},
+"get-the-facts-next-over.png":
+{
+	"frame": {"x":288,"y":846,"w":96,"h":64},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":96,"h":64},
+	"sourceSize": {"w":96,"h":64}
+},
+"get-the-facts-next.png":
+{
+	"frame": {"x":478,"y":851,"w":88,"h":59},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":4,"y":3,"w":88,"h":59},
+	"sourceSize": {"w":96,"h":64}
+},
+"get-the-facts-sound-off-over.png":
+{
+	"frame": {"x":2,"y":846,"w":98,"h":98},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":0,"y":2,"w":98,"h":98},
+	"sourceSize": {"w":98,"h":100}
+},
+"get-the-facts-sound-off.png":
+{
+	"frame": {"x":102,"y":846,"w":85,"h":86},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":7,"y":7,"w":85,"h":86},
+	"sourceSize": {"w":98,"h":100}
+},
+"get-the-facts-sound-on-over.png":
+{
+	"frame": {"x":386,"y":851,"w":90,"h":65},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":0,"y":1,"w":90,"h":65},
+	"sourceSize": {"w":90,"h":66}
+},
+"get-the-facts-sound-on.png":
+{
+	"frame": {"x":658,"y":851,"w":79,"h":56},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":6,"y":6,"w":79,"h":56},
+	"sourceSize": {"w":90,"h":66}
+}},
+"meta": {
+	"app": "http://www.codeandweb.com/texturepacker",
+	"version": "1.0",
+	"image": "texture.png",
+	"format": "RGBA8888",
+	"size": {"w":1049,"h":948},
+	"scale": "1",
+	"smartupdate": "$TexturePacker:SmartUpdate:ff506c88eb2c7faac842d4e56c246582:b225af47dcea35dd768dfa8a970fad99:88db1022cd6b660616541d2788fcd4f7$"
+}
+}

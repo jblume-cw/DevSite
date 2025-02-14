@@ -1,0 +1,144 @@
+{
+  "gameData": {
+    "playback": {"scorm": "false"},
+    "termOrder": [ 10, 0, 1, 5, 12, 8, 13, 16, 6, 15, 3, 14, 11, 9, 2, 7, 4 ],
+    "terms": [
+      {
+        "term": "Bully",
+        "hint": [
+          "Picks on others",
+          "More likely to end up with a criminal record",
+          "Targets those who are different"
+        ]
+      },
+      {
+        "term": "Victim",
+        "hint": [
+          "May look or act differently than others",
+          "May miss school",
+          "May feel very alone"
+        ]
+      },
+      {
+        "term": "Cyberbullying",
+        "hint": [
+          "The use of technology to bully",
+          "Often happens outside of school",
+          "Involves a phone or computer"
+        ]
+      },
+      {
+        "term": "Bystander",
+        "hint": [
+          "Sees bullying happening",
+          "Could step in and help the victim",
+          "Sometimes they join in on bullying"
+        ]
+      },
+      {
+        "term": "Sexual harassment",
+        "hint": [
+          "Unwanted comments about the body",
+          "Touching someone inappropriately",
+          "Making comments about sexual orientation"
+        ]
+      },
+      {
+        "term": "Friend",
+        "hint": [
+          "Supports you",
+          "Likes you for who you are",
+          "Is there to help when you need them"
+        ]
+      },
+      {
+        "term": "Comeback",
+        "hint": [
+          "A way to stand up for yourself",
+          "Telling the bully to knock it off",
+          "An effective way to get a bully to leave you alone"
+        ]
+      },
+      {
+        "term": "Zink the Zebra",
+        "hint": [
+          "Teaches about respect",
+          "Is different but is true to herself and a good friend to others",
+          "Has spots instead of stripes"
+        ]
+      },
+      {
+        "term": "Respect",
+        "hint": [
+          "Helps people who are different get along",
+          "Important to have for others, if you want it for yourself",
+          "Without it, bullying can take over a school"
+        ]
+      },
+      {
+        "term": "Trusted Adult",
+        "hint": [
+          "Someone you can go to for help",
+          "Someone who you know will support you",
+          "Probably older than you"
+        ]
+      },
+      {
+        "term": "Fear",
+        "hint": [
+          "A common emotion",
+          "Being bullied can make you feel this",
+          "A reason victims of bullying may skip school"
+        ]
+      },
+      {
+        "term": "Confidence",
+        "hint": [
+          "It takes this to confront bullies",
+          "A sense of self-respect",
+          "It can discourage bullying"
+        ]
+      },
+      {
+        "term": "Gossip",
+        "hint": [
+          "Can spread quickly",
+          "Usually untrue or rumors",
+          "Might be spread by word of mouth or online"
+        ]
+      },
+      {
+        "term": "Frenemy",
+        "hint": [
+          "May appear to be a friend",
+          "Is often mean to you",
+          "Friend + Enemy"
+        ]
+      },
+      {
+        "term": "Tolerance",
+        "hint": [
+          "Zink’s message is about this",
+          "Leads to less bullying",
+          "Acceptance of differences"
+        ]
+      },
+      {
+        "term": "Snitching",
+        "hint": [
+          "Trying to get someone in trouble",
+          "Is sometimes considered tattling",
+          "About something that doesn’t really matter"
+        ]
+      },
+      {
+        "term": "Telling",
+        "hint": [
+          "Finding a trusted adult",
+          "Allows you to get help",
+          "Must do this when dangerous situations arise"
+        ]
+      }
+    ]
+  }
+}

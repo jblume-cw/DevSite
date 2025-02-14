@@ -1,0 +1,827 @@
+{
+  "play": {
+    "start": "menu",
+    "showPlayThrough": false,
+    "scenes": {
+      "menu": {
+            "id": "menu",
+            "background": "logo",
+            "title": "Introduction",
+            "description": "starting Act Now!",
+            "call": {"func": "sendSCORM"},
+            "actors": [
+                {
+                    "name": "playbutton",
+                    "type": "button",
+                    "image": "play",
+                    "location": [ 450, 325 ],
+                    "variable": "playbutton"
+                }
+            ],
+            "outcomes": {
+                "start_act_now": {
+                    "events": {"playbutton": "*" },
+                    "actions": [
+                        {
+                            "type": "scene",
+                            "args": ["intro"]
+                        }
+                    ]
+                }
+            }
+        },
+      "intro": {
+        "id": "intro",
+        "background": "cafeteria",
+        "title": "Introduction",
+        "call": {"func": "sendSCORM"},
+        "actors": [
+          {
+            "name": "announcerBox",
+            "type": "announcer",
+            "location": [ 2, 5 ],
+            "text": "Welcome to Newbridge Middle School. This is your orientation course. Please take a moment to meet some of the friendly students here. Move your mouse over each of the characters and then click on one character to choose him or her.",
+            "audio": "6th_int_01",
+            "key": "narrator",
+            "announcerBox": true
+          },
+          {
+            "name": "tom",
+            "type": "character",
+            "image": "tom",
+            "location": [
+              180,
+              120
+            ],
+            "scale": [
+              -0.65, 0.65
+            ],
+            "text": "Tom",
+            "variable": "character_1"
+          },
+          {
+            "name": "mandy",
+            "type": "character",
+            "image": "mandy",
+            "location": [
+              325,
+              165
+            ],
+            "scale": [
+              -0.65, 0.65
+            ],
+            "text": "Mandy",
+            "variable": "character_1"
+          },
+          {
+            "name": "janelle",
+            "type": "character",
+            "image": "janelle",
+            "location": [
+              365,
+              145
+            ],
+            "scale": [
+              0.65, 0.65
+            ],
+            "text": "Janelle",
+            "variable": "character_1"
+          },
+          {
+            "name": "phonebutton",
+            "type": "button",
+            "image": "phone",
+            "location": [ 600, 425 ],
+            "variable": "show_cell_phone"
+          },
+          {
+            "name": "mutebutton",
+            "type": "toggle-button",
+            "images": {
+              "on": "soundOn",
+              "off": "soundOff"
+            },
+            "location": [ 525, 450 ],
+            "variable": "mute_game",
+            "values": {
+              "on": "mute_on",
+              "off": "mute_off"
+            },
+            "scale": [ 1.3, 1.3 ],
+            "active": true
+          },
+          {
+            "name": "phone_1",
+            "type": "phone",
+            "help": {
+              "variable": "phone_1",
+              "text" : "This is where you go to get help. Whether you're talking to someone, exploring a room, or anything else, you'll find good advice here."
+            },
+            "gtfs": {
+              "variable": "phone_2",
+              "text": "You'll be notified when it's time to learn some facts about bullying."
+            },
+            "games": {
+              "text": "Sometimes you can choose this icon to play another game within the school day."
+            },
+            "messages": {
+              "variable": "phone_3",
+              "from": "anonymous",
+              "text": "When you have a text message waiting, this is how you read it. This phone only receives texts, though. You can't send any."
+            },
+            "videos": {
+              "link": "",
+              "text": "You'll be directed when to watch videos about bullying. Click this icon when told to see a video on your phone."
+            }
+          }
+        ],
+        "outcomes": {
+          "choose_character": {
+            "events": {"character_1": "*" },
+            "actions": [
+              {
+                "type": "scene",
+                "args": ["dp1"]
+              }
+            ]
+          }
+        }
+      },
+      "dp1": {
+        "id": "dp1",
+        "background": "cafeteria",
+        "title": "Cafeteria",
+        "call": {"func": "sendSCORM"},
+        "actors": [
+          {
+            "name": "talk_to_1",
+            "type": "character",
+            "image": "$character_1",
+            "speechAnimation": true,
+            "location": [
+              350,
+              50
+            ]
+          },
+          {
+            "name": "choiceBubble",
+            "type": "speech-bubble",
+            "text": "Hey. That’s our principal, Dr. Schafer. He doesn’t actually know what goes on here. Anyway, let’s hang out for a minute. I’m $character_1$. Click one of the response bubbles below to respond to me.",
+            "audio": "6th_int_01",
+            "key": "$character_1"
+          },
+          {
+            "name": "choices_1",
+            "type": "choice",
+            "startChoice": "dp1",
+            "choiceMap": {
+              "dp1": {
+                "text": "Hey. That’s our principal, Dr. Schafer. He doesn’t actually know what goes on here. Anyway, let’s hang out for a minute. I’m $character_1$. Click one of the response bubbles below to respond to me.",
+                "audio": "6th_int_01",
+                "key": "$character_1",
+                "choices": [
+                  {
+                  "link": "dp2",
+                  "text": "One of these?"
+                  },
+                  {
+                  "link": "dp2",
+                  "text": "So, this is how we talk?"
+                  },
+                  {
+                  "link": "dp2",
+                  "text": "You mean these bubbles?"
+                  }
+                ]
+              },
+              "dp2": {
+                "audio": "6th_int_02",
+                "key": "$character_1",
+                "text": "That’s right! While you’re at Newbridge, there’ll be people in different places that you can talk to, like you’re talking to me.",
+                "choices": [
+                  {
+                    "text": "What else can I do?",
+                    "variable": "choice_2",
+                    "value": "zink"
+                  },
+                  {
+                    "text": "It’s all just talking to people?",
+                    "variable": "choice_2",
+                    "value": "zink"
+                  },
+                  {
+                    "text": "OK. Then what?",
+                    "variable": "choice_2",
+                    "value": "zink"
+                  }
+                ]
+              }
+            }
+          }
+        ],
+        "outcomes": {
+          "visit_zink": {
+            "events": { "choice_2": "zink" },
+            "actions": [ { "type": "scene", "args": ["zink"] } ]
+          }
+        }
+      },
+      "zink": {
+        "id": "zink",
+        "background": "cafeteria",
+        "title": "Introduction",
+        "call": {"func": "sendSCORM"},
+        "actors": [
+          {
+            "name": "announcerBox",
+            "type": "announcer",
+            "location": [ 2, 5 ],
+            "text": "Sometimes you’ll be in a room by yourself. That’s when you have to explore and find out what’s going on. Just move your mouse around to see what’s clickable. Like in here, you can check out the poster on the wall. Go ahead. Click it.",
+            "audio": "6th_int_03",
+            "key": "$character_1",
+            "announcerBox": false
+          },
+          {
+            "name": "zink",
+            "type": "character",
+            "image": "zink-poster",
+            "location": [ 155, 200 ],
+            "scale": [ 0.2, 0.2 ],
+            "text": "Zink the Zebra poster",
+            "variable": "zink_poster"
+          },
+          {
+            "name": "phonebutton",
+            "type": "button",
+            "image": "phone",
+            "location": [ 600, 425 ],
+            "variable": "show_cell_phone"
+          },
+          {
+            "name": "mutebutton",
+            "type": "toggle-button",
+            "images": {
+              "on": "soundOn",
+              "off": "soundOff"
+            },
+            "location": [ 525, 450 ],
+            "variable": "mute_game",
+            "values": {
+              "on": "mute_on",
+              "off": "mute_off"
+            },
+            "scale": [ 1.3, 1.3 ],
+            "active": true
+          },
+          {
+            "name": "phone_1",
+            "type": "phone",
+            "help": {
+              "variable": "phone_1",
+              "text" : "This is where you go to get help. Whether you're talking to someone, exploring a room, or anything else, you'll find good advice here."
+            },
+            "gtfs": {
+              "variable": "phone_2",
+              "text": "You'll be notified when it's time to learn some facts about bullying."
+            },
+            "games": {
+              "text": "Sometimes you can choose this icon to play another game within the school day."
+            },
+            "messages": {
+              "variable": "phone_3",
+              "from": "anonymous",
+              "text": "When you have a text message waiting, this is how you read it. This phone only receives texts, though. You can't send any."
+            },
+            "videos": {
+              "link": "",
+              "text": "You'll be directed when to watch videos about bullying. Click this icon when told to see a video on your phone."
+            }
+          }
+        ],
+        "outcomes": {
+          "choose_zink": {
+            "events": {"zink_poster": "zink"},
+            "actions": [
+              {
+                "type": "scene",
+                "args": ["zink_poster"]
+              }
+            ]
+          }
+        }
+      },
+      "zink_poster": {
+        "id": "zink_poster",
+        "background": "cafeteria",
+        "title": "Introduction",
+        "call": {"func": "sendSCORM"},
+        "actors": [
+          {
+            "name": "zinkposter",
+            "type": "zink-poster",
+            "text": "I stand for understanding, respect, compassion and acceptance. I am here to spread the word that regardless of interests, education, cultural background, economic status, level of ability, and/or physical differences, everyone wants to feel accepted."
+          },
+          {
+            "name": "back",
+            "type": "character",
+            "image": "back",
+            "location": [ 10, 10 ],
+            "text": "Close",
+            "variable": "leave_poster"
+          },
+          {
+            "name": "phonebutton",
+            "type": "button",
+            "image": "phone",
+            "location": [ 600, 425 ],
+            "variable": "show_cell_phone"
+          },
+          {
+            "name": "mutebutton",
+            "type": "toggle-button",
+            "images": {
+              "on": "soundOn",
+              "off": "soundOff"
+            },
+            "location": [ 525, 450 ],
+            "variable": "mute_game",
+            "values": {
+              "on": "mute_on",
+              "off": "mute_off"
+            },
+            "scale": [ 1.3, 1.3 ],
+            "active": true
+          },
+          {
+            "name": "phone_1",
+            "type": "phone",
+            "help": {
+              "variable": "phone_1",
+              "text" : "This is where you go to get help. Whether you're talking to someone, exploring a room, or anything else, you'll find good advice here."
+            },
+            "gtfs": {
+              "variable": "phone_2",
+              "text": "You'll be notified when it's time to learn some facts about bullying."
+            },
+            "games": {
+              "text": "Sometimes you can choose this icon to play another game within the school day."
+            },
+            "messages": {
+              "variable": "phone_3",
+              "from": "anonymous",
+              "text": "When you have a text message waiting, this is how you read it. This phone only receives texts, though. You can't send any."
+            },
+            "videos": {
+              "link": "",
+              "text": "You'll be directed when to watch videos about bullying. Click this icon when told to see a video on your phone."
+            }
+          }
+        ],
+        "outcomes": {
+          "close_poster": {
+            "events": {"leave_poster": "back" },
+            "actions": [ { "type": "scene", "args": ["dp2"] } ]
+          }
+        }
+      },
+      "dp2": {
+        "id": "dp2",
+        "background": "cafeteria",
+        "title": "Introduction",
+        "call": {"func": "sendSCORM"},
+        "actors": [
+          {
+            "name": "talk_to_1",
+            "type": "character",
+            "image": "$character_1",
+            "location": [
+              325,
+              50
+            ]
+          },
+          {
+            "name": "choices_2",
+            "type": "choice",
+            "startChoice": "after_poster",
+            "choiceMap": {
+              "after_poster": {
+                "text": "",
+                "audio": "",
+                "choices": [
+                  {
+                    "variable": "choice_3",
+                    "value": "show_phone",
+                    "text": "I might need help sometimes."
+                  },
+                  {
+                    "variable": "choice_3",
+                    "value": "show_phone",
+                    "text": "Can I call somebody if I get lost?"
+                  },
+                  {
+                    "variable": "choice_3",
+                    "value": "show_phone",
+                    "text": "Are you allowed to have phones at Newbridge?"
+                  }
+                ]
+              }
+            }
+          }
+        ],
+        "outcomes": {
+          "introduce_phone": {
+            "events": { "choice_3": "show_phone" },
+            "actions": [ { "type": "scene", "args": ["phone_intro"] } ]
+          }
+        }
+      },
+      "phone_intro": {
+        "id": "phone_intro",
+        "background": "cafeteria",
+        "title": "Introduction",
+        "call": {"func": "sendSCORM"},
+        "actors": [
+          {
+            "name": "announcerBox",
+            "type": "announcer",
+            "location": [ 2, 5 ],
+            "text": "You can open your phone any time by clicking the phone icon in the lower right corner. The phone has tons of apps on it. You can get help with what you’re doing, download videos, get texts, all kinds of stuff. You can change the ringtone and the background too. Try it out! Click on each of the phone’s icons to see what it does.",
+            "audio": "6th_int_04",
+            "key": "$character_1",
+            "announcerBox": false
+          },
+          {
+            "name": "phonebutton",
+            "type": "button",
+            "image": "phone",
+            "location": [ 600, 425 ],
+            "variable": "show_cell_phone"
+          },
+          {
+            "name": "mutebutton",
+            "type": "toggle-button",
+            "images": {
+              "on": "soundOn",
+              "off": "soundOff"
+            },
+            "location": [ 525, 450 ],
+            "variable": "mute_game",
+            "values": {
+              "on": "mute_on",
+              "off": "mute_off"
+            },
+            "scale": [ 1.3, 1.3 ],
+            "active": true
+          },
+          {
+            "name": "phone_1",
+            "type": "phone",
+            "help": {
+              "variable": "phone_1",
+              "text" : "This is where you go to get help. Whether you're talking to someone, exploring a room, or anything else, you'll find good advice here."
+            },
+            "gtfs": {
+              "variable": "phone_2",
+              "text": "You'll be notified when it's time to learn some facts about bullying."
+            },
+            "games": {
+              "text": "Sometimes you can choose this icon to play another game within the school day."
+            },
+            "messages": {
+              "variable": "phone_3",
+              "from": "anonymous",
+              "text": "When you have a text message waiting, this is how you read it. This phone only receives texts, though. You can't send any."
+            },
+            "videos": {
+              "link": "",
+              "text": "You'll be directed when to watch videos about bullying. Click this icon when told to see a video on your phone."
+            }
+          }
+        ],
+        "outcomes": {
+          "user_opens_phone": {
+            "events": { "phone": "open" },
+            "actions": [ { "type": "scene", "args": ["learn_phone"] } ]
+          }
+        }
+      },
+      "learn_phone": {
+        "id": "learn_phone",
+        "background": "cafeteria",
+        "title": "Introduction",
+        "call": {"func": "sendSCORM"},
+        "actors": [
+          {
+            "name": "announcerBox",
+            "type": "announcer",
+            "location": [ 2, 5 ],
+            "text": "You must first click on help, get the facts and messages in your phone before you can move forward.",
+            "audio": "",
+            "announcerBox": false
+          },
+          {
+            "name": "phonebutton",
+            "type": "button",
+            "image": "phone",
+            "location": [ 600, 425 ],
+            "variable": "show_cell_phone"
+          },
+          {
+            "name": "mutebutton",
+            "type": "toggle-button",
+            "images": {
+              "on": "soundOn",
+              "off": "soundOff"
+            },
+            "location": [ 525, 450 ],
+            "variable": "mute_game",
+            "values": {
+              "on": "mute_on",
+              "off": "mute_off"
+            },
+            "scale": [ 1.3, 1.3 ],
+            "active": true
+          },
+          {
+            "name": "phone_1",
+            "type": "phone",
+            "open": true,
+            "help": {
+              "text" : "This is where you go to get help. Whether you're talking to someone, exploring a room, or anything else, you'll find good advice here."
+            },
+            "help": {
+              "variable": "phone_1",
+              "text" : "This is where you go to get help. Whether you're talking to someone, exploring a room, or anything else, you'll find good advice here."
+            },
+            "gtfs": {
+              "variable": "phone_2",
+              "text": "You'll be notified when it's time to learn some facts about bullying."
+            },
+            "games": {
+              "text": "Sometimes you can choose this icon to play another game within the school day."
+            },
+            "messages": {
+              "variable": "phone_3",
+              "from": "anonymous",
+              "text": "When you have a text message waiting, this is how you read it. This phone only receives texts, though. You can't send any."
+            },
+            "videos": {
+              "link": "",
+              "text": "You'll be directed when to watch videos about bullying. Click this icon when told to see a video on your phone."
+            }
+          }
+        ],
+        "outcomes": {
+          "user_completes_phone": {
+            "events": { "phone_1": "closed", "phone_2": "closed", "phone_3": "closed" , "phone": "closed"},
+            "actions": [ { "type": "scene", "args": ["dp3"] } ]
+          }
+        }
+      },
+      "dp3": {
+        "id": "dp3",
+        "background": "cafeteria",
+        "title": "Introduction",
+        "call": {"func": "sendSCORM"},
+        "actors": [
+          {
+            "name": "talk_to_1",
+            "type": "character",
+            "image": "$character_1",
+            "speechAnimation": true,
+            "location": [
+              325,
+              50
+            ]
+          },
+          {
+            "name": "choiceBubble",
+            "type": "speech-bubble",
+            "text": "",
+            "audio": "",
+            "hidden": true
+          },
+          {
+            "name": "choices_3",
+            "type": "choice",
+            "startChoice": "now_what",
+            "choiceMap": {
+              "now_what": {
+                "choices": [
+                  {
+                    "link": "dp5",
+                    "text": "Got it. Now what’s going on here?"
+                  },
+                  {
+                    "link": "dp5",
+                    "text": "Uh, what am I doing here?"
+                  },
+                  {
+                    "link": "dp5",
+                    "text": "What’s the point of all this?"
+                  }
+                ]
+              },
+              "dp5": {
+                "audio": "6th_int_05",
+                "key": "$character_1",
+                "text": "Newbridge has sort of a bullying problem. You’re here to find out about it. Hopefully you’ll act right. You have a lot of power to influence others.",
+                "choices": [
+                  {
+                    "link": "dp6",
+                    "text": "Cool. Let’s go."
+                  },
+                  {
+                    "link": "dp6",
+                    "text": "Just you and me, huh?"
+                  },
+                  {
+                    "link": "dp6",
+                    "text": "So you'll be my guide the whole way?"
+                  }
+                ]
+              },
+              "dp6": {
+                "audio": "6th_int_06",
+                "key": "$character_1",
+                "text": "Actually, you won’t be with me for sure. You’ll pick three different Newbridge students to use throughout the game. You’ll get to make two or three choices about bullying with each character.",
+                "choices": [
+                  {
+                    "link": "dp7",
+                    "text": "Whoa."
+                  },
+                  {
+                    "link": "dp7",
+                    "text": "Weird."
+                  },
+                  {
+                    "link": "dp7",
+                    "text": "Serious?"
+                  }
+                ]
+              },
+              "dp7": {
+                "audio": "6th_int_07",
+                "key": "$character_1",
+                "text": "Yeah, and here’s the other thing. Depending on how you act as one character, you might or might not get hassled by that person when you’re using another character.",
+                "choices": [
+                  {
+                    "link": "dp8",
+                    "text": "Huh?"
+                  },
+                  {
+                    "link": "dp8",
+                    "text": "Don’t get it."
+                  },
+                  {
+                    "link": "dp8",
+                    "text": "What?"
+                  }
+                ]
+              },
+              "dp8": {
+                "audio": "6th_int_08",
+                "key": "$character_1",
+                "text": "Well, if you pick your first character and act like a jerk, then later in the game, when you’re using another character, the first kid will come back and treat you like crap.",
+                "choices": [
+                  {
+                    "link": "dp9",
+                    "text": "Oh, I get it now."
+                  },
+                  {
+                    "link": "dp9",
+                    "text": "Wow. That’s kind of interesting."
+                  },
+                  {
+                    "link": "dp9",
+                    "text": "I see."
+                  }
+                ]
+              },
+              "dp9": {
+                "audio": "6th_int_09",
+                "key": "$character_1",
+                "text": "Then when you’re done, you get a report about how you did. But even if you were a jerk the whole time, you’ll get a couple more chances to play the game, probably.",
+                "choices": [
+                  {
+                    "link": "dp10",
+                    "text": "You mean on separate days?"
+                  },
+                  {
+                    "link": "dp10",
+                    "text": "So I’ll play once, then maybe come back later."
+                  },
+                  {
+                    "link": "dp10",
+                    "text": "I can do different stuff when I come back, then?"
+                  }
+                ]
+              },
+              "dp10": {
+                "audio": "6th_int_10",
+                "key": "$character_1",
+                "text": "Right. As long as you make different choices, you’ll get a different ending. But I’m not gonna give away too much. Hey, I gotta go. Dr. Schafer will probably do some more announcements in a second. He’s not a bad guy, just kind of out of the loop about the bullying here. Anyway, good luck. Maybe I’ll see you later. Bye!",
+                "choices": [
+                  {
+                    "variable": "choice_4",
+                    "value": "conclusion",
+                    "text": "Bye!"
+                  },
+                  {
+                    "variable": "choice_4",
+                    "value": "conclusion",
+                    "text": "So long."
+                  },
+                  {
+                    "variable": "choice_4",
+                    "value": "conclusion",
+                    "text": "See ya."
+                  }
+                ]
+              }
+            }
+          }
+        ],
+        "outcomes": {
+          "finish": {
+            "events": { "choice_4": "conclusion" },
+            "actions": [ { "type": "scene", "args": ["conclusion"] } ]
+          }
+        }
+      },
+      "conclusion": {
+        "id": "conclusion",
+        "background": "cafeteria",
+        "title": "Introduction",
+        "call": {"func": "sendSCORM"},
+        "actors": [
+          {
+            "name": "announcerBubble",
+            "type": "speech-bubble",
+            "audio": "6th_int_02",
+            "key": "narrator",
+            "text": "You have now completed your orientation course. Hope you have a super day at Newbridge, home of the Highlanders."
+          },
+          {
+            "name": "moveonbox",
+            "type": "instructions",
+            "location": [ 300, 250 ],
+            "text": "Please move on to the next activity."
+          },
+          {
+            "name": "phonebutton",
+            "type": "button",
+            "image": "phone",
+            "location": [ 600, 425 ],
+            "variable": "show_cell_phone"
+          },
+          {
+            "name": "mutebutton",
+            "type": "toggle-button",
+            "images": {
+              "on": "soundOn",
+              "off": "soundOff"
+            },
+            "location": [ 525, 450 ],
+            "variable": "mute_game",
+            "values": {
+              "on": "mute_on",
+              "off": "mute_off"
+            },
+            "scale": [ 1.3, 1.3 ],
+            "active": true
+          },
+          {
+            "name": "phone_1",
+            "type": "phone",
+            "help": {
+              "variable": "phone_1",
+              "text" : "This is where you go to get help. Whether you're talking to someone, exploring a room, or anything else, you'll find good advice here."
+            },
+            "gtfs": {
+              "variable": "phone_2",
+              "text": "You'll be notified when it's time to learn some facts about bullying."
+            },
+            "games": {
+              "text": "Sometimes you can choose this icon to play another game within the school day."
+            },
+            "messages": {
+              "variable": "phone_3",
+              "from": "anonymous",
+              "text": "When you have a text message waiting, this is how you read it. This phone only receives texts, though. You can't send any."
+            },
+            "videos": {
+              "link": "",
+              "text": "You'll be directed when to watch videos about bullying. Click this icon when told to see a video on your phone."
+            }
+          }
+        ],
+        "outcomes": { },
+        "actions": [
+            { "type": "choice", "args": [ "act_complete", 1] },
+            { "type": "choice", "args": [ "save", 0 ] }
+        ]
+      }
+    }
+  }
+}

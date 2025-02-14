@@ -1,0 +1,71 @@
+{
+  "name": "Grade 6 Act Now!",
+  "description": "This file contains a description of the Act Now! Play, including all acts",
+  "scorm": false,
+  "logging": false,
+  "autoScale": true,
+  "acts": {
+    "default": {
+      "id": "default",
+      "description": "Every set of acts has a default, which is the act that is started by default.",
+      "name": "Grade 6 Act Now!",
+      "theme": "media/default/theme.json"
+    },
+    "sexual_harassment_lesson": {
+      "id": "sexual_harassment_lesson",
+      "description": "This is the first lesson.",
+      "name": "Sexual Harassment Lesson",
+      "theme": "media/SexualHarassment/theme.json"
+    },
+    "stop_bullying_lesson": {
+      "id": "stop_bullying_lesson",
+      "name": "Stop Bullying Lesson",
+      "theme": "media/HowCanYouStopBullying/theme.json"
+    },
+    "zink_history_lesson": {
+      "id": "zink_history_lesson",
+      "name": "History Of Zink Lesson",
+      "theme": "media/HistoryOfZink/theme.json"
+    },
+    "anti_bullying_lesson": {
+      "id": "anti_bullying_lesson",
+      "name": "Campaign Activity Ideas",
+      "theme": "media/CampaignActivityIdeas/theme.json"
+    },
+    "snitching_vs_telling_lesson": {
+      "id": "snitching_vs_telling_lesson",
+      "name": "Snitching Vs Telling Lesson",
+      "theme": "media/SnitchingVsTelling_grade_6/theme.json"
+    },
+    "comebacks_lesson": {
+      "id": "comebacks_lesson",
+      "name": "Comebacks Lesson",
+      "theme": "media/Comebacks/theme.json"
+    },
+    "prevent_presentation": {
+      "id": "prevent_presentation",
+      "name": "prevent Presentation",
+      "theme": "media/prevent/theme.json"
+    },
+    "discourage_presentation": {
+      "id": "discourage_presentation",
+      "name": "discourage Presentation",
+      "theme": "media/discourage/theme.json"
+    },
+    "allow_presentation": {
+      "id": "allow_presentation",
+      "name": "allow Presentation",
+      "theme": "media/allow/theme.json"
+    },
+    "encourage_presentation": {
+      "id": "encourage_presentation",
+      "name": "encourage Presentation",
+      "theme": "media/encourage/theme.json"
+    },
+    "participate_presentation": {
+      "id": "participate_presentation",
+      "name": "participate Presentation",
+      "theme": "media/participate/theme.json"
+    }
+  }
+}

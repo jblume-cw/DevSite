@@ -1,0 +1,130 @@
+{
+  "autoScale": true,
+  "scorm": false,
+  "logging": false,
+  "texture": "media/texture.png",
+  "textureMap": "media/texture.json",
+  "textureKey": "texture",
+  "text": {
+    "menuHeading": "Welcome to the Bookshelf Shuffle!",
+    "instructions": "Unscramble the terms by dragging each of the letters to the correct spot on the bookshelf. You will receive up to three clues for each term and five hints to use throughout the game. If you drag a letter to the wrong spot you will get a strike. Five strikes and the game is over. The faster you unscramble the terms, the higher your score will be. try to unscramble all of the terms. Good luck!",
+    "scoreLabel": "SCORE:",
+    "termHeading": "TERM #",
+    "winHeading": "Congratulations!",
+    "winText": "You have unscrambled all of the terms and completed the Bookshelf Shuffle.",
+    "wordCorrect": "Correct!",
+    "finalScore": "Final Score: "
+  },
+  "fonts": {
+    "menuHeading": { "font": "18pt american_typewriterbold", "fill": "black", "align": "center"},
+    "instructions": { "font": "13pt american_typewriterbold", "fill": "black", "wordWrap": true, "align": "center" },
+    "winText": { "font": "15pt american_typewriterbold", "fill": "black", "wordWrap": true, "align": "center" },
+    "heading": { "font": "25pt american_typewriterbold", "fill": "#F4F0DA", "align": "center" },
+    "scoreLabel": { "font": "15pt american_typewriterbold", "fill": "#33CCFF", "align": "center" },
+    "scoreFinal": { "font": "17pt american_typewriterbold", "fill": "#666666", "align": "center" },
+    "scoreText": { "font": "15pt american_typewriterbold", "fill": "#CBDB3C", "align": "center" },
+    "clue": { "font": "13pt american_typewriterbold", "fill": "black",  "align": "center" },
+    "hint": { "font": "13pt american_typewriterbold", "fill": "#D54C9A",  "align": "center" },
+    "usedHint": { "font": "13pt american_typewriterbold", "fill": "#666666",  "align": "center" },
+    "letter": { "font": "17pt american_typewriterbold", "fill": "black",  "align": "center" }
+  },
+  "lineSpacing": -2,
+  "options": {
+    "gameSpeed": 100,
+    "clueTicks": 70,
+    "pointValue": 40,
+    "cluePenalty": 10,
+    "textAngle": -14,
+    "clueYOffset": 100
+  },
+  "booksInfo" : "Please remember that these offsets are from the bottom left, not top left.",
+  "books" : [
+    {
+      "correct": "book1-correct.png",
+      "incorrect": "book1-incorrect.png",
+      "off": "book1-off.png",
+      "over": "book1-over.png",
+      "bodyOffset": [ 3, 0 ],
+      "bodySize": [ 38, 130],
+      "textOffset": [ 20, -100],
+      "faces": "center"
+    },
+    {
+      "correct": "book2-correct.png",
+      "incorrect": "book2-incorrect.png",
+      "off": "book2-off.png",
+      "over": "book2-over.png",
+      "bodyOffset": [ 3, 0 ],
+      "bodySize": [ 38, 110],
+      "textOffset": [ 21, -92],
+      "faces": "center"
+    },
+    {
+      "correct": "book3-correct.png",
+      "incorrect": "book3-incorrect.png",
+      "off": "book3-off.png",
+      "over": "book3-over.png",
+      "bodyOffset": [ 20, 0 ],
+      "bodySize": [ 25, 130],
+      "textOffset": [ 33, -95],
+      "faces": "right"
+    },
+    {
+      "correct": "book4-correct.png",
+      "incorrect": "book4-incorrect.png",
+      "off": "book4-off.png",
+      "over": "book4-over.png",
+      "bodyOffset": [ 25, 0 ],
+      "bodySize": [ 36, 130],
+      "textOffset": [ 42, -100],
+      "faces": "right"
+    },
+    {
+      "correct": "book5-correct.png",
+      "incorrect": "book5-incorrect.png",
+      "off": "book5-off.png",
+      "over": "book5-over.png",
+      "bodyOffset": [ 3, 0 ],
+      "bodySize": [ 34, 130],
+      "textOffset": [ 20, -100],
+      "faces": "left"
+    },
+    {
+      "correct": "book6-correct.png",
+      "incorrect": "book6-incorrect.png",
+      "off": "book6-off.png",
+      "over": "book6-over.png",
+      "bodyOffset": [ 2, 0 ],
+      "bodySize": [ 30, 130],
+      "textOffset": [ 15, -95],
+      "faces": "left"
+    }
+  ],
+  "buttons": {
+    "play": ["play.png", "play-over.png"],
+    "playAgain": ["play-again.png", "play-again-over.png"],
+    "next": ["next.png", "next-over.png"],
+    "soundOn": [ "sound-on.png", "sound-off-over.png"],
+    "soundOff": ["sound-off.png","sound-off-over.png" ],
+    "hint":[ "hint-letter.png", "hint-letter-over.png" ]
+  },
+  "buttonLocation": [ 460, 490 ],
+  "background": "game-background.png",
+  "backgroundMenu": "splash-background.png",
+  "hintLetter": "hint-letter.png",
+  "hintLetterInactive": "hint-letter-inactive.png",
+  "hintLetterOver": "hint-letter-over.png",
+  "letterTile": "letter-tile.png",
+  "letterTileOver": "letter-tile-over.png",
+  "strikeBoxMarked": "strike-box-marked.png",
+  "strikeBoxUnmarked": "strike-box-unmarked.png",
+  "soundKey": "bookShelfShuffleSounds",
+  "soundFile": [ "media/bookShelfShuffle.m4a", "media/bookShelfShuffle.ogg" ],
+  "sounds": {
+    "buzz": [ 0.0, 0.25, false, "buzz03, Starts at 0, lasts 0.19736961 seconds, doesn't loop"],
+    "shh": [ 0.3, 0.9, false, "HUMAN ELEMENT SHH LONG 01"],
+    "school_hall_loop": [ 1.3, 13.45, true, "school_hall_amb_01_30_loop"],
+    "service_bell_double": [ 14.893, 1.7, false, "service_bell_01-double"],
+    "service_bell": [ 16.593, 3.297, false, "service_bell_01"]
+  }
+}
