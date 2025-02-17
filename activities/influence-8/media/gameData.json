@@ -1,0 +1,674 @@
+{
+  "gameData": {
+	"playback": { "scorm": "false" },
+	"boxInsideInstructions": "Welcome to the board game Influence. Your goal is to finish your school day having a positive influence on your classmates, helping to eliminate bullying in your school. You can do this by making the right choices when presented with a bullying situation. When you land on a Situation space, you will have to identify the best way to handle a bullying situation. When you land on a Tell space you will have to determine if you should tell someone about a possible bullying situation. Select the correct answer for a Situation or Tell and your classmates will notice, giving you positive influence points. Making the wrong choice will encourage bullying, and give you negative influence points. When you land on a +/- space you will see how your recent actions have influenced how your classmates treat bullying behavior. You will also be given tips on handling bullying situations when landing on a Tips space. Good luck!",
+	"gameover": {
+	  "positive": "Your choices have had a positive influence on your school and bullying has decreased. Good Job!",
+	  "negative": "Your choices has a negative influence on your school and have lead to an increase in bullying. Play again and try to make better decisions to eliminate bullying.",
+	  "zero": "this is the zero text?"
+	},
+	"tips": {
+	  "tip": [
+		"Sexual harassment should never be ignored. Firmly tell the bully that you want it to stop and report it to an adult.",
+		"Kelly made a difference during her short life by creating Zink the Zebra. Remember her legacy of treating everyone with respect and empathy.",
+		"Online posts cannot be permanently erased. Whatever you write or share can be forwarded or retrieved even after you think it has been deleted.",
+		"Prevent cyberbullying by refusing to pass along, or comment on, mean electronic messages.",
+		"One way to prevent cyberbullying is to protect your passwords and use privacy settings on your online accounts so you know who can see your information.",
+		"Do your part to participate in an anti-bullying campaign in your school. Get everyone involved, including students, teachers and other staff.",
+		"A good comeback can take the power of hurting someone away from the bully without them becoming more aggressive or starting a physical confrontation.",
+		"Set a good example for younger kids who look up to you; don't participate in bullying and stand up for victims.",
+		"Sometimes all it takes is telling someone “you’re being a bully, cut it out” to stop a bullying event.",
+		"One way to make things better is to apologize to the kids you have bullied, or kids you have not stood up for when you saw them being bullied.",
+		"Remember: You don’t have to like everyone around you, but you have to treat everyone with respect.",
+		"If you’re nervous about the transition to high school, remember that you’re not alone. Talk to an adult to help you through the transition period."
+	  ]
+	},
+    "plusMinuses": {
+      "plusMinus": [
+        {
+          "score": "-3",
+          "text": "Your neighbor hears her friends gossiping about a girl, then being nice to her face. She joins in the gossip, then invites the girl to a sleepover."
+        },
+        {
+          "score": "4",
+          "text": "Some kids bother and throw things at a girl in study hall every day. Your best friend stands up for her and tells the other kids to knock it off."
+        },
+        {
+          "score": "2",
+          "text": "A group of guys punch a boy every time they pass him in the hall. Your track teammate asks him if he is OK, and goes with him to report the bullying."
+        },
+        {
+          "score": "3",
+          "text": "Meghan won't let Alexis sit at her lunch table anymore. Two of your friends decide to sit with Alexis instead of Meghan."
+        },
+        {
+          "score": "2",
+          "text": "Brad regularly threatens Will. Will ignores Brad, but it is getting worse, and with more people involved. Paris tells a teacher what is going on."
+        },
+        {
+          "score": "2",
+          "text": "Tom sees a lot of bullying in class. The teacher sees it and does nothing about it. Tom talks to the school counselor about the situation."
+        },
+        {
+          "score": "-1",
+          "text": "Some kids bother and tease a girl on the bus every day. Your best friend chooses to sit in the front of the bus and ignore what’s going on."
+        },
+        {
+          "score": "3",
+          "text": "Your brother invites a classmate, who is often teased and pushed off of her bus seat, to sit with him on the way to school."
+        },
+        {
+          "score": "-4",
+          "text": "You see a student trip a younger student in the hallway and everyone starts laughing. One of your classmates reenacts the kid tripping as a joke."
+        },
+        {
+          "score": "-4",
+          "text": "At lunch everyone is making fun of a girl who is out sick today. Your cousin is leading the table in mocking her."
+        },
+        {
+          "score": "3",
+          "text": "Your lab partner sees a classmate looking upset because some kids told her she is fat. She supports her and makes her feel better about what happened."
+        }
+      ]
+    },
+	"tells": {
+	  "tell": [
+        {
+          "text": "Lindsey is copying more than 20 pages on the copying machine in the library, where there is a five page copy limit. She does it when the librarian is helping other kids so she hasn't been caught. What do you do?",
+          "option": [
+            {
+              "score": "-1",
+              "text": "Tell the librarian",
+              "feedback": "That would be snitching because Lindsey printing extra pages isn’t hurting you."
+            },
+            {
+              "score": "1",
+              "text": "Ignore it",
+              "feedback": "That’s right. Printing extra pages isn’t hurting anybody."
+            }
+          ]
+        },
+        {
+          "text": "Soda was banned from school last year. Every day Jessie sneaks in a bottle of soda to secretly drink at lunch.",
+          "option": [
+            {
+              "score": "-1",
+              "text": "Tell someone at school",
+              "feedback": "That would be snitching. What Jessie drinks at lunch isn’t hurting anyone."
+            },
+            {
+              "score": "1",
+              "text": "Ignore it",
+              "feedback": "That’s right. Jessie drinking soda at lunch isn’t hurting anyone."
+            }
+          ]
+        },
+        {
+          "text": "You saw posts on a classmate’s social networking page that said “Everyone will be sorry on Tuesday” and “This will all be over soon”. You can't tell if they are joking or serious. What do you do?",
+          "option": [
+            {
+              "score": "3",
+              "text": "Tell an adult at school",
+              "feedback": "You are correct. You absolutely need to tell an adult at school in a situation like this."
+            },
+            {
+              "score": "-3",
+              "text": "Ignore it",
+              "feedback": "Wrong answer. You never want to ignore a threat, even if you’re not sure if it’s for real or just a joke. Always tell an adult."
+            }
+          ]
+        },
+        {
+          "text": "Lately you have been getting weird text messages like “You better watch yourself” and “Be careful who you trust.” They’re coming from a blocked number and you don't know who is sending them. What do you do?",
+          "option": [
+            {
+              "score": "2",
+              "text": "Tell an adult at home",
+              "feedback": "Because these text messages are threatening, you are definitely right in getting an adult involved."
+            },
+            {
+              "score": "-2",
+              "text": "Ignore it",
+              "feedback": "Unfortunately, ignoring these messages isn’t going to make them stop. Tell someone at home what’s going on so they can help."
+            }
+          ]
+        },
+        {
+          "text": "Every time Devon and his friends pass you in the hallway they pretend to cough, but they’re really calling you a “homo” or “gay”. Your friends always laugh. This has been going on all year. What do you do?",
+          "option": [
+            {
+              "score": "2",
+              "text": "Tell an adult",
+              "feedback": "That’s correct. You are being sexually harassed and you need to tell an adult."
+            },
+            {
+              "score": "-2",
+              "text": "Ignore it",
+              "feedback": "Wrong answer. You are being sexually harassed and you need to tell an adult about it."
+            }
+          ]
+        },
+        {
+          "text": "All week Julia’s been sneaking out of math class early while Mrs. Campbell is writing their homework on the board. What do you do?",
+          "option": [
+            {
+              "score": "-1",
+              "text": "Tell Mrs. Campbell",
+              "feedback": "That’s snitching. Julia isn’t hurting anyone by sneaking out of class."
+            },
+            {
+              "score": "1",
+              "text": "Ignore it",
+              "feedback": "That’s correct. It may unfair, but Julia’s sneaking out of class isn’t hurting anyone."
+            }
+          ]
+        },
+        {
+          "text": "A group of girls have been bragging about using their cell phones to take pictures of other girls while they are changing in the locker room. They are creating a website where classmate's can vote in a “hot body” contest. What do you do?",
+          "option": [
+            {
+              "score": "3",
+              "text": "Tell an adult",
+              "feedback": "That’s correct. This is a very serious situation and an adult needs to know about it."
+            },
+            {
+              "score": "-3",
+              "text": "Ignore it",
+              "feedback": "Wrong answer. This is a very serious situation and an adult needs to know about it."
+            }
+          ]
+        },
+        {
+          "text": "Terrell still has a thing for his ex-girlfriend. At lunch you overhear him telling everyone that he is going to beat up her new boyfriend so she will come back to him. What do you do?",
+          "option": [
+            {
+              "score": "2",
+              "text": "Tell a teacher",
+              "feedback": "That’s right. An adult needs to know about these threats."
+            },
+            {
+              "score": "-2",
+              "text": "Ignore it",
+              "feedback": "Wrong answer. An adult needs to know about these threats."
+            }
+          ]
+        },
+        {
+          "text": "Sean and Pete are identical twins and switch places in English class when there is a substitute teacher. What do you do?",
+          "option": [
+            {
+              "score": "-1",
+              "text": "Tell the teacher",
+              "feedback": "That would be snitching. Sean and Pete aren’t actually hurting anyone."
+            },
+            {
+              "score": "1",
+              "text": "Ignore it",
+              "feedback": "Good answer. Sean and Pete aren’t actually hurting anyone."
+            }
+          ]
+        },
+        {
+          "text": "Rachel is really thirsty but Mr. Williams won’t excuse her from class to get a drink. When the class breaks into groups for a project, Rachel takes the opportunity to sneak out for a sip of water before rejoining her group. What do you do?",
+          "option": [
+            {
+              "score": "-1",
+              "text": "Tell Mr. Williams",
+              "feedback": "Nope. That would be snitching. Rachel isn’t hurting anyone by sneaking out for a sip of water."
+            },
+            {
+              "score": "1",
+              "text": "Ignore it",
+              "feedback": "Right. Rachel isn’t hurting anyone by sneaking out for a sip of water."
+            }
+          ]
+        }
+      ]
+	},
+    "situations": {
+      "situation": [
+        {
+          "area": "hallway",
+          "text": "A classmate is throwing a big party after winning a contest on a local radio station. The party is by special invite only. Almost everyone in your class got an invitation, including you. Two girls that this classmate doesn’t like were not invited. What do you do?",
+          "option": [
+            {
+              "score": "-3",
+              "text": "Talk about the party with everyone else. If the girls weren’t so annoying they would have been invited.",
+              "feedback": "Now you’re being a bully too."
+            },
+            {
+              "score": "4",
+              "text": "Talk to the classmate who’s throwing the party and see if she can invite the girls.",
+              "feedback": "That’s a great idea."
+            },
+            {
+              "score": "0",
+              "text": "You might lose your invitation if you speak up, so nothing.",
+              "feedback": "Supporting the bully by excluding others is creating a cruel environment in your school."
+            }
+          ]
+        },
+        {
+          "area": "hallway",
+          "text": "Someone has been vandalizing Monte’s locker by smearing it with sticky slime, putting gum on the lock so it won’t open and scratching insults into the paint. He doesn’t know who is doing it, but he is getting really mad and a group of guys gather to see his reaction every day. What do you do?",
+          "option": [
+            {
+              "score": "0",
+              "text": "Leave it alone, it’s not your business.",
+              "feedback": "Doing nothing isn’t going to help Monte, and only supports the bullies."
+            },
+            {
+              "score": "3",
+              "text": "Tell a teacher.",
+              "feedback": "Sounds like a good idea. It sounds like this has been going on for a while now."
+            },
+            {
+              "score": "2",
+              "text": "Help Monte clean up his locker.",
+              "feedback": "That’s a good way to show your support of Monte."
+            }
+          ]
+        },
+        {
+          "area": "hallway",
+          "text": "Jeff and Mandy broke up last week. Every time Mandy passes Jeff in the hall, he tells her how hot she looks that day. Mandy tells you it is really making her uncomfortable. What do you do?",
+          "option": [
+            {
+              "score": "4",
+              "text": "Tell Jeff to stop.",
+              "feedback": "Great answer! Standing up to Jeff will help stop the sexual harassment."
+            },
+            {
+              "score": "3",
+              "text": "Talk to an adult.",
+              "feedback": "It’s a good idea to get an adult involved because Mandy is being sexually harassed."
+            },
+            {
+              "score": "0",
+              "text": "Tell Mandy not to worry about it.",
+              "feedback": "That’s not going to make the comments stop."
+            }
+          ]
+        },
+        {
+          "area": "computer lab",
+          "text": "Paul has the password to his ex-girlfriend's email. He is mad that she broke up with him and has been checking her messages and sending emails to her friends, trying to start fights so she will come back to him. He bragged about his scheme to you. What do you do?",
+          "option": [
+            {
+              "score": "4",
+              "text": "Tell him you don’t think what he’s doing is cool.",
+              "feedback": "This shows that you will not stand for bullying."
+            },
+            {
+              "score": "0",
+              "text": "Tell him he’ll find another girl to date and should forget her.",
+              "feedback": "Nice try distracting Paul, but doing nothing will not keep him from hurting his ex and her new boyfriend."
+            },
+            {
+              "score": "3",
+              "text": "Tell his ex-girlfriend to change her password.",
+              "feedback": "Good idea, what Paul is doing is really violating her privacy."
+            }
+          ]
+        },
+        {
+          "area": "computer lab",
+          "text": "An email has been forwarded to you and about a hundred other students. This message has some girls’ names and comments about whether people like them, and what their dating experience is rumored to be. What do you do?",
+          "option": [
+            {
+              "score": "2",
+              "text": "Delete the message and don't pass it on.",
+              "feedback": "That’s a start. Passing it on makes you a bully, but others will still see and add to the message if you don’t tell someone."
+            },
+            {
+              "score": "-4",
+              "text": "Write your opinion and forward it to some other people; no one will know that you wrote it.",
+              "feedback": "Now you’re being a bully too."
+            },
+            {
+              "score": "3",
+              "text": "Print it out and tell an adult what is going around.",
+              "feedback": "It’s always a good idea to get an adult involved when cyberbullying is going on."
+            }
+          ]
+        },
+        {
+          "area": "computer lab",
+          "text": "You notice that some of your classmates are repeatedly posting negative comments on a classmate’s facebook page. You do not know if the comments are based on real incidents or rumors, but you have noticed that your classmate has been absent from school a lot lately. What do you do?",
+          "option": [
+            {
+              "score": "3",
+              "text": "Report the negative comments to an adult (a parent, teacher or principal).",
+              "feedback": "An adult is definitely needed in this situation."
+            },
+            {
+              "score": "-2",
+              "text": "Mind your own business.",
+              "feedback": "Minding your own business is not going to help the victim."
+            },
+            {
+              "score": "4",
+              "text": "Talk to the classmates who are posting the comments and let them know that you don’t think it’s cool.",
+              "feedback": "Good idea. When you confront bullies, it shows that you do not agree with how they treat others."
+            }
+          ]
+        },
+        {
+          "area": "schoolyard",
+          "text": "Shauna likes Derek who is going out with Monique. Shauna starts telling everyone that she saw Monique sitting in the waiting room of the free clinic and that she has herpes. You know that’s not true but if Monique or Derek’s family hear about it, they will make them break up, which is what Shauna is hoping for. What do you do?",
+          "option": [
+            {
+              "score": "0",
+              "text": "Mind your own business.",
+              "feedback": "That’s not going to help the situation."
+            },
+            {
+              "score": "4",
+              "text": "Tell Shauna to stop spreading rumors.",
+              "feedback": "Way to stand up for Monique!"
+            },
+            {
+              "score": "-4",
+              "text": "Tell everyone that Shauna has herpes.",
+              "feedback": "Two wrongs don’t make a right."
+            }
+          ]
+        },
+        {
+          "area": "schoolyard",
+          "text": "Jack and Aaron don’t really like Clay. They think he’s an annoying little kid, even though he is in the same grade as Jack and Aaron. Aaron asks Clay to go on a bike ride them after school, and messes with Clay’s bike chain so it will fall off and he will crash. You see Clay fall off his bike as Jack and Aaron ride away laughing. What do you do?",
+          "option": [
+            {
+              "score": "3",
+              "text": "Help Clay put the chain back on his bike.",
+              "feedback": "Showing that you support Clay is a good idea."
+            },
+            {
+              "score": "0",
+              "text": "Stay out of it.",
+              "feedback": "If you do nothing, the bullying will most likely continue."
+            },
+            {
+              "score": "4",
+              "text": "Tell Jack and Aaron to be nice to Clay, or at least leave him alone.",
+              "feedback": "Good job standing up for Clay."
+            }
+          ]
+        },
+        {
+          "area": "schoolyard",
+          "text": "Jessa and Kate told two shy guys that they would meet them at the mall food court. They hid and watched the guys waiting around for them for over an hour. The next day they laughed with all their friends and told the guys they were there and must’ve just missed them. The guys ask them to meet there again tonight. What do you do?",
+          "option": [
+            {
+              "score": "3",
+              "text": "Give the guys a heads up.",
+              "feedback": "Good idea. Hopefully they won’t get hurt again."
+            },
+            {
+              "score": "4",
+              "text": "Tell Jessa and Kate to leave the guys alone.",
+              "feedback": "Good job standing up to the bullies."
+            },
+            {
+              "score": "-2",
+              "text": "Go to the mall to see if they wait again.",
+              "feedback": "That’s gives the bullies the attention they want."
+            }
+          ]
+        },
+        {
+          "area": "cafeteria",
+          "text": "Kalynn likes to dress in black and listens to “goth” music. Madison and Marley are planning to dress up in black and act depressed all day, to make fun of Kalynn. You know Kalynn is going through a lot and sees a counselor so this might really hurt her feelings. What do you do?",
+          "option": [
+            {
+              "score": "4",
+              "text": "Tell Madison and Marley to leave Kalynn alone.",
+              "feedback": "Great job standing up for Kalynn."
+            },
+            {
+              "score": "0",
+              "text": "Suggest to Kalynn that she stays home sick from school that day.",
+              "feedback": "Avoiding school might postpone the bullying but that will not stop Marley and Madison from hurting Kalynn another day."
+            },
+            {
+              "score": "-4",
+              "text": "Dress in black with Madison and Marley.",
+              "feedback": "That’s just going to make Kalynn feel worse."
+            }
+          ]
+        },
+        {
+          "area": "cafeteria",
+          "text": "Matt always asks Ramon questions in front of others, knowing he has a stutter and will have trouble answering. He then finishes the sentence for Ramon, and fakes the stutter too. Ramon gets red and ducks into an empty classroom whenever Matt does this so you know it is really getting to him. What do you do?",
+          "option": [
+            {
+              "score": "-3",
+              "text": "Laugh so Matt doesn’t turn his teasing to you.",
+              "feedback": "Laughing is just encouraging the bully."
+            },
+            {
+              "score": "4",
+              "text": "Stand up for Ramon and tell Matt he is being a bully.",
+              "feedback": "Awesome idea! This is what will really help Ramon and show Matt that bullying will not be tolerated around you!"
+            },
+            {
+              "score": "1",
+              "text": "Talk to Ramon later.",
+              "feedback": "While befriending Ramon later shows support, try to do something in the moment, if possible."
+            }
+          ]
+        },
+        {
+          "area": "cafeteria",
+          "text": "A group of kids whose parents are immigrants from the same country always sit together at the same lunch table. At lunch they talk to each other in a foreign language. Emma and Dani always walk by and say nonsense words, mocking what they think the kids sound like. They think all kids should just speak English and are determined to get them to stop speaking a foreign language by getting other people to laugh at them. What do you do?",
+          "option": [
+            {
+              "score": "0",
+              "text": "Go outside to eat your lunch to avoid the situation.",
+              "feedback": "Ignoring it won’t help the situation."
+            },
+            {
+              "score": "2",
+              "text": "Tell a teacher.",
+              "feedback": "If this has been going on for awhile it’s a good idea to get a teacher involved."
+            },
+            {
+              "score": "4",
+              "text": "Tell Dani and Emma to knock it off.",
+              "feedback": "Way to stand up to the bullies!"
+            }
+          ]
+        },
+        {
+          "area": "classroom",
+          "text": "Maurice and his friends like to gang up on the smallest kid in class, Cody, and try to twist his nipples as hard as they can to see who can leave a bruise. You’ve seen this happen every day in gym class and sometimes after school. What do you do?",
+          "option": [
+            {
+              "score": "3",
+              "text": "Tell a teacher.",
+              "feedback": "An adult absolutely needs to get involved in this situation."
+            },
+            {
+              "score": "0",
+              "text": "Mind your own business, or they might come after you.",
+              "feedback": "That’s not going to help Cody. He’s being sexually harassed."
+            },
+            {
+              "score": "-3",
+              "text": "Laugh along with Maurice and his friends.",
+              "feedback": "Laughing just encourages the bullies."
+            }
+          ]
+        },
+        {
+          "area": "classroom",
+          "text": "There is a kid in your class who has an unusual name because his parents moved to the US from another country. A group of guys have given him an obnoxious nickname and asked him if he is a terrorist because of where his parents are from. You know he is a really nice guy, but kind of shy and unlikely to stand up for himself. What do you do?",
+          "option": [
+            {
+              "score": "0",
+              "text": "Nothing. They’re not bothering you.",
+              "feedback": "That’s not going to help the situation."
+            },
+            {
+              "score": "4",
+              "text": "Tell the guys to stop.",
+              "feedback": "Way to stand up for the victim."
+            },
+            {
+              "score": "-3",
+              "text": "Come up with your own nickname for the group of guys to tease them back.",
+              "feedback": "Now you’re a bully too."
+            }
+          ]
+        },
+        {
+          "area": "classroom",
+          "text": "Victor told Kyle that Andy has a crush on him. Andy is rumored to be gay and Victor is now calling Kyle his boyfriend. Kyle is embarrassed but doesn’t want to draw any attention to himself and you see him being hostile and mean to Andy so he’ll get the hint to back off. What do you do?",
+          "option": [
+            {
+              "score": "2",
+              "text": "Tell Kyle to ignore Victor and leave Andy alone.",
+              "feedback": "That’s a good start since Kyle and Andy are both victims, Kyle shouldn’t want to make things harder for Andy."
+            },
+            {
+              "score": "4",
+              "text": "Tell Victor to knock it off.",
+              "feedback": "Way to stand up to a bully!"
+            },
+            {
+              "score": "-3",
+              "text": "Start a rumor about Victor.",
+              "feedback": "That makes you a bully too."
+            }
+          ]
+        },
+        {
+          "area": "gym",
+          "text": "In the locker room some girls are using their cell phones to take pictures of other girls while they are changing clothes. They haven't done anything with them yet, but they are talking about posting them online or sending the pictures to other classmates to vote on. What do you do?",
+          "option": [
+            {
+              "score": "0",
+              "text": "Tell these girls they better not have any pictures of you!",
+              "feedback": "That’s not going to help anyone else from the serious sexual harassment that is going on."
+            },
+            {
+              "score": "3",
+              "text": "Tell the gym teacher or coach what the girls are doing in the locker room.",
+              "feedback": "Good job, this is serious sexual harassment that must be stopped!"
+            },
+            {
+              "score": "-3",
+              "text": "Just ignore the girls and don't let them catch you changing.",
+              "feedback": "Not helpful. Someone needs to be told before this situation gets worse."
+            }
+          ]
+        },
+        {
+          "area": "gym",
+          "text": "April has a locker right next to Shauna, who is overweight and very sensitive. April always complains loudly about how she doesn’t have enough room at her locker and how something stinks, implying Shauna has body odor. Shauna goes to her locker as little as possible and carries deodorant in her back pack to reapply it because of April. You know April is just making it up to make Shauna feel bad. What do you do?",
+          "option": [
+            {
+              "score": "4",
+              "text": "Tell April to knock it off.",
+              "feedback": "That’s a great way to stand up for Shauna."
+            },
+            {
+              "score": "-4",
+              "text": "Go along with April.",
+              "feedback": "That makes you a bully too."
+            },
+            {
+              "score": "0",
+              "text": "Say nothing.",
+              "feedback": "That’s not going to help the situation."
+            }
+          ]
+        },
+        {
+          "area": "gym",
+          "text": "During the volleyball unit, Zach tries to spike the ball over the net and into the face of Carlos. Zach often tries to take on Carlos in games, because he is a lot smaller and it’s easy to score on him. What do you do?",
+          "option": [
+            {
+              "score": "-3",
+              "text": "Try Zach’s strategy to rack up some points for your team.",
+              "feedback": "That’s a cheap way to score and now you’re a bully too."
+            },
+            {
+              "score": "4",
+              "text": "Tell Zach to play fair.",
+              "feedback": "Good job doing what’s right."
+            },
+            {
+              "score": "0",
+              "text": "Keep playing and mind your own business.",
+              "feedback": "That’s not going to help Carlos."
+            }
+          ]
+        },
+        {
+          "area": "library",
+          "text": "Latonia and Reagan send some anonymous messages on a social network to Anna, to make her think someone likes her. When she starts asking around about who it could be, they think it would be funny to turn her secret crush into a stalker and slip notes into her locker, post mean messages, and send her texts saying “I’m watching you”. You overhear them saying they think it is really hilarious that she is getting scared, and plotting about what they can do next. What do you do?",
+          "option": [
+            {
+              "score": "2",
+              "text": "Talk to Anna.",
+              "feedback": "Good job supporting the victim, the other girls are cyberbullying her."
+            },
+            {
+              "score": "4",
+              "text": "Tell Latonia and Reagan to stop.",
+              "feedback": "Good job standing up to the bullies."
+            },
+            {
+              "score": "3",
+              "text": "Tell an adult.",
+              "feedback": "It’s always a good idea to get an adult involved when someone is being cyberbullied."
+            }
+          ]
+        },
+        {
+          "area": "library",
+          "text": "While in the library you see a couple of kids writing all over a girl’s picture in a copy of last year’s yearbook. You know that the girl is not very popular and gets picked on a lot. What do you do?",
+          "option": [
+            {
+              "score": "2",
+              "text": "Tell the librarian.",
+              "feedback": "Finding an adult is a good idea."
+            },
+            {
+              "score": "4",
+              "text": "Tell the kids to stop writing all over her picture.",
+              "feedback": "Way to stand up for your classmate!"
+            },
+            {
+              "score": "-3",
+              "text": "Join in and write a nasty comment about her.",
+              "feedback": "Wrong answer. That’s considered bullying."
+            }
+          ]
+        },
+        {
+          "area": "library",
+          "text": "Jennifer used to be best friends with Celia. They had a fight and Celia has been using her computer to edit pictures of Jennifer and post them online as personal ads looking for dates. Jennifer has told you that she has gotten some perverted emails and phone calls from men she's never met. What do you do?",
+          "option": [
+            {
+              "score": "3",
+              "text": "Tell her what you heard about the personal ads and go with her to tell your teacher.",
+              "feedback": "Good answer. That is showing that you support Jennifer."
+            },
+            {
+              "score": "-1",
+              "text": "Just shrug your shoulder and change the subject.",
+              "feedback": "Doing nothing isn’t going to help Jennifer and this situation could get dangerous fast."
+            },
+            {
+              "score": "-2",
+              "text": "Laugh and tell her it must be a mistake.",
+              "feedback": "You should step up and help Jennifer, not laugh at her situation."
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

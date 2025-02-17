@@ -1,0 +1,371 @@
+{
+  "autoScale": true,
+  "scorm": false,
+  "logging": false,
+  "fonts": {
+    "text": { "font": "12pt castletregular", "fill": "#FFFFFF", "wordWrap": true , "align": "center"},
+    "menu" : { "font": "18pt castletregular", "fill": "#FF6600" },
+    "score" : { "font": "20pt castletbold", "fill": "#FF3800" },
+    "dice" : { "font": "20pt castletregular", "fill": "#FFFFFF" },
+    "zoom" : {
+      "title": { "font": "20pt castletregular", "fill": "#FFFFFF" },
+      "inout": { "font": "16pt castletregular", "fill": "#FFFFFF" }
+    },
+    "cards": {
+      "tip": {
+        "text": { "font": "16pt castletregular", "fill": "#000000", "wordWrap": true , "align": "center"}
+      },
+      "plusminus": {
+        "text": { "font": "16pt castletregular", "fill": "#000000", "wordWrap": true , "align": "center"},
+        "score": { "font": "24pt castletregular", "fill": "#000000" }
+      },
+      "question" : {
+        "text": { "font": "12pt castletregular", "fill": "#2D2528", "wordWrap": true , "align": "center"},
+        "answers": {
+          "default": { "font": "12pt castletregular", "fill": "#00585F", "wordWrap": true , "align": "center"},
+          "hover": { "font": "12pt castletregular", "fill": "#730046", "wordWrap": true, "align": "center" }
+        },
+        "advice": { "font": "12pt castletregular", "fill": "#FF3800", "wordWrap": true, "align": "center" },
+        "score": { "font": "24pt castletregular", "fill": "#2D2528" }
+      }
+    },
+    "boxInsideInstructions": {
+      "style": { "font": "10pt castletregular", "fill": "#000000", "wordWrap": true, "align": "center", "fontWeight": "bold" },
+      "proportionOfBoxInsideGraphicWidth": 0.667
+    }
+  },
+  "margin": 10,
+  "texture": "media/texture.png",
+  "textureMap": "media/texture.json",
+  "textureKey": "texture",
+  "frame": "frame.png",
+  "backgroundColor": "#2D2528",
+  "gameBoard": "game-board.png",
+  "gamePiece": "game-piece.png",
+  "dice": [ "die0001.png", "die0002.png", "die0003.png", "die0004.png", "die0005.png", "die0006.png"],
+  "diceHighlight": "die-highlight.png",
+  "speaker": {
+    "on": "speaker-on.png",
+    "off": "speaker-off.png",
+    "onHover": "speaker-on-over.png",
+    "offHover": "speaker-off-over.png"
+  },
+  "box": {
+    "top": "box-top.png",
+    "topHover": "box-top-over.png",
+    "inside": "box-inside.png",
+    "insideHover": "box-inside-over.png",
+    "insideGameOver": "box-inside-game-over.png",
+    "insideGameOverHover": "box-inside-game-over-over.png"
+  },
+  "caret": "caret.png",
+  "magnify": {
+    "magnifyingGlassSmall": "magnifying-glass-small.png",
+    "magnifyingGlassSmallHover": "magnifying-glass-small-over.png",
+    "magnifyingGlassLarge": "magnifying-glass-large.png",
+    "magnifyingGlassLargeHover": "magnifying-glass-large-over.png"
+  },
+  "button": {
+    "ok": "ok-button.png",
+    "okHover": "ok-button-over.png"
+  },
+  "situationBackground": "situation-background.png",
+  "cards": {
+    "plusMinusBack": "plus-minus-card-back.png",
+    "plusMinusFace": "plus-minus-card-face.png",
+    "tipsCardBack": "tips-card-back.png",
+    "tipsCardFace": "tips-card-face.png",
+    "tellCardBack": "tell-card-back.png",
+    "tellCardFace": "tell-card-face.png"
+  },
+  "scoreFrame": "influence-score-frame.png",
+  "instructionAccent": {
+    "left": "instruction-accent-left.png",
+    "right": "instruction-accent-right.png"
+  },
+  "optionAccent": {
+    "left": "option-accent-left.png",
+    "right": "option-accent-right.png"
+  },
+  "soundKey": "influenceSounds",
+  "soundFile": [ "media/influence.m4a", "media/influence.ogg" ],
+  "sounds": {
+    "bassPercussion": [ 0.00000000, 7.11589569, true, "Bass-Percussion_loop1, Starts at 0, lasts 7.11589569 seconds, loops"],
+    "cardDeal": [ 7.11589569, 0.50027211, false, "card_deal01_slow"],
+    "diceRoll": [ 7.61616780, 1.13714286, false, "dice_roll_on_gameboard_03"],
+    "gamePiece": [ 8.75331066, 0.36571427999999884, false, "game_piece_movement_slide_08"],
+    "malletC": [ 9.11902494, 0.972335600000001, false, "magicmallet_c"],
+    "malletD": [ 10.09136054, 1.0202947899999995, false, "magicmallet_d_dflat"],
+    "niceNav": [ 11.11165533, 1.2720181400000001, false, "nice_nav_40"],
+    "schoolBell": [ 12.38367347, 3.0409523800000002, false, "school_bell_01_short"],
+    "serviceBell": [ 15.42462585, 3.87773243, false, "service_bell_02"],
+    "uhOh": [ 19.30235828, 1.562, false, "uhoh"]
+  },
+  "text": {
+    "menu": "Click the game box to begin.",
+    "menuReplay": "Click the box to play again.",
+    "roll": "< roll",
+    "zoomIn": "in",
+    "zoomOut": "out",
+    "zoom": "zoom"
+  },
+  "initialTokenPositionOffset": {
+    "x": 0,
+    "y": 0
+  },
+  "boardOffset": {
+    "x": 0,
+    "y": 0
+  },
+  "cardSectors" : {
+    "plusminus": [-1360, -630],
+    "tell": [-1740, -710],
+    "tip": [-980, -710]
+  },
+  "sectors" : [
+    [ -1586, -750 ],
+    [ -1386, -750],
+    [-1036, -750],
+    [-500,-850],
+    [-100,-600],
+    [-150,-300],
+    [-550,-150],
+    [-1100,-100],
+    [-1450,-100]
+  ],
+  "sectorNameOrder" : [
+    "start",
+    "hallway",
+    "computer lab",
+    "schoolyard",
+    "cafeteria",
+    "classroom",
+    "gym",
+    "library",
+    "finish"
+  ],
+  "tokenPath" : [
+    {
+      "alias" : "start",
+      "type": "start",
+      "sector": 0,
+      "location": [ 2140, 965 ]
+    },
+    {
+      "alias" : "tell1",
+      "type": "tell",
+      "sector": 1,
+      "location": [ 2000, 1120 ]
+    },
+    {
+      "alias" : "tip1",
+      "type": "tip",
+      "sector": 1,
+      "location": [ 1890, 1180 ]
+    },
+    {
+      "alias" : "situation1",
+      "type": "situation",
+      "sector": 1,
+      "location": [ 1765, 1190 ]
+    },
+    {
+      "alias" : "plusminus1",
+      "type": "plusminus",
+      "sector": 1,
+      "location": [ 1650, 1170 ]
+    },
+    {
+      "alias" : "situation2",
+      "type": "situation",
+      "sector": 1,
+      "location": [ 1560, 1110 ]
+    },
+    {
+      "alias" : "tip2",
+      "type": "tip",
+      "sector": 2,
+      "location": [ 1490, 1010 ]
+    },
+    {
+      "alias" : "situation3",
+      "type": "situation",
+      "sector": 2,
+      "location": [ 1400, 970 ]
+    },
+    {
+      "alias" : "tell2",
+      "type": "tell",
+      "sector": 2,
+      "location": [ 1300, 1010 ]
+    },
+    {
+      "alias" : "plusminus2",
+      "type": "plusminus",
+      "sector": 2,
+      "location": [ 1220, 1080 ]
+    },
+    {
+      "alias" : "situation4",
+      "type": "situation",
+      "sector": 2,
+      "location": [ 1150, 1150 ]
+    },
+    {
+      "alias" : "tip3",
+      "type": "tip",
+      "sector": 3,
+      "location": [ 1050, 1225 ]
+    },
+    {
+      "alias" : "situation5",
+      "type": "situation",
+      "sector": 3,
+      "location": [ 935, 1250 ]
+    },
+    {
+      "alias" : "plusminus3",
+      "type": "plusminus",
+      "sector": 3,
+      "location": [ 835, 1190 ]
+    },
+    {
+      "alias" : "situation6",
+      "type": "situation",
+      "sector": 3,
+      "location": [ 815, 1080 ]
+    },
+    {
+      "alias" : "tell3",
+      "type": "tell",
+      "sector": 3,
+      "location": [ 840, 975 ]
+    },
+    {
+      "alias" : "situation7",
+      "type": "situation",
+      "sector": 4,
+      "location": [ 800, 875 ]
+    },
+    {
+      "alias" : "tell4",
+      "type": "tell",
+      "sector": 4,
+      "location": [ 680, 835 ]
+    },
+    {
+      "alias" : "plusminus4",
+      "type": "plusminus",
+      "sector": 4,
+      "location": [ 555, 850 ]
+    },
+    {
+      "alias" : "situation8",
+      "type": "situation",
+      "sector": 4,
+      "location": [ 430, 850 ]
+    },
+    {
+      "alias" : "tip4",
+      "type": "tip",
+      "sector": 4,
+      "location": [ 320, 810 ]
+    },
+    {
+      "alias" : "situation9",
+      "type": "situation",
+      "sector": 5,
+      "location": [ 250, 715 ]
+    },
+    {
+      "alias" : "tell5",
+      "type": "tell",
+      "sector": 5,
+      "location": [ 250, 600 ]
+    },
+    {
+      "alias" : "plusminus5",
+      "type": "plusminus",
+      "sector": 5,
+      "location": [ 325, 525 ]
+    },
+    {
+      "alias" : "tip5",
+      "type": "tip",
+      "sector": 5,
+      "location": [ 430, 490 ]
+    },
+    {
+      "alias" : "situation10",
+      "type": "situation",
+      "sector": 5,
+      "location": [ 545, 505 ]
+    },
+    {
+      "alias" : "plusminus6",
+      "type": "plusminus",
+      "sector": 6,
+      "location": [ 680, 535 ]
+    },
+    {
+      "alias" : "situation11",
+      "type": "situation",
+      "sector": 6,
+      "location": [ 825, 555 ]
+    },
+    {
+      "alias" : "tip6",
+      "type": "tip",
+      "sector": 6,
+      "location": [ 960, 525 ]
+    },
+    {
+      "alias" : "tell6",
+      "type": "tell",
+      "sector": 6,
+      "location": [ 1080, 450 ]
+    },
+    {
+      "alias" : "situation12",
+      "type": "situation",
+      "sector": 6,
+      "location": [ 1185, 355 ]
+    },
+    {
+      "alias" : "plusminus7",
+      "type": "plusminus",
+      "sector": 7,
+      "location": [ 1310, 260 ]
+    },
+    {
+      "alias" : "situation13",
+      "type": "situation",
+      "sector": 7,
+      "location": [ 1450, 265 ]
+    },
+    {
+      "alias" : "tip7",
+      "type": "tip",
+      "sector": 7,
+      "location": [ 1545, 370 ]
+    },
+    {
+      "alias" : "tell7",
+      "type": "tell",
+      "sector": 7,
+      "location": [ 1650, 470 ]
+    },
+    {
+      "alias" : "situation14",
+      "type": "situation",
+      "sector": 7,
+      "location": [ 1800, 480 ]
+    },
+    {
+      "alias" : "finish",
+      "type": "finish",
+      "sector": 8,
+      "location": [ 1980, 380 ]
+    }
+  ]
+}

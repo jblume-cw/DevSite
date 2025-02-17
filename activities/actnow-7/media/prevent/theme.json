@@ -1,0 +1,65 @@
+{
+  "texture": "media/prevent/texture.png",
+  "textureMap": "media/prevent/texture.json",
+  "textureKey": "prevent_7_texture",
+  "data": "media/prevent/sceneData.json",
+  "fonts" : {
+    "bubbleText": { "font": "15px Tahoma", "fill": "#000000",  "fontWeight": "bold" },
+    "bubbleIcon": { "font": "12pt Arial", "fill": "#000000", "fontWeight": "bold", "align": "center" },
+    "replayAudio": { "font": "12px Tahoma", "fill": "#333333",  "fontWeight": "normal" },
+    "heading": { "font": "23pt nunitoregular", "fill": "black", "align": "left", "fontWeight": "bold"},
+    "standard": { "font": "21pt nunitoregular", "fill": "black", "align": "left",
+      "wordWrap": true, "wordWrapWidth": 500, "fontWeight": "bold"},
+    "goodbye": { "font": "18pt nunitoregular", "fill": "black", "align": "center",
+      "wordWrap": true, "wordWrapWidth": 500},
+    "large": { "font": "28pt nunitoregular", "fill": "black", "align": "left", "fontWeight": "bold"},
+    "moveOn": { "font": "32px nunitoregular", "fill": "#000000",  "fontWeight": "normal" }
+  },
+  "images": {
+    "actorImages": {
+      "announcer-box": "wall-speaker.png"
+    },
+    "decorations": {
+      "dane": "talking-dane.png",
+      "freddie": "talking-freddie.png",
+      "group": "presentation-hallway-group.png"
+    }
+  },
+  "sceneImages": {
+    "cafeteria": "cafeteria-background.png",
+    "hallway": "hallway-background.png",
+    "theater": "presentation-7-1-4.png",
+    "classroom": "presentation-7-1-6.png"
+  },
+  "buttons": {
+    "exit": {
+      "up": "get-the-facts-exit.png",
+      "over": "get-the-facts-exit.png",
+      "out": "get-the-facts-exit.png",
+      "down": "get-the-facts-exit.png"
+    }
+  },
+  "textWindows": {
+    "announce": {
+      "top": "wall-speaker-talk-bubble-top.png",
+      "middle": "wall-speaker-talk-bubble-middle.png",
+      "bottom": "wall-speaker-talk-bubble-bottom.png"
+    },
+    "instruction": "move-on-box.png"
+  },
+  "tints": {
+    "bubbleText" : "#CDCDCD"
+  },
+  "soundKey": "prevent_7_sounds",
+  "soundFile": [ "media/prevent/prevent7.m4a", "media/prevent/prevent7.ogg" ],
+  "sounds": {
+    "all": [ 0.0, 26.098, false, "nar_7th_pre_01.wav"],
+    "1_01":  [  0.000, 0.900, false, "scene 1, <cafeteriaNoTable +PA>            You’re the kind of kid"],
+    "1_02":  [  0.900, 1.512, false, "scene 1, <+freddie tweening>               that schools need more of."],
+    "1_03":  [  2.412, 0.970, false, "scene 1, <PA>                              You communicate"],
+    "1_04":  [  3.382, 4.039, false, "scene 1, <+dane tweening>                  with respect, and everyone knows that about you, from classmates to teachers."],
+    "2_01":  [  7.421, 6.020, false, "scene 2, <hallway +PA +tweening group>     Ms. Augustine is using you as her student advisor as she revises the anti-bullying program at Newbridge."],
+    "3_01":  [ 13.441, 7.936, false, "scene 3, <theater +PA +janelle +ross +tom> The diversity play was a big hit. Tom didn’t mess anything up, and he’s even promised to stop making snap judgments about things."],
+    "4_01":  [ 21.377, 4.721, false, "scene 4, <classroom +freddie>              You and Freddie hang out all the time, and he feels a lot more comfortable now."]
+  }
+}

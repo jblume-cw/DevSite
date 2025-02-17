@@ -1,0 +1,66 @@
+{
+  "texture": "media/encourage/texture.png",
+  "textureMap": "media/encourage/texture.json",
+  "textureKey": "encourage_7_texture",
+  "data": "media/encourage/sceneData.json",
+  "fonts" : {
+    "bubbleText": { "font": "15px Tahoma", "fill": "#000000",  "fontWeight": "bold" },
+    "bubbleIcon": { "font": "12pt Arial", "fill": "#000000", "fontWeight": "bold", "align": "center" },
+    "replayAudio": { "font": "12px Tahoma", "fill": "#333333",  "fontWeight": "normal" },
+    "heading": { "font": "23pt nunitoregular", "fill": "black", "align": "left", "fontWeight": "bold"},
+    "standard": { "font": "21pt nunitoregular", "fill": "black", "align": "left",
+      "wordWrap": true, "wordWrapWidth": 500, "fontWeight": "bold"},
+    "goodbye": { "font": "18pt nunitoregular", "fill": "black", "align": "center",
+      "wordWrap": true, "wordWrapWidth": 500},
+    "large": { "font": "28pt nunitoregular", "fill": "black", "align": "left", "fontWeight": "bold"},
+    "moveOn": { "font": "32px nunitoregular", "fill": "#000000",  "fontWeight": "normal" }
+  },
+  "images": {
+    "actorImages": {
+      "announcer-box": "wall-speaker.png"
+    },
+    "decorations": {
+    }
+  },
+  "sceneImages": {
+    "hallwayZinkPoster": "presentation-7-4-1.png",
+    "cafeteriaJanelle": "presentation-7-4-2.png",
+    "theaterTom": "presentation-7-4-3a.png",
+    "classroomFreddie": "presentation-7-4-3b.png",
+    "hallwayFreddieAndGroup": "presentation-7-4-4.png",
+    "classroomSadAugustine": "presentation-7-4-5a.png",
+    "hallwayTomCloseup": "presentation-7-4-5b.png"
+  },
+  "buttons": {
+    "exit": {
+      "up": "get-the-facts-exit.png",
+      "over": "get-the-facts-exit.png",
+      "out": "get-the-facts-exit.png",
+      "down": "get-the-facts-exit.png"
+    }
+  },
+  "textWindows": {
+    "announce": {
+      "top": "wall-speaker-talk-bubble-top.png",
+      "middle": "wall-speaker-talk-bubble-middle.png",
+      "bottom": "wall-speaker-talk-bubble-bottom.png"
+    },
+    "instruction": "move-on-box.png"
+  },
+  "tints": {
+    "bubbleText" : "#CDCDCD"
+  },
+  "soundKey": "encourage_7_sounds",
+  "soundFile": [ "media/encourage/encourage7.m4a", "media/encourage/encourage7.ogg" ],
+  "sounds": {
+    "all": [ 0.0, 33.513, false, "nar_7th_pre_04.wav"],
+    "1_01":  [  0.000, 4.103, false, "scene 1, <hallwayCloseup +PA +zinkPoster>                  When you average out your behavior, you’re a bystander leaning towards a bully."],
+    "2_01":  [  4.103, 8.233, false, "scene 2, <cafeteria +PA +janelle>                          You might not ever insult someone to their face, and you might not ever hit or push someone, but the way you laugh at bullying behavior actually encourages it."],
+    "3_01":  [ 12.336, 3.000, false, "scene 3, <theaterCloseup +PA +tom>                         Why do you find it funny when someone else is hurt,"],
+    "4_01":  [ 15.336, 1.659, false, "scene 4, <classroomCloseup +PA +freddie>                   <continues in new scene> emotionally or physically?"],
+    "5_01":  [ 16.995, 1.958, false, "scene 5, <hallway +PA +freddie +janelle +tom +dane +mandy> Freddie continues to struggle."],
+    "6_01":  [ 18.953, 1.500, false, "scene 6, <classroomCloseup +PA +sadAugustine>              Ms. Augustine tried to take"],
+    "7_01":  [ 20.453, 7.871, false, "scene 7, <hallwayCloseup +PA +tomCloseup>                  <continues in new scene> him under her wing, but she’s too busy dealing with other kids, like Tom, who actively threaten others who look or act different from him."],
+    "7_02":  [ 28.324, 5.189, false, "scene 7, <PA>                                              As long as you keep supporting that kind of behavior, Newbridge is only going to get worse."]
+  }
+}

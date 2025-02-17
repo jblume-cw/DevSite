@@ -1,0 +1,1170 @@
+{
+  "play": {
+    "start": "cyberbullying_intro",
+    "showPlayThrough": false,
+    "scenes": {
+      "cyberbullying_intro": {
+        "id": "cyberbullying_intro",
+        "background": "getTheFactsBackground",
+        "title": "Cyberbullying",
+        "actors": [
+          {
+            "name": "cyberbullying",
+            "type": "text",
+            "font": "cyberbullying_header",
+            "location": [ 265, 37 ],
+            "text": "Cyberbullying"
+          },
+          {
+            "name": "cyberbullying_intro_sound_1",
+            "type": "audio",
+            "audio": [ "y0100" ],
+            "variable": "cyberbullying_intro_sound_1"
+          },
+          {
+            "name": "cyberbullyingIntro",
+            "type": "decoration",
+            "image": "cyberbullying",
+            "key": "decorations",
+            "location": [ 159, 84 ],
+            "scale": [ 1.0, 1.0 ]
+          },
+          {
+            "name": "forwardButton",
+            "type": "button",
+            "image": "getTheFactsNext",
+            "location": [ 572, 400 ],
+            "variable": "cyberbullying_intro_showNext"
+          },
+          {
+            "name": "mutebutton",
+            "type": "toggle-button",
+            "images": {
+              "on": "getTheFactsSoundOn",
+              "off": "getTheFactsSoundOff"
+            },
+            "location": [ 360, 404 ],
+            "scale": [
+              0.7, 0.7
+            ],
+            "variable": "mute_game",
+            "values": {
+              "on": "mute_on",
+              "off": "mute_off"
+            },
+            "active": true
+          },
+          {
+            "name": "default",
+            "type": "button",
+            "image": "getTheFactsExit",
+            "location": [ 12, 7 ],
+            "variable": "change_act"
+          }
+        ],
+        "outcomes": {
+          "forward_button": {
+            "events": { "cyberbullying_intro_showNext": "*" },
+            "actions": [
+              {
+                "type": "scene",
+                "args": ["cyberbullying_whatIs"]
+              }
+            ]
+          }
+        }
+      },
+      "cyberbullying_whatIs": {
+        "id": "cyberbullying_whatIs",
+        "background": "getTheFactsBackground",
+        "title": "Create awareness",
+        "actors": [
+          {
+            "name": "whatIsCyberbullying",
+            "type": "text",
+            "font": "cyberbullying_header",
+            "location": [ 194, 40 ],
+            "text": "What is cyberbullying?"
+          },
+          {
+            "name": "createAwareness_image",
+            "type": "decoration",
+            "image": "whatIsCyberbullying",
+            "key": "decorations",
+            "location": [ 380, 93 ],
+            "scale": [ 0.95, 0.95 ]
+          },
+          {
+            "name": "cyberbullying_whatIs_sound_2_a",
+            "type": "audio",
+            "audio": [ "y0200a"],
+            "variable": "cyberbullying_whatIs_sound_2_a"
+          },
+          {
+            "name": "backButton",
+            "type": "button",
+            "image": "getTheFactsBack",
+            "location": [ 90, 400 ],
+            "variable": "cyberbullying_whatIs_showPrevious"
+          },
+          {
+            "name": "forwardButton",
+            "type": "button",
+            "image": "getTheFactsNext",
+            "location": [ 572, 400 ],
+            "variable": "cyberbullying_whatIs_showNext"
+          },
+          {
+            "name": "mutebutton",
+            "type": "toggle-button",
+            "images": {
+              "on": "getTheFactsSoundOn",
+              "off": "getTheFactsSoundOff"
+            },
+            "location": [ 360, 404 ],
+            "scale": [ 0.7, 0.7 ],
+            "variable": "mute_game",
+            "values": {
+              "on": "mute_on",
+              "off": "mute_off"
+            },
+            "active": true
+          },
+          {
+            "name": "default",
+            "type": "button",
+            "image": "getTheFactsExit",
+            "location": [ 12, 7 ],
+            "variable": "change_act"
+          }
+        ],
+        "outcomes": {
+          "cyberbullying_whatIs_sound_a_done": {
+            "events": {"cyberbullying_whatIs_sound_2_a": "played" },
+            "actions": [
+              {
+                "type": "add-actor", "args": [
+                {
+                  "name": "cyberbullying_whatIs_item_1",
+                  "type": "text",
+                  "text": "Spreading lies or rumors about \nsomeone online",
+                  "location": [ 100, 103 ],
+                  "bullet": "true",
+                  "font": "cyberbullying_bullet"
+                }
+              ]
+              },
+              {
+                "type": "add-actor", "args": [
+                {
+                  "name": "cyberbullying_whatIs_sound_2_b",
+                  "type": "audio",
+                  "audio": [ "y0200b"],
+                  "variable": "cyberbullying_whatIs_sound_2_b"
+                }
+              ]
+              }
+            ]
+          },
+          "cyberbullying_whatIs_sound_b_done": {
+            "events": {"cyberbullying_whatIs_sound_2_b": "played" },
+            "actions": [
+              {
+                "type": "add-actor", "args": [
+                {
+                  "name": "cyberbullying_whatIs_item_2",
+                  "type": "text",
+                  "text": "Sending or \nforwarding mean text messages",
+                  "location": [ 100, 190 ],
+                  "bullet": "true",
+                  "font": "cyberbullying_bullet"
+                }
+              ]
+              },
+              {
+                "type": "add-actor", "args": [
+                {
+                  "name": "cyberbullying_whatIs_sound_2_c",
+                  "type": "audio",
+                  "audio": [ "y0200c"],
+                  "variable": "cyberbullying_whatIs_sound_2_c"
+                }
+              ]
+              }
+            ]
+          },
+          "cyberbullying_whatIs_sound_c_done": {
+            "events": {"cyberbullying_whatIs_sound_2_c": "played" },
+            "actions": [
+              {
+                "type": "add-actor", "args": [
+                {
+                  "name": "cyberbullying_whatIs_item_3",
+                  "type": "text",
+                  "text": "Posting pictures of others without their consent",
+                  "location": [ 100, 277 ],
+                  "bullet": "true",
+                  "font": "cyberbullying_bullet"
+                }
+              ]
+              },
+              {
+                "type": "add-actor", "args": [
+                {
+                  "name": "cyberbullying_whatIs_sound_2_d",
+                  "type": "audio",
+                  "audio": [ "y0200d"],
+                  "variable": "cyberbullying_whatIs_sound_2_d"
+                }
+              ]
+              }
+            ]
+          },
+          "back_button": {
+            "events": { "cyberbullying_whatIs_showPrevious": "*" },
+            "actions": [
+              {
+                "type": "scene",
+                "args": ["cyberbullying_intro"]
+              }
+            ]
+          },
+          "forward_button": {
+            "events": { "cyberbullying_whatIs_showNext": "*" },
+            "actions": [
+              {
+                "type": "scene",
+                "args": ["cyberbullying_hurts"]
+              }
+            ]
+          }
+        }
+      },
+      "cyberbullying_hurts": {
+        "id": "cyberbullying_hurts",
+        "background": "getTheFactsBackground",
+        "title": "Create awareness",
+        "actors": [
+          {
+            "name": "cyberbullyingHurts",
+            "type": "text",
+            "font": "cyberbullying_header",
+            "location": [ 212, 37 ],
+            "text": "Cyberbullying hurts"
+          },
+          {
+            "name": "createAwareness_image",
+            "type": "decoration",
+            "image": "cyberbullyingHurts",
+            "key": "decorations",
+            "location": [ 160, 83 ],
+            "scale": [ 1.0, 1.0 ]
+          },
+          {
+            "name": "cyberbullying_hurts_sound_3",
+            "type": "audio",
+            "audio": [ "y0300"],
+            "variable": "cyberbullying_hurts_sound_3"
+          },
+          {
+            "name": "backButton",
+            "type": "button",
+            "image": "getTheFactsBack",
+            "location": [ 90, 400 ],
+            "variable": "cyberbullying_hurts_showPrevious"
+          },
+          {
+            "name": "forwardButton",
+            "type": "button",
+            "image": "getTheFactsNext",
+            "location": [ 572, 400 ],
+            "variable": "cyberbullying_hurts_showNext"
+          },
+          {
+            "name": "mutebutton",
+            "type": "toggle-button",
+            "images": {
+              "on": "getTheFactsSoundOn",
+              "off": "getTheFactsSoundOff"
+            },
+            "location": [ 360, 404 ],
+            "scale": [ 0.7, 0.7 ],
+            "variable": "mute_game",
+            "values": {
+              "on": "mute_on",
+              "off": "mute_off"
+            },
+            "active": true
+          },
+          {
+            "name": "default",
+            "type": "button",
+            "image": "getTheFactsExit",
+            "location": [ 12, 7 ],
+            "variable": "change_act"
+          }
+        ],
+        "outcomes": {
+          "back_button": {
+            "events": { "cyberbullying_hurts_showPrevious": "*" },
+            "actions": [
+              {
+                "type": "scene",
+                "args": ["cyberbullying_whatIs"]
+              }
+            ]
+          },
+          "forward_button": {
+            "events": { "cyberbullying_hurts_showNext": "*" },
+            "actions": [
+              {
+                "type": "scene",
+                "args": ["cyberbullying_howCanYou"]
+              }
+            ]
+          }
+        }
+      },
+      "cyberbullying_howCanYou": {
+        "id": "cyberbullying_howCanYou",
+        "background": "getTheFactsBackground",
+        "title": "How can you prevent cyberbullying?",
+        "actors": [
+          {
+            "name": "howCanYouPreventCyberbullying",
+            "type": "text",
+            "font": "cyberbullying_header2",
+            "location": [ 108, 43 ],
+            "text": "How can you prevent cyberbullying?"
+          },
+          {
+            "name": "cyberbullying_howCanYou_sound_4_a",
+            "type": "audio",
+            "audio": [ "y0400a"],
+            "variable": "cyberbullying_howCanYou_sound_4_a"
+          },
+          {
+            "name": "backButton",
+            "type": "button",
+            "image": "getTheFactsBack",
+            "location": [ 90, 400 ],
+            "variable": "cyberbullying_howCanYou_showPrevious"
+          },
+          {
+            "name": "forwardButton",
+            "type": "button",
+            "image": "getTheFactsNext",
+            "location": [ 572, 400 ],
+            "variable": "cyberbullying_howCanYou_showNext"
+          },
+          {
+            "name": "mutebutton",
+            "type": "toggle-button",
+            "images": {
+              "on": "getTheFactsSoundOn",
+              "off": "getTheFactsSoundOff"
+            },
+            "location": [ 360, 404 ],
+            "scale": [ 0.7, 0.7 ],
+            "variable": "mute_game",
+            "values": {
+              "on": "mute_on",
+              "off": "mute_off"
+            },
+            "active": true
+          },
+          {
+            "name": "default",
+            "type": "button",
+            "image": "getTheFactsExit",
+            "location": [ 12, 7 ],
+            "variable": "change_act"
+          }
+        ],
+        "outcomes": {
+          "cyberbullying_howCanYou_sound_a_done": {
+            "events": {"cyberbullying_howCanYou_sound_4_a": "played" },
+            "actions": [
+              {
+                "type": "add-actor", "args": [
+                {
+                  "name": "cyberbullying_howCanYou_item_1",
+                  "type": "text",
+                  "text": "Refuse to pass along cyberbullying messages.",
+                  "location": [ 100, 103 ],
+                  "bullet": "true",
+                  "font": "cyberbullying_bullet_wide"
+                }
+              ]
+              },
+              {
+                "type": "add-actor", "args": [
+                {
+                  "name": "cyberbullying_howCanYou_sound_4_b",
+                  "type": "audio",
+                  "audio": [ "y0400b"],
+                  "variable": "cyberbullying_howCanYou_sound_4_b"
+                }
+              ]
+              }
+            ]
+          },
+          "cyberbullying_howCanYou_sound_b_done": {
+            "events": {"cyberbullying_howCanYou_sound_4_b": "played" },
+            "actions": [
+              {
+                "type": "add-actor", "args": [
+                {
+                  "name": "cyberbullying_howCanYou_item_2",
+                  "type": "text",
+                  "text": "Tell friends to stop cyberbullying.",
+                  "location": [ 100, 190 ],
+                  "bullet": "true",
+                  "font": "cyberbullying_bullet_wide"
+                }
+              ]
+              },
+              {
+                "type": "add-actor", "args": [
+                {
+                  "name": "cyberbullying_howCanYou_sound_4_c",
+                  "type": "audio",
+                  "audio": [ "y0400c"],
+                  "variable": "cyberbullying_howCanYou_sound_4_c"
+                }
+              ]
+              }
+            ]
+          },
+          "cyberbullying_howCanYou_sound_c_done": {
+            "events": {"cyberbullying_howCanYou_sound_4_c": "played" },
+            "actions": [
+              {
+                "type": "add-actor", "args": [
+                {
+                  "name": "cyberbullying_howCanYou_item_3",
+                  "type": "text",
+                  "text": "Use privacy settings.",
+                  "location": [ 100, 242 ],
+                  "bullet": "true",
+                  "font": "cyberbullying_bullet_wide"
+                }
+              ]
+              },
+              {
+                "type": "add-actor", "args": [
+                {
+                  "name": "cyberbullying_howCanYou_sound_4_d",
+                  "type": "audio",
+                  "audio": [ "y0400d"],
+                  "variable": "cyberbullying_howCanYou_sound_4_d"
+                }
+              ]
+              }
+            ]
+          },
+          "cyberbullying_howCanYou_sound_d_done": {
+            "events": {"cyberbullying_howCanYou_sound_4_d": "played" },
+            "actions": [
+              {
+                "type": "add-actor", "args": [
+                {
+                  "name": "cyberbullying_howCanYou_item_4",
+                  "type": "text",
+                  "text": "Raise awareness.",
+                  "location": [ 100, 296 ],
+                  "bullet": "true",
+                  "font": "cyberbullying_bullet_wide"
+                }
+              ]
+              },
+              {
+                "type": "add-actor", "args": [
+                {
+                  "name": "cyberbullying_howCanYou_sound_4_e",
+                  "type": "audio",
+                  "audio": [ "y0400e"],
+                  "variable": "cyberbullying_howCanYou_sound_4_e"
+                }
+              ]
+              }
+            ]
+          },
+          "back_button": {
+            "events": { "cyberbullying_howCanYou_showPrevious": "*" },
+            "actions": [
+              {
+                "type": "scene",
+                "args": ["cyberbullying_hurts"]
+              }
+            ]
+          },
+          "forward_button": {
+            "events": { "cyberbullying_howCanYou_showNext": "*" },
+            "actions": [
+              {
+                "type": "scene",
+                "args": ["cyberbullying_whatElse"]
+              }
+            ]
+          }
+        }
+      },
+      "cyberbullying_whatElse": {
+        "id": "cyberbullying_whatElse",
+        "background": "getTheFactsBackground",
+        "title": "How can you prevent cyberbullying?",
+        "actors": [
+          {
+            "name": "cyberbullying_whatElseCanYouDo",
+            "type": "text",
+            "font": "cyberbullying_header2",
+            "location": [ 210, 43 ],
+            "text": "What else can you do?"
+          },
+          {
+            "name": "cyberbullying_whatElse_item_1",
+            "type": "text",
+            "text": "Block communication with \ncyberbullies.",
+            "location": [ 100, 103 ],
+            "bullet": "true",
+            "font": "cyberbullying_bullet_wide"
+          },
+          {
+            "name": "cyberbullying_whatElse_sound_5_a",
+            "type": "audio",
+            "audio": [ "y0500a"],
+            "variable": "cyberbullying_whatElse_sound_5_a"
+          },
+          {
+            "name": "backButton",
+            "type": "button",
+            "image": "getTheFactsBack",
+            "location": [ 90, 400 ],
+            "variable": "cyberbullying_whatElse_showPrevious"
+          },
+          {
+            "name": "forwardButton",
+            "type": "button",
+            "image": "getTheFactsNext",
+            "location": [ 572, 400 ],
+            "variable": "cyberbullying_whatElse_showNext"
+          },
+          {
+            "name": "mutebutton",
+            "type": "toggle-button",
+            "images": {
+              "on": "getTheFactsSoundOn",
+              "off": "getTheFactsSoundOff"
+            },
+            "location": [ 360, 404 ],
+            "scale": [ 0.7, 0.7 ],
+            "variable": "mute_game",
+            "values": {
+              "on": "mute_on",
+              "off": "mute_off"
+            },
+            "active": true
+          },
+          {
+            "name": "default",
+            "type": "button",
+            "image": "getTheFactsExit",
+            "location": [ 12, 7 ],
+            "variable": "change_act"
+          }
+        ],
+        "outcomes": {
+          "cyberbullying_whatElse_sound_a_done": {
+            "events": {"cyberbullying_whatElse_sound_5_a": "played" },
+            "actions": [
+              {
+                "type": "add-actor", "args": [
+                {
+                  "name": "cyberbullying_whatElse_item_2",
+                  "type": "text",
+                  "text": "Report cyberbullying.",
+                  "location": [ 100, 190 ],
+                  "bullet": "true",
+                  "font": "cyberbullying_bullet_wide"
+                }
+              ]
+              },
+              {
+                "type": "add-actor", "args": [
+                {
+                  "name": "cyberbullying_whatElse_sound_5_b",
+                  "type": "audio",
+                  "audio": [ "y0500b"],
+                  "variable": "cyberbullying_whatElse_sound_5_b"
+                }
+              ]
+              }
+            ]
+          },
+          "cyberbullying_whatElse_sound_b_done": {
+            "events": {"cyberbullying_whatElse_sound_5_b": "played" },
+            "actions": [
+              {
+                "type": "add-actor", "args": [
+                {
+                  "name": "cyberbullying_whatElse_item_3",
+                  "type": "text",
+                  "text": "Keep all evidence.",
+                  "location": [ 100, 240 ],
+                  "bullet": "true",
+                  "font": "cyberbullying_bullet_wide"
+                }
+              ]
+              },
+              {
+                "type": "add-actor", "args": [
+                {
+                  "name": "cyberbullying_whatElse_sound_5_c",
+                  "type": "audio",
+                  "audio": [ "y0500c"],
+                  "variable": "cyberbullying_whatElse_sound_5_c"
+                }
+              ]
+              }
+            ]
+          },
+          "back_button": {
+            "events": { "cyberbullying_whatElse_showPrevious": "*" },
+            "actions": [
+              {
+                "type": "scene",
+                "args": ["cyberbullying_howCanYou"]
+              }
+            ]
+          },
+          "forward_button": {
+            "events": { "cyberbullying_whatElse_showNext": "*" },
+            "actions": [
+              {
+                "type": "scene",
+                "args": ["cyberbullying_laws"]
+              }
+            ]
+          }
+        }
+      },
+      "cyberbullying_laws": {
+        "id": "cyberbullying_laws",
+        "background": "getTheFactsBackground",
+        "title": "Create awareness",
+        "actors": [
+          {
+            "name": "cyberbullyingLaws",
+            "type": "text",
+            "font": "cyberbullying_header",
+            "location": [ 230, 37 ],
+            "text": "Cyberbullying laws"
+          },
+          {
+            "name": "createAwareness_image",
+            "type": "decoration",
+            "image": "cyberbullyingLaws",
+            "key": "decorations",
+            "location": [ 227, 88 ],
+            "scale": [ 1.0, 1.0 ]
+          },
+          {
+            "name": "cyberbullying_laws_sound_6",
+            "type": "audio",
+            "audio": [ "y0600"],
+            "variable": "cyberbullying_laws_sound_6"
+          },
+          {
+            "name": "backButton",
+            "type": "button",
+            "image": "getTheFactsBack",
+            "location": [ 90, 400 ],
+            "variable": "cyberbullying_laws_showPrevious"
+          },
+          {
+            "name": "forwardButton",
+            "type": "button",
+            "image": "getTheFactsNext",
+            "location": [ 572, 400 ],
+            "variable": "cyberbullying_laws_showNext"
+          },
+          {
+            "name": "mutebutton",
+            "type": "toggle-button",
+            "images": {
+              "on": "getTheFactsSoundOn",
+              "off": "getTheFactsSoundOff"
+            },
+            "location": [ 360, 404 ],
+            "scale": [ 0.7, 0.7 ],
+            "variable": "mute_game",
+            "values": {
+              "on": "mute_on",
+              "off": "mute_off"
+            },
+            "active": true
+          },
+          {
+            "name": "default",
+            "type": "button",
+            "image": "getTheFactsExit",
+            "location": [ 12, 7 ],
+            "variable": "change_act"
+          }
+        ],
+        "outcomes": {
+          "back_button": {
+            "events": { "cyberbullying_laws_showPrevious": "*" },
+            "actions": [
+              {
+                "type": "scene",
+                "args": ["cyberbullying_whatElse"]
+              }
+            ]
+          },
+          "forward_button": {
+            "events": { "cyberbullying_laws_showNext": "*" },
+            "actions": [
+              {
+                "type": "scene",
+                "args": ["cyberbullying_stayingSafe"]
+              }
+            ]
+          }
+        }
+      },
+      "cyberbullying_stayingSafe": {
+        "id": "cyberbullying_stayingSafe",
+        "background": "getTheFactsBackground",
+        "title": "Create awareness",
+        "actors": [
+          {
+            "name": "stayingCyberSafe",
+            "type": "text",
+            "font": "cyberbullying_header",
+            "location": [ 226, 40 ],
+            "text": "Staying cyber-safe"
+          },
+          {
+            "name": "createAwareness_image",
+            "type": "decoration",
+            "image": "stayingCyberSafe",
+            "key": "decorations",
+            "location": [ 380, 93 ],
+            "scale": [ 0.95, 0.95 ]
+          },
+          {
+            "name": "cyberbullying_stayingSafe_sound_7_a",
+            "type": "audio",
+            "audio": [ "y0700a"],
+            "variable": "cyberbullying_stayingSafe_sound_7_a"
+          },
+          {
+            "name": "backButton",
+            "type": "button",
+            "image": "getTheFactsBack",
+            "location": [ 90, 400 ],
+            "variable": "cyberbullying_stayingSafe_showPrevious"
+          },
+          {
+            "name": "forwardButton",
+            "type": "button",
+            "image": "getTheFactsNext",
+            "location": [ 572, 400 ],
+            "variable": "cyberbullying_stayingSafe_showNext"
+          },
+          {
+            "name": "mutebutton",
+            "type": "toggle-button",
+            "images": {
+              "on": "getTheFactsSoundOn",
+              "off": "getTheFactsSoundOff"
+            },
+            "location": [ 360, 404 ],
+            "scale": [ 0.7, 0.7 ],
+            "variable": "mute_game",
+            "values": {
+              "on": "mute_on",
+              "off": "mute_off"
+            },
+            "active": true
+          },
+          {
+            "name": "default",
+            "type": "button",
+            "image": "getTheFactsExit",
+            "location": [ 12, 7 ],
+            "variable": "change_act"
+          }
+        ],
+        "outcomes": {
+          "cyberbullying_stayingSafe_sound_a_done": {
+            "events": {"cyberbullying_stayingSafe_sound_7_a": "played" },
+            "actions": [
+              {
+                "type": "add-actor", "args": [
+                {
+                  "name": "cyberbullying_stayingSafe_item_1",
+                  "type": "text",
+                  "text": "Never post or share your personal information online.",
+                  "location": [ 100, 95 ],
+                  "bullet": "true",
+                  "font": "cyberbullying_bullet"
+                }
+              ]
+              },
+              {
+                "type": "add-actor", "args": [
+                {
+                  "name": "cyberbullying_stayingSafe_sound_7_b",
+                  "type": "audio",
+                  "audio": [ "y0700b"],
+                  "variable": "cyberbullying_stayingSafe_sound_7_b"
+                }
+              ]
+              }
+            ]
+          },
+          "cyberbullying_stayingSafe_sound_b_done": {
+            "events": {"cyberbullying_stayingSafe_sound_7_b": "played" },
+            "actions": [
+              {
+                "type": "add-actor", "args": [
+                {
+                  "name": "cyberbullying_stayingSafe_item_2",
+                  "type": "text",
+                  "text": "Never share passwords.",
+                  "location": [ 100, 182 ],
+                  "bullet": "true",
+                  "font": "cyberbullying_bullet"
+                }
+              ]
+              },
+              {
+                "type": "add-actor", "args": [
+                {
+                  "name": "cyberbullying_stayingSafe_sound_7_c",
+                  "type": "audio",
+                  "audio": [ "y0700c"],
+                  "variable": "cyberbullying_stayingSafe_sound_7_c"
+                }
+              ]
+              }
+            ]
+          },
+          "cyberbullying_stayingSafe_sound_c_done": {
+            "events": {"cyberbullying_stayingSafe_sound_7_c": "played" },
+            "actions": [
+              {
+                "type": "add-actor", "args": [
+                {
+                  "name": "cyberbullying_stayingSafe_item_3",
+                  "type": "text",
+                  "text": "Never agree to meet someone you only know online.",
+                  "location": [ 100, 212 ],
+                  "bullet": "true",
+                  "font": "cyberbullying_bullet"
+                }
+              ]
+              },
+              {
+                "type": "add-actor", "args": [
+                {
+                  "name": "cyberbullying_stayingSafe_sound_7_d",
+                  "type": "audio",
+                  "audio": [ "y0700d"],
+                  "variable": "cyberbullying_stayingSafe_sound_7_d"
+                }
+              ]
+              }
+            ]
+          },
+          "cyberbullying_stayingSafe_sound_d_done": {
+            "events": {"cyberbullying_stayingSafe_sound_7_d": "played" },
+            "actions": [
+              {
+                "type": "add-actor", "args": [
+                {
+                  "name": "cyberbullying_stayingSafe_item_4",
+                  "type": "text",
+                  "text": "Talk openly with your parents.",
+                  "location": [ 100, 299 ],
+                  "bullet": "true",
+                  "font": "cyberbullying_bullet"
+                }
+              ]
+              },
+              {
+                "type": "add-actor", "args": [
+                {
+                  "name": "cyberbullying_stayingSafe_sound_7_e",
+                  "type": "audio",
+                  "audio": [ "y0700e"],
+                  "variable": "cyberbullying_stayingSafe_sound_7_e"
+                }
+              ]
+              }
+            ]
+          },
+          "back_button": {
+            "events": { "cyberbullying_stayingSafe_showPrevious": "*" },
+            "actions": [
+              {
+                "type": "scene",
+                "args": ["cyberbullying_laws"]
+              }
+            ]
+          },
+          "forward_button": {
+            "events": { "cyberbullying_stayingSafe_showNext": "*" },
+            "actions": [
+              {
+                "type": "scene",
+                "args": ["cyberbullying_forMoreInfo"]
+              }
+            ]
+          }
+        }
+      },
+      "cyberbullying_forMoreInfo": {
+        "id": "cyberbullying_forMoreInfo",
+        "background": "getTheFactsBackground",
+        "title": "For more information",
+        "actors": [
+          {
+            "name": "forMoreInfo",
+            "type": "text",
+            "font": "cyberbullying_header",
+            "location": [ 210, 42 ],
+            "text": "For more information"
+          },
+          {
+            "name": "cyberbullying_forMoreInfo_sound_8_a",
+            "type": "audio",
+            "audio": [ "y0800a"],
+            "variable": "cyberbullying_forMoreInfo_sound_8_a"
+          },
+          {
+            "name": "backButton",
+            "type": "button",
+            "image": "getTheFactsBack",
+            "location": [ 90, 400 ],
+            "variable": "cyberbullying_forMoreInfo_showPrevious"
+          },
+          {
+            "name": "forwardButton",
+            "type": "button",
+            "image": "getTheFactsNext",
+            "location": [ 572, 400 ],
+            "variable": "cyberbullying_forMoreInfo_showNext"
+          },
+          {
+            "name": "mutebutton",
+            "type": "toggle-button",
+            "images": {
+              "on": "getTheFactsSoundOn",
+              "off": "getTheFactsSoundOff"
+            },
+            "location": [ 360, 404 ],
+            "scale": [ 0.7, 0.7 ],
+            "variable": "mute_game",
+            "values": {
+              "on": "mute_on",
+              "off": "mute_off"
+            },
+            "active": true
+          },
+          {
+            "name": "default",
+            "type": "button",
+            "image": "getTheFactsExit",
+            "location": [ 12, 7 ],
+            "variable": "change_act"
+          }
+        ],
+        "outcomes": {
+          "cyberbullying_forMoreInfo_sound_a_done": {
+            "events": {"cyberbullying_forMoreInfo_sound_8_a": "played" },
+            "actions": [
+              {
+                "type": "add-actor", "args": [
+                {
+                  "name": "cyberbullying_forMoreInfo_item_1",
+                  "type": "text",
+                  "text": "National Crime Prevention Council: www.ncpc.org/cyberbullying",
+                  "location": [ 99, 95 ],
+                  "bullet": "true",
+                  "font": "cyberbullying_bullet_wide"
+                }
+              ]
+              },
+              {
+                "type": "add-actor", "args": [
+                {
+                  "name": "cyberbullying_forMoreInfo_Underline_Hyperlink_image1",
+                  "type": "decoration",
+                  "image": "horizontalLine",
+                  "key": "decorations",
+                  "location": [ 125, 165 ],
+                  "scale": [ 2.13, 0.33 ]
+                }
+              ]
+              },
+              {
+                "type": "add-actor", "args": [
+                {
+                  "name": "cyberbullying_forMoreInfo_HyperlinkButton1",
+                  "type": "url-button-invisible",
+                  "location": [ 125, 139 ],
+                  "width": 430,
+                  "height": 30,
+                  "url": "http://www.ncpc.org/cyberbullying",
+                  "variable": "cyberbullying_forMoreInfo_Hyperlink1"
+                }
+              ]
+              },
+              {
+                "type": "add-actor", "args": [
+                {
+                  "name": "cyberbullying_forMoreInfo_sound_8_b",
+                  "type": "audio",
+                  "audio": [ "y0800b"],
+                  "variable": "cyberbullying_forMoreInfo_sound_8_b"
+                }
+              ]
+              }
+            ]
+          },
+          "cyberbullying_forMoreInfo_sound_b_done": {
+            "events": {"cyberbullying_forMoreInfo_sound_8_b": "played" },
+            "actions": [
+              {
+                "type": "add-actor", "args": [
+                {
+                  "name": "cyberbullying_forMoreInfo_item_2",
+                  "type": "text",
+                  "text": "Cyberbullying Research Center: www.cyberbullying.us",
+                  "location": [ 99, 183 ],
+                  "bullet": "true",
+                  "font": "cyberbullying_bullet_wide"
+                }
+              ]
+              },
+              {
+                "type": "add-actor", "args": [
+                {
+                  "name": "cyberbullying_forMoreInfo_Underline_Hyperlink_image2",
+                  "type": "decoration",
+                  "image": "horizontalLine",
+                  "key": "decorations",
+                  "location": [ 125, 253 ],
+                  "scale": [ 1.66, 0.33 ]
+                }
+              ]
+              },
+              {
+                "type": "add-actor", "args": [
+                {
+                  "name": "cyberbullying_forMoreInfo_HyperlinkButton2",
+                  "type": "url-button-invisible",
+                  "location": [ 125, 228 ],
+                  "width": 335,
+                  "height": 30,
+                  "url": "http://www.cyberbullying.us",
+                  "variable": "cyberbullying_forMoreInfo_Hyperlink2"
+                }
+              ]
+              },
+              {
+                "type": "add-actor", "args": [
+                {
+                  "name": "cyberbullying_forMoreInfo_sound_8_c",
+                  "type": "audio",
+                  "audio": [ "y0800c"],
+                  "variable": "cyberbullying_forMoreInfo_sound_8_c"
+                }
+              ]
+              }
+            ]
+          },
+          "back_button": {
+            "events": { "cyberbullying_forMoreInfo_showPrevious": "*" },
+            "actions": [
+              {
+                "type": "scene",
+                "args": ["cyberbullying_stayingSafe"]
+              }
+            ]
+          },
+          "forward_button": {
+            "events": { "cyberbullying_forMoreInfo_showNext": "*" },
+            "actions": [
+              {
+                "type": "scene",
+                "args": ["cyberbullying_completed"]
+              }
+            ]
+          }
+        }
+      },
+      "cyberbullying_completed": {
+        "id": "cyberbullying_completed",
+        "background": "getTheFactsBackground",
+        "title": "You Have Completed This Lesson",
+        "actors": [
+          {
+            "name": "youHaveCompletedThisLesson",
+            "type": "text",
+            "font": "cyberbullying_completed",
+            "location": [ 115, 141 ],
+            "text": "You have completed this lesson. To continue, please click the red arrow in the upper left corner."
+          },
+          {
+            "name": "backButton",
+            "type": "button",
+            "image": "getTheFactsBack",
+            "location": [ 90, 400 ],
+            "variable": "cyberbullying_completed_showPrevious"
+          },
+          {
+            "name": "mutebutton",
+            "type": "toggle-button",
+            "images": {
+              "on": "getTheFactsSoundOn",
+              "off": "getTheFactsSoundOff"
+            },
+            "location": [ 360, 404 ],
+            "scale": [
+              0.7, 0.7
+            ],
+            "variable": "mute_game",
+            "values": {
+              "on": "mute_on",
+              "off": "mute_off"
+            },
+            "active": true
+          },
+          {
+            "name": "default",
+            "type": "button",
+            "image": "getTheFactsExit",
+            "location": [ 12, 7 ],
+            "variable": "change_act"
+          }
+        ],
+        "outcomes": {
+          "back_button": {
+            "events": { "cyberbullying_completed_showPrevious": "*" },
+            "actions": [
+              {
+                "type": "scene",
+                "args": ["cyberbullying_forMoreInfo"]
+              }
+            ]
+          }
+        }
+      }
+    }
+  }
+}

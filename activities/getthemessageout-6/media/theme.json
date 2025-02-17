@@ -1,0 +1,97 @@
+{
+  "autoScale": true,
+  "texture": "media/texture.png",
+  "textureMap": "media/texture.json",
+  "textureKey": "texture",
+  "logo": "logo.png",
+  "background": "cafeteria-background.png",
+  "instructions": {
+    "top": "instructions-top",
+    "middle": "instructions-middle",
+    "bottom": "instructions-bottom"
+  },
+  "phone": {
+    "on": "phone-on.png",
+    "off": "phone-off.png",
+    "status": "phone-status-bar.png"
+  },
+  "tints": {
+    "bubbleHover": "0xFFFFBB",
+    "bubbleInvalid": "0x555555",
+    "buttonDisabled": "0xBBBBBB",
+    "bubble": "0x555555",
+    "bubbleHover": "0xFFFFBB",
+    "portrait": "0x555555"
+  },
+  "button": {
+    "background": {
+      "up": "button-base.png",
+      "off": "button-base-ds.png"
+    },
+    "long": {
+      "up": "button-long-up.png",
+      "hover": "button-long-over.png"
+    },
+    "mid": {
+      "up": "button-mid-up.png",
+      "hover": "button-mid-over.png"
+    },
+    "short": {
+      "up": "button-short-up.png",
+      "hover": "button-short-over.png"
+    }
+  },
+  "chat": {
+    "left": {
+      "selected": {
+        "top":"chat-left-selected-top",
+        "middle":"chat-left-selected-mid",
+        "bottom":"chat-left-selected-bot"
+      },
+      "normal": {
+        "top":"chat-left-top",
+        "middle":"chat-left-mid",
+        "bottom":"chat-left-bot"
+      }
+    },
+    "right": {
+      "selected": {
+        "top":"chat-right-selected-top",
+        "middle":"chat-right-selected-mid",
+        "bottom":"chat-right-selected-bot"
+      },
+      "normal": {
+        "top":"chat-right-top",
+        "middle":"chat-right-mid",
+        "bottom":"chat-right-bot"
+      }
+    }
+  },
+  "heads": [
+    "head-carrie.bmp",
+    "head-dane.bmp",
+    "head-freddie.bmp",
+    "head-janelle.bmp",
+    "head-mandy.bmp",
+    "head-ross.bmp",
+    "head-tom.bmp"
+  ],
+  "fonts": {
+    "playAgain": { "font": "14px Arial", "fill": "black", "align": "left"},
+    "button": { "font": "15px Arial", "fill": "black", "align": "left", "wordWrap": "true", "wordWrapWidth": 550},
+    "textBubble": { "font": "12px Arial", "fill": "black", "align": "left"},
+    "textWindow": { "font": "12px Arial", "fill": "black", "align": "left"},
+    "gameOver": { "font": "24px Arial", "fill": "black", "align": "left", "fontWeight": "bold"},
+    "headingFont": { "font": "14px Arial", "fill": "black", "align": "left", "fontWeight": "bold"}
+  },
+  "soundKey": "gtmoSounds",
+  "soundFile": [ "media/gtmo.m4a", "media/gtmo.ogg" ],
+  "sounds": {
+    "no" : [0, 0.208, false,  "Starts at 0, lasts 0.208 seconds, does not loop"],
+    "click": [0.208, 0.036, false ],
+    "cool_b": [ 0.244, 1.120, false ],
+    "cool_c": [ 1.364, 0.911, false ],
+    "alert_ascend": [ 2.275, 1.414, false ],
+    "alert_descend": [ 3.689, 1.411, false ]
+  }
+}

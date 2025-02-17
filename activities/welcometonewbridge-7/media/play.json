@@ -1,0 +1,15 @@
+{
+    "name": "Grade 7 Welcome To Newbridge!",
+    "description": "This file contains a description of the WTNB Play, including all acts",
+    "scorm": false,
+    "logging": false,
+    "autoScale": true,
+    "acts": {
+        "default": {
+            "id": "default",
+            "description": "Every set of acts has a default, which is the act that is started by default.",
+            "name": "Grade 7 Welcome To Newbridge!",
+            "theme": "media/default/theme.json"
+        }
+    }
+}

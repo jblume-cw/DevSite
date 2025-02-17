@@ -1,0 +1,247 @@
+{
+  "instructionText": {
+    "0": [
+      {
+        "text": "Text messages will appear on the screen. The object is to keep them from piling up to the top of the screen.",
+        "attributes": {"fontWeight": "bold"}
+      },
+      {
+        "text": "To clear a text message you must identify the sender as a bully or a friend.",
+        "attributes": {"fontWeight": "bold"}
+      },
+      {"text": "Click on the friendly, green message below to select it."}
+    ],
+    "1": [
+      {"text": "Click the Friend button to correctly identify the sender and clear the message"}
+    ],
+    "2": [
+      {
+        "text": "If you identify a message incorrectly, it turns grey and you will not be able to remove it from the screen.",
+        "attributes": {"fontWeight": "bold"}
+      },
+      {"text": "Select the friendly message on top."}
+    ],
+    "3": [
+      {"text": "Click the bully button to incorrectly identify the sender as a bully."}
+    ],
+    "4": [
+      {"text": "As you play, the messages will appear at a faster rate. When the messages reach the top of the screen your game is over."}
+    ]
+  },
+  "messages": {
+    "message": [
+      {
+        "bully": false,
+        "text": "Woooo! It’s Friday!"
+      },
+      {
+        "bully": false,
+        "text": "Wait for me @ bus…"
+      },
+      {
+        "bully": false,
+        "text": "UR a QT"
+      },
+      {
+        "bully": false,
+        "text": "Want to hang out?"
+      },
+      {
+        "bully": false,
+        "text": "Waz up?"
+      },
+      {
+        "bully": false,
+        "text": "Hey! Want to go to movies this weekend?"
+      },
+      {
+        "bully": false,
+        "text": "L8r G8r!"
+      },
+      {
+        "bully": false,
+        "text": "Plz call me tonight"
+      },
+      {
+        "bully": false,
+        "text": "I &lt;3 my art class!"
+      },
+      {
+        "bully": false,
+        "text": "Can I borrow $ for snacks?"
+      },
+      {
+        "bully": false,
+        "text": "Thx for your help"
+      },
+      {
+        "bully": false,
+        "text": "That math test was 2ez"
+      },
+      {
+        "bully": false,
+        "text": "^5 for the score in the game!"
+      },
+      {
+        "bully": false,
+        "text": "That show was 2 funny."
+      },
+      {
+        "bully": false,
+        "text": "What are you wearing 2morrow?"
+      },
+      {
+        "bully": false,
+        "text": "Did u bring anything good for lunch?"
+      },
+      {
+        "bully": false,
+        "text": "Buying lunch today?"
+      },
+      {
+        "bully": false,
+        "text": "I’m outta here. B4N."
+      },
+      {
+        "bully": false,
+        "text": "I need to borrow ur science book PLZ!"
+      },
+      {
+        "bully": false,
+        "text": "Meet me @ lockers after school to walk 2gether."
+      },
+      {
+        "bully": false,
+        "text": "I love her new song. It is my jam!"
+      },
+      {
+        "bully": false,
+        "text": "Ur haircut is so cute *wink*"
+      },
+      {
+        "bully": false,
+        "text": "Whatcha doin?"
+      },
+      {
+        "bully": false,
+        "text": "XOXOXOXOXO"
+      },
+      {
+        "bully": false,
+        "text": "Call me when you get outta class."
+      },
+      {
+        "bully": true,
+        "text": "U suck. JK"
+      },
+      {
+        "bully": true,
+        "text": "Sucks 2b u"
+      },
+      {
+        "bully": true,
+        "text": "Let’s go hang out – but don’t tell Taylor to come!"
+      },
+      {
+        "bully": true,
+        "text": "Did you smell K after gym? MUSTY!"
+      },
+      {
+        "bully": true,
+        "text": "2morrow we r gonna gang up on M @ the game. You in?"
+      },
+      {
+        "bully": true,
+        "text": "You’ll never fit in, loser."
+      },
+      {
+        "bully": true,
+        "text": "OMG if she wears that dress again, I’ll die laughing."
+      },
+      {
+        "bully": true,
+        "text": "Don’t be such a baby, you gonna cry if we don’t invite you?"
+      },
+      {
+        "bully": true,
+        "text": "UR a loser. JK."
+      },
+      {
+        "bully": true,
+        "text": "W/E she is such a geek. Who cares what she thinks?"
+      },
+      {
+        "bully": true,
+        "text": "UR such a FREAK!"
+      },
+      {
+        "bully": true,
+        "text": "I cant stand you"
+      },
+      {
+        "bully": true,
+        "text": "B is so annoying. Lets ignore @ lunch."
+      },
+      {
+        "bully": true,
+        "text": "Dang, T gained some pounds! FATty!"
+      },
+      {
+        "bully": true,
+        "text": "U R GAY"
+      },
+      {
+        "bully": true,
+        "text": "I hate you. Don’t talk 2 me ‘n public ever again!"
+      },
+      {
+        "bully": true,
+        "text": "As a friend, I’m telling you: U smell."
+      },
+      {
+        "bully": true,
+        "text": "Nice zits. You need that ProActive."
+      },
+      {
+        "bully": true,
+        "text": "I like your lady lumps…"
+      },
+      {
+        "bully": true,
+        "text": "That shirt is so gay"
+      },
+      {
+        "bully": true,
+        "text": "Face hurts? Cuz it’s killing me!"
+      },
+      {
+        "bully": true,
+        "text": "If u tell anyone what I said, I’m gonna pound you after school"
+      },
+      {
+        "bully": true,
+        "text": "What’s up, Fat Butt? *Wink*"
+      },
+      {
+        "bully": true,
+        "text": "Dang, tuna 4 lunch? I can smell your breath from here! LOL"
+      },
+      {
+        "bully": true,
+        "text": "Close UR mouth, smells like something died in there…lol"
+      },
+      {
+        "bully": true,
+        "text": "Fact: u have no friends…Fact: ur  a loser"
+      },
+      {
+        "bully": true,
+        "text": "How do you live with that face?"
+      },
+      {
+        "bully": true,
+        "text": "go die."
+      }
+    ]
+  }
+}
