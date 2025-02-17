@@ -1,0 +1,214 @@
+{
+  "texture": "media/default/texture.png",
+  "textureMap": "media/default/texture.json",
+  "textureKey": "tths_texture",
+  "data": "media/default/sceneData.json",
+  "fonts" : {
+    "tths_tom_light_title": { "font": "42px flashdligregular", "fill": "#000000", "fontWeight": "normal", "wordWrap": true, "wordWrapWidth": 550 },
+    "tths_tom_light_question_wrap": { "font": "20px flashdligregular", "fill": "#000000", "fontWeight": "normal", "wordWrap": true, "wordWrapWidth": 600, "lineSpacing": -6 },
+    "tths_tom_light_choice": { "font": "34px flashdligregular", "fill": "#000000", "fontWeight": "normal" },
+    "tths_tom_light_choiceOver": { "font": "34px flashdligregular", "fill": "#F3A39E", "fontWeight": "normal" },
+    "tths_tom_light_counter": { "font": "42px flashdligregular", "fill": "#A0CDFC", "fontWeight": "normal", "wordWrap": true, "wordWrapWidth": 550 },
+    "tths_video_light_title": { "font": "42px flashdligregular", "fill": "#000000", "fontWeight": "normal", "wordWrap": true, "wordWrapWidth": 550 },
+    "tths_lesson_bold": { "font": "28px flashdbolregular", "fill": "#000000", "fontWeight": "normal", "wordWrap": true, "wordWrapWidth": 550 },
+    "tths_lesson_light_title": { "font": "35px flashdligregular", "fill": "#000000", "fontWeight": "normal", "wordWrap": true, "wordWrapWidth": 550 },
+    "tths_lesson_light_body": { "font": "33px flashdligregular", "fill": "#000000", "fontWeight": "normal", "wordWrap": true, "wordWrapWidth": 550 },
+    "tths_lesson_light_body_wrap250": { "font": "33px flashdligregular", "fill": "#000000", "fontWeight": "normal", "wordWrap": true, "wordWrapWidth": 250, "lineSpacing": -10 },
+    "tths_lesson_light_body_wrap350": { "font": "33px flashdligregular", "fill": "#000000", "fontWeight": "normal", "wordWrap": true, "wordWrapWidth": 350, "lineSpacing": -10 }
+  },
+  "images": {
+    "decorations": {
+      "whiteboardBackground": "whiteboard-background.png",
+      "truthBackground": "truth-background.png",
+      "truthBottomLine": "truth-bottom-line.png",
+      "truthTopLine": "truth-top-line.png",
+      "mythArrow": "myth-arrow.png",
+      "mythCircle": "myth-circle.png",
+      "truthArrow": "truth-arrow.png",
+      "truthCircle": "truth-circle.png",
+      "truthSelected": "fake-truth-over.png",
+      "mythSelected": "fake-myth-over.png",
+      "truthNotSelected": "fake-truth.png",
+      "mythNotSelected": "fake-myth.png",
+      "videoBackground": "video-background.png",
+      "videoLine": "video-line.png",
+      "videoFrame": "video-frame.png",
+      "lessonBackground": "lesson-background.png",
+      "imageFrame": "image-frame.png",
+      "lessonImage1": "lesson-image-1.png",
+      "lessonImage2": "lesson-image-2.png",
+      "lessonImage3": "lesson-image-3.png",
+      "lessonImage4": "lesson-image-4.png",
+      "lessonImage5": "lesson-image-5.png",
+      "lessonImage6": "lesson-image-6.png",
+      "lessonImage7": "lesson-image-7.png",
+      "lessonImage8": "lesson-image-8.png",
+      "lessonImage8b": "lesson-image-8b.png",
+      "lessonImage8c": "lesson-image-8c.png",
+      "lessonImage9": "lesson-image-9.png",
+      "lessonBullet": "lesson-bullet.png"
+    }
+  },
+  "sceneImages": {
+    "backgroundGradient": "background-gradient.png"
+  },
+  "logo": "logo.png",
+  "buttons": {
+    "truth":
+    {
+      "up": "fake-truth.png",
+      "over": "fake-truth-over.png",
+      "out": "fake-truth.png",
+      "down": "fake-truth-over.png"
+    },
+    "myth": {
+      "up": "fake-myth.png",
+      "over": "fake-myth-over.png",
+      "out": "fake-myth.png",
+      "down": "fake-myth-over.png"
+    },
+    "back":
+    {
+      "up": "back-button-up.png",
+      "over": "back-button-over.png",
+      "out": "back-button-up.png",
+      "down": "back-button-up.png"
+    },
+    "next":
+    {
+      "up": "next-button-up.png",
+      "over": "next-button-over.png",
+      "out": "next-button-up.png",
+      "down": "next-button-up.png"
+    },
+    "videoClose": {
+      "up": "menu-button-up.png",
+      "over": "menu-button-over.png",
+      "out": "menu-button-up.png",
+      "down": "menu-button-up.png"
+    },
+    "menu": {
+      "up": "menu-button-up.png",
+      "over": "menu-button-over.png",
+      "out": "menu-button-up.png",
+      "down": "menu-button-up.png"
+    },
+    "soundOn": {
+      "up": "mute-off-up.png",
+      "over": "mute-off-over.png",
+      "out": "mute-off-up.png",
+      "down": "mute-off-up.png"
+    },
+    "soundOff": {
+      "up": "mute-on-up.png",
+      "over": "mute-on-over.png",
+      "out": "mute-on-up.png",
+      "down": "mute-on-up.png"
+    },
+    "replay": {
+      "up": "replay-button-up.png",
+      "over": "replay-button-over.png",
+      "out": "replay-button-up.png",
+      "down": "replay-button-up.png"
+    },
+    "postItLesson": {
+      "up": "post-it-lesson-up.png",
+      "over": "post-it-lesson-over.png",
+      "out": "post-it-lesson-up.png",
+      "down": "post-it-lesson-up.png"
+    },
+    "postItLessonCompleted": {
+      "up": "post-it-lesson-completed-up.png",
+      "over": "post-it-lesson-completed-over.png",
+      "out": "post-it-lesson-completed-up.png",
+      "down": "post-it-lesson-completed-up.png"
+    },
+    "postItResources": {
+      "up": "post-it-resources-up.png",
+      "over": "post-it-resources-over.png",
+      "out": "post-it-resources-up.png",
+      "down": "post-it-resources-up.png"
+    },
+    "postItResourcesCompleted": {
+      "up": "post-it-resources-completed-up.png",
+      "over": "post-it-resources-completed-over.png",
+      "out": "post-it-resources-completed-up.png",
+      "down": "post-it-resources-completed-up.png"
+    },
+    "postItTruthOrMyth": {
+      "up": "post-it-truthormyth-up.png",
+      "over": "post-it-truthormyth-over.png",
+      "out": "post-it-truthormyth-up.png",
+      "down": "post-it-truthormyth-up.png"
+    },
+    "postItTruthOrMythCompleted": {
+      "up": "post-it-truthormyth-completed.png",
+      "over": "post-it-truthormyth-completed-over.png",
+      "out": "post-it-truthormyth-completed.png",
+      "down": "post-it-truthormyth-completed.png"
+    },
+    "postItVideo": {
+      "up": "post-it-video-up.png",
+      "over": "post-it-video-over.png",
+      "out": "post-it-video-up.png",
+      "down": "post-it-video-up.png"
+    },
+    "postItVideoCompleted": {
+      "up": "post-it-video-completed-up.png",
+      "over": "post-it-video-completed-over.png",
+      "out": "post-it-video-completed-up.png",
+      "down": "post-it-video-completed-up.png"
+    }
+  },
+  "soundKey": "tthsSounds",
+  "soundFile": [ "media/default/transitionToHighSchool.m4a", "media/default/transitionToHighSchool.ogg" ],
+  "sounds": {
+    "note1a": "Note that some slides 8 have been manually split below into parts for sound cues partway",
+    "note1b": "(slide3, slide4, slide5, slide7, slide 8, slide9)",
+    "answer1": [ 0.00000000, 23.83444444, false, "answer1, starts at 0.00000000, length is 23.83444444, does not loop"],
+    "answer2": [ 23.83444444, 17.780589570000004, false, "answer2"],
+    "answer3": [ 41.61503401, 24.787006809999994, false, "answer3"],
+    "answer4": [ 66.40204082, 18.415623580000002, false, "answer4"],
+    "answer5": [ 84.81766440, 30.56566893, false, "answer5"],
+    "question1": [ 115.38333333, 10.202675740000004, false, "question1"],
+    "question2": [ 125.58600907, 7.239251699999997, false, "question2"],
+    "question3": [ 132.82526077, 11.980748299999988, false, "question3"],
+    "question4": [ 144.80600907, 8.255283450000007, false, "question4"],
+    "question5": [ 153.06129252, 9.927505670000016, false, "question5"],
+    "slide1": [ 162.98879819, 18.304081629999985, false, "slide1"],
+    "slide2": [ 181.29287982, 9.589841269999994, false, "slide2"],
+    "note2": "Note that slide3 has been manually split into 3a and 3b for a sound cue partway",
+    "slide3": [ 190.88272109, 35.1829932, false, "slide3"],
+    "slide3a": [ 190.88272109, 28.5, false, "slide3"],
+    "slide3b": [ 219.38272109, 6.6829932, false, "slide3"],
+    "note3": "Note that slide4 has been manually split into 4a, 4b, and 4c for sound cues partway",
+    "slide4": [ 226.06571429, 46.19181405000003, false, "slide4"],
+    "slide4a": [ 226.06571429, 6.0, false, "slide4"],
+    "slide4b": [ 232.06571429, 10.5, false, "slide4"],
+    "slide4c": [ 242.56571429, 29.69181405000003, false, "slide4"],
+    "note4": "Note that slide5 has been manually split into 5a and 5b for a sound cue partway",
+    "slide5": [ 272.25752834, 69.28770975999998, false, "slide5"],
+    "slide5a": [ 272.25752834, 35.5, false, "slide5"],
+    "slide5b": [ 307.75752834, 33.78770975999998, false, "slide5"],
+    "slide6": [ 341.54523810, 9.448820860000012, false, "slide6"],
+    "note5": "Note that slide7 has been manually split into 7a, 7b, 7c, 7d, and 7e for sound cues partway",
+    "slide7": [ 350.99405896, 95.29691609999998, false, "slide7"],
+    "slide7a": [ 350.99405896, 14.5, false, "slide7"],
+    "slide7b": [ 365.49405896, 26.0, false, "slide7"],
+    "slide7c": [ 391.49405896, 22.5, false, "slide7"],
+    "slide7d": [ 413.99405896, 8.0, false, "slide7"],
+    "slide7e": [ 421.99405896, 24.29691609999998, false, "slide7"],
+    "note6": "Note that slide8 has been manually split into 8a, 8b, 8c, and 8d for sound cues partway",
+    "slide8": [ 446.29097506, 104.32240361999999, false, "slide8"],
+    "slide8a": [ 446.29097506, 7.0, false, "slide8"],
+    "slide8b": [ 453.29097506, 36.0, false, "slide8"],
+    "slide8c": [ 489.29097506, 33.0, false, "slide8"],
+    "slide8d": [ 522.29097506, 28.32240361999999, false, "slide8"],
+    "note6": "Note that slide9 has been manually split into 9a, 9b, 9c, and 9d for sound cues partway",
+    "slide9": [ 550.61337868, 51.863, false, "slide9"],
+    "slide9a": [ 550.61337868, 22.5, false, "slide9"],
+    "slide9b": [ 573.11337868, 4.5, false, "slide9"],
+    "slide9c": [ 577.61337868, 6.0, false, "slide9"],
+    "slide9d": [ 583.61337868, 18.863, false, "slide9"]
+  }
+}

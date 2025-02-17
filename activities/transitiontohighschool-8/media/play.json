@@ -1,0 +1,15 @@
+{
+  "name": "Grade 8 Transition to High School",
+  "scorm": false,
+  "logging": false,
+  "autoScale": true,
+  "description": "This file contains a description of the TTHS Play, including all acts",
+  "acts": {
+    "default": {
+      "id": "default",
+      "description": "Every set of acts has a default, which is the act that is started by default.",
+      "name": "Grade 8 Transition to High School",
+      "theme": "media/default/theme.json"
+    }
+  }
+}

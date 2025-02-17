@@ -1,0 +1,156 @@
+{"frames": {
+
+"classroom-background.png":
+{
+	"frame": {"x":1335,"y":2,"w":700,"h":525},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":700,"h":525},
+	"sourceSize": {"w":700,"h":525}
+},
+"classroom-foreground.png":
+{
+	"frame": {"x":1317,"y":1580,"w":426,"h":309},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":274,"y":216,"w":426,"h":309},
+	"sourceSize": {"w":700,"h":525}
+},
+"get-the-facts-exit.png":
+{
+	"frame": {"x":615,"y":1845,"w":45,"h":37},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":45,"h":37},
+	"sourceSize": {"w":45,"h":37}
+},
+"hallway-background.png":
+{
+	"frame": {"x":1335,"y":529,"w":700,"h":525},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":700,"h":525},
+	"sourceSize": {"w":700,"h":525}
+},
+"move-on-box.png":
+{
+	"frame": {"x":726,"y":993,"w":354,"h":127},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":354,"h":127},
+	"sourceSize": {"w":354,"h":127}
+},
+"presentation-8-1-1.png":
+{
+	"frame": {"x":615,"y":1135,"w":700,"h":525},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":700,"h":525},
+	"sourceSize": {"w":700,"h":525}
+},
+"talking-carrie.png":
+{
+	"frame": {"x":404,"y":1135,"w":209,"h":775},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":209,"h":775},
+	"sourceSize": {"w":209,"h":775}
+},
+"talking-dane.png":
+{
+	"frame": {"x":2,"y":2,"w":417,"h":1088},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":417,"h":1088},
+	"sourceSize": {"w":417,"h":1088}
+},
+"talking-janelle.png":
+{
+	"frame": {"x":2,"y":1092,"w":400,"h":824},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":400,"h":824},
+	"sourceSize": {"w":400,"h":824}
+},
+"talking-mandy.png":
+{
+	"frame": {"x":421,"y":2,"w":303,"h":1131},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":303,"h":1131},
+	"sourceSize": {"w":303,"h":1131}
+},
+"talking-ross.png":
+{
+	"frame": {"x":1037,"y":2,"w":296,"h":962},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":12,"y":0,"w":296,"h":962},
+	"sourceSize": {"w":314,"h":962}
+},
+"talking-tom.png":
+{
+	"frame": {"x":726,"y":2,"w":309,"h":989},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":309,"h":989},
+	"sourceSize": {"w":309,"h":989}
+},
+"theater-background.png":
+{
+	"frame": {"x":1317,"y":1056,"w":700,"h":522},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":0,"y":0,"w":700,"h":522},
+	"sourceSize": {"w":700,"h":525}
+},
+"wall-speaker-talk-bubble.png":
+{
+	"frame": {"x":615,"y":1662,"w":627,"h":181},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":0,"y":0,"w":627,"h":181},
+	"sourceSize": {"w":631,"h":185}
+},
+  "wall-speaker-talk-bubble-top.png":
+  {
+	"frame": {"x":615,"y":1662,"w":627,"h":50},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":0,"y":0,"w":627,"h":50},
+	"sourceSize": {"w":627,"h":50}
+  },
+  "wall-speaker-talk-bubble-middle.png":
+  {
+	"frame": {"x":615,"y":1712,"w":627,"h":5},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":0,"y":0,"w":627,"h":5},
+	"sourceSize": {"w":627,"h":5}
+  },
+  "wall-speaker-talk-bubble-bottom.png":
+  {
+	"frame": {"x":615,"y":1828,"w":627,"h":15},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":0,"y":0,"w":627,"h":15},
+	"sourceSize": {"w":627,"h":15}
+  },
+"wall-speaker.png":
+{
+	"frame": {"x":1745,"y":1580,"w":76,"h":72},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":0,"y":0,"w":76,"h":72},
+	"sourceSize": {"w":80,"h":76}
+}},
+"meta": {
+	"app": "http://www.codeandweb.com/texturepacker",
+	"version": "1.0",
+	"image": "texture.png",
+	"format": "RGBA8888",
+	"size": {"w":2037,"h":1918},
+	"scale": "1",
+	"smartupdate": "$TexturePacker:SmartUpdate:614dbe7629701b17f891b46344cf79d9:b2b6810f83574fdb1e74175aec9807f2:88db1022cd6b660616541d2788fcd4f7$"
+}
+}

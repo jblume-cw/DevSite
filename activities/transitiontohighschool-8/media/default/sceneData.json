@@ -1,0 +1,3470 @@
+{
+  "play": {
+    "start": "menu",
+    "showPlayThrough": false,
+    "scenes": {
+      "menu": {
+        "id": "menu",
+        "background": "backgroundGradient",
+        "title": "Introduction",
+        "description": "starting Transition to High School",
+        "actors": [
+          {
+            "name": "whiteboard",
+            "type": "decoration",
+            "image": "whiteboardBackground",
+            "key": "decorations",
+            "location": [ 25, 26 ],
+            "scale": [ 1.0, 1.0 ]
+          },
+          {
+            "name": "videoButton",
+            "type": "button",
+            "image": "postItVideo",
+            "location": [ 228, 108 ],
+            "variable": "tths_menu_video"
+          },
+          {
+            "name": "truthOrMythButton",
+            "type": "button",
+            "image": "postItTruthOrMyth",
+            "location": [ 113, 302 ],
+            "variable": "tths_menu_truthOrMyth"
+          },
+          {
+            "name": "lessonButton",
+            "type": "button",
+            "image": "postItLesson",
+            "location": [ 438, 148 ],
+            "variable": "tths_menu_lesson"
+          },
+          {
+            "name": "resourcesButton",
+            "type": "url-button",
+            "image": "postItResources",
+            "location": [ 416, 354 ],
+            "url": "transition_resources.pdf",
+            "variable": "tths_menu_resources"
+          }
+        ],
+        "outcomes": {
+          "choose_activityLesson": {
+            "events": {"tths_menu_lesson": "*" },
+            "actions": [
+              {
+                "type": "scene",
+                "args": ["tths_lesson_01"]
+              }
+            ]
+          },
+          "choose_activityVideo": {
+            "events": {"tths_menu_video": "*" },
+            "actions": [
+              {
+                "type": "scene",
+                "args": ["tths_video"]
+              }
+            ]
+          },
+          "choose_activityTruthOrMyth": {
+            "events": {"tths_menu_truthOrMyth": "*" },
+            "actions": [
+              {
+                "type": "scene",
+                "args": ["tths_tom_01"]
+              }
+            ]
+          },
+          "markActivityComplete_video": {
+            "events": { "checkVideoComplete": "true", "tths_video_video1": "closed" },
+            "actions": [
+              { "type": "remove-actor", "args": [ "videoButton" ] },
+              {
+                "type": "add-actor",
+                "args": [
+                  {
+                    "name": "videoButtonComplete",
+                    "type": "button",
+                    "image": "postItVideoCompleted",
+                    "location": [ 228, 108 ],
+                    "variable": "tths_menu_video"
+                  }
+                ]
+              },
+              { "type": "variable", "args": ["videoMarkedComplete", "true" ] }
+            ]
+          },
+          "markActivityComplete_truthOrMyth1": {
+            "events": { "checkTruthOrMythComplete": "true", "tths_tom_truthChoice_05": "*" },
+            "actions": [
+              { "type": "remove-actor", "args": [ "truthOrMythButton" ] },
+              {
+                "type": "add-actor",
+                "args": [
+                  {
+                    "name": "truthOrMythButtonComplete",
+                    "type": "button",
+                    "image": "postItTruthOrMythCompleted",
+                    "location": [ 113, 302 ],
+                    "variable": "tths_menu_truthOrMyth"
+                  }
+                ]
+              },
+              { "type": "variable", "args": ["truthOrMythMarkedComplete", "true" ] }
+            ]
+          },
+          "markActivityComplete_truthOrMyth2": {
+            "events": { "checkTruthOrMythComplete": "true", "tths_tom_mythChoice_05": "*" },
+            "actions": [
+              { "type": "remove-actor", "args": [ "truthOrMythButton" ] },
+              {
+                "type": "add-actor",
+                "args": [
+                  {
+                    "name": "truthOrMythButtonComplete",
+                    "type": "button",
+                    "image": "postItTruthOrMythCompleted",
+                    "location": [ 113, 302 ],
+                    "variable": "tths_menu_truthOrMyth"
+                  }
+                ]
+              },
+              { "type": "variable", "args": ["truthOrMythMarkedComplete", "true" ] }
+            ]
+          },
+          "markActivityComplete_lesson": {
+            "events": { "checkLessonComplete": "true", "tths_lesson_08_next": "*" },
+            "actions": [
+              { "type": "remove-actor", "args": [ "lessonButton" ] },
+              {
+                "type": "add-actor",
+                "args": [
+                  {
+                    "name": "lessonButtonComplete",
+                    "type": "button",
+                    "image": "postItLessonCompleted",
+                    "location": [ 438, 148 ],
+                    "variable": "tths_menu_lesson"
+                  }
+                ]
+              },
+              { "type": "variable", "args": ["lessonMarkedComplete", "true" ] }
+            ]
+          },
+          "markActivityComplete_resources": {
+            "events": { "checkResourcesComplete": "true", "tths_menu_resources": "*" },
+            "actions": [
+              { "type": "remove-actor", "args": [ "resourcesButton" ] },
+              {
+                "type": "add-actor",
+                "args": [
+                  {
+                    "name": "resourcesButtonComplete",
+                    "type": "button",
+                    "image": "postItResourcesCompleted",
+                    "location": [ 416, 354 ],
+                    "variable": "tths_menu_resources"
+                  }
+                ]
+              },
+              { "type": "variable", "args": ["resourcesMarkedComplete", "true" ] }
+            ]
+          },
+          "markTthsComplete": {
+            "events": {
+              "videoMarkedComplete": "*",
+              "truthOrMythMarkedComplete": "*",
+              "lessonMarkedComplete": "*",
+              "resourcesMarkedComplete": "*"
+            },
+            "actions": [
+              { "type": "choice", "args": [ "act_complete", 1] },
+              { "type": "choice", "args": [ "save", 0 ] }
+            ]
+          }
+        },
+        "actions": [
+          { "type": "variable", "args": ["checkVideoComplete", "false", true] },
+          { "type": "variable", "args": ["checkVideoComplete", "true", true] },
+          { "type": "variable", "args": ["checkTruthOrMythComplete", "false", true] },
+          { "type": "variable", "args": ["checkTruthOrMythComplete", "true", true] },
+          { "type": "variable", "args": ["checkLessonComplete", "false", true] },
+          { "type": "variable", "args": ["checkLessonComplete", "true", true] },
+          { "type": "variable", "args": ["checkResourcesComplete", "false", true] },
+          { "type": "variable", "args": ["checkResourcesComplete", "true", true] }
+        ]
+      },
+      "tths_tom_01": {
+        "id": "tths_tom_01",
+        "background": "backgroundGradient",
+        "title": "TRUTH or MYTH",
+        "description": "Transition to High School Truth or Myth 01",
+        "actors": [
+          {
+            "name": "whiteboard",
+            "type": "decoration",
+            "image": "whiteboardBackground",
+            "scale": [ 1.0, 1.0 ],
+            "location": [ -796, 26]
+          },
+          {
+            "name": "tths_tom_title",
+            "type": "text",
+            "text": "TRUTH or MYTH",
+            "location": [ 338, 60 ],
+            "font": "tths_tom_light_title"
+          },
+          {
+            "name": "tths_tom_background",
+            "type": "decoration",
+            "image": "truthBackground",
+            "key": "decorations",
+            "location": [ 32, 191 ],
+            "scale": [ 1.0, 1.0 ]
+          },
+          {
+            "name": "tths_tom_topLine",
+            "type": "decoration",
+            "image": "truthTopLine",
+            "key": "decorations",
+            "location": [ 126, 122 ],
+            "scale": [ 1.0, 1.0 ]
+          },
+          {
+            "name": "tths_tom_bottomLine",
+            "type": "decoration",
+            "image": "truthBottomLine",
+            "key": "decorations",
+            "location": [ 126, 297 ],
+            "scale": [ 1.0, 1.0 ]
+          },
+          {
+            "name": "tths_tom_q01",
+            "type": "text",
+            "text": "Every student entering high school will have to go through some type of initiation or hazing by upperclassmen.",
+            "location": [ 128, 140 ],
+            "font": "tths_tom_light_question_wrap"
+          },
+          {
+            "name": "tths_tom_truthChoice_01",
+            "type": "button",
+            "image": "truth",
+            "location": [ 323, 208 ],
+            "variable": "tths_tom_truthChoice_01"
+          },
+          {
+            "name": "tths_tom_mythChoice_01",
+            "type": "button",
+            "image": "myth",
+            "location": [ 397, 250 ],
+            "variable": "tths_tom_mythChoice_01"
+          },
+          {
+            "name": "tths_tom_counter01",
+            "type": "text",
+            "text": "1 of 5",
+            "location": [ 129, 479 ],
+            "font": "tths_tom_light_counter"
+          },
+          {
+            "name": "tths_tom_sound_q01",
+            "type": "audio",
+            "audio": [ "question1"],
+            "variable": "tths_tom_sound_q01"
+          },
+          {
+            "name": "backToMenuButton",
+            "type": "button",
+            "image": "menu",
+            "location": [ 70, 44 ],
+            "variable": "tths_tom_01_backToMenu"
+          },
+          {
+            "name": "mutebutton",
+            "type": "toggle-button",
+            "images": {
+              "on": "soundOn",
+              "off": "soundOff"
+            },
+            "location": [ 709, 49 ],
+            "scale": [
+              1.0, 1.0
+            ],
+            "variable": "mute_game",
+            "values": {
+              "on": "mute_on",
+              "off": "mute_off"
+            },
+            "active": true
+          },
+          {
+            "name": "tths_nextButton",
+            "type": "button",
+            "image": "next",
+            "location": [ 648, 454 ],
+            "variable": "tths_tom_01_next"
+          }
+        ],
+        "outcomes": {
+          "truth_choice": {
+            "events": { "tths_tom_truthChoice_01": "*" },
+            "actions": [
+              { "type": "remove-actor", "args": ["tths_tom_truthChoice_01"] },
+              {
+                "type": "add-actor",
+                "args": [
+                  {
+                    "name": "tths_tom_truthChoiceSelected_01",
+                    "type": "decoration",
+                    "image": "truthSelected",
+                    "key": "decorations",
+                    "location": [ 323, 208 ],
+                    "scale": [ 1.0, 1.0 ]
+                  }
+                ]
+              },
+              { "type": "remove-actor", "args": ["tths_tom_mythChoice_01"] },
+              {
+                "type": "add-actor",
+                "args": [
+                  {
+                    "name": "tths_tom_mythChoiceNotSelected_01",
+                    "type": "decoration",
+                    "image": "mythNotSelected",
+                    "key": "decorations",
+                    "location": [ 397, 250 ],
+                    "scale": [ 1.0, 1.0 ]
+                  }
+                ]
+              },
+              {
+                "type": "add-actor", "args": [
+                {
+                  "name": "tths_tom_01_selectedCircle_truth",
+                  "type": "decoration",
+                  "image": "truthCircle",
+                  "key": "decorations",
+                  "location": [ 371, 194 ],
+                  "scale": [ 1.0, 1.0 ]
+                }
+              ]
+              },
+              {
+                "type": "add-actor", "args": [
+                {
+                  "name": "tths_tom_01_answer",
+                  "type": "text",
+                  "text": "That’s a MYTH. Usually it’s all talk. Sometimes not knowing what to expect can be the biggest cause of our fears. But if you do see or experience any incidents of hazing or intimidation, it’s important not to dismiss or ignore the behavior and immediately talk to a trusted adult, such as a parent, teacher, counselor, or another adult at your school.",
+                  "location": [ 128, 318 ],
+                  "font": "tths_tom_light_question_wrap"
+                }
+              ]
+              },
+              {
+                "type": "add-actor", "args": [
+                {
+                  "name": "tths_tom_01_answerSound",
+                  "type": "audio",
+                  "audio": [ "answer1"],
+                  "variable": "tths_tom_01_answerSound"
+                }
+              ]
+              }
+            ]
+          },
+          "myth_choice": {
+            "events": { "tths_tom_mythChoice_01": "*" },
+            "actions": [
+              { "type": "remove-actor", "args": ["tths_tom_mythChoice_01"] },
+              {
+                "type": "add-actor", "args": [
+                {
+                  "name": "tths_tom_mythChoiceSelected_01",
+                  "type": "decoration",
+                  "image": "mythSelected",
+                  "key": "decorations",
+                  "location": [ 397, 250 ],
+                  "scale": [ 1.0, 1.0 ]
+                }
+              ]
+              },
+              { "type": "remove-actor", "args": ["tths_tom_truthChoice_01"] },
+              {
+                "type": "add-actor", "args": [
+                {
+                  "name": "tths_tom_truthChoiceNotSelected_01",
+                  "type": "decoration",
+                  "image": "truthNotSelected",
+                  "key": "decorations",
+                  "location": [ 323, 208 ],
+                  "scale": [ 1.0, 1.0 ]
+                }
+              ]
+              },
+              {
+                "type": "add-actor", "args": [
+                {
+                  "name": "tths_tom_01_selectedCircle_myth",
+                  "type": "decoration",
+                  "image": "mythCircle",
+                  "key": "decorations",
+                  "location": [ 388, 235 ],
+                  "scale": [ 1.0, 1.0 ]
+                }
+              ]
+              },
+              {
+                "type": "add-actor", "args": [
+                {
+                  "name": "tths_tom_01_answer",
+                  "type": "text",
+                  "text": "That’s a MYTH. Usually it’s all talk. Sometimes not knowing what to expect can be the biggest cause of our fears. But if you do see or experience any incidents of hazing or intimidation, it’s important not to dismiss or ignore the behavior and immediately talk to a trusted adult, such as a parent, teacher, counselor, or another adult at your school.",
+                  "location": [ 128, 318 ],
+                  "font": "tths_tom_light_question_wrap"
+                }
+              ]
+              },
+              {
+                "type": "add-actor", "args": [
+                {
+                  "name": "tths_tom_01_answerSound",
+                  "type": "audio",
+                  "audio": [ "answer1"],
+                  "variable": "tths_tom_01_answerSound"
+                }
+              ]
+              }
+            ]
+          },
+          "menu_button": {
+            "events": { "tths_tom_01_backToMenu": "*" },
+            "actions": [
+              {
+                "type": "scene",
+                "args": ["menu"]
+              }
+            ]
+          },
+          "next_button": {
+            "events": { "tths_tom_01_next": "*" },
+            "actions": [
+              {
+                "type": "scene",
+                "args": ["tths_tom_02"]
+              }
+            ]
+          }
+        }
+      },
+      "tths_tom_02": {
+        "id": "tths_tom_02",
+        "background": "backgroundGradient",
+        "title": "TRUTH or MYTH",
+        "description": "Transition to High School Truth or Myth 02",
+        "actors": [
+          {
+            "name": "whiteboard",
+            "type": "decoration",
+            "image": "whiteboardBackground",
+            "scale": [ 1.0, 1.0 ],
+            "location": [ -796, 26]
+          },
+          {
+            "name": "tths_tom_title",
+            "type": "text",
+            "text": "TRUTH or MYTH",
+            "location": [ 338, 60 ],
+            "font": "tths_tom_light_title"
+          },
+          {
+            "name": "tths_tom_background",
+            "type": "decoration",
+            "image": "truthBackground",
+            "key": "decorations",
+            "location": [ 32, 191 ],
+            "scale": [ 1.0, 1.0 ]
+          },
+          {
+            "name": "tths_tom_topLine",
+            "type": "decoration",
+            "image": "truthTopLine",
+            "key": "decorations",
+            "location": [ 126, 122 ],
+            "scale": [ 1.0, 1.0 ]
+          },
+          {
+            "name": "tths_tom_bottomLine",
+            "type": "decoration",
+            "image": "truthBottomLine",
+            "key": "decorations",
+            "location": [ 126, 297 ],
+            "scale": [ 1.0, 1.0 ]
+          },
+          {
+            "name": "tths_tom_q02",
+            "type": "text",
+            "text": "High school friendships and relationships can contain a lot of drama.",
+            "location": [ 128, 140 ],
+            "font": "tths_tom_light_question_wrap"
+          },
+          {
+            "name": "tths_tom_truthChoice_02",
+            "type": "button",
+            "image": "truth",
+            "location": [ 323, 208 ],
+            "variable": "tths_tom_truthChoice_02"
+          },
+          {
+            "name": "tths_tom_mythChoice_02",
+            "type": "button",
+            "image": "myth",
+            "location": [ 397, 250 ],
+            "variable": "tths_tom_mythChoice_02"
+          },
+          {
+            "name": "tths_tom_counter02",
+            "type": "text",
+            "text": "2 of 5",
+            "location": [ 129, 479 ],
+            "font": "tths_tom_light_counter"
+          },
+          {
+            "name": "tths_tom_sound_q02",
+            "type": "audio",
+            "audio": [ "question2"],
+            "variable": "tths_tom_sound_q02"
+          },
+          {
+            "name": "backToMenuButton",
+            "type": "button",
+            "image": "menu",
+            "location": [ 70, 44 ],
+            "variable": "tths_tom_02_backToMenu"
+          },
+          {
+            "name": "mutebutton",
+            "type": "toggle-button",
+            "images": {
+              "on": "soundOn",
+              "off": "soundOff"
+            },
+            "location": [ 709, 49 ],
+            "scale": [
+              1.0, 1.0
+            ],
+            "variable": "mute_game",
+            "values": {
+              "on": "mute_on",
+              "off": "mute_off"
+            },
+            "active": true
+          },
+          {
+            "name": "tths_nextButton",
+            "type": "button",
+            "image": "next",
+            "location": [ 648, 454 ],
+            "variable": "tths_tom_02_next"
+          }
+        ],
+        "outcomes": {
+          "truth_choice": {
+            "events": { "tths_tom_truthChoice_02": "*" },
+            "actions": [
+              { "type": "remove-actor", "args": ["tths_tom_truthChoice_02"] },
+              {
+                "type": "add-actor",
+                "args": [
+                  {
+                    "name": "tths_tom_truthChoiceSelected_02",
+                    "type": "decoration",
+                    "image": "truthSelected",
+                    "key": "decorations",
+                    "location": [ 323, 208 ],
+                    "scale": [ 1.0, 1.0 ]
+                  }
+                ]
+              },
+              { "type": "remove-actor", "args": ["tths_tom_mythChoice_02"] },
+              {
+                "type": "add-actor",
+                "args": [
+                  {
+                    "name": "tths_tom_mythChoiceNotSelected_02",
+                    "type": "decoration",
+                    "image": "mythNotSelected",
+                    "key": "decorations",
+                    "location": [ 397, 250 ],
+                    "scale": [ 1.0, 1.0 ]
+                  }
+                ]
+              },
+              {
+                "type": "add-actor", "args": [
+                {
+                  "name": "tths_tom_02_selectedCircle_truth",
+                  "type": "decoration",
+                  "image": "truthCircle",
+                  "key": "decorations",
+                  "location": [ 371, 194 ],
+                  "scale": [ 1.0, 1.0 ]
+                }
+              ]
+              },
+              {
+                "type": "add-actor", "args": [
+                  {
+                    "name": "tths_tom_02_answer",
+                    "type": "text",
+                    "text": "That’s TRUE. A lot of freshmen do get wrapped up in drama, rumors and gossip, but you’ll be a lot happier and less stressed if you can separate yourself from that drama. Remind yourself to not repeat rumors or spread gossip, and choose to hang out with friends who are drama-free.",
+                    "location": [ 128, 318 ],
+                    "font": "tths_tom_light_question_wrap"
+                  }
+                ]
+              },
+              {
+                "type": "add-actor", "args": [
+                {
+                  "name": "tths_tom_02_answerSound",
+                  "type": "audio",
+                  "audio": [ "answer2"],
+                  "variable": "tths_tom_02_answerSound"
+                }
+              ]
+              }
+            ]
+          },
+          "myth_choice": {
+            "events": { "tths_tom_mythChoice_02": "*" },
+            "actions": [
+              { "type": "remove-actor", "args": ["tths_tom_mythChoice_02"] },
+              {
+                "type": "add-actor", "args": [
+                {
+                  "name": "tths_tom_mythChoiceSelected_02",
+                  "type": "decoration",
+                  "image": "mythSelected",
+                  "key": "decorations",
+                  "location": [ 397, 250 ],
+                  "scale": [ 1.0, 1.0 ]
+                }
+              ]
+              },
+              { "type": "remove-actor", "args": ["tths_tom_truthChoice_02"] },
+              {
+                "type": "add-actor", "args": [
+                {
+                  "name": "tths_tom_truthChoiceNotSelected_02",
+                  "type": "decoration",
+                  "image": "truthNotSelected",
+                  "key": "decorations",
+                  "location": [ 323, 208 ],
+                  "scale": [ 1.0, 1.0 ]
+                }
+              ]
+              },
+              {
+                "type": "add-actor", "args": [
+                {
+                  "name": "tths_tom_02_selectedCircle_myth",
+                  "type": "decoration",
+                  "image": "mythCircle",
+                  "key": "decorations",
+                  "location": [ 388, 235 ],
+                  "scale": [ 1.0, 1.0 ]
+                }
+              ]
+              },
+              {
+                "type": "add-actor", "args": [
+                  {
+                    "name": "tths_tom_02_answer",
+                    "type": "text",
+                    "text": "That’s TRUE. A lot of freshmen do get wrapped up in drama, rumors and gossip, but you’ll be a lot happier and less stressed if you can separate yourself from that drama. Remind yourself to not repeat rumors or spread gossip, and choose to hang out with friends who are drama-free.",
+                    "location": [ 128, 318 ],
+                    "font": "tths_tom_light_question_wrap"
+                  }
+                ]
+              },
+              {
+                "type": "add-actor", "args": [
+                  {
+                    "name": "tths_tom_02_answerSound",
+                    "type": "audio",
+                    "audio": [ "answer2"],
+                    "variable": "tths_tom_02_answerSound"
+                  }
+                ]
+              }
+            ]
+          },
+          "menu_button": {
+            "events": { "tths_tom_02_backToMenu": "*" },
+            "actions": [
+              {
+                "type": "scene",
+                "args": ["menu"]
+              }
+            ]
+          },
+          "next_button": {
+            "events": { "tths_tom_02_next": "*" },
+            "actions": [
+              {
+                "type": "scene",
+                "args": ["tths_tom_03"]
+              }
+            ]
+          }
+        }
+      },
+      "tths_tom_03": {
+        "id": "tths_tom_03",
+        "background": "backgroundGradient",
+        "title": "TRUTH or MYTH",
+        "description": "Transition to High School Truth or Myth 03",
+        "actors": [
+          {
+            "name": "whiteboard",
+            "type": "decoration",
+            "image": "whiteboardBackground",
+            "scale": [ 1.0, 1.0 ],
+            "location": [ -796, 26]
+          },
+          {
+            "name": "tths_tom_title",
+            "type": "text",
+            "text": "TRUTH or MYTH",
+            "location": [ 338, 60 ],
+            "font": "tths_tom_light_title"
+          },
+          {
+            "name": "tths_tom_background",
+            "type": "decoration",
+            "image": "truthBackground",
+            "key": "decorations",
+            "location": [ 32, 191 ],
+            "scale": [ 1.0, 1.0 ]
+          },
+          {
+            "name": "tths_tom_topLine",
+            "type": "decoration",
+            "image": "truthTopLine",
+            "key": "decorations",
+            "location": [ 126, 122 ],
+            "scale": [ 1.0, 1.0 ]
+          },
+          {
+            "name": "tths_tom_bottomLine",
+            "type": "decoration",
+            "image": "truthBottomLine",
+            "key": "decorations",
+            "location": [ 126, 297 ],
+            "scale": [ 1.0, 1.0 ]
+          },
+          {
+            "name": "tths_tom_q03",
+            "type": "text",
+            "text": "Anything you post online, including pictures, texts, comments, e-mails, and IMs, can still be found, even if you think you deleted them.",
+            "location": [ 128, 140 ],
+            "font": "tths_tom_light_question_wrap"
+          },
+          {
+            "name": "tths_tom_truthChoice_03",
+            "type": "button",
+            "image": "truth",
+            "location": [ 323, 208 ],
+            "variable": "tths_tom_truthChoice_03"
+          },
+          {
+            "name": "tths_tom_mythChoice_03",
+            "type": "button",
+            "image": "myth",
+            "location": [ 397, 250 ],
+            "variable": "tths_tom_mythChoice_03"
+          },
+          {
+            "name": "tths_tom_counter03",
+            "type": "text",
+            "text": "3 of 5",
+            "location": [ 129, 479 ],
+            "font": "tths_tom_light_counter"
+          },
+          {
+            "name": "tths_tom_sound_q03",
+            "type": "audio",
+            "audio": [ "question3"],
+            "variable": "tths_tom_sound_q03"
+          },
+          {
+            "name": "backToMenuButton",
+            "type": "button",
+            "image": "menu",
+            "location": [ 70, 44 ],
+            "variable": "tths_tom_03_backToMenu"
+          },
+          {
+            "name": "mutebutton",
+            "type": "toggle-button",
+            "images": {
+              "on": "soundOn",
+              "off": "soundOff"
+            },
+            "location": [ 709, 49 ],
+            "scale": [
+              1.0, 1.0
+            ],
+            "variable": "mute_game",
+            "values": {
+              "on": "mute_on",
+              "off": "mute_off"
+            },
+            "active": true
+          },
+          {
+            "name": "tths_nextButton",
+            "type": "button",
+            "image": "next",
+            "location": [ 648, 454 ],
+            "variable": "tths_tom_03_next"
+          }
+        ],
+        "outcomes": {
+          "truth_choice": {
+            "events": { "tths_tom_truthChoice_03": "*" },
+            "actions": [
+              { "type": "remove-actor", "args": ["tths_tom_truthChoice_03"] },
+              {
+                "type": "add-actor",
+                "args": [
+                  {
+                    "name": "tths_tom_truthChoiceSelected_03",
+                    "type": "decoration",
+                    "image": "truthSelected",
+                    "key": "decorations",
+                    "location": [ 323, 208 ],
+                    "scale": [ 1.0, 1.0 ]
+                  }
+                ]
+              },
+              { "type": "remove-actor", "args": ["tths_tom_mythChoice_03"] },
+              {
+                "type": "add-actor",
+                "args": [
+                  {
+                    "name": "tths_tom_mythChoiceNotSelected_03",
+                    "type": "decoration",
+                    "image": "mythNotSelected",
+                    "key": "decorations",
+                    "location": [ 397, 250 ],
+                    "scale": [ 1.0, 1.0 ]
+                  }
+                ]
+              },
+              {
+                "type": "add-actor", "args": [
+                {
+                  "name": "tths_tom_03_selectedCircle_truth",
+                  "type": "decoration",
+                  "image": "truthCircle",
+                  "key": "decorations",
+                  "location": [ 371, 194 ],
+                  "scale": [ 1.0, 1.0 ]
+                }
+              ]
+              },
+              {
+                "type": "add-actor", "args": [
+                {
+                  "name": "tths_tom_03_answer",
+                  "type": "text",
+                  "text": "That’s the TRUTH. Almost everything done online or on a cell phone is traceable, and once posted electronically it exists virtually forever. Cyberbullies can be traced through their electronic messages, whether it’s from a text, social network site or e-mail. So think twice before posting, and if you feel you’ve been targeted, go immediately to a trusted adult and explain the situation.",
+                  "location": [ 128, 318 ],
+                  "font": "tths_tom_light_question_wrap"
+                }
+              ]
+              },
+              {
+                "type": "add-actor", "args": [
+                {
+                  "name": "tths_tom_03_answerSound",
+                  "type": "audio",
+                  "audio": [ "answer3"],
+                  "variable": "tths_tom_03_answerSound"
+                }
+              ]
+              }
+            ]
+          },
+          "myth_choice": {
+            "events": { "tths_tom_mythChoice_03": "*" },
+            "actions": [
+              { "type": "remove-actor", "args": ["tths_tom_mythChoice_03"] },
+              {
+                "type": "add-actor", "args": [
+                {
+                  "name": "tths_tom_mythChoiceSelected_03",
+                  "type": "decoration",
+                  "image": "mythSelected",
+                  "key": "decorations",
+                  "location": [ 397, 250 ],
+                  "scale": [ 1.0, 1.0 ]
+                }
+              ]
+              },
+              { "type": "remove-actor", "args": ["tths_tom_truthChoice_03"] },
+              {
+                "type": "add-actor", "args": [
+                {
+                  "name": "tths_tom_truthChoiceNotSelected_03",
+                  "type": "decoration",
+                  "image": "truthNotSelected",
+                  "key": "decorations",
+                  "location": [ 323, 208 ],
+                  "scale": [ 1.0, 1.0 ]
+                }
+              ]
+              },
+              {
+                "type": "add-actor", "args": [
+                {
+                  "name": "tths_tom_03_selectedCircle_myth",
+                  "type": "decoration",
+                  "image": "mythCircle",
+                  "key": "decorations",
+                  "location": [ 388, 235 ],
+                  "scale": [ 1.0, 1.0 ]
+                }
+              ]
+              },
+              {
+                "type": "add-actor", "args": [
+                {
+                  "name": "tths_tom_03_answer",
+                  "type": "text",
+                  "text": "That’s the TRUTH. Almost everything done online or on a cell phone is traceable, and once posted electronically it exists virtually forever. Cyberbullies can be traced through their electronic messages, whether it’s from a text, social network site or e-mail. So think twice before posting, and if you feel you’ve been targeted, go immediately to a trusted adult and explain the situation.",
+                  "location": [ 128, 318 ],
+                  "font": "tths_tom_light_question_wrap"
+                }
+              ]
+              },
+              {
+                "type": "add-actor", "args": [
+                {
+                  "name": "tths_tom_03_answerSound",
+                  "type": "audio",
+                  "audio": [ "answer3"],
+                  "variable": "tths_tom_03_answerSound"
+                }
+              ]
+              }
+            ]
+          },
+          "menu_button": {
+            "events": { "tths_tom_03_backToMenu": "*" },
+            "actions": [
+              {
+                "type": "scene",
+                "args": ["menu"]
+              }
+            ]
+          },
+          "next_button": {
+            "events": { "tths_tom_03_next": "*" },
+            "actions": [
+              {
+                "type": "scene",
+                "args": ["tths_tom_04"]
+              }
+            ]
+          }
+        }
+      },
+      "tths_tom_04": {
+        "id": "tths_tom_04",
+        "background": "backgroundGradient",
+        "title": "TRUTH or MYTH",
+        "description": "Transition to High School Truth or Myth 04",
+        "actors": [
+          {
+            "name": "whiteboard",
+            "type": "decoration",
+            "image": "whiteboardBackground",
+            "scale": [ 1.0, 1.0 ],
+            "location": [ -796, 26]
+          },
+          {
+            "name": "tths_tom_title",
+            "type": "text",
+            "text": "TRUTH or MYTH",
+            "location": [ 338, 60 ],
+            "font": "tths_tom_light_title"
+          },
+          {
+            "name": "tths_tom_background",
+            "type": "decoration",
+            "image": "truthBackground",
+            "key": "decorations",
+            "location": [ 32, 191 ],
+            "scale": [ 1.0, 1.0 ]
+          },
+          {
+            "name": "tths_tom_topLine",
+            "type": "decoration",
+            "image": "truthTopLine",
+            "key": "decorations",
+            "location": [ 126, 122 ],
+            "scale": [ 1.0, 1.0 ]
+          },
+          {
+            "name": "tths_tom_bottomLine",
+            "type": "decoration",
+            "image": "truthBottomLine",
+            "key": "decorations",
+            "location": [ 126, 297 ],
+            "scale": [ 1.0, 1.0 ]
+          },
+          {
+            "name": "tths_tom_q04",
+            "type": "text",
+            "text": "People slapping or grabbing other people’s butts in the hallway is just part of high school fun.",
+            "location": [ 128, 140 ],
+            "font": "tths_tom_light_question_wrap"
+          },
+          {
+            "name": "tths_tom_truthChoice_04",
+            "type": "button",
+            "image": "truth",
+            "location": [ 323, 208 ],
+            "variable": "tths_tom_truthChoice_04"
+          },
+          {
+            "name": "tths_tom_mythChoice_04",
+            "type": "button",
+            "image": "myth",
+            "location": [ 397, 250 ],
+            "variable": "tths_tom_mythChoice_04"
+          },
+          {
+            "name": "tths_tom_counter04",
+            "type": "text",
+            "text": "4 of 5",
+            "location": [ 129, 479 ],
+            "font": "tths_tom_light_counter"
+          },
+          {
+            "name": "tths_tom_sound_q04",
+            "type": "audio",
+            "audio": [ "question4"],
+            "variable": "tths_tom_sound_q04"
+          },
+          {
+            "name": "backToMenuButton",
+            "type": "button",
+            "image": "menu",
+            "location": [ 70, 44 ],
+            "variable": "tths_tom_04_backToMenu"
+          },
+          {
+            "name": "mutebutton",
+            "type": "toggle-button",
+            "images": {
+              "on": "soundOn",
+              "off": "soundOff"
+            },
+            "location": [ 709, 49 ],
+            "scale": [
+              1.0, 1.0
+            ],
+            "variable": "mute_game",
+            "values": {
+              "on": "mute_on",
+              "off": "mute_off"
+            },
+            "active": true
+          },
+          {
+            "name": "tths_nextButton",
+            "type": "button",
+            "image": "next",
+            "location": [ 648, 454 ],
+            "variable": "tths_tom_04_next"
+          }
+        ],
+        "outcomes": {
+          "truth_choice": {
+            "events": { "tths_tom_truthChoice_04": "*" },
+            "actions": [
+              { "type": "remove-actor", "args": ["tths_tom_truthChoice_04"] },
+              {
+                "type": "add-actor",
+                "args": [
+                  {
+                    "name": "tths_tom_truthChoiceSelected_04",
+                    "type": "decoration",
+                    "image": "truthSelected",
+                    "key": "decorations",
+                    "location": [ 323, 208 ],
+                    "scale": [ 1.0, 1.0 ]
+                  }
+                ]
+              },
+              { "type": "remove-actor", "args": ["tths_tom_mythChoice_04"] },
+              {
+                "type": "add-actor",
+                "args": [
+                  {
+                    "name": "tths_tom_mythChoiceNotSelected_04",
+                    "type": "decoration",
+                    "image": "mythNotSelected",
+                    "key": "decorations",
+                    "location": [ 397, 250 ],
+                    "scale": [ 1.0, 1.0 ]
+                  }
+                ]
+              },
+              {
+                "type": "add-actor", "args": [
+                {
+                  "name": "tths_tom_04_selectedCircle_truth",
+                  "type": "decoration",
+                  "image": "truthCircle",
+                  "key": "decorations",
+                  "location": [ 371, 194 ],
+                  "scale": [ 1.0, 1.0 ]
+                }
+              ]
+              },
+              {
+                "type": "add-actor", "args": [
+                {
+                  "name": "tths_tom_04_answer",
+                  "type": "text",
+                  "text": "That’s a MYTH. Actually, any unwanted sexual attention, such as touching, groping, slapping or grabbing, is considered sexual harassment and should never be tolerated. If you’re uncomfortable with an action, even if it’s by a friend, tell them to stop, then talk to an adult.",
+                  "location": [ 128, 318 ],
+                  "font": "tths_tom_light_question_wrap"
+                }
+              ]
+              },
+              {
+                "type": "add-actor", "args": [
+                {
+                  "name": "tths_tom_04_answerSound",
+                  "type": "audio",
+                  "audio": [ "answer4"],
+                  "variable": "tths_tom_04_answerSound"
+                }
+              ]
+              }
+            ]
+          },
+          "myth_choice": {
+            "events": { "tths_tom_mythChoice_04": "*" },
+            "actions": [
+              { "type": "remove-actor", "args": ["tths_tom_mythChoice_04"] },
+              {
+                "type": "add-actor", "args": [
+                {
+                  "name": "tths_tom_mythChoiceSelected_04",
+                  "type": "decoration",
+                  "image": "mythSelected",
+                  "key": "decorations",
+                  "location": [ 397, 250 ],
+                  "scale": [ 1.0, 1.0 ]
+                }
+              ]
+              },
+              { "type": "remove-actor", "args": ["tths_tom_truthChoice_04"] },
+              {
+                "type": "add-actor", "args": [
+                {
+                  "name": "tths_tom_truthChoiceNotSelected_04",
+                  "type": "decoration",
+                  "image": "truthNotSelected",
+                  "key": "decorations",
+                  "location": [ 323, 208 ],
+                  "scale": [ 1.0, 1.0 ]
+                }
+              ]
+              },
+              {
+                "type": "add-actor", "args": [
+                {
+                  "name": "tths_tom_04_selectedCircle_myth",
+                  "type": "decoration",
+                  "image": "mythCircle",
+                  "key": "decorations",
+                  "location": [ 388, 235 ],
+                  "scale": [ 1.0, 1.0 ]
+                }
+              ]
+              },
+              {
+                "type": "add-actor", "args": [
+                {
+                  "name": "tths_tom_04_answer",
+                  "type": "text",
+                  "text": "That’s a MYTH. Actually, any unwanted sexual attention, such as touching, groping, slapping or grabbing, is considered sexual harassment and should never be tolerated. If you’re uncomfortable with an action, even if it’s by a friend, tell them to stop, then talk to an adult.",
+                  "location": [ 128, 318 ],
+                  "font": "tths_tom_light_question_wrap"
+                }
+              ]
+              },
+              {
+                "type": "add-actor", "args": [
+                {
+                  "name": "tths_tom_04_answerSound",
+                  "type": "audio",
+                  "audio": [ "answer4"],
+                  "variable": "tths_tom_04_answerSound"
+                }
+              ]
+              }
+            ]
+          },
+          "menu_button": {
+            "events": { "tths_tom_04_backToMenu": "*" },
+            "actions": [
+              {
+                "type": "scene",
+                "args": ["menu"]
+              }
+            ]
+          },
+          "next_button": {
+            "events": { "tths_tom_04_next": "*" },
+            "actions": [
+              {
+                "type": "scene",
+                "args": ["tths_tom_05"]
+              }
+            ]
+          }
+        }
+      },
+      "tths_tom_05": {
+        "id": "tths_tom_05",
+        "background": "backgroundGradient",
+        "title": "TRUTH or MYTH",
+        "description": "Transition to High School Truth or Myth 05",
+        "actors": [
+          {
+            "name": "whiteboard",
+            "type": "decoration",
+            "image": "whiteboardBackground",
+            "scale": [ 1.0, 1.0 ],
+            "location": [ -796, 26]
+          },
+          {
+            "name": "tths_tom_title",
+            "type": "text",
+            "text": "TRUTH or MYTH",
+            "location": [ 338, 60 ],
+            "font": "tths_tom_light_title"
+          },
+          {
+            "name": "tths_tom_background",
+            "type": "decoration",
+            "image": "truthBackground",
+            "key": "decorations",
+            "location": [ 32, 191 ],
+            "scale": [ 1.0, 1.0 ]
+          },
+          {
+            "name": "tths_tom_topLine",
+            "type": "decoration",
+            "image": "truthTopLine",
+            "key": "decorations",
+            "location": [ 126, 122 ],
+            "scale": [ 1.0, 1.0 ]
+          },
+          {
+            "name": "tths_tom_bottomLine",
+            "type": "decoration",
+            "image": "truthBottomLine",
+            "key": "decorations",
+            "location": [ 126, 297 ],
+            "scale": [ 1.0, 1.0 ]
+          },
+          {
+            "name": "tths_tom_q05",
+            "type": "text",
+            "text": "The classes in high school are harder than middle school and will require good organization skills and lots of studying.",
+            "location": [ 128, 140 ],
+            "font": "tths_tom_light_question_wrap"
+          },
+          {
+            "name": "tths_tom_truthChoice_05",
+            "type": "button",
+            "image": "truth",
+            "location": [ 323, 208 ],
+            "variable": "tths_tom_truthChoice_05"
+          },
+          {
+            "name": "tths_tom_mythChoice_05",
+            "type": "button",
+            "image": "myth",
+            "location": [ 397, 250 ],
+            "variable": "tths_tom_mythChoice_05"
+          },
+          {
+            "name": "tths_tom_counter05",
+            "type": "text",
+            "text": "5 of 5",
+            "location": [ 129, 479 ],
+            "font": "tths_tom_light_counter"
+          },
+          {
+            "name": "tths_tom_sound_q05",
+            "type": "audio",
+            "audio": [ "question5"],
+            "variable": "tths_tom_sound_q05"
+          },
+          {
+            "name": "backToMenuButton",
+            "type": "button",
+            "image": "menu",
+            "location": [ 70, 44 ],
+            "variable": "tths_tom_05_backToMenu"
+          },
+          {
+            "name": "mutebutton",
+            "type": "toggle-button",
+            "images": {
+              "on": "soundOn",
+              "off": "soundOff"
+            },
+            "location": [ 709, 49 ],
+            "scale": [
+              1.0, 1.0
+            ],
+            "variable": "mute_game",
+            "values": {
+              "on": "mute_on",
+              "off": "mute_off"
+            },
+            "active": true
+          }
+        ],
+        "outcomes": {
+          "truth_choice": {
+            "events": { "tths_tom_truthChoice_05": "*" },
+            "actions": [
+              { "type": "remove-actor", "args": ["tths_tom_truthChoice_05"] },
+              {
+                "type": "add-actor",
+                "args": [
+                  {
+                    "name": "tths_tom_truthChoiceSelected_05",
+                    "type": "decoration",
+                    "image": "truthSelected",
+                    "key": "decorations",
+                    "location": [ 323, 208 ],
+                    "scale": [ 1.0, 1.0 ]
+                  }
+                ]
+              },
+              { "type": "remove-actor", "args": ["tths_tom_mythChoice_05"] },
+              {
+                "type": "add-actor",
+                "args": [
+                  {
+                    "name": "tths_tom_mythChoiceNotSelected_05",
+                    "type": "decoration",
+                    "image": "mythNotSelected",
+                    "key": "decorations",
+                    "location": [ 397, 250 ],
+                    "scale": [ 1.0, 1.0 ]
+                  }
+                ]
+              },
+              {
+                "type": "add-actor", "args": [
+                {
+                  "name": "tths_tom_05_selectedCircle_truth",
+                  "type": "decoration",
+                  "image": "truthCircle",
+                  "key": "decorations",
+                  "location": [ 371, 194 ],
+                  "scale": [ 1.0, 1.0 ]
+                }
+              ]
+              },
+              {
+                "type": "add-actor", "args": [
+                {
+                  "name": "tths_tom_05_answer",
+                  "type": "text",
+                  "text": "That’s the TRUTH. For many, the move from middle school to high school can be challenging, but there are some things you can do to ease the transition. Get a planner to help you keep up with reading, homework assignments and deadlines, as well as dates for upcoming quizzes and tests. You may want to cut down or limit time spent playing on the computer, playing video games, talking on the phone or texting and even watching TV. Remember, talk to your teachers when you have questions or feel overwhelmed with the workload.",
+                  "location": [ 128, 318 ],
+                  "font": "tths_tom_light_question_wrap"
+                }
+              ]
+              },
+              {
+                "type": "add-actor", "args": [
+                {
+                  "name": "tths_tom_05_answerSound",
+                  "type": "audio",
+                  "audio": [ "answer5"],
+                  "variable": "tths_tom_05_answerSound"
+                }
+              ]
+              }
+            ]
+          },
+          "myth_choice": {
+            "events": { "tths_tom_mythChoice_05": "*" },
+            "actions": [
+              { "type": "remove-actor", "args": ["tths_tom_mythChoice_05"] },
+              {
+                "type": "add-actor", "args": [
+                {
+                  "name": "tths_tom_mythChoiceSelected_05",
+                  "type": "decoration",
+                  "image": "mythSelected",
+                  "key": "decorations",
+                  "location": [ 397, 250 ],
+                  "scale": [ 1.0, 1.0 ]
+                }
+              ]
+              },
+              { "type": "remove-actor", "args": ["tths_tom_truthChoice_05"] },
+              {
+                "type": "add-actor", "args": [
+                {
+                  "name": "tths_tom_truthChoiceNotSelected_05",
+                  "type": "decoration",
+                  "image": "truthNotSelected",
+                  "key": "decorations",
+                  "location": [ 323, 208 ],
+                  "scale": [ 1.0, 1.0 ]
+                }
+              ]
+              },
+              {
+                "type": "add-actor", "args": [
+                {
+                  "name": "tths_tom_05_selectedCircle_myth",
+                  "type": "decoration",
+                  "image": "mythCircle",
+                  "key": "decorations",
+                  "location": [ 388, 235 ],
+                  "scale": [ 1.0, 1.0 ]
+                }
+              ]
+              },
+              {
+                "type": "add-actor", "args": [
+                {
+                  "name": "tths_tom_05_answer",
+                  "type": "text",
+                  "text": "That’s the TRUTH. For many, the move from middle school to high school can be challenging, but there are some things you can do to ease the transition. Get a planner to help you keep up with reading, homework assignments and deadlines, as well as dates for upcoming quizzes and tests. You may want to cut down or limit time spent playing on the computer, playing video games, talking on the phone or texting and even watching TV. Remember, talk to your teachers when you have questions or feel overwhelmed with the workload.",
+                  "location": [ 128, 318 ],
+                  "font": "tths_tom_light_question_wrap"
+                }
+              ]
+              },
+              {
+                "type": "add-actor", "args": [
+                {
+                  "name": "tths_tom_05_answerSound",
+                  "type": "audio",
+                  "audio": [ "answer5"],
+                  "variable": "tths_tom_05_answerSound"
+                }
+              ]
+              }
+            ]
+          },
+          "menu_button": {
+            "events": { "tths_tom_05_backToMenu": "*" },
+            "actions": [
+              {
+                "type": "scene",
+                "args": ["menu"]
+              }
+            ]
+          }
+        }
+      },
+      "tths_video": {
+        "id": "tths_video",
+        "background": "backgroundGradient",
+        "title": "Real Life Advice",
+        "description": "Transition to High School video Real Life Advice",
+        "actors": [
+          {
+            "name": "whiteboard",
+            "type": "decoration",
+            "image": "whiteboardBackground",
+            "scale": [ 1.0, 1.0 ],
+            "location": [ -796, 26]
+          },
+          {
+            "name": "tths_video_title",
+            "type": "text",
+            "text": "Real Life Advice",
+            "location": [ 355, 57 ],
+            "font": "tths_video_light_title"
+          },
+          {
+            "name": "tths_video_background",
+            "type": "decoration",
+            "image": "videoBackground",
+            "key": "decorations",
+            "location": [ 25, 136 ],
+            "scale": [ 1.0, 1.0 ]
+          },
+          {
+            "name": "tths_video_line",
+            "type": "decoration",
+            "image": "videoLine",
+            "key": "decorations",
+            "location": [ 127, 128 ],
+            "scale": [ 1.0, 1.0 ]
+          },
+          {
+            "name": "tths_video_imageFrame",
+            "type": "decoration",
+            "image": "videoFrame",
+            "key": "decorations",
+            "location": [ 181, 149 ],
+            "scale": [ 0.93, 1.0 ]
+          },
+          {
+            "name": "tths_video_video1",
+            "type": "wistia",
+            "location": [ 194, 160 ],
+            "size": [ 475, 288 ],
+            "video": "eq5l1lz3wj",
+            "closeButtonLocation" : [ 70, 44 ],
+            "blockerAlpha" : 0.0,
+            "blockInput": false
+          }
+        ],
+        "outcomes": {
+          "menu_button": {
+            "events": { "tths_video_video1": "closed" },
+            "actions": [
+              {
+                "type": "scene",
+                "args": ["menu"]
+              }
+            ]
+          }
+        }
+      },
+      "tths_lesson_01": {
+        "id": "tths_lesson_01",
+        "background": "backgroundGradient",
+        "title": "Transitioning from middle to high school",
+        "description": "Transition to High School lesson 01",
+        "actors": [
+          {
+            "name": "whiteboard",
+            "type": "decoration",
+            "image": "whiteboardBackground",
+            "scale": [ 1.0, 1.0 ],
+            "location": [ -796, 26]
+          },
+          {
+            "name": "tths_lesson_title",
+            "type": "text",
+            "text": "Transitioning from middle to high school",
+            "location": [ 239, 65 ],
+            "font": "tths_lesson_light_title"
+          },
+          {
+            "name": "tths_lesson_background",
+            "type": "decoration",
+            "image": "lessonBackground",
+            "key": "decorations",
+            "location": [ 20, 126 ],
+            "scale": [ 1.0, 1.0 ]
+          },
+          {
+            "name": "tths_lesson_imageFrame",
+            "type": "decoration",
+            "image": "imageFrame",
+            "key": "decorations",
+            "location": [ 217, 156 ],
+            "scale": [ 1.0, 1.0 ]
+          },
+          {
+            "name": "tths_lesson_image01",
+            "type": "decoration",
+            "image": "lessonImage1",
+            "key": "decorations",
+            "location": [ 230, 164 ],
+            "scale": [ 1.0, 1.0 ]
+          },
+          {
+            "name": "tths_lesson_sound_1",
+            "type": "audio",
+            "audio": [ "slide1"],
+            "variable": "tths_lesson_sound_1"
+          },
+          {
+            "name": "backToMenuButton",
+            "type": "button",
+            "image": "menu",
+            "location": [ 70, 44 ],
+            "variable": "tths_lesson_01_backToMenu"
+          },
+          {
+            "name": "mutebutton",
+            "type": "toggle-button",
+            "images": {
+              "on": "soundOn",
+              "off": "soundOff"
+            },
+            "location": [ 709, 49 ],
+            "scale": [
+              1.0, 1.0
+            ],
+            "variable": "mute_game",
+            "values": {
+              "on": "mute_on",
+              "off": "mute_off"
+            },
+            "active": true
+          },
+          {
+            "name": "tths_replayButton",
+            "type": "button",
+            "image": "replay",
+            "location": [ 363, 463 ],
+            "variable": "tths_lesson_01_replay"
+          },
+          {
+            "name": "tths_nextButton",
+            "type": "button",
+            "image": "next",
+            "location": [ 648, 454 ],
+            "variable": "tths_lesson_01_next"
+          }
+        ],
+        "outcomes": {
+          "menu_button": {
+            "events": { "tths_lesson_01_backToMenu": "*" },
+            "actions": [
+              {
+                "type": "scene",
+                "args": ["menu"]
+              }
+            ]
+          },
+          "replay_button": {
+            "events": { "tths_lesson_01_replay": "*" },
+            "actions": [
+              {
+                "type": "scene",
+                "args": ["tths_lesson_01"]
+              }
+            ]
+          },
+          "next_button": {
+            "events": { "tths_lesson_01_next": "*" },
+            "actions": [
+              {
+                "type": "scene",
+                "args": ["tths_lesson_02"]
+              }
+            ]
+          }
+        }
+      },
+      "tths_lesson_02": {
+        "id": "tths_lesson_02",
+        "background": "backgroundGradient",
+        "title": "Top fears of high school",
+        "description": "Transition to High School lesson 02",
+        "actors": [
+          {
+            "name": "whiteboard",
+            "type": "decoration",
+            "image": "whiteboardBackground",
+            "scale": [ 1.0, 1.0 ],
+            "location": [ -796, 26]
+          },
+          {
+            "name": "tths_lesson_title",
+            "type": "text",
+            "text": "Top fears of high school",
+            "location": [ 325, 65 ],
+            "font": "tths_lesson_light_title"
+          },
+          {
+            "name": "tths_lesson_background",
+            "type": "decoration",
+            "image": "lessonBackground",
+            "key": "decorations",
+            "location": [ 20, 126 ],
+            "scale": [ 1.0, 1.0 ]
+          },
+          {
+            "name": "tths_lesson_imageFrame",
+            "type": "decoration",
+            "image": "imageFrame",
+            "key": "decorations",
+            "location": [ 145, 176 ],
+            "scale": [ 0.85, 0.85 ]
+          },
+          {
+            "name": "tths_lesson_image",
+            "type": "decoration",
+            "image": "lessonImage2",
+            "key": "decorations",
+            "location": [ 157, 184 ],
+            "scale": [ 1.0, 1.0 ]
+          },
+          {
+            "name": "tths_lesson_sound",
+            "type": "audio",
+            "audio": [ "slide2"],
+            "variable": "tths_lesson_sound_2"
+          },
+          {
+            "name": "tths_lesson_bullet1",
+            "type": "decoration",
+            "image": "lessonBullet",
+            "key": "decorations",
+            "location": [ 500, 219 ],
+            "scale": [ 1.0, 1.0 ]
+          },
+          {
+            "name": "tths_lesson_02_item1",
+            "type": "text",
+            "text": "School work",
+            "location": [ 525, 207 ],
+            "font": "tths_lesson_light_body"
+          },
+          {
+            "name": "tths_lesson_bullet2",
+            "type": "decoration",
+            "image": "lessonBullet",
+            "key": "decorations",
+            "location": [ 500, 259 ],
+            "scale": [ 1.0, 1.0 ]
+          },
+          {
+            "name": "tths_lesson_02_item2",
+            "type": "text",
+            "text": "Social Issues",
+            "location": [ 525, 247 ],
+            "font": "tths_lesson_light_body"
+          },
+          {
+            "name": "backToMenuButton",
+            "type": "button",
+            "image": "menu",
+            "location": [ 70, 44 ],
+            "variable": "tths_lesson_02_backToMenu"
+          },
+          {
+            "name": "mutebutton",
+            "type": "toggle-button",
+            "images": {
+              "on": "soundOn",
+              "off": "soundOff"
+            },
+            "location": [ 709, 49 ],
+            "scale": [
+              1.0, 1.0
+            ],
+            "variable": "mute_game",
+            "values": {
+              "on": "mute_on",
+              "off": "mute_off"
+            },
+            "active": true
+          },
+          {
+            "name": "tths_replayButton",
+            "type": "button",
+            "image": "replay",
+            "location": [ 363, 463 ],
+            "variable": "tths_lesson_02_replay"
+          },
+          {
+            "name": "tths_backButton",
+            "type": "button",
+            "image": "back",
+            "location": [ 87, 451 ],
+            "variable": "tths_lesson_02_back"
+          },
+          {
+            "name": "tths_nextButton",
+            "type": "button",
+            "image": "next",
+            "location": [ 648, 454 ],
+            "variable": "tths_lesson_02_next"
+          }
+        ],
+        "outcomes": {
+          "menu_button": {
+            "events": { "tths_lesson_02_backToMenu": "*" },
+            "actions": [
+              {
+                "type": "scene",
+                "args": ["menu"]
+              }
+            ]
+          },
+          "replay_button": {
+            "events": { "tths_lesson_02_replay": "*" },
+            "actions": [
+              {
+                "type": "scene",
+                "args": ["tths_lesson_02"]
+              }
+            ]
+          },
+          "back_button": {
+            "events": { "tths_lesson_02_back": "*" },
+            "actions": [
+              {
+                "type": "scene",
+                "args": ["tths_lesson_01"]
+              }
+            ]
+          },
+          "next_button": {
+            "events": { "tths_lesson_02_next": "*" },
+            "actions": [
+              {
+                "type": "scene",
+                "args": ["tths_lesson_03"]
+              }
+            ]
+          }
+        }
+      },
+      "tths_lesson_03": {
+        "id": "tths_lesson_03",
+        "background": "backgroundGradient",
+        "title": "School work worries",
+        "description": "Transition to High School lesson 03",
+        "actors": [
+          {
+            "name": "whiteboard",
+            "type": "decoration",
+            "image": "whiteboardBackground",
+            "scale": [ 1.0, 1.0 ],
+            "location": [ -796, 26]
+          },
+          {
+            "name": "tths_lesson_title",
+            "type": "text",
+            "text": "School work worries",
+            "location": [ 345, 65 ],
+            "font": "tths_lesson_light_title"
+          },
+          {
+            "name": "tths_lesson_background",
+            "type": "decoration",
+            "image": "lessonBackground",
+            "key": "decorations",
+            "location": [ 20, 126 ],
+            "scale": [ 1.0, 1.0 ]
+          },
+          {
+            "name": "tths_lesson_imageFrame",
+            "type": "decoration",
+            "image": "imageFrame",
+            "key": "decorations",
+            "location": [ 245, 146 ],
+            "scale": [ 0.91, 0.92 ]
+          },
+          {
+            "name": "tths_lesson_image",
+            "type": "decoration",
+            "image": "lessonImage3",
+            "key": "decorations",
+            "location": [ 258, 156 ],
+            "scale": [ 1.0, 1.0 ]
+          },
+          {
+            "name": "tths_lesson_sound_3a",
+            "type": "audio",
+            "audio": [ "slide3a"],
+            "variable": "tths_lesson_sound_3a"
+          },
+          {
+            "name": "backToMenuButton",
+            "type": "button",
+            "image": "menu",
+            "location": [ 70, 44 ],
+            "variable": "tths_lesson_03_backToMenu"
+          },
+          {
+            "name": "mutebutton",
+            "type": "toggle-button",
+            "images": {
+              "on": "soundOn",
+              "off": "soundOff"
+            },
+            "location": [ 709, 49 ],
+            "scale": [
+              1.0, 1.0
+            ],
+            "variable": "mute_game",
+            "values": {
+              "on": "mute_on",
+              "off": "mute_off"
+            },
+            "active": true
+          },
+          {
+            "name": "tths_replayButton",
+            "type": "button",
+            "image": "replay",
+            "location": [ 363, 463 ],
+            "variable": "tths_lesson_03_replay"
+          },
+          {
+            "name": "tths_backButton",
+            "type": "button",
+            "image": "back",
+            "location": [ 87, 451 ],
+            "variable": "tths_lesson_03_back"
+          },
+          {
+            "name": "tths_nextButton",
+            "type": "button",
+            "image": "next",
+            "location": [ 648, 454 ],
+            "variable": "tths_lesson_03_next"
+          }
+        ],
+        "outcomes": {
+          "tths_lesson_sound_3a_done": {
+            "events": {"tths_lesson_sound_3a": "played" },
+            "actions": [
+              {
+                "type": "add-actor", "args": [
+                {
+                  "name": "tths_lesson_03_addText1",
+                  "type": "text",
+                  "text": "Don't be afraid to ask for help!",
+                  "location": [ 260, 395 ],
+                  "font": "tths_lesson_light_body"
+                }
+              ]
+              },
+              {
+                "type": "add-actor", "args": [
+                  {
+                    "name": "tths_lesson_sound_3b",
+                    "type": "audio",
+                    "audio": [ "slide3b"],
+                    "variable": "tths_lesson_sound_3b"
+                  }
+                ]
+              }
+            ]
+          },
+          "menu_button": {
+            "events": { "tths_lesson_03_backToMenu": "*" },
+            "actions": [
+              {
+                "type": "scene",
+                "args": ["menu"]
+              }
+            ]
+          },
+          "replay_button": {
+            "events": { "tths_lesson_03_replay": "*" },
+            "actions": [
+              {
+                "type": "scene",
+                "args": ["tths_lesson_03"]
+              }
+            ]
+          },
+          "back_button": {
+            "events": { "tths_lesson_03_back": "*" },
+            "actions": [
+              {
+                "type": "scene",
+                "args": ["tths_lesson_02"]
+              }
+            ]
+          },
+          "next_button": {
+            "events": { "tths_lesson_03_next": "*" },
+            "actions": [
+              {
+                "type": "scene",
+                "args": ["tths_lesson_04"]
+              }
+            ]
+          }
+        }
+      },
+      "tths_lesson_04": {
+        "id": "tths_lesson_04",
+        "background": "backgroundGradient",
+        "title": "Getting organized",
+        "description": "Transition to High School lesson 04",
+        "actors": [
+          {
+            "name": "whiteboard",
+            "type": "decoration",
+            "image": "whiteboardBackground",
+            "scale": [ 1.0, 1.0 ],
+            "location": [ -796, 26]
+          },
+          {
+            "name": "tths_lesson_title",
+            "type": "text",
+            "text": "Getting organized",
+            "location": [ 360, 65 ],
+            "font": "tths_lesson_light_title"
+          },
+          {
+            "name": "tths_lesson_background",
+            "type": "decoration",
+            "image": "lessonBackground",
+            "key": "decorations",
+            "location": [ 20, 126 ],
+            "scale": [ 1.0, 1.0 ]
+          },
+          {
+            "name": "tths_lesson_imageFrame",
+            "type": "decoration",
+            "image": "imageFrame",
+            "key": "decorations",
+            "location": [ 125, 163 ],
+            "scale": [ 0.88, 0.94 ]
+          },
+          {
+            "name": "tths_lesson_image",
+            "type": "decoration",
+            "image": "lessonImage4",
+            "key": "decorations",
+            "location": [ 137, 172 ],
+            "scale": [ 1.0, 1.0 ]
+          },
+          {
+            "name": "tths_lesson_sound",
+            "type": "audio",
+            "audio": [ "slide4a"],
+            "variable": "tths_lesson_sound_4a"
+          },
+          {
+            "name": "backToMenuButton",
+            "type": "button",
+            "image": "menu",
+            "location": [ 70, 44 ],
+            "variable": "tths_lesson_04_backToMenu"
+          },
+          {
+            "name": "mutebutton",
+            "type": "toggle-button",
+            "images": {
+              "on": "soundOn",
+              "off": "soundOff"
+            },
+            "location": [ 709, 49 ],
+            "scale": [
+              1.0, 1.0
+            ],
+            "variable": "mute_game",
+            "values": {
+              "on": "mute_on",
+              "off": "mute_off"
+            },
+            "active": true
+          },
+          {
+            "name": "tths_replayButton",
+            "type": "button",
+            "image": "replay",
+            "location": [ 363, 463 ],
+            "variable": "tths_lesson_04_replay"
+          },
+          {
+            "name": "tths_backButton",
+            "type": "button",
+            "image": "back",
+            "location": [ 87, 451 ],
+            "variable": "tths_lesson_04_back"
+          },
+          {
+            "name": "tths_nextButton",
+            "type": "button",
+            "image": "next",
+            "location": [ 648, 454 ],
+            "variable": "tths_lesson_04_next"
+          }
+        ],
+        "outcomes": {
+          "tths_lesson_sound_4a_done": {
+            "events": {"tths_lesson_sound_4a": "played" },
+            "actions": [
+              {
+                "type": "add-actor", "args": [
+                  {
+                    "name": "tths_lesson_bullet1",
+                    "type": "decoration",
+                    "image": "lessonBullet",
+                    "key": "decorations",
+                    "location": [ 493, 209 ],
+                    "scale": [ 1.0, 1.0 ]
+                  }
+                ]
+              },
+              {
+                "type": "add-actor", "args": [
+                {
+                  "name": "tths_lesson_04_item1",
+                  "type": "text",
+                  "text": "Getting organized",
+                  "location": [ 518, 197 ],
+                  "font": "tths_lesson_light_body"
+                }
+              ]
+              },
+              {
+                "type": "add-actor", "args": [
+                  {
+                    "name": "tths_lesson_sound_4b",
+                    "type": "audio",
+                    "audio": [ "slide4b"],
+                    "variable": "tths_lesson_sound_4b"
+                  }
+                ]
+              }
+            ]
+          },
+          "tths_lesson_sound_4b_done": {
+            "events": {"tths_lesson_sound_4b": "played" },
+            "actions": [
+              {
+                "type": "add-actor", "args": [
+                {
+                  "name": "tths_lesson_bullet2",
+                  "type": "decoration",
+                  "image": "lessonBullet",
+                  "key": "decorations",
+                  "location": [ 493, 254 ],
+                  "scale": [ 1.0, 1.0 ]
+                }
+              ]
+              },
+              {
+                "type": "add-actor", "args": [
+                {
+                  "name": "tths_lesson_04_item2",
+                  "type": "text",
+                  "text": "Budget your time",
+                  "location": [ 518, 242 ],
+                  "font": "tths_lesson_light_body"
+                }
+              ]
+              },
+              {
+                "type": "add-actor", "args": [
+                {
+                  "name": "tths_lesson_sound_4c",
+                  "type": "audio",
+                  "audio": [ "slide4c"],
+                  "variable": "tths_lesson_sound_4c"
+                }
+              ]
+              }
+            ]
+          },
+          "menu_button": {
+            "events": { "tths_lesson_04_backToMenu": "*" },
+            "actions": [
+              {
+                "type": "scene",
+                "args": ["menu"]
+              }
+            ]
+          },
+          "replay_button": {
+            "events": { "tths_lesson_04_replay": "*" },
+            "actions": [
+              {
+                "type": "scene",
+                "args": ["tths_lesson_04"]
+              }
+            ]
+          },
+          "back_button": {
+            "events": { "tths_lesson_04_back": "*" },
+            "actions": [
+              {
+                "type": "scene",
+                "args": ["tths_lesson_03"]
+              }
+            ]
+          },
+          "next_button": {
+            "events": { "tths_lesson_04_next": "*" },
+            "actions": [
+              {
+                "type": "scene",
+                "args": ["tths_lesson_05"]
+              }
+            ]
+          }
+        }
+      },
+      "tths_lesson_05": {
+        "id": "tths_lesson_05",
+        "background": "backgroundGradient",
+        "title": "Top fears of high school",
+        "description": "Transition to High School lesson 05",
+        "actors": [
+          {
+            "name": "whiteboard",
+            "type": "decoration",
+            "image": "whiteboardBackground",
+            "scale": [ 1.0, 1.0 ],
+            "location": [ -796, 26]
+          },
+          {
+            "name": "tths_lesson_title",
+            "type": "text",
+            "text": "Social issues",
+            "location": [ 387, 65 ],
+            "font": "tths_lesson_light_title"
+          },
+          {
+            "name": "tths_lesson_background",
+            "type": "decoration",
+            "image": "lessonBackground",
+            "key": "decorations",
+            "location": [ 20, 126 ],
+            "scale": [ 1.0, 1.0 ]
+          },
+          {
+            "name": "tths_lesson_imageFrame",
+            "type": "decoration",
+            "image": "imageFrame",
+            "key": "decorations",
+            "location": [ 114, 168 ],
+            "scale": [ 0.85, 0.85 ]
+          },
+          {
+            "name": "tths_lesson_image",
+            "type": "decoration",
+            "image": "lessonImage5",
+            "key": "decorations",
+            "location": [ 126, 176 ],
+            "scale": [ 1.0, 1.0 ]
+          },
+          {
+            "name": "tths_lesson_sound",
+            "type": "audio",
+            "audio": [ "slide5a"],
+            "variable": "tths_lesson_sound_5a"
+          },
+          {
+            "name": "tths_lesson_bullet1",
+            "type": "decoration",
+            "image": "lessonBullet",
+            "key": "decorations",
+            "location": [ 468, 183 ],
+            "scale": [ 1.0, 1.0 ]
+          },
+          {
+            "name": "tths_lesson_05_item1",
+            "type": "text",
+            "text": "Not fitting in",
+            "location": [ 497, 171 ],
+            "font": "tths_lesson_light_body"
+          },
+          {
+            "name": "tths_lesson_bullet2",
+            "type": "decoration",
+            "image": "lessonBullet",
+            "key": "decorations",
+            "location": [ 468, 218 ],
+            "scale": [ 1.0, 1.0 ]
+          },
+          {
+            "name": "tths_lesson_05_item2",
+            "type": "text",
+            "text": "Not having any friends",
+            "location": [ 497, 206 ],
+            "font": "tths_lesson_light_body"
+          },
+          {
+            "name": "tths_lesson_bullet3",
+            "type": "decoration",
+            "image": "lessonBullet",
+            "key": "decorations",
+            "location": [ 468, 253 ],
+            "scale": [ 1.0, 1.0 ]
+          },
+          {
+            "name": "tths_lesson_05_item3",
+            "type": "text",
+            "text": "Feeling judged",
+            "location": [ 497, 241 ],
+            "font": "tths_lesson_light_body"
+          },
+          {
+            "name": "tths_lesson_bullet4",
+            "type": "decoration",
+            "image": "lessonBullet",
+            "key": "decorations",
+            "location": [ 468, 288 ],
+            "scale": [ 1.0, 1.0 ]
+          },
+          {
+            "name": "tths_lesson_05_item4",
+            "type": "text",
+            "text": "Getting bullied",
+            "location": [ 497, 276 ],
+            "font": "tths_lesson_light_body"
+          },
+          {
+            "name": "tths_lesson_bullet5",
+            "type": "decoration",
+            "image": "lessonBullet",
+            "key": "decorations",
+            "location": [ 468, 323 ],
+            "scale": [ 1.0, 1.0 ]
+          },
+          {
+            "name": "tths_lesson_05_item5",
+            "type": "text",
+            "text": "Drama",
+            "location": [ 497, 311 ],
+            "font": "tths_lesson_light_body"
+          },
+          {
+            "name": "tths_lesson_bullet6",
+            "type": "decoration",
+            "image": "lessonBullet",
+            "key": "decorations",
+            "location": [ 468, 358 ],
+            "scale": [ 1.0, 1.0 ]
+          },
+          {
+            "name": "tths_lesson_05_item6",
+            "type": "text",
+            "text": "Cliques",
+            "location": [ 497, 346 ],
+            "font": "tths_lesson_light_body"
+          },
+          {
+            "name": "backToMenuButton",
+            "type": "button",
+            "image": "menu",
+            "location": [ 70, 44 ],
+            "variable": "tths_lesson_05_backToMenu"
+          },
+          {
+            "name": "mutebutton",
+            "type": "toggle-button",
+            "images": {
+              "on": "soundOn",
+              "off": "soundOff"
+            },
+            "location": [ 709, 49 ],
+            "scale": [
+              1.0, 1.0
+            ],
+            "variable": "mute_game",
+            "values": {
+              "on": "mute_on",
+              "off": "mute_off"
+            },
+            "active": true
+          },
+          {
+            "name": "tths_replayButton",
+            "type": "button",
+            "image": "replay",
+            "location": [ 363, 463 ],
+            "variable": "tths_lesson_05_replay"
+          },
+          {
+            "name": "tths_backButton",
+            "type": "button",
+            "image": "back",
+            "location": [ 87, 451 ],
+            "variable": "tths_lesson_05_back"
+          },
+          {
+            "name": "tths_nextButton",
+            "type": "button",
+            "image": "next",
+            "location": [ 648, 454 ],
+            "variable": "tths_lesson_05_next"
+          }
+        ],
+        "outcomes": {
+          "tths_lesson_sound_5a_done": {
+            "events": {"tths_lesson_sound_5a": "played" },
+            "actions": [
+              { "type": "remove-actor", "args": ["tths_lesson_bullet1"] },
+              { "type": "remove-actor", "args": ["tths_lesson_05_item1"] },
+              { "type": "remove-actor", "args": ["tths_lesson_bullet2"] },
+              { "type": "remove-actor", "args": ["tths_lesson_05_item2"] },
+              { "type": "remove-actor", "args": ["tths_lesson_bullet3"] },
+              { "type": "remove-actor", "args": ["tths_lesson_05_item3"] },
+              { "type": "remove-actor", "args": ["tths_lesson_bullet4"] },
+              { "type": "remove-actor", "args": ["tths_lesson_05_item4"] },
+              { "type": "remove-actor", "args": ["tths_lesson_bullet5"] },
+              { "type": "remove-actor", "args": ["tths_lesson_05_item5"] },
+              { "type": "remove-actor", "args": ["tths_lesson_bullet6"] },
+              { "type": "remove-actor", "args": ["tths_lesson_05_item6"] },
+              {
+                "type": "add-actor", "args": [
+                  {
+                    "name": "tths_lesson_bullet7",
+                    "type": "decoration",
+                    "image": "lessonBullet",
+                    "key": "decorations",
+                    "location": [ 468, 183 ],
+                    "scale": [ 1.0, 1.0 ]
+                  }
+                ]
+              },
+              {
+                "type": "add-actor", "args": [
+                {
+                  "name": "tths_lesson_05_item7a",
+                  "type": "text",
+                  "text": "Remain open to the possibilities.",
+                  "location": [ 497, 171 ],
+                  "font": "tths_lesson_light_body_wrap250"
+                }
+              ]
+              },
+              {
+                "type": "add-actor", "args": [
+                  {
+                    "name": "tths_lesson_bullet8",
+                    "type": "decoration",
+                    "image": "lessonBullet",
+                    "key": "decorations",
+                    "location": [ 468, 259 ],
+                    "scale": [ 1.0, 1.0 ]
+                  }
+                ]
+              },
+              {
+                "type": "add-actor", "args": [
+                  {
+                    "name": "tths_lesson_05_item8",
+                    "type": "text",
+                    "text": "Avoid cliques.",
+                    "location": [ 497, 247 ],
+                    "font": "tths_lesson_light_body"
+                  }
+                ]
+              },
+              {
+                "type": "add-actor", "args": [
+                  {
+                    "name": "tths_lesson_bullet9",
+                    "type": "decoration",
+                    "image": "lessonBullet",
+                    "key": "decorations",
+                    "location": [ 468, 294 ],
+                    "scale": [ 1.0, 1.0 ]
+                  }
+                ]
+              },
+              {
+                "type": "add-actor", "args": [
+                  {
+                    "name": "tths_lesson_05_item9",
+                    "type": "text",
+                    "text": "Try something new.",
+                    "location": [ 497, 282 ],
+                    "font": "tths_lesson_light_body"
+                  }
+                ]
+              },
+              {
+                "type": "add-actor", "args": [
+                {
+                  "name": "tths_lesson_sound_5b",
+                  "type": "audio",
+                  "audio": [ "slide5b"],
+                  "variable": "tths_lesson_sound_5b"
+                }
+              ]
+              }
+            ]
+          },
+          "menu_button": {
+            "events": { "tths_lesson_05_backToMenu": "*" },
+            "actions": [
+              {
+                "type": "scene",
+                "args": ["menu"]
+              }
+            ]
+          },
+          "replay_button": {
+            "events": { "tths_lesson_05_replay": "*" },
+            "actions": [
+              {
+                "type": "scene",
+                "args": ["tths_lesson_05"]
+              }
+            ]
+          },
+          "back_button": {
+            "events": { "tths_lesson_05_back": "*" },
+            "actions": [
+              {
+                "type": "scene",
+                "args": ["tths_lesson_04"]
+              }
+            ]
+          },
+          "next_button": {
+            "events": { "tths_lesson_05_next": "*" },
+            "actions": [
+              {
+                "type": "scene",
+                "args": ["tths_lesson_06"]
+              }
+            ]
+          }
+        }
+      },
+      "tths_lesson_06": {
+        "id": "tths_lesson_06",
+        "background": "backgroundGradient",
+        "title": "Bullying",
+        "description": "Transition to High School lesson 06",
+        "actors": [
+          {
+            "name": "whiteboard",
+            "type": "decoration",
+            "image": "whiteboardBackground",
+            "scale": [ 1.0, 1.0 ],
+            "location": [ -796, 26]
+          },
+          {
+            "name": "tths_lesson_title",
+            "type": "text",
+            "text": "Bullying",
+            "location": [ 410, 65 ],
+            "font": "tths_lesson_light_title"
+          },
+          {
+            "name": "tths_lesson_background",
+            "type": "decoration",
+            "image": "lessonBackground",
+            "key": "decorations",
+            "location": [ 20, 126 ],
+            "scale": [ 1.0, 1.0 ]
+          },
+          {
+            "name": "tths_lesson_imageFrame",
+            "type": "decoration",
+            "image": "imageFrame",
+            "key": "decorations",
+            "location": [ 220, 146 ],
+            "scale": [ 1.09, 1.09 ]
+          },
+          {
+            "name": "tths_lesson_image",
+            "type": "decoration",
+            "image": "lessonImage6",
+            "key": "decorations",
+            "location": [ 233, 155 ],
+            "scale": [ 1.0, 1.0 ]
+          },
+          {
+            "name": "tths_lesson_sound_6",
+            "type": "audio",
+            "audio": [ "slide6"],
+            "variable": "tths_lesson_sound_6"
+          },
+          {
+            "name": "backToMenuButton",
+            "type": "button",
+            "image": "menu",
+            "location": [ 70, 44 ],
+            "variable": "tths_lesson_06_backToMenu"
+          },
+          {
+            "name": "mutebutton",
+            "type": "toggle-button",
+            "images": {
+              "on": "soundOn",
+              "off": "soundOff"
+            },
+            "location": [ 709, 49 ],
+            "scale": [
+              1.0, 1.0
+            ],
+            "variable": "mute_game",
+            "values": {
+              "on": "mute_on",
+              "off": "mute_off"
+            },
+            "active": true
+          },
+          {
+            "name": "tths_replayButton",
+            "type": "button",
+            "image": "replay",
+            "location": [ 363, 463 ],
+            "variable": "tths_lesson_06_replay"
+          },
+          {
+            "name": "tths_backButton",
+            "type": "button",
+            "image": "back",
+            "location": [ 87, 451 ],
+            "variable": "tths_lesson_06_back"
+          },
+          {
+            "name": "tths_nextButton",
+            "type": "button",
+            "image": "next",
+            "location": [ 648, 454 ],
+            "variable": "tths_lesson_06_next"
+          }
+        ],
+        "outcomes": {
+          "menu_button": {
+            "events": { "tths_lesson_06_backToMenu": "*" },
+            "actions": [
+              {
+                "type": "scene",
+                "args": ["menu"]
+              }
+            ]
+          },
+          "replay_button": {
+            "events": { "tths_lesson_06_replay": "*" },
+            "actions": [
+              {
+                "type": "scene",
+                "args": ["tths_lesson_06"]
+              }
+            ]
+          },
+          "back_button": {
+            "events": { "tths_lesson_06_back": "*" },
+            "actions": [
+              {
+                "type": "scene",
+                "args": ["tths_lesson_05"]
+              }
+            ]
+          },
+          "next_button": {
+            "events": { "tths_lesson_06_next": "*" },
+            "actions": [
+              {
+                "type": "scene",
+                "args": ["tths_lesson_07"]
+              }
+            ]
+          }
+        }
+      },
+      "tths_lesson_07": {
+        "id": "tths_lesson_07",
+        "background": "backgroundGradient",
+        "title": "Cyberbullying drama",
+        "description": "Transition to High School lesson 07",
+        "actors": [
+          {
+            "name": "whiteboard",
+            "type": "decoration",
+            "image": "whiteboardBackground",
+            "scale": [ 1.0, 1.0 ],
+            "location": [ -796, 26]
+          },
+          {
+            "name": "tths_lesson_title",
+            "type": "text",
+            "text": "Cyberbullying drama",
+            "location": [ 348, 65 ],
+            "font": "tths_lesson_light_title"
+          },
+          {
+            "name": "tths_lesson_background",
+            "type": "decoration",
+            "image": "lessonBackground",
+            "key": "decorations",
+            "location": [ 20, 126 ],
+            "scale": [ 1.0, 1.0 ]
+          },
+          {
+            "name": "tths_lesson_imageFrame",
+            "type": "decoration",
+            "image": "imageFrame",
+            "key": "decorations",
+            "location": [ 87, 180 ],
+            "scale": [ 0.795, 0.795 ]
+          },
+          {
+            "name": "tths_lesson_image",
+            "type": "decoration",
+            "image": "lessonImage7",
+            "key": "decorations",
+            "location": [ 99, 189 ],
+            "scale": [ 1.0, 1.0 ]
+          },
+          {
+            "name": "tths_lesson_sound",
+            "type": "audio",
+            "audio": [ "slide7a"],
+            "variable": "tths_lesson_sound_7a"
+          },
+          {
+            "name": "backToMenuButton",
+            "type": "button",
+            "image": "menu",
+            "location": [ 70, 44 ],
+            "variable": "tths_lesson_07_backToMenu"
+          },
+          {
+            "name": "mutebutton",
+            "type": "toggle-button",
+            "images": {
+              "on": "soundOn",
+              "off": "soundOff"
+            },
+            "location": [ 709, 49 ],
+            "scale": [
+              1.0, 1.0
+            ],
+            "variable": "mute_game",
+            "values": {
+              "on": "mute_on",
+              "off": "mute_off"
+            },
+            "active": true
+          },
+          {
+            "name": "tths_replayButton",
+            "type": "button",
+            "image": "replay",
+            "location": [ 363, 463 ],
+            "variable": "tths_lesson_07_replay"
+          },
+          {
+            "name": "tths_backButton",
+            "type": "button",
+            "image": "back",
+            "location": [ 87, 451 ],
+            "variable": "tths_lesson_07_back"
+          },
+          {
+            "name": "tths_nextButton",
+            "type": "button",
+            "image": "next",
+            "location": [ 648, 454 ],
+            "variable": "tths_lesson_07_next"
+          }
+        ],
+        "outcomes": {
+          "tths_lesson_sound_7a_done": {
+            "events": {"tths_lesson_sound_7a": "played" },
+            "actions": [
+              {
+                "type": "add-actor", "args": [
+                {
+                  "name": "tths_lesson_bullet1",
+                  "type": "decoration",
+                  "image": "lessonBullet",
+                  "key": "decorations",
+                  "location": [ 427, 205 ],
+                  "scale": [ 1.0, 1.0 ]
+                }
+              ]
+              },
+              {
+                "type": "add-actor", "args": [
+                {
+                  "name": "tths_lesson_07_item1",
+                  "type": "text",
+                  "text": "Nothing is temporary online.",
+                  "location": [ 452, 193 ],
+                  "font": "tths_lesson_light_body_wrap350"
+                }
+              ]
+              },
+              {
+                "type": "add-actor", "args": [
+                {
+                  "name": "tths_lesson_sound_7b",
+                  "type": "audio",
+                  "audio": [ "slide7b"],
+                  "variable": "tths_lesson_sound_7b"
+                }
+              ]
+              }
+            ]
+          },
+          "tths_lesson_sound_7b_done": {
+            "events": {"tths_lesson_sound_7b": "played" },
+            "actions": [
+              {
+                "type": "add-actor", "args": [
+                {
+                  "name": "tths_lesson_bullet2",
+                  "type": "decoration",
+                  "image": "lessonBullet",
+                  "key": "decorations",
+                  "location": [ 427, 245 ],
+                  "scale": [ 1.0, 1.0 ]
+                }
+              ]
+              },
+              {
+                "type": "add-actor", "args": [
+                {
+                  "name": "tths_lesson_07_item2",
+                  "type": "text",
+                  "text": "Protect your passwords and profiles.",
+                  "location": [ 452, 232 ],
+                  "font": "tths_lesson_light_body_wrap350"
+                }
+              ]
+              },
+              {
+                "type": "add-actor", "args": [
+                {
+                  "name": "tths_lesson_sound_7c",
+                  "type": "audio",
+                  "audio": [ "slide7c"],
+                  "variable": "tths_lesson_sound_7c"
+                }
+              ]
+              }
+            ]
+          },
+          "tths_lesson_sound_7c_done": {
+            "events": {"tths_lesson_sound_7c": "played" },
+            "actions": [
+              {
+                "type": "add-actor", "args": [
+                {
+                  "name": "tths_lesson_bullet3",
+                  "type": "decoration",
+                  "image": "lessonBullet",
+                  "key": "decorations",
+                  "location": [ 427, 315 ],
+                  "scale": [ 1.0, 1.0 ]
+                }
+              ]
+              },
+              {
+                "type": "add-actor", "args": [
+                {
+                  "name": "tths_lesson_07_item3",
+                  "type": "text",
+                  "text": "Keep things private.",
+                  "location": [ 452, 307 ],
+                  "font": "tths_lesson_light_body"
+                }
+              ]
+              },
+              {
+                "type": "add-actor", "args": [
+                {
+                  "name": "tths_lesson_sound_7d",
+                  "type": "audio",
+                  "audio": [ "slide7d"],
+                  "variable": "tths_lesson_sound_7d"
+                }
+              ]
+              }
+            ]
+          },
+          "tths_lesson_sound_7d_done": {
+            "events": {"tths_lesson_sound_7d": "played" },
+            "actions": [
+              {
+                "type": "add-actor", "args": [
+                {
+                  "name": "tths_lesson_bullet4",
+                  "type": "decoration",
+                  "image": "lessonBullet",
+                  "key": "decorations",
+                  "location": [ 427, 355 ],
+                  "scale": [ 1.0, 1.0 ]
+                }
+              ]
+              },
+              {
+                "type": "add-actor", "args": [
+                {
+                  "name": "tths_lesson_07_item4",
+                  "type": "text",
+                  "text": "Tell an adult.",
+                  "location": [ 452, 343 ],
+                  "font": "tths_lesson_light_body"
+                }
+              ]
+              },
+              {
+                "type": "add-actor", "args": [
+                {
+                  "name": "tths_lesson_sound_7e",
+                  "type": "audio",
+                  "audio": [ "slide7e"],
+                  "variable": "tths_lesson_sound_7e"
+                }
+              ]
+              }
+            ]
+          },
+          "menu_button": {
+            "events": { "tths_lesson_07_backToMenu": "*" },
+            "actions": [
+              {
+                "type": "scene",
+                "args": ["menu"]
+              }
+            ]
+          },
+          "replay_button": {
+            "events": { "tths_lesson_07_replay": "*" },
+            "actions": [
+              {
+                "type": "scene",
+                "args": ["tths_lesson_07"]
+              }
+            ]
+          },
+          "back_button": {
+            "events": { "tths_lesson_07_back": "*" },
+            "actions": [
+              {
+                "type": "scene",
+                "args": ["tths_lesson_06"]
+              }
+            ]
+          },
+          "next_button": {
+            "events": { "tths_lesson_07_next": "*" },
+            "actions": [
+              {
+                "type": "scene",
+                "args": ["tths_lesson_08"]
+              }
+            ]
+          }
+        }
+      },
+      "tths_lesson_08": {
+        "id": "tths_lesson_08",
+        "background": "backgroundGradient",
+        "title": "Survival tips",
+        "description": "Transition to High School lesson 08",
+        "actors": [
+          {
+            "name": "whiteboard",
+            "type": "decoration",
+            "image": "whiteboardBackground",
+            "scale": [ 1.0, 1.0 ],
+            "location": [ -796, 26]
+          },
+          {
+            "name": "tths_lesson_title",
+            "type": "text",
+            "text": "Survival tips",
+            "location": [ 379, 65 ],
+            "font": "tths_lesson_light_title"
+          },
+          {
+            "name": "tths_lesson_background",
+            "type": "decoration",
+            "image": "lessonBackground",
+            "key": "decorations",
+            "location": [ 20, 126 ],
+            "scale": [ 1.0, 1.0 ]
+          },
+          {
+            "name": "tths_lesson_sound",
+            "type": "audio",
+            "audio": [ "slide8a"],
+            "variable": "tths_lesson_sound_8a"
+          },
+          {
+            "name": "backToMenuButton",
+            "type": "button",
+            "image": "menu",
+            "location": [ 70, 44 ],
+            "variable": "tths_lesson_08_backToMenu"
+          },
+          {
+            "name": "mutebutton",
+            "type": "toggle-button",
+            "images": {
+              "on": "soundOn",
+              "off": "soundOff"
+            },
+            "location": [ 709, 49 ],
+            "scale": [
+              1.0, 1.0
+            ],
+            "variable": "mute_game",
+            "values": {
+              "on": "mute_on",
+              "off": "mute_off"
+            },
+            "active": true
+          },
+          {
+            "name": "tths_replayButton",
+            "type": "button",
+            "image": "replay",
+            "location": [ 363, 463 ],
+            "variable": "tths_lesson_08_replay"
+          },
+          {
+            "name": "tths_backButton",
+            "type": "button",
+            "image": "back",
+            "location": [ 87, 451 ],
+            "variable": "tths_lesson_08_back"
+          },
+          {
+            "name": "tths_nextButton",
+            "type": "button",
+            "image": "next",
+            "location": [ 648, 454 ],
+            "variable": "tths_lesson_08_next"
+          }
+        ],
+        "outcomes": {
+          "tths_lesson_sound_8a_done": {
+            "events": {"tths_lesson_sound_8a": "played" },
+            "actions": [
+              {
+                "type": "add-actor", "args": [
+                  {
+                    "name": "tths_lesson_imageFrame_center",
+                    "type": "decoration",
+                    "image": "imageFrame",
+                    "key": "decorations",
+                    "location": [ 315, 152 ],
+                    "scale": [ 0.57, 0.59 ]
+                  }
+                ]
+              },
+              {
+                "type": "add-actor", "args": [
+                  {
+                    "name": "tths_lesson_image_center",
+                    "type": "decoration",
+                    "image": "lessonImage8b",
+                    "key": "decorations",
+                    "location": [ 323, 161 ],
+                    "scale": [ 1.0, 1.0 ]
+                  }
+                ]
+              },
+              {
+                "type": "add-actor", "args": [
+                  {
+                    "name": "tths_lesson_08_item1",
+                    "type": "text",
+                    "text": "Get enough sleep",
+                    "location": [ 341, 306 ],
+                    "font": "tths_lesson_light_body"
+                  }
+                ]
+              },
+              {
+                "type": "add-actor", "args": [
+                  {
+                    "name": "tths_lesson_sound_8b",
+                    "type": "audio",
+                    "audio": [ "slide8b"],
+                    "variable": "tths_lesson_sound_8b"
+                  }
+                ]
+              }
+            ]
+          },
+          "tths_lesson_sound_8b_done": {
+            "events": {"tths_lesson_sound_8b": "played" },
+            "actions": [
+              {
+                "type": "add-actor", "args": [
+                {
+                  "name": "tths_lesson_imageFrame_left",
+                  "type": "decoration",
+                  "image": "imageFrame",
+                  "key": "decorations",
+                  "location": [ 115, 135 ],
+                  "scale": [ 0.435, 0.935 ]
+                }
+              ]
+              },
+              {
+                "type": "add-actor", "args": [
+                {
+                  "name": "tths_lesson_image_left",
+                  "type": "decoration",
+                  "image": "lessonImage8",
+                  "key": "decorations",
+                  "location": [ 124, 143 ],
+                  "scale": [ 1.0, 1.0 ]
+                }
+              ]
+              },
+              {
+                "type": "add-actor", "args": [
+                {
+                  "name": "tths_lesson_08_item2",
+                  "type": "text",
+                  "text": "Eat healthy foods",
+                  "location": [ 114, 379 ],
+                  "font": "tths_lesson_light_body"
+                }
+              ]
+              },
+              {
+                "type": "add-actor", "args": [
+                {
+                  "name": "tths_lesson_sound_8c",
+                  "type": "audio",
+                  "audio": [ "slide8c"],
+                  "variable": "tths_lesson_sound_8c"
+                }
+              ]
+              }
+            ]
+          },
+          "tths_lesson_sound_8c_done": {
+            "events": {"tths_lesson_sound_8c": "played" },
+            "actions": [
+              {
+                "type": "add-actor", "args": [
+                {
+                  "name": "tths_lesson_imageFrame_right",
+                  "type": "decoration",
+                  "image": "imageFrame",
+                  "key": "decorations",
+                  "location": [ 565, 135 ],
+                  "scale": [ 0.435, 0.935 ]
+                }
+              ]
+              },
+              {
+                "type": "add-actor", "args": [
+                {
+                  "name": "tths_lesson_image_right",
+                  "type": "decoration",
+                  "image": "lessonImage8c",
+                  "key": "decorations",
+                  "location": [ 574, 143 ],
+                  "scale": [ 1.0, 1.0 ]
+                }
+              ]
+              },
+              {
+                "type": "add-actor", "args": [
+                {
+                  "name": "tths_lesson_08_item3",
+                  "type": "text",
+                  "text": "Stay active",
+                  "location": [ 594, 377 ],
+                  "font": "tths_lesson_light_body"
+                }
+              ]
+              },
+              {
+                "type": "add-actor", "args": [
+                {
+                  "name": "tths_lesson_sound_8d",
+                  "type": "audio",
+                  "audio": [ "slide8d"],
+                  "variable": "tths_lesson_sound_8d"
+                }
+              ]
+              }
+            ]
+          },
+          "menu_button": {
+            "events": { "tths_lesson_08_backToMenu": "*" },
+            "actions": [
+              {
+                "type": "scene",
+                "args": ["menu"]
+              }
+            ]
+          },
+          "replay_button": {
+            "events": { "tths_lesson_08_replay": "*" },
+            "actions": [
+              {
+                "type": "scene",
+                "args": ["tths_lesson_08"]
+              }
+            ]
+          },
+          "back_button": {
+            "events": { "tths_lesson_08_back": "*" },
+            "actions": [
+              {
+                "type": "scene",
+                "args": ["tths_lesson_07"]
+              }
+            ]
+          },
+          "next_button": {
+            "events": { "tths_lesson_08_next": "*" },
+            "actions": [
+              {
+                "type": "scene",
+                "args": ["tths_lesson_09"]
+              }
+            ]
+          }
+        }
+      },
+      "tths_lesson_09": {
+        "id": "tths_lesson_09",
+        "background": "backgroundGradient",
+        "title": "Getting adjusted",
+        "description": "Transition to High School lesson 09",
+        "actors": [
+          {
+            "name": "whiteboard",
+            "type": "decoration",
+            "image": "whiteboardBackground",
+            "scale": [ 1.0, 1.0 ],
+            "location": [ -796, 26]
+          },
+          {
+            "name": "tths_lesson_title",
+            "type": "text",
+            "text": "Getting adjusted",
+            "location": [ 360, 65 ],
+            "font": "tths_lesson_light_title"
+          },
+          {
+            "name": "tths_lesson_background",
+            "type": "decoration",
+            "image": "lessonBackground",
+            "key": "decorations",
+            "location": [ 20, 126 ],
+            "scale": [ 1.0, 1.0 ]
+          },
+          {
+            "name": "tths_lesson_imageFrame",
+            "type": "decoration",
+            "image": "imageFrame",
+            "key": "decorations",
+            "location": [ 107, 168 ],
+            "scale": [ 0.86, 0.87 ]
+          },
+          {
+            "name": "tths_lesson_image",
+            "type": "decoration",
+            "image": "lessonImage9",
+            "key": "decorations",
+            "location": [ 119, 177 ],
+            "scale": [ 1.0, 1.0 ]
+          },
+          {
+            "name": "tths_lesson_sound",
+            "type": "audio",
+            "audio": [ "slide9a"],
+            "variable": "tths_lesson_sound_9a"
+          },
+          {
+            "name": "backToMenuButton",
+            "type": "button",
+            "image": "menu",
+            "location": [ 70, 44 ],
+            "variable": "tths_lesson_09_backToMenu"
+          },
+          {
+            "name": "mutebutton",
+            "type": "toggle-button",
+            "images": {
+              "on": "soundOn",
+              "off": "soundOff"
+            },
+            "location": [ 709, 49 ],
+            "scale": [
+              1.0, 1.0
+            ],
+            "variable": "mute_game",
+            "values": {
+              "on": "mute_on",
+              "off": "mute_off"
+            },
+            "active": true
+          },
+          {
+            "name": "tths_replayButton",
+            "type": "button",
+            "image": "replay",
+            "location": [ 363, 463 ],
+            "variable": "tths_lesson_09_replay"
+          },
+          {
+            "name": "tths_backButton",
+            "type": "button",
+            "image": "back",
+            "location": [ 87, 451 ],
+            "variable": "tths_lesson_09_back"
+          }
+        ],
+        "outcomes": {
+          "tths_lesson_sound_9a_done": {
+            "events": {"tths_lesson_sound_9a": "played" },
+            "actions": [
+              {
+                "type": "add-actor", "args": [
+                {
+                  "name": "tths_lesson_bullet1",
+                  "type": "decoration",
+                  "image": "lessonBullet",
+                  "key": "decorations",
+                  "location": [ 469, 195 ],
+                  "scale": [ 1.0, 1.0 ]
+                }
+              ]
+              },
+              {
+                "type": "add-actor", "args": [
+                {
+                  "name": "tths_lesson_09_item1",
+                  "type": "text",
+                  "text": "Adjustment takes time but is temporary.",
+                  "location": [ 494, 183 ],
+                  "font": "tths_lesson_light_body_wrap250"
+                }
+              ]
+              },
+              {
+                "type": "add-actor", "args": [
+                {
+                  "name": "tths_lesson_sound_9b",
+                  "type": "audio",
+                  "audio": [ "slide9b"],
+                  "variable": "tths_lesson_sound_9b"
+                }
+              ]
+              }
+            ]
+          },
+          "tths_lesson_sound_9b_done": {
+            "events": {"tths_lesson_sound_9b": "played" },
+            "actions": [
+              {
+                "type": "add-actor", "args": [
+                {
+                  "name": "tths_lesson_bullet2",
+                  "type": "decoration",
+                  "image": "lessonBullet",
+                  "key": "decorations",
+                  "location": [ 469, 270 ],
+                  "scale": [ 1.0, 1.0 ]
+                }
+              ]
+              },
+              {
+                "type": "add-actor", "args": [
+                {
+                  "name": "tths_lesson_09_item2",
+                  "type": "text",
+                  "text": "Everyone is nervous.",
+                  "location": [ 494, 258 ],
+                  "font": "tths_lesson_light_body"
+                }
+              ]
+              },
+              {
+                "type": "add-actor", "args": [
+                {
+                  "name": "tths_lesson_sound_9c",
+                  "type": "audio",
+                  "audio": [ "slide9c"],
+                  "variable": "tths_lesson_sound_9c"
+                }
+              ]
+              }
+            ]
+          },
+          "tths_lesson_sound_9c_done": {
+            "events": {"tths_lesson_sound_9c": "played" },
+            "actions": [
+              {
+                "type": "add-actor", "args": [
+                {
+                  "name": "tths_lesson_bullet3",
+                  "type": "decoration",
+                  "image": "lessonBullet",
+                  "key": "decorations",
+                  "location": [ 469, 315 ],
+                  "scale": [ 1.0, 1.0 ]
+                }
+              ]
+              },
+              {
+                "type": "add-actor", "args": [
+                {
+                  "name": "tths_lesson_09_item3",
+                  "type": "text",
+                  "text": "Trusted adults can help.",
+                  "location": [ 494, 303 ],
+                  "font": "tths_lesson_light_body"
+                }
+              ]
+              },
+              {
+                "type": "add-actor", "args": [
+                {
+                  "name": "tths_lesson_sound_9d",
+                  "type": "audio",
+                  "audio": [ "slide9d"],
+                  "variable": "tths_lesson_sound_9d"
+                }
+              ]
+              }
+            ]
+          },
+          "menu_button": {
+            "events": { "tths_lesson_09_backToMenu": "*" },
+            "actions": [
+              {
+                "type": "scene",
+                "args": ["menu"]
+              }
+            ]
+          },
+          "replay_button": {
+            "events": { "tths_lesson_09_replay": "*" },
+            "actions": [
+              {
+                "type": "scene",
+                "args": ["tths_lesson_09"]
+              }
+            ]
+          },
+          "back_button": {
+            "events": { "tths_lesson_09_back": "*" },
+            "actions": [
+              {
+                "type": "scene",
+                "args": ["tths_lesson_08"]
+              }
+            ]
+          }
+        }
+      }
+    }
+  }
+}

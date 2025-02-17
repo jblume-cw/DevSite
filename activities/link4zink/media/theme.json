@@ -1,0 +1,172 @@
+{
+  "autoScale": true,
+  "scorm": false,
+  "logging": false,
+  "texture": "media/texture.png",
+  "textureMap": "media/texture.json",
+  "textureKey": "texture",
+  "logo": "link-logo.png",
+  "background": "cafeteria-background.png",
+  "texts": {
+    "difficulty": [
+      {
+        "text": "Choose a difficulty level:",
+        "attributes": {"fontWeight": "bold"}
+      }
+    ]
+  },
+  "labels": {
+    "button-next": "NEXT",
+    "button-easy": "EASY",
+    "button-medium" : "MEDIUM",
+    "button-hard" : "HARD",
+    "button-play" : "PLAY",
+    "button-continue" :  "CONTINUE",
+    "button-instructions" : "INSTRUCTIONS",
+    "turn-player" : "YOUR TURN",
+    "turn-cpu" : "COMPUTER'S TURN",
+    "titleLose": "You Lose!",
+    "titleWin": "You Win!",
+    "titleDraw": "Draw!",
+    "subtitleWin": "Great Job! You really know the facts about bullying!",
+    "subtitleLose": "Don't give up. Play again and try to link four.",
+    "subtitleDraw": "You have played to a draw. Play again and go for the win."
+  },
+  "instructions": {
+    "top": "instructions-box-top",
+    "middle": "instructions-box-middle",
+    "bottom": "instructions-box-bottom",
+    "computer": "instructions-computer.png",
+    "you": "instructions-you.png"
+  },
+  "questions": {
+    "top": "question-box-top",
+    "middle": "question-box-middle",
+    "bottom": "question-box-bottom"
+  },
+  "answers": {
+    "top":  "option-btn-top",
+    "middle": "option-btn-middle",
+    "bottom":  "option-btn-bottom"
+  },
+  "answers-over": {
+    "top":  "option-btn-top-over",
+    "middle": "option-btn-middle-over",
+    "bottom":  "option-btn-bottom-over"
+  },
+  "phone": "phone-off.png",
+  "phoneBackground": "photo-background.png",
+  "button": {
+    "long": {
+      "up": "long-btn-0001.png",
+      "hover": "long-btn-0002.png"
+    },
+    "short": {
+      "up": "short-btn-0001.png",
+      "hover": "short-btn-0002.png"
+    }
+  },
+  "column": {
+    "background": "c4-column.png",
+    "arrow": "column-arrow.png"
+  },
+  "tokens": {
+    "neutral": "tile-questionmark.png",
+    "cpu": {
+      "normal" : "tile-stripes.png",
+      "highlight" : "tile-stripes-highlight.png"
+    },
+    "player" : {
+      "normal" : "tile-spots.png",
+      "highlight" : "tile-spots-highlight.png"
+    }
+  },
+  "fonts": {
+    "normal": {
+      "font": "11pt Helvetica",
+      "fill": "#333333",
+      "align": "left",
+      "fontWeight": "normal",
+      "wordWrap": true
+    },
+    "buttons":  {
+      "font": "10pt adelaideregular",
+      "fill": "#336600",
+      "align": "left"
+    },
+    "buttoninstructions":  {
+      "font": "7pt adelaideregular",
+      "fill": "#336600",
+      "align": "left",
+      "fontWeight": "bold"
+    },
+    "difficultyHeading":  {
+      "font": "13pt adelaideregular",
+      "fill": "#336600",
+      "align": "center",
+      "fontWeight": "bold"
+    },
+    "instructions":  {
+      "font": "11pt Helvetica",
+      "fill": "#333333",
+      "align": "left",
+      "fontWeight": "bold"
+    },
+    "turnmarker":  {
+      "font": "12pt Helvetica",
+      "fill": "#333333",
+      "align": "center",
+      "fontWeight": "bold"
+    },
+    "largePrefix": {
+      "font": "20pt adelaideregular",
+      "fill": "#336600",
+      "align": "left",
+      "fontWeight": "bold"
+    },
+    "question": {
+      "font": "10pt Helvetica",
+      "fill": "#333333",
+      "align": "left",
+      "fontWeight": "bold",
+      "wordWrap": true
+    },
+    "answer":  {
+      "font": "9pt Helvetica",
+      "fill": "#336600",
+      "align": "left",
+      "fontWeight": "bold",
+      "wordWrap": true
+    },
+    "remediation":  {
+      "font": "10pt Helvetica",
+      "fill": "#333333",
+      "align": "left"
+    },
+    "gameover": {
+      "font": "20pt adelaideregular",
+      "fill": "black",
+      "align": "center",
+      "fontWeight": "bold"
+    },
+    "gameovertext": {
+      "font": "14pt adelaideregular",
+      "fill": "black",
+      "align": "center",
+      "fontWeight": "bold",
+      "wordWrap": true
+    }
+  },
+  "soundKey": "l4zSounds",
+  "soundFile": [ "media/audio.m4a", "media/audio.ogg" ],
+  "sounds": {
+    "alert_09_asc": [ 0.00000000, 0.73142857, false, "alert_09_ascending"],
+    "alert_18_asc": [ 0.73142857, 1.20163265, false, "alert_18_ascending"],
+    "alert_18_desc": [ 1.93306122, 1.2538775600000003, false, "alert_18_descending"],
+    "alert_27_asc": [ 3.18693878, 1.55882086, false, "alert_27_ascending"],
+    "diceroll": [ 4.74575964, 0.5648526, true, "dice roll on gameboard 03"],
+    "notifier_04": [ 5.31061224, 0.8896145199999994, false, "notifier_04"],
+    "notifier_11": [ 6.20022676, 0.83156462, false, "notifier_11"],
+    "buttonclick": [ 7.03179138, 0.036, false, "smooth_button_click11"]
+  }
+}

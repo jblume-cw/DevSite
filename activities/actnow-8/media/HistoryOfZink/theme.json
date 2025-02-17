@@ -1,0 +1,71 @@
+{
+  "texture": "media/HistoryOfZink/texture.png",
+  "textureMap": "media/HistoryOfZink/texture.json",
+  "textureKey": "hoz_texture",
+  "data": "media/HistoryOfZink/sceneData.json",
+  "fonts" : {
+    "hoZink_header": { "font": "31px nunitoregular", "fill": "#000000",  "fontWeight": "bold" },
+    "hoZink_completed": { "font": "20px nunitoregular", "fill": "#000000",  "fontWeight": "bold", "align": "center", "wordWrap": true, "wordWrapWidth": 550 }
+  },
+  "images": {
+    "decorations": {
+      "zinkIntro": "Get the Facts/History of Zink/h0100.png",
+      "zinkBook": "Get the Facts/History of Zink/h0200g.png",
+      "kellyWithHorse": "Get the Facts/History of Zink/h0300.jpg",
+      "collage1": "Get the Facts/History of Zink/collage1.png",
+      "collage3": "Get the Facts/History of Zink/collage2.png",
+      "collage4": "Get the Facts/History of Zink/collage3.png",
+      "collage5": "Get the Facts/History of Zink/collage4.png",
+      "collage6": "Get the Facts/History of Zink/collage5.png",
+      "collage2": "Get the Facts/History of Zink/collage6.png"
+    }
+  },
+  "sceneImages": {
+    "getTheFactsBackground": "Get the Facts/get-the-facts-background.png"
+  },
+  "buttons": {
+    "getTheFactsBack": {
+      "up": "Get the Facts/get-the-facts-back.png",
+      "over": "Get the Facts/get-the-facts-back-over.png",
+      "out": "Get the Facts/get-the-facts-back.png",
+      "down": "Get the Facts/get-the-facts-back.png"
+    },
+    "getTheFactsNext": {
+      "up": "Get the Facts/get-the-facts-next.png",
+      "over": "Get the Facts/get-the-facts-next-over.png",
+      "out": "Get the Facts/get-the-facts-next.png",
+      "down": "Get the Facts/get-the-facts-next.png"
+    },
+    "getTheFactsSoundOn": {
+      "up": "Get the Facts/get-the-facts-sound-on.png",
+      "over": "Get the Facts/get-the-facts-sound-on-over.png",
+      "out": "Get the Facts/get-the-facts-sound-on.png",
+      "down": "Get the Facts/get-the-facts-sound-on.png"
+    },
+    "getTheFactsSoundOff": {
+      "up": "Get the Facts/get-the-facts-sound-off.png",
+      "over": "Get the Facts/get-the-facts-sound-off-over.png",
+      "out": "Get the Facts/get-the-facts-sound-off.png",
+      "down": "Get the Facts/get-the-facts-sound-off.png"
+    },
+    "getTheFactsExit": {
+      "up": "Get the Facts/get-the-facts-exit.png",
+      "over": "Get the Facts/get-the-facts-exit.png",
+      "out": "Get the Facts/get-the-facts-exit.png",
+      "down": "Get the Facts/get-the-facts-exit.png"
+    }
+  },
+  "soundKey": "historyOfZinkSounds",
+  "soundFile": [ "media/HistoryOfZink/historyOfZink.m4a", "media/HistoryOfZink/historyOfZink.ogg" ],
+  "sounds": {
+    "h0100": [ 0.00000000, 7.69725624, false, "h0100, Starts at 0.0, lasts 7.69725624 seconds, doesn't loop"],
+    "h0200a": [ 7.69725624, 3.998299320000001, false, "h0200a"],
+    "h0200b": [ 11.69555556, 5.69380952, false, "h0200b"],
+    "h0200c": [ 17.38936508, 1.8189795899999979, false, "h0200c"],
+    "h0200d": [ 19.20834467, 4.132199550000003, false, "h0200d"],
+    "h0200e": [ 23.34054422, 8.509750559999997, false, "h0200e"],
+    "h0200f": [ 31.85029478, 12.75476191, false, "h0200f"],
+    "h0200g": [ 44.60505669, 8.97716553, false, "h0200g"],
+    "h0300": [ 53.58222222, 20.163, false, "h0300"]
+  }
+}

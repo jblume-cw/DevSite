@@ -1,0 +1,350 @@
+{
+  "play": {
+    "start": "scene1",
+    "showPlayThrough": false,
+    "scenes": {
+      "scene1": {
+        "id": "scene1",
+        "background": "cafeteriaBackground",
+        "title": "Scene 1",
+        "description": "grade 8 allow presentation scene 1 cafeteria",
+        "call": {"func": "sendSCORM"},
+        "actors": [
+          {
+            "name": "announcerBox_01",
+            "type": "announcer",
+            "location": [ 2, 5 ],
+            "text": "It’s not always easy to tell the difference between right and wrong, but you have a gift for it.",
+            "announcerBox": true
+          },
+          {
+            "name": "sound_1_01",
+            "type": "audio",
+            "audio": ["1_01"],
+            "variable": "sound_1_01"
+          },
+          {
+            "name": "tom",
+            "type": "decoration",
+            "image": "tom",
+            "key": "decorations",
+            "location": [ 208, 110 ],
+            "scale": [ -0.55, 0.55 ]
+          },
+          {
+            "name": "carrie",
+            "type": "decoration",
+            "image": "carrie",
+            "key": "decorations",
+            "location": [ 540, 126 ],
+            "scale": [ -0.68, 0.68 ]
+          },
+          {
+            "name": "freddie",
+            "type": "decoration",
+            "image": "freddie",
+            "key": "decorations",
+            "location": [ 388, 141 ],
+            "scale": [ -0.55, 0.55 ]
+          }
+        ],
+        "outcomes": {
+          "scene_1_sound_2": {
+            "events": {"sound_1_01": "played" },
+            "actions": [
+              { "type": "remove-actor", "args": ["announcerBox_01"] },
+              { "type": "add-actor", "args": [
+                {
+                  "name": "announcerBox_02",
+                  "type": "announcer",
+                  "location": [ 2, 5 ],
+                  "text": "For some reason, though, you never step forward to support what’s right and stop what’s wrong.",
+                  "announcerBox": true
+                }
+              ] },
+              { "type": "add-actor", "args": [
+                {
+                  "name": "sound_1_02",
+                  "type": "audio",
+                  "audio": [ "1_02"],
+                  "variable": "sound_1_02"
+                }
+              ] }
+            ]
+          },
+          "scene_1_sound_3": {
+            "events": {"sound_1_02": "played" },
+            "actions": [
+              { "type": "remove-actor", "args": ["tom"] },
+              { "type": "remove-actor", "args": ["freddie"] },
+              { "type": "remove-actor", "args": ["carrie"] },
+              { "type": "add-actor", "args": [
+                {
+                  "name": "sound_1_03",
+                  "type": "audio",
+                  "audio": [ "1_03"],
+                  "variable": "sound_1_03"
+                }
+              ] },
+              { "type": "add-actor", "args": [
+                {
+                  "name": "tom",
+                  "type": "decoration",
+                  "image": "tom",
+                  "key": "decorations",
+                  "location": [ 208, 110 ],
+                  "scale": [ -0.55, 0.55 ],
+                  "tween": {
+                    "time": 1600,
+                    "location": [ 318, 208 ],
+                    "scale": [ -0.23, 0.23 ]
+                  }
+                }
+              ] },
+              { "type": "add-actor", "args": [
+                {
+                  "name": "carrie",
+                  "type": "decoration",
+                  "image": "carrie",
+                  "key": "decorations",
+                  "location": [ 540, 126 ],
+                  "scale": [ -0.68, 0.68 ],
+                  "tween": {
+                    "time": 1600,
+                    "location": [ 417, 215 ],
+                    "scale": [ -0.28, 0.28 ]
+                  }
+                }
+              ] },
+              { "type": "add-actor", "args": [
+                {
+                  "name": "freddie",
+                  "type": "decoration",
+                  "image": "freddie",
+                  "key": "decorations",
+                  "location": [ 388, 141 ],
+                  "scale": [ -0.55, 0.55 ],
+                  "tween": {
+                    "time": 1600,
+                    "location": [ 374, 220 ],
+                    "scale": [ -0.23, 0.23 ]
+                  }
+                }
+              ] }
+            ]
+          },
+          "scene_1_sound_4": {
+            "events": {"sound_1_03": "played" },
+            "actions": [
+              { "type": "remove-actor", "args": ["announcerBox_02"] },
+              { "type": "add-actor", "args": [
+                {
+                  "name": "announcerBox_03",
+                  "type": "announcer",
+                  "location": [ 2, 5 ],
+                  "text": "Kids at Newbridge go about their business being normal people or bullies without reaction from you.",
+                  "announcerBox": true
+                }
+              ] },
+              { "type": "add-actor", "args": [
+                {
+                  "name": "sound_1_04",
+                  "type": "audio",
+                  "audio": [ "1_04"],
+                  "variable": "sound_1_04"
+                }
+              ] },
+              { "type": "add-actor", "args": [
+                {
+                  "name": "mandy",
+                  "type": "decoration",
+                  "image": "mandy",
+                  "key": "decorations",
+                  "location": [ 147, 165 ],
+                  "scale": [ 0.39, 0.39 ]
+                }
+              ] },
+              { "type": "add-actor", "args": [
+                {
+                  "name": "dane",
+                  "type": "decoration",
+                  "image": "dane",
+                  "key": "decorations",
+                  "location": [ 366, 164 ],
+                  "scale": [ 0.48, 0.48 ]
+                }
+              ] }
+            ]
+          },
+          "scene_1_sound_5": {
+            "events": {"sound_1_04": "played" },
+            "actions": [
+              { "type": "remove-actor", "args": ["announcerBox_03"] },
+              { "type": "remove-actor", "args": ["dane"] },
+              { "type": "add-actor", "args": [
+                {
+                  "name": "announcerBox_04",
+                  "type": "announcer",
+                  "location": [ 2, 5 ],
+                  "text": "Unfortunately, the bullies have the loudest voice right now, and that’s making things worse for everyone.",
+                  "announcerBox": true
+                }
+              ] },
+              { "type": "add-actor", "args": [
+                {
+                  "name": "sound_1_05",
+                  "type": "audio",
+                  "audio": [ "1_05"],
+                  "variable": "sound_1_05"
+                }
+              ] },
+              { "type": "add-actor", "args": [
+                {
+                  "name": "dane",
+                  "type": "decoration",
+                  "image": "dane",
+                  "key": "decorations",
+                  "location": [ 140, 88 ],
+                  "scale": [ 0.90, 0.90 ]
+                }
+              ] }
+            ]
+          },
+          "scene_2_start": {
+            "events": {"sound_1_05": "played" },
+            "actions": [
+              { "type": "scene", "args": [ "scene2" ] }
+            ]
+          }
+        }
+      },
+      "scene2": {
+        "id": "scene2",
+        "background": "classroomBackground",
+        "title": "Presentation Scene 2",
+        "description": "continuing presentation classroom",
+        "call": {"func": "sendSCORM"},
+        "actors": [
+          {
+            "name": "announcerBox_05",
+            "type": "announcer",
+            "location": [ 2, 5 ],
+            "text": "Dane is relentlessly picking on Mandy.",
+            "announcerBox": true
+          },
+          {
+            "name": "sound_2_01",
+            "type": "audio",
+            "audio": ["2_01"],
+            "variable": "sound_2_01"
+          }
+        ],
+        "outcomes": {
+          "scene_3_start": {
+            "events": {"sound_2_01": "played" },
+            "actions": [
+              { "type": "scene", "args": [ "scene3" ] }
+            ]
+          }
+        }
+      },
+      "scene3": {
+        "id": "scene3",
+        "background": "theaterBackground",
+        "title": "Presentation Scene 3",
+        "description": "continuing presentation theater",
+        "call": {"func": "sendSCORM"},
+        "actors": [
+          {
+            "name": "announcerBox_06",
+            "type": "announcer",
+            "location": [ 2, 5 ],
+            "text": "The diversity play was well-attended but spoiled by some kids making fun of it from the back row.",
+            "announcerBox": true
+          },
+          {
+            "name": "sound_3_01",
+            "type": "audio",
+            "audio": ["3_01"],
+            "variable": "sound_3_01"
+          }
+        ],
+        "outcomes": {
+          "scene_4_start": {
+            "events": {"sound_3_01": "played" },
+            "actions": [
+              { "type": "scene", "args": [ "scene4" ] }
+            ]
+          }
+        }
+      },
+      "scene4": {
+        "id": "scene4",
+        "background": "hallwayBackgroundAugustine",
+        "title": "Presentation Scene 4",
+        "description": "continuing presentation hallway augustine",
+        "call": {"func": "sendSCORM"},
+        "actors": [
+          {
+            "name": "announcerBox_07",
+            "type": "announcer",
+            "location": [ 2, 5 ],
+            "text": "Ms. Augustine is having trouble controlling her classes, where nobody seems to be willing to listen to ideas about respect.",
+            "announcerBox": true
+          },
+          {
+            "name": "sound_4_01",
+            "type": "audio",
+            "audio": ["4_01"],
+            "variable": "sound_4_01"
+          }
+        ],
+        "outcomes": {
+          "scene_5_start": {
+            "events": {"sound_4_01": "played" },
+            "actions": [
+              { "type": "scene", "args": [ "scene5" ] }
+            ]
+          }
+        }
+      },
+      "scene5": {
+        "id": "scene5",
+        "background": "hallwayBackgroundStudents",
+        "title": "Presentation Scene 5",
+        "description": "continuing presentation hallway students",
+        "call": {"func": "sendSCORM"},
+        "actors": [
+          {
+            "name": "announcerBox_08",
+            "type": "announcer",
+            "location": [ 2, 5 ],
+            "text": "If only you would speak up, the school climate might improve.",
+            "announcerBox": true
+          },
+          {
+            "name": "sound_5_01",
+            "type": "audio",
+            "audio": ["5_01"],
+            "variable": "sound_5_01"
+          }
+        ],
+        "outcomes": {
+          "scene_5_ended": {
+            "events": {"sound_5_01": "played" },
+            "actions": [
+              { "type": "add-actor", "args": [
+                {
+                  "name": "moveonbox",
+                  "type": "instructions",
+                  "location": [ 300, 250 ],
+                  "text": "Please move on to the next activity."
+                }
+              ] }
+            ]
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,287 @@
+{
+  "play": {
+    "start": "scene1",
+    "showPlayThrough": false,
+    "scenes": {
+      "scene1": {
+        "id": "scene1",
+        "background": "cafeteriaBackground",
+        "title": "Scene 1",
+        "description": "grade 8 participate presentation scene 1 cafeteria",
+        "call": {"func": "sendSCORM"},
+        "actors": [
+          {
+            "name": "announcerBox_01",
+            "type": "announcer",
+            "location": [ 2, 5 ],
+            "text": "Here’s the bottom line: life is not good for you or anyone around you at Newbridge.",
+            "announcerBox": true
+          },
+          {
+            "name": "sound_1_01",
+            "type": "audio",
+            "audio": ["1_01"],
+            "variable": "sound_1_01"
+          }
+        ],
+        "outcomes": {
+          "scene_1_sound_2": {
+            "events": {"sound_1_01": "played" },
+            "actions": [
+              { "type": "remove-actor", "args": ["announcerBox_01"] },
+              { "type": "add-actor", "args": [
+                {
+                  "name": "announcerBox_02",
+                  "type": "announcer",
+                  "location": [ 2, 5 ],
+                  "text": "You’ve established yourself as someone who gets mad easily, and people have learned to fear your verbal attacks.",
+                  "announcerBox": true
+                }
+              ] },
+              { "type": "add-actor", "args": [
+                {
+                  "name": "sound_1_02",
+                  "type": "audio",
+                  "audio": [ "1_02"],
+                  "variable": "sound_1_02"
+                }
+              ] },
+              { "type": "add-actor", "args": [
+                {
+                  "name": "carrie",
+                  "type": "decoration",
+                  "image": "carrie",
+                  "key": "decorations",
+                  "location": [ 53, 230 ],
+                  "scale": [ 0.325, 0.325 ]
+                }
+              ] },
+              { "type": "add-actor", "args": [
+                {
+                  "name": "ross",
+                  "type": "decoration",
+                  "image": "ross",
+                  "key": "decorations",
+                  "location": [ 440, 216 ],
+                  "scale": [ 0.37, 0.37 ]
+                }
+              ] },
+              { "type": "add-actor", "args": [
+                {
+                  "name": "janelle",
+                  "type": "decoration",
+                  "image": "janelle",
+                  "key": "decorations",
+                  "location": [ 480, 225 ],
+                  "scale": [ 0.42, 0.42 ]
+                }
+              ] }
+            ]
+          },
+          "scene_2_start": {
+            "events": {"sound_1_02": "played" },
+            "actions": [
+              { "type": "scene", "args": [ "scene2" ] }
+            ]
+          }
+        }
+      },
+      "scene2": {
+        "id": "scene2",
+        "background": "hallwayBackground",
+        "title": "Presentation Scene 2",
+        "description": "continuing presentation hallway mandy",
+        "call": {"func": "sendSCORM"},
+        "actors": [
+          {
+            "name": "announcerBox_03",
+            "type": "announcer",
+            "location": [ 2, 5 ],
+            "text": "Mandy transferred to another school because she was feeling tortured and was afraid to come to Newbridge anymore.",
+            "announcerBox": true
+          },
+          {
+            "name": "sound_2_01",
+            "type": "audio",
+            "audio": ["2_01"],
+            "variable": "sound_2_01"
+          },
+          {
+            "name": "mandy",
+            "type": "decoration",
+            "image": "mandy",
+            "key": "decorations",
+            "location": [ 256, 163 ],
+            "scale": [ 0.45, 0.45 ],
+            "tween": {
+              "time": 4682,
+              "location": [ 340, 365 ],
+              "scale": [ 0.08, 0.08 ]
+            }
+          }
+        ],
+        "outcomes": {
+          "scene_2_sound_2": {
+            "events": {"sound_2_01": "played" },
+            "actions": [
+              { "type": "remove-actor", "args": ["mandy"] },
+              { "type": "add-actor", "args": [
+                {
+                  "name": "sound_2_02",
+                  "type": "audio",
+                  "audio": [ "2_02"],
+                  "variable": "sound_2_02"
+                }
+              ] }
+            ]
+          },
+          "scene_3_start": {
+            "events": {"sound_2_02": "played" },
+            "actions": [
+              { "type": "scene", "args": [ "scene3" ] }
+            ]
+          }
+        }
+      },
+      "scene3": {
+        "id": "scene3",
+        "background": "theaterBackground",
+        "title": "Presentation Scene 3",
+        "description": "continuing presentation theater",
+        "call": {"func": "sendSCORM"},
+        "actors": [
+          {
+            "name": "announcerBox_04",
+            "type": "announcer",
+            "location": [ 2, 5 ],
+            "text": "For a while, you and Dane bonded over \"chasing the new girl away\",",
+            "announcerBox": true
+          },
+          {
+            "name": "sound_3_01",
+            "type": "audio",
+            "audio": ["3_01"],
+            "variable": "sound_3_01"
+          },
+          {
+            "name": "ross",
+            "type": "decoration",
+            "image": "ross",
+            "key": "decorations",
+            "location": [ 302, 151 ],
+            "scale": [ 0.252, 0.252 ]
+          },
+          {
+            "name": "janelle",
+            "type": "decoration",
+            "image": "janelle",
+            "key": "decorations",
+            "location": [ 310, 162 ],
+            "scale": [ -0.285, 0.285 ]
+          },
+          {
+            "name": "tom",
+            "type": "decoration",
+            "image": "tom",
+            "key": "decorations",
+            "location": [ 387, 159 ],
+            "scale": [ 0.262, 0.262 ]
+          },
+          {
+            "name": "dane",
+            "type": "decoration",
+            "image": "dane",
+            "key": "decorations",
+            "location": [ -75, 124 ],
+            "scale": [ 1.0, 1.0 ]
+          }
+        ],
+        "outcomes": {
+          "scene_4_start": {
+            "events": {"sound_3_01": "played" },
+            "actions": [
+              { "type": "scene", "args": [ "scene4" ] }
+            ]
+          }
+        }
+      },
+      "scene4": {
+        "id": "scene4",
+        "background": "classroomBackground",
+        "title": "Presentation Scene 4",
+        "description": "continuing presentation classroom dane",
+        "call": {"func": "sendSCORM"},
+        "actors": [
+          {
+            "name": "announcerBox_05",
+            "type": "announcer",
+            "location": [ 2, 5 ],
+            "text": "but you ended up getting in a fight over who was tougher. You both got in-school suspensions, but it hasn’t taught you anything. You’re still as mean as ever.",
+            "announcerBox": true
+          },
+          {
+            "name": "sound_4_01",
+            "type": "audio",
+            "audio": ["4_01"],
+            "variable": "sound_4_01"
+          },
+          {
+            "name": "desks",
+            "type": "decoration",
+            "image": "desks",
+            "key": "decorations",
+            "location": [ 0, 0 ],
+            "scale": [ 1.0, 1.0 ]
+          },
+          {
+            "name": "dane",
+            "type": "decoration",
+            "image": "dane",
+            "key": "decorations",
+            "location": [ -75, 124 ],
+            "scale": [ 1.0, 1.0 ]
+          }
+        ],
+        "outcomes": {
+          "scene_4_sound_2": {
+            "events": {"sound_4_01": "played" },
+            "actions": [
+              { "type": "remove-actor", "args": ["dane"] },
+              { "type": "remove-actor", "args": ["announcerBox_05"] },
+              { "type": "add-actor", "args": [
+                {
+                  "name": "announcerBox_06",
+                  "type": "announcer",
+                  "location": [ 2, 5 ],
+                  "text": "And it’s time for you to think about how you’re going to get back on the path of respect.",
+                  "announcerBox": true
+                }
+              ] },
+              { "type": "add-actor", "args": [
+                {
+                  "name": "sound_4_02",
+                  "type": "audio",
+                  "audio": [ "4_02"],
+                  "variable": "sound_4_02"
+                }
+              ] }
+            ]
+          },
+          "scene_4_ended": {
+            "events": {"sound_4_02": "played" },
+            "actions": [
+              { "type": "add-actor", "args": [
+                {
+                  "name": "moveonbox",
+                  "type": "instructions",
+                  "location": [ 300, 250 ],
+                  "text": "Please move on to the next activity."
+                }
+              ] }
+            ]
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,321 @@
+{
+  "play": {
+    "start": "scene1",
+    "showPlayThrough": false,
+    "scenes": {
+      "scene1": {
+        "id": "scene1",
+        "background": "cafeteria",
+        "title": "Scene 1",
+        "description": "grade 8 discourage presentation scene 1 cafeteria",
+        "call": {"func": "sendSCORM"},
+        "actors": [
+          {
+            "name": "announcerBox_01",
+            "type": "announcer",
+            "location": [ 2, 5 ],
+            "text": "The choices you make are generally positive, but some of them could be better.",
+            "announcerBox": true
+          },
+          {
+            "name": "sound_1_01",
+            "type": "audio",
+            "audio": ["1_01"],
+            "variable": "sound_1_01"
+          }
+        ],
+        "outcomes": {
+          "scene_2_start": {
+            "events": {"sound_1_01": "played" },
+            "actions": [
+              { "type": "scene", "args": [ "scene2" ] }
+            ]
+          }
+        }
+      },
+      "scene2": {
+        "id": "scene2",
+        "background": "theaterBackground",
+        "title": "Presentation Scene 2",
+        "description": "continuing presentation theater",
+        "call": {"func": "sendSCORM"},
+        "actors": [
+          {
+            "name": "dane",
+            "type": "decoration",
+            "image": "dane",
+            "key": "decorations",
+            "location": [ -20, 298 ],
+            "scale": [ 0.37, 0.37 ],
+            "tween": {
+              "time": 2000,
+              "location": [ 135, 30 ],
+              "scale": [ 1.0, 1.0 ]
+            }
+          },
+          {
+            "name": "announcerBox_02",
+            "type": "announcer",
+            "location": [ 2, 5 ],
+            "text": "Bullying is like a sickness – it will get worse if it’s not treated.",
+            "announcerBox": true
+          },
+          {
+            "name": "sound_2_01",
+            "type": "audio",
+            "audio": ["2_01"],
+            "variable": "sound_2_01"
+          }
+        ],
+        "outcomes": {
+          "scene_2_sound_2": {
+            "events": {"sound_2_01": "played" },
+            "actions": [
+              { "type": "remove-actor", "args": ["announcerBox_02"] },
+              { "type": "remove-actor", "args": ["dane"] },
+              { "type": "add-actor", "args": [
+                {
+                  "name": "announcerBox_03",
+                  "type": "announcer",
+                  "location": [ 2, 5 ],
+                  "text": "And if you stand by while bullying takes place, it will spread and spread.",
+                  "announcerBox": true
+                }
+              ] },
+              { "type": "add-actor", "args": [
+                {
+                  "name": "sound_2_02",
+                  "type": "audio",
+                  "audio": [ "2_02"],
+                  "variable": "sound_2_02"
+                }
+              ] },
+              { "type": "add-actor", "args": [
+                {
+                  "name": "tom",
+                  "type": "decoration",
+                  "image": "tom",
+                  "key": "decorations",
+                  "location": [ 20, 240 ],
+                  "scale": [ 0.43, 0.43 ]
+                }
+              ] },
+              { "type": "add-actor", "args": [
+                {
+                  "name": "dane",
+                  "type": "decoration",
+                  "image": "dane",
+                  "key": "decorations",
+                  "location": [ 380, 122 ],
+                  "scale": [ 0.245, 0.245 ]
+                }
+              ] },
+              { "type": "add-actor", "args": [
+                {
+                  "name": "mandyFrown",
+                  "type": "decoration",
+                  "image": "mandyFrown",
+                  "key": "decorations",
+                  "location": [ 568, 130 ],
+                  "scale": [ -0.23, 0.23 ]
+                }
+              ] }
+            ]
+          },
+          "scene_2_sound_3": {
+            "events": {"sound_2_02": "played" },
+            "actions": [
+              { "type": "remove-actor", "args": ["tom"] },
+              { "type": "remove-actor", "args": ["announcerBox_03"] },
+              { "type": "add-actor", "args": [
+                {
+                  "name": "announcerBox_04",
+                  "type": "announcer",
+                  "location": [ 2, 5 ],
+                  "text": "Thinking that bullying is wrong just isn’t enough. Sometimes you have to act...",
+                  "announcerBox": true
+                }
+              ] },
+              { "type": "add-actor", "args": [
+                {
+                  "name": "sound_2_03",
+                  "type": "audio",
+                  "audio": [ "2_03"],
+                  "variable": "sound_2_03"
+                }
+              ] },
+              { "type": "add-actor", "args": [
+                {
+                  "name": "tom",
+                  "type": "decoration",
+                  "image": "tom",
+                  "key": "decorations",
+                  "location": [ 372, 123 ],
+                  "scale": [ -0.27, 0.27 ]
+                }
+              ] }
+            ]
+          },
+          "scene_2_sound_4": {
+            "events": {"sound_2_03": "played" },
+            "actions": [
+              { "type": "remove-actor", "args": ["announcerBox_04"] },
+              { "type": "remove-actor", "args": ["mandyFrown"] },
+              { "type": "remove-actor", "args": ["tom"] },
+              { "type": "add-actor", "args": [
+                {
+                  "name": "augustine",
+                  "type": "decoration",
+                  "image": "augustine",
+                  "key": "decorations",
+                  "location": [ 365, 73 ],
+                  "scale": [ -0.505, 0.505 ]
+                }
+              ] },
+              { "type": "add-actor", "args": [
+                {
+                  "name": "announcerBox_05",
+                  "type": "announcer",
+                  "location": [ 2, 5 ],
+                  "text": "...either by speaking out, or letting teachers know that there’s a problem.",
+                  "announcerBox": true
+                }
+              ] },
+              { "type": "add-actor", "args": [
+                {
+                  "name": "sound_2_04",
+                  "type": "audio",
+                  "audio": [ "2_04"],
+                  "variable": "sound_2_04"
+                }
+              ] },
+              { "type": "add-actor", "args": [
+                {
+                  "name": "tom",
+                  "type": "decoration",
+                  "image": "tom",
+                  "key": "decorations",
+                  "location": [ 372, 123 ],
+                  "scale": [ -0.27, 0.27 ]
+                }
+              ] },
+              { "type": "add-actor", "args": [
+                {
+                  "name": "mandySmile",
+                  "type": "decoration",
+                  "image": "mandySmile",
+                  "key": "decorations",
+                  "location": [ 497, 135 ],
+                  "scale": [ 0.335, 0.335 ]
+                }
+              ] }
+            ]
+          },
+          "scene_3_start": {
+            "events": {"sound_2_04": "played" },
+            "actions": [
+              { "type": "scene", "args": [ "scene3" ] }
+            ]
+          }
+        }
+      },
+      "scene3": {
+        "id": "scene3",
+        "background": "classroomMandySmile",
+        "title": "Presentation Scene 3",
+        "description": "continuing presentation classroom with mandy smiling",
+        "call": {"func": "sendSCORM"},
+        "actors": [
+          {
+            "name": "announcerBox_06",
+            "type": "announcer",
+            "location": [ 2, 5 ],
+            "text": "Mandy is feeling more comfortable, but she still gets picked on from time to time.",
+            "announcerBox": true
+          },
+          {
+            "name": "sound_3_01",
+            "type": "audio",
+            "audio": ["3_01"],
+            "variable": "sound_3_01"
+          }
+        ],
+        "outcomes": {
+          "scene_4_start": {
+            "events": {"sound_3_01": "played" },
+            "actions": [
+              { "type": "scene", "args": [ "scene4" ] }
+            ]
+          }
+        }
+      },
+      "scene4": {
+        "id": "scene4",
+        "background": "classroomMandyFrown",
+        "title": "Presentation Scene 4",
+        "description": "continuing presentation classroom with mandy frowning",
+        "call": {"func": "sendSCORM"},
+        "actors": [
+          {
+            "name": "announcerBox_07",
+            "type": "announcer",
+            "location": [ 2, 5 ],
+            "text": "This causes her to lash out at people even if they’re trying to help.",
+            "announcerBox": true
+          },
+          {
+            "name": "sound_4_01",
+            "type": "audio",
+            "audio": ["4_01"],
+            "variable": "sound_4_01"
+          }
+        ],
+        "outcomes": {
+          "scene_5_start": {
+            "events": {"sound_4_01": "played" },
+            "actions": [
+              { "type": "scene", "args": [ "scene5" ] }
+            ]
+          }
+        }
+      },
+      "scene5": {
+        "id": "scene5",
+        "background": "hallway",
+        "title": "Presentation Scene 5",
+        "description": "continuing presentation hallway everyone",
+        "call": {"func": "sendSCORM"},
+        "actors": [
+          {
+            "name": "announcerBox_08",
+            "type": "announcer",
+            "location": [ 2, 5 ],
+            "text": "If you acted on your beliefs a bit more, things could be better.",
+            "announcerBox": true
+          },
+          {
+            "name": "sound_5_01",
+            "type": "audio",
+            "audio": ["5_01"],
+            "variable": "sound_5_01"
+          }
+        ],
+        "outcomes": {
+          "scene_5_ended": {
+            "events": {"sound_5_01": "played" },
+            "actions": [
+              { "type": "add-actor", "args": [
+                {
+                  "name": "moveonbox",
+                  "type": "instructions",
+                  "location": [ 300, 250 ],
+                  "text": "Please move on to the next activity."
+                }
+              ] }
+            ]
+          }
+        }
+      }
+    }
+  }
+}

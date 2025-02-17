@@ -1,0 +1,189 @@
+{
+  "play": {
+    "start": "scene1",
+    "showPlayThrough": false,
+    "scenes": {
+      "scene1": {
+        "id": "scene1",
+        "background": "cafeteria",
+        "title": "Scene 1",
+        "description": "grade 8 encourage presentation scene 1 cafeteria",
+        "call": {"func": "sendSCORM"},
+        "actors": [
+          {
+            "name": "announcerBox_01",
+            "type": "announcer",
+            "location": [ 2, 5 ],
+            "text": "The bullies at Newbridge are who they are because of you.",
+            "announcerBox": true
+          },
+          {
+            "name": "sound_1_01",
+            "type": "audio",
+            "audio": ["1_01"],
+            "variable": "sound_1_01"
+          }
+        ],
+        "outcomes": {
+          "scene_2_start": {
+            "events": {"sound_1_01": "played" },
+            "actions": [
+              { "type": "scene", "args": [ "scene2" ] }
+            ]
+          }
+        }
+      },
+      "scene2": {
+        "id": "scene2",
+        "background": "theater",
+        "title": "Presentation Scene 2",
+        "description": "continuing presentation theater dane",
+        "call": {"func": "sendSCORM"},
+        "actors": [
+          {
+            "name": "announcerBox_02",
+            "type": "announcer",
+            "location": [ 2, 5 ],
+            "text": "When you see someone getting hurt emotionally or physically by a bully, your usual reaction is to laugh and encourage that kind of behavior.",
+            "announcerBox": true
+          },
+          {
+            "name": "sound_2_01",
+            "type": "audio",
+            "audio": ["2_01"],
+            "variable": "sound_2_01"
+          }
+        ],
+        "outcomes": {
+          "scene_3_start": {
+            "events": {"sound_2_01": "played" },
+            "actions": [
+              { "type": "scene", "args": [ "scene3" ] }
+            ]
+          }
+        }
+      },
+      "scene3": {
+        "id": "scene3",
+        "background": "hallwayBackground",
+        "title": "Presentation Scene 3",
+        "description": "continuing presentation hallway",
+        "call": {"func": "sendSCORM"},
+        "actors": [
+          {
+            "name": "announcerBox_03",
+            "type": "announcer",
+            "location": [ 2, 5 ],
+            "text": "Mandy is on the verge of leaving Newbridge, because Dane has started leaving messages all over – on lockers, in the library, in classrooms – making fun of her physical appearance. You’re not helping by congratulating him when you see him.",
+            "announcerBox": true
+          },
+          {
+            "name": "sound_3_01",
+            "type": "audio",
+            "audio": ["3_01"],
+            "variable": "sound_3_01"
+          },
+          {
+            "name": "flyers",
+            "type": "decoration",
+            "image": "flyers",
+            "key": "decorations",
+            "location": [ -6, 170 ],
+            "scale": [ 1.0, 1.0 ]
+          },
+          {
+            "name": "mandy",
+            "type": "decoration",
+            "image": "mandy",
+            "key": "decorations",
+            "location": [ 425, 225 ],
+            "scale": [ 0.245, 0.245 ]
+          }
+        ],
+        "outcomes": {
+          "scene_3_sound_2": {
+            "events": {"sound_3_01": "played" },
+            "actions": [
+              { "type": "remove-actor", "args": ["announcerBox_03"] },
+              { "type": "remove-actor", "args": ["mandy"] },
+              { "type": "add-actor", "args": [
+                {
+                  "name": "announcerBox_04",
+                  "type": "announcer",
+                  "location": [ 2, 5 ],
+                  "text": "Ms. Augustine has tried to oppose this kind of behavior, which seems to be spreading, but she’s getting very little support from students.",
+                  "announcerBox": true
+                }
+              ] },
+              { "type": "add-actor", "args": [
+                {
+                  "name": "sound_3_02",
+                  "type": "audio",
+                  "audio": [ "3_02"],
+                  "variable": "sound_3_02"
+                }
+              ] },
+              { "type": "add-actor", "args": [
+                {
+                  "name": "augustine",
+                  "type": "decoration",
+                  "image": "augustine",
+                  "key": "decorations",
+                  "location": [ 265, 180 ],
+                  "scale": [ 0.54, 0.54 ]
+                }
+              ] }
+            ]
+          },
+          "scene_3_sound_3": {
+            "events": {"sound_3_02": "played" },
+            "actions": [
+              { "type": "remove-actor", "args": ["augustine"] },
+              { "type": "remove-actor", "args": ["announcerBox_04"] },
+              { "type": "add-actor", "args": [
+                {
+                  "name": "dane",
+                  "type": "decoration",
+                  "image": "dane",
+                  "key": "decorations",
+                  "location": [ 25, 70 ],
+                  "scale": [ 1.60, 1.60 ]
+                }
+              ] },
+              { "type": "add-actor", "args": [
+                {
+                  "name": "announcerBox_05",
+                  "type": "announcer",
+                  "location": [ 2, 5 ],
+                  "text": "It’s time to think about how your actions are affecting the state of Newbridge Middle School.",
+                  "announcerBox": true
+                }
+              ] },
+              { "type": "add-actor", "args": [
+                {
+                  "name": "sound_3_03",
+                  "type": "audio",
+                  "audio": [ "3_03"],
+                  "variable": "sound_3_03"
+                }
+              ] }
+            ]
+          },
+          "scene_3_ended": {
+            "events": {"sound_3_03": "played" },
+            "actions": [
+              { "type": "add-actor", "args": [
+                {
+                  "name": "moveonbox",
+                  "type": "instructions",
+                  "location": [ 300, 250 ],
+                  "text": "Please move on to the next activity."
+                }
+              ] }
+            ]
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,328 @@
+{
+  "play": {
+    "start": "scene1",
+    "showPlayThrough": false,
+    "scenes": {
+      "scene1": {
+        "id": "scene1",
+        "background": "cafeteriaBackground",
+        "title": "Scene 1",
+        "description": "grade 8 prevent presentation scene 1 cafeteria",
+        "call": {"func": "sendSCORM"},
+        "actors": [
+          {
+            "name": "announcerBox_01",
+            "type": "announcer",
+            "location": [ 2, 5 ],
+            "text": "You put your beliefs to work.",
+            "announcerBox": true
+          },
+          {
+            "name": "sound_1_01",
+            "type": "audio",
+            "audio": ["1_01"],
+            "variable": "sound_1_01"
+          }
+        ],
+        "outcomes": {
+          "scene_1_sound_2": {
+            "events": {"sound_1_01": "played" },
+            "actions": [
+              { "type": "remove-actor", "args": ["announcerBox_01"] },
+              { "type": "add-actor", "args": [
+                {
+                  "name": "announcerBox_02",
+                  "type": "announcer",
+                  "location": [ 2, 5 ],
+                  "text": "When it comes to respect, people know you as someone who gives it unconditionally,",
+                  "announcerBox": true
+                }
+              ] },
+              { "type": "add-actor", "args": [
+                {
+                  "name": "sound_1_02",
+                  "type": "audio",
+                  "audio": [ "1_02"],
+                  "variable": "sound_1_02"
+                }
+              ] },
+              { "type": "add-actor", "args": [
+                {
+                  "name": "tom",
+                  "type": "decoration",
+                  "image": "tom",
+                  "key": "decorations",
+                  "location": [ 208, 110 ],
+                  "scale": [ -0.55, 0.55 ],
+                  "tween": {
+                    "time": 1600,
+                    "location": [ 213, 150 ],
+                    "scale": [ -0.47, 0.47 ]
+                  }
+                }
+              ] },
+              { "type": "add-actor", "args": [
+                {
+                  "name": "carrie",
+                  "type": "decoration",
+                  "image": "carrie",
+                  "key": "decorations",
+                  "location": [ 540, 126 ],
+                  "scale": [ -0.68, 0.68 ],
+                  "tween": {
+                    "time": 1600,
+                    "location": [ 440, 156 ],
+                    "scale": [ -0.58, 0.58 ]
+                  }
+                }
+              ] },
+              { "type": "add-actor", "args": [
+                {
+                  "name": "freddie",
+                  "type": "decoration",
+                  "image": "freddie",
+                  "key": "decorations",
+                  "location": [ 388, 141 ],
+                  "scale": [ -0.55, 0.55 ],
+                  "tween": {
+                    "time": 1600,
+                    "location": [ 320, 176 ],
+                    "scale": [ -0.47, 0.47 ]
+                  }
+                }
+              ] }
+            ]
+          },
+          "scene_1_sound_3": {
+            "events": {"sound_1_02": "played" },
+            "actions": [
+              { "type": "remove-actor", "args": ["announcerBox_02"] },
+              { "type": "remove-actor", "args": ["freddie"] },
+              { "type": "remove-actor", "args": ["carrie"] },
+              { "type": "add-actor", "args": [
+                {
+                  "name": "announcerBox_03",
+                  "type": "announcer",
+                  "location": [ 2, 5 ],
+                  "text": "and also expects it in return.",
+                  "announcerBox": true
+                }
+              ] },
+              { "type": "add-actor", "args": [
+                {
+                  "name": "sound_1_03",
+                  "type": "audio",
+                  "audio": [ "1_03"],
+                  "variable": "sound_1_03"
+                }
+              ] },
+              { "type": "add-actor", "args": [
+                {
+                  "name": "mandy",
+                  "type": "decoration",
+                  "image": "mandy",
+                  "key": "decorations",
+                  "location": [ 300, 176 ],
+                  "scale": [ 0.56, 0.56 ]
+                }
+              ] },
+              { "type": "add-actor", "args": [
+                {
+                  "name": "freddie",
+                  "type": "decoration",
+                  "image": "freddie",
+                  "key": "decorations",
+                  "location": [ 320, 176 ],
+                  "scale": [ -0.47, 0.47 ]
+                }
+              ] },
+              { "type": "add-actor", "args": [
+                {
+                  "name": "carrie",
+                  "type": "decoration",
+                  "image": "carrie",
+                  "key": "decorations",
+                  "location": [ 511, 152 ],
+                  "scale": [ -0.57, 0.57 ]
+                }
+              ] }
+            ]
+          },
+          "scene_2_start": {
+            "events": {"sound_1_03": "played" },
+            "actions": [
+              { "type": "scene", "args": [ "scene2" ] }
+            ]
+          }
+        }
+      },
+      "scene2": {
+        "id": "scene2",
+        "background": "theaterBackgroundJanelleTom",
+        "title": "Presentation Scene 2",
+        "description": "continuing presentation theater dane janelle ross tom",
+        "call": {"func": "sendSCORM"},
+        "actors": [
+          {
+            "name": "announcerBox_04",
+            "type": "announcer",
+            "location": [ 2, 5 ],
+            "text": "Dane tried a couple more times to sabotage the diversity play,",
+            "announcerBox": true
+          },
+          {
+            "name": "sound_2_01",
+            "type": "audio",
+            "audio": ["2_01"],
+            "variable": "sound_2_01"
+          },
+          {
+            "name": "ross",
+            "type": "decoration",
+            "image": "ross",
+            "key": "decorations",
+            "location": [ 287, 153 ],
+            "scale": [ 0.25, 0.25 ]
+          },
+          {
+            "name": "dane",
+            "type": "decoration",
+            "image": "dane",
+            "key": "decorations",
+            "location": [ -95, 120 ],
+            "scale": [ 1.0, 1.0 ]
+          }
+        ],
+        "outcomes": {
+          "scene_2_sound_2": {
+            "events": {"sound_2_01": "played" },
+            "actions": [
+              { "type": "remove-actor", "args": ["announcerBox_04"] },
+              { "type": "add-actor", "args": [
+                {
+                  "name": "announcerBox_05",
+                  "type": "announcer",
+                  "location": [ 2, 5 ],
+                  "text": "but your influence at school gave the play a lot of support from students and teachers.",
+                  "announcerBox": true
+                }
+              ] },
+              { "type": "remove-actor", "args": ["dane"] },
+              { "type": "add-actor", "args": [
+                {
+                  "name": "sound_2_02",
+                  "type": "audio",
+                  "audio": [ "2_02"],
+                  "variable": "sound_2_02"
+                }
+              ] }
+            ]
+          },
+          "scene_3_start": {
+            "events": {"sound_2_02": "played" },
+            "actions": [
+              { "type": "scene", "args": [ "scene3" ] }
+            ]
+          }
+        }
+      },
+      "scene3": {
+        "id": "scene3",
+        "background": "classroomAugustine",
+        "title": "Presentation Scene 3",
+        "description": "continuing presentation classroom augustine",
+        "call": {"func": "sendSCORM"},
+        "actors": [
+          {
+            "name": "announcerBox_06",
+            "type": "announcer",
+            "location": [ 2, 5 ],
+            "text": "Ms. Augustine was so inspired that she’s now working to revise the school’s anti-bullying program.",
+            "announcerBox": true
+          },
+          {
+            "name": "sound_3_01",
+            "type": "audio",
+            "audio": ["3_01"],
+            "variable": "sound_3_01"
+          }
+        ],
+        "outcomes": {
+          "scene_4_start": {
+            "events": {"sound_3_01": "played" },
+            "actions": [
+              { "type": "scene", "args": [ "scene4" ] }
+            ]
+          }
+        }
+      },
+      "scene4": {
+        "id": "scene4",
+        "background": "hallwayEveryone",
+        "title": "Presentation Scene 4",
+        "description": "continuing presentation hallway everyone",
+        "call": {"func": "sendSCORM"},
+        "actors": [
+          {
+            "name": "announcerBox_07",
+            "type": "announcer",
+            "location": [ 2, 5 ],
+            "text": "Overall, the climate at Newbridge is great, and part of that is thanks to you.",
+            "announcerBox": true
+          },
+          {
+            "name": "sound_4_01",
+            "type": "audio",
+            "audio": ["4_01"],
+            "variable": "sound_4_01"
+          }
+        ],
+        "outcomes": {
+          "scene_5_start": {
+            "events": {"sound_4_01": "played" },
+            "actions": [
+              { "type": "scene", "args": [ "scene5" ] }
+            ]
+          }
+        }
+      },
+      "scene5": {
+        "id": "scene5",
+        "background": "theaterBackgroundTomFreddieCarrie",
+        "title": "Presentation Scene 5",
+        "description": "continuing presentation theater tom freddie carrie",
+        "call": {"func": "sendSCORM"},
+        "actors": [
+          {
+            "name": "announcerBox_08",
+            "type": "announcer",
+            "location": [ 2, 5 ],
+            "text": "Overall, the climate at Newbridge is great, and part of that is thanks to you.",
+            "announcerBox": true
+          },
+          {
+            "name": "sound_5_01",
+            "type": "audio",
+            "audio": ["5_01"],
+            "variable": "sound_5_01"
+          }
+        ],
+        "outcomes": {
+          "scene_5_ended": {
+            "events": {"sound_5_01": "played" },
+            "actions": [
+              { "type": "add-actor", "args": [
+                {
+                  "name": "moveonbox",
+                  "type": "instructions",
+                  "location": [ 300, 250 ],
+                  "text": "Please move on to the next activity."
+                }
+              ] }
+            ]
+          }
+        }
+      }
+    }
+  }
+}

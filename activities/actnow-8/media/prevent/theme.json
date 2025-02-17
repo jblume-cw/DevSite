@@ -1,0 +1,70 @@
+{
+  "texture": "media/prevent/texture.png",
+  "textureMap": "media/prevent/texture.json",
+  "textureKey": "prevent_8_texture",
+  "data": "media/prevent/sceneData.json",
+  "fonts" : {
+    "bubbleText": { "font": "15px Tahoma", "fill": "#000000",  "fontWeight": "bold" },
+    "bubbleIcon": { "font": "12pt Arial", "fill": "#000000", "fontWeight": "bold", "align": "center" },
+    "replayAudio": { "font": "12px Tahoma", "fill": "#333333",  "fontWeight": "normal" },
+    "heading": { "font": "23pt nunitoregular", "fill": "black", "align": "left", "fontWeight": "bold"},
+    "standard": { "font": "21pt nunitoregular", "fill": "black", "align": "left",
+      "wordWrap": true, "wordWrapWidth": 500, "fontWeight": "bold"},
+    "goodbye": { "font": "18pt nunitoregular", "fill": "black", "align": "center",
+      "wordWrap": true, "wordWrapWidth": 500},
+    "large": { "font": "28pt nunitoregular", "fill": "black", "align": "left", "fontWeight": "bold"},
+    "moveOn": { "font": "32px nunitoregular", "fill": "#000000",  "fontWeight": "normal" }
+  },
+  "images": {
+    "actorImages": {
+      "announcer-box": "wall-speaker.png"
+    },
+    "decorations": {
+      "carrie": "talking-carrie.png",
+      "dane": "talking-dane.png",
+      "freddie": "talking-freddie.png",
+      "mandy": "mandy.png",
+      "ross": "talking-ross.png",
+      "tom": "talking-tom.png"
+    }
+  },
+  "sceneImages": {
+    "cafeteriaBackground": "presentation-8-1-1.png",
+    "classroomAugustine": "presentation-8-1-6.png",
+    "hallwayEveryone": "presentation-8-1-7.png",
+    "theaterBackgroundJanelleTom": "presentation-1-anim-4a.png",
+    "theaterBackgroundTomFreddieCarrie": "presentation-8-1-8.png"
+  },
+  "buttons": {
+    "exit": {
+      "up": "get-the-facts-exit.png",
+      "over": "get-the-facts-exit.png",
+      "out": "get-the-facts-exit.png",
+      "down": "get-the-facts-exit.png"
+    }
+  },
+  "textWindows": {
+    "announce": {
+      "top": "wall-speaker-talk-bubble-top.png",
+      "middle": "wall-speaker-talk-bubble-middle.png",
+      "bottom": "wall-speaker-talk-bubble-bottom.png"
+    },
+    "instruction": "move-on-box.png"
+  },
+  "tints": {
+    "bubbleText" : "#CDCDCD"
+  },
+  "soundKey": "prevent_8_sounds",
+  "soundFile": [ "media/prevent/prevent8.m4a", "media/prevent/prevent8.ogg" ],
+  "sounds": {
+    "all": [ 0.0, 26.285, false, "nar_8th_pre_01.wav"],
+    "1_01":  [  0.000, 1.472, false, "scene 1, <cafeteria +PA>                          You put your beliefs to work."],
+    "1_02":  [  1.472, 4.101, false, "scene 1, <PA +tom +freddie +carrie all tween>     When it comes to respect, people know you as someone who gives it unconditionally,"],
+    "1_03":  [  5.573, 1.691, false, "scene 1, <PA +mandySmile>                         and also expects it in return."],
+    "2_01":  [  7.264, 3.945, false, "scene 2, <theater +PA +dane +janelle +ross +tom>  Dane tried a couple more times to sabotage the diversity play,"],
+    "2_02":  [ 11.209, 4.477, false, "scene 2, <PA -dane>                               but your influence at school gave the play a lot of support from students and teachers."],
+    "3_01":  [ 15.686, 5.621, false, "scene 3, <classroom +PA +desks +augustine>        Ms. Augustine was so inspired that she’s now working to revise the school’s anti-bullying program."],
+    "4_01":  [ 21.307, 3.068, false, "scene 4, <hallway +PA +everyone>                  Overall, the climate at Newbridge is great,"],
+    "5_01":  [ 24.375, 1.910, false, "scene 5, <theater +PA +tom +freddie +carrie>      <continuing from previous scene> and part of that is thanks to you."]
+  }
+}

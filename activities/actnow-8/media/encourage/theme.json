@@ -1,0 +1,63 @@
+{
+  "texture": "media/encourage/texture.png",
+  "textureMap": "media/encourage/texture.json",
+  "textureKey": "encourage_8_texture",
+  "data": "media/encourage/sceneData.json",
+  "fonts" : {
+    "bubbleText": { "font": "14px Tahoma", "fill": "#000000",  "fontWeight": "bold" },
+    "bubbleIcon": { "font": "12pt Arial", "fill": "#000000", "fontWeight": "bold", "align": "center" },
+    "replayAudio": { "font": "12px Tahoma", "fill": "#333333",  "fontWeight": "normal" },
+    "heading": { "font": "23pt nunitoregular", "fill": "black", "align": "left", "fontWeight": "bold"},
+    "standard": { "font": "21pt nunitoregular", "fill": "black", "align": "left",
+      "wordWrap": true, "wordWrapWidth": 500, "fontWeight": "bold"},
+    "goodbye": { "font": "18pt nunitoregular", "fill": "black", "align": "center",
+      "wordWrap": true, "wordWrapWidth": 500},
+    "large": { "font": "28pt nunitoregular", "fill": "black", "align": "left", "fontWeight": "bold"},
+    "moveOn": { "font": "32px nunitoregular", "fill": "#000000",  "fontWeight": "normal" }
+  },
+  "images": {
+    "actorImages": {
+      "announcer-box": "wall-speaker.png"
+    },
+    "decorations": {
+      "flyers": "hallway-flyers.png",
+      "augustine": "presentation-augustine-sad.png",
+      "dane": "talking-dane.png",
+      "mandy": "talking-mandy.png"
+    }
+  },
+  "sceneImages": {
+    "cafeteria": "presentation-8-4-1.png",
+    "theater": "presentation-8-4-2.png",
+    "hallwayBackground": "hallway-background.png"
+  },
+  "buttons": {
+    "exit": {
+      "up": "get-the-facts-exit.png",
+      "over": "get-the-facts-exit.png",
+      "out": "get-the-facts-exit.png",
+      "down": "get-the-facts-exit.png"
+    }
+  },
+  "textWindows": {
+    "announce": {
+      "top": "wall-speaker-talk-bubble-top.png",
+      "middle": "wall-speaker-talk-bubble-middle.png",
+      "bottom": "wall-speaker-talk-bubble-bottom.png"
+    },
+    "instruction": "move-on-box.png"
+  },
+  "tints": {
+    "bubbleText" : "#CDCDCD"
+  },
+  "soundKey": "encourage_8_sounds",
+  "soundFile": [ "media/encourage/encourage8.m4a", "media/encourage/encourage8.ogg" ],
+  "sounds": {
+    "all": [ 0.0, 37.712, false, "nar_8th_pre_04.wav"],
+    "1_01":  [  0.000,  3.017, false, "scene 1, <cafeteria +PA +tom +freddie +carrie>  The bullies at Newbridge are who they are because of you."],
+    "2_01":  [  3.017,  7.698, false, "scene 2, <theater +PA +dane>                    When you see someone getting hurt emotionally or physically by a bully, your usual reaction is to laugh and encourage that kind of behavior."],
+    "3_01":  [ 10.715, 13.798, false, "scene 3, <hallway +PA +flyers +mandyFrown>      Mandy is on the verge of leaving Newbridge, because Dane has started leaving messages all over – on lockers, in the library, in classrooms – making fun of her physical appearance. You’re not helping by congratulating him when you see him."],
+    "3_02":  [ 24.513,  7.853, false, "scene 3, <hallway +PA -mandy +augustineFrown>   Ms. Augustine has tried to oppose this kind of behavior, which seems to be spreading; but she’s getting very little support from students."],
+    "3_03":  [ 32.366,  5.346, false, "scene 3, <hallway +PA -augustine +dane>         It’s time to think about how your actions are affecting the state of Newbridge Middle School."]
+  }
+}

@@ -1,0 +1,69 @@
+{
+  "texture": "media/participate/texture.png",
+  "textureMap": "media/participate/texture.json",
+  "textureKey": "participate_8_texture",
+  "data": "media/participate/sceneData.json",
+  "fonts" : {
+    "bubbleText": { "font": "15px Tahoma", "fill": "#000000",  "fontWeight": "bold" },
+    "bubbleIcon": { "font": "12pt Arial", "fill": "#000000", "fontWeight": "bold", "align": "center" },
+    "replayAudio": { "font": "12px Tahoma", "fill": "#333333",  "fontWeight": "normal" },
+    "heading": { "font": "23pt nunitoregular", "fill": "black", "align": "left", "fontWeight": "bold"},
+    "standard": { "font": "21pt nunitoregular", "fill": "black", "align": "left",
+      "wordWrap": true, "wordWrapWidth": 500, "fontWeight": "bold"},
+    "goodbye": { "font": "18pt nunitoregular", "fill": "black", "align": "center",
+      "wordWrap": true, "wordWrapWidth": 500},
+    "large": { "font": "28pt nunitoregular", "fill": "black", "align": "left", "fontWeight": "bold"},
+    "moveOn": { "font": "32px nunitoregular", "fill": "#000000" }
+  },
+  "images": {
+    "actorImages": {
+      "announcer-box": "wall-speaker.png"
+    },
+    "decorations": {
+      "desks": "classroom-foreground.png",
+      "carrie": "talking-carrie.png",
+      "dane": "talking-dane.png",
+      "janelle": "talking-janelle.png",
+      "mandy": "talking-mandy.png",
+      "ross": "talking-ross.png",
+      "tom": "talking-tom.png"
+    }
+  },
+  "sceneImages": {
+    "cafeteriaBackground": "presentation-8-1-1.png",
+    "classroomBackground": "classroom-background.png",
+    "hallwayBackground": "hallway-background.png",
+    "theaterBackground": "theater-background.png"
+  },
+  "buttons": {
+    "exit": {
+      "up": "get-the-facts-exit.png",
+      "over": "get-the-facts-exit.png",
+      "out": "get-the-facts-exit.png",
+      "down": "get-the-facts-exit.png"
+    }
+  },
+  "textWindows": {
+    "announce": {
+      "top": "wall-speaker-talk-bubble-top.png",
+      "middle": "wall-speaker-talk-bubble-middle.png",
+      "bottom": "wall-speaker-talk-bubble-bottom.png"
+    },
+    "instruction": "move-on-box.png"
+  },
+  "tints": {
+    "bubbleText" : "#CDCDCD"
+  },
+  "soundKey": "participate_8_Sounds",
+  "soundFile": [ "media/participate/participate8.m4a", "media/participate/participate8.ogg" ],
+  "sounds": {
+    "all": [ 0.0, 34.752, false, "nar_8th_pre_05.wav"],
+    "1_01":  [  0.000, 4.809, false, "scene 1, <cafeteria +PA>                          Here’s the bottom line: life is not good for you or anyone around you at Newbridge."],
+    "1_02":  [  4.809, 6.289, false, "scene 1, <PA +carrie +ross + janelle>             You’ve established yourself as someone who gets mad easily, and people have learned to fear your verbal attacks."],
+    "2_01":  [ 11.098, 4.682, false, "scene 2, <hallway +PA +mandyFading>               Mandy transferred to another school because she was feeling tortured and was afraid"],
+    "2_02":  [ 15.780, 1.298, false, "scene 2, <-mandy>                                 to come to Newbridge anymore."],
+    "3_01":  [ 17.078, 4.768, false, "scene 3, <theater +PA +dane +janelle +ross +tom>  For a while, you and Dane bonded over \"chasing the new girl away\","],
+    "4_01":  [ 21.846, 8.529, false, "scene 3, <classroom +desks +PA +dane>             but you ended up getting in a fight over who was tougher. You both got in-school suspensions, but it hasn’t taught you anything. You’re still as mean as ever."],
+    "4_02":  [ 30.375, 4.377, false, "scene 3, <PA -dane>                               It’s time for you to think about how you’re going to get back on the path of respect."]
+  }
+}

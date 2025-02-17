@@ -1,0 +1,468 @@
+{
+  "texture": "media/default/texture.png",
+  "textureMap": "media/default/texture.json",
+  "textureKey": "act_now_8_texture",
+  "data": "media/default/sceneData.json",
+  "fonts" : {
+    "standard": { "font": "15px Arial", "fill": "black", "align": "left", "wordWrap": true, "wordWrapWidth": 550},
+    "playThrough": { "font": "12px Arial", "fill": "black", "align": "left"},
+    "bubbleText": { "font": "15px Tahoma", "fill": "#000000",  "fontWeight": "bold" },
+    "bubbleIcon": { "font": "12pt Arial", "fill": "#000000", "fontWeight": "bold", "align": "center" },
+    "replayAudio": { "font": "12px Tahoma", "fill": "#333333",  "fontWeight": "normal" },
+    "zinkPoster": { "font": "14px nunitoregular", "fill": "#000000",  "fontWeight": "normal" },
+    "phoneHeader": { "font": "16px oswaldregular", "fill": "#BFBFBF",  "fontWeight": "normal" },
+    "phoneBody": { "font": "16px Microsoft Sans Serif", "fill": "#353535",  "fontWeight": "normal" },
+    "phoneBodyLink": { "font": "16px Microsoft Sans Serif", "fill": "#353535",  "fontWeight": "normal",  "fontStyle": "italic" },
+    "moveOn": { "font": "32px nunitoregular", "fill": "#000000",  "fontWeight": "normal" },
+    "whiteboardGraffiti1": { "font": "36px kindergartenregular", "fill": "#000000", "wordWrap": true, "wordWrapWidth": 670, "lineSpacing": -10 },
+    "whiteboardGraffiti2": { "font": "22px firstgraderregular", "fill": "#000000", "wordWrap": true, "wordWrapWidth": 670 },
+    "whiteboardResponse": { "font": "40px secondgraderregular", "fill": "#021EAA", "align": "center", "wordWrap": true, "wordWrapWidth": 670 }
+  },
+  "images": {
+    "actorImages": {
+      "announcer-box": "wall-speaker.png",
+      "janelle": "talking-janelle.png",
+      "janelle-talk": "talking-janelle.png",
+      "freddie": "talking-freddie.png",
+      "freddie-talk": "talking-freddie.png",
+      "mandy": "mandy.png",
+      "mandy-talk": "talking-mandy.png",
+      "mandySad": "mandy.png",
+      "mandySad-talk": "talking-mandy.png",
+      "tom": "tom.png",
+      "tom-talk": "talking-tom.png",
+      "augustine": "talking-augustine.png",
+      "augustine-talk": "talking-augustine.png",
+      "carrie": "talking-carrie.png",
+      "carrie-talk": "talking-carrie.png",
+      "dane": "talking-dane.png",
+      "dane-talk": "talking-dane.png",
+      "ross": "talking-ross.png",
+      "ross-talk": "talking-ross.png",
+      "myFaceTubeLogin": "my-face-tube-login.png",
+      "myFaceTubeWarning1": "my-face-tube-warning1.png",
+      "myFaceTubeWarning2": "my-face-tube-warning2.png",
+      "letter": "cafeteria-letter-small.png",
+      "computerButtonAntiBullyingCampaigns": "computer-button-anti-bullying-campaigns.png",
+      "computerButtonChat": "computer-button-chat.png",
+      "computerButtonHowCanYou": "computer-button-how-can-you.png",
+      "computerButtonZink": "computer-button-zink.png",
+      "video-left": "video-option-victims.png",
+      "video-middle": "video-option-comebacks.png",
+      "video-right": "video-option-bystanders.png",
+      "presentation": "presentation-link.png",
+      "whiteboardTextSmall": "whiteboard-text-small.png",
+      "watchVideo" : "whiteboard-watch-video.png"
+    },
+    "heads": {
+      "carrie": "hud-head-carrie.png",
+      "dane": "hud-head-dane.png",
+      "freddie": "hud-head-freddie.png",
+      "janelle": "hud-head-janelle.png",
+      "mandy": "hud-head-mandy.png",
+      "ross": "hud-head-ross.png",
+      "tom": "hud-head-tom.png"
+    },
+    "decorations": {
+      "classroomForeground": "classroom-foreground.png",
+      "computerCloseupBlank": "computer-closeup-blank.png",
+      "myFaceTubePage": "my-face-tube-page.png",
+      "theaterForeground": "theater-foreground.png",
+      "theaterCloseupForeground3": "theater-closeup-foreground3.png",
+      "whiteboardArrow": "whiteboard-arrow.png",
+      "announcerBoxOnly": "wall-speaker.png"
+    },
+    "letter": {
+      "beStrong": "letter-be-strong.png",
+      "loser": "letter-loser.png",
+      "plain": "letter-plain.png",
+      "torn": "letter-torn.png"
+    }
+  },
+  "texts": {
+    "janelle":{
+      "8th_02": "It’s gettin’ on my nerves!",
+      "8th_03": "I’m not! Who cares about losers like that?",
+      "8th_04": "Yeah. I heard she’s flunked like six classes!",
+      "8th_05": "You’re right. I’ll lay off.",
+      "8th_06": "Yeah, maybe I should calm down.",
+      "8th_07": "Yeah, I guess I don’t either.",
+      "8th_08": "Oh, it’s done.",
+      "8th_09": "Yeah! Let’s steal her precious backpack."
+    },
+    "mandy": {
+      "8th_02": "It’s just a symbol of tolerance. I got it from a friend who used to get bullied. And everybody’s ignoring me cause they think it’s dumb!",
+      "8th_03": "My name is Mandy, but I don’t expect you or anyone to know that.",
+      "8th_04": "Yeah. It’s the only way I could get anyone to listen to me."
+    },
+    "tom": {
+      "8th_01_augustine": "Hello Tom. Did you get the anti-bullying video the school sent out for Stop Bullying Week?",
+      "8th_01_ross": "Tom, what’s up? You’re not into this anti-bullying campaign stuff, are you?",
+      "8th_13_augustine": "Hi there Tom. I'm still researching. I've found some alarming comments in this video."
+    },
+    "freddie": {
+      "8th_01_augustine": "Hello Freddie. Did you get the anti-bullying video the school sent out for Stop Bullying Week?",
+      "8th_01_ross": "Freddie, what’s up? You’re not into this anti-bullying campaign stuff, are you?",
+      "8th_13_augustine": "Hi there Freddie. I'm still researching. I've found some alarming comments in this video."
+    },
+    "carrie": {
+      "8th_01_augustine": "Hello Carrie. Did you get the anti-bullying video the school sent out for Stop Bullying Week?",
+      "8th_01_ross": "Carrie, what’s up? You’re not into this anti-bullying campaign stuff, right?",
+      "8th_13_augustine": "Hi there Carrie. I'm still researching. I've found some alarming comments in this video."
+    },
+    "zink": {
+      "care": "Nobody wants to be treated differently because of who they are. You can stop this by stopping bullying.",
+      "important": "Kids have the right to go to school without being judged. Stopping bullying is how you help.",
+      "help": "Contribute to Stop Bullying Week. There’s a diversity play coming up that you can help with!"
+    },
+    "ross": {
+      "8th_02": "Come on. We’re too mature for this.",
+      "8th_03": "Seriously, we don’t need this. And I know you’re too smart for it.",
+      "8th_04": "It’s like they’re trying to control everything we do and say! That’s unconstitutional!"
+    },
+    "augustine": {
+      "8th_14": "Of course. It’s a testimonial video. This really happened.",
+      "8th_15": "A girl from a nearby school. She talks about her own experiences.",
+      "8th_16": "The girl in this video is telling bullying stories from her own life."
+    },
+    "dane": {
+      "8th_02": "I’m sick of that chick. We gotta get rid of her and this stupid play.",
+      "8th_03": "She and her zebra can go jump off a cliff. Come on, let’s mess up the play try-outs.",
+      "8th_04": "Yeah, she probably wants you. Let’s get out of here and go mess with the kids at the play try-outs."
+    }
+  },
+  "tints": {
+    "bubbleText" : "#CDCDCD"
+  },
+  "bubbleTextWidth": 140,
+  "sceneImages": {
+    "Info": "this is the set of scene backgrounds.",
+    "logo": "splash-bg.png",
+    "cafeteria": "cafeteria-background.png",
+    "classroomBackground": "classroom-background.png",
+    "computerBlank": "computer-blank.png",
+    "library": "library-background.png",
+    "hallway": "hallway-background.png",
+    "theater": "theater-background.png",
+    "theaterCloseup2": "theater-closeup-background2.png",
+    "theaterCloseup3": "theater-closeup-background3.png",
+    "computerCloseup": "computer-closeup-blank.png",
+    "whiteboard": "whiteboard-background.png"
+  },
+  "speechAnimations": {
+    "tom": {
+      "images": ["talking-tom-mouth1.png",  "talking-tom-mouth2.png"],
+      "mouthOffset": [70, 153]
+    },
+    "freddie": {
+      "images": ["talking-freddie-mouth1.png",  "talking-freddie-mouth2.png"],
+      "mouthOffset": [114, 138]
+    },
+    "carrie":  {
+      "images": ["talking-carrie-mouth1.png",  "talking-carrie-mouth2.png"],
+      "mouthOffset": [85, 124]
+    },
+    "janelle": {
+      "images": ["talking-janelle-mouth1.png",  "talking-janelle-mouth2.png"],
+      "mouthOffset": [219, 124]
+    },
+    "mandy": {
+      "images": ["talking-mandy-mouth1.png",  "talking-mandy-mouth2.png"],
+      "mouthOffset": [65, 165]
+    },
+    "mandySad": {
+      "images": ["talking-mandy-mouth-sad1.png", "talking-mandy-mouth-sad2.png"],
+      "mouthOffset": [100, 182]
+    },
+    "augustine": {
+      "images": ["talking-augustine-mouth1.png",  "talking-augustine-mouth2.png"],
+      "mouthOffset": [240, 150]
+    },
+    "dane":  {
+      "images": ["talking-dane-mouth1.png", "talking-dane-mouth2.png"],
+      "mouthOffset": [185, 160]
+    },
+    "ross": {
+      "images": ["talking-ross-mouth1.png", "talking-ross-mouth2.png"],
+      "mouthOffset": [123, 160]
+    }
+  },
+  "buttons": {
+    "play": {
+      "up": "play-btn-up.png",
+      "over": "play-btn-over.png",
+      "out": "play-btn-up.png",
+      "down": "play-btn-down.png"
+    },
+    "soundOff": {
+      "up": "sound-off.png",
+      "over": "sound-off-over.png",
+      "out": "sound-off.png",
+      "down": "sound-off-over.png"
+    },
+    "soundOn": {
+      "up": "sound-on.png",
+      "over": "sound-on-over.png",
+      "out": "sound-on.png",
+      "down": "sound-on-over.png"
+    },
+    "postMessage": {
+      "up": "my-face-tube-post-message.png",
+      "over": "my-face-tube-post-message-over.png",
+      "out": "my-face-tube-post-message.png",
+      "down": "my-face-tube-post-message-down.png"
+    },
+    "videoClose": {
+      "down": "video-close-down.png",
+      "over": "video-close-over.png",
+      "out": "video-close.png",
+      "up": "video-close.png"
+    }
+  },
+  "textWindows": {
+    "small": {
+      "top": "character-talk-bubble-top.png",
+      "middle": "character-talk-bubble-middle.png",
+      "bottom": "character-talk-bubble-bottom.png"
+    },
+    "announce": {
+      "top": "wall-speaker-talk-bubble-top.png",
+      "middle": "wall-speaker-talk-bubble-middle.png",
+      "bottom": "wall-speaker-talk-bubble-bottom.png"
+    },
+    "instruction": "move-on-box.png",
+    "zink": "computer-zink-chat.png"
+  },
+  "phone": {
+    "playButton": "open-button.png",
+    "button": {
+      "up":  "phone-ring-anim-0001.png",
+      "over": "phone-ring-anim-0002.png",
+      "out":  "phone-ring-anim-0001.png",
+      "down": "phone-ring-anim-0002.png"
+    },
+    "alerts": {
+      "message": "phone-alert-message.png",
+      "pdf": "phone-alert-pdf.png",
+      "video": "phone-alert-video.png",
+      "gtfs": "phone-alert-gtf.png"
+    },
+    "backgrounds": [
+      "phone-bg0001.png",
+      "phone-bg0002.png",
+      "phone-bg0003.png",
+      "phone-bg0004.png",
+      "phone-bg0005.png",
+      "phone-bg0006.png",
+      "phone-bg0007.png",
+      "phone-bg0008.png",
+      "phone-bg0009.png"
+    ],
+    "ring" : [
+      "phone-ring-anim-0001.png",
+      "phone-ring-anim-0002.png",
+      "phone-ring-anim-0003.png",
+      "phone-ring-anim-0004.png",
+      "phone-ring-anim-0005.png",
+      "phone-ring-anim-0006.png",
+      "phone-ring-anim-0007.png",
+      "phone-ring-anim-0008.png",
+      "phone-ring-anim-0009.png",
+      "phone-ring-anim-0010.png",
+      "phone-ring-anim-0011.png",
+      "phone-ring-anim-0012.png",
+      "phone-ring-anim-0013.png",
+      "phone-ring-anim-0014.png"
+    ],
+    "icons" : {
+      "help": [ "help-up.png", "help-over.png"],
+      "gtfs": [ "get-the-facts-up.png", "get-the-facts-over.png"],
+      "messages": ["messages-up.png", "messages-over.png"],
+      "videos": [ "videos-up.png", "videos-over.png"],
+      "ringtones": [ "ringtones-up.png", "ringtones-over.png"],
+      "background": [ "background-up.png", "background-over.png" ],
+      "close": [ "close-up.png", "close-over.png"]
+    },
+    "ringtones": [ "cellVibrate", "phoneRingtone", "tahDah"],
+    "messages": {
+      "button": "phone-msg-ok-btn.png"
+    }
+  },
+  "playthroughDisplayContainer": "playthrough-display-container.png",
+  "responseBgDown": "response-bg-down.png",
+  "responseBgOver": "response-bg-over.png",
+  "responseBgUp": "response-bg-up.png",
+  "splashBg": "splash-bg.png",
+  "soundKey": "actnowSounds",
+  "soundFile": [ "media/default/act_now_8.m4a", "media/default/act_now_8.ogg" ],
+  "sounds": {
+    "aug_6th_10": [ 0.00000000, 1.89755102, false, "aug_6th_10"],
+    "carrie_8th_01_augustine": [ 1.89755102, 5.62875283, false, "aug_8th_01_car"],
+    "freddie_8th_01_augustine": [ 7.52630385, 5.26877552, false, "aug_8th_01_fre"],
+    "tom_8th_01_augustine": [ 12.79507937, 5.366961450000002, false, "aug_8th_01_tom"],
+    "augustine_8th_02": [ 18.16204082, 2.806462579999998, false, "aug_8th_02"],
+    "augustine_8th_03": [ 20.96850340, 2.9978231300000004, false, "aug_8th_03"],
+    "augustine_8th_04": [ 23.96632653, 3.6356462600000015, false, "aug_8th_04"],
+    "augustine_8th_05": [ 27.60197279, 3.4443083899999998, false, "aug_8th_05"],
+    "augustine_8th_06": [ 31.04628118, 3.4762131499999995, false, "aug_8th_06"],
+    "augustine_8th_07": [ 34.52249433, 3.332675739999999, false, "aug_8th_07"],
+    "augustine_8th_08": [ 37.85517007, 3.029705210000003, false, "aug_8th_08"],
+    "augustine_8th_09": [ 40.88487528, 6.824829939999994, false, "aug_8th_09"],
+    "augustine_8th_10": [ 47.70970522, 8.834013600000006, false, "aug_8th_10"],
+    "augustine_8th_11": [ 56.54371882, 11.496961449999993, false, "aug_8th_11"],
+    "augustine_8th_12": [ 68.04068027, 18.018820860000005, false, "aug_8th_12"],
+    "carrie_8th_13_augustine": [ 86.05950113, 5.465124720000006, false, "aug_8th_13_car"],
+    "freddie_8th_13_augustine": [ 91.52462585, 5.530566889999989, false, "aug_8th_13_fre"],
+    "tom_8th_13_augustine": [ 97.05519274, 5.334217690000003, false, "aug_8th_13_tom"],
+    "augustine_8th_14": [ 102.38941043, 4.161859410000005, false, "aug_8th_14"],
+    "augustine_8th_15": [ 106.55126984, 3.9067347000000012, false, "aug_8th_15"],
+    "augustine_8th_16": [ 110.45800454, 3.7153741399999944, false, "aug_8th_16"],
+    "augustine_8th_17": [ 114.17337868, 5.070793660000007, false, "aug_8th_17"],
+    "augustine_8th_18": [ 119.24417234, 3.4761904699999917, false, "aug_8th_18"],
+    "augustine_8th_19": [ 122.72036281, 7.079954650000005, false, "aug_8th_19"],
+    "augustine_8th_20": [ 129.80031746, 2.0888888899999927, false, "aug_8th_20"],
+    "augustine_8th_21": [ 131.88920635, 3.6516099800000177, false, "aug_8th_21"],
+    "carrie_8th_01": [ 135.54081633, 11.877981859999977, false, "car_8th_01"],
+    "dane_8th_01": [ 147.41879819, 2.4081405900000163, false, "dan_8th_01"],
+    "dane_8th_02": [ 149.82693878, 5.150748289999996, false, "dan_8th_02"],
+    "dane_8th_03": [ 154.97768707, 5.864263039999997, false, "dan_8th_03"],
+    "dane_8th_04": [ 160.84195011, 7.6257596400000125, false, "dan_8th_04"],
+    "freddie_8th_01": [ 168.46770975, 5.810476189999974, false, "fre_8th_01"],
+    "janelle_8th_01": [ 174.27818594, 4.813786850000014, false, "jan_8th_01"],
+    "janelle_8th_02": [ 179.09197279, 1.9073242599999958, false, "jan_8th_02"],
+    "janelle_8th_03": [ 180.99929705, 2.9745351500000083, false, "jan_8th_03"],
+    "janelle_8th_04": [ 183.97383220, 4.155283449999985, false, "jan_8th_04"],
+    "janelle_8th_05": [ 188.12911565, 2.2025170000000003, false, "jan_8th_05"],
+    "janelle_8th_06": [ 190.33163265, 2.6339455800000167, false, "jan_8th_06"],
+    "janelle_8th_07": [ 192.96557823, 2.384172339999992, false, "jan_8th_07"],
+    "janelle_8th_08": [ 195.34975057, 2.0435827599999925, false, "jan_8th_08"],
+    "janelle_8th_09": [ 197.39333333, 3.133492070000017, false, "jan_8th_09"],
+    "mandy_8th_01": [ 200.52682540, 3.6479591799999866, false, "man_8th_01"],
+    "mandy_8th_02": [ 204.17478458, 7.565056690000006, false, "man_8th_02"],
+    "mandy_8th_03": [ 211.73984127, 4.485192740000002, false, "man_8th_03"],
+    "mandy_8th_04": [ 216.22503401, 3.7974829999999997, false, "man_8th_04"],
+    "mandy_8th_05": [ 220.02251701, 1.2857596300000012, false, "man_8th_05"],
+    "mandy_8th_06": [ 221.30827664, 1.22596372000001, false, "man_8th_06"],
+    "mandy_8th_07": [ 222.53424036, 1.9734920699999918, false, "man_8th_07"],
+    "mandy_8th_08": [ 224.50773243, 2.6911337800000013, false, "man_8th_08"],
+    "mandy_8th_09": [ 227.19886621, 2.3921088499999996, false, "man_8th_09"],
+    "narrator_8th_01": [ 229.59097506, 4.702176869999988, false, "nar_8th_01"],
+    "narrator_8th_03": [ 234.29315193, 9.422925170000013, false, "nar_8th_03"],
+    "narrator_8th_04": [ 243.71607710, 14.01358276000002, false, "nar_8th_04"],
+    "narrator_8th_05": [ 257.72965986, 14.942857149999952, false, "nar_8th_05"],
+    "narrator_8th_06": [ 272.67251701, 4.16319728000002, false, "nar_8th_06"],
+    "narrator_8th_08": [ 276.83571429, 7.991836729999989, false, "nar_8th_08"],
+    "narrator_8th_09": [ 284.82755102, 10.946961450000003, false, "nar_8th_09"],
+    "narrator_8th_10": [ 295.77451247, 4.702176870000017, false, "nar_8th_10"],
+    "narrator_8th_12": [ 300.47668934, 8.623741499999994, false, "nar_8th_12"],
+    "narrator_8th_13": [ 309.10043084, 7.824580500000025, false, "nar_8th_13"],
+    "narrator_8th_14": [ 316.92501134, 8.08476189999999, false, "nar_8th_14"],
+    "narrator_8th_pre_01": [ 325.00977324, 26.28482993, false, "nar_8th_pre_01"],
+    "narrator_8th_pre_02": [ 351.29460317, 33.512585039999976, false, "nar_8th_pre_02"],
+    "narrator_8th_pre_03": [ 384.80718821, 41.97421768999999, false, "nar_8th_pre_03"],
+    "narrator_8th_pre_04": [ 426.78140590, 37.712290250000024, false, "nar_8th_pre_04"],
+    "narrator_8th_pre_05": [ 464.49369615, 34.75213150999997, false, "nar_8th_pre_05"],
+    "carrie_8th_01_ross": [ 499.24582766, 6.618253970000012, false, "ros_8th_01_car"],
+    "freddie_8th_01_ross": [ 505.86408163, 6.44507937000003, false, "ros_8th_01_fre"],
+    "tom_8th_01_ross": [ 512.30916100, 6.560544219999997, false, "ros_8th_01_tom"],
+    "ross_8th_02": [ 518.86970522, 3.386099769999987, false, "ros_8th_02"],
+    "ross_8th_03": [ 522.25580499, 4.963696140000025, false, "ros_8th_03"],
+    "ross_8th_04": [ 527.21950113, 5.8102040899999565, false, "ros_8th_04"],
+    "ross_8th_05": [ 533.02970522, 1.423696140000061, false, "ros_8th_05"],
+    "ross_8th_06": [ 534.45340136, 3.3476190499999348, false, "ros_8th_06"],
+    "ross_8th_07": [ 537.80102041, 1.1928344699999798, false, "ros_8th_07"],
+    "ross_8th_08": [ 538.99385488, 1.8084807200000341, false, "ros_8th_08"],
+    "ross_8th_09": [ 540.80233560, 1.4044444500000282, false, "ros_8th_09"],
+    "tom_8th_01": [ 542.20678005, 6.222675729999992, false, "tom_8th_01"],
+    "cellVibrate": [ 548.42945578, 1.1755102099999704, false, "cellVibrate"],
+    "crumple_paper": [ 549.60496599, 1.5934693799999877, false, "crumple_paper"],
+    "phoneRingtone": [ 551.19843537, 1.567346939999993, false, "phoneRingtone"],
+    "silence": [ 552.76578231, 0.182857150000018, false, "silence"],
+    "tahDah": [ 552.94863946, 2.664, false, "tahDah"]
+  },
+  "soundSyncData": {
+    "aug_6th_10":[0,1,1,1,0,0,0,0,1,1,1,0,1,0,1,1,0,0,0],
+    "carrie_8th_01_augustine":[0,0,0,0,1,1,1,0,1,1,1,1,0,0,0,0,1,1,1,1,0,1,1,1,1,1,1,1,1,1,0,0,0,1,1,1,0,1,0,0,0,1,0,1,1,1,1,1,0,0,0,0,0,0,0,0,0],
+    "freddie_8th_01_augustine":[0,0,0,1,1,1,0,1,1,1,1,0,0,0,0,1,1,1,0,1,1,1,1,1,1,1,1,1,1,0,1,0,1,1,1,1,0,1,0,1,1,1,0,1,1,1,1,0,0,0,0,0,0],
+    "tom_8th_01_augustine":[0,0,0,0,0,1,1,0,0,1,1,1,0,0,0,0,0,1,1,1,0,0,1,1,1,1,1,1,1,1,1,0,1,0,1,1,1,1,0,1,0,1,1,1,0,1,1,1,1,0,0,0,0,0],
+    "augustine_8th_02":[0,0,1,1,1,1,0,1,1,1,0,0,0,0,0,0,0,0,1,0,1,0,1,1,0,0,0,0,0],
+    "augustine_8th_03":[0,1,0,1,1,0,1,1,1,0,0,0,0,0,0,0,1,0,1,0,1,1,1,1,0,1,1,0,0,0],
+    "augustine_8th_04":[0,0,1,0,0,1,1,0,1,1,0,0,0,0,1,1,1,0,1,1,1,0,0,0,1,0,1,1,1,0,1,0,0,1,0,0,0],
+    "augustine_8th_05":[0,0,1,1,1,1,1,1,0,0,0,0,0,0,0,1,1,1,1,1,1,1,1,1,0,0,0,0,0,1,0,0,0,0,0],
+    "augustine_8th_06":[0,0,1,1,0,1,1,0,0,0,1,1,1,0,0,1,1,0,0,0,0,0,0,0,1,1,0,1,0,0,1,1,0,0,0],
+    "augustine_8th_07":[0,0,1,1,1,1,1,1,1,1,1,1,0,0,0,1,1,0,1,1,1,0,1,0,1,1,0,1,0,0,0,0,0,0],
+    "augustine_8th_08":[0,0,0,1,0,0,1,1,0,1,0,0,0,0,0,0,0,1,0,1,0,1,1,1,1,0,0,1,0,0,0],
+    "augustine_8th_09":[0,0,0,1,1,1,1,1,0,0,1,1,1,1,1,0,1,0,1,1,1,0,0,0,0,1,1,1,1,1,1,1,0,1,1,0,0,0,0,0,0,0,1,1,1,1,0,0,0,1,1,0,0,1,1,1,0,1,0,1,1,0,1,1,0,0,0,0,0],
+    "augustine_8th_10":[0,0,0,0,1,1,0,1,0,1,1,1,1,0,0,0,0,0,0,0,1,0,1,1,1,0,0,0,0,0,0,0,0,1,1,1,0,1,0,0,1,1,1,1,1,0,1,0,0,1,0,0,0,0,1,1,0,1,1,1,0,1,0,0,0,0,0,0,1,0,1,1,0,0,1,1,0,0,1,0,0,1,1,1,0,0,0,0,0],
+    "augustine_8th_11":[0,0,1,1,1,1,1,0,0,0,0,0,0,1,1,1,1,0,1,1,1,1,1,1,1,1,1,1,1,1,0,0,0,0,1,1,0,0,0,0,0,0,1,1,1,1,1,1,1,0,0,1,1,1,0,0,0,0,0,0,0,0,0,1,1,1,1,0,1,1,1,1,1,0,1,0,1,0,1,0,0,0,0,0,1,1,1,1,0,1,1,1,0,1,1,0,1,1,0,1,0,0,1,1,1,0,0,0,1,1,1,1,0,0,0],
+    "augustine_8th_12":[0,0,1,0,1,1,1,1,1,0,1,1,0,1,1,0,1,1,1,1,1,0,0,0,1,1,0,0,0,0,0,1,1,1,1,1,1,1,1,0,0,1,1,1,1,1,0,0,1,1,1,1,1,1,0,1,0,1,1,0,0,0,0,0,0,1,1,1,0,0,0,0,0,0,0,0,0,1,1,1,1,1,1,0,1,0,1,1,1,0,1,1,0,1,0,0,1,0,1,0,0,0,0,0,0,1,1,1,0,0,1,1,1,1,1,0,1,1,0,1,1,0,1,1,1,0,0,0,0,0,0,0,0,0,0,1,1,0,1,0,1,1,0,1,0,0,1,0,1,1,1,0,0,0,0,0,0,1,1,1,1,1,1,1,0,0,0,1,1,1,1,1,1,1,0,0,0,0,0,0,0],
+    "carrie_8th_13_augustine":[0,0,0,1,1,1,0,0,1,1,0,0,0,0,1,1,1,1,1,1,0,1,0,0,0,0,0,0,1,1,0,1,1,1,1,1,1,1,1,1,0,1,1,0,0,1,1,1,1,1,0,0,0,0,0],
+    "freddie_8th_13_augustine":[0,0,0,1,1,1,0,1,1,0,0,0,0,0,0,1,0,1,1,1,1,1,0,0,0,0,0,0,0,1,0,1,1,1,1,1,1,1,1,1,0,1,1,1,0,1,1,0,1,1,0,0,0,0,0,0],
+    "tom_8th_13_augustine":[0,0,1,1,1,0,1,1,1,0,0,0,0,1,1,1,1,1,1,0,1,0,0,0,0,0,0,1,1,1,1,1,1,1,1,1,1,1,0,0,1,1,0,1,1,0,1,1,1,0,0,0,0,0],
+    "augustine_8th_14":[0,0,0,0,1,1,1,0,0,0,1,0,1,1,1,1,1,1,1,1,1,0,0,0,0,0,0,0,1,0,0,0,1,1,1,1,1,0,0,0,0,0],
+    "augustine_8th_15":[0,1,1,1,1,1,1,1,1,1,1,0,1,1,0,0,0,0,0,1,0,1,1,1,1,1,1,1,1,1,1,1,1,1,0,0,0,0,0,0],
+    "augustine_8th_16":[0,0,1,1,1,1,1,0,1,1,1,1,1,0,1,1,1,1,1,1,1,0,1,1,0,0,0,1,0,1,1,1,1,0,0,0,0,0],
+    "augustine_8th_17":[0,0,1,0,0,0,0,0,0,0,1,0,1,1,1,1,1,0,1,0,1,0,0,0,0,0,1,0,1,0,0,0,1,0,1,1,0,1,1,1,1,1,0,1,0,1,0,0,0,0,0],
+    "augustine_8th_18":[0,0,1,0,1,1,1,1,1,1,1,1,1,1,1,0,0,0,0,0,0,0,0,1,1,1,0,1,1,1,1,1,0,0,0],
+    "augustine_8th_19":[0,0,0,1,1,1,0,1,1,1,1,0,0,0,1,1,0,0,0,0,0,1,1,1,1,1,1,1,1,1,1,1,1,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,1,1,1,1,0,1,1,1,1,1,1,1,1,1,1,0,0,1,1,0,0,0,0],
+    "augustine_8th_20":[0,0,0,1,1,1,0,1,1,1,1,1,1,1,0,0,0,1,1,0,0],
+    "augustine_8th_21":[0,0,1,1,1,1,0,1,1,0,1,1,1,1,1,0,1,1,0,0,0,1,1,1,1,1,1,1,0,0,1,0,0,0,0,0,0],
+    "carrie_8th_01":[0,0,0,0,0,0,0,0,0,0,0,1,0,1,1,1,0,1,1,1,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,1,1,0,1,0,0,0,0,0,0,0,0,1,1,1,0,1,1,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,1,1,1,1,1,0,0,0,0,0,0,0,0,1,1,1,0,0,0,0,0,1,0,1,1,1,1,1,0,0,0,0,0,0,0,0,1,1,1,1,1,0,0,0,0],
+    "dane_8th_01":[0,0,0,0,1,0,1,0,0,1,0,1,0,1,1,1,1,0,1,1,1,0,0,0,0],
+    "dane_8th_02":[0,0,0,1,1,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,1,1,1,1,1,1,1,0,0,0,0,0,0,0,1,1,1,1,1,0,1,1,1,0,0,1,0,0,0,0,0],
+    "dane_8th_03":[0,0,0,0,1,1,1,1,0,1,0,0,1,0,1,0,1,0,1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,1,0,1,1,1,0,0,1,1,0,1,1,1,0,0,0,0,0],
+    "dane_8th_04":[0,0,0,1,1,1,0,0,0,0,0,0,0,0,0,0,0,1,1,1,1,1,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,1,1,0,0,0,0,0,0,0,0,0,1,1,1,1,0,0,0,1,1,0,0,0,0,1,1,0,1,1,0,0,0,0,0,0,0,0],
+    "freddie_8th_01":[0,0,0,0,0,0,0,0,0,0,1,1,0,1,1,0,0,0,0,0,0,0,1,1,1,1,0,1,1,1,1,1,1,1,1,0,1,1,1,1,1,0,0,1,0,0,0,0,0,1,1,1,1,1,0,0,0,0,0],
+    "janelle_8th_01":[0,0,0,0,0,1,1,1,1,1,0,1,1,0,1,1,0,0,1,1,0,0,1,1,0,0,1,1,0,1,0,0,0,0,1,1,0,1,0,1,1,0,0,0,0,0,0,0,0],
+    "janelle_8th_02":[0,0,0,0,0,0,1,1,1,1,1,1,1,1,0,0,0,0,0,0],
+    "janelle_8th_03":[0,0,1,1,1,1,0,0,0,0,0,0,1,0,1,1,1,1,1,1,1,1,1,0,0,1,1,0,0,0],
+    "janelle_8th_04":[0,0,0,0,1,1,1,1,0,0,0,0,0,0,0,0,0,1,1,1,1,0,1,1,0,0,1,0,1,1,1,0,0,0,1,1,0,0,0,0,0,0],
+    "janelle_8th_05":[0,0,0,0,1,1,1,1,0,0,0,0,0,0,1,1,1,1,0,0,0,0,0],
+    "janelle_8th_06":[0,0,0,0,1,1,0,0,0,0,0,1,1,1,1,0,0,1,0,0,0,0,0,0,0,0,0],
+    "janelle_8th_07":[0,0,0,1,1,1,0,0,0,0,0,0,1,1,1,1,1,0,1,0,0,0,0,0],
+    "janelle_8th_08":[0,0,0,0,1,1,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0],
+    "janelle_8th_09":[0,0,0,0,1,1,1,0,0,0,0,0,1,1,1,1,1,0,0,1,0,0,0,1,0,0,0,0,0,0,0,0],
+    "mandy_8th_01":[0,0,0,0,0,1,1,1,0,1,0,0,0,1,0,0,0,0,0,0,0,0,1,0,0,1,0,1,0,0,0,0,0,0,0,0,0],
+    "mandy_8th_02":[0,0,0,0,0,0,0,1,0,1,1,1,0,0,0,1,1,1,1,1,0,0,0,0,0,0,0,0,1,0,0,1,0,1,1,1,1,0,0,1,0,1,0,0,0,0,0,0,0,1,1,1,1,1,1,1,1,1,1,0,0,1,0,1,0,0,0,1,1,0,0,0,0,0,0,0],
+    "mandy_8th_03":[0,0,0,1,1,1,1,1,1,1,1,0,0,0,0,1,1,0,1,1,1,0,0,1,0,1,1,1,0,0,1,1,1,1,0,0,1,0,1,1,0,0,0,0,0],
+    "mandy_8th_04":[0,0,0,0,0,1,1,1,0,0,0,0,0,1,1,1,1,1,1,0,1,1,1,1,1,1,1,0,1,1,0,0,0,0,0,0,0,0],
+    "mandy_8th_05":[0,0,0,1,1,1,0,0,1,1,0,0,0],
+    "mandy_8th_06":[0,0,0,0,1,0,0,0,0,0,0,0,0],
+    "mandy_8th_07":[0,0,0,0,0,0,1,0,0,0,0,0,1,1,1,1,0,0,0,0],
+    "mandy_8th_08":[0,0,0,1,0,0,0,1,0,1,1,0,1,1,1,1,1,1,1,0,0,0,0,0,0,0,0],
+    "mandy_8th_09":[0,0,0,0,0,0,1,0,1,1,1,0,0,0,1,1,1,1,1,1,0,0,0,0],
+    "narrator_8th_01":[0,0,0,1,1,1,1,1,1,1,1,1,0,1,1,1,1,1,1,1,1,0,1,0,0,0,0,0,0,0,0,1,1,1,0,0,1,1,1,0,1,1,0,0,0,0,0,0],
+    "narrator_8th_03":[0,0,0,1,1,1,1,1,1,0,0,0,1,1,1,0,0,0,0,0,0,0,0,0,1,1,1,1,1,1,1,1,1,1,1,1,0,1,1,0,1,1,1,1,1,1,1,1,1,1,0,1,1,0,1,0,1,1,1,1,1,1,1,0,0,0,0,0,0,0,0,1,1,1,1,0,1,1,1,0,0,0,0,1,1,1,0,1,1,0,0,0,0,0,0],
+    "narrator_8th_04":[0,0,0,0,1,0,1,1,1,1,1,0,0,0,0,0,0,1,1,0,0,1,0,0,0,1,0,0,0,1,1,1,1,0,1,0,0,1,0,1,1,1,0,0,0,0,0,0,0,0,0,0,0,1,1,1,1,1,1,1,1,1,0,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,1,1,0,1,1,0,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,0,0,0,0,0,0,0,0,1,0,1,1,1,1,1,0,0,0,0,0,1,1,1,1,1,1,1,1,1,1,0,1,1,1,0,0,0,0,0,0],
+    "narrator_8th_05":[0,0,0,0,1,1,1,1,1,1,0,1,1,1,0,0,0,0,0,0,0,0,0,0,1,1,0,1,1,1,1,1,0,0,1,1,1,1,0,1,0,0,0,1,1,1,1,1,1,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,1,1,1,1,1,1,1,1,0,0,0,1,1,0,0,0,0,0,1,1,0,1,1,1,1,0,1,1,1,1,1,1,1,1,0,0,0,0,0,0,0,0,0,1,1,1,0,1,0,1,1,1,1,1,1,1,1,1,1,1,1,1,0,0,0,1,0,0,1,1,0,0,0,1,1,0,1,1,1,1,0,0,0,0,0],
+    "narrator_8th_06":[0,0,0,0,1,1,1,1,0,1,1,1,1,1,1,0,1,1,0,0,0,0,1,0,0,1,1,0,0,0,1,1,0,1,1,1,1,0,0,0,0,0],
+    "narrator_8th_08":[0,0,0,0,1,1,1,1,1,0,1,1,1,1,1,0,0,0,0,0,0,0,1,1,1,1,1,0,0,0,0,0,0,0,1,1,1,0,1,1,1,0,1,1,1,1,1,1,1,0,1,0,1,1,0,0,1,0,0,1,1,1,0,0,1,0,1,1,0,1,0,1,1,1,1,0,0,0,0,0],
+    "narrator_8th_09":[0,0,0,1,1,1,1,1,1,1,1,1,1,0,1,1,0,0,1,0,1,0,0,1,1,1,0,0,0,0,0,0,0,0,0,1,1,1,0,1,1,1,0,0,0,0,0,1,1,0,0,0,0,1,0,1,1,1,0,1,1,0,0,0,0,0,1,0,0,0,0,0,0,0,0,1,1,0,1,1,1,0,0,0,1,0,1,1,1,1,0,0,1,1,1,1,1,1,0,0,1,1,0,1,1,1,0,0,0,0],
+    "narrator_8th_10":[0,0,0,0,1,1,1,0,1,0,0,1,0,0,1,1,1,1,1,0,0,0,0,0,1,0,1,0,1,1,1,0,1,1,0,1,0,0,0,0,1,0,0,0,0,0,0,0],
+    "narrator_8th_12":[0,0,0,1,1,1,1,1,1,1,1,1,0,0,0,0,0,0,0,0,1,1,1,1,0,0,1,0,0,1,1,1,0,1,0,1,1,1,0,0,0,0,0,0,0,1,1,1,1,1,1,0,1,1,1,1,1,0,1,0,1,1,0,0,1,1,0,0,1,0,0,1,0,1,1,1,1,0,1,1,0,0,0,0,0,0,0],
+    "narrator_8th_13":[0,0,0,1,1,1,1,1,1,1,1,0,0,0,0,1,0,0,1,1,1,1,1,1,0,1,1,1,1,1,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,1,0,0,1,0,1,1,0,1,1,1,0,1,1,1,0,1,0,1,0,1,1,1,1,1,1,1,1,0,0,0,0,0,0],
+    "narrator_8th_14":[0,0,0,0,1,1,1,1,1,0,0,0,0,0,0,0,1,1,1,1,0,1,1,1,1,1,1,1,1,1,1,0,1,0,1,0,0,1,1,1,1,0,0,0,0,0,0,0,0,0,1,0,1,1,1,1,1,1,0,1,1,0,0,1,1,0,0,0,1,1,1,1,1,1,1,0,0,0,0,0,0],
+    "narrator_8th_pre_01":[0,1,0,1,1,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,1,1,0,1,1,0,1,1,0,1,0,0,0,1,1,1,1,1,1,0,1,1,1,0,1,1,0,1,1,0,1,1,0,1,0,0,1,1,1,0,1,0,0,0,0,1,1,0,0,1,0,0,0,0,0,0,0,0,0,0,1,1,1,1,1,0,0,0,1,1,1,0,0,0,0,0,1,1,0,0,1,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,1,0,1,0,1,0,0,1,1,1,1,1,1,0,0,1,1,0,0,0,1,1,0,0,0,1,0,1,0,1,1,0,1,0,1,0,0,0,0,0,0,0,0,0,1,1,1,1,1,0,1,1,1,1,1,1,0,1,1,1,1,1,0,1,0,1,1,1,1,1,0,1,1,1,1,1,0,0,0,0,1,0,1,0,1,1,1,1,1,0,1,1,0,0,0,0,0,0,0,0,1,1,1,1,1,0,0,0,0,0,0,0,1,1,0,1,0,1,1,1,1,0,0,1,0,0,0,0,1,0,1,1,0,0,1,0,1,0,0,1,1,0,0,0,0],
+    "narrator_8th_pre_02":[0,0,0,1,1,1,1,1,0,1,1,1,1,0,1,1,0,0,0,0,0,0,0,0,0,1,1,0,1,0,0,0,1,1,0,0,0,0,0,0,0,0,1,1,1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,1,0,0,1,0,0,0,0,0,0,0,0,0,1,1,1,1,1,1,1,1,1,1,1,1,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,1,1,0,1,1,1,0,1,1,1,0,0,0,0,1,1,1,0,0,0,0,0,0,0,0,1,1,1,1,1,1,1,0,1,0,0,0,1,0,0,0,1,1,0,0,0,1,0,1,1,1,0,0,0,1,1,1,0,0,1,0,1,1,1,1,0,0,0,0,1,0,0,0,0,0,0,0,0,0,1,1,1,0,1,0,1,1,1,1,1,0,1,0,0,0,0,0,0,0,1,0,1,1,1,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,1,1,1,0,0,1,0,1,1,0,1,1,0,0,0,0,0,1,1,1,1,0,1,0,1,1,1,1,1,0,0,0,0,0,0,0,0,1,0,1,1,0,1,0,1,1,1,0,1,1,1,1,0,0,0,0,0,0,0,0,0,1,1,0,0,1,0,1,1,1,0,0,0,0],
+    "narrator_8th_pre_03":[0,1,0,1,1,0,1,1,0,1,0,1,1,0,1,1,0,1,0,0,0,0,1,0,1,0,1,0,0,0,0,0,0,0,1,0,0,1,1,1,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,1,1,1,1,1,1,1,0,0,0,0,0,0,1,1,1,1,1,0,1,0,0,1,1,0,1,0,0,0,1,0,0,0,0,0,0,0,1,0,0,1,1,0,1,0,0,1,0,0,0,0,0,0,0,0,0,0,1,1,0,1,0,0,0,0,1,0,1,0,1,1,1,1,0,1,1,1,1,1,0,1,0,0,0,0,0,0,0,1,0,1,1,0,1,0,1,0,0,1,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,1,0,1,0,1,1,0,0,0,1,1,1,1,0,0,0,1,1,1,0,0,1,1,0,0,0,0,0,0,1,1,1,1,0,1,0,1,0,1,0,1,1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,1,1,1,1,0,0,0,0,1,0,1,0,0,0,1,1,1,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,1,1,0,1,0,0,0,0,1,1,1,1,0,1,1,0,0,1,0,1,0,1,0,1,1,0,0,1,1,1,1,0,1,1,0,0,0,0,0,0,0,0,1,1,1,1,1,0,1,1,1,0,1,1,0,1,1,0,1,0,1,1,1,1,0,1,1,0,0,0,0,0,0,1,1,1,1,1,1,0,1,1,0,0,0,0,1,1,1,1,1,1,0,0,1,0,1,1,0,1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,1,1,1,0,1,1,1,0,0,0,0,0,0,0,0,0,0,0,1,1,0,1,1,1,0,1,1,1,0,1,1,0,0,0],
+    "narrator_8th_pre_04":[0,0,1,1,1,1,1,1,1,0,0,0,0,1,1,1,1,1,0,1,1,1,0,1,1,1,1,1,0,0,0,0,0,0,1,1,1,1,1,0,1,1,1,1,1,0,1,0,0,1,1,0,1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,1,1,0,1,0,1,1,1,0,0,0,1,0,0,1,1,1,0,0,1,0,0,1,1,0,1,0,1,1,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,0,0,0,0,0,1,0,0,1,1,1,1,0,1,1,1,1,1,1,1,1,0,0,0,0,1,1,1,1,0,0,0,0,0,1,1,1,1,0,1,0,1,0,0,1,1,1,1,0,0,0,0,0,1,1,0,1,0,0,0,0,0,0,1,1,1,0,1,1,0,1,1,1,0,1,0,1,1,0,0,0,0,0,0,0,0,0,0,1,1,1,1,1,1,1,1,1,0,1,0,1,1,1,1,0,0,1,1,1,1,1,1,0,0,0,0,0,0,0,0,0,0,1,1,1,1,0,1,1,1,0,0,1,0,1,0,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,1,1,1,1,1,0,1,1,1,1,0,0,1,0,1,1,0,1,1,1,1,1,0,0,0,1,0,1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,1,0,1,0,0,1,0,1,1,1,0,1,1,0,1,0,0,0,0,1,0,1,1,0,1,1,0,0,0,1,1,1,1,0,1,1,0,0,0,0,0,0,0],
+    "narrator_8th_pre_05":[0,0,1,1,1,1,1,1,1,0,0,0,0,0,0,0,0,0,1,1,0,1,1,1,0,1,0,1,0,1,0,1,0,1,1,1,1,1,1,1,0,0,1,1,0,0,0,0,0,0,0,0,1,1,1,0,1,1,1,0,1,0,1,1,0,1,0,1,1,1,0,1,0,1,1,1,0,1,0,0,0,0,0,1,0,1,0,1,1,1,1,1,1,0,0,1,1,1,1,1,1,1,1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,1,1,1,0,1,1,0,1,0,1,1,1,1,0,1,1,1,0,1,1,0,1,0,1,1,1,0,0,1,0,0,0,1,0,0,0,1,1,1,0,0,1,1,1,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,1,1,1,1,1,1,0,0,0,0,0,1,1,1,1,1,0,1,1,1,0,1,0,1,0,0,0,0,1,1,1,1,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,1,1,0,1,1,1,0,1,1,1,0,0,1,0,0,1,1,1,1,1,0,1,0,0,0,0,0,0,0,0,1,1,1,0,1,0,1,0,1,1,0,0,0,1,0,0,0,0,1,0,1,1,1,0,1,0,1,1,1,0,0,0,0,0,0,1,1,1,1,1,1,1,1,1,1,1,0,0,0,0,0,0,1,1,0,0,1,1,0,1,1,0,0,1,0,0,0,0,0,1,1,0,1,1,1,1,0,1,0,1,0,0,1,0,0,1,0,0,0,0,0,0,0],
+    "carrie_8th_01_ross":[0,0,0,1,1,1,0,0,0,0,0,0,1,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,1,1,1,1,1,1,1,0,0,0,1,0,0,1,1,0,1,1,1,0,0,0,1,0,0,1,0,0,0,0,0,0,1,1,1,0,0,0,0],
+    "freddie_8th_01_ross":[0,0,0,0,0,1,1,1,0,0,0,0,0,1,1,0,1,1,0,0,0,0,0,0,0,0,0,1,1,1,1,1,1,0,0,0,1,1,1,1,0,1,1,1,1,0,1,1,0,1,1,0,1,0,0,0,1,1,1,1,0,0,0,0,0],
+    "tom_8th_01_ross":[0,0,0,0,0,1,1,1,0,0,0,1,1,0,1,1,0,0,0,0,0,0,0,0,0,0,0,1,1,1,1,1,1,0,0,0,1,1,0,1,1,1,1,1,1,0,0,1,0,0,1,1,0,0,0,0,1,1,1,1,0,0,0,0,0,0],
+    "ross_8th_02":[0,0,0,0,0,1,1,1,1,0,0,0,0,0,0,0,1,0,1,1,1,0,0,1,1,0,0,1,0,0,0,0,0,0],
+    "ross_8th_03":[0,0,0,0,0,1,1,1,0,1,1,1,0,1,1,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,1,1,1,1,1,0,0,1,0,0,0,1,0,0,0,0,0,0,0,0],
+    "ross_8th_04":[0,0,0,0,0,1,1,1,1,1,1,1,0,1,0,1,0,1,1,1,1,1,1,0,0,1,1,1,0,1,0,0,1,1,1,0,0,0,0,0,0,1,0,1,1,0,1,1,1,0,1,1,0,1,0,0,0,0,0],
+    "ross_8th_05":[0,0,0,0,1,0,1,1,1,0,1,1,0,0,0],
+    "ross_8th_06":[0,0,0,0,1,0,1,1,0,1,1,1,0,0,0,0,0,0,0,0,1,1,1,0,1,1,1,1,1,0,0,0,0,0],
+    "ross_8th_07":[0,0,0,0,1,1,1,1,0,0,0,0],
+    "ross_8th_08":[0,0,0,1,1,1,1,1,1,1,0,0,0,0,0,0,0,0,0],
+    "ross_8th_09":[0,0,0,0,1,1,1,1,1,1,0,0,0,0,0],
+    "tom_8th_01":[0,0,0,0,0,0,0,0,0,0,0,1,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,1,1,1,1,1,0,0,1,1,1,0,0,0,0,0,0,0,1,1,0,1,1,1,1,0,0,1,0,0,0,0,0,0,0,0,0],
+    "cellVibrate":[0,0,1,1,1,0,0,0,1,1,1,0],
+    "crumple_paper":[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+    "phoneRingtone":[0,0,0,1,1,1,1,1,1,1,1,1,1,1,0,0],
+    "silence":[0,0],
+    "tahDah":[0,0,1,1,1,1,1,1,1,1,1,1,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0]
+  }
+}
