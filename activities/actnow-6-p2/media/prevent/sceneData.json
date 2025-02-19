@@ -1,0 +1,256 @@
+{
+  "play": {
+    "start": "scene1",
+    "showPlayThrough": false,
+    "scenes": {
+      "scene1": {
+        "id": "scene1",
+        "background": "cafeteria",
+        "title": "Introduction",
+        "description": "starting Act Now!",
+        "call": {"func": "sendSCORM"},
+        "actors": [
+          {
+            "name": "announcerBox_01",
+            "type": "announcer",
+            "location": [ 2, 5 ],
+            "text": "What you do for your school is very important.",
+            "announcerBox": true
+          },
+          {
+            "name": "sound_1_a",
+            "type": "audio",
+            "audio": ["1"],
+            "variable": "sound_1_a"
+          },
+          {
+            "name": "letter",
+            "type": "decoration",
+            "image": "letter",
+            "scale": [ 0.6, 0.6],
+            "location": [ 175, 75],
+            "tween": {
+              "time": 3000,
+              "location": [ 80, 330],
+              "scale": [0.2, 0.2]
+            }
+          }
+        ],
+        "outcomes": {
+          "scene_1_sound_2": {
+            "events": {"sound_1_a": "played" },
+            "actions": [
+              { "type": "remove-actor", "args": ["announcerBox_01"] },
+              { "type": "add-actor", "args": [
+                {
+                  "name": "announcerBox_02",
+                  "type": "announcer",
+                  "location": [ 2, 5 ],
+                  "text": "You put respect first, and it shows in the way you treat your classmates.",
+                  "announcerBox": true
+                }
+              ] },
+              { "type": "add-actor", "args": [
+                {
+                  "name": "sound_1_b",
+                  "type": "audio",
+                  "audio": [ "2"],
+                  "variable": "sound_1_b"
+                }
+              ] },
+              { "type": "add-actor", "args": [
+                {
+                  "name": "carrie",
+                  "type": "decoration",
+                  "image": "carrie",
+                  "scale": [ -0.9, 0.9],
+                  "location": [ 600, 110],
+                  "tween": {
+                    "time": 2500,
+                    "location": [ 600, 270],
+                    "scale": [-0.5, 0.5]
+                  }
+                }
+              ] }
+            ]
+          },
+          "scene_1_sound_3": {
+            "events": {"sound_1_b": "played" },
+            "actions": [
+              { "type": "add-actor", "args": [
+                {
+                  "name": "sound_1_c",
+                  "type": "audio",
+                  "audio": [ "3"],
+                  "variable": "sound_1_c"
+                }
+              ] },
+              { "type": "add-actor", "args": [
+                {
+                  "name": "dane",
+                  "type": "decoration",
+                  "image": "dane",
+                  "scale": [ 0.6, 0.6],
+                  "location": [ 220, 330],
+                  "tween": {
+                    "time": 3000,
+                    "location": [ 290, 240],
+                    "scale": [0.35, 0.35]
+                  }
+                }
+              ] }
+            ]
+          },
+          "scene_2_start": {
+            "events": {"sound_1_c": "played" },
+            "actions": [
+              { "type": "scene", "args": [ "scene2" ] }
+            ]
+          }
+        }
+      },
+      "scene2": {
+        "id": "scene2",
+        "background": "hallway",
+        "title": "Introduction",
+        "description": "starting Act Now!",
+        "call": {"func": "sendSCORM"},
+        "actors": [
+          {
+            "name": "announcerBox_03",
+            "type": "announcer",
+            "location": [ 2, 5 ],
+            "text": "Thanks to you, Newbridge is looking at revising its anti-bullying program, with Ms. Augustine taking the lead.",
+            "announcerBox": true
+          },
+          {
+            "name": "sound_2_a",
+            "type": "audio",
+            "audio": ["4"],
+            "variable": "sound_2_a"
+          },
+          {
+            "name": "people",
+            "type": "decoration",
+            "image": "group",
+            "scale": [ 0.3, 0.3],
+            "location": [ 370, 430],
+            "anchor": [ 0.5, 0.5 ],
+            "tween": {
+              "time": 4000,
+              "scale": [ 0.9, 0.9]
+            }
+          }
+        ],
+        "outcomes": {
+          "scene_3_start": {
+            "events": {"sound_2_a": "played" },
+            "actions": [
+              { "type": "scene", "args": [ "scene3" ] }
+            ]
+          }
+        }
+      },
+      "scene3": {
+        "id": "scene3",
+        "background": "theater",
+        "title": "Introduction",
+        "description": "starting Act Now!",
+        "call": {"func": "sendSCORM"},
+        "actors": [
+          {
+            "name": "announcerBox_04",
+            "type": "announcer",
+            "location": [ 2, 5 ],
+            "text": "You're a smart kid.",
+            "text": "The diversity play ended up going great.",
+            "announcerBox": true
+          },
+          {
+            "name": "sound_3_a",
+            "type": "audio",
+            "audio": ["5"],
+            "variable": "sound_3_a"
+          }
+        ],
+        "outcomes": {
+          "scene_3_sound_2": {
+            "events": {"sound_3_a": "played" },
+            "actions": [
+              { "type": "remove-actor", "args": ["announcerBox_04"] },
+              { "type": "add-actor", "args": [
+                {
+                  "name": "announcerBox_05",
+                  "type": "announcer",
+                  "location": [ 2, 5 ],
+                  "text": "Ross even helped out with it.",
+                  "announcerBox": true
+                }
+              ] },
+              { "type": "add-actor", "args": [
+                {
+                  "name": "sound_3_b",
+                  "type": "audio",
+                  "audio": ["6"],
+                  "variable": "sound_3_b"
+                }
+              ] },
+              { "type": "add-actor", "args": [
+                {
+                  "name": "ross",
+                  "type": "decoration",
+                  "image": "ross",
+                  "scale": [ 0.25, 0.25],
+                  "location": [ 300, 150]
+                }
+              ] }
+            ]
+          },
+          "scene_4_start": {
+            "events": {"sound_3_b": "played" },
+            "actions": [
+              { "type": "scene", "args": [ "scene4" ] }
+            ]
+          }
+        }
+      },
+      "scene4": {
+        "id": "scene4",
+        "background": "classroom",
+        "title": "Introduction",
+        "description": "starting Act Now!",
+        "call": {"func": "sendSCORM"},
+        "actors": [
+          {
+            "name": "announcerBox_06",
+            "type": "announcer",
+            "location": [ 2, 5 ],
+            "text": "You and Carrie became good friends, and she’s much happier here now.",
+            "announcerBox": true
+          },
+          {
+            "name": "sound_4_a",
+            "type": "audio",
+            "audio": ["7"],
+            "variable": "sound_4_a"
+          }
+        ],
+        "outcomes": {
+          "scene_4_ended": {
+            "events": {"sound_4_a": "played" },
+            "actions": [
+              { "type": "add-actor", "args": [
+                {
+                  "name": "moveonbox",
+                  "type": "instructions",
+                  "location": [ 300, 250 ],
+                  "text": "Please move on to the next activity."
+                }
+              ] }
+            ]
+          }
+        }
+      }
+    }
+  }
+}

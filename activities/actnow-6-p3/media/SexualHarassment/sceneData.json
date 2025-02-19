@@ -1,0 +1,583 @@
+{
+  "play": {
+    "start": "scene1",
+    "showPlayThrough": false,
+    "scenes": {
+      "scene1": {
+        "id": "scene1",
+        "background": "gtfs",
+        "title": "Introduction",
+        "description": "starting Act Now!",
+        "call": {"func": "sendSCORM"},
+        "variables": [ "sound_1_a", "sound_1_b" ],
+        "actors": [
+          {
+            "name": "default",
+            "type": "button",
+            "image": "exit",
+            "location": [ 10, 20 ],
+            "variable": "change_act"
+          },
+          {
+            "name": "nextbutton",
+            "type": "button",
+            "image": "next",
+            "location": [ 575, 400 ],
+            "variable": "next_button"
+          },
+          {
+            "name": "sound_1_a",
+            "type": "audio",
+            "audio": [ "x0100a"],
+            "variable": "sound_1_a"
+          },
+          {
+            "name": "mutebutton",
+            "type": "toggle-button",
+            "images": {
+              "on": "soundOn",
+              "off": "soundOff"
+            },
+            "location": [ 350, 400 ],
+            "scale": [ 0.75, 0.75],
+            "variable": "mute_game",
+            "values": {
+              "on": "mute_on",
+              "off": "mute_off"
+            },
+            "active": true
+          },
+          {
+            "name": "scene_1_title",
+            "type": "text",
+            "text": "Sexual harassment",
+            "location": [ 232, 50 ],
+            "font": "heading"
+          }
+        ],
+        "outcomes": {
+          "scene_1_next": {
+            "events": {"next_button": "*" },
+            "actions": [ { "type": "scene", "args": ["scene2"] } ]
+          },
+          "scene_1_sound_2": {
+            "events": {"sound_1_a": "played" },
+            "actions": [
+              { "type": "add-actor", "args": [
+                {
+                  "name": "scene_1_item_1",
+                  "type": "text",
+                  "text": "Unwanted sexual attention",
+                  "location": [  139, 200 ],
+                  "font": "large"
+                }
+              ] },
+              { "type": "add-actor", "args": [
+                {
+                  "name": "sound_1_b",
+                  "type": "audio",
+                  "audio": [ "x0100b"],
+                  "variable": "sound_1_b"
+                }
+              ] }
+            ]
+          }
+        }
+      },
+      "scene2": {
+        "id": "scene2",
+        "background": "gtfs",
+        "title": "Introduction",
+        "description": "starting Act Now!",
+        "call": {"func": "sendSCORM"},
+        "variables": [ "sound_2_a", "sound_2_b", "sound_2_c", "sound_2_d", "sound_2_e"],
+        "actors": [
+          {
+            "name": "default",
+            "type": "button",
+            "image": "exit",
+            "location": [ 10, 20 ],
+            "variable": "change_act"
+          },
+          {
+            "name": "sound_2_a",
+            "type": "audio",
+            "audio": [ "x0200a"],
+            "variable": "sound_2_a"
+          },
+          {
+            "name": "backbutton",
+            "type": "button",
+            "image": "back",
+            "location": [ 85, 400 ],
+            "variable": "back_button"
+          },
+          {
+            "name": "nextbutton",
+            "type": "button",
+            "image": "next",
+            "location": [ 575, 400 ],
+            "variable": "next_button"
+          },
+          {
+            "name": "scene_2_title",
+            "type": "text",
+            "text": "Unwanted sexual attention",
+            "location": [ 178, 50 ],
+            "font": "heading"
+          }
+        ],
+        "outcomes": {
+          "scene_2_back": {
+            "events": {"back_button": "*" },
+            "actions": [
+              {
+                "type": "scene",
+                "args": ["scene1"]
+              }
+            ]
+          },
+          "scene_2_next": {
+            "events": {"next_button": "*" },
+            "actions": [
+              {
+                "type": "scene",
+                "args": ["scene3"]
+              }
+            ]
+          },
+          "scene_2_sound_2": {
+            "events": {"sound_2_a": "played" },
+            "actions": [
+              { "type": "add-actor", "args": [
+                {
+                  "name": "scene_2_item_1",
+                  "type": "text",
+                  "text": "Making comments about someone's body or sexuality",
+                  "location": [ 110, 105 ],
+                  "font": "standard",
+                  "bullet": true
+                }
+              ] },
+              { "type": "add-actor", "args": [
+                {
+                  "name": "sound_2_b",
+                  "type": "audio",
+                  "audio": [ "x0200b"],
+                  "variable": "sound_2_b"
+                }
+              ] }
+            ]
+          },
+          "scene_2_sound_3": {
+            "events": {"sound_2_b": "played" },
+            "actions": [
+              { "type": "add-actor", "args": [
+                {
+                  "name": "scene_2_item_2",
+                  "type": "text",
+                  "text": "Touching someone's body",
+                  "location": [ 110, 180 ],
+                  "font": "standard",
+                  "bullet": true
+                }
+              ] },
+              { "type": "add-actor", "args": [
+                {
+                  "name": "sound_2_c",
+                  "type": "audio",
+                  "audio": [ "x0200c"],
+                  "variable": "sound_2_c"
+                }
+              ] }
+            ]
+          },
+          "scene_2_sound_4": {
+            "events": {"sound_2_c": "played" },
+            "actions": [
+              { "type": "add-actor", "args": [
+                {
+                  "name": "scene_2_item_3",
+                  "type": "text",
+                  "text": "Forcing a person to kiss or do sexual things",
+                  "location": [ 110, 220 ],
+                  "font": "standard",
+                  "bullet": true
+                }
+              ] },
+              { "type": "add-actor", "args": [
+                {
+                  "name": "sound_2_d",
+                  "type": "audio",
+                  "audio": [ "x0200d"],
+                  "variable": "sound_2_d"
+                }
+              ] }
+            ]
+          },
+          "scene_2_sound_5": {
+            "events": {"sound_2_d": "played" },
+            "actions": [
+              { "type": "add-actor", "args": [
+                {
+                  "name": "scene_2_item_4",
+                  "type": "text",
+                  "text": "Snapping someone's bra",
+                  "location": [ 110, 295 ],
+                  "font": "standard",
+                  "bullet": true
+                }
+              ] },
+              { "type": "add-actor", "args": [
+                {
+                  "name": "sound_2_e",
+                  "type": "audio",
+                  "audio": [ "x0200e"],
+                  "variable": "sound_2_e"
+                }
+              ] }
+            ]
+          }
+        }
+      },
+      "scene3": {
+        "id": "scene3",
+        "background": "gtfs",
+        "title": "Introduction",
+        "description": "starting Act Now!",
+        "call": {"func": "sendSCORM"},
+        "variables": [ "sound_3_f", "sound_3_g", "sound_3_h", "sound_3_i", "sound_3_j"],
+        "actors": [
+          {
+            "name": "default",
+            "type": "button",
+            "image": "exit",
+            "location": [ 10, 20 ],
+            "variable": "change_act"
+          },
+          {
+            "name": "sound_3_f",
+            "type": "audio",
+            "audio": [ "x0200f"],
+            "variable": "sound_3_f"
+          },
+          {
+            "name": "scene_3_item_1",
+            "type": "text",
+            "text": "Giving or showing sexual pictures or notes to someone",
+            "location": [ 110, 95 ],
+            "font": "standard",
+            "bullet": true
+          },
+          {
+            "name": "backbutton",
+            "type": "button",
+            "image": "back",
+            "location": [ 85, 400 ],
+            "variable": "back_button"
+          },
+          {
+            "name": "nextbutton",
+            "type": "button",
+            "image": "next",
+            "location": [ 575, 400 ],
+            "variable": "next_button"
+          },
+          {
+            "name": "scene_3_title",
+            "type": "text",
+            "text": "Unwanted sexual attention",
+            "location": [ 178, 50 ],
+            "font": "heading"
+          }
+        ],
+        "outcomes": {
+          "scene_3_back": {
+            "events": {"back_button": "*" },
+            "actions": [
+              {
+                "type": "scene",
+                "args": ["scene2"]
+              }
+            ]
+          },
+          "scene_3_next": {
+            "events": {"next_button": "*" },
+            "actions": [
+              {
+                "type": "scene",
+                "args": ["scene4"]
+              }
+            ]
+          },
+          "scene_3_sound_3": {
+            "events": {"sound_3_f": "played" },
+            "actions": [
+              { "type": "add-actor", "args": [
+                {
+                  "name": "scene_3_item_2",
+                  "type": "text",
+                  "text": "Pulling clothing off or down",
+                  "location": [ 110, 170 ],
+                  "font": "standard",
+                  "bullet": true
+                }
+              ] },
+              { "type": "add-actor", "args": [
+                {
+                  "name": "sound_3_g",
+                  "type": "audio",
+                  "audio": [ "x0200g"],
+                  "variable": "sound_3_g"
+                }
+              ] }
+            ]
+          },
+          "scene_3_sound_4": {
+            "events": {"sound_3_g": "played" },
+            "actions": [
+              { "type": "add-actor", "args": [
+                {
+                  "name": "scene_3_item_3",
+                  "type": "text",
+                  "text": "Howling, catcalling, or whistling",
+                  "location": [ 110, 210 ],
+                  "font": "standard",
+                  "bullet": true
+                }
+              ] },
+              { "type": "add-actor", "args": [
+                {
+                  "name": "sound_3_h",
+                  "type": "audio",
+                  "audio": [ "x0200h"],
+                  "variable": "sound_3_h"
+                }
+              ] }
+            ]
+          },
+          "scene_3_sound_5": {
+            "events": {"sound_3_h": "played" },
+            "actions": [
+              { "type": "add-actor", "args": [
+                {
+                  "name": "scene_3_item_4",
+                  "type": "text",
+                  "text": "Spreading sexual rumors about someone",
+                  "location": [ 110, 245 ],
+                  "font": "standard",
+                  "bullet": true
+                }
+              ] },
+              { "type": "add-actor", "args": [
+                {
+                  "name": "sound_3_i",
+                  "type": "audio",
+                  "audio": [ "x0200i"],
+                  "variable": "sound_3_i"
+                }
+              ] }
+            ]
+          },
+          "scene_3_sound_6": {
+            "events": {"sound_3_i": "played" },
+            "actions": [
+              { "type": "add-actor", "args": [
+                {
+                  "name": "scene_3_item_5",
+                  "type": "text",
+                  "text": "Making sexual comments or jokes",
+                  "location": [ 110, 320 ],
+                  "font": "standard",
+                  "bullet": true
+                }
+              ] },
+              { "type": "add-actor", "args": [
+                {
+                  "name": "sound_3_j",
+                  "type": "audio",
+                  "audio": [ "x0200j"],
+                  "variable": "sound_3_j"
+                }
+              ] }
+            ]
+          }
+        }
+      },
+      "scene4": {
+        "id": "scene4",
+        "background": "gtfs",
+        "title": "Introduction",
+        "description": "starting Act Now!",
+        "call": {"func": "sendSCORM"},
+        "variables": [ "sound_4_a", "sound_4_b", "sound_4_c", "sound_4_d" ],
+        "actors": [
+          {
+            "name": "default",
+            "type": "button",
+            "image": "exit",
+            "location": [ 10, 20 ],
+            "variable": "change_act"
+          },
+          {
+            "name": "sound_4_a",
+            "type": "audio",
+            "audio": [ "x0300a"],
+            "variable": "sound_4_a"
+          },
+          {
+            "name": "backbutton",
+            "type": "button",
+            "image": "back",
+            "location": [ 85, 400 ],
+            "variable": "back_button"
+          },
+          {
+            "name": "nextbutton",
+            "type": "button",
+            "image": "next",
+            "location": [ 575, 400 ],
+            "variable": "next_button"
+          },
+          {
+            "name": "scene_4_title",
+            "type": "text",
+            "text": "How to handle sexual harassment",
+            "location": [ 120, 50 ],
+            "font": "heading"
+          }
+        ],
+        "outcomes": {
+          "scene_4_back": {
+            "events": {"back_button": "*" },
+            "actions": [
+              {
+                "type": "scene",
+                "args": ["scene3"]
+              }
+            ]
+          },
+          "scene_4_next": {
+            "events": {"next_button": "*" },
+            "actions": [
+              {
+                "type": "scene",
+                "args": ["scene5"]
+              }
+            ]
+          },
+          "scene_4_sound_2": {
+            "events": {"sound_4_a": "played" },
+            "actions": [
+              { "type": "add-actor", "args": [
+                {
+                  "name": "scene_4_item_1",
+                  "type": "text",
+                  "text": "Don't ignore it.",
+                  "location": [ 110, 105 ],
+                  "font": "standard",
+                  "bullet": true
+                }
+              ] },
+              { "type": "add-actor", "args": [
+                {
+                  "name": "sound_4_b",
+                  "type": "audio",
+                  "audio": [ "x0300b"],
+                  "variable": "sound_4_b"
+                }
+              ] }
+            ]
+          },
+          "scene_4_sound_3": {
+            "events": {"sound_4_b": "played" },
+            "actions": [
+              { "type": "add-actor", "args": [
+                {
+                  "name": "scene_4_item_2",
+                  "type": "text",
+                  "text": "Tell the person to stop.",
+                  "location": [ 110, 145 ],
+                  "font": "standard",
+                  "bullet": true
+                }
+              ] },
+              { "type": "add-actor", "args": [
+                {
+                  "name": "sound_4_c",
+                  "type": "audio",
+                  "audio": [ "x0300c"],
+                  "variable": "sound_4_c"
+                }
+              ] }
+            ]
+          },
+          "scene_4_sound_4": {
+            "events": {"sound_4_c": "played" },
+            "actions": [
+              { "type": "add-actor", "args": [
+                {
+                  "name": "scene_4_item_3",
+                  "type": "text",
+                  "text": "Talk to someone you trust.",
+                  "location": [ 110, 184 ],
+                  "font": "standard",
+                  "bullet": true
+                }
+              ] },
+              { "type": "add-actor", "args": [
+                {
+                  "name": "sound_4_d",
+                  "type": "audio",
+                  "audio": [ "x0300d"],
+                  "variable": "sound_4_d"
+                }
+              ] }
+            ]
+          }
+        }
+      },
+      "scene5": {
+        "id": "scene5",
+        "background": "gtfs",
+        "title": "Introduction",
+        "description": "starting Act Now!",
+        "call": {"func": "sendSCORM"},
+        "actors": [
+          {
+            "name": "default",
+            "type": "button",
+            "image": "exit",
+            "location": [ 10, 20 ],
+            "variable": "change_act"
+          },
+          {
+            "name": "end_text",
+            "type": "text",
+            "text": "You have completed this lesson. To continue, please click the red arrow in the upper left corner",
+            "location": [ 138, 150 ],
+            "font": "goodbye"
+          },
+          {
+            "name": "backbutton",
+            "type": "button",
+            "image": "back",
+            "location": [ 85, 400 ],
+            "variable": "back_button"
+          }
+        ],
+        "outcomes": {
+          "scene_5_back": {
+            "events": {"back_button": "*" },
+            "actions": [
+              {
+                "type": "scene",
+                "args": ["scene4"]
+              }
+            ]
+          }
+        }
+      }
+    }
+  }
+}

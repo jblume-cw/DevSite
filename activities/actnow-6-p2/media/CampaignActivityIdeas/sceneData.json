@@ -1,0 +1,786 @@
+{
+  "play": {
+    "start": "caIdeas_intro",
+    "showPlayThrough": false,
+    "scenes": {
+      "caIdeas_intro": {
+        "id": "caIdeas_intro",
+        "background": "getTheFactsBackground",
+        "title": "Campaign activity ideas",
+        "actors": [
+          {
+            "name": "campaignActivityIdeas",
+            "type": "text",
+            "font": "caIdeas_header",
+            "location": [ 183, 42 ],
+            "text": "Campaign activity ideas"
+          },
+          {
+            "name": "caIdeas_intro_sound_1_a",
+            "type": "audio",
+            "audio": [ "s0100a"],
+            "variable": "caIdeas_intro_sound_1_a"
+          },
+          {
+            "name": "forwardButton",
+            "type": "button",
+            "image": "getTheFactsNext",
+            "location": [ 572, 400 ],
+            "variable": "caIdeas_intro_showNext"
+          },
+          {
+            "name": "mutebutton",
+            "type": "toggle-button",
+            "images": {
+              "on": "getTheFactsSoundOn",
+              "off": "getTheFactsSoundOff"
+            },
+            "location": [ 360, 404 ],
+            "scale": [ 0.7, 0.7 ],
+            "variable": "mute_game",
+            "values": {
+              "on": "mute_on",
+              "off": "mute_off"
+            },
+            "active": true
+          },
+          {
+            "name": "default",
+            "type": "button",
+            "image": "getTheFactsExit",
+            "location": [ 12, 7 ],
+            "variable": "change_act"
+          }
+        ],
+        "outcomes": {
+          "caIdeas_intro_sound_a_done": {
+            "events": {"caIdeas_intro_sound_1_a": "played" },
+            "actions": [
+                {
+                  "type": "add-actor", "args": [
+                  {
+                    "name": "psasBetweenClasses_image",
+                    "type": "decoration",
+                    "image": "psasBetweenClasses",
+                    "key": "decorations",
+                    "location": [ 99, 158 ],
+                    "scale": [ 1.0, 1.0 ]
+                  }
+                ]
+              },
+              {
+                "type": "add-actor", "args": [
+                  {
+                    "name": "caIdeas_intro_sound_1_b",
+                    "type": "audio",
+                    "audio": [ "s0100b"],
+                    "variable": "caIdeas_intro_sound_1_b"
+                  }
+                ]
+              }
+            ]
+          },
+          "caIdeas_intro_sound_b_done": {
+            "events": {"caIdeas_intro_sound_1_b": "played" },
+            "actions": [
+              {
+                "type": "add-actor", "args": [
+                  {
+                    "name": "billboards_image",
+                    "type": "decoration",
+                    "image": "billboards",
+                    "key": "decorations",
+                    "location": [ 364, 156 ],
+                    "scale": [ 1.0, 1.0 ]
+                  }
+                ]
+              },
+              {
+                "type": "add-actor", "args": [
+                  {
+                    "name": "posters_image",
+                    "type": "decoration",
+                    "image": "posters",
+                    "key": "decorations",
+                    "location": [ 273, 329 ],
+                    "scale": [ 1.0, 1.0 ]
+                  }
+                ]
+              },
+              {
+                "type": "add-actor", "args": [
+                  {
+                    "name": "caIdeas_intro_sound_1_c",
+                    "type": "audio",
+                    "audio": [ "s0100c"],
+                    "variable": "caIdeas_intro_sound_1_c"
+                  }
+                ]
+              }
+            ]
+          },
+          "caIdeas_intro_sound_c_done": {
+            "events": {"caIdeas_intro_sound_1_c": "played" },
+            "actions": [
+              {
+                "type": "add-actor", "args": [
+                  {
+                    "name": "pledgeWall_image",
+                    "type": "decoration",
+                    "image": "pledgeWall",
+                    "key": "decorations",
+                    "location": [ 502, 73 ],
+                    "scale": [ 1.0, 1.0 ]
+                  }
+                ]
+              },
+              {
+                "type": "add-actor", "args": [
+                  {
+                    "name": "caIdeas_intro_sound_1_d",
+                    "type": "audio",
+                    "audio": [ "s0100d"],
+                    "variable": "caIdeas_intro_sound_1_d"
+                  }
+                ]
+              }
+            ]
+          },
+          "caIdeas_intro_sound_d_done": {
+            "events": {"caIdeas_intro_sound_1_d": "played" },
+            "actions": [
+              {
+                "type": "add-actor", "args": [
+                  {
+                    "name": "actsOfKindnessAwards_image",
+                    "type": "decoration",
+                    "image": "actsOfKindnessAwards",
+                    "key": "decorations",
+                    "location": [ 103, 94 ],
+                    "scale": [ 1.0, 1.0 ]
+                  }
+                ]
+              },
+              {
+                "type": "add-actor", "args": [
+                  {
+                    "name": "caIdeas_intro_sound_1_e",
+                    "type": "audio",
+                    "audio": [ "s0100e"],
+                    "variable": "caIdeas_intro_sound_1_e"
+                  }
+                ]
+              }
+            ]
+          },
+          "caIdeas_intro_sound_e_done": {
+            "events": {"caIdeas_intro_sound_1_e": "played" },
+            "actions": [
+              {
+                "type": "add-actor", "args": [
+                  {
+                    "name": "lettersToTheEditor_image",
+                    "type": "decoration",
+                    "image": "lettersToTheEditor",
+                    "key": "decorations",
+                    "location": [ 460, 191 ],
+                    "scale": [ 1.0, 1.0 ]
+                  }
+                ]
+              },
+              {
+                "type": "add-actor", "args": [
+                  {
+                    "name": "caIdeas_intro_sound_1_f",
+                    "type": "audio",
+                    "audio": [ "s0100f"],
+                    "variable": "caIdeas_intro_sound_1_f"
+                  }
+                ]
+              }
+            ]
+          },
+          "caIdeas_intro_sound_f_done": {
+            "events": {"caIdeas_intro_sound_1_f": "played" },
+            "actions": [
+              {
+                "type": "add-actor", "args": [
+                {
+                  "name": "newspaperArticles_image",
+                  "type": "decoration",
+                  "image": "newspaperArticles",
+                  "key": "decorations",
+                  "location": [ 498, 130 ],
+                  "scale": [ 1.0, 1.0 ]
+                }
+              ]
+              },
+              {
+                "type": "add-actor", "args": [
+                {
+                  "name": "caIdeas_intro_sound_1_g",
+                  "type": "audio",
+                  "audio": [ "s0100g"],
+                  "variable": "caIdeas_intro_sound_1_g"
+                }
+              ]
+              }
+            ]
+          },
+          "caIdeas_intro_sound_g_done": {
+            "events": {"caIdeas_intro_sound_1_g": "played" },
+            "actions": [
+              {
+                "type": "add-actor", "args": [
+                  {
+                    "name": "tshirtLogoContest_image",
+                    "type": "decoration",
+                    "image": "tshirtLogoContest",
+                    "key": "decorations",
+                    "location": [ 445, 342 ],
+                    "scale": [ 1.0, 1.0 ]
+                  }
+                ]
+              },
+              {
+                "type": "add-actor", "args": [
+                  {
+                    "name": "caIdeas_intro_sound_1_h",
+                    "type": "audio",
+                    "audio": [ "s0100h"],
+                    "variable": "caIdeas_intro_sound_1_h"
+                  }
+                ]
+              }
+            ]
+          },
+          "caIdeas_intro_sound_h_done": {
+            "events": {"caIdeas_intro_sound_1_h": "played" },
+            "actions": [
+              {
+                "type": "add-actor", "args": [
+                  {
+                    "name": "graffitiMural_image",
+                    "type": "decoration",
+                    "image": "graffitiMural",
+                    "key": "decorations",
+                    "location": [ 537, 271 ],
+                    "scale": [ 1.0, 1.0 ]
+                  }
+                ]
+              },
+              {
+                "type": "add-actor", "args": [
+                  {
+                    "name": "caIdeas_intro_sound_1_i",
+                    "type": "audio",
+                    "audio": [ "s0100i"],
+                    "variable": "caIdeas_intro_sound_1_i"
+                  }
+                ]
+              }
+            ]
+          },
+          "caIdeas_intro_sound_i_done": {
+            "events": {"caIdeas_intro_sound_1_i": "played" },
+            "actions": [
+              {
+                "type": "add-actor", "args": [
+                {
+                  "name": "antibullyingClub_image",
+                  "type": "decoration",
+                  "image": "antibullyingClub",
+                  "key": "decorations",
+                  "location": [ 90, 276 ],
+                  "scale": [ 1.0, 1.0 ]
+                }
+              ]
+              },
+              {
+                "type": "add-actor", "args": [
+                {
+                  "name": "caIdeas_intro_sound_1_j",
+                  "type": "audio",
+                  "audio": [ "s0100j"],
+                  "variable": "caIdeas_intro_sound_1_j"
+                }
+              ]
+              }
+            ]
+          },
+          "caIdeas_intro_sound_j_done": {
+            "events": {"caIdeas_intro_sound_1_j": "played" },
+            "actions": [
+              {
+                "type": "add-actor", "args": [
+                {
+                  "name": "carnivalOrPepRally_image",
+                  "type": "decoration",
+                  "image": "carnivalOrPepRally",
+                  "key": "decorations",
+                  "location": [ 108, 381 ],
+                  "scale": [ 1.0, 1.0 ]
+                }
+              ]
+              },
+              {
+                "type": "add-actor", "args": [
+                {
+                  "name": "caIdeas_intro_sound_1_k",
+                  "type": "audio",
+                  "audio": [ "s0100k"],
+                  "variable": "caIdeas_intro_sound_1_k"
+                }
+              ]
+              }
+            ]
+          },
+          "caIdeas_intro_sound_k_done": {
+            "events": {"caIdeas_intro_sound_1_k": "played" },
+            "actions": [
+                {
+                  "type": "add-actor", "args": [
+                  {
+                    "name": "battleOfTheBands_image",
+                    "type": "decoration",
+                    "image": "battleOfTheBands",
+                    "key": "decorations",
+                    "location": [ 266, 250 ],
+                    "scale": [ 1.0, 1.0 ]
+                  }
+                ]
+              },
+              {
+                "type": "add-actor", "args": [
+                {
+                  "name": "caIdeas_intro_sound_1_l",
+                  "type": "audio",
+                  "audio": [ "s0100l"],
+                  "variable": "caIdeas_intro_sound_1_l"
+                }
+              ]
+              }
+            ]
+          },
+          "forward_button": {
+            "events": { "caIdeas_intro_showNext": "*" },
+            "actions": [
+              {
+                "type": "scene",
+                "args": ["caIdeas_createAwareness"]
+              }
+            ]
+          }
+        }
+      },
+      "caIdeas_createAwareness": {
+        "id": "caIdeas_createAwareness",
+        "background": "getTheFactsBackground",
+        "title": "Create awareness",
+        "actors": [
+          {
+            "name": "createAwareness",
+            "type": "text",
+            "font": "caIdeas_header",
+            "location": [ 233, 42 ],
+            "text": "Create awareness"
+          },
+          {
+            "name": "createAwareness_image",
+            "type": "decoration",
+            "image": "createAwareness",
+            "key": "decorations",
+            "location": [ 378, 89 ],
+            "scale": [ 0.95, 0.95 ]
+          },
+          {
+            "name": "caIdeas_createAwareness_item_1",
+            "type": "text",
+            "text": "Bring attention to the problem.",
+            "location": [ 100, 85 ],
+            "bullet": "true",
+            "font": "caIdeas_bullet"
+          },
+          {
+            "name": "caIdeas_createAwareness_sound_2_a",
+            "type": "audio",
+            "audio": [ "s0200a"],
+            "variable": "caIdeas_createAwareness_sound_2_a"
+          },
+          {
+            "name": "backButton",
+            "type": "button",
+            "image": "getTheFactsBack",
+            "location": [ 90, 400 ],
+            "variable": "caIdeas_createAwareness_showPrevious"
+          },
+          {
+            "name": "forwardButton",
+            "type": "button",
+            "image": "getTheFactsNext",
+            "location": [ 572, 400 ],
+            "variable": "caIdeas_createAwareness_showNext"
+          },
+          {
+            "name": "mutebutton",
+            "type": "toggle-button",
+            "images": {
+              "on": "getTheFactsSoundOn",
+              "off": "getTheFactsSoundOff"
+            },
+            "location": [ 360, 404 ],
+            "scale": [ 0.7, 0.7 ],
+            "variable": "mute_game",
+            "values": {
+              "on": "mute_on",
+              "off": "mute_off"
+            },
+            "active": true
+          },
+          {
+            "name": "default",
+            "type": "button",
+            "image": "getTheFactsExit",
+            "location": [ 12, 7 ],
+            "variable": "change_act"
+          }
+        ],
+        "outcomes": {
+          "caIdeas_createAwareness_sound_a_done": {
+            "events": {"caIdeas_createAwareness_sound_2_a": "played" },
+            "actions": [
+              {
+                "type": "add-actor", "args": [
+                  {
+                    "name": "caIdeas_createAwareness_item_2",
+                    "type": "text",
+                    "text": "Get everyone involved.",
+                    "location": [ 100, 142 ],
+                    "bullet": "true",
+                    "font": "caIdeas_bullet"
+                  }
+                ]
+              },
+              {
+                "type": "add-actor", "args": [
+                  {
+                    "name": "caIdeas_createAwareness_sound_2_b",
+                    "type": "audio",
+                    "audio": [ "s0200b"],
+                    "variable": "caIdeas_createAwareness_sound_2_b"
+                  }
+                ]
+              }
+            ]
+          },
+          "caIdeas_createAwareness_sound_b_done": {
+            "events": {"caIdeas_createAwareness_sound_2_b": "played" },
+            "actions": [
+              {
+                "type": "add-actor", "args": [
+                  {
+                    "name": "caIdeas_createAwareness_item_3",
+                    "type": "text",
+                    "text": "Design the campaign to fit your school.",
+                    "location": [ 100, 199 ],
+                    "bullet": "true",
+                    "font": "caIdeas_bullet"
+                  }
+                ]
+              },
+              {
+                "type": "add-actor", "args": [
+                  {
+                    "name": "caIdeas_createAwareness_sound_2_c",
+                    "type": "audio",
+                    "audio": [ "s0200c"],
+                    "variable": "caIdeas_createAwareness_sound_2_c"
+                  }
+                ]
+              }
+            ]
+          },
+          "caIdeas_createAwareness_sound_c_done": {
+            "events": {"caIdeas_createAwareness_sound_2_c": "played" },
+            "actions": [
+              {
+                "type": "add-actor", "args": [
+                  {
+                    "name": "caIdeas_createAwareness_sound_2_d",
+                    "type": "audio",
+                    "audio": [ "s0200d"],
+                    "variable": "caIdeas_createAwareness_sound_2_d"
+                  }
+                ]
+              }
+            ]
+          },
+          "back_button": {
+            "events": { "caIdeas_createAwareness_showPrevious": "*" },
+            "actions": [
+              {
+                "type": "scene",
+                "args": ["caIdeas_intro"]
+              }
+            ]
+          },
+          "forward_button": {
+            "events": { "caIdeas_createAwareness_showNext": "*" },
+            "actions": [
+              {
+                "type": "scene",
+                "args": ["caIdeas_serviceLearningProject"]
+              }
+            ]
+          }
+        }
+      },
+      "caIdeas_serviceLearningProject": {
+        "id": "caIdeas_serviceLearningProject",
+        "background": "getTheFactsBackground",
+        "title": "Service learning project",
+        "actors": [
+          {
+            "name": "serviceLearningProject",
+            "type": "text",
+            "font": "caIdeas_header",
+            "location": [ 182, 42 ],
+            "text": "Service learning project"
+          },
+          {
+            "name": "serviceLearningProject_image",
+            "type": "decoration",
+            "image": "serviceLearningProject",
+            "key": "decorations",
+            "location": [ 378, 89 ],
+            "scale": [ 0.95, 0.95 ]
+          },
+          {
+            "name": "caIdeas_serviceLearningProject_sound_3_a",
+            "type": "audio",
+            "audio": [ "s0300a"],
+            "variable": "caIdeas_serviceLearningProject_sound_3_a"
+          },
+          {
+            "name": "backButton",
+            "type": "button",
+            "image": "getTheFactsBack",
+            "location": [ 90, 400 ],
+            "variable": "caIdeas_serviceLearningProject_showPrevious"
+          },
+          {
+            "name": "forwardButton",
+            "type": "button",
+            "image": "getTheFactsNext",
+            "location": [ 572, 400 ],
+            "variable": "caIdeas_serviceLearningProject_showNext"
+          },
+          {
+            "name": "mutebutton",
+            "type": "toggle-button",
+            "images": {
+              "on": "getTheFactsSoundOn",
+              "off": "getTheFactsSoundOff"
+            },
+            "location": [ 360, 404 ],
+            "scale": [ 0.7, 0.7 ],
+            "variable": "mute_game",
+            "values": {
+              "on": "mute_on",
+              "off": "mute_off"
+            },
+            "active": true
+          },
+          {
+            "name": "default",
+            "type": "button",
+            "image": "getTheFactsExit",
+            "location": [ 12, 7 ],
+            "variable": "change_act"
+          }
+        ],
+        "outcomes": {
+          "caIdeas_serviceLearningProject_sound_a_done": {
+            "events": {"caIdeas_serviceLearningProject_sound_3_a": "played" },
+            "actions": [
+              {
+                "type": "add-actor", "args": [
+                  {
+                    "name": "caIdeas_serviceLearningProject_item_1",
+                    "type": "text",
+                    "text": "For more campaign activity ideas click here.",
+                    "location": [ 93, 95 ],
+                    "bullet": "true",
+                    "font": "caIdeas_bullet"
+                  }
+                ]
+              },
+              {
+                "type": "add-actor", "args": [
+                  {
+                    "name": "campaignResourcesUnderlineHyperlink_image",
+                    "type": "decoration",
+                    "image": "horizontalLine",
+                    "key": "decorations",
+                    "location": [ 114, 176 ],
+                    "scale": [ 0.26, 0.33 ]
+                  }
+                ]
+              },
+              {
+                "type": "add-actor", "args": [
+                  {
+                    "name": "campaignResourcesHyperlinkButton",
+                    "type": "url-button-invisible",
+                    "location": [ 114, 153 ],
+                    "width": 53,
+                    "height": 28,
+                    "url": "campaignideas.pdf",
+                    "variable": "caIdeas_serviceLearningProject_campaignResourcesHyperlink"
+                  }
+                ]
+              },
+              {
+                "type": "add-actor", "args": [
+                  {
+                    "name": "caIdeas_serviceLearningProject_sound_3_b",
+                    "type": "audio",
+                    "audio": [ "s0300b"],
+                    "variable": "caIdeas_serviceLearningProject_sound_3_b"
+                  }
+                ]
+              }
+            ]
+          },
+          "caIdeas_serviceLearningProject_sound_b_done": {
+            "events": {"caIdeas_serviceLearningProject_sound_3_b": "played" },
+            "actions": [
+              {
+                "type": "add-actor", "args": [
+                  {
+                    "name": "caIdeas_serviceLearningProject_item_2",
+                    "type": "text",
+                    "text": "www.stopbullying.gov",
+                    "location": [ 93, 183 ],
+                    "bullet": "true",
+                    "font": "caIdeas_bullet"
+                  }
+                ]
+              },
+              {
+                "type": "add-actor", "args": [
+                  {
+                    "name": "stopbullyingUnderlineHyperlink_image",
+                    "type": "decoration",
+                    "image": "horizontalLine",
+                    "key": "decorations",
+                    "location": [ 114, 208 ],
+                    "scale": [ 1.26, 0.33 ]
+                  }
+                ]
+              },
+              {
+                "type": "add-actor", "args": [
+                  {
+                    "name": "stopbullyingHyperlinkButton",
+                    "type": "url-button-invisible",
+                    "location": [ 115, 185 ],
+                    "width": 253,
+                    "height": 28,
+                    "url": "http://www.stopbullying.gov",
+                    "variable": "caIdeas_serviceLearningProject_stopbullyingHyperlink"
+                  }
+                ]
+              },
+              {
+                "type": "add-actor", "args": [
+                {
+                  "name": "caIdeas_serviceLearningProject_sound_3_c",
+                  "type": "audio",
+                  "audio": [ "s0300c"],
+                  "variable": "caIdeas_serviceLearningProject_sound_3_c"
+                }
+              ]
+              }
+            ]
+          },
+          "back_button": {
+            "events": { "caIdeas_serviceLearningProject_showPrevious": "*" },
+            "actions": [
+              {
+                "type": "scene",
+                "args": ["caIdeas_createAwareness"]
+              }
+            ]
+          },
+          "forward_button": {
+            "events": { "caIdeas_serviceLearningProject_showNext": "*" },
+            "actions": [
+              {
+                "type": "scene",
+                "args": ["caIdeas_completed"]
+              }
+            ]
+          }
+        }
+      },
+      "caIdeas_completed": {
+        "id": "caIdeas_completed",
+        "background": "getTheFactsBackground",
+        "title": "You Have Completed This Lesson",
+        "actors": [
+          {
+            "name": "youHaveCompletedThisLesson",
+            "type": "text",
+            "font": "caIdeas_completed",
+            "location": [ 123, 141 ],
+            "text": "You have completed this lesson. To continue, please click the red arrow in the upper left corner."
+          },
+          {
+            "name": "backButton",
+            "type": "button",
+            "image": "getTheFactsBack",
+            "location": [ 90, 400 ],
+            "variable": "caIdeas_completed_showPrevious"
+          },
+          {
+            "name": "mutebutton",
+            "type": "toggle-button",
+            "images": {
+              "on": "getTheFactsSoundOn",
+              "off": "getTheFactsSoundOff"
+            },
+            "location": [ 360, 404 ],
+            "scale": [
+              0.7, 0.7
+            ],
+            "variable": "mute_game",
+            "values": {
+              "on": "mute_on",
+              "off": "mute_off"
+            },
+            "active": true
+          },
+          {
+            "name": "default",
+            "type": "button",
+            "image": "getTheFactsExit",
+            "location": [ 12, 7 ],
+            "variable": "change_act"
+          }
+        ],
+        "outcomes": {
+          "back_button": {
+            "events": { "caIdeas_completed_showPrevious": "*" },
+            "actions": [
+              {
+                "type": "scene",
+                "args": ["caIdeas_serviceLearningProject"]
+              }
+            ]
+          }
+        }
+      }
+    }
+  }
+}

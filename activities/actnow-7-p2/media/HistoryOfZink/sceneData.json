@@ -1,0 +1,481 @@
+{
+  "play": {
+    "start": "hoZink_intro",
+    "showPlayThrough": false,
+    "scenes": {
+      "hoZink_intro": {
+        "id": "hoZink_intro",
+        "background": "getTheFactsBackground",
+        "title": "The history of Zink",
+        "actors": [
+          {
+            "name": "historyOfZink",
+            "type": "text",
+            "font": "hoZink_header",
+            "location": [ 235, 37 ],
+            "text": "The history of Zink",
+            "audio": "h0100"
+          },
+          {
+            "name": "zinkIntro",
+            "type": "decoration",
+            "image": "zinkIntro",
+            "key": "decorations",
+            "location": [ 164, 84 ],
+            "scale": [ 1.0, 1.0 ]
+          },
+          {
+            "name": "forwardButton",
+            "type": "button",
+            "image": "getTheFactsNext",
+            "location": [ 572, 400 ],
+            "variable": "hoZink_intro_showNext"
+          },
+          {
+            "name": "mutebutton",
+            "type": "toggle-button",
+            "images": {
+              "on": "getTheFactsSoundOn",
+              "off": "getTheFactsSoundOff"
+            },
+            "location": [ 360, 404 ],
+            "scale": [
+              0.7, 0.7
+            ],
+            "variable": "mute_game",
+            "values": {
+              "on": "mute_on",
+              "off": "mute_off"
+            },
+            "active": true
+          },
+          {
+            "name": "default",
+            "type": "button",
+            "image": "getTheFactsExit",
+            "location": [ 12, 7 ],
+            "variable": "change_act"
+          }
+        ],
+        "outcomes": {
+          "forward_button": {
+            "events": { "hoZink_intro_showNext": "*" },
+            "actions": [
+              {
+                "type": "scene",
+                "args": ["hoZink_collage"]
+              }
+            ]
+          }
+        }
+      },
+      "hoZink_collage": {
+        "id": "hoZink_collage",
+        "background": "getTheFactsBackground",
+        "title": "Collage",
+        "actors": [
+          {
+            "name": "hoZink_collage_image1",
+            "type": "decoration",
+            "image": "collage1",
+            "key": "decorations",
+            "location": [ 243, 45 ],
+            "scale": [ 1.0, 1.0 ]
+          },
+          {
+            "name": "hoZink_collage_sound_2_a",
+            "type": "audio",
+            "audio": [ "h0200a"],
+            "variable": "hoZink_collage_sound_2_a"
+          },
+          {
+            "name": "backButton",
+            "type": "button",
+            "image": "getTheFactsBack",
+            "location": [ 90, 400 ],
+            "variable": "hoZink_collage_showPrevious"
+          },
+          {
+            "name": "forwardButton",
+            "type": "button",
+            "image": "getTheFactsNext",
+            "location": [ 572, 400 ],
+            "variable": "hoZink_collage_showNext"
+          },
+          {
+            "name": "mutebutton",
+            "type": "toggle-button",
+            "images": {
+              "on": "getTheFactsSoundOn",
+              "off": "getTheFactsSoundOff"
+            },
+            "location": [ 360, 404 ],
+            "scale": [ 0.7, 0.7 ],
+            "variable": "mute_game",
+            "values": {
+              "on": "mute_on",
+              "off": "mute_off"
+            },
+            "active": true
+          },
+          {
+            "name": "default",
+            "type": "button",
+            "image": "getTheFactsExit",
+            "location": [ 12, 7 ],
+            "variable": "change_act"
+          }
+        ],
+        "outcomes": {
+          "hoZink_collage_sound_a_done": {
+            "events": {"hoZink_collage_sound_2_a": "played" },
+            "actions": [
+              {
+                "type": "add-actor", "args": [
+                {
+                  "name": "hoZink_collage_image2",
+                  "type": "decoration",
+                  "image": "collage2",
+                  "key": "decorations",
+                  "location": [ 117, 182 ],
+                  "scale": [ 1.0, 1.0 ]
+                }
+              ]
+              },
+              {
+                "type": "add-actor", "args": [
+                {
+                  "name": "hoZink_collage_sound_2_b",
+                  "type": "audio",
+                  "audio": [ "h0200b"],
+                  "variable": "hoZink_collage_sound_2_b"
+                }
+              ]
+              }
+            ]
+          },
+          "hoZink_collage_sound_b_done": {
+            "events": {"hoZink_collage_sound_2_b": "played" },
+            "actions": [
+              { "type": "remove-actor", "args": ["hoZink_collage_image2"] },
+              {
+                "type": "add-actor", "args": [
+                {
+                  "name": "hoZink_collage_image3",
+                  "type": "decoration",
+                  "image": "collage3",
+                  "key": "decorations",
+                  "location": [ 243, 167 ],
+                  "scale": [ 1.0, 1.0 ]
+                }
+              ]
+              },
+              {
+                "type": "add-actor", "args": [
+                {
+                  "name": "hoZink_collage_image2",
+                  "type": "decoration",
+                  "image": "collage2",
+                  "key": "decorations",
+                  "location": [ 117, 182 ],
+                  "scale": [ 1.0, 1.0 ]
+                }
+              ]
+              },
+              {
+                "type": "add-actor", "args": [
+                {
+                  "name": "hoZink_collage_sound_2_c",
+                  "type": "audio",
+                  "audio": [ "h0200c"],
+                  "variable": "hoZink_collage_sound_2_c"
+                }
+              ]
+              }
+            ]
+          },
+          "hoZink_collage_sound_c_done": {
+            "events": {"hoZink_collage_sound_2_c": "played" },
+            "actions": [
+              {
+                "type": "add-actor", "args": [
+                {
+                  "name": "hoZink_collage_image4",
+                  "type": "decoration",
+                  "image": "collage4",
+                  "key": "decorations",
+                  "location": [ 380, 62 ],
+                  "scale": [ 1.0, 1.0 ]
+                }
+              ]
+              },
+              {
+                "type": "add-actor", "args": [
+                {
+                  "name": "hoZink_collage_sound_2_d",
+                  "type": "audio",
+                  "audio": [ "h0200d"],
+                  "variable": "hoZink_collage_sound_2_d"
+                }
+              ]
+              }
+            ]
+          },
+          "hoZink_collage_sound_d_done": {
+            "events": {"hoZink_collage_sound_2_d": "played" },
+            "actions": [
+              {
+                "type": "add-actor", "args": [
+                {
+                  "name": "hoZink_collage_image5",
+                  "type": "decoration",
+                  "image": "collage5",
+                  "key": "decorations",
+                  "location": [ 420, 190 ],
+                  "scale": [ 1.0, 1.0 ]
+                }
+              ]
+              },
+              {
+                "type": "add-actor", "args": [
+                {
+                  "name": "hoZink_collage_sound_2_e",
+                  "type": "audio",
+                  "audio": [ "h0200e"],
+                  "variable": "hoZink_collage_sound_2_e"
+                }
+              ]
+              }
+            ]
+          },
+          "hoZink_collage_sound_e_done": {
+            "events": {"hoZink_collage_sound_2_e": "played" },
+            "actions": [
+              { "type": "remove-actor", "args": ["hoZink_collage_image2"] },
+              {
+                "type": "add-actor", "args": [
+                {
+                  "name": "hoZink_collage_image6",
+                  "type": "decoration",
+                  "image": "collage6",
+                  "key": "decorations",
+                  "location": [ 95, 59 ],
+                  "scale": [ 1.0, 1.0 ]
+                }
+              ]
+              },
+              {
+                "type": "add-actor", "args": [
+                {
+                  "name": "hoZink_collage_image2",
+                  "type": "decoration",
+                  "image": "collage2",
+                  "key": "decorations",
+                  "location": [ 117, 182 ],
+                  "scale": [ 1.0, 1.0 ]
+                }
+              ]
+              },
+              {
+                "type": "add-actor", "args": [
+                {
+                  "name": "hoZink_collage_sound_2_f",
+                  "type": "audio",
+                  "audio": [ "h0200f"],
+                  "variable": "hoZink_collage_sound_2_f"
+                }
+              ]
+              }
+            ]
+          },
+          "hoZink_collage_sound_f_done": {
+            "events": {"hoZink_collage_sound_2_f": "played" },
+            "actions": [
+              { "type": "remove-actor", "args": ["hoZink_collage_image1"] },
+              { "type": "remove-actor", "args": ["hoZink_collage_image2"] },
+              { "type": "remove-actor", "args": ["hoZink_collage_image3"] },
+              { "type": "remove-actor", "args": ["hoZink_collage_image4"] },
+              { "type": "remove-actor", "args": ["hoZink_collage_image5"] },
+              { "type": "remove-actor", "args": ["hoZink_collage_image6"] },
+              {
+                "type": "add-actor", "args": [
+                {
+                  "name": "hoZink_collage_zinkBook",
+                  "type": "decoration",
+                  "image": "zinkBook",
+                  "key": "decorations",
+                  "location": [ 82, 32 ],
+                  "scale": [ 1.0, 1.0 ]
+                }
+              ]
+              },
+              {
+                "type": "add-actor", "args": [
+                {
+                  "name": "hoZink_collage_sound_2_g",
+                  "type": "audio",
+                  "audio": [ "h0200g"],
+                  "variable": "hoZink_collage_sound_2_g"
+                }
+              ]
+              }
+            ]
+          },
+          "back_button": {
+            "events": { "hoZink_collage_showPrevious": "*" },
+            "actions": [
+              {
+                "type": "scene",
+                "args": ["hoZink_intro"]
+              }
+            ]
+          },
+          "forward_button": {
+            "events": { "hoZink_collage_showNext": "*" },
+            "actions": [
+              {
+                "type": "scene",
+                "args": ["hoZink_kellyAndZink"]
+              }
+            ]
+          }
+        }
+      },
+      "hoZink_kellyAndZink": {
+        "id": "hoZink_kellyAndZink",
+        "background": "getTheFactsBackground",
+        "title": "Kelly and Zink",
+        "actors": [
+          {
+            "name": "hoZink_kellyAndZink_kellyWithHorse",
+            "type": "decoration",
+            "image": "kellyWithHorse",
+            "key": "decorations",
+            "location": [ 161, 88 ],
+            "scale": [ 1.0, 1.0 ]
+          },
+          {
+            "name": "hoZink_kellyAndZink_sound_3",
+            "type": "audio",
+            "audio": [ "h0300"],
+            "variable": "hoZink_kellyAndZink_sound_3"
+          },
+          {
+            "name": "backButton",
+            "type": "button",
+            "image": "getTheFactsBack",
+            "location": [ 90, 400 ],
+            "variable": "hoZink_kellyAndZink_showPrevious"
+          },
+          {
+            "name": "forwardButton",
+            "type": "button",
+            "image": "getTheFactsNext",
+            "location": [ 572, 400 ],
+            "variable": "hoZink_kellyAndZink_showNext"
+          },
+          {
+            "name": "mutebutton",
+            "type": "toggle-button",
+            "images": {
+              "on": "getTheFactsSoundOn",
+              "off": "getTheFactsSoundOff"
+            },
+            "location": [ 360, 404 ],
+            "scale": [ 0.7, 0.7 ],
+            "variable": "mute_game",
+            "values": {
+              "on": "mute_on",
+              "off": "mute_off"
+            },
+            "active": true
+          },
+          {
+            "name": "default",
+            "type": "button",
+            "image": "getTheFactsExit",
+            "location": [ 12, 7 ],
+            "variable": "change_act"
+          }
+        ],
+        "outcomes": {
+          "back_button": {
+            "events": { "hoZink_kellyAndZink_showPrevious": "*" },
+            "actions": [
+              {
+                "type": "scene",
+                "args": ["hoZink_collage"]
+              }
+            ]
+          },
+          "forward_button": {
+            "events": { "hoZink_kellyAndZink_showNext": "*" },
+            "actions": [
+              {
+                "type": "scene",
+                "args": ["hoZink_completed"]
+              }
+            ]
+          }
+        }
+      },
+      "hoZink_completed": {
+        "id": "hoZink_completed",
+        "background": "getTheFactsBackground",
+        "title": "You Have Completed This Lesson",
+        "actors": [
+          {
+            "name": "youHaveCompletedThisLesson",
+            "type": "text",
+            "font": "hoZink_completed",
+            "location": [ 112, 141 ],
+            "text": "You have completed this lesson. To continue, please click the red arrow in the upper left corner."
+          },
+          {
+            "name": "backButton",
+            "type": "button",
+            "image": "getTheFactsBack",
+            "location": [ 90, 400 ],
+            "variable": "hoZink_completed_showPrevious"
+          },
+          {
+            "name": "mutebutton",
+            "type": "toggle-button",
+            "images": {
+              "on": "getTheFactsSoundOn",
+              "off": "getTheFactsSoundOff"
+            },
+            "location": [ 360, 404 ],
+            "scale": [
+              0.7, 0.7
+            ],
+            "variable": "mute_game",
+            "values": {
+              "on": "mute_on",
+              "off": "mute_off"
+            },
+            "active": true
+          },
+          {
+            "name": "default",
+            "type": "button",
+            "image": "getTheFactsExit",
+            "location": [ 12, 7 ],
+            "variable": "change_act"
+          }
+        ],
+        "outcomes": {
+          "back_button": {
+            "events": { "hoZink_completed_showPrevious": "*" },
+            "actions": [
+              {
+                "type": "scene",
+                "args": ["hoZink_kellyAndZink"]
+              }
+            ]
+          }
+        }
+      }
+    }
+  }
+}

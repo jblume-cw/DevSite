@@ -1,0 +1,273 @@
+{
+  "play": {
+    "start": "scene1",
+    "showPlayThrough": false,
+    "scenes": {
+      "scene1": {
+        "id": "scene1",
+        "background": "cafeteriaBackgroundNoTable",
+        "title": "Scene 1",
+        "description": "grade 7 participate presentation scene 1 cafeteria",
+        "call": {"func": "sendSCORM"},
+        "actors": [
+          {
+            "name": "announcerBox_01",
+            "type": "announcer",
+            "location": [ 2, 5 ],
+            "text": "Your mental state is almost entirely negative.",
+            "announcerBox": true
+          },
+          {
+            "name": "sound_1_01",
+            "type": "audio",
+            "audio": ["1_01"],
+            "variable": "sound_1_01"
+          }
+        ],
+        "outcomes": {
+          "scene_2_start": {
+            "events": {"sound_1_01": "played" },
+            "actions": [
+              { "type": "scene", "args": [ "scene2" ] }
+            ]
+          }
+        }
+      },
+      "scene2": {
+        "id": "scene2",
+        "background": "cafeteriaGroup",
+        "title": "Scene 2",
+        "description": "continuing presentation cafeteria group",
+        "call": {"func": "sendSCORM"},
+        "actors": [
+          {
+            "name": "announcerBox_02",
+            "type": "announcer",
+            "location": [ 2, 5 ],
+            "text": "Every day, the slightest problem makes you angry, and you secretly feel sad and alone most of the time.",
+            "announcerBox": true
+          },
+          {
+            "name": "sound_2_01",
+            "type": "audio",
+            "audio": ["2_01"],
+            "variable": "sound_2_01"
+          }
+        ],
+        "outcomes": {
+          "scene_3_start": {
+            "events": {"sound_2_01": "played" },
+            "actions": [
+              { "type": "scene", "args": [ "scene3" ] }
+            ]
+          }
+        }
+      },
+      "scene3": {
+        "id": "scene3",
+        "background": "cafeteriaBackgroundNoTable",
+        "title": "Scene 1",
+        "description": "continuing presentation cafeteria",
+        "call": {"func": "sendSCORM"},
+        "actors": [
+          {
+            "name": "announcerBox_03",
+            "type": "announcer",
+            "location": [ 2, 5 ],
+            "text": "You’ve had two in-school suspensions for bullying and you’re working on your third with Freddie, whom you pick on whenever you see him.",
+            "announcerBox": true
+          },
+          {
+            "name": "sound_3_01",
+            "type": "audio",
+            "audio": ["3_01"],
+            "variable": "sound_3_01"
+          }
+        ],
+        "outcomes": {
+          "scene_4_start": {
+            "events": {"sound_3_01": "played" },
+            "actions": [
+              { "type": "scene", "args": [ "scene4" ] }
+            ]
+          }
+        }
+      },
+      "scene4": {
+        "id": "scene4",
+        "background": "classroomBackground",
+        "title": "Presentation Scene 4",
+        "description": "continuing presentation classroom",
+        "call": {"func": "sendSCORM"},
+        "actors": [
+          {
+            "name": "announcerBox_04",
+            "type": "announcer",
+            "location": [ 2, 5 ],
+            "text": "You’ve had two in-school suspensions for bullying and you’re working on your third with Freddie, whom you pick on whenever you see him.",
+            "announcerBox": true
+          },
+          {
+            "name": "sound_4_01",
+            "type": "audio",
+            "audio": ["4_01"],
+            "variable": "sound_4_01"
+          },
+          {
+            "name": "classroomForeground",
+            "type": "decoration",
+            "image": "classroomForeground",
+            "key": "decorations",
+            "location": [ 0, 0 ],
+            "scale": [ 1.0, 1.0 ]
+          },
+          {
+            "name": "freddie",
+            "type": "decoration",
+            "image": "freddie",
+            "key": "decorations",
+            "location": [ 160, 200 ],
+            "scale": [ 0.53, 0.53 ]
+          }
+        ],
+        "outcomes": {
+          "scene_4_sound_2": {
+            "events": {"sound_4_01": "played" },
+            "actions": [
+              { "type": "remove-actor", "args": ["announcerBox_04"] },
+              { "type": "add-actor", "args": [
+                {
+                  "name": "announcerBox_05",
+                  "type": "announcer",
+                  "location": [ 2, 5 ],
+                  "text": "It’s gotten to the point where he’s afraid to come to school in the morning.",
+                  "announcerBox": true
+                }
+              ] },
+              { "type": "add-actor", "args": [
+                {
+                  "name": "sound_4_02",
+                  "type": "audio",
+                  "audio": [ "4_02"],
+                  "variable": "sound_4_02"
+                }
+              ] }
+            ]
+          },
+          "scene_4_sound_3": {
+            "events": {"sound_4_02": "played" },
+            "actions": [
+              { "type": "remove-actor", "args": ["freddie"] },
+              { "type": "add-actor", "args": [
+                {
+                  "name": "sound_4_03",
+                  "type": "audio",
+                  "audio": [ "4_03"],
+                  "variable": "sound_4_03"
+                }
+              ] }
+            ]
+          },
+          "scene_4_sound_4": {
+            "events": {"sound_4_03": "played" },
+            "actions": [
+              { "type": "remove-actor", "args": ["announcerBox_05"] },
+              { "type": "add-actor", "args": [
+                {
+                  "name": "announcerBox_06",
+                  "type": "announcer",
+                  "location": [ 2, 5 ],
+                  "text": "Ms. Augustine left Newbridge for another school, where she’s now heading up a successful anti-bullying program.",
+                  "announcerBox": true
+                }
+              ] },
+              { "type": "add-actor", "args": [
+                {
+                  "name": "sound_4_04",
+                  "type": "audio",
+                  "audio": [ "4_04"],
+                  "variable": "sound_4_04"
+                }
+              ] },
+              { "type": "add-actor", "args": [
+                {
+                  "name": "augustine",
+                  "type": "decoration",
+                  "image": "augustine",
+                  "key": "decorations",
+                  "location": [ 124, 194 ],
+                  "scale": [ 0.55, 0.55 ]
+                }
+              ] }
+            ]
+          },
+          "scene_4_sound_5": {
+            "events": {"sound_4_04": "played" },
+            "actions": [
+              { "type": "remove-actor", "args": ["augustine"] },
+              { "type": "add-actor", "args": [
+                {
+                  "name": "sound_4_05",
+                  "type": "audio",
+                  "audio": [ "4_05"],
+                  "variable": "sound_4_05"
+                }
+              ] }
+            ]
+          },
+          "scene_5_start": {
+            "events": {"sound_4_05": "played" },
+            "actions": [
+              { "type": "scene", "args": [ "scene5" ] }
+            ]
+          }
+        }
+      },
+      "scene5": {
+        "id": "scene5",
+        "background": "cafeteriaBackgroundNoTable",
+        "title": "Presentation Scene 5",
+        "description": "continuing presentation cafeteria",
+        "call": {"func": "sendSCORM"},
+        "actors": [
+          {
+            "name": "announcerBox_07",
+            "type": "announcer",
+            "location": [ 2, 5 ],
+            "text": "Newbridge, however, seems to be in a state of decline, which you are contributing to with your behavior.",
+            "announcerBox": true
+          },
+          {
+            "name": "sound_5_01",
+            "type": "audio",
+            "audio": ["5_01"],
+            "variable": "sound_5_01"
+          },
+          {
+            "name": "cafeteriaTable",
+            "type": "decoration",
+            "image": "cafeteriaTable",
+            "key": "decorations",
+            "location": [ 560, 410 ],
+            "scale": [ -1.0, 0.9 ]
+          }
+        ],
+        "outcomes": {
+          "scene_5_ended": {
+            "events": {"sound_5_01": "played" },
+            "actions": [
+              { "type": "add-actor", "args": [
+                {
+                  "name": "moveonbox",
+                  "type": "instructions",
+                  "location": [ 300, 250 ],
+                  "text": "Please move on to the next activity."
+                }
+              ] }
+            ]
+          }
+        }
+      }
+    }
+  }
+}

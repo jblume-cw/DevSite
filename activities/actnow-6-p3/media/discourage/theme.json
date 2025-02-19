@@ -1,0 +1,74 @@
+{
+  "texture": "media/discourage/texture.png",
+  "textureMap": "media/discourage/texture.json",
+  "textureKey": "discourage_6_texture",
+  "data": "media/discourage/sceneData.json",
+  "fonts" : {
+    "bubbleText": { "font": "15px Tahoma", "fill": "#000000",  "fontWeight": "bold" },
+    "bubbleIcon": { "font": "12pt Arial", "fill": "#000000", "fontWeight": "bold", "align": "center" },
+    "replayAudio": { "font": "12px Tahoma", "fill": "#333333",  "fontWeight": "normal" },
+    "heading": { "font": "23pt nunitoregular", "fill": "black", "align": "left", "fontWeight": "bold"},
+    "standard": { "font": "21pt nunitoregular", "fill": "black", "align": "left",
+      "wordWrap": true, "wordWrapWidth": 500, "fontWeight": "bold"},
+    "goodbye": { "font": "18pt nunitoregular", "fill": "black", "align": "center",
+      "wordWrap": true, "wordWrapWidth": 500},
+    "large": { "font": "28pt nunitoregular", "fill": "black", "align": "left", "fontWeight": "bold"},
+    "moveOn": { "font": "32px nunitoregular", "fill": "#000000",  "fontWeight": "normal" }
+  },
+  "images": {
+    "actorImages": {
+      "announcer-box": "wall-speaker.png"
+    },
+    "decorations": {
+      "augustine": "talking-augustine.png",
+      "carrie": "talking-carrie.png",
+      "dane": "talking-dane.png",
+      "freddie": "talking-freddie.png",
+      "janelle": "talking-janelle.png",
+      "mandy": "talking-mandy.png",
+      "ross": "talking-ross.png",
+      "tom": "talking-tom.png",
+      "classroomForeground": "classroom-foreground.png",
+      "letterPlain": "letter-plain.png"
+    }
+  },
+  "sceneImages": {
+    "cafeteriaNoTable": "cafeteria-no-table-background.png",
+    "hallway": "hallway-background.png",
+    "classroom": "classroom-background.png"
+  },
+  "buttons": {
+    "exit": {
+      "up": "get-the-facts-exit.png",
+      "over": "get-the-facts-exit.png",
+      "out": "get-the-facts-exit.png",
+      "down": "get-the-facts-exit.png"
+    }
+  },
+  "textWindows": {
+    "announce": {
+      "top": "wall-speaker-talk-bubble-top.png",
+      "middle": "wall-speaker-talk-bubble-middle.png",
+      "bottom": "wall-speaker-talk-bubble-bottom.png"
+    },
+    "instruction": "move-on-box.png"
+  },
+  "tints": {
+    "bubbleText" : "#CDCDCD"
+  },
+  "soundKey": "discourage_6_sounds",
+  "soundFile": [ "media/discourage/discourage6.m4a", "media/discourage/discourage6.ogg" ],
+  "sounds": {
+    "all": [ 0.0, 32.329, false, "nar_6th_pre_02.wav"],
+    "1_01": [  0.000, 1.248, false, "scene 1, <cafeteria>              You made quite a few"],
+    "1_02": [  1.248, 0.919, false, "scene 1, <+augustine, janelle>    good choices, "],
+    "1_03": [  2.167, 2.517, false, "scene 1, <+mandy, letter>         but you made a few that weren’t so good."],
+    "1_04": [  4.684, 5.954, false, "scene 1, <+dane, ross>            Your attitude towards bullying is in the right place—you don’t like it."],
+    "1_05": [ 10.638, 3.173, false, "scene 1, <announcer text change>  But you don’t always act on your attitudes."],
+    "2_01": [ 13.811, 4.137, false, "scene 2, <hallway + dane>         When you don’t do anything about bullying it gets worse." ],
+    "2_02": [ 18.627, 1.170, false, "scene 2, <-dane, +carrie>         Carrie and you became"],
+    "2_03": [ 19.797, 1.872, false, "scene 2, <carrie tween>           friends, but she’s still"],
+    "2_04": [ 21.669, 3.809, false, "scene 2, <+tom, janelle, freddie> pretty shy, and a lot of people continue making fun of her."],
+    "3_01": [ 25.478, 6.851, false, "scene 3, <classroom +augustine>   Ms. Augustine is trying to get new anti-bullying rules put in place, but she’s having a hard time."]
+  }
+}

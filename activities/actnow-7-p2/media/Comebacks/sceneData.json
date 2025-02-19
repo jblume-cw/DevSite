@@ -1,0 +1,544 @@
+{
+  "play": {
+    "start": "comebacks_intro",
+    "showPlayThrough": false,
+    "scenes": {
+      "comebacks_intro": {
+        "id": "comebacks_intro",
+        "background": "getTheFactsBackground",
+        "title": "Comebacks",
+        "actors": [
+          {
+            "name": "comebacks",
+            "type": "text",
+            "font": "comebacks_header",
+            "location": [ 282, 37 ],
+            "text": "Comebacks",
+            "audio": "c0100"
+          },
+          {
+            "name": "comebacksIntro",
+            "type": "decoration",
+            "image": "comebacks",
+            "key": "decorations",
+            "location": [ 216, 97 ],
+            "scale": [ 1.0, 1.0 ]
+          },
+          {
+            "name": "forwardButton",
+            "type": "button",
+            "image": "getTheFactsNext",
+            "location": [ 572, 400 ],
+            "variable": "comebacks_intro_showNext"
+          },
+          {
+            "name": "mutebutton",
+            "type": "toggle-button",
+            "images": {
+              "on": "getTheFactsSoundOn",
+              "off": "getTheFactsSoundOff"
+            },
+            "location": [ 360, 404 ],
+            "scale": [
+              0.7, 0.7
+            ],
+            "variable": "mute_game",
+            "values": {
+              "on": "mute_on",
+              "off": "mute_off"
+            },
+            "active": true
+          },
+          {
+            "name": "default",
+            "type": "button",
+            "image": "getTheFactsExit",
+            "location": [ 12, 7 ],
+            "variable": "change_act"
+          }
+        ],
+        "outcomes": {
+          "forward_button": {
+            "events": { "comebacks_intro_showNext": "*" },
+            "actions": [
+              {
+                "type": "scene",
+                "args": ["comebacks_threeTypes"]
+              }
+            ]
+          }
+        }
+      },
+      "comebacks_threeTypes": {
+        "id": "comebacks_threeTypes",
+        "background": "getTheFactsBackground",
+        "title": "Three types of comebacks",
+        "actors": [
+          {
+            "name": "threeTypes",
+            "type": "text",
+            "font": "comebacks_header",
+            "location": [ 170, 42 ],
+            "text": "Three types of comebacks"
+          },
+          {
+            "name": "comebacks_threeTypes_sound_2_a",
+            "type": "audio",
+            "audio": [ "c0200a"],
+            "variable": "comebacks_threeTypes_sound_2_a"
+          },
+          {
+            "name": "backButton",
+            "type": "button",
+            "image": "getTheFactsBack",
+            "location": [ 90, 400 ],
+            "variable": "comebacks_threeTypes_showPrevious"
+          },
+          {
+            "name": "forwardButton",
+            "type": "button",
+            "image": "getTheFactsNext",
+            "location": [ 572, 400 ],
+            "variable": "comebacks_threeTypes_showNext"
+          },
+          {
+            "name": "mutebutton",
+            "type": "toggle-button",
+            "images": {
+              "on": "getTheFactsSoundOn",
+              "off": "getTheFactsSoundOff"
+            },
+            "location": [ 360, 404 ],
+            "scale": [ 0.7, 0.7 ],
+            "variable": "mute_game",
+            "values": {
+              "on": "mute_on",
+              "off": "mute_off"
+            },
+            "active": true
+          },
+          {
+            "name": "default",
+            "type": "button",
+            "image": "getTheFactsExit",
+            "location": [ 12, 7 ],
+            "variable": "change_act"
+          }
+        ],
+        "outcomes": {
+          "comebacks_threeTypes_sound_a_done": {
+            "events": {"comebacks_threeTypes_sound_2_a": "played" },
+            "actions": [
+              {
+                "type": "add-actor", "args": [
+                {
+                  "name": "comebacks_threeTypes_item_1",
+                  "type": "text",
+                  "text": "No-reaction comeback",
+                  "location": [ 100, 95 ],
+                  "bullet": "true",
+                  "font": "comebacks_bullet"
+                }
+              ]
+              },
+              {
+                "type": "add-actor", "args": [
+                {
+                  "name": "comebacks_threeTypes_sound_2_b",
+                  "type": "audio",
+                  "audio": [ "c0200b"],
+                  "variable": "comebacks_threeTypes_sound_2_b"
+                }
+              ]
+              }
+            ]
+          },
+          "comebacks_threeTypes_sound_b_done": {
+            "events": {"comebacks_threeTypes_sound_2_b": "played" },
+            "actions": [
+              {
+                "type": "add-actor", "args": [
+                {
+                  "name": "comebacks_threeTypes_item_2",
+                  "type": "text",
+                  "text": "Agreement comeback",
+                  "location": [ 100, 133 ],
+                  "bullet": "true",
+                  "font": "comebacks_bullet"
+                }
+              ]
+              },
+              {
+                "type": "add-actor", "args": [
+                {
+                  "name": "comebacks_threeTypes_sound_2_c",
+                  "type": "audio",
+                  "audio": [ "c0200c"],
+                  "variable": "comebacks_threeTypes_sound_2_c"
+                }
+              ]
+              }
+            ]
+          },
+          "comebacks_threeTypes_sound_c_done": {
+            "events": {"comebacks_threeTypes_sound_2_c": "played" },
+            "actions": [
+              {
+                "type": "add-actor", "args": [
+                {
+                  "name": "comebacks_threeTypes_item_3",
+                  "type": "text",
+                  "text": "Strong, assertive comeback",
+                  "location": [ 100, 171 ],
+                  "bullet": "true",
+                  "font": "comebacks_bullet"
+                }
+              ]
+              },
+              {
+                "type": "add-actor", "args": [
+                {
+                  "name": "comebacks_threeTypes_sound_2_d",
+                  "type": "audio",
+                  "audio": [ "c0200d"],
+                  "variable": "comebacks_threeTypes_sound_2_d"
+                }
+              ]
+              }
+            ]
+          },
+          "back_button": {
+            "events": { "comebacks_threeTypes_showPrevious": "*" },
+            "actions": [
+              {
+                "type": "scene",
+                "args": ["comebacks_intro"]
+              }
+            ]
+          },
+          "forward_button": {
+            "events": { "comebacks_threeTypes_showNext": "*" },
+            "actions": [
+              {
+                "type": "scene",
+                "args": ["comebacks_noReaction"]
+              }
+            ]
+          }
+        }
+      },
+      "comebacks_noReaction": {
+        "id": "comebacks_noReaction",
+        "background": "getTheFactsBackground",
+        "title": "No-reaction comeback",
+        "actors": [
+          {
+            "name": "noReaction",
+            "type": "text",
+            "font": "comebacks_header",
+            "location": [ 195, 36 ],
+            "text": "No-reaction comeback"
+          },
+          {
+            "name": "noReaction_image",
+            "type": "decoration",
+            "image": "noReactionComeback",
+            "key": "decorations",
+            "location": [ 159, 83 ],
+            "scale": [ 1.0, 1.0 ]
+          },
+          {
+            "name": "comebacks_noReaction_sound_3",
+            "type": "audio",
+            "audio": [ "c0300"],
+            "variable": "comebacks_threeTypes_sound_3"
+          },
+          {
+            "name": "backButton",
+            "type": "button",
+            "image": "getTheFactsBack",
+            "location": [ 90, 400 ],
+            "variable": "comebacks_noReaction_showPrevious"
+          },
+          {
+            "name": "forwardButton",
+            "type": "button",
+            "image": "getTheFactsNext",
+            "location": [ 572, 400 ],
+            "variable": "comebacks_noReaction_showNext"
+          },
+          {
+            "name": "mutebutton",
+            "type": "toggle-button",
+            "images": {
+              "on": "getTheFactsSoundOn",
+              "off": "getTheFactsSoundOff"
+            },
+            "location": [ 360, 404 ],
+            "scale": [ 0.7, 0.7 ],
+            "variable": "mute_game",
+            "values": {
+              "on": "mute_on",
+              "off": "mute_off"
+            },
+            "active": true
+          },
+          {
+            "name": "default",
+            "type": "button",
+            "image": "getTheFactsExit",
+            "location": [ 12, 7 ],
+            "variable": "change_act"
+          }
+        ],
+        "outcomes": {
+          "back_button": {
+            "events": { "comebacks_noReaction_showPrevious": "*" },
+            "actions": [
+              {
+                "type": "scene",
+                "args": ["comebacks_threeTypes"]
+              }
+            ]
+          },
+          "forward_button": {
+            "events": { "comebacks_noReaction_showNext": "*" },
+            "actions": [
+              {
+                "type": "scene",
+                "args": ["comebacks_agreement"]
+              }
+            ]
+          }
+        }
+      },
+      "comebacks_agreement": {
+        "id": "comebacks_agreement",
+        "background": "getTheFactsBackground",
+        "title": "Agreement comeback",
+        "actors": [
+          {
+            "name": "agreement",
+            "type": "text",
+            "font": "comebacks_header",
+            "location": [ 200, 36 ],
+            "text": "Agreement comeback"
+          },
+          {
+            "name": "agreement_image",
+            "type": "decoration",
+            "image": "agreementComeback",
+            "key": "decorations",
+            "location": [ 159, 83 ],
+            "scale": [ 1.0, 1.0 ]
+          },
+          {
+            "name": "comebacks_agreement_sound_4",
+            "type": "audio",
+            "audio": [ "c0400"],
+            "variable": "comebacks_threeTypes_sound_4"
+          },
+          {
+            "name": "backButton",
+            "type": "button",
+            "image": "getTheFactsBack",
+            "location": [ 90, 400 ],
+            "variable": "comebacks_agreement_showPrevious"
+          },
+          {
+            "name": "forwardButton",
+            "type": "button",
+            "image": "getTheFactsNext",
+            "location": [ 572, 400 ],
+            "variable": "comebacks_agreement_showNext"
+          },
+          {
+            "name": "mutebutton",
+            "type": "toggle-button",
+            "images": {
+              "on": "getTheFactsSoundOn",
+              "off": "getTheFactsSoundOff"
+            },
+            "location": [ 360, 404 ],
+            "scale": [ 0.7, 0.7 ],
+            "variable": "mute_game",
+            "values": {
+              "on": "mute_on",
+              "off": "mute_off"
+            },
+            "active": true
+          },
+          {
+            "name": "default",
+            "type": "button",
+            "image": "getTheFactsExit",
+            "location": [ 12, 7 ],
+            "variable": "change_act"
+          }
+        ],
+        "outcomes": {
+          "back_button": {
+            "events": { "comebacks_agreement_showPrevious": "*" },
+            "actions": [
+              {
+                "type": "scene",
+                "args": ["comebacks_noReaction"]
+              }
+            ]
+          },
+          "forward_button": {
+            "events": { "comebacks_agreement_showNext": "*" },
+            "actions": [
+              {
+                "type": "scene",
+                "args": ["comebacks_strongAssertive"]
+              }
+            ]
+          }
+        }
+      },
+      "comebacks_strongAssertive": {
+        "id": "comebacks_strongAssertive",
+        "background": "getTheFactsBackground",
+        "title": "Agreement comeback",
+        "actors": [
+          {
+            "name": "strongAssertive",
+            "type": "text",
+            "font": "comebacks_header",
+            "location": [ 150, 36 ],
+            "text": "Strong, assertive comeback"
+          },
+          {
+            "name": "strongAssertive_image",
+            "type": "decoration",
+            "image": "strongAssertiveComeback",
+            "key": "decorations",
+            "location": [ 159, 83 ],
+            "scale": [ 1.0, 1.0 ]
+          },
+          {
+            "name": "comebacks_strongAssertive_sound_5",
+            "type": "audio",
+            "audio": [ "c0500"],
+            "variable": "comebacks_threeTypes_sound_5"
+          },
+          {
+            "name": "backButton",
+            "type": "button",
+            "image": "getTheFactsBack",
+            "location": [ 90, 400 ],
+            "variable": "comebacks_strongAssertive_showPrevious"
+          },
+          {
+            "name": "forwardButton",
+            "type": "button",
+            "image": "getTheFactsNext",
+            "location": [ 572, 400 ],
+            "variable": "comebacks_strongAssertive_showNext"
+          },
+          {
+            "name": "mutebutton",
+            "type": "toggle-button",
+            "images": {
+              "on": "getTheFactsSoundOn",
+              "off": "getTheFactsSoundOff"
+            },
+            "location": [ 360, 404 ],
+            "scale": [ 0.7, 0.7 ],
+            "variable": "mute_game",
+            "values": {
+              "on": "mute_on",
+              "off": "mute_off"
+            },
+            "active": true
+          },
+          {
+            "name": "default",
+            "type": "button",
+            "image": "getTheFactsExit",
+            "location": [ 12, 7 ],
+            "variable": "change_act"
+          }
+        ],
+        "outcomes": {
+          "back_button": {
+            "events": { "comebacks_strongAssertive_showPrevious": "*" },
+            "actions": [
+              {
+                "type": "scene",
+                "args": ["comebacks_agreement"]
+              }
+            ]
+          },
+          "forward_button": {
+            "events": { "comebacks_strongAssertive_showNext": "*" },
+            "actions": [
+              {
+                "type": "scene",
+                "args": ["comebacks_completed"]
+              }
+            ]
+          }
+        }
+      },
+      "comebacks_completed": {
+        "id": "comebacks_completed",
+        "background": "getTheFactsBackground",
+        "title": "You Have Completed This Lesson",
+        "actors": [
+          {
+            "name": "youHaveCompletedThisLesson",
+            "type": "text",
+            "font": "comebacks_completed",
+            "location": [ 112, 141 ],
+            "text": "You have completed this lesson. To continue, please click the red arrow in the upper left corner."
+          },
+          {
+            "name": "backButton",
+            "type": "button",
+            "image": "getTheFactsBack",
+            "location": [ 90, 400 ],
+            "variable": "comebacks_completed_showPrevious"
+          },
+          {
+            "name": "mutebutton",
+            "type": "toggle-button",
+            "images": {
+              "on": "getTheFactsSoundOn",
+              "off": "getTheFactsSoundOff"
+            },
+            "location": [ 360, 404 ],
+            "scale": [
+              0.7, 0.7
+            ],
+            "variable": "mute_game",
+            "values": {
+              "on": "mute_on",
+              "off": "mute_off"
+            },
+            "active": true
+          },
+          {
+            "name": "default",
+            "type": "button",
+            "image": "getTheFactsExit",
+            "location": [ 12, 7 ],
+            "variable": "change_act"
+          }
+        ],
+        "outcomes": {
+          "back_button": {
+            "events": { "comebacks_completed_showPrevious": "*" },
+            "actions": [
+              {
+                "type": "scene",
+                "args": ["comebacks_strongAssertive"]
+              }
+            ]
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,328 @@
+{
+  "play": {
+    "start": "scene1",
+    "showPlayThrough": false,
+    "scenes": {
+      "scene1": {
+        "id": "scene1",
+        "background": "cafeteriaBackground",
+        "title": "Scene 1",
+        "description": "grade 7 allow presentation scene 1 cafeteria",
+        "call": {"func": "sendSCORM"},
+        "actors": [
+          {
+            "name": "announcerBox_01",
+            "type": "announcer",
+            "location": [ 2, 5 ],
+            "text": "You observe more than you let on.",
+            "announcerBox": true
+          },
+          {
+            "name": "sound_1_01",
+            "type": "audio",
+            "audio": ["1_01"],
+            "variable": "sound_1_01"
+          }
+        ],
+        "outcomes": {
+          "scene_1_sound_2": {
+            "events": {"sound_1_01": "played" },
+            "actions": [
+              { "type": "add-actor", "args": [
+                {
+                  "name": "sound_1_02",
+                  "type": "audio",
+                  "audio": [ "1_02"],
+                  "variable": "sound_1_02"
+                }
+              ] },
+              { "type": "add-actor", "args": [
+                {
+                  "name": "ross",
+                  "type": "decoration",
+                  "image": "ross",
+                  "key": "decorations",
+                  "location": [ 65, 236 ],
+                  "scale": [ 0.29, 0.29 ]
+                }
+              ] },
+              { "type": "add-actor", "args": [
+                {
+                  "name": "augustine",
+                  "type": "decoration",
+                  "image": "augustine",
+                  "key": "decorations",
+                  "location": [ 297, 215 ],
+                  "scale": [ 0.20, 0.20 ]
+                }
+              ] },
+              { "type": "add-actor", "args": [
+                {
+                  "name": "mandy",
+                  "type": "decoration",
+                  "image": "mandy",
+                  "key": "decorations",
+                  "location": [ 455, 243 ],
+                  "scale": [ 0.20, 0.20 ]
+                }
+              ] }
+            ]
+          },
+          "scene_1_sound_3": {
+            "events": {"sound_1_02": "played" },
+            "actions": [
+              { "type": "remove-actor", "args": ["announcerBox_01"] },
+              { "type": "add-actor", "args": [
+                {
+                  "name": "announcerBox_02",
+                  "type": "announcer",
+                  "location": [ 2, 5 ],
+                  "text": "When people are getting picked on at Newbridge, you notice and understand.",
+                  "announcerBox": true
+                }
+              ] },
+              { "type": "add-actor", "args": [
+                {
+                  "name": "sound_1_03",
+                  "type": "audio",
+                  "audio": [ "1_03"],
+                  "variable": "sound_1_03"
+                }
+              ] }
+            ]
+          },
+          "scene_1_sound_4": {
+            "events": {"sound_1_03": "played" },
+            "actions": [
+              { "type": "remove-actor", "args": ["announcerBox_02"] },
+              { "type": "add-actor", "args": [
+                {
+                  "name": "announcerBox_03",
+                  "type": "announcer",
+                  "location": [ 2, 5 ],
+                  "text": "When people are promoting respect, you notice and understand that, too.",
+                  "announcerBox": true
+                }
+              ] },
+              { "type": "add-actor", "args": [
+                {
+                  "name": "sound_1_04",
+                  "type": "audio",
+                  "audio": [ "1_04"],
+                  "variable": "sound_1_04"
+                }
+              ] },
+              { "type": "add-actor", "args": [
+                {
+                  "name": "janelle",
+                  "type": "decoration",
+                  "image": "janelle",
+                  "key": "decorations",
+                  "location": [ 297, 227 ],
+                  "scale": [ -0.30, 0.30 ]
+                }
+              ] },
+              { "type": "add-actor", "args": [
+                {
+                  "name": "tom",
+                  "type": "decoration",
+                  "image": "tom",
+                  "key": "decorations",
+                  "location": [ 590, 240 ],
+                  "scale": [ 0.31, 0.31 ]
+                }
+              ] }
+            ]
+          },
+          "scene_1_sound_5": {
+            "events": {"sound_1_04": "played" },
+            "actions": [
+              { "type": "add-actor", "args": [
+                {
+                  "name": "sound_1_05",
+                  "type": "audio",
+                  "audio": [ "1_05"],
+                  "variable": "sound_1_05"
+                }
+              ] },
+              { "type": "add-actor", "args": [
+                {
+                  "name": "freddie",
+                  "type": "decoration",
+                  "image": "freddie",
+                  "key": "decorations",
+                  "location": [ 234, 269 ],
+                  "scale": [ 0.33, 0.33 ]
+                }
+              ] },
+              { "type": "add-actor", "args": [
+                {
+                  "name": "dane",
+                  "type": "decoration",
+                  "image": "dane",
+                  "key": "decorations",
+                  "location": [ 349, 283 ],
+                  "scale": [ 0.33, 0.33 ]
+                }
+              ] }
+            ]
+          },
+          "scene_1_sound_6": {
+            "events": {"sound_1_05": "played" },
+            "actions": [
+              { "type": "remove-actor", "args": ["announcerBox_03"] },
+              { "type": "add-actor", "args": [
+                {
+                  "name": "announcerBox_04",
+                  "type": "announcer",
+                  "location": [ 2, 5 ],
+                  "text": "But until you speak out, nothing is going to change.",
+                  "announcerBox": true
+                }
+              ] },
+              { "type": "add-actor", "args": [
+                {
+                  "name": "sound_1_06",
+                  "type": "audio",
+                  "audio": [ "1_06"],
+                  "variable": "sound_1_06"
+                }
+              ] }
+            ]
+          },
+          "scene_2_start": {
+            "events": {"sound_1_06": "played" },
+            "actions": [
+              { "type": "scene", "args": [ "scene2" ] }
+            ]
+          }
+        }
+      },
+      "scene2": {
+        "id": "scene2",
+        "background": "theaterBackground",
+        "title": "Presentation Scene 2",
+        "description": "continuing presentation theater",
+        "call": {"func": "sendSCORM"},
+        "actors": [
+          {
+            "name": "announcerBox_05",
+            "type": "announcer",
+            "location": [ 2, 5 ],
+            "text": "The diversity play happened, but not many people went.",
+            "announcerBox": true
+          },
+          {
+            "name": "sound_2_01",
+            "type": "audio",
+            "audio": ["2_01"],
+            "variable": "sound_2_01"
+          },
+          {
+            "name": "seats",
+            "type": "decoration",
+            "image": "theaterSeatsForeground",
+            "key": "decorations",
+            "location": [ 0, 0 ],
+            "scale": [ 1.0, 1.0 ]
+          }
+        ],
+        "outcomes": {
+          "scene_2_sound_2": {
+            "events": {"sound_2_01": "played" },
+            "actions": [
+              { "type": "remove-actor", "args": ["announcerBox_05"] },
+              { "type": "add-actor", "args": [
+                {
+                  "name": "announcerBox_06",
+                  "type": "announcer",
+                  "location": [ 2, 5 ],
+                  "text": "Some mean kids even showed up and made fun of the cast while the premiere was going on.",
+                  "announcerBox": true
+                }
+              ] },
+              { "type": "add-actor", "args": [
+                {
+                  "name": "sound_2_02",
+                  "type": "audio",
+                  "audio": [ "2_02"],
+                  "variable": "sound_2_02"
+                }
+              ] },
+              { "type": "add-actor", "args": [
+                {
+                  "name": "theaterAudienceForeground",
+                  "type": "decoration",
+                  "image": "theaterAudienceForeground",
+                  "key": "decorations",
+                  "location": [ 122, 399 ],
+                  "scale": [ 1.0, 1.0 ]
+                }
+              ] }
+            ]
+          },
+          "scene_2_sound_3": {
+            "events": {"sound_2_02": "played" },
+            "actions": [
+              { "type": "remove-actor", "args": ["announcerBox_06"] },
+              { "type": "add-actor", "args": [
+                {
+                  "name": "announcerBox_07",
+                  "type": "announcer",
+                  "location": [ 2, 5 ],
+                  "text": "Again, you heard it, but you didn’t do anything.",
+                  "announcerBox": true
+                }
+              ] },
+              { "type": "add-actor", "args": [
+                {
+                  "name": "sound_2_03",
+                  "type": "audio",
+                  "audio": [ "2_03"],
+                  "variable": "sound_2_03"
+                }
+              ] }
+            ]
+          },
+          "scene_2_sound_4": {
+            "events": {"sound_2_03": "played" },
+            "actions": [
+              { "type": "remove-actor", "args": ["announcerBox_07"] },
+              { "type": "remove-actor", "args": ["theaterAudienceForeground"] },
+              { "type": "add-actor", "args": [
+                {
+                  "name": "announcerBox_08",
+                  "type": "announcer",
+                  "location": [ 2, 5 ],
+                  "text": "It’s time to start thinking about your goals for a positive and safe school climate, and working to make it happen!",
+                  "announcerBox": true
+                }
+              ] },
+              { "type": "add-actor", "args": [
+                {
+                  "name": "sound_2_04",
+                  "type": "audio",
+                  "audio": [ "2_04"],
+                  "variable": "sound_2_04"
+                }
+              ] }
+            ]
+          },
+          "scene_2_ended": {
+            "events": {"sound_2_04": "played" },
+            "actions": [
+              { "type": "add-actor", "args": [
+                {
+                  "name": "moveonbox",
+                  "type": "instructions",
+                  "location": [ 300, 250 ],
+                  "text": "Please move on to the next activity."
+                }
+              ] }
+            ]
+          }
+        }
+      }
+    }
+  }
+}

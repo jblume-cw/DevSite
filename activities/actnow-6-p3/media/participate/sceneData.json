@@ -1,0 +1,281 @@
+{
+  "play": {
+    "start": "scene1",
+    "showPlayThrough": false,
+    "scenes": {
+      "scene1": {
+        "id": "scene1",
+        "background": "cafeteriaBackground",
+        "title": "Scene 1",
+        "description": "grade 6 participate presentation scene 1 cafeteria",
+        "call": {"func": "sendSCORM"},
+        "actors": [
+          {
+            "name": "announcerBox_01",
+            "type": "announcer",
+            "location": [ 2, 5 ],
+            "text": "You’re sad, short-tempered, and alone.",
+            "announcerBox": true
+          },
+          {
+            "name": "sound_1_01",
+            "type": "audio",
+            "audio": ["1_01"],
+            "variable": "sound_1_01"
+          }
+        ],
+        "outcomes": {
+          "scene_1_sound_2": {
+            "events": {"sound_1_01": "played" },
+            "actions": [
+              { "type": "remove-actor", "args": ["announcerBox_01"] },
+              { "type": "add-actor", "args": [
+                {
+                  "name": "cafeteriaStudentsSpread",
+                  "type": "decoration",
+                  "image": "cafeteriaStudentsSpread",
+                  "key": "decorations",
+                  "location": [ 0, 0 ],
+                  "scale": [ 1.0, 1.0 ]
+                }
+              ] },
+              { "type": "add-actor", "args": [
+                {
+                  "name": "announcerBox_02",
+                  "type": "announcer",
+                  "location": [ 2, 5 ],
+                  "text": "You’ve been disciplined at school for making fun of almost everyone you see, and for starting fights with a handful of people.",
+                  "announcerBox": true
+                }
+              ] },
+              { "type": "add-actor", "args": [
+                {
+                  "name": "sound_1_02",
+                  "type": "audio",
+                  "audio": [ "1_02"],
+                  "variable": "sound_1_02"
+                }
+              ] }
+            ]
+          },
+          "scene_1_sound_3": {
+            "events": {"sound_1_02": "played" },
+            "actions": [
+              { "type": "remove-actor", "args": ["announcerBox_02"] },
+              { "type": "remove-actor", "args": ["cafeteriaStudentsSpread"] },
+              { "type": "add-actor", "args": [
+                {
+                  "name": "announcerBox_03",
+                  "type": "announcer",
+                  "location": [ 2, 5 ],
+                  "text": "You have a lot of anger in you, and it’s been that way for so long that you can’t remember what it was like before.",
+                  "announcerBox": true
+                }
+              ] },
+              { "type": "add-actor", "args": [
+                {
+                  "name": "sound_1_03",
+                  "type": "audio",
+                  "audio": [ "1_03"],
+                  "variable": "sound_1_03"
+                }
+              ] }
+            ]
+          },
+          "scene_1_sound_4": {
+            "events": {"sound_1_03": "played" },
+            "actions": [
+              { "type": "add-actor", "args": [
+                {
+                  "name": "sound_1_04",
+                  "type": "audio",
+                  "audio": [ "1_04"],
+                  "variable": "sound_1_04"
+                }
+              ] },
+              { "type": "add-actor", "args": [
+                {
+                  "name": "cafeteriaGroup",
+                  "type": "decoration",
+                  "image": "cafeteriaGroup",
+                  "key": "decorations",
+                  "location": [ 201, 204 ],
+                  "scale": [ 0.6, 0.6 ]
+                }
+              ] }
+            ]
+          },
+          "scene_2_start": {
+            "events": {"sound_1_04": "played" },
+            "actions": [
+              { "type": "scene", "args": [ "scene2" ] }
+            ]
+          }
+        }
+      },
+      "scene2": {
+        "id": "scene2",
+        "background": "hallwayBackground",
+        "title": "Presentation Scene 2",
+        "description": "continuing presentation carrie hallway",
+        "call": {"func": "sendSCORM"},
+        "actors": [
+          {
+            "name": "announcerBox_04",
+            "type": "announcer",
+            "location": [ 2, 5 ],
+            "text": "Carrie had to transfer again, thanks to you and your friends who relentlessly made fun of her.",
+            "announcerBox": true
+          },
+          {
+            "name": "sound_2_01",
+            "type": "audio",
+            "audio": ["2_01"],
+            "variable": "sound_2_01"
+          },
+          {
+            "name": "carrie",
+            "type": "decoration",
+            "image": "carrie",
+            "key": "decorations",
+            "location": [ 313, 174 ],
+            "scale": [ 0.80, 0.80 ]
+          }
+        ],
+        "outcomes": {
+          "scene_2_sound_2": {
+            "events": {"sound_2_01": "played" },
+            "actions": [
+              { "type": "remove-actor", "args": ["carrie"] },
+              { "type": "add-actor", "args": [
+                {
+                  "name": "sound_2_02",
+                  "type": "audio",
+                  "audio": [ "2_02"],
+                  "variable": "sound_2_02"
+                }
+              ] },
+              { "type": "add-actor", "args": [
+                {
+                  "name": "carrie",
+                  "type": "decoration",
+                  "image": "carrie",
+                  "key": "decorations",
+                  "location": [ 313, 174 ],
+                  "scale": [ 0.80, 0.80 ],
+                  "tween": {
+                    "time": 3351,
+                    "location": [ 372, 343 ],
+                    "scale": [ 0.21, 0.21 ]
+                  }
+                }
+              ] }
+            ]
+          },
+          "scene_2_sound_3": {
+            "events": { "sound_2_02": "played" },
+            "actions": [
+              { "type": "remove-actor", "args": [ "carrie" ] },
+              { "type": "add-actor", "args": [
+                {
+                  "name": "sound_2_03",
+                  "type": "audio",
+                  "audio": [ "2_03" ],
+                  "variable": "sound_2_03"
+                }
+              ] }
+            ]
+          },
+          "scene_3_start": {
+            "events": { "sound_2_03": "played" },
+            "actions": [ { "type": "scene", "args": [ "scene3" ] } ]
+          }
+        }
+      },
+      "scene3": {
+        "id": "scene3",
+        "background": "theaterBackground",
+        "title": "Presentation Scene 3",
+        "description": "continuing presentation ross",
+        "call": {"func": "sendSCORM"},
+        "actors": [
+          {
+            "name": "announcerBox_05",
+            "type": "announcer",
+            "location": [ 2, 5 ],
+            "text": "Ross has been suspended for vandalizing school property – you’d be with him if you got caught.",
+            "announcerBox": true
+          },
+          {
+            "name": "sound_3_01",
+            "type": "audio",
+            "audio": ["3_01"],
+            "variable": "sound_3_01"
+          },
+          {
+            "name": "ross",
+            "type": "decoration",
+            "image": "ross",
+            "key": "decorations",
+            "location": [ 393, 117 ],
+            "scale": [ 1.02, 1.02 ]
+          }
+        ],
+        "outcomes": {
+          "scene_3_sound_2": {
+            "events": { "sound_3_01": "played" },
+            "actions": [
+              { "type": "remove-actor", "args": [ "ross" ] },
+              { "type": "add-actor",
+                "args": [
+                  {
+                    "name": "sound_3_02",
+                    "type": "audio",
+                    "audio": [ "3_02" ],
+                    "variable": "sound_3_02"
+                  }
+                ]
+              } ]
+          },
+          "scene_3_sound_3": {
+            "events": { "sound_3_02": "played" },
+            "actions": [
+              { "type": "remove-actor", "args": [ "announcerBox_05" ] },
+              { "type": "add-actor", "args": [
+                {
+                  "name": "announcerBox_06",
+                  "type": "announcer",
+                  "location": [ 2, 5 ],
+                  "text": "You need to change your behavior.",
+                  "announcerBox": true
+                }
+              ] },
+              { "type": "add-actor",
+                "args": [
+                  {
+                    "name": "sound_3_03",
+                    "type": "audio",
+                    "audio": [ "3_03" ],
+                    "variable": "sound_3_03"
+                  }
+                ]
+              } ]
+            },
+          "scene_3_ended": {
+            "events": {"sound_3_03": "played" },
+            "actions": [
+              { "type": "add-actor", "args": [
+                {
+                  "name": "moveonbox",
+                  "type": "instructions",
+                  "location": [ 300, 250 ],
+                  "text": "Please move on to the next activity."
+                }
+              ] }
+            ]
+          }
+        }
+      }
+    }
+  }
+}

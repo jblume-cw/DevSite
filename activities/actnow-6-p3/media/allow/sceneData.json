@@ -1,0 +1,417 @@
+{
+  "play": {
+    "start": "scene1",
+    "showPlayThrough": false,
+    "scenes": {
+      "scene1": {
+        "id": "scene1",
+        "background": "cafeteriaNoTable",
+        "title": "Introduction",
+        "description": "starting Act Now!",
+        "call": {"func": "sendSCORM"},
+        "actors": [
+          {
+            "name": "announcerBox_01",
+            "type": "announcer",
+            "location": [ 2, 5 ],
+            "text": "You're a smart kid.",
+            "announcerBox": true
+          },
+          {
+            "name": "sound_1_a",
+            "type": "audio",
+            "audio": ["1"],
+            "variable": "sound_1_a"
+          }
+        ],
+        "outcomes": {
+          "scene_1_sound_2": {
+            "events": {"sound_1_a": "played" },
+            "actions": [
+              { "type": "remove-actor", "args": ["announcerBox_01"] },
+              { "type": "add-actor", "args": [
+                {
+                  "name": "announcerBox_02",
+                  "type": "announcer",
+                  "location": [ 2, 5 ],
+                  "text": "You know what's going on at Newbridge, good and bad.",
+                  "announcerBox": true
+                }
+              ] },
+              { "type": "add-actor", "args": [
+                {
+                  "name": "sound_1_b",
+                  "type": "audio",
+                  "audio": [ "2"],
+                  "variable": "sound_1_b"
+                }
+              ] },
+              { "type": "add-actor", "args": [
+                {
+                  "name": "ross",
+                  "type": "decoration",
+                  "image": "ross",
+                  "key": "decorations",
+                  "location": [ 80, 225],
+                  "scale": [ 0.29, 0.29]
+                }
+              ] },
+              { "type": "add-actor", "args": [
+                {
+                  "name": "augustine",
+                  "type": "decoration",
+                  "image": "augustine",
+                  "key": "decorations",
+                  "location": [ 290, 200],
+                  "scale": [ 0.19, 0.19]
+                }
+              ] },
+              { "type": "add-actor", "args": [
+                {
+                  "name": "freddie",
+                  "type": "decoration",
+                  "image": "freddie",
+                  "key": "decorations",
+                  "location": [ 445, 240 ],
+                  "scale": [ 0.29, 0.29 ]
+                }
+              ] }
+            ]
+          },
+          "scene_1_sound_3": {
+            "events": {"sound_1_b": "played" },
+            "actions": [
+              { "type": "add-actor", "args": [
+                {
+                  "name": "sound_1_c",
+                  "type": "audio",
+                  "audio": [ "3"],
+                  "variable": "sound_1_c"
+                }
+              ] },
+              { "type": "add-actor", "args": [
+                {
+                  "name": "tom",
+                  "type": "decoration",
+                  "image": "tom",
+                  "key": "decorations",
+                  "location": [ 566, 230 ],
+                  "scale": [ 0.32, 0.32 ]
+                }
+              ] },
+              { "type": "add-actor", "args": [
+                {
+                  "name": "janelle",
+                  "type": "decoration",
+                  "image": "janelle",
+                  "key": "decorations",
+                  "location": [ 288, 215 ],
+                  "scale": [ -0.28, 0.28 ]
+                }
+              ] }
+            ]
+          },
+          "scene_1_sound_4": {
+            "events": {"sound_1_c": "played" },
+            "actions": [
+              { "type": "remove-actor", "args": ["announcerBox_02"] },
+              { "type": "add-actor", "args": [
+                {
+                  "name": "announcerBox_03",
+                  "type": "announcer",
+                  "location": [ 2, 5 ],
+                  "text": "You hardly ever get involved, though, and so the bullying is getting worse as time goes by.",
+                  "announcerBox": true
+                }
+              ] },
+              { "type": "add-actor", "args": [
+                {
+                  "name": "sound_1_d",
+                  "type": "audio",
+                  "audio": [ "4"],
+                  "variable": "sound_1_d"
+                }
+              ] },
+              { "type": "add-actor", "args": [
+                {
+                  "name": "carrie",
+                  "type": "decoration",
+                  "image": "carrie",
+                  "key": "decorations",
+                  "location": [ 240, 260],
+                  "scale": [ 0.42, 0.42]
+                }
+              ] },
+              { "type": "add-actor", "args": [
+                {
+                  "name": "dane",
+                  "type": "decoration",
+                  "image": "dane",
+                  "key": "decorations",
+                  "location": [ 330, 260],
+                  "scale": [ 0.36, 0.36]
+                }
+              ] }
+            ]
+          },
+          "scene_2_start": {
+            "events": {"sound_1_d": "played" },
+            "actions": [
+              { "type": "scene", "args": [ "scene2" ] }
+            ]
+          }
+        }
+      },
+      "scene2": {
+        "id": "scene2",
+        "background": "hallway",
+        "title": "Introduction",
+        "description": "starting Act Now!",
+        "call": {"func": "sendSCORM"},
+        "actors": [
+          {
+            "name": "announcerBox_04",
+            "type": "announcer",
+            "location": [ 2, 5 ],
+            "text": "The nastiness spread by Ross seems to be influencing a lot of kids at school, including people who used to be respectful.",
+            "announcerBox": true
+          },
+          {
+            "name": "sound_2_a",
+            "type": "audio",
+            "audio": ["5"],
+            "variable": "sound_2_a"
+          }
+        ],
+        "outcomes": {
+          "scene_2_sound_2": {
+            "events": {"sound_2_a": "played" },
+            "actions": [
+              { "type": "add-actor", "args": [
+                {
+                  "name": "sound_2_b",
+                  "type": "audio",
+                  "audio": [ "6"],
+                  "variable": "sound_2_b"
+                }
+              ] },
+              { "type": "add-actor", "args": [
+                {
+                  "name": "ross",
+                  "type": "decoration",
+                  "image": "ross",
+                  "key": "decorations",
+                  "location": [ 240, 200],
+                  "scale": [ 0.65, 0.65]
+                }
+              ] }
+            ]
+          },
+          "scene_2_sound_3": {
+            "events": {"sound_2_b": "played" },
+            "actions": [
+              { "type": "add-actor", "args": [
+                {
+                  "name": "sound_2_c",
+                  "type": "audio",
+                  "audio": [ "7"],
+                  "variable": "sound_2_c"
+                }
+              ] },
+              { "type": "add-actor", "args": [
+                {
+                  "name": "dane",
+                  "type": "decoration",
+                  "image": "dane",
+                  "key": "decorations",
+                  "location": [ 410, 125],
+                  "scale": [ 0.63, 0.63 ]
+                }
+              ] }
+            ]
+          },
+          "scene_2_sound_4": {
+            "events": {"sound_2_c": "played" },
+            "actions": [
+              { "type": "remove-actor", "args": ["ross"] },
+              { "type": "add-actor", "args": [
+                {
+                  "name": "sound_2_d",
+                  "type": "audio",
+                  "audio": [ "8"],
+                  "variable": "sound_2_d"
+                }
+              ] },
+              { "type": "add-actor", "args": [
+                {
+                  "name": "mandy",
+                  "type": "decoration",
+                  "image": "mandy",
+                  "key": "decorations",
+                  "location": [ 270, 160],
+                  "scale": [ -0.5, 0.5 ]
+                }
+              ] },
+              { "type": "add-actor", "args": [
+                {
+                  "name": "ross",
+                  "type": "decoration",
+                  "image": "ross",
+                  "key": "decorations",
+                  "location": [ 240, 200],
+                  "scale": [ 0.65, 0.65]
+                }
+              ] }
+            ]
+          },
+          "scene_2_sound_5": {
+            "events": {"sound_2_d": "played" },
+            "actions": [
+              { "type": "remove-actor", "args": ["dane"] },
+              { "type": "add-actor", "args": [
+                {
+                  "name": "sound_2_e",
+                  "type": "audio",
+                  "audio": [ "9"],
+                  "variable": "sound_2_e"
+                }
+              ] },
+              { "type": "add-actor", "args": [
+                {
+                  "name": "freddie",
+                  "type": "decoration",
+                  "image": "freddie",
+                  "key": "decorations",
+                  "location": [ 545, 140 ],
+                  "scale": [ 0.58, 0.58 ]
+                }
+              ] },
+              { "type": "add-actor", "args": [
+                {
+                  "name": "dane",
+                  "type": "decoration",
+                  "image": "dane",
+                  "key": "decorations",
+                  "location": [ 410, 125],
+                  "scale": [ 0.63, 0.63 ]
+                }
+              ] }
+            ]
+          },
+          "scene_2_sound_6": {
+            "events": {"sound_2_e": "played" },
+            "actions": [
+              { "type": "remove-actor", "args": ["announcerBox_04"] },
+              { "type": "remove-actor", "args": ["carrie"] },
+              { "type": "remove-actor", "args": ["ross"] },
+              { "type": "remove-actor", "args": ["dane"] },
+              { "type": "add-actor", "args": [
+                {
+                  "name": "announcerBox_05",
+                  "type": "announcer",
+                  "location": [ 2, 5 ],
+                  "text": "Ever heard the phrase \"Be the change you want to see in the world?\"",
+                  "announcerBox": true
+                }
+              ] },
+              { "type": "add-actor", "args": [
+                {
+                  "name": "sound_2_f",
+                  "type": "audio",
+                  "audio": [ "10"],
+                  "variable": "sound_2_f"
+                }
+              ] },
+              { "type": "add-actor", "args": [
+                {
+                  "name": "tom",
+                  "type": "decoration",
+                  "image": "tom",
+                  "key": "decorations",
+                  "location": [ 152, 205 ],
+                  "scale": [ -0.40, 0.40 ]
+                }
+              ] },
+              { "type": "add-actor", "args": [
+                {
+                  "name": "janelle",
+                  "type": "decoration",
+                  "image": "janelle",
+                  "key": "decorations",
+                  "location": [ 313, 235 ],
+                  "scale": [ 0.48, 0.48 ]
+                }
+              ] },
+              { "type": "add-actor", "args": [
+                {
+                  "name": "mandy",
+                  "type": "decoration",
+                  "image": "mandy",
+                  "key": "decorations",
+                  "location": [ 270, 160],
+                  "scale": [ -0.5, 0.5 ]
+                }
+              ] },
+              { "type": "add-actor", "args": [
+                {
+                  "name": "ross",
+                  "type": "decoration",
+                  "image": "ross",
+                  "key": "decorations",
+                  "location": [ 240, 200],
+                  "scale": [ 0.65, 0.65]
+                }
+              ] },
+              { "type": "add-actor", "args": [
+                {
+                  "name": "dane",
+                  "type": "decoration",
+                  "image": "dane",
+                  "key": "decorations",
+                  "location": [ 410, 125],
+                  "scale": [ 0.63, 0.63 ]
+                }
+              ] }
+            ]
+          },
+          "scene_2_sound_7": {
+            "events": {"sound_2_f": "played" },
+            "actions": [
+              { "type": "remove-actor", "args": ["announcerBox_05"] },
+              { "type": "add-actor", "args": [
+                {
+                  "name": "announcerBox_06",
+                  "type": "announcer",
+                  "location": [ 2, 5 ],
+                  "text": "It’s good advice. Take it to heart.",
+                  "announcerBox": true
+                }
+              ] },
+              { "type": "add-actor", "args": [
+                {
+                  "name": "sound_2_g",
+                  "type": "audio",
+                  "audio": [ "11"],
+                  "variable": "sound_2_g"
+                }
+              ] }
+            ]
+          },
+          "scene_2_ended": {
+            "events": {"sound_2_g": "played" },
+            "actions": [
+              { "type": "add-actor", "args": [
+                {
+                  "name": "moveonbox",
+                  "type": "instructions",
+                  "location": [ 300, 250 ],
+                  "text": "Please move on to the next activity."
+                }
+              ] }
+            ]
+          }
+        }
+      }
+    }
+  }
+}
