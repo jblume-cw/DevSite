@@ -1,0 +1,48 @@
+{
+  "resources": [
+    "output/HM6letterbylettersfx/sfx.ogg",
+    "output/HM6letterbylettersfx/sfx.m4a"
+  ],
+  "spritemap": {
+    "bomb": {
+      "start": 0,
+      "end": 0.7,
+      "loop": false
+    },
+    "reveal": {
+      "start": 1,
+      "end": 2.4,
+      "loop": false
+    },
+    "score": {
+      "start": 3,
+      "end": 5.447709750566894,
+      "loop": false
+    },
+    "slide": {
+      "start": 6,
+      "end": 6.285260770975056,
+      "loop": false
+    },
+    "star": {
+      "start": 7,
+      "end": 7.963151927437642,
+      "loop": false
+    },
+    "tick": {
+      "start": 8,
+      "end": 8.07,
+      "loop": false
+    },
+    "whoosh": {
+      "start": 9,
+      "end": 9.41,
+      "loop": false
+    },
+    "wrong": {
+      "start": 10,
+      "end": 10.924761904761905,
+      "loop": false
+    }
+  }
+}

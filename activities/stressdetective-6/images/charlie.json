@@ -1,0 +1,608 @@
+{
+	"textures": [
+		{
+			"image": "charlie-0.png",
+			"format": "RGBA8888",
+			"size": {
+				"w": 1302,
+				"h": 1971
+			},
+			"scale": 1,
+			"frames": [
+				{
+					"filename": "charlie-environment-bare.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 1024,
+						"h": 768
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 1024,
+						"h": 768
+					},
+					"frame": {
+						"x": 1,
+						"y": 1,
+						"w": 1024,
+						"h": 768
+					}
+				},
+				{
+					"filename": "charlie-math.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 1024,
+						"h": 768
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 1024,
+						"h": 768
+					},
+					"frame": {
+						"x": 1,
+						"y": 771,
+						"w": 1024,
+						"h": 768
+					}
+				},
+				{
+					"filename": "charlie-game-down.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 216,
+						"h": 429
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 216,
+						"h": 429
+					},
+					"frame": {
+						"x": 1,
+						"y": 1541,
+						"w": 216,
+						"h": 429
+					}
+				},
+				{
+					"filename": "charlie-game-hi.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 216,
+						"h": 429
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 216,
+						"h": 429
+					},
+					"frame": {
+						"x": 219,
+						"y": 1541,
+						"w": 216,
+						"h": 429
+					}
+				},
+				{
+					"filename": "charlie-game-off.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 216,
+						"h": 429
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 216,
+						"h": 429
+					},
+					"frame": {
+						"x": 437,
+						"y": 1541,
+						"w": 216,
+						"h": 429
+					}
+				},
+				{
+					"filename": "charlie-game-up.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 216,
+						"h": 429
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 216,
+						"h": 429
+					},
+					"frame": {
+						"x": 655,
+						"y": 1541,
+						"w": 216,
+						"h": 429
+					}
+				},
+				{
+					"filename": "charlie-friend.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 276,
+						"h": 333
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 276,
+						"h": 333
+					},
+					"frame": {
+						"x": 873,
+						"y": 1541,
+						"w": 276,
+						"h": 333
+					}
+				},
+				{
+					"filename": "charlie-laundry-down.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 264,
+						"h": 168
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 264,
+						"h": 168
+					},
+					"frame": {
+						"x": 1027,
+						"y": 1,
+						"w": 264,
+						"h": 168
+					}
+				},
+				{
+					"filename": "charlie-laundry-hi.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 264,
+						"h": 168
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 264,
+						"h": 168
+					},
+					"frame": {
+						"x": 1027,
+						"y": 171,
+						"w": 264,
+						"h": 168
+					}
+				},
+				{
+					"filename": "charlie-laundry-up.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 264,
+						"h": 168
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 264,
+						"h": 168
+					},
+					"frame": {
+						"x": 1027,
+						"y": 341,
+						"w": 264,
+						"h": 168
+					}
+				},
+				{
+					"filename": "charlie-family-all.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 163,
+						"h": 199
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 163,
+						"h": 199
+					},
+					"frame": {
+						"x": 1027,
+						"y": 511,
+						"w": 163,
+						"h": 199
+					}
+				},
+				{
+					"filename": "charlie-family-down.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 163,
+						"h": 199
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 163,
+						"h": 199
+					},
+					"frame": {
+						"x": 1027,
+						"y": 712,
+						"w": 163,
+						"h": 199
+					}
+				},
+				{
+					"filename": "charlie-family-hi.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 163,
+						"h": 199
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 163,
+						"h": 199
+					},
+					"frame": {
+						"x": 1027,
+						"y": 913,
+						"w": 163,
+						"h": 199
+					}
+				},
+				{
+					"filename": "charlie-family-none.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 163,
+						"h": 199
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 163,
+						"h": 199
+					},
+					"frame": {
+						"x": 1027,
+						"y": 1114,
+						"w": 163,
+						"h": 199
+					}
+				},
+				{
+					"filename": "charlie-family-up.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 163,
+						"h": 199
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 163,
+						"h": 199
+					},
+					"frame": {
+						"x": 1027,
+						"y": 1315,
+						"w": 163,
+						"h": 199
+					}
+				},
+				{
+					"filename": "charlie-shoes-down.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 140,
+						"h": 85
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 140,
+						"h": 85
+					},
+					"frame": {
+						"x": 873,
+						"y": 1876,
+						"w": 140,
+						"h": 85
+					}
+				},
+				{
+					"filename": "charlie-stressed.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 150,
+						"h": 206
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 150,
+						"h": 206
+					},
+					"frame": {
+						"x": 1151,
+						"y": 1516,
+						"w": 150,
+						"h": 206
+					}
+				},
+				{
+					"filename": "charlie-ball-down.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 113,
+						"h": 113
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 113,
+						"h": 113
+					},
+					"frame": {
+						"x": 1151,
+						"y": 1724,
+						"w": 113,
+						"h": 113
+					}
+				},
+				{
+					"filename": "charlie-shoes-up.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 140,
+						"h": 85
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 140,
+						"h": 85
+					},
+					"frame": {
+						"x": 1015,
+						"y": 1876,
+						"w": 140,
+						"h": 85
+					}
+				},
+				{
+					"filename": "charlie-chips-down.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 109,
+						"h": 105
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 109,
+						"h": 105
+					},
+					"frame": {
+						"x": 1192,
+						"y": 511,
+						"w": 109,
+						"h": 105
+					}
+				},
+				{
+					"filename": "charlie-chips-hi.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 109,
+						"h": 105
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 109,
+						"h": 105
+					},
+					"frame": {
+						"x": 1192,
+						"y": 618,
+						"w": 109,
+						"h": 105
+					}
+				},
+				{
+					"filename": "charlie-chips-up.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 109,
+						"h": 105
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 109,
+						"h": 105
+					},
+					"frame": {
+						"x": 1192,
+						"y": 725,
+						"w": 109,
+						"h": 105
+					}
+				},
+				{
+					"filename": "charlie-ball-up.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 113,
+						"h": 113
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 113,
+						"h": 113
+					},
+					"frame": {
+						"x": 1157,
+						"y": 1839,
+						"w": 113,
+						"h": 113
+					}
+				},
+				{
+					"filename": "charlie-phone-down.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 95,
+						"h": 60
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 95,
+						"h": 60
+					},
+					"frame": {
+						"x": 1192,
+						"y": 832,
+						"w": 95,
+						"h": 60
+					}
+				},
+				{
+					"filename": "charlie-phone-hi.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 95,
+						"h": 60
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 95,
+						"h": 60
+					},
+					"frame": {
+						"x": 1192,
+						"y": 894,
+						"w": 95,
+						"h": 60
+					}
+				},
+				{
+					"filename": "charlie-phone-up.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 95,
+						"h": 60
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 95,
+						"h": 60
+					},
+					"frame": {
+						"x": 1192,
+						"y": 956,
+						"w": 95,
+						"h": 60
+					}
+				},
+				{
+					"filename": "charlie-trash-empty.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 56,
+						"h": 93
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 56,
+						"h": 93
+					},
+					"frame": {
+						"x": 1192,
+						"y": 1018,
+						"w": 56,
+						"h": 93
+					}
+				},
+				{
+					"filename": "charlie-trash-full.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 56,
+						"h": 93
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 56,
+						"h": 93
+					},
+					"frame": {
+						"x": 1192,
+						"y": 1113,
+						"w": 56,
+						"h": 93
+					}
+				}
+			]
+		}
+	],
+	"meta": {
+		"app": "https://www.codeandweb.com/texturepacker",
+		"version": "3.0",
+		"smartupdate": "$TexturePacker:SmartUpdate:0776fa5ffedf11a8a65a4b5f4b12f01f:8c5cab66fa7892c403453eb2dfe48443:2405260b78646a9f22caed94bee4b66e$"
+	}
+}

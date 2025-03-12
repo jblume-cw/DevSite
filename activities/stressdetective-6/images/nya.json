@@ -1,0 +1,692 @@
+{
+	"textures": [
+		{
+			"image": "nya-0.png",
+			"format": "RGBA8888",
+			"size": {
+				"w": 1733,
+				"h": 1977
+			},
+			"scale": 1,
+			"frames": [
+				{
+					"filename": "audition.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 1025,
+						"h": 768
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 1025,
+						"h": 768
+					},
+					"frame": {
+						"x": 1,
+						"y": 1,
+						"w": 1025,
+						"h": 768
+					}
+				},
+				{
+					"filename": "alone-down.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 346,
+						"h": 348
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 346,
+						"h": 348
+					},
+					"frame": {
+						"x": 1028,
+						"y": 1,
+						"w": 346,
+						"h": 348
+					}
+				},
+				{
+					"filename": "alone-hi.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 346,
+						"h": 348
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 346,
+						"h": 348
+					},
+					"frame": {
+						"x": 1376,
+						"y": 1,
+						"w": 346,
+						"h": 348
+					}
+				},
+				{
+					"filename": "alone-up.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 346,
+						"h": 348
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 346,
+						"h": 348
+					},
+					"frame": {
+						"x": 1028,
+						"y": 351,
+						"w": 346,
+						"h": 348
+					}
+				},
+				{
+					"filename": "liv-back.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 341,
+						"h": 313
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 341,
+						"h": 313
+					},
+					"frame": {
+						"x": 1376,
+						"y": 351,
+						"w": 341,
+						"h": 313
+					}
+				},
+				{
+					"filename": "nya-tray-down.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 332,
+						"h": 90
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 332,
+						"h": 90
+					},
+					"frame": {
+						"x": 1376,
+						"y": 666,
+						"w": 332,
+						"h": 90
+					}
+				},
+				{
+					"filename": "nya-tray-hi.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 332,
+						"h": 90
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 332,
+						"h": 90
+					},
+					"frame": {
+						"x": 1028,
+						"y": 701,
+						"w": 332,
+						"h": 90
+					}
+				},
+				{
+					"filename": "background.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 1024,
+						"h": 768
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 1024,
+						"h": 768
+					},
+					"frame": {
+						"x": 1,
+						"y": 771,
+						"w": 1024,
+						"h": 768
+					}
+				},
+				{
+					"filename": "liv-down.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 254,
+						"h": 435
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 254,
+						"h": 435
+					},
+					"frame": {
+						"x": 1,
+						"y": 1541,
+						"w": 254,
+						"h": 435
+					}
+				},
+				{
+					"filename": "liv-hi.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 254,
+						"h": 435
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 254,
+						"h": 435
+					},
+					"frame": {
+						"x": 257,
+						"y": 1541,
+						"w": 254,
+						"h": 435
+					}
+				},
+				{
+					"filename": "liv-up.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 254,
+						"h": 435
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 254,
+						"h": 435
+					},
+					"frame": {
+						"x": 513,
+						"y": 1541,
+						"w": 254,
+						"h": 435
+					}
+				},
+				{
+					"filename": "nya-tray-up.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 332,
+						"h": 90
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 332,
+						"h": 90
+					},
+					"frame": {
+						"x": 1362,
+						"y": 758,
+						"w": 332,
+						"h": 90
+					}
+				},
+				{
+					"filename": "nya-happy.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 317,
+						"h": 327
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 317,
+						"h": 327
+					},
+					"frame": {
+						"x": 1027,
+						"y": 793,
+						"w": 317,
+						"h": 327
+					}
+				},
+				{
+					"filename": "vending-down.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 189,
+						"h": 386
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 189,
+						"h": 386
+					},
+					"frame": {
+						"x": 769,
+						"y": 1541,
+						"w": 189,
+						"h": 386
+					}
+				},
+				{
+					"filename": "vending-hi.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 189,
+						"h": 386
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 189,
+						"h": 386
+					},
+					"frame": {
+						"x": 960,
+						"y": 1541,
+						"w": 189,
+						"h": 386
+					}
+				},
+				{
+					"filename": "vending-up.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 189,
+						"h": 386
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 189,
+						"h": 386
+					},
+					"frame": {
+						"x": 1027,
+						"y": 1122,
+						"w": 189,
+						"h": 386
+					}
+				},
+				{
+					"filename": "chair-back.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 312,
+						"h": 92
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 312,
+						"h": 92
+					},
+					"frame": {
+						"x": 1346,
+						"y": 850,
+						"w": 312,
+						"h": 92
+					}
+				},
+				{
+					"filename": "nya-happy2.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 253,
+						"h": 313
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 253,
+						"h": 313
+					},
+					"frame": {
+						"x": 1346,
+						"y": 944,
+						"w": 253,
+						"h": 313
+					}
+				},
+				{
+					"filename": "poster-down.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 131,
+						"h": 159
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 131,
+						"h": 159
+					},
+					"frame": {
+						"x": 1601,
+						"y": 944,
+						"w": 131,
+						"h": 159
+					}
+				},
+				{
+					"filename": "poster-hi.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 131,
+						"h": 159
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 131,
+						"h": 159
+					},
+					"frame": {
+						"x": 1601,
+						"y": 1105,
+						"w": 131,
+						"h": 159
+					}
+				},
+				{
+					"filename": "friend-tray-down.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 251,
+						"h": 99
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 251,
+						"h": 99
+					},
+					"frame": {
+						"x": 1218,
+						"y": 1259,
+						"w": 251,
+						"h": 99
+					}
+				},
+				{
+					"filename": "friend-tray-hi.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 251,
+						"h": 99
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 251,
+						"h": 99
+					},
+					"frame": {
+						"x": 1471,
+						"y": 1266,
+						"w": 251,
+						"h": 99
+					}
+				},
+				{
+					"filename": "friend-tray-up.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 251,
+						"h": 99
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 251,
+						"h": 99
+					},
+					"frame": {
+						"x": 1218,
+						"y": 1360,
+						"w": 251,
+						"h": 99
+					}
+				},
+				{
+					"filename": "counter.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 248,
+						"h": 165
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 248,
+						"h": 165
+					},
+					"frame": {
+						"x": 1471,
+						"y": 1367,
+						"w": 248,
+						"h": 165
+					}
+				},
+				{
+					"filename": "liv-happy.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 174,
+						"h": 302
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 174,
+						"h": 302
+					},
+					"frame": {
+						"x": 1218,
+						"y": 1461,
+						"w": 174,
+						"h": 302
+					}
+				},
+				{
+					"filename": "worker-down.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 137,
+						"h": 164
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 137,
+						"h": 164
+					},
+					"frame": {
+						"x": 1151,
+						"y": 1765,
+						"w": 137,
+						"h": 164
+					}
+				},
+				{
+					"filename": "worker-hi.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 137,
+						"h": 164
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 137,
+						"h": 164
+					},
+					"frame": {
+						"x": 1290,
+						"y": 1765,
+						"w": 137,
+						"h": 164
+					}
+				},
+				{
+					"filename": "worker-up.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 137,
+						"h": 164
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 137,
+						"h": 164
+					},
+					"frame": {
+						"x": 1394,
+						"y": 1534,
+						"w": 137,
+						"h": 164
+					}
+				},
+				{
+					"filename": "notebook-down.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 153,
+						"h": 88
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 153,
+						"h": 88
+					},
+					"frame": {
+						"x": 1533,
+						"y": 1534,
+						"w": 153,
+						"h": 88
+					}
+				},
+				{
+					"filename": "notebook-hi.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 153,
+						"h": 88
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 153,
+						"h": 88
+					},
+					"frame": {
+						"x": 1533,
+						"y": 1624,
+						"w": 153,
+						"h": 88
+					}
+				},
+				{
+					"filename": "poster-up.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 131,
+						"h": 159
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 131,
+						"h": 159
+					},
+					"frame": {
+						"x": 1429,
+						"y": 1714,
+						"w": 131,
+						"h": 159
+					}
+				},
+				{
+					"filename": "notebook-up.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 153,
+						"h": 88
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 153,
+						"h": 88
+					},
+					"frame": {
+						"x": 1562,
+						"y": 1714,
+						"w": 153,
+						"h": 88
+					}
+				}
+			]
+		}
+	],
+	"meta": {
+		"app": "https://www.codeandweb.com/texturepacker",
+		"version": "3.0",
+		"smartupdate": "$TexturePacker:SmartUpdate:2d7bd6957b96d04c4b449383de7bcd2c:19048d1533b266b6a0f1b343857a3260:9f467d9ebe4737cd9b8a2c40be0e9f5b$"
+	}
+}

@@ -1,0 +1,18 @@
+{
+  "resources": [
+    "output/HM6stressdetective-sfx/sfx.ogg",
+    "output/HM6stressdetective-sfx/sfx.m4a"
+  ],
+  "spritemap": {
+    "stinger": {
+      "start": 0,
+      "end": 1.6,
+      "loop": false
+    },
+    "theme": {
+      "start": 2,
+      "end": 31.53845804988662,
+      "loop": false
+    }
+  }
+}

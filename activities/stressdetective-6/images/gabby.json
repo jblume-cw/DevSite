@@ -1,0 +1,923 @@
+{
+	"textures": [
+		{
+			"image": "gabby-0.png",
+			"format": "RGBA8888",
+			"size": {
+				"w": 1514,
+				"h": 2033
+			},
+			"scale": 1,
+			"frames": [
+				{
+					"filename": "presentation.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 1025,
+						"h": 770
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 1025,
+						"h": 770
+					},
+					"frame": {
+						"x": 1,
+						"y": 1,
+						"w": 1025,
+						"h": 770
+					}
+				},
+				{
+					"filename": "dog-sitting2.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 296,
+						"h": 288
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 296,
+						"h": 288
+					},
+					"frame": {
+						"x": 1028,
+						"y": 1,
+						"w": 296,
+						"h": 288
+					}
+				},
+				{
+					"filename": "magazine-down.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 166,
+						"h": 140
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 166,
+						"h": 140
+					},
+					"frame": {
+						"x": 1326,
+						"y": 1,
+						"w": 166,
+						"h": 140
+					}
+				},
+				{
+					"filename": "magazine-hi.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 166,
+						"h": 140
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 166,
+						"h": 140
+					},
+					"frame": {
+						"x": 1326,
+						"y": 143,
+						"w": 166,
+						"h": 140
+					}
+				},
+				{
+					"filename": "magazine-up.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 166,
+						"h": 140
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 166,
+						"h": 140
+					},
+					"frame": {
+						"x": 1326,
+						"y": 285,
+						"w": 166,
+						"h": 140
+					}
+				},
+				{
+					"filename": "dog-down.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 292,
+						"h": 188
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 292,
+						"h": 188
+					},
+					"frame": {
+						"x": 1028,
+						"y": 291,
+						"w": 292,
+						"h": 188
+					}
+				},
+				{
+					"filename": "gabby-determined.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 191,
+						"h": 238
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 191,
+						"h": 238
+					},
+					"frame": {
+						"x": 1322,
+						"y": 427,
+						"w": 191,
+						"h": 238
+					}
+				},
+				{
+					"filename": "dog-hi.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 292,
+						"h": 188
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 292,
+						"h": 188
+					},
+					"frame": {
+						"x": 1028,
+						"y": 481,
+						"w": 292,
+						"h": 188
+					}
+				},
+				{
+					"filename": "gabby-frustrated.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 191,
+						"h": 231
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 191,
+						"h": 231
+					},
+					"frame": {
+						"x": 1322,
+						"y": 667,
+						"w": 191,
+						"h": 231
+					}
+				},
+				{
+					"filename": "dog-up.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 292,
+						"h": 188
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 292,
+						"h": 188
+					},
+					"frame": {
+						"x": 1028,
+						"y": 671,
+						"w": 292,
+						"h": 188
+					}
+				},
+				{
+					"filename": "background.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 1025,
+						"h": 768
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 1025,
+						"h": 768
+					},
+					"frame": {
+						"x": 1,
+						"y": 773,
+						"w": 1025,
+						"h": 768
+					}
+				},
+				{
+					"filename": "dog-couch.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 288,
+						"h": 191
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 288,
+						"h": 191
+					},
+					"frame": {
+						"x": 1028,
+						"y": 861,
+						"w": 288,
+						"h": 191
+					}
+				},
+				{
+					"filename": "cards-table.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 154,
+						"h": 93
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 154,
+						"h": 93
+					},
+					"frame": {
+						"x": 1318,
+						"y": 900,
+						"w": 154,
+						"h": 93
+					}
+				},
+				{
+					"filename": "clock-415.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 153,
+						"h": 153
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 153,
+						"h": 153
+					},
+					"frame": {
+						"x": 1318,
+						"y": 995,
+						"w": 153,
+						"h": 153
+					}
+				},
+				{
+					"filename": "gabby-practice3.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 255,
+						"h": 397
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 255,
+						"h": 397
+					},
+					"frame": {
+						"x": 1028,
+						"y": 1054,
+						"w": 255,
+						"h": 397
+					}
+				},
+				{
+					"filename": "pillow-down.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 214,
+						"h": 184
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 214,
+						"h": 184
+					},
+					"frame": {
+						"x": 1285,
+						"y": 1150,
+						"w": 214,
+						"h": 184
+					}
+				},
+				{
+					"filename": "pillow-hi.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 214,
+						"h": 184
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 214,
+						"h": 184
+					},
+					"frame": {
+						"x": 1285,
+						"y": 1336,
+						"w": 214,
+						"h": 184
+					}
+				},
+				{
+					"filename": "gabby-practice2.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 255,
+						"h": 396
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 255,
+						"h": 396
+					},
+					"frame": {
+						"x": 1028,
+						"y": 1453,
+						"w": 255,
+						"h": 396
+					}
+				},
+				{
+					"filename": "photo-down.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 254,
+						"h": 181
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 254,
+						"h": 181
+					},
+					"frame": {
+						"x": 1,
+						"y": 1851,
+						"w": 254,
+						"h": 181
+					}
+				},
+				{
+					"filename": "photo-hi.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 254,
+						"h": 181
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 254,
+						"h": 181
+					},
+					"frame": {
+						"x": 257,
+						"y": 1851,
+						"w": 254,
+						"h": 181
+					}
+				},
+				{
+					"filename": "photo-up.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 254,
+						"h": 181
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 254,
+						"h": 181
+					},
+					"frame": {
+						"x": 513,
+						"y": 1851,
+						"w": 254,
+						"h": 181
+					}
+				},
+				{
+					"filename": "pillow-up.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 214,
+						"h": 184
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 214,
+						"h": 184
+					},
+					"frame": {
+						"x": 1285,
+						"y": 1522,
+						"w": 214,
+						"h": 184
+					}
+				},
+				{
+					"filename": "dog-bed.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 241,
+						"h": 117
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 241,
+						"h": 117
+					},
+					"frame": {
+						"x": 769,
+						"y": 1543,
+						"w": 241,
+						"h": 117
+					}
+				},
+				{
+					"filename": "dog-sitting.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 238,
+						"h": 232
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 238,
+						"h": 232
+					},
+					"frame": {
+						"x": 769,
+						"y": 1662,
+						"w": 238,
+						"h": 232
+					}
+				},
+				{
+					"filename": "pillow2.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 203,
+						"h": 135
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 203,
+						"h": 135
+					},
+					"frame": {
+						"x": 769,
+						"y": 1896,
+						"w": 203,
+						"h": 135
+					}
+				},
+				{
+					"filename": "clock-545.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 153,
+						"h": 153
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 153,
+						"h": 153
+					},
+					"frame": {
+						"x": 1009,
+						"y": 1851,
+						"w": 153,
+						"h": 153
+					}
+				},
+				{
+					"filename": "clock-800.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 153,
+						"h": 153
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 153,
+						"h": 153
+					},
+					"frame": {
+						"x": 1164,
+						"y": 1851,
+						"w": 153,
+						"h": 153
+					}
+				},
+				{
+					"filename": "clock-down.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 153,
+						"h": 153
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 153,
+						"h": 153
+					},
+					"frame": {
+						"x": 1319,
+						"y": 1708,
+						"w": 153,
+						"h": 153
+					}
+				},
+				{
+					"filename": "clock-hi.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 153,
+						"h": 153
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 153,
+						"h": 153
+					},
+					"frame": {
+						"x": 1319,
+						"y": 1863,
+						"w": 153,
+						"h": 153
+					}
+				},
+				{
+					"filename": "window-day.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 80,
+						"h": 264
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 80,
+						"h": 264
+					},
+					"frame": {
+						"x": 1,
+						"y": 1543,
+						"w": 80,
+						"h": 264
+					}
+				},
+				{
+					"filename": "cards-couch.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 130,
+						"h": 40
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 130,
+						"h": 40
+					},
+					"frame": {
+						"x": 1,
+						"y": 1809,
+						"w": 130,
+						"h": 40
+					}
+				},
+				{
+					"filename": "gabby-practice1.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 120,
+						"h": 196
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 120,
+						"h": 196
+					},
+					"frame": {
+						"x": 83,
+						"y": 1543,
+						"w": 120,
+						"h": 196
+					}
+				},
+				{
+					"filename": "vape-down.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 92,
+						"h": 93
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 92,
+						"h": 93
+					},
+					"frame": {
+						"x": 133,
+						"y": 1741,
+						"w": 92,
+						"h": 93
+					}
+				},
+				{
+					"filename": "clock-up.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 153,
+						"h": 153
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 153,
+						"h": 153
+					},
+					"frame": {
+						"x": 205,
+						"y": 1543,
+						"w": 153,
+						"h": 153
+					}
+				},
+				{
+					"filename": "backpack-down.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 116,
+						"h": 142
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 116,
+						"h": 142
+					},
+					"frame": {
+						"x": 227,
+						"y": 1698,
+						"w": 116,
+						"h": 142
+					}
+				},
+				{
+					"filename": "backpack-hi.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 116,
+						"h": 142
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 116,
+						"h": 142
+					},
+					"frame": {
+						"x": 345,
+						"y": 1698,
+						"w": 116,
+						"h": 142
+					}
+				},
+				{
+					"filename": "backpack-open.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 116,
+						"h": 142
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 116,
+						"h": 142
+					},
+					"frame": {
+						"x": 360,
+						"y": 1543,
+						"w": 116,
+						"h": 142
+					}
+				},
+				{
+					"filename": "backpack-up.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 116,
+						"h": 142
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 116,
+						"h": 142
+					},
+					"frame": {
+						"x": 463,
+						"y": 1687,
+						"w": 116,
+						"h": 142
+					}
+				},
+				{
+					"filename": "vape-hi.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 92,
+						"h": 93
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 92,
+						"h": 93
+					},
+					"frame": {
+						"x": 478,
+						"y": 1543,
+						"w": 92,
+						"h": 93
+					}
+				},
+				{
+					"filename": "vape-up.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 92,
+						"h": 93
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 92,
+						"h": 93
+					},
+					"frame": {
+						"x": 572,
+						"y": 1543,
+						"w": 92,
+						"h": 93
+					}
+				},
+				{
+					"filename": "coaster-down.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 96,
+						"h": 49
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 96,
+						"h": 49
+					},
+					"frame": {
+						"x": 666,
+						"y": 1543,
+						"w": 96,
+						"h": 49
+					}
+				},
+				{
+					"filename": "coaster-hi.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 96,
+						"h": 49
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 96,
+						"h": 49
+					},
+					"frame": {
+						"x": 666,
+						"y": 1594,
+						"w": 96,
+						"h": 49
+					}
+				},
+				{
+					"filename": "coaster-up.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 96,
+						"h": 49
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 96,
+						"h": 49
+					},
+					"frame": {
+						"x": 581,
+						"y": 1645,
+						"w": 96,
+						"h": 49
+					}
+				}
+			]
+		}
+	],
+	"meta": {
+		"app": "https://www.codeandweb.com/texturepacker",
+		"version": "3.0",
+		"smartupdate": "$TexturePacker:SmartUpdate:585d0fe814bf743f59258f3491689319:e15d176020653033da09bc1b7c7b989e:d658314f5e7597268f52b0d9040ecd72$"
+	}
+}

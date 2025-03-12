@@ -1,0 +1,68 @@
+{
+  "resources": [
+    "output/HM6stresstoolkit/stresstoolkit-vo.ogg",
+    "output/HM6stresstoolkit/stresstoolkit-vo.m4a"
+  ],
+  "spritemap": {
+    "Check your attitude": {
+      "start": 0,
+      "end": 9.72265306122449,
+      "loop": false
+    },
+    "Conclusion": {
+      "start": 10,
+      "end": 16.9653514739229,
+      "loop": false
+    },
+    "Eat healthy foods": {
+      "start": 17,
+      "end": 22.530680272108842,
+      "loop": false
+    },
+    "Get a good night's sleep": {
+      "start": 23,
+      "end": 33.41598639455782,
+      "loop": false
+    },
+    "Get Organized": {
+      "start": 34,
+      "end": 37.79734693877551,
+      "loop": false
+    },
+    "Get regular exercise": {
+      "start": 38,
+      "end": 44.210680272108846,
+      "loop": false
+    },
+    "Intro": {
+      "start": 45,
+      "end": 68.65868480725624,
+      "loop": false
+    },
+    "Learn to relax": {
+      "start": 69,
+      "end": 81.55467120181406,
+      "loop": false
+    },
+    "Plan ahead": {
+      "start": 82,
+      "end": 91.70666666666666,
+      "loop": false
+    },
+    "Prioitize": {
+      "start": 92,
+      "end": 99.24265306122449,
+      "loop": false
+    },
+    "Talk to a friend": {
+      "start": 100,
+      "end": 106.06931972789116,
+      "loop": false
+    },
+    "Talk to a trusted adult": {
+      "start": 107,
+      "end": 118.02931972789116,
+      "loop": false
+    }
+  }
+}

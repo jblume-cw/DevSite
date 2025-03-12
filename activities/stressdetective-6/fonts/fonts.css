@@ -1,0 +1,52 @@
+/* special-elite-regular - latin */
+@font-face {
+  font-family: 'Special Elite';
+  font-style: normal;
+  font-weight: 400;
+  src: url('special-elite-v18-latin-regular.eot'); /* IE9 Compat Modes */
+  src: local(''),
+       url('special-elite-v18-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('special-elite-v18-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
+       url('special-elite-v18-latin-regular.woff') format('woff'), /* Modern Browsers */
+       url('special-elite-v18-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('special-elite-v18-latin-regular.svg#SpecialElite') format('svg'); /* Legacy iOS */
+}
+/* permanent-marker-regular - latin */
+@font-face {
+  font-family: 'Permanent Marker';
+  font-style: normal;
+  font-weight: 400;
+  src: url('permanent-marker-v16-latin-regular.eot'); /* IE9 Compat Modes */
+  src: local(''),
+       url('permanent-marker-v16-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('permanent-marker-v16-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
+       url('permanent-marker-v16-latin-regular.woff') format('woff'), /* Modern Browsers */
+       url('permanent-marker-v16-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('permanent-marker-v16-latin-regular.svg#PermanentMarker') format('svg'); /* Legacy iOS */
+}
+/* caveat-regular - latin */
+@font-face {
+  font-family: 'Caveat';
+  font-style: normal;
+  font-weight: 400;
+  src: url('caveat-v17-latin-regular.eot'); /* IE9 Compat Modes */
+  src: local(''),
+       url('caveat-v17-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('caveat-v17-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
+       url('caveat-v17-latin-regular.woff') format('woff'), /* Modern Browsers */
+       url('caveat-v17-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('caveat-v17-latin-regular.svg#Caveat') format('svg'); /* Legacy iOS */
+}
+/* caveat-700 - latin */
+@font-face {
+  font-family: 'Caveat';
+  font-style: normal;
+  font-weight: 700;
+  src: url('caveat-v17-latin-700.eot'); /* IE9 Compat Modes */
+  src: local(''),
+       url('caveat-v17-latin-700.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('caveat-v17-latin-700.woff2') format('woff2'), /* Super Modern Browsers */
+       url('caveat-v17-latin-700.woff') format('woff'), /* Modern Browsers */
+       url('caveat-v17-latin-700.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('caveat-v17-latin-700.svg#Caveat') format('svg'); /* Legacy iOS */
+}
