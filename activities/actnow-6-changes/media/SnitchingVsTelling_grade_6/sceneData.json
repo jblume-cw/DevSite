@@ -1,0 +1,1030 @@
+{
+  "play": {
+    "start": "snitOrTell_intro",
+    "showPlayThrough": false,
+    "scenes": {
+      "snitOrTell_intro": {
+        "id": "snitOrTell_intro",
+        "background": "getTheFactsBackground",
+        "title": "Snitching versus telling",
+        "actors": [
+          {
+            "name": "snitchingVersusTelling",
+            "type": "text",
+            "font": "snitOrTell_canYouTellTheDifferenceText",
+            "location": [ 195, 35 ],
+            "text": "Snitching versus telling",
+            "audio": "n0100"
+          },
+          {
+            "name": "snitchingIntro",
+            "type": "decoration",
+            "image": "snitchingIntro",
+            "key": "decorations",
+            "location": [ 164, 100 ],
+            "scale": [ 1.0, 1.0 ]
+          },
+          {
+            "name": "forwardButton",
+            "type": "button",
+            "image": "getTheFactsNext",
+            "location": [ 572, 400 ],
+            "variable": "snitOrTell_snitchingVersusTelling_showNext"
+          },
+          {
+            "name": "mutebutton",
+            "type": "toggle-button",
+            "images": {
+              "on": "getTheFactsSoundOn",
+              "off": "getTheFactsSoundOff"
+            },
+            "location": [ 360, 404 ],
+            "scale": [
+              0.7, 0.7
+            ],
+            "variable": "mute_game",
+            "values": {
+              "on": "mute_on",
+              "off": "mute_off"
+            },
+            "active": true
+          },
+          {
+            "name": "default",
+            "type": "button",
+            "image": "getTheFactsExit",
+            "location": [ 12, 7 ],
+            "variable": "change_act"
+          }
+        ],
+        "outcomes": {
+          "forward_button": {
+            "events": { "snitOrTell_snitchingVersusTelling_showNext": "*" },
+            "actions": [
+              {
+                "type": "scene",
+                "args": ["snitOrTell_snitching"]
+              }
+            ]
+          }
+        }
+      },
+      "snitOrTell_snitching": {
+        "id": "snitOrTell_snitching",
+        "background": "getTheFactsBackground",
+        "title": "Snitching",
+        "actors": [
+          {
+            "name": "snitching",
+            "type": "text",
+            "font": "snitOrTell_canYouTellTheDifferenceText",
+            "location": [ 310, 35 ],
+            "text": "Snitching",
+            "audio": "n0200"
+          },
+          {
+            "name": "snitching",
+            "type": "decoration",
+            "image": "thomasIsntPayingAttention",
+            "key": "decorations",
+            "location": [ 162, 88 ],
+            "scale": [ 1.0, 1.0 ]
+          },
+          {
+            "name": "backButton",
+            "type": "button",
+            "image": "getTheFactsBack",
+            "location": [ 90, 400 ],
+            "variable": "snitOrTell_snitching_showPrevious"
+          },
+          {
+            "name": "forwardButton",
+            "type": "button",
+            "image": "getTheFactsNext",
+            "location": [ 572, 400 ],
+            "variable": "snitOrTell_snitching_showNext"
+          },
+          {
+            "name": "mutebutton",
+            "type": "toggle-button",
+            "images": {
+              "on": "getTheFactsSoundOn",
+              "off": "getTheFactsSoundOff"
+            },
+            "location": [ 360, 404 ],
+            "scale": [
+              0.7, 0.7
+            ],
+            "variable": "mute_game",
+            "values": {
+              "on": "mute_on",
+              "off": "mute_off"
+            },
+            "active": true
+          },
+          {
+            "name": "default",
+            "type": "button",
+            "image": "getTheFactsExit",
+            "location": [ 12, 7 ],
+            "variable": "change_act"
+          }
+        ],
+        "outcomes": {
+          "back_button": {
+            "events": { "snitOrTell_snitching_showPrevious": "*" },
+            "actions": [
+              {
+                "type": "scene",
+                "args": ["snitOrTell_intro"]
+              }
+            ]
+          },
+          "forward_button": {
+            "events": { "snitOrTell_snitching_showNext": "*" },
+            "actions": [
+              {
+                "type": "scene",
+                "args": ["snitOrTell_telling"]
+              }
+            ]
+          }
+        }
+      },
+      "snitOrTell_telling": {
+        "id": "snitOrTell_telling",
+        "background": "getTheFactsBackground",
+        "title": "Telling",
+        "actors": [
+          {
+            "name": "telling",
+            "type": "text",
+            "font": "snitOrTell_canYouTellTheDifferenceText",
+            "location": [ 328, 35 ],
+            "text": "Telling",
+            "audio": "n0300"
+          },
+          {
+            "name": "telling",
+            "type": "decoration",
+            "image": "iThinkMayasInTrouble",
+            "key": "decorations",
+            "location": [ 162, 88 ],
+            "scale": [ 1.0, 1.0 ]
+          },
+          {
+            "name": "backButton",
+            "type": "button",
+            "image": "getTheFactsBack",
+            "location": [ 90, 400 ],
+            "variable": "snitOrTell_telling_showPrevious"
+          },
+          {
+            "name": "forwardButton",
+            "type": "button",
+            "image": "getTheFactsNext",
+            "location": [ 572, 400 ],
+            "variable": "snitOrTell_telling_showNext"
+          },
+          {
+            "name": "mutebutton",
+            "type": "toggle-button",
+            "images": {
+              "on": "getTheFactsSoundOn",
+              "off": "getTheFactsSoundOff"
+            },
+            "location": [ 360, 404 ],
+            "scale": [
+              0.7, 0.7
+            ],
+            "variable": "mute_game",
+            "values": {
+              "on": "mute_on",
+              "off": "mute_off"
+            },
+            "active": true
+          },
+          {
+            "name": "default",
+            "type": "button",
+            "image": "getTheFactsExit",
+            "location": [ 12, 7 ],
+            "variable": "change_act"
+          }
+        ],
+        "outcomes": {
+          "back_button": {
+            "events": { "snitOrTell_telling_showPrevious": "*" },
+            "actions": [
+              {
+                "type": "scene",
+                "args": ["snitOrTell_snitching"]
+              }
+            ]
+          },
+          "forward_button": {
+            "events": { "snitOrTell_telling_showNext": "*" },
+            "actions": [
+              {
+                "type": "scene",
+                "args": ["snitOrTell_canYouTellTheDifference"]
+              }
+            ]
+          }
+        }
+      },
+      "snitOrTell_canYouTellTheDifference": {
+        "id": "snitOrTell_canYouTellTheDifference",
+        "background": "getTheFactsBackground",
+        "title": "Can You Tell The Difference",
+        "actors": [
+          {
+            "name": "canYouTellTheDifference",
+            "type": "text",
+            "font": "snitOrTell_canYouTellTheDifferenceText",
+            "location": [ 170, 141 ],
+            "text": "Can you tell the difference?",
+            "audio": "n0400"
+          },
+          {
+            "name": "backButton",
+            "type": "button",
+            "image": "getTheFactsBack",
+            "location": [ 90, 400 ],
+            "variable": "snitOrTell_canYouTellTheDifference_showPrevious"
+          },
+          {
+            "name": "forwardButton",
+            "type": "button",
+            "image": "getTheFactsNext",
+            "location": [ 572, 400 ],
+            "variable": "snitOrTell_canYouTellTheDifference_showNext"
+          },
+          {
+            "name": "mutebutton",
+            "type": "toggle-button",
+            "images": {
+              "on": "getTheFactsSoundOn",
+              "off": "getTheFactsSoundOff"
+            },
+            "location": [ 360, 404 ],
+            "scale": [
+              0.7, 0.7
+            ],
+            "variable": "mute_game",
+            "values": {
+              "on": "mute_on",
+              "off": "mute_off"
+            },
+            "active": true
+          },
+          {
+            "name": "default",
+            "type": "button",
+            "image": "getTheFactsExit",
+            "location": [ 12, 7 ],
+            "variable": "change_act"
+          }
+        ],
+        "outcomes": {
+          "back_button": {
+            "events": { "snitOrTell_canYouTellTheDifference_showPrevious": "*" },
+            "actions": [
+              {
+                "type": "scene",
+                "args": ["snitOrTell_telling"]
+              }
+            ]
+          },
+          "forward_button": {
+            "events": { "snitOrTell_canYouTellTheDifference_showNext": "*" },
+            "actions": [
+              {
+                "type": "scene",
+                "args": ["snitOrTell_question_01"]
+              }
+            ]
+          }
+        }
+      },
+      "snitOrTell_question_01": {
+        "id": "snitOrTell_question_01",
+        "background": "getTheFactsBackground",
+        "title": "Snitching or Telling",
+        "actors": [
+          {
+            "name": "questions_snitOrTell_01",
+            "type": "question",
+            "font": "snitOrTell_questionText",
+            "location": [ 90, 35 ],
+            "submitButtonImage": "submit",
+            "submitButtonID": "snitOrTellSubmitButton",
+            "submitButtonLocation": [ 546, 255 ],
+            "startQuestion": "snitOrTell_question_01",
+            "choiceMap": {
+              "snitOrTell_question_01": {
+                "text": "Shandra stumbled upon some pretty nasty comments online about Brianna. They were calling her a slut, among other things. Shandra decides to mention it to her mom.\n\nIs this snitching or telling?",
+                "audio": "n0500",
+                "choices": [
+                  {
+                    "text": "Snitching",
+                    "variable": "snitOrTell_question_01",
+                    "value": "Incorrect. Select Next to learn why."
+                  },
+                  {
+                    "text": "Telling",
+                    "variable": "snitOrTell_question_01",
+                    "value": "Correct. Select Next to learn why."
+                  }
+                ]
+              }
+            }
+          },
+          {
+            "name": "snitOrTell_01_feedback",
+            "type": "text",
+            "text": " ",
+            "font": "snitOrTell_questionText",
+            "location": [ 90, 300 ]
+          },
+          {
+            "name": "backButton",
+            "type": "button",
+            "image": "getTheFactsBack",
+            "location": [ 90, 400 ],
+            "variable": "snitOrTell_question_01_showPrevious"
+          },
+          {
+            "name": "forwardButton",
+            "type": "button",
+            "image": "getTheFactsNext",
+            "location": [ 572, 400 ],
+            "variable": "snitOrTell_question_01_showNext"
+          },
+          {
+            "name": "mutebutton",
+            "type": "toggle-button",
+            "images": {
+              "on": "getTheFactsSoundOn",
+              "off": "getTheFactsSoundOff"
+            },
+            "location": [ 360, 404 ],
+            "scale": [
+              0.7, 0.7
+            ],
+            "variable": "mute_game",
+            "values": {
+              "on": "mute_on",
+              "off": "mute_off"
+            },
+            "active": true
+          },
+          {
+            "name": "default",
+            "type": "button",
+            "image": "getTheFactsExit",
+            "location": [ 12, 7 ],
+            "variable": "change_act"
+          }
+        ],
+        "outcomes": {
+          "forward_button": {
+            "events": { "snitOrTell_question_01_showNext": "*" },
+            "actions": [
+              {
+                "type": "scene",
+                "args": ["snitOrTell_explanation_01"]
+              }
+            ]
+          },
+          "back_button": {
+            "events": { "snitOrTell_question_01_showPrevious": "*" },
+            "actions": [
+              {
+                "type": "scene",
+                "args": ["snitOrTell_canYouTellTheDifference"]
+              }
+            ]
+          }
+        }
+      },
+      "snitOrTell_explanation_01": {
+        "id": "snitOrTell_explanation_01",
+        "background": "getTheFactsBackground",
+        "title": "Snitching or Telling Explanation",
+        "actors": [
+          {
+            "name": "questions_snitOrTell_explanation_01",
+            "type": "text",
+            "font": "snitOrTell_questionText",
+            "location": [ 90, 35 ],
+            "text": "Shandra stumbled upon some pretty nasty comments online about Brianna. They were calling her a slut, among other things. Shandra decides to mention it to her mom.\n\nThis would be an example of telling because it sounds like Brianna is being cyberbullied.",
+            "audio": "n0550"
+          },
+          {
+            "name": "backButton",
+            "type": "button",
+            "image": "getTheFactsBack",
+            "location": [ 90, 400 ],
+            "variable": "snitOrTell_explanation_01_showPrevious"
+          },
+          {
+            "name": "forwardButton",
+            "type": "button",
+            "image": "getTheFactsNext",
+            "location": [ 572, 400 ],
+            "variable": "snitOrTell_explanation_01_showNext"
+          },
+          {
+            "name": "mutebutton",
+            "type": "toggle-button",
+            "images": {
+              "on": "getTheFactsSoundOn",
+              "off": "getTheFactsSoundOff"
+            },
+            "location": [ 360, 404 ],
+            "scale": [
+              0.7, 0.7
+            ],
+            "variable": "mute_game",
+            "values": {
+              "on": "mute_on",
+              "off": "mute_off"
+            },
+            "active": true
+          },
+          {
+            "name": "default",
+            "type": "button",
+            "image": "getTheFactsExit",
+            "location": [ 12, 7 ],
+            "variable": "change_act"
+          }
+        ],
+        "outcomes": {
+          "back_button": {
+            "events": { "snitOrTell_explanation_01_showPrevious": "*" },
+            "actions": [
+              {
+                "type": "scene",
+                "args": ["snitOrTell_question_01"]
+              }
+            ]
+          },
+          "forward_button": {
+            "events": { "snitOrTell_explanation_01_showNext": "*" },
+            "actions": [
+              {
+                "type": "scene",
+                "args": ["snitOrTell_question_02"]
+              }
+            ]
+          }
+        }
+      },
+      "snitOrTell_question_02": {
+        "id": "snitOrTell_question_02",
+        "background": "getTheFactsBackground",
+        "title": "Snitching or Telling",
+        "actors": [
+          {
+            "name": "questions_snitOrTell_02",
+            "type": "question",
+            "font": "snitOrTell_questionText",
+            "location": [ 90, 35 ],
+            "submitButtonImage": "submit",
+            "submitButtonID": "snitOrTellSubmitButton",
+            "submitButtonLocation": [ 546, 255 ],
+            "startQuestion": "snitOrTell_question_02",
+            "choiceMap": {
+              "snitOrTell_question_02": {
+                "text": "Jon is known for picking on kids at school. He’s in 8th grade this year and likes to mess with the younger kids. Ryan overhears what sounds like Jon threatening to beat up a 6th grader after school. Ryan’s not sure if he was joking around or not. He decides to talk to his homeroom teacher about it.\n\nIs this snitching or telling?",
+                "audio": "n0600",
+                "choices": [
+                  {
+                    "text": "Snitching",
+                    "variable": "snitOrTell_question_02",
+                    "value": "Incorrect. Select Next to learn why."
+                  },
+                  {
+                    "text": "Telling",
+                    "variable": "snitOrTell_question_02",
+                    "value": "Correct. Select Next to learn why."
+                  }
+                ]
+              }
+            }
+          },
+          {
+            "name": "snitOrTell_02_feedback",
+            "type": "text",
+            "text": " ",
+            "font": "snitOrTell_questionText",
+            "location": [ 90, 360 ]
+          },
+          {
+            "name": "backButton",
+            "type": "button",
+            "image": "getTheFactsBack",
+            "location": [ 90, 400 ],
+            "variable": "snitOrTell_question_02_showPrevious"
+          },
+          {
+            "name": "forwardButton",
+            "type": "button",
+            "image": "getTheFactsNext",
+            "location": [ 572, 400 ],
+            "variable": "snitOrTell_question_02_showNext"
+          },
+          {
+            "name": "mutebutton",
+            "type": "toggle-button",
+            "images": {
+              "on": "getTheFactsSoundOn",
+              "off": "getTheFactsSoundOff"
+            },
+            "location": [ 360, 404 ],
+            "scale": [
+              0.7, 0.7
+            ],
+            "variable": "mute_game",
+            "values": {
+              "on": "mute_on",
+              "off": "mute_off"
+            },
+            "active": true
+          },
+          {
+            "name": "default",
+            "type": "button",
+            "image": "getTheFactsExit",
+            "location": [ 12, 7 ],
+            "variable": "change_act"
+          }
+        ],
+        "outcomes": {
+          "forward_button": {
+            "events": { "snitOrTell_question_02_showNext": "*" },
+            "actions": [
+              {
+                "type": "scene",
+                "args": ["snitOrTell_explanation_02"]
+              }
+            ]
+          },
+          "back_button": {
+            "events": { "snitOrTell_question_02_showPrevious": "*" },
+            "actions": [
+              {
+                "type": "scene",
+                "args": ["snitOrTell_explanation_01"]
+              }
+            ]
+          }
+        }
+      },
+      "snitOrTell_explanation_02": {
+        "id": "snitOrTell_explanation_02",
+        "background": "getTheFactsBackground",
+        "title": "Snitching or Telling Explanation",
+        "actors": [
+          {
+            "name": "questions_snitOrTell_explanation_02",
+            "type": "text",
+            "font": "snitOrTell_questionText",
+            "location": [ 90, 35 ],
+            "text": "Jon is known for picking on kids at school. He’s in 8th grade this year and likes to mess with the younger kids. Ryan overhears what sounds like Jon threatening to beat up a 6th grader after school. Ryan’s not sure if he was joking around or not. He decides to talk to his homeroom teacher about it.\n\nThis would be an example of telling because even if Jon was kidding around, threatening to beat someone up is considered bullying.",
+            "audio": "n0650"
+          },
+          {
+            "name": "backButton",
+            "type": "button",
+            "image": "getTheFactsBack",
+            "location": [ 90, 400 ],
+            "variable": "snitOrTell_explanation_02_showPrevious"
+          },
+          {
+            "name": "forwardButton",
+            "type": "button",
+            "image": "getTheFactsNext",
+            "location": [ 572, 400 ],
+            "variable": "snitOrTell_explanation_02_showNext"
+          },
+          {
+            "name": "mutebutton",
+            "type": "toggle-button",
+            "images": {
+              "on": "getTheFactsSoundOn",
+              "off": "getTheFactsSoundOff"
+            },
+            "location": [ 360, 404 ],
+            "scale": [
+              0.7, 0.7
+            ],
+            "variable": "mute_game",
+            "values": {
+              "on": "mute_on",
+              "off": "mute_off"
+            },
+            "active": true
+          },
+          {
+            "name": "default",
+            "type": "button",
+            "image": "getTheFactsExit",
+            "location": [ 12, 7 ],
+            "variable": "change_act"
+          }
+        ],
+        "outcomes": {
+          "back_button": {
+            "events": { "snitOrTell_explanation_02_showPrevious": "*" },
+            "actions": [
+              {
+                "type": "scene",
+                "args": ["snitOrTell_question_02"]
+              }
+            ]
+          },
+          "forward_button": {
+            "events": { "snitOrTell_explanation_02_showNext": "*" },
+            "actions": [
+              {
+                "type": "scene",
+                "args": ["snitOrTell_question_03"]
+              }
+            ]
+          }
+        }
+      },
+      "snitOrTell_question_03": {
+        "id": "snitOrTell_question_03",
+        "background": "getTheFactsBackground",
+        "title": "Snitching or Telling",
+        "actors": [
+          {
+            "name": "questions_snitOrTell_03",
+            "type": "question",
+            "font": "snitOrTell_questionText",
+            "location": [ 90, 35 ],
+            "submitButtonImage": "submit",
+            "submitButtonID": "snitOrTellSubmitButton",
+            "submitButtonLocation": [ 546, 255 ],
+            "startQuestion": "snitOrTell_question_03",
+            "choiceMap": {
+              "snitOrTell_question_03": {
+                "text": "Miss Eckert’s class is working quietly in their groups. Joe and Zach have been talking about last night’s football game for the last 10 minutes. Kate decides to let Miss Eckert know that they’re not doing what they’re supposed to be doing.\n\nIs this snitching or telling?",
+                "audio": "n0700",
+                "choices": [
+                  {
+                    "text": "Snitching",
+                    "variable": "snitOrTell_question_03",
+                    "value": "Correct. Select Next to learn why."
+                  },
+                  {
+                    "text": "Telling",
+                    "variable": "snitOrTell_question_03",
+                    "value": "Incorrect. Select Next to learn why."
+                  }
+                ]
+              }
+            }
+          },
+          {
+            "name": "snitOrTell_03_feedback",
+            "type": "text",
+            "text": " ",
+            "font": "snitOrTell_questionText",
+            "location": [ 90, 325 ]
+          },
+          {
+            "name": "backButton",
+            "type": "button",
+            "image": "getTheFactsBack",
+            "location": [ 90, 400 ],
+            "variable": "snitOrTell_question_03_showPrevious"
+          },
+          {
+            "name": "forwardButton",
+            "type": "button",
+            "image": "getTheFactsNext",
+            "location": [ 572, 400 ],
+            "variable": "snitOrTell_question_03_showNext"
+          },
+          {
+            "name": "mutebutton",
+            "type": "toggle-button",
+            "images": {
+              "on": "getTheFactsSoundOn",
+              "off": "getTheFactsSoundOff"
+            },
+            "location": [ 360, 404 ],
+            "scale": [
+              0.7, 0.7
+            ],
+            "variable": "mute_game",
+            "values": {
+              "on": "mute_on",
+              "off": "mute_off"
+            },
+            "active": true
+          },
+          {
+            "name": "default",
+            "type": "button",
+            "image": "getTheFactsExit",
+            "location": [ 12, 7 ],
+            "variable": "change_act"
+          }
+        ],
+        "outcomes": {
+          "forward_button": {
+            "events": { "snitOrTell_question_03_showNext": "*" },
+            "actions": [
+              {
+                "type": "scene",
+                "args": ["snitOrTell_explanation_03"]
+              }
+            ]
+          },
+          "back_button": {
+            "events": { "snitOrTell_question_03_showPrevious": "*" },
+            "actions": [
+              {
+                "type": "scene",
+                "args": ["snitOrTell_explanation_02"]
+              }
+            ]
+          }
+        }
+      },
+      "snitOrTell_explanation_03": {
+        "id": "snitOrTell_explanation_03",
+        "background": "getTheFactsBackground",
+        "title": "Snitching or Telling Explanation",
+        "actors": [
+          {
+            "name": "questions_snitOrTell_explanation_03",
+            "type": "text",
+            "font": "snitOrTell_questionText",
+            "location": [ 90, 35 ],
+            "text": "Miss Eckert’s class is working quietly in their groups. Joe and Zach have been talking about last night’s football game for the last 10 minutes. Kate decides to let Miss Eckert know that they’re not doing what they’re supposed to be doing.\n\nThis would be considered snitching. Although Joe and Zach are not doing what they're supposed to be doing, they are not hurting anyone.",
+            "audio": "n0750"
+          },
+          {
+            "name": "backButton",
+            "type": "button",
+            "image": "getTheFactsBack",
+            "location": [ 90, 400 ],
+            "variable": "snitOrTell_explanation_03_showPrevious"
+          },
+          {
+            "name": "forwardButton",
+            "type": "button",
+            "image": "getTheFactsNext",
+            "location": [ 572, 400 ],
+            "variable": "snitOrTell_explanation_03_showNext"
+          },
+          {
+            "name": "mutebutton",
+            "type": "toggle-button",
+            "images": {
+              "on": "getTheFactsSoundOn",
+              "off": "getTheFactsSoundOff"
+            },
+            "location": [ 360, 404 ],
+            "scale": [
+              0.7, 0.7
+            ],
+            "variable": "mute_game",
+            "values": {
+              "on": "mute_on",
+              "off": "mute_off"
+            },
+            "active": true
+          },
+          {
+            "name": "default",
+            "type": "button",
+            "image": "getTheFactsExit",
+            "location": [ 12, 7 ],
+            "variable": "change_act"
+          }
+        ],
+        "outcomes": {
+          "back_button": {
+            "events": { "snitOrTell_explanation_03_showPrevious": "*" },
+            "actions": [
+              {
+                "type": "scene",
+                "args": ["snitOrTell_question_03"]
+              }
+            ]
+          },
+          "forward_button": {
+            "events": { "snitOrTell_explanation_03_showNext": "*" },
+            "actions": [
+              {
+                "type": "scene",
+                "args": ["snitOrTell_rememberTheDifference"]
+              }
+            ]
+          }
+        }
+      },
+      "snitOrTell_rememberTheDifference": {
+        "id": "snitOrTell_rememberTheDifference",
+        "background": "getTheFactsBackground",
+        "title": "Remember The Difference",
+        "actors": [
+          {
+            "name": "rememberTheDifference1",
+            "type": "text",
+            "font": "snitOrTell_rememberTheDifferenceHeading1",
+            "location": [ 185, 40 ],
+            "text": "Remember the difference",
+            "audio": "n0800"
+          },
+          {
+            "name": "rememberTheDifference2",
+            "type": "text",
+            "font": "snitOrTell_rememberTheDifferenceHeading2",
+            "location": [ 95, 110 ],
+            "text": "Snitching"
+          },
+          {
+            "name": "rememberTheDifference3",
+            "type": "text",
+            "font": "snitOrTell_rememberTheDifferenceHeading2",
+            "location": [ 372, 110 ],
+            "text": "Telling"
+          },
+          {
+            "name": "separatorLeftColumn",
+            "type": "decoration",
+            "image": "horizontalLine",
+            "key": "decorations",
+            "location": [ 95, 148 ],
+            "scale": [ 1.25, 1.0 ]
+          },
+          {
+            "name": "separatorRightColumn",
+            "type": "decoration",
+            "image": "horizontalLine",
+            "key": "decorations",
+            "location": [ 372, 148 ],
+            "scale": [ 1.45, 1.0 ]
+          },
+          {
+            "name": "rememberTheDifference4",
+            "type": "text",
+            "font": "snitOrTell_rememberTheDifferenceText",
+            "location": [ 95, 165 ],
+            "bullet": "true",
+            "text": "Trying to get someone in trouble"
+          },
+          {
+            "name": "rememberTheDifference5",
+            "type": "text",
+            "font": "snitOrTell_rememberTheDifferenceText",
+            "location": [ 95, 280 ],
+            "bullet": "true",
+            "text": "Behavior not hurting anyone"
+          },
+          {
+            "name": "rememberTheDifference6",
+            "type": "text",
+            "font": "snitOrTell_rememberTheDifferenceText",
+            "location": [ 372, 165 ],
+            "bullet": "true",
+            "text": "Helping when someone might get hurt"
+          },
+          {
+            "name": "rememberTheDifference7",
+            "type": "text",
+            "font": "snitOrTell_rememberTheDifferenceText",
+            "location": [ 372, 280 ],
+            "bullet": "true",
+            "text": "Recognizing bullying"
+          },
+          {
+            "name": "backButton",
+            "type": "button",
+            "image": "getTheFactsBack",
+            "location": [ 90, 400 ],
+            "variable": "snitOrTell_rememberTheDifference_showPrevious"
+          },
+          {
+            "name": "forwardButton",
+            "type": "button",
+            "image": "getTheFactsNext",
+            "location": [ 572, 400 ],
+            "variable": "snitOrTell_rememberTheDifference_showNext"
+          },
+          {
+            "name": "mutebutton",
+            "type": "toggle-button",
+            "images": {
+              "on": "getTheFactsSoundOn",
+              "off": "getTheFactsSoundOff"
+            },
+            "location": [ 360, 404 ],
+            "scale": [
+              0.7, 0.7
+            ],
+            "variable": "mute_game",
+            "values": {
+              "on": "mute_on",
+              "off": "mute_off"
+            },
+            "active": true
+          },
+          {
+            "name": "default",
+            "type": "button",
+            "image": "getTheFactsExit",
+            "location": [ 12, 7 ],
+            "variable": "change_act"
+          }
+        ],
+        "outcomes": {
+          "back_button": {
+            "events": { "snitOrTell_rememberTheDifference_showPrevious": "*" },
+            "actions": [
+              {
+                "type": "scene",
+                "args": ["snitOrTell_explanation_02"]
+              }
+            ]
+          },
+          "forward_button": {
+            "events": { "snitOrTell_rememberTheDifference_showNext": "*" },
+            "actions": [
+              {
+                "type": "scene",
+                "args": ["snitOrTell_completed"]
+              }
+            ]
+          }
+        }
+      },
+      "snitOrTell_completed": {
+        "id": "snitOrTell_completed",
+        "background": "getTheFactsBackground",
+        "title": "You Have Completed This Lesson",
+        "actors": [
+          {
+            "name": "youHaveCompletedThisLesson",
+            "type": "text",
+            "font": "snitOrTell_completedText",
+            "location": [ 118, 141 ],
+            "text": "You have completed this lesson. To continue, please click the red arrow in the upper left corner."
+          },
+          {
+            "name": "backButton",
+            "type": "button",
+            "image": "getTheFactsBack",
+            "location": [ 90, 400 ],
+            "variable": "snitOrTell_completed_showPrevious"
+          },
+          {
+            "name": "mutebutton",
+            "type": "toggle-button",
+            "images": {
+              "on": "getTheFactsSoundOn",
+              "off": "getTheFactsSoundOff"
+            },
+            "location": [ 360, 404 ],
+            "scale": [
+              0.7, 0.7
+            ],
+            "variable": "mute_game",
+            "values": {
+              "on": "mute_on",
+              "off": "mute_off"
+            },
+            "active": true
+          },
+          {
+            "name": "default",
+            "type": "button",
+            "image": "getTheFactsExit",
+            "location": [ 12, 7 ],
+            "variable": "change_act"
+          }
+        ],
+        "outcomes": {
+          "back_button": {
+            "events": { "snitOrTell_completed_showPrevious": "*" },
+            "actions": [
+              {
+                "type": "scene",
+                "args": ["snitOrTell_rememberTheDifference"]
+              }
+            ]
+          }
+        }
+      }
+    }
+  }
+}

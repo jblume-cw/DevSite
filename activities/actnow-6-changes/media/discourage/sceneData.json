@@ -1,0 +1,371 @@
+{
+  "play": {
+    "start": "scene1",
+    "showPlayThrough": false,
+    "scenes": {
+      "scene1": {
+        "id": "scene1",
+        "background": "cafeteriaNoTable",
+        "title": "Introduction",
+        "description": "starting Act Now!",
+        "call": {"func": "sendSCORM"},
+        "actors": [
+          {
+            "name": "announcerBox_01",
+            "type": "announcer",
+            "location": [ 2, 5 ],
+            "text": "You made quite a few good choices, but you made a few that weren’t so good.",
+            "announcerBox": true
+          },
+          {
+            "name": "sound_1_01",
+            "type": "audio",
+            "audio": ["1_01"],
+            "variable": "sound_1_01"
+          }
+        ],
+        "outcomes": {
+          "scene_1_sound_2": {
+            "events": {"sound_1_01": "played" },
+            "actions": [
+              { "type": "add-actor", "args": [
+                {
+                  "name": "sound_1_02",
+                  "type": "audio",
+                  "audio": [ "1_02"],
+                  "variable": "sound_1_02"
+                }
+              ] },
+              { "type": "add-actor", "args": [
+                {
+                  "name": "augustine",
+                  "type": "decoration",
+                  "image": "augustine",
+                  "key": "decorations",
+                  "location": [ 180, 150],
+                  "scale": [ -0.30, 0.30]
+                }
+              ] },
+              { "type": "add-actor", "args": [
+                {
+                  "name": "janelle",
+                  "type": "decoration",
+                  "image": "janelle",
+                  "key": "decorations",
+                  "location": [ 500, 200 ],
+                  "scale": [ 0.35, 0.35 ]
+                }
+              ] }
+            ]
+          },
+          "scene_1_sound_3": {
+            "events": {"sound_1_02": "played" },
+            "actions": [
+              { "type": "add-actor", "args": [
+                {
+                  "name": "sound_1_03",
+                  "type": "audio",
+                  "audio": [ "1_03"],
+                  "variable": "sound_1_03"
+                }
+              ] },
+              { "type": "add-actor", "args": [
+                {
+                  "name": "mandy",
+                  "type": "decoration",
+                  "image": "mandy",
+                  "key": "decorations",
+                  "location": [ 610, 215 ],
+                  "scale": [ 0.26, 0.26 ]
+                }
+              ] },
+              { "type": "add-actor", "args": [
+                {
+                  "name": "letter",
+                  "type": "decoration",
+                  "image": "letterPlain",
+                  "key": "decorations",
+                  "location": [ 262, 152 ],
+                  "scale": [ 0.33, 0.33 ]
+                }
+              ] }
+            ]
+          },
+          "scene_1_sound_4": {
+            "events": {"sound_1_03": "played" },
+            "actions": [
+              { "type": "remove-actor", "args": ["announcerBox_01"] },
+              { "type": "add-actor", "args": [
+                {
+                  "name": "announcerBox_02",
+                  "type": "announcer",
+                  "location": [ 2, 5 ],
+                  "text": "Your attitude toward bullying is in the right place—you don’t like it.",
+                  "announcerBox": true
+                }
+              ] },
+              { "type": "add-actor", "args": [
+                {
+                  "name": "sound_1_04",
+                  "type": "audio",
+                  "audio": [ "1_04"],
+                  "variable": "sound_1_04"
+                }
+              ] },
+              { "type": "add-actor", "args": [
+                {
+                  "name": "ross",
+                  "type": "decoration",
+                  "image": "ross",
+                  "key": "decorations",
+                  "location": [ 420, 185 ],
+                  "scale": [ 0.26, 0.26 ]
+                }
+              ] },
+              { "type": "add-actor", "args": [
+                {
+                  "name": "dane",
+                  "type": "decoration",
+                  "image": "dane",
+                  "key": "decorations",
+                  "location": [ 172, 180 ],
+                  "scale": [ 0.26, 0.26 ]
+                }
+              ] }
+            ]
+          },
+          "scene_1_sound_5": {
+            "events": {"sound_1_04": "played" },
+            "actions": [
+              { "type": "remove-actor", "args": ["announcerBox_02"] },
+              { "type": "add-actor", "args": [
+                {
+                  "name": "announcerBox_03",
+                  "type": "announcer",
+                  "location": [ 2, 5 ],
+                  "text": "But you don’t always act on your attitudes.",
+                  "announcerBox": true
+                }
+              ] },
+              { "type": "add-actor", "args": [
+                {
+                  "name": "sound_1_05",
+                  "type": "audio",
+                  "audio": [ "1_05"],
+                  "variable": "sound_1_05"
+                }
+              ] }
+            ]
+          },
+          "scene_2_start": {
+            "events": {"sound_1_05": "played" },
+            "actions": [
+              { "type": "scene", "args": [ "scene2" ] }
+            ]
+          }
+        }
+      },
+      "scene2": {
+        "id": "scene2",
+        "background": "hallway",
+        "title": "Presentation Scene 2",
+        "description": "continuing presentation",
+        "call": {"func": "sendSCORM"},
+        "actors": [
+          {
+            "name": "announcerBox_04",
+            "type": "announcer",
+            "location": [ 2, 5 ],
+            "text": "When you don’t do anything about bullying it gets worse.",
+            "announcerBox": true
+          },
+          {
+            "name": "sound_2_01",
+            "type": "audio",
+            "audio": ["2_01"],
+            "variable": "sound_2_01"
+          },
+          {
+            "name": "dane",
+            "type": "decoration",
+            "image": "dane",
+            "key": "decorations",
+            "location": [ 290, 200 ],
+            "scale": [ 0.25, 0.25 ],
+            "tween": {
+              "time": 3000,
+              "location": [ 130, 112 ],
+              "scale": [ 1.00, 1.00 ]
+            }
+          }
+        ],
+        "outcomes": {
+          "scene_2_sound_2": {
+            "events": { "sound_2_01": "played" },
+            "actions": [
+              { "type": "remove-actor", "args": [ "dane" ] },
+              { "type": "remove-actor", "args": [ "announcerBox_04" ] },
+              { "type": "add-actor", "args": [
+                {
+                  "name": "announcerBox_05",
+                  "type": "announcer",
+                  "location": [ 2, 5 ],
+                  "text": "Carrie and you became friends, but she’s still pretty shy, and a lot of people continue making fun of her.",
+                  "announcerBox": true
+                }
+              ] },
+              { "type": "add-actor", "args": [
+                {
+                  "name": "sound_2_02",
+                  "type": "audio",
+                  "audio": [ "2_02" ],
+                  "variable": "sound_2_02"
+                }
+              ] },
+              { "type": "add-actor", "args": [
+                {
+                  "name": "carrie",
+                  "type": "decoration",
+                  "image": "carrie",
+                  "key": "decorations",
+                  "location": [ 250, 182 ],
+                  "scale": [ 0.55, 0.55 ]
+                }
+              ] }
+              ]
+            },
+            "scene_2_sound_3": {
+              "events": {"sound_2_02": "played" },
+              "actions": [
+                { "type": "remove-actor", "args": ["carrie"] },
+                { "type": "add-actor", "args": [
+                  {
+                    "name": "sound_2_03",
+                    "type": "audio",
+                    "audio": [ "2_03"],
+                    "variable": "sound_2_03"
+                  }
+                ] },
+                { "type": "add-actor", "args": [
+                  {
+                    "name": "carrie",
+                    "type": "decoration",
+                    "image": "carrie",
+                    "key": "decorations",
+                    "location": [ 250, 182 ],
+                    "scale": [ 0.55, 0.55 ],
+                    "tween": {
+                      "time": 3000,
+                      "location": [ 220, 265 ],
+                      "scale": [ 0.27, 0.27 ]
+                    }
+                  }
+                ] }
+              ]
+            },
+          "scene_2_sound_4": {
+            "events": {"sound_2_03": "played" },
+            "actions": [
+              { "type": "add-actor", "args": [
+                {
+                  "name": "sound_2_04",
+                  "type": "audio",
+                  "audio": [ "2_04"],
+                  "variable": "sound_2_04"
+                }
+              ] },
+              { "type": "add-actor", "args": [
+                {
+                  "name": "tom",
+                  "type": "decoration",
+                  "image": "tom",
+                  "key": "decorations",
+                  "location": [ 420, 190 ],
+                  "scale": [ -0.37, 0.37 ]
+                }
+              ] },
+              { "type": "add-actor", "args": [
+                {
+                  "name": "janelle",
+                  "type": "decoration",
+                  "image": "janelle",
+                  "key": "decorations",
+                  "location": [ 372, 190 ],
+                  "scale": [ 0.45, 0.45 ]
+                }
+              ] },
+              { "type": "add-actor", "args": [
+                {
+                  "name": "freddie",
+                  "type": "decoration",
+                  "image": "freddie",
+                  "key": "decorations",
+                  "location": [ 530, 190 ],
+                  "scale": [ 0.45, 0.45 ]
+                }
+              ] }
+            ]
+          },
+          "scene_3_start": {
+            "events": {"sound_2_04": "played" },
+            "actions": [
+              { "type": "scene", "args": [ "scene3" ] }
+            ]
+          }
+        }
+      },
+      "scene3": {
+        "id": "scene3",
+        "background": "classroom",
+        "title": "Presentation Scene 3",
+        "description": "continuing presentation",
+        "call": {"func": "sendSCORM"},
+        "actors": [
+          {
+            "name": "announcerBox_06",
+            "type": "announcer",
+            "location": [ 2, 5 ],
+            "text": "Ms. Augustine is trying to get new anti-bullying rules put in place, but she’s having a hard time.",
+            "announcerBox": true
+          },
+          {
+            "name": "sound_3_01",
+            "type": "audio",
+            "audio": ["3_01"],
+            "variable": "sound_3_01"
+          },
+          {
+            "name": "classroomForeground",
+            "type": "decoration",
+            "image": "classroomForeground",
+            "key": "decorations",
+            "location": [ 0, 0 ]
+          },
+          {
+            "name": "augustine",
+            "type": "decoration",
+            "image": "augustine",
+            "key": "decorations",
+            "location": [ 382, 125 ],
+            "scale": [ -0.67, 0.67 ]
+          }
+        ],
+        "outcomes": {
+          "scene_3_ended": {
+            "events": {"sound_3_01": "played" },
+            "actions": [
+              { "type": "add-actor", "args": [
+                {
+                  "name": "moveonbox",
+                  "type": "instructions",
+                  "location": [ 300, 250 ],
+                  "text": "You have completed this activity."
+                }
+              ] }
+            ]
+          }
+        }
+      }
+    }
+  }
+}
