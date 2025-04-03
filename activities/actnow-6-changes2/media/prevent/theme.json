@@ -1,0 +1,64 @@
+{
+  "texture": "media/prevent/texture.png",
+  "textureMap": "media/prevent/texture.json",
+  "textureKey": "prevent_6_texture",
+  "data": "media/prevent/sceneData.json",
+  "fonts" : {
+    "bubbleText": { "font": "15px Tahoma", "fill": "#000000",  "fontWeight": "bold" },
+    "bubbleIcon": { "font": "12pt Arial", "fill": "#000000", "fontWeight": "bold", "align": "center" },
+    "replayAudio": { "font": "12px Tahoma", "fill": "#333333",  "fontWeight": "normal" },
+    "heading": { "font": "23pt nunitoregular", "fill": "black", "align": "left", "fontWeight": "bold"},
+    "standard": { "font": "21pt nunitoregular", "fill": "black", "align": "left",
+      "wordWrap": true, "wordWrapWidth": 500, "fontWeight": "bold"},
+    "goodbye": { "font": "18pt nunitoregular", "fill": "black", "align": "center",
+      "wordWrap": true, "wordWrapWidth": 500},
+    "large": { "font": "28pt nunitoregular", "fill": "black", "align": "left", "fontWeight": "bold"},
+    "moveOn": { "font": "32px nunitoregular", "fill": "#000000",  "fontWeight": "normal" }
+  },
+  "images": {
+    "actorImages": {
+      "announcer-box": "wall-speaker.png"
+    },
+    "letter": "letter-be-strong.png",
+    "dane": "talking-dane.png",
+    "carrie": "talking-carrie.png",
+    "ross": "talking-ross.png",
+    "group": "presentation-hallway-group.png"
+  },
+  "sceneImages": {
+    "cafeteria": "cafeteria-background.png",
+    "hallway": "hallway-background.png",
+    "theater": "presentation-1-anim-4a.png",
+    "classroom": "presentation-1-anim-6a.png"
+  },
+  "buttons": {
+    "exit": {
+      "up": "get-the-facts-exit.png",
+      "over": "get-the-facts-exit.png",
+      "out": "get-the-facts-exit.png",
+      "down": "get-the-facts-exit.png"
+    }
+  },
+  "textWindows": {
+    "announce": {
+      "top": "wall-speaker-talk-bubble-top.png",
+      "middle": "wall-speaker-talk-bubble-middle.png",
+      "bottom": "wall-speaker-talk-bubble-bottom.png"
+    },
+    "instruction": "move-on-box.png"
+  },
+  "tints": {
+    "bubbleText" : "#CDCDCD"
+  },
+  "soundKey": "prevent_6_sounds",
+  "soundFile": [ "media/prevent/prevent6.m4a", "media/prevent/prevent6.ogg" ],
+  "sounds": {
+    "1": [ 0.00000000, 2.6, false, "scene 1"],
+    "2": [ 2.6, 2.2, false, "scene 1"],
+    "3": [ 4.8, 2.8, false, "scene 1"],
+    "4": [ 7.6, 7.5, false, "scene 2"],
+    "5": [ 15.1, 3.0, false, "scene 3"],
+    "6": [ 18.1, 2.4, false, "scene 3"],
+    "7": [ 20.5, 4.45, false, "scene 4"]
+  }
+}

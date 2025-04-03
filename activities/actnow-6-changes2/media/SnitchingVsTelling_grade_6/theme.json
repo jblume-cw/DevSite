@@ -1,0 +1,86 @@
+{
+  "texture": "media/SnitchingVsTelling_grade_6/texture.png",
+  "textureMap": "media/SnitchingVsTelling_grade_6/texture.json",
+  "textureKey": "svt_6_texture",
+  "data": "media/SnitchingVsTelling_grade_6/sceneData.json",
+  "fonts" : {
+    "snitOrTell_questionText": { "font": "20px nunitobold", "fill": "#000000",  "fontWeight": "normal", "wordWrap": true, "wordWrapWidth": 550 },
+    "snitOrTell_canYouTellTheDifferenceText": { "font": "31px nunitoregular", "fill": "#000000", "fontWeight": "bold", "wordWrap": true, "wordWrapWidth": 550 },
+    "snitOrTell_rememberTheDifferenceHeading1": { "font": "30px nunitoregular", "fill": "#000000",  "fontWeight": "bold", "align": "center", "wordWrap": true, "wordWrapWidth": 550 },
+    "snitOrTell_rememberTheDifferenceHeading2": { "font": "27px nunitoregular", "fill": "#000000",  "fontWeight": "bold", "align": "center", "wordWrap": true, "wordWrapWidth": 550 },
+    "snitOrTell_rememberTheDifferenceText": { "font": "22px nunitoregular", "fill": "#000000",  "fontWeight": "bold", "align": "left", "wordWrap": true, "wordWrapWidth": 250 },
+    "snitOrTell_completedText": { "font": "20px nunitoregular", "fill": "#000000",  "fontWeight": "bold", "align": "center", "wordWrap": true, "wordWrapWidth": 550 }
+  },
+  "images": {
+    "decorations": {
+      "snitchingIntro": "Get the Facts/Snitching/n0100.jpg",
+      "thomasIsntPayingAttention": "Get the Facts/Snitching/n0200.png",
+      "iThinkMayasInTrouble": "Get the Facts/Snitching/n0300.png",
+      "horizontalLine": "horizontal-line.png"
+    }
+  },
+  "sceneImages": {
+    "getTheFactsBackground": "get-the-facts-background.png"
+  },
+  "buttons": {
+    "submit": {
+      "up": "fake-submit-button.png",
+      "over": "fake-submit-button-over.png",
+      "out": "fake-submit-button.png",
+      "down": "fake-submit-button-down.png"
+    },
+    "getTheFactsBack": {
+      "up": "get-the-facts-back.png",
+      "over": "get-the-facts-back-over.png",
+      "out": "get-the-facts-back.png",
+      "down": "get-the-facts-back.png"
+    },
+    "getTheFactsNext": {
+      "up": "get-the-facts-next.png",
+      "over": "get-the-facts-next-over.png",
+      "out": "get-the-facts-next.png",
+      "down": "get-the-facts-next.png"
+    },
+    "getTheFactsSoundOn": {
+      "up": "get-the-facts-sound-on.png",
+      "over": "get-the-facts-sound-on-over.png",
+      "out": "get-the-facts-sound-on.png",
+      "down": "get-the-facts-sound-on.png"
+    },
+    "getTheFactsSoundOff": {
+      "up": "get-the-facts-sound-off.png",
+      "over": "get-the-facts-sound-off-over.png",
+      "out": "get-the-facts-sound-off.png",
+      "down": "get-the-facts-sound-off.png"
+    },
+    "getTheFactsExit": {
+      "up": "get-the-facts-exit.png",
+      "over": "get-the-facts-exit.png",
+      "out": "get-the-facts-exit.png",
+      "down": "get-the-facts-exit.png"
+    },
+    "radioButtonGroup" : {
+      "selected": "radioButtonSelected.png",
+      "unselected": "radioButtonUnselected.png"
+    }
+  },
+  "snitchingOrTellingleftMargin": 30,
+  "soundKey": "svt_6_sounds",
+  "soundFile": [
+    "media/SnitchingVsTelling_grade_6/snitortell.m4a",
+    "media/SnitchingVsTelling_grade_6/snitortell.ogg"
+  ],
+  "sounds": {
+    "n0100": [ 0.00000000, 13.29510204, false, "n0100, Starts at 0.0, lasts 13.29510204 seconds, doesn't loop"],
+    "n0200": [ 13.29510204, 25.05138322, false, "n0200"],
+    "n0300": [ 38.34648526, 27.63653061, false, "n0300"],
+    "n0400": [ 65.98301587, 3.693061229999998, false, "n0400"],
+    "n0500": [ 69.67607710, 15.44938775, false, "n0500"],
+    "n0550": [ 85.12546485, 5.570498869999994, false, "n0550"],
+    "n0600": [ 90.69596372, 23.55673469, false, "n0600"],
+    "n0650": [ 114.25269841, 8.098639460000001, false, "n0650"],
+    "n0700": [ 122.35133787, 18.971247160000004, false, "n0700"],
+    "n0750": [ 141.32258503, 7.916984130000003, false, "n0750"],
+    "n0800": [ 149.23956916, 16.811, false, "n0800"]
+  }
+}

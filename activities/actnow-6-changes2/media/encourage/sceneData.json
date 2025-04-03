@@ -1,0 +1,304 @@
+{
+  "play": {
+    "start": "scene1",
+    "showPlayThrough": false,
+    "scenes": {
+      "scene1": {
+        "id": "scene1",
+        "background": "scene1Background",
+        "title": "Scene 1",
+        "description": "grade 6 encourage presentation scene 1 computer messages",
+        "call": {"func": "sendSCORM"},
+        "actors": [
+          {
+            "name": "announcerBox_01",
+            "type": "announcer",
+            "location": [ 2, 5 ],
+            "text": "What do you stand to gain from encouraging bullying?",
+            "announcerBox": true
+          },
+          {
+            "name": "sound_1_01",
+            "type": "audio",
+            "audio": ["1_01"],
+            "variable": "sound_1_01"
+          }
+        ],
+        "outcomes": {
+          "scene_1_sound_2": {
+            "events": {"sound_1_01": "played" },
+            "actions": [
+              { "type": "remove-actor", "args": ["announcerBox_01"] },
+              { "type": "add-actor", "args": [
+                {
+                  "name": "announcerBox_02",
+                  "type": "announcer",
+                  "location": [ 2, 5 ],
+                  "text": "It’s not funny when people get hurt, emotionally or physically.",
+                  "announcerBox": true
+                }
+              ] },
+              { "type": "add-actor", "args": [
+                {
+                  "name": "sound_1_02",
+                  "type": "audio",
+                  "audio": [ "1_02"],
+                  "variable": "sound_1_02"
+                }
+              ] }
+            ]
+          },
+          "scene_2_start": {
+            "events": {"sound_1_02": "played" },
+            "actions": [
+              { "type": "scene", "args": [ "scene2" ] }
+            ]
+          }
+        }
+      },
+      "scene2": {
+        "id": "scene2",
+        "background": "scene2Background",
+        "title": "Presentation Scene 2",
+        "description": "continuing presentation loser letter",
+        "call": {"func": "sendSCORM"},
+        "actors": [
+          {
+            "name": "announcerBox_03",
+            "type": "announcer",
+            "location": [ 2, 5 ],
+            "text": "Yet your choices not only allow, but encourage this type of behavior.",
+            "announcerBox": true
+          },
+          {
+            "name": "sound_2_01",
+            "type": "audio",
+            "audio": ["2_01"],
+            "variable": "sound_2_01"
+          }
+        ],
+        "outcomes": {
+          "scene_3_start": {
+            "events": {"sound_2_01": "played" },
+            "actions": [
+              { "type": "scene", "args": [ "scene3" ] }
+            ]
+          }
+        }
+      },
+      "scene3": {
+        "id": "scene3",
+        "background": "theaterBackground",
+        "title": "Presentation Scene 3",
+        "description": "continuing presentation ross",
+        "call": {"func": "sendSCORM"},
+        "actors": [
+          {
+            "name": "ross",
+            "type": "decoration",
+            "image": "ross",
+            "key": "decorations",
+            "location": [ 708, 22 ],
+            "scale": [ -0.82, 0.82 ]
+          },
+          {
+            "name": "announcerBox_04",
+            "type": "announcer",
+            "location": [ 2, 5 ],
+            "text": "True, you might not be the one doing the bullying, but you’re actively helping it grow.",
+            "announcerBox": true
+          },
+          {
+            "name": "sound_3_01",
+            "type": "audio",
+            "audio": ["3_01"],
+            "variable": "sound_3_01"
+          },
+          {
+            "name": "theaterForeground",
+            "type": "decoration",
+            "image": "theaterForeground",
+            "key": "decorations",
+            "location": [ 0, 0 ]
+          }
+        ],
+        "outcomes": {
+          "scene_3_sound_2": {
+            "events": { "sound_3_01": "played" },
+            "actions": [
+              { "type": "remove-actor", "args": [ "announcerBox_04" ] },
+              {
+                "type": "add-actor",
+                "args": [
+                  {
+                    "name": "dane",
+                    "type": "decoration",
+                    "image": "dane",
+                    "key": "decorations",
+                    "location": [ 290, 50 ],
+                    "scale": [ -0.75, 0.75 ]
+                  }
+                ]
+              },
+              {
+                "type": "add-actor",
+                "args": [
+                  {
+                    "name": "announcerBox_05",
+                    "type": "announcer",
+                    "location": [ 2, 5 ],
+                    "text": "True, you might not be the one doing the bullying, but you’re actively helping it grow.",
+                    "announcerBox": true
+                  }
+                ]
+              },
+              {
+                "type": "add-actor",
+                "args": [
+                  {
+                    "name": "sound_3_02",
+                    "type": "audio",
+                    "audio": [ "3_02" ],
+                    "variable": "sound_3_02"
+                  }
+                ]
+              }
+            ]
+          },
+          "scene_4_start": {
+            "events": {"sound_3_02": "played" },
+            "actions": [
+              { "type": "scene", "args": [ "scene4" ] }
+            ]
+          }
+        }
+      },
+      "scene4": {
+        "id": "scene4",
+        "background": "scene4Background",
+        "title": "Presentation Scene 4",
+        "description": "continuing presentation carrie",
+        "call": {"func": "sendSCORM"},
+        "actors": [
+          {
+            "name": "announcerBox_06",
+            "type": "announcer",
+            "location": [ 2, 5 ],
+            "text": "Carrie still feels as sad and excluded as she ever did,",
+            "announcerBox": true
+          },
+          {
+            "name": "sound_4_01",
+            "type": "audio",
+            "audio": ["4_01"],
+            "variable": "sound_4_01"
+          }
+        ],
+        "outcomes": {
+          "scene_5_start": {
+            "events": {"sound_4_01": "played" },
+            "actions": [
+              { "type": "scene", "args": [ "scene5" ] }
+            ]
+          }
+        }
+      },
+      "scene5": {
+        "id": "scene5",
+        "background": "scene5Background",
+        "title": "Presentation Scene 5",
+        "description": "continuing presentation augustine",
+        "call": {"func": "sendSCORM"},
+        "actors": [
+          {
+            "name": "announcerBox_07",
+            "type": "announcer",
+            "location": [ 2, 5 ],
+            "text": "and Ms. Augustine is fed up with teaching at Newbridge.",
+            "announcerBox": true
+          },
+          {
+            "name": "sound_5_01",
+            "type": "audio",
+            "audio": ["5_01"],
+            "variable": "sound_5_01"
+          }
+        ],
+        "outcomes": {
+          "scene_6_start": {
+            "events": {"sound_5_01": "played" },
+            "actions": [
+              { "type": "scene", "args": [ "scene6" ] }
+            ]
+          }
+        }
+      },
+      "scene6": {
+        "id": "scene6",
+        "background": "scene6Background",
+        "title": "Presentation Scene 6",
+        "description": "continuing presentation ross",
+        "call": {"func": "sendSCORM"},
+        "actors": [
+          {
+            "name": "announcerBox_08",
+            "type": "announcer",
+            "location": [ 2, 5 ],
+            "text": "You and Ross are friends, but all you do when you get together is plan who you’re going to make fun of at school tomorrow.",
+            "announcerBox": true
+          },
+          {
+            "name": "sound_6_01",
+            "type": "audio",
+            "audio": ["6_01"],
+            "variable": "sound_6_01"
+          }
+        ],
+        "outcomes": {
+          "scene_6_sound_2": {
+            "events": { "sound_6_01": "played" },
+            "actions": [
+              { "type": "remove-actor", "args": [ "announcerBox_08" ] },
+              {
+                "type": "add-actor",
+                "args": [
+                  {
+                    "name": "announcerBox_09",
+                    "type": "announcer",
+                    "location": [ 2, 5 ],
+                    "text": "You have some changes to make.",
+                    "announcerBox": true
+                  }
+                ]
+              },
+              {
+                "type": "add-actor",
+                "args": [
+                  {
+                    "name": "sound_6_02",
+                    "type": "audio",
+                    "audio": [ "6_02" ],
+                    "variable": "sound_6_02"
+                  }
+                ]
+              }
+            ]
+          },
+          "scene_6_ended": {
+            "events": {"sound_6_02": "played" },
+            "actions": [
+              { "type": "add-actor", "args": [
+                {
+                  "name": "moveonbox",
+                  "type": "instructions",
+                  "location": [ 300, 250 ],
+                  "text": "You have completed this activity."
+                }
+              ] }
+            ]
+          }
+        }
+      }
+    }
+  }
+}

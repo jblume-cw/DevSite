@@ -1,0 +1,69 @@
+{
+  "texture": "media/encourage/texture.png",
+  "textureMap": "media/encourage/texture.json",
+  "textureKey": "encourage_6_texture",
+  "data": "media/encourage/sceneData.json",
+  "fonts" : {
+    "bubbleText": { "font": "15px Tahoma", "fill": "#000000",  "fontWeight": "bold" },
+    "bubbleIcon": { "font": "12pt Arial", "fill": "#000000", "fontWeight": "bold", "align": "center" },
+    "replayAudio": { "font": "12px Tahoma", "fill": "#333333",  "fontWeight": "normal" },
+    "heading": { "font": "23pt nunitoregular", "fill": "black", "align": "left", "fontWeight": "bold"},
+    "standard": { "font": "21pt nunitoregular", "fill": "black", "align": "left",
+      "wordWrap": true, "wordWrapWidth": 500, "fontWeight": "bold"},
+    "goodbye": { "font": "18pt nunitoregular", "fill": "black", "align": "center",
+      "wordWrap": true, "wordWrapWidth": 500},
+    "large": { "font": "28pt nunitoregular", "fill": "black", "align": "left", "fontWeight": "bold"},
+    "moveOn": { "font": "32px nunitoregular", "fill": "#000000",  "fontWeight": "normal" }
+  },
+  "images": {
+    "actorImages": {
+      "announcer-box": "wall-speaker.png"
+    },
+    "decorations": {
+      "dane": "talking-dane.png",
+      "ross": "talking-ross.png",
+      "theaterForeground": "theater-closeup-foreground2.png"
+    }
+  },
+  "sceneImages": {
+    "scene1Background": "presentation-6-4-1.png",
+    "scene2Background": "presentation-6-4-3.png",
+    "scene4Background": "presentation-6-4-5.png",
+    "scene5Background": "presentation-6-4-6.png",
+    "scene6Background": "presentation-6-4-7.png",
+    "theaterBackground": "theater-closeup-background2.png"
+  },
+  "buttons": {
+    "exit": {
+      "up": "get-the-facts-exit.png",
+      "over": "get-the-facts-exit.png",
+      "out": "get-the-facts-exit.png",
+      "down": "get-the-facts-exit.png"
+    }
+  },
+  "textWindows": {
+    "announce": {
+      "top": "wall-speaker-talk-bubble-top.png",
+      "middle": "wall-speaker-talk-bubble-middle.png",
+      "bottom": "wall-speaker-talk-bubble-bottom.png"
+    },
+    "instruction": "move-on-box.png"
+  },
+  "tints": {
+    "bubbleText" : "#CDCDCD"
+  },
+  "soundKey": "encourage_6_sounds",
+  "soundFile": [ "media/encourage/encourage6.m4a", "media/encourage/encourage6.ogg" ],
+  "sounds": {
+    "all": [ 0.0, 36.583, false, "nar_6th_pre_04.wav"],
+    "1_01":  [  0.000, 3.245, false, "scene 1, <computer/messages +announce(PA)>           What do you stand to gain from encouraging bullying?"],
+    "1_02":  [  3.245, 4.408, false, "scene 1, <PA>                                        It’s not funny when people get hurt, emotionally or physically."],
+    "2_01":  [  7.653, 5.103, false, "scene 2, <cafeteria +PA +loserLetter>                Yet your choices not only allow, but encourage this type of behavior."],
+    "3_01":  [ 12.756, 2.634, false, "scene 3, <theater/chairs +PA +ross>                  True, you might not be the one doing"],
+    "3_02":  [ 15.390, 3.731, false, "scene 3, <+dane>                                     the bullying, but you’re actively helping it grow."],
+    "4_01":  [ 19.121, 3.988, false, "scene 4, <hallway +PA +janelle +tom +freddie +mandy> Carrie still feels as sad and excluded as she ever did,"],
+    "5_01":  [ 23.109, 3.715, false, "scene 5, <classroomCloseup +PA +sadAugustine>        and Ms. Augustine is fed up with teaching at Newbridge."],
+    "6_01":  [ 26.824, 7.604, false, "scene 6, <hallway +PA +ross>                         You and Ross are friends, but all you do when you get together is plan who you’re gonna make fun of at school tomorrow."],
+    "6_02":  [ 34.428, 2.155, false, "scene 6, <PA>                                        You have some changes to make."]
+  }
+}
