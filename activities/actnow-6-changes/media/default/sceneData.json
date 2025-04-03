@@ -1788,7 +1788,7 @@
               "link": true,
               "value": "$playThrough",
               "text": [
-                [ 1 , 1, "Bully Interview (Boy)" ],
+                [ 1 , 1, "Bully Interview" ],
                 [ 2 , 2, "Bully Interview (Girl)" ],
                 [ 3 , 3, "The Truth About Being A Bully" ]
               ]
@@ -2182,7 +2182,7 @@
               "link": true,
               "value": "$playThrough",
               "text": [
-                [ 1 , 1, "Bully Interview (boy)" ],
+                [ 1 , 1, "Bully Interview" ],
                 [ 2 , 2, "Bully Interview (girl)" ],
                 [ 3 , 10, "The Truth About Being A Bully." ]
               ]
@@ -3014,20 +3014,11 @@
             "name": "stop_bullying_button",
             "type": "character",
             "image": "computerButtonHowCanYou",
-            "location": [ -500, 95 ],
+            "location": [ 50, 95 ],
             "variable": "show_stop_bullying",
             "scale": [ 1.0, 0.95],
             "text": "This lesson has ideas for how to step in and stop bullying if you see it."
           },
-          {
-                "name": "chat_zink_button",
-                "type": "character",
-                "image": "computerButtonChat",
-                "location": [ 50, 95 ],
-                "variable": "show_chat_zink",
-                "scale": [ 1.0, 0.95],
-                "text": "Want to find out what Zink is about? Chat live with her here!"
-              },
           {
             "name": "character_button",
             "type": "decoration",
@@ -3539,35 +3530,9 @@
                 "key": "$character_3",
                 "choices": [
                   {
-                    "link": "choice_08_02",
                     "variable": "augustine_response81",
                     "value": "6th_06",
                     "text": "Can I watch them?"
-                  },
-                  {
-                    "link": "choice_08_02",
-                    "variable": "augustine_response81",
-                    "value": "6th_08",
-                    "text": "How long are they?"
-                  }
-                ]
-              },
-              "choice_08_02": {
-                "description": "Augustine response depends on player choice...",
-                "text": "$augustine_response81",
-                "audio": "$augustine_response81",
-                "key": "augustine",
-                "choices": [
-                  {
-
-                    "variable": "augustine_response82",
-                    "value": "a",
-                    "text": "I guess I’ll watch them."
-                  },
-                  {
-                    "variable": "augustine_response82",
-                    "value": "b",
-                    "text": "Okay, I will."
                   }
                 ]
               }
@@ -3576,7 +3541,7 @@
         ],
         "outcomes": {
           "visit_library": {
-            "events": { "augustine_response82": "*" },
+            "events": { "augustine_response81": "*" },
             "actions": [ { "type": "scene", "args": ["watch_videos_1"] } ]
           }
         }
@@ -3767,7 +3732,7 @@
         ],
         "outcomes": {
           "back_to_augustine_p1_andp2": {
-            "events": { "video_a": "closed", "video_b": "closed", "video_c": "closed" },
+            "events": { "video_b1": "closed", "video_b2": "closed", "video_b3": "closed", "video_v1": "closed", "video_v2": "closed", "video_c1": "closed" },
             "actions": [ { "type": "scene", "args": ["dp8"] } ]
           },
           "watch_bystander1": {
@@ -3856,11 +3821,11 @@
               { "type": "remove-actor", "args": ["comeback_video"] },
               { "type": "remove-actor", "args": ["comeback_label"] },
               { "type": "add-actor", "args": [   {
-                  "name": "video_c",
+                  "name": "video_c1",
                   "type": "wistia",
                   "location": [ 30, 82 ],
                   "size": [ 640, 360 ],
-                  "video": "mtap6m5o2v",
+                  "video": "97hiunbtll",
                   "blockInput": true
                 }]
               }
