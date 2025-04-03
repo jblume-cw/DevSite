@@ -1,0 +1,91 @@
+{
+  "texture": "media/CampaignActivityIdeas/texture.png",
+  "textureMap": "media/CampaignActivityIdeas/texture.json",
+  "textureKey": "CAI_texture",
+  "data": "media/CampaignActivityIdeas/sceneData.json",
+  "fonts" : {
+    "caIdeas_header": { "font": "32px nunitoregular", "fill": "#000000",  "fontWeight": "bold", "align": "center", "wordWrap": true, "wordWrapWidth": 550 },
+    "caIdeas_bullet": { "font": "22px nunitoregular", "fill": "#000000",  "fontWeight": "bold", "align": "left", "bulletOffset": 1, "wordWrap": true, "wordWrapWidth": 240, "lineSpacing": -5 },
+    "caIdeas_completed": { "font": "20px nunitoregular", "fill": "#000000",  "fontWeight": "bold", "align": "center", "wordWrap": true, "wordWrapWidth": 550 }
+  },
+  "images": {
+    "decorations": {
+      "createAwareness": "Get the Facts/Campaign/s0200.jpg",
+      "serviceLearningProject": "Get the Facts/Campaign/s0300.jpg",
+      "psasBetweenClasses": "Get the Facts/Campaign/text1.png",
+      "billboards": "Get the Facts/Campaign/text2.png",
+      "posters": "Get the Facts/Campaign/text3.png",
+      "pledgeWall": "Get the Facts/Campaign/text4.png",
+      "actsOfKindnessAwards": "Get the Facts/Campaign/text5.png",
+      "lettersToTheEditor": "Get the Facts/Campaign/text6.png",
+      "newspaperArticles": "Get the Facts/Campaign/text7.png",
+      "tshirtLogoContest": "Get the Facts/Campaign/text8.png",
+      "graffitiMural": "Get the Facts/Campaign/text9.png",
+      "antibullyingClub": "Get the Facts/Campaign/text10.png",
+      "carnivalOrPepRally": "Get the Facts/Campaign/text11.png",
+      "battleOfTheBands": "Get the Facts/Campaign/text12.png",
+      "horizontalLine": "horizontal-line.png"
+    }
+  },
+  "sceneImages": {
+    "getTheFactsBackground": "Get the Facts/get-the-facts-background.png"
+  },
+  "buttons": {
+    "getTheFactsBack": {
+      "up": "Get the Facts/get-the-facts-back.png",
+      "over": "Get the Facts/get-the-facts-back-over.png",
+      "out": "Get the Facts/get-the-facts-back.png",
+      "down": "Get the Facts/get-the-facts-back.png"
+    },
+    "getTheFactsNext": {
+      "up": "Get the Facts/get-the-facts-next.png",
+      "over": "Get the Facts/get-the-facts-next-over.png",
+      "out": "Get the Facts/get-the-facts-next.png",
+      "down": "Get the Facts/get-the-facts-next.png"
+    },
+    "getTheFactsSoundOn": {
+      "up": "Get the Facts/get-the-facts-sound-on.png",
+      "over": "Get the Facts/get-the-facts-sound-on-over.png",
+      "out": "Get the Facts/get-the-facts-sound-on.png",
+      "down": "Get the Facts/get-the-facts-sound-on.png"
+    },
+    "getTheFactsSoundOff": {
+      "up": "Get the Facts/get-the-facts-sound-off.png",
+      "over": "Get the Facts/get-the-facts-sound-off-over.png",
+      "out": "Get the Facts/get-the-facts-sound-off.png",
+      "down": "Get the Facts/get-the-facts-sound-off.png"
+    },
+    "getTheFactsExit": {
+      "up": "Get the Facts/get-the-facts-exit.png",
+      "over": "Get the Facts/get-the-facts-exit.png",
+      "out": "Get the Facts/get-the-facts-exit.png",
+      "down": "Get the Facts/get-the-facts-exit.png"
+    }
+  },
+  "caIdeasLeftMargin": 30,
+  "soundKey": "campaignActivityIdeasSounds",
+  "soundFile": [
+    "media/CampaignActivityIdeas/campaignActivityIdeas.m4a",
+    "media/CampaignActivityIdeas/campaignActivityIdeas.ogg"
+  ],
+  "sounds": {
+    "s0100a": [ 0.00000000, 3.42331066, false, "s0100a, Starts at 0.0, lasts 3.42331066 seconds, doesn't loop"],
+    "s0100b": [ 3.42331066, 0.07380952000000018, false, "s0100b"],
+    "s0100c": [ 3.49712018, 3.81086168, false, "s0100c"],
+    "s0100d": [ 7.30798186, 0.17530612000000012, false, "s0100d"],
+    "s0100e": [ 7.48328798, 3.5063718799999997, false, "s0100e"],
+    "s0100f": [ 10.98965986, 0.08303854999999949, false, "s0100f"],
+    "s0100g": [ 11.07269841, 1.9930839000000002, false, "s0100g"],
+    "s0100h": [ 13.06578231, 0.12918368000000058, false, "s0100h"],
+    "s0100i": [ 13.19496599, 2.9158276600000015, false, "s0100i"],
+    "s0100j": [ 16.11079365, 0.18455781999999843, false, "s0100j"],
+    "s0100k": [ 16.29535147, 4.179931979999999, false, "s0100k"],
+    "s0100l": [ 20.47528345, 3.21108843, false, "s0100l"],
+    "s0200a": [ 23.68637188, 7.806258509999999, false, "s0200a"],
+    "s0200b": [ 31.49263039, 16.40605442, false, "s0200b"],
+    "s0200c": [ 47.89868481, 1.9377097500000033, false, "s0200c"],
+    "s0200d": [ 49.83639456, 14.615963719999996, false, "s0200d"],
+    "s0300a": [ 64.45235828, 8.77512471, false, "s0300a"],
+    "s0300b": [ 73.22748299, 3.9769387799999976, false, "s0300b"],
+    "s0300c": [ 77.20442177, 9.975, false, "s0300c"]  }
+}

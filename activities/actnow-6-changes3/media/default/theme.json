@@ -1,0 +1,506 @@
+{
+  "texture": "media/default/texture.png",
+  "textureMap": "media/default/texture.json",
+  "textureKey": "actnow_6_texture",
+  "data": "media/default/sceneData.json",
+  "fonts" : {
+    "standard": { "font": "15px Arial", "fill": "black", "align": "left", "wordWrap": true, "wordWrapWidth": 550},
+    "playThrough": { "font": "12px Arial", "fill": "black", "align": "left"},
+    "bubbleText": { "font": "15px Tahoma", "fill": "#000000",  "fontWeight": "bold" },
+    "bubbleIcon": { "font": "12pt Arial", "fill": "#000000", "fontWeight": "bold", "align": "center" },
+    "replayAudio": { "font": "14px Tahoma", "fill": "black",  "fontWeight": "normal" },
+    "zinkPoster": { "font": "14px nunitoregular", "fill": "#000000",  "fontWeight": "normal" },
+    "phoneHeader": { "font": "16px oswaldregular", "fill": "#BFBFBF",  "fontWeight": "normal" },
+    "phoneBody": { "font": "16px Microsoft Sans Serif", "fill": "#353535",  "fontWeight": "normal" },
+    "phoneBodyLink": { "font": "16px Microsoft Sans Serif", "fill": "#353535",  "fontWeight": "normal",  "fontStyle": "italic" },
+    "moveOn": { "font": "32px nunitoregular", "fill": "#000000",  "fontWeight": "normal" },
+    "buttonLabel": { "font": "16px nunitoregular", "fill": "#ffffff",  "fontWeight": "normal", "align": "center", "wordWrap": true, "wordWrapWidth": 180 }
+  },
+  "images": {
+    "actorImages": {
+      "announcer-box": "wall-speaker.png",
+      "janelle": "janelle.png",
+      "janelle-talk": "talking-janelle.png",
+      "freddie": "talking-freddie.png",
+      "freddie-talk": "talking-freddie.png",
+      "mandy": "mandy.png",
+      "mandy-talk": "talking-mandy.png",
+      "tom": "tom.png",
+      "tom-talk": "talking-tom.png",
+      "augustine-talk": "talking-augustine.png",
+      "carrie-talk": "talking-carrie.png",
+      "dane": "talking-dane.png",
+      "dane-talk": "talking-dane.png",
+      "ross": "talking-ross.png",
+      "ross-talk": "talking-ross.png",
+      "myFaceTubeLogin": "my-face-tube-login.png",
+      "myFaceTubeWarning1": "my-face-tube-warning1.png",
+      "myFaceTubeWarning2": "my-face-tube-warning2.png",
+      "letter": "cafeteria-letter-small.png",
+      "computerButtonAntiBullyingCampaigns": "computer-button-anti-bullying-campaigns.png",
+      "computerButtonChat": "computer-button-chat.png",
+      "computerButtonHowCanYou": "computer-button-how-can-you.png",
+      "computerButtonZink": "computer-button-zink.png",
+      "video-left": "video-option-victims.png",
+      "video-middle": "video-option-comebacks.png",
+      "video-right": "video-option-bystanders.png",
+      "presentation": "presentation-link.png"
+    },
+    "heads": {
+      "carrie": "hud-head-carrie.png",
+      "dane": "hud-head-dane.png",
+      "freddie": "hud-head-freddie.png",
+      "janelle": "hud-head-janelle.png",
+      "mandy": "hud-head-mandy.png",
+      "ross": "hud-head-ross.png",
+      "tom": "hud-head-tom.png"
+    },
+    "decorations": {
+      "classroomForeground": "classroom-foreground.png",
+      "computerCloseupBlank": "computer-closeup-blank.png",
+      "myFaceTubePage": "my-face-tube-page.png",
+      "theaterForeground": "theater-foreground.png",
+      "theaterCloseupForeground": "theater-closeup-foreground.png",
+      "theaterCloseupForeground2": "theater-closeup-foreground2.png"
+    },
+    "letter": {
+      "beStrong": "letter-be-strong.png",
+      "loser": "letter-loser.png",
+      "plain": "letter-plain.png",
+      "torn": "letter-torn.png"
+    }
+  },
+  "texts": {
+    "augustine": {
+      "6th_06": "Sure. Take a look at all three of them.",
+      "6th_07": "They all show how to stand up for yourself or others.",
+      "6th_08": "Not long. You could watch all three right now."
+    },
+    "freddie": {
+      "ross_6th_01":  "Hey Freddie. Have you seen all this junk today about bullying and stuff?",
+      "augustine_6th_01": "Good morning, Freddie. Are you ready for our class discussion about sexual harassment?",
+      "augustine_6th_05": "Hello Freddie. Come on in. I’m reviewing some role-play videos we’re using for the anti-bullying campaign."
+    },
+    "janelle":{
+      "ross_6th_01":  "Hey Janelle. Have you seen all this junk today about bullying and stuff?",
+      "augustine_6th_01": "Good morning, Janelle. Are you ready for our class discussion about sexual harassment?",
+      "augustine_6th_05": "Hello Janelle. Come on in. I’m reviewing some role-play videos we’re using for the anti-bullying campaign."
+    },
+    "ross": {
+      "6th_11": "Yeah. It's so stupid. Let’s go mess with the people trying out.",
+      "6th_12": "We’re gonna mess with the losers trying out.",
+      "6th_13": "Me and some guys are gonna mess with the people trying out."
+    },
+    "tom": {
+      "ross_6th_01":  "Hey Tom. Have you seen all this junk today about bullying and stuff?",
+      "augustine_6th_01": "Good morning, Tom. Are you ready for our class discussion about sexual harassment?",
+      "augustine_6th_05": "Hello Tom. Come on in. I’m reviewing some role-play videos we’re using for the anti-bullying campaign."
+    },
+    "mandy": {
+      "6th_01": "You know that Zink character? I think that new girl has a picture of that zebra on her backpack!",
+      "6th_02": "She probably has the stuffed animal at home, too.",
+      "6th_03": "Yeah, because at her old school she weirded people out.",
+      "6th_04": "She’s not going to make any friends if she acts like that."
+    },
+    "carrie": {
+      "6th_02": "Yeah, that girl is my only friend here. But she hangs out with those jerks! I don’t get why, when they are so mean to her sometimes. It doesn’t seem like they’re really her friends at all.",
+      "6th_03": "It’s from a story that really means a lot to me. I don’t know why everyone makes fun of it.",
+      "6th_04": "I’m just a new girl with no friends. I used to hang out with the girl I wrote about in the letter, but she hangs out with those girls, even though they’re so mean to her. I hate Newbridge."
+    },
+    "dane": {
+      "6th_02": "No you’re not. Now what’re you gonna do?",
+      "6th_03": "Looks like you’re goin’ somewhere. Now what?",
+      "6th_04": "I just wanna talk. Don’t you wanna talk to me?"
+    },
+    "campaign": {
+      "ross_6th_02":  "Anti-bullying campaign? Like I’m trying to elect somebody?"
+    },
+    "posters": {
+      "ross_6th_02":  "Announcements, class activities, posters … I’m already sick of it."
+    },
+    "zink": {
+      "ross_6th_02":  "It’s just dumb kids’ stuff. A zebra? Seriously?",
+      "problem": "Bullying puts people in a state of constant fear. You can fight this by getting involved with the diversity play.",
+      "help": "Change your school culture. Help with the diversity play.",
+      "story": "I’m here to help people treat others with respect, and without judgment. You can help spread my message by participating in the diversity play."
+    }
+  },
+  "tints": {
+    "bubbleText" : "#CDCDCD"
+  },
+  "bubbleTextWidth": 140,
+  "sceneImages": {
+    "logo": "splash-bg.png",
+    "Info": "this is the set of scene backgrounds.",
+    "cafeteria": "cafeteria-background.png",
+    "classroomBackground": "classroom-background.png",
+    "cafeteriaCloseup": "cafeteria-closeup-background.png",
+    "computerBlank": "computer-blank.png",
+    "library": "library-background.png",
+    "hallway": "hallway-background.png",
+    "theater": "theater-background.png",
+    "theaterCloseup": "theater-closeup-background.png",
+    "theaterCloseup2": "theater-closeup-background2.png",
+    "computerCloseup": "computer-closeup-blank.png",
+    "whiteboard": "whiteboard-background.png"
+  },
+  "speechAnimations": {
+    "janelle": {
+      "images": ["talking-janelle-mouth1.png",  "talking-janelle-mouth2.png"],
+      "mouthOffset": [219, 124]
+    },
+    "tom": {
+      "images": ["talking-tom-mouth1.png",  "talking-tom-mouth2.png"],
+      "mouthOffset": [70, 153]
+    },
+    "mandy": {
+      "images": ["talking-mandy-mouth1.png",  "talking-mandy-mouth2.png"],
+      "mouthOffset": [65, 165]
+    },
+    "augustine": {
+      "images": ["talking-augustine-mouth1.png",  "talking-augustine-mouth2.png"],
+      "mouthOffset": [240, 150]
+    },
+    "carrie":  {
+      "images": ["talking-carrie-mouth1.png",  "talking-carrie-mouth2.png"],
+      "mouthOffset": [85, 124]
+    },
+    "dane":  {
+      "images": ["talking-dane-mouth1.png", "talking-dane-mouth2.png"],
+      "mouthOffset": [185, 160]
+    },
+    "freddie":  {
+      "images": ["talking-freddie-mouth1.png", "talking-freddie-mouth2.png"],
+      "mouthOffset": [114, 138]
+    },
+    "ross": {
+      "images": ["talking-ross-mouth1.png", "talking-ross-mouth2.png"],
+      "mouthOffset": [123, 160]
+    }
+  },
+  "buttons": {
+    "play": {
+      "up": "play-btn-up.png",
+      "over": "play-btn-over.png",
+      "out": "play-btn-up.png",
+      "down": "play-btn-down.png"
+    },
+    "soundOff": {
+      "up": "sound-off.png",
+      "over": "sound-off-over.png",
+      "out": "sound-off.png",
+      "down": "sound-off-over.png"
+    },
+    "soundOn": {
+      "up": "sound-on.png",
+      "over": "sound-on-over.png",
+      "out": "sound-on.png",
+      "down": "sound-on-over.png"
+    },
+    "postMessage": {
+      "up": "my-face-tube-post-message.png",
+      "over": "my-face-tube-post-message-over.png",
+      "out": "my-face-tube-post-message.png",
+      "down": "my-face-tube-post-message-down.png"
+    },
+    "videoClose": {
+      "down": "video-close-down.png",
+      "over": "video-close-over.png",
+      "out": "video-close.png",
+      "up": "video-close.png"
+    }
+  },
+  "getTheFacts": {
+    "campaign": {
+      "groupPhotoStanding": "Get the Facts/Campaign/s0200.jpg",
+      "groupPhotoSitting": "Get the Facts/Campaign/s0300.jpg",
+      "psasBetweenClasses": "Get the Facts/Campaign/text1.png",
+      "antiBullyingClub": "Get the Facts/Campaign/text10.png",
+      "carnivalOrPepRally": "Get the Facts/Campaign/text11.png",
+      "battleOfTheBandsOrTalentShow": "Get the Facts/Campaign/text12.png",
+      "billboards": "Get the Facts/Campaign/text2.png",
+      "posters": "Get the Facts/Campaign/text3.png",
+      "pledgeWall": "Get the Facts/Campaign/text4.png",
+      "actsOfKindnessAwards": "Get the Facts/Campaign/text5.png",
+      "lettersToTheEditor": "Get the Facts/Campaign/text6.png",
+      "newspaperArticles": "Get the Facts/Campaign/text7.png",
+      "tShirtLogoContest": "Get the Facts/Campaign/text8.png",
+      "graffitiMural": "Get the Facts/Campaign/text9.png"
+    },
+    "comebacks": {
+      "whispering": "Get the Facts/Comebacks/c0100.jpg",
+      "whatever": "Get the Facts/Comebacks/c0300.png",
+      "ifYouSaySo": "Get the Facts/Comebacks/c0400.png",
+      "knockItOff": "Get the Facts/Comebacks/c0500.png"
+    },
+    "historyOfZink": {
+      "goat": "Get the Facts/History of Zink/collage1.png",
+      "pool": "Get the Facts/History of Zink/collage2.png",
+      "picnic": "Get the Facts/History of Zink/collage3.png",
+      "sofa": "Get the Facts/History of Zink/collage4.png",
+      "collie": "Get the Facts/History of Zink/collage5.png",
+      "rabbit": "Get the Facts/History of Zink/collage6.png",
+      "zinkTheZebra": "Get the Facts/History of Zink/h0100.png",
+      "zinkBook": "Get the Facts/History of Zink/h0200g.png",
+      "horse": "Get the Facts/History of Zink/h0300.jpg"
+    },
+    "howCanYouStopBullying": {
+      "stop": "Get the Facts/How can you stop bullying/w0100.jpg",
+      "checklist": "Get the Facts/How can you stop bullying/w0200.jpg",
+      "counselor": "Get the Facts/How can you stop bullying/w0300.jpg",
+      "basketballTeam": "Get the Facts/How can you stop bullying/w0400.jpg",
+      "groupAroundTable": "Get the Facts/How can you stop bullying/w0500.jpg"
+    },
+    "snitching": {
+      "sitting": "Get the Facts/Snitching/n0100.jpg",
+      "thomasIsntPayingAttention": "Get the Facts/Snitching/n0200.png",
+      "iThinkMayasInTrouble": "Get the Facts/Snitching/n0300.png"
+    }
+  },
+  "textWindows": {
+    "small": {
+      "top": "character-talk-bubble-top.png",
+      "middle": "character-talk-bubble-middle.png",
+      "bottom": "character-talk-bubble-bottom.png"
+    },
+    "announce": {
+      "top": "wall-speaker-talk-bubble-top.png",
+      "middle": "wall-speaker-talk-bubble-middle.png",
+      "bottom": "wall-speaker-talk-bubble-bottom.png"
+    },
+    "instruction": "move-on-box.png",
+    "zink": "computer-zink-chat.png"
+  },
+  "getTheFactsBackOver": "get-the-facts-back-over.png",
+  "getTheFactsBack": "get-the-facts-back.png",
+  "getTheFactsBackground": "get-the-facts-background.png",
+  "getTheFactsExit": "get-the-facts-exit.png",
+  "getTheFactsNextOver": "get-the-facts-next-over.png",
+  "getTheFactsNext": "get-the-facts-next.png",
+  "getTheFactsSoundOffOver": "get-the-facts-sound-off-over.png",
+  "getTheFactsSoundOff": "get-the-facts-sound-off.png",
+  "getTheFactsSoundOnOver": "get-the-facts-sound-on-over.png",
+  "getTheFactsSoundOn": "get-the-facts-sound-on.png",
+  "phone": {
+    "playButton": "open-button.png",
+    "button": {
+      "up":  "phone-ring-anim-0001.png",
+      "over": "phone-ring-anim-0002.png",
+      "out":  "phone-ring-anim-0001.png",
+      "down": "phone-ring-anim-0002.png"
+    },
+    "alerts": {
+      "game": "phone-alert-game.png",
+      "message": "phone-alert-message.png",
+      "pdf": "phone-alert-pdf.png",
+      "video": "phone-alert-video.png",
+      "gtfs": "phone-alert-gtf.png"
+    },
+    "backgrounds": [
+      "phone-bg0001.png",
+      "phone-bg0002.png",
+      "phone-bg0003.png",
+      "phone-bg0004.png",
+      "phone-bg0005.png",
+      "phone-bg0006.png",
+      "phone-bg0007.png",
+      "phone-bg0008.png",
+      "phone-bg0009.png"
+    ],
+    "ring" : [
+      "phone-ring-anim-0001.png",
+      "phone-ring-anim-0002.png",
+      "phone-ring-anim-0003.png",
+      "phone-ring-anim-0004.png",
+      "phone-ring-anim-0005.png",
+      "phone-ring-anim-0006.png",
+      "phone-ring-anim-0007.png",
+      "phone-ring-anim-0008.png",
+      "phone-ring-anim-0009.png",
+      "phone-ring-anim-0010.png",
+      "phone-ring-anim-0011.png",
+      "phone-ring-anim-0012.png",
+      "phone-ring-anim-0013.png",
+      "phone-ring-anim-0014.png"
+    ],
+    "icons" : {
+      "help": [ "help-up.png", "help-over.png"],
+      "gtfs": [ "get-the-facts-up.png", "get-the-facts-over.png"],
+      "messages": ["messages-up.png", "messages-over.png"],
+      "videos": [ "videos-up.png", "videos-over.png"],
+      "ringtones": [ "ringtones-up.png", "ringtones-over.png"],
+      "background": [ "background-up.png", "background-over.png" ],
+      "games": [ "games-up.png", "games-over.png"],
+      "close": [ "close-up.png", "close-over.png"]
+    },
+    "ringtones": [ "cellVibrate", "phoneRingtone", "tahDah"],
+    "messages": {
+      "background": "phone-message-bg.png",
+      "button": "phone-msg-ok-btn.png"
+    }
+  },
+  "playthroughDisplayContainer": "playthrough-display-container.png",
+  "responseBgDown": "response-bg-down.png",
+  "responseBgOver": "response-bg-over.png",
+  "responseBgUp": "response-bg-up.png",
+  "splashBg": "splash-bg.png",
+  "soundKey": "actnow_6_sounds",
+  "soundFile": [ "media/default/actnow.m4a", "media/default/actnow.ogg" ],
+  "sounds": {
+    "freddie_augustine_6th_01": [ 0.00000000, 5.70961451, false, "aug_6th_01_fre"],
+    "janelle_augustine_6th_01": [ 5.70961451, 5.47027211, false, "aug_6th_01_jan"],
+    "tom_augustine_6th_01": [ 11.17988662, 5.60705216, false, "aug_6th_01_tom"],
+    "augustine_6th_02": [ 16.78693878, 8.004807249999999, false, "aug_6th_02"],
+    "augustine_6th_03": [ 24.79174603, 14.383151930000004, false, "aug_6th_03"],
+    "augustine_6th_04": [ 39.17489796, 12.900204079999995, false, "aug_6th_04"],
+    "freddie_augustine_6th_05": [ 52.07510204, 6.83673469, false, "aug_6th_05_fre"],
+    "janelle_augustine_6th_05": [ 58.91183673, 6.59022676, false, "aug_6th_05_jan"],
+    "tom_augustine_6th_05": [ 65.50206349, 6.524489799999998, false, "aug_6th_05_tom"],
+    "augustine_6th_06": [ 72.02655329, 2.1686394500000006, false, "aug_6th_06"],
+    "augustine_6th_07": [ 74.19519274, 2.662947850000009, false, "aug_6th_07"],
+    "augustine_6th_08": [ 76.85814059, 3.2689115599999923, false, "aug_6th_08"],
+    "augustine_6th_09": [ 80.12705215, 3.316757370000005, false, "aug_6th_09"],
+    "augustine_6th_10": [ 83.44380952, 1.8975510199999945, false, "aug_6th_10"],
+    "augustine_6th_11": [ 85.34136054, 2.8383673499999986, false, "aug_6th_11"],
+    "augustine_6th_12": [ 88.17972789, 1.3235147400000074, false, "aug_6th_12"],
+    "augustine_6th_13": [ 89.50324263, 3.4602494299999904, false, "aug_6th_13"],
+    "carrie_6th_01": [ 92.96349206, 2.8210430900000034, false, "car_6th_01"],
+    "carrie_6th_02": [ 95.78453515, 13.302176869999997, false, "car_6th_02"],
+    "carrie_6th_03": [ 109.08671202, 5.78623583000001, false, "car_6th_03"],
+    "carrie_6th_04": [ 114.87294785, 13.199206349999997, false, "car_6th_04"],
+    "carrie_6th_05": [ 128.07215420, 2.5121768699999905, false, "car_6th_05"],
+    "carrie_6th_06": [ 130.58433107, 3.3770294699999965, false, "car_6th_06"],
+    "carrie_6th_07": [ 133.96136054, 1.8120408200000213, false, "car_6th_07"],
+    "carrie_6th_08": [ 135.77340136, 2.3886167799999782, false, "car_6th_08"],
+    "carrie_6th_09": [ 138.16201814, 1.9150340099999994, false, "car_6th_09"],
+    "dane_6th_01": [ 140.07705215, 1.5608390100000236, false, "dan_6th_01"],
+    "dane_6th_02": [ 141.63789116, 5, false, "dan_6th_02"],
+    "dane_6th_03": [ 146.63789116, 5, false, "dan_6th_03"],
+    "dane_6th_04": [ 151.63789116, 5, false, "dan_6th_04"],
+    "dane_6th_05": [ 156.63789116, 3.277755099999979, false, "dan_6th_05"],
+    "dane_6th_06": [ 159.91564626, 3.5899093000000164, false, "dan_6th_06"],
+    "dane_6th_07": [ 163.50555556, 2.2743537400000093, false, "dan_6th_07"],
+    "dane_6th_08": [ 165.77990930, 3.233151919999983, false, "dan_6th_08"],
+    "dane_6th_09": [ 169.01306122, 2.9655782400000135, false, "dan_6th_09"],
+    "freddie_6th_01": [ 171.97863946, 4.209478449999978, false, "fre_6th_01"],
+    "janelle_6th_01": [ 176.18811791, 9.03718821000001, false, "jan_6th_01"],
+    "mandy_6th_01": [ 185.22530612, 6.30918367999999, false, "man_6th_01"],
+    "mandy_6th_02": [ 191.53448980, 3.2592517000000214, false, "man_6th_02"],
+    "mandy_6th_03": [ 194.79374150, 3.4685714299999972, false, "man_6th_03"],
+    "mandy_6th_04": [ 198.26231293, 3.438662129999983, false, "man_6th_04"],
+    "mandy_6th_05": [ 201.70097506, 4.515102040000016, false, "man_6th_05"],
+    "mandy_6th_06": [ 206.21607710, 3.7376870699999927, false, "man_6th_06"],
+    "mandy_6th_07": [ 209.95376417, 1.9136961499999927, false, "man_6th_07"],
+    "mandy_6th_08": [ 211.86746032, 2.39210884000002, false, "man_6th_08"],
+    "mandy_6th_09": [ 214.25956916, 3.6778684800000008, false, "man_6th_09"],
+    "narrator_6th_01": [ 217.93743764, 3.531269839999993, false, "nar_6th_01"],
+    "narrator_6th_03": [ 221.46870748, 10.938344669999992, false, "nar_6th_03"],
+    "narrator_6th_04": [ 232.40705215, 9.820204090000004, false, "nar_6th_04"],
+    "narrator_6th_05": [ 242.22725624, 10.330680269999988, false, "nar_6th_05"],
+    "narrator_6th_06": [ 252.55793651, 3.864875280000035, false, "nar_6th_06"],
+    "narrator_6th_08": [ 256.42281179, 12.056485259999988, false, "nar_6th_08"],
+    "narrator_6th_09": [ 268.47929705, 11.011269840000011, false, "nar_6th_09"],
+    "narrator_6th_10": [ 279.49056689, 10.598027209999998, false, "nar_6th_10"],
+    "narrator_6th_11": [ 290.08859410, 4.983038550000003, false, "nar_6th_11"],
+    "narrator_6th_13": [ 295.07163265, 12.20233559999997, false, "nar_6th_13"],
+    "narrator_6th_14": [ 307.27396825, 7.754081639999981, false, "nar_6th_14"],
+    "narrator_6th_15": [ 315.02804989, 9.28544217000001, false, "nar_6th_15"],
+    "freddie_ross_6th_01": [ 324.31349206, 5.560113380000018, false, "ros_6th_01_fre"],
+    "janelle_ross_6th_01": [ 329.87360544, 5.175328799999988, false, "ros_6th_01_jan"],
+    "tom_ross_6th_01": [ 335.04893424, 4.771292520000031, false, "ros_6th_01_tom"],
+    "zink_ross_6th_02": [ 339.82022676, 5.48312924999999, false, "ros_6th_02"],
+    "posters_ross_6th_02": [ 345.30335601, 5.77172336000001, false, "ros_6th_03"],
+    "campaign_ross_6th_02": [ 351.07507937, 4.925215409999964, false, "ros_6th_04"],
+    "ross_6th_05": [ 356.00029478, 3.174467120000031, false, "ros_6th_05"],
+    "ross_6th_06": [ 359.17476190, 3.135986399999979, false, "ros_6th_06"],
+    "ross_6th_07": [ 362.31074830, 1.808458050000013, false, "ros_6th_07"],
+    "ross_6th_08": [ 364.11920635, 3.8478231299999948, false, "ros_6th_08"],
+    "ross_6th_09": [ 367.96702948, 5.002154189999999, false, "ros_6th_09"],
+    "ross_6th_10": [ 372.96918367, 2.8858730200000196, false, "ros_6th_10"],
+    "ross_6th_11": [ 375.85505669, 4.54040815999997, false, "ros_6th_11"],
+    "ross_6th_12": [ 380.39546485, 2.9435827699999777, false, "ros_6th_12"],
+    "ross_6th_13": [ 383.33904762, 3.828594100000032, false, "ros_6th_13"],
+    "tom_6th_01": [ 387.16764172, 6.1116780099999914, false, "tom_6th_01"],
+    "cellVibrate": [ 393.27931973, 1.1755102000000193, false, "cellVibrate"],
+    "phoneRingtone": [ 394.45482993, 1.567346939999993, false, "phoneRingtone"],
+    "silence": [ 396.02217687, 0.183, false, "silence"],
+    "tahDah": [ 396.20503401, 2.664, false, "tahDah"],
+    "crumple": [ 398.869, 1.593, false, "tahDah"]
+  },
+  "soundSyncData": {
+    "freddie_augustine_6th_01":[0,0,0,0,1,1,1,1,1,0,1,1,1,0,0,0,0,0,0,0,1,1,1,1,1,1,0,1,1,0,1,1,0,0,1,1,0,1,1,1,1,1,1,0,1,0,1,1,0,0,0,0,0,0,0,0,0,0],
+    "janelle_augustine_6th_01":[0,0,0,1,1,1,1,1,0,1,1,1,1,0,0,0,0,0,0,1,1,1,1,1,1,0,1,1,0,1,1,0,0,0,1,0,1,1,1,1,1,1,1,0,1,1,1,0,0,1,0,0,0,0,0],
+    "tom_augustine_6th_01":[0,0,0,0,1,1,1,1,1,0,1,1,1,0,0,0,0,0,0,0,1,1,1,1,1,1,0,1,1,0,1,1,0,0,1,1,0,1,1,1,1,1,1,0,1,0,1,1,0,0,0,0,0,0,0,0,0],
+    "augustine_6th_02":[0,1,1,1,1,1,1,1,1,1,1,1,1,1,0,1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,1,0,1,1,1,1,0,1,0,0,0,0,1,1,0,0,1,1,0,0,0,0,0,1,0,1,1,1,0,1,1,1,1,1,0,1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0],
+    "augustine_6th_03":[0,0,0,1,1,1,0,0,0,0,0,1,1,1,1,1,1,0,1,0,1,1,1,1,1,0,1,1,1,0,0,1,1,0,1,0,1,1,0,1,0,0,1,1,0,0,0,0,0,1,1,1,1,0,1,1,1,1,0,0,1,0,0,0,0,0,1,0,0,0,1,1,0,1,1,0,1,0,0,1,1,1,1,0,0,0,1,0,1,1,0,0,1,0,0,0,0,0,0,0,1,0,1,1,0,0,0,0,1,0,1,0,1,1,1,0,0,1,0,1,1,0,1,0,1,0,0,1,1,0,1,0,0,0,1,0,0,0,0,0,0,0,0,0],
+    "augustine_6th_04":[0,0,1,1,1,1,1,1,1,0,0,0,0,0,1,1,0,1,1,1,0,0,0,0,0,0,0,0,1,1,1,0,0,0,1,1,0,0,0,0,0,1,1,0,1,1,1,1,0,1,0,0,0,0,0,1,1,1,1,1,1,1,0,1,1,0,0,0,0,1,0,0,0,0,0,1,0,1,1,1,0,0,0,0,0,0,1,1,0,0,1,1,1,1,1,1,1,1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,1,1,1,0,1,1,1,1,1,1,0,1,1,0,0,0,0,0],
+    "freddie_augustine_6th_05":[0,0,0,0,1,1,1,0,1,1,1,0,0,0,0,0,0,0,0,1,1,1,1,1,0,0,0,0,0,0,1,1,1,1,1,1,1,1,1,0,1,1,1,1,0,1,1,1,1,1,1,1,1,1,1,1,1,1,1,0,1,0,1,0,0,0,0,0,0],
+    "janelle_augustine_6th_05":[0,0,1,1,1,1,1,1,1,0,0,0,0,0,0,0,0,1,1,1,1,0,0,0,0,0,0,1,1,1,1,1,0,1,1,1,0,1,0,1,1,0,1,1,1,1,0,1,1,1,1,1,1,1,1,1,0,1,0,0,0,0,0,0,0,0],
+    "tom_augustine_6th_05":[0,0,1,1,0,0,1,1,1,0,0,0,0,0,0,0,0,1,1,1,1,1,0,0,0,0,0,0,1,1,1,1,1,1,1,1,1,0,1,1,1,1,0,1,1,1,1,1,1,1,1,1,1,1,1,1,1,0,1,0,1,0,0,0,0,0],
+    "augustine_6th_06":[0,0,0,1,1,1,0,0,1,1,1,1,1,1,0,1,1,0,1,0,0,0],
+    "augustine_6th_07":[0,1,1,1,0,1,1,1,0,1,1,1,1,0,0,1,0,1,1,0,0,1,0,0,0,0,0],
+    "augustine_6th_08":[0,0,1,0,0,1,1,0,1,1,0,0,0,0,1,1,0,1,1,1,0,1,1,0,1,0,1,0,1,0,0,0,0],
+    "augustine_6th_09":[0,0,1,0,1,1,1,1,1,1,0,1,0,0,0,0,0,1,1,1,1,1,1,0,1,0,0,0,1,1,0,0,0,0],
+    "augustine_6th_10":[0,1,1,1,0,0,0,0,1,1,1,0,1,0,1,1,0,0,0],
+    "augustine_6th_11":[0,0,1,1,1,1,1,1,0,0,1,1,1,1,1,1,1,0,0,1,0,1,1,0,1,0,0,0,0],
+    "augustine_6th_12":[0,0,1,0,1,1,0,1,1,1,0,0,0,0],
+    "augustine_6th_13":[0,0,1,1,1,1,1,0,0,0,1,1,0,0,0,0,0,1,1,1,0,1,1,1,1,1,0,1,1,0,1,0,0,0,0],
+    "carrie_6th_01":[0,0,1,1,0,0,0,0,0,0,0,1,1,0,0,1,1,1,1,1,1,1,0,1,0,0,0,0,0],
+    "carrie_6th_02":[0,0,0,1,1,1,0,0,0,0,0,0,0,0,0,1,1,1,0,1,1,1,1,0,1,1,0,0,0,0,0,0,0,0,0,1,1,0,1,1,1,1,1,1,1,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,1,1,1,1,1,1,1,0,0,0,0,0,0,1,1,1,1,1,1,1,1,1,1,1,1,1,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,1,0,1,1,1,0,1,1,1,1,1,1,0,1,0,1,1,1,1,1,1,0,0,0,0,0],
+    "carrie_6th_03":[0,0,0,0,0,1,1,0,1,1,1,1,0,1,1,1,1,1,1,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,1,1,1,0,1,1,1,1,1,0,0,1,1,1,0,0,0,0,0,0],
+    "carrie_6th_04":[0,0,1,1,1,1,1,1,0,1,1,0,1,1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,1,0,1,1,0,1,1,0,1,1,1,1,1,1,1,1,1,1,1,1,1,0,0,0,0,0,0,0,0,0,1,0,1,1,1,1,1,0,1,0,1,1,1,0,0,0,0,0,0,1,1,1,1,1,1,1,0,1,1,1,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,1,0,0,1,0,0,0,0,0,0,0,0,0],
+    "carrie_6th_05":[0,0,1,1,1,1,0,0,0,0,0,0,1,1,1,0,1,1,1,0,1,1,0,0,0,0],
+    "carrie_6th_06":[0,0,0,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,1,1,1,1,0,1,1,1,1,1,0,0,0,0,0],
+    "carrie_6th_07":[0,0,1,1,0,0,0,0,0,0,0,0,0,1,0,1,0,0,0],
+    "carrie_6th_08":[0,0,0,0,0,1,0,1,0,0,0,1,1,0,1,1,0,0,0,0,0,0,0,0],
+    "carrie_6th_09":[0,0,1,0,0,0,0,0,0,0,1,1,1,1,1,0,0,0,0,0],
+    "dane_6th_01":[0,0,1,1,0,1,0,1,1,1,1,0,0,0,0,0],
+    "dane_6th_02":[0,0,1,1,1,1,1,1,0,0,0,0,1,1,1,1,0,0,0,0,0,0,0,0,0,1,1,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+    "dane_6th_03":[0,0,0,1,0,0,1,1,1,1,1,1,0,0,0,0,0,0,0,0,0,1,1,1,0,0,0,0,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+    "dane_6th_04":[0,1,0,1,0,0,1,1,0,0,0,1,1,1,0,0,0,0,0,1,1,1,1,1,0,1,0,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+    "dane_6th_05":[0,0,0,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,1,0,0,0,0],
+    "dane_6th_06":[0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,1,1,0,0,0,1,0,0,1,0,0,0,0,0,0,1,1,0,0,0,0],
+    "dane_6th_07":[0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0],
+    "dane_6th_08":[0,0,0,1,1,0,1,1,1,0,0,0,0,0,0,0,1,1,1,1,1,1,1,1,0,0,0,0,0,0,0,0,0],
+    "dane_6th_09":[0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,1,1,0,0,1,0,1,1,1,1,0,0,0,0],
+    "freddie_6th_01":[0,0,0,1,1,1,0,1,1,0,0,0,0,0,0,0,0,0,1,0,1,1,0,1,1,1,0,0,0,0,0,1,1,1,1,0,1,1,0,0,0,0,0],
+    "janelle_6th_01":[0,0,0,0,1,1,1,1,0,0,0,0,0,0,0,0,1,1,0,1,1,1,1,1,1,1,1,0,0,1,1,1,0,1,0,0,0,0,0,0,0,0,1,0,0,0,0,0,1,1,1,1,1,1,0,0,0,0,0,0,0,0,0,0,1,1,1,0,1,1,1,1,0,0,0,0,0,0,0,1,1,1,0,1,1,1,1,0,0,0,0],
+    "mandy_6th_01":[0,0,0,0,1,1,1,0,0,0,1,0,0,1,1,0,0,1,0,0,0,0,0,0,0,1,0,1,1,1,1,0,1,1,1,0,0,1,0,1,1,0,1,0,0,1,1,1,1,1,1,1,0,1,1,0,0,0,0,0,0,0,0,0],
+    "mandy_6th_02":[0,0,0,0,0,0,1,1,1,1,0,0,0,1,0,1,1,1,1,1,1,0,1,1,0,0,1,1,0,0,0,0,0],
+    "mandy_6th_03":[0,0,0,0,1,1,0,0,0,1,1,1,1,1,0,0,0,0,1,1,1,1,1,1,0,0,0,1,1,0,0,0,0,0,0],
+    "mandy_6th_04":[0,0,0,0,1,1,1,1,1,0,1,1,0,0,0,1,0,1,1,0,0,0,1,0,0,0,0,1,0,0,0,0,0,0,0],
+    "mandy_6th_05":[0,0,0,1,1,1,1,0,0,0,0,0,0,0,0,1,1,1,1,1,1,0,0,1,0,0,0,0,0,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0],
+    "mandy_6th_06":[0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,1,0,1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+    "mandy_6th_07":[0,0,0,1,1,1,0,0,1,1,1,1,0,1,0,0,0,0,0,0],
+    "mandy_6th_08":[0,0,0,0,1,1,1,0,0,0,1,0,1,1,1,1,1,1,0,0,0,0,0,0],
+    "mandy_6th_09":[0,0,0,0,1,1,1,1,0,0,0,0,0,0,0,0,0,0,1,1,1,1,1,1,1,0,0,1,1,1,1,0,0,0,0,0,0],
+    "narrator_6th_01":[0,0,0,0,1,0,1,1,1,1,1,1,0,0,0,0,0,0,1,1,0,0,0,0,0,1,1,1,0,1,1,0,0,0,0,0],
+    "narrator_6th_03":[0,0,0,0,1,1,1,1,1,1,1,0,1,1,1,0,0,0,0,0,0,0,0,0,0,1,1,1,1,1,0,0,1,0,1,1,1,1,0,0,0,0,0,0,0,0,1,0,0,0,0,1,1,1,1,1,0,1,0,0,0,0,0,0,0,0,0,0,1,1,1,1,0,1,1,0,1,1,0,0,0,0,0,0,0,0,1,1,0,1,1,0,0,1,1,0,0,0,1,1,1,0,0,0,0,0,0,0,0,0],
+    "narrator_6th_04":[0,0,1,0,1,1,1,1,1,1,0,1,1,0,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,1,1,1,1,1,1,0,0,0,0,0,0,0,0,0,1,1,1,1,1,1,1,0,1,1,1,0,1,1,0,1,0,0,0,0,0,0,0,0,0,0,1,1,1,1,0,1,0,1,0,0,0,0,0,0,1,1,0,1,1,0,0,1,1,0,0,0,0,0,0],
+    "narrator_6th_05":[0,0,0,0,1,1,1,1,1,1,1,1,1,1,1,1,0,0,0,0,0,0,0,0,0,1,1,1,1,0,1,1,0,1,1,1,1,1,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,1,1,1,0,1,1,1,0,1,1,1,0,0,0,0,0,0,1,1,0,0,1,0,0,0,1,1,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,1,1,1,1,0,0,0,0],
+    "narrator_6th_06":[0,0,0,0,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,1,0,1,1,1,1,0,1,1,1,0,1,0,0,0,0],
+    "narrator_6th_08":[0,0,0,0,1,1,1,1,1,1,1,1,1,1,1,0,1,1,0,0,0,0,0,0,0,0,0,1,1,1,1,0,0,0,0,0,0,0,1,1,1,1,0,1,1,1,1,0,0,1,0,1,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,1,1,0,1,0,0,0,0,1,0,0,0,0,0,0,0,1,1,0,0,1,1,0,0,0,0,0,1,1,0,0,0,0,0,0,0,1,0,1,1,1,1,1,1,0,0,0,0,0],
+    "narrator_6th_09":[0,0,0,1,0,0,1,1,0,0,1,0,0,1,0,0,1,1,1,1,1,0,1,1,0,0,0,0,0,0,0,0,1,0,1,0,1,1,0,1,0,0,1,1,0,1,0,1,0,0,0,0,1,0,1,1,1,0,0,0,0,0,0,0,0,0,0,0,1,1,1,1,1,1,1,1,0,1,1,1,0,0,0,1,0,1,0,1,0,0,0,0,0,0,0,1,1,1,1,1,1,1,1,1,0,0,0,0,0,0,0],
+    "narrator_6th_10":[0,0,0,1,1,1,0,0,1,1,1,1,0,0,1,0,0,0,0,0,1,1,1,1,0,0,0,0,1,1,1,1,1,0,0,0,1,0,0,0,0,1,1,0,0,0,1,0,0,1,1,0,0,0,0,0,0,0,0,0,1,1,1,0,0,1,1,0,0,1,1,1,0,0,0,0,0,0,0,0,0,0,0,1,1,1,1,1,0,1,0,1,1,1,0,1,0,1,1,1,0,0,0,0,0,0],
+    "narrator_6th_11":[0,0,1,0,0,1,1,1,0,1,1,0,1,1,1,1,1,1,1,1,1,1,1,0,0,0,0,0,0,0,0,1,1,1,1,0,1,0,1,1,1,0,1,1,0,1,0,0,0,0],
+    "narrator_6th_13":[0,0,0,1,1,0,1,1,1,1,1,1,1,1,0,0,0,0,0,0,0,0,0,0,1,1,1,1,1,0,0,1,0,1,1,1,1,1,0,1,0,0,1,0,1,0,0,1,1,1,1,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,1,0,1,1,1,1,0,0,0,0,0,0,0,0,0,1,1,0,1,0,0,1,1,0,0,0,1,0,1,1,1,1,1,1,0,0,0,1,1,1,1,0,0,0,0,0,1,1,1,1,1,0,0,0,0,0,0],
+    "narrator_6th_14":[0,0,0,0,1,1,1,0,1,1,1,1,1,1,1,0,0,0,0,1,1,1,1,1,1,1,1,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,1,1,1,1,0,1,0,1,1,1,0,1,0,1,1,1,0,0,1,1,0,1,0,1,1,1,0,1,0,0,0,0,0,0],
+    "narrator_6th_15":[0,0,0,0,1,0,0,1,1,1,1,1,1,0,1,0,1,0,0,0,0,0,0,0,1,1,1,1,1,1,1,1,1,0,0,0,0,0,0,0,0,1,1,1,1,1,1,0,1,1,1,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,1,0,1,0,1,1,0,0,0,1,1,0,1,1,1,0,0,0,0,0,0,0,0,0],
+    "freddie_ross_6th_01":[0,0,0,1,1,0,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,1,1,1,1,0,0,1,1,1,1,1,1,1,1,0,0,1,1,1,1,1,0,1,1,0,0,0,0,0],
+    "janelle_ross_6th_01":[0,0,0,1,1,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,1,1,0,1,1,1,1,1,0,0,1,1,0,0,1,1,1,1,1,0,1,1,1,1,1,0,1,1,1,0,0,0],
+    "tom_ross_6th_01":[0,0,0,1,0,1,1,1,1,0,0,0,0,0,0,0,0,0,1,1,0,1,1,1,1,1,0,1,1,0,1,1,1,1,1,1,0,1,1,1,1,1,0,1,1,0,0,0],
+    "zink_ross_6th_02":[0,0,0,0,1,0,0,1,1,0,1,1,1,1,0,1,1,0,0,1,0,0,0,0,0,0,0,0,0,0,1,1,1,1,1,1,1,1,0,0,0,0,0,0,0,1,1,1,0,1,1,1,0,0,0],
+    "posters_ross_6th_02":[0,0,0,1,1,1,0,1,1,1,0,0,0,0,0,0,0,0,1,1,0,1,0,1,1,1,1,1,0,0,0,0,0,1,0,0,1,1,1,0,0,0,0,0,0,1,1,1,1,1,0,0,1,1,0,0,0,0],
+    "campaign_ross_6th_02":[0,0,0,1,1,0,1,1,0,1,1,1,1,1,1,1,1,1,1,0,0,0,0,0,0,0,0,1,1,1,1,0,1,1,1,0,1,1,1,0,0,1,1,1,1,1,0,0,0,0],
+    "ross_6th_05":[0,0,0,1,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,1,0,1,1,1,1,1,1,1,1,0,0,0],
+    "ross_6th_06":[0,0,0,1,1,1,0,0,0,0,1,1,0,1,0,0,0,0,0,0,0,0,0,0,1,1,1,1,0,0,0,0],
+    "ross_6th_07":[0,0,0,1,1,1,1,0,0,0,1,1,1,1,1,0,0,0,0],
+    "ross_6th_08":[0,0,0,1,1,1,1,1,1,1,1,1,1,0,1,0,0,0,0,0,0,0,0,1,1,0,1,0,0,1,1,1,1,0,0,0,0,0,0],
+    "ross_6th_09":[0,0,1,1,1,1,0,0,0,0,0,1,1,1,1,1,1,0,0,0,0,0,1,1,1,1,1,0,0,1,1,0,1,0,0,1,0,1,1,0,1,1,1,0,0,0,0,0,0,0,0],
+    "ross_6th_10":[0,0,0,0,1,1,1,1,0,0,0,0,0,0,1,1,1,1,0,1,0,0,1,1,1,0,0,0,0],
+    "ross_6th_11":[0,0,0,1,1,0,0,0,0,0,0,0,1,1,0,1,1,0,0,0,0,0,0,0,0,1,1,1,1,1,1,1,1,0,1,0,0,0,1,1,1,1,0,0,0,0],
+    "ross_6th_12":[0,0,0,0,0,1,1,1,1,1,1,0,0,0,1,1,1,0,1,0,0,1,1,0,0,0,0,0,0,0],
+    "ross_6th_13":[0,0,0,1,1,1,1,0,1,1,1,1,1,1,1,0,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+    "tom_6th_01":[0,0,1,1,1,0,1,1,0,0,0,0,1,1,1,1,1,1,1,1,0,0,0,1,1,1,1,1,0,1,0,1,0,0,0,0,0,0,0,0,0,1,1,1,1,0,0,0,1,1,1,1,0,0,0,0,1,1,0,0,0,0]
+  }
+}
