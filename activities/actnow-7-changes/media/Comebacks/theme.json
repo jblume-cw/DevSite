@@ -1,0 +1,67 @@
+{
+  "texture": "media/Comebacks/texture.png",
+  "textureMap": "media/Comebacks/texture.json",
+  "textureKey": "comebacks_texture",
+  "data": "media/Comebacks/sceneData.json",
+  "fonts" : {
+    "comebacks_header": { "font": "32px nunitoregular", "fill": "#000000",  "fontWeight": "bold", "align": "center", "wordWrap": true, "wordWrapWidth": 550 },
+    "comebacks_bullet": { "font": "29px nunitoregular", "fill": "#000000",  "fontWeight": "bold", "align": "left", "bulletOffset": 1, "wordWrap": true, "wordWrapWidth": 550, "lineSpacing": -5 },
+    "comebacks_completed": { "font": "20px nunitoregular", "fill": "#000000",  "fontWeight": "bold", "align": "center", "wordWrap": true, "wordWrapWidth": 550 }
+  },
+  "images": {
+    "decorations": {
+      "comebacks": "Get the Facts/Comebacks/c0100.jpg",
+      "noReactionComeback": "Get the Facts/Comebacks/c0300.png",
+      "agreementComeback": "Get the Facts/Comebacks/c0400.png",
+      "strongAssertiveComeback": "Get the Facts/Comebacks/c0500.png"
+    }
+  },
+  "sceneImages": {
+    "getTheFactsBackground": "Get the Facts/get-the-facts-background.png"
+  },
+  "buttons": {
+    "getTheFactsBack": {
+      "up": "Get the Facts/get-the-facts-back.png",
+      "over": "Get the Facts/get-the-facts-back-over.png",
+      "out": "Get the Facts/get-the-facts-back.png",
+      "down": "Get the Facts/get-the-facts-back.png"
+    },
+    "getTheFactsNext": {
+      "up": "Get the Facts/get-the-facts-next.png",
+      "over": "Get the Facts/get-the-facts-next-over.png",
+      "out": "Get the Facts/get-the-facts-next.png",
+      "down": "Get the Facts/get-the-facts-next.png"
+    },
+    "getTheFactsSoundOn": {
+      "up": "Get the Facts/get-the-facts-sound-on.png",
+      "over": "Get the Facts/get-the-facts-sound-on-over.png",
+      "out": "Get the Facts/get-the-facts-sound-on.png",
+      "down": "Get the Facts/get-the-facts-sound-on.png"
+    },
+    "getTheFactsSoundOff": {
+      "up": "Get the Facts/get-the-facts-sound-off.png",
+      "over": "Get the Facts/get-the-facts-sound-off-over.png",
+      "out": "Get the Facts/get-the-facts-sound-off.png",
+      "down": "Get the Facts/get-the-facts-sound-off.png"
+    },
+    "getTheFactsExit": {
+      "up": "Get the Facts/get-the-facts-exit.png",
+      "over": "Get the Facts/get-the-facts-exit.png",
+      "out": "Get the Facts/get-the-facts-exit.png",
+      "down": "Get the Facts/get-the-facts-exit.png"
+    }
+  },
+  "comebacksLeftMargin": 30,
+  "soundKey": "comebacksSounds",
+  "soundFile": [ "media/Comebacks/comebacks.m4a", "media/Comebacks/comebacks.ogg" ],
+  "sounds": {
+    "c0100": [ 0.00000000, 15.70478458, false, "c0100, Starts at 0.0, lasts 15.70478458 seconds, doesn't loop"],
+    "c0200a": [ 15.70478458, 2.5282766399999996, false, "c0200a"],
+    "c0200b": [ 18.23306122, 2.1407256299999986, false, "c0200b"],
+    "c0200c": [ 20.37378685, 1.8731292500000016, false, "c0200c"],
+    "c0200d": [ 22.24691610, 2.2145351499999997, false, "c0200d"],
+    "c0300": [ 24.46145125, 19.23269841, false, "c0300"],
+    "c0400": [ 43.69414966, 17.997233559999998, false, "c0400"],
+    "c0500": [ 61.69138322, 21.796, false, "c0500"]
+  }
+}
