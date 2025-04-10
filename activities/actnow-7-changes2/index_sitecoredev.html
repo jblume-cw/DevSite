@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html></html>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta property="og:title" content="Children's Hospital Grade 7 Influence" />
+  <title>Grade 7 Influence</title>
+  <script>
+    _environmentSettings = {
+      assetPath: "",
+    };
+  </script>
+  <script src="engine/APIWrapper.js"></script>
+  <script src="engine/phaser.js"></script>
+  <script src="engine/scene-engine.min.js"></script>
+
+  <link
+    rel="stylesheet"
+    href="Nunito-Bold/stylesheet.css"
+    type="text/css"
+    charset="utf-8"
+  />
+
+  <link
+    rel="stylesheet"
+    href="Nunito-Regular/stylesheet.css"
+    type="text/css"
+    charset="utf-8"
+  />
+
+  <link
+    rel="stylesheet"
+    href="Oswald-Regular/stylesheet.css"
+    type="text/css"
+    charset="utf-8"
+  />
+
+  <script
+    src="https://fast.wistia.com/assets/external/E-v1.js"
+    charset="ISO-8859-1"
+    async
+  ></script>
+  <style>
+    .gameItem {
+      width: 100%;
+      height: 100%;
+    }
+    .gameItem canvas {
+      margin-left: auto;
+      margin-right: auto;
+    }
+    #gameContainer {
+      width: 100%;
+      height: 100%;
+      position: relative;
+      background-color: white;
+    }
+    #fullscreen-container {
+      background-color: white;
+      width: 100%;
+      height: 100%;
+    }
+  </style>
+  <script type="text/javascript">
+    SceneEngine("game", 700, 525);
+  </script>
+</head>
+<body>
+  <div
+    id="preloadFontNunitoBold"
+    style="position: absolute; left: -1000em; font-family: nunitobold"
+  >
+    .
+  </div>
+  <div
+    id="preloadFontNunitoRegular"
+    style="position: absolute; left: -1000em; font-family: nunitoregular"
+  >
+    .
+  </div>
+  <div
+    id="preloadFontOswaldRegular"
+    style="position: absolute; left: -1000em; font-family: oswaldregular"
+  >
+    .
+  </div>
+  <div id="fullscreen-container">
+    <div id="gameContainer" class="container">
+      <div id="game" class="gameItem" style="z-index: 100">
+        <span style="display: none"></span>
+      </div>
+    </div>
+  </div>
+</body>

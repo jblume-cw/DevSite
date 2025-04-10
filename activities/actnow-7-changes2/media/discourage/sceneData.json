@@ -1,0 +1,379 @@
+{
+  "play": {
+    "start": "scene1",
+    "showPlayThrough": false,
+    "scenes": {
+      "scene1": {
+        "id": "scene1",
+        "background": "cafeteriaBackground",
+        "title": "Scene 1",
+        "description": "grade 7 discourage presentation scene 1 cafeteria",
+        "call": {"func": "sendSCORM"},
+        "actors": [
+          {
+            "name": "announcerBox_01",
+            "type": "announcer",
+            "location": [ 2, 5 ],
+            "text": "You have the right attitude about bullying – you think it’s wrong and it should be stopped.",
+            "announcerBox": true
+          },
+          {
+            "name": "sound_1_01",
+            "type": "audio",
+            "audio": ["1_01"],
+            "variable": "sound_1_01"
+          }
+        ],
+        "outcomes": {
+          "scene_1_sound_2": {
+            "events": {"sound_1_01": "played" },
+            "actions": [
+              { "type": "add-actor", "args": [
+                {
+                  "name": "sound_1_02",
+                  "type": "audio",
+                  "audio": [ "1_02"],
+                  "variable": "sound_1_02"
+                }
+              ] },
+              { "type": "add-actor", "args": [
+                {
+                  "name": "augustine",
+                  "type": "decoration",
+                  "image": "augustine",
+                  "key": "decorations",
+                  "location": [ 185, 245 ],
+                  "scale": [ -0.40, 0.40 ]
+                }
+              ] },
+              { "type": "add-actor", "args": [
+                {
+                  "name": "janelle",
+                  "type": "decoration",
+                  "image": "janelle",
+                  "key": "decorations",
+                  "location": [ 500, 280 ],
+                  "scale": [ 0.44, 0.44 ]
+                }
+              ] }
+            ]
+          },
+          "scene_1_sound_3": {
+            "events": {"sound_1_02": "played" },
+            "actions": [
+              { "type": "add-actor", "args": [
+                {
+                  "name": "sound_1_03",
+                  "type": "audio",
+                  "audio": [ "1_03"],
+                  "variable": "sound_1_03"
+                }
+              ] },
+              { "type": "add-actor", "args": [
+                {
+                  "name": "mandy",
+                  "type": "decoration",
+                  "image": "mandy",
+                  "key": "decorations",
+                  "location": [ 610, 327 ],
+                  "scale": [ 0.35, 0.35 ]
+                }
+              ] }
+            ]
+          },
+          "scene_1_sound_4": {
+            "events": {"sound_1_03": "played" },
+            "actions": [
+              { "type": "add-actor", "args": [
+                {
+                  "name": "sound_1_04",
+                  "type": "audio",
+                  "audio": [ "1_04"],
+                  "variable": "sound_1_04"
+                }
+              ] },
+              { "type": "add-actor", "args": [
+                {
+                  "name": "dane",
+                  "type": "decoration",
+                  "image": "dane",
+                  "key": "decorations",
+                  "location": [ 167, 250 ],
+                  "scale": [ 0.33, 0.33 ]
+                }
+              ] },
+              { "type": "add-actor", "args": [
+                {
+                  "name": "ross",
+                  "type": "decoration",
+                  "image": "ross",
+                  "key": "decorations",
+                  "location": [ 303, 265 ],
+                  "scale": [ 0.33, 0.33 ]
+                }
+              ] }
+            ]
+          },
+          "scene_1_sound_5": {
+            "events": {"sound_1_04": "played" },
+            "actions": [
+              { "type": "remove-actor", "args": ["announcerBox_01"] },
+              { "type": "add-actor", "args": [
+                {
+                  "name": "announcerBox_02",
+                  "type": "announcer",
+                  "location": [ 2, 5 ],
+                  "text": "But attitude is only one part of it.",
+                  "announcerBox": true
+                }
+              ] },
+              { "type": "add-actor", "args": [
+                {
+                  "name": "sound_1_05",
+                  "type": "audio",
+                  "audio": [ "1_05"],
+                  "variable": "sound_1_05"
+                }
+              ] }
+            ]
+          },
+          "scene_1_sound_6": {
+            "events": {"sound_1_05": "played" },
+            "actions": [
+              { "type": "remove-actor", "args": ["announcerBox_02"] },
+              { "type": "add-actor", "args": [
+                {
+                  "name": "announcerBox_03",
+                  "type": "announcer",
+                  "location": [ 2, 5 ],
+                  "text": "You have to learn to act, too!",
+                  "announcerBox": true
+                }
+              ] },
+              { "type": "add-actor", "args": [
+                {
+                  "name": "sound_1_06",
+                  "type": "audio",
+                  "audio": [ "1_06"],
+                  "variable": "sound_1_06"
+                }
+              ] }
+            ]
+          },
+          "scene_2_start": {
+            "events": {"sound_1_06": "played" },
+            "actions": [
+              { "type": "scene", "args": [ "scene2" ] }
+            ]
+          }
+        }
+      },
+      "scene2": {
+        "id": "scene2",
+        "background": "hallwayBackground",
+        "title": "Presentation Scene 2",
+        "description": "continuing presentation hallway",
+        "call": {"func": "sendSCORM"},
+        "actors": [
+          {
+            "name": "announcerBox_04",
+            "type": "announcer",
+            "location": [ 2, 5 ],
+            "text": "Bullying gets worse when nobody does anything about it.",
+            "announcerBox": true
+          },
+          {
+            "name": "sound_2_01",
+            "type": "audio",
+            "audio": ["2_01"],
+            "variable": "sound_2_01"
+          },
+          {
+            "name": "dane",
+            "type": "decoration",
+            "image": "dane",
+            "key": "decorations",
+            "location": [ 280, 255 ],
+            "scale": [ 0.34, 0.34 ]
+          }
+        ],
+        "outcomes": {
+          "scene_2_sound_2": {
+            "events": {"sound_2_01": "played" },
+            "actions": [
+              { "type": "remove-actor", "args": ["announcerBox_04"] },
+              { "type": "remove-actor", "args": ["dane"] },
+              { "type": "add-actor", "args": [
+                {
+                  "name": "announcerBox_05",
+                  "type": "announcer",
+                  "location": [ 2, 5 ],
+                  "text": "Freddie trusts and confides in you, but he’s still getting bullied every day.",
+                  "announcerBox": true
+                }
+              ] },
+              { "type": "add-actor", "args": [
+                {
+                  "name": "sound_2_02",
+                  "type": "audio",
+                  "audio": [ "2_02"],
+                  "variable": "sound_2_02"
+                }
+              ] },
+              { "type": "add-actor", "args": [
+                {
+                  "name": "freddie",
+                  "type": "decoration",
+                  "image": "freddie",
+                  "key": "decorations",
+                  "location": [ 270, 258 ],
+                  "scale": [ 0.56, 0.56 ]
+                }
+              ] }
+            ]
+          },
+          "scene_2_sound_3": {
+            "events": {"sound_2_02": "played" },
+            "actions": [
+              { "type": "remove-actor", "args": ["freddie"] },
+              { "type": "add-actor", "args": [
+                {
+                  "name": "sound_2_03",
+                  "type": "audio",
+                  "audio": [ "2_03"],
+                  "variable": "sound_2_03"
+                }
+              ] },
+              { "type": "add-actor", "args": [
+                {
+                  "name": "freddie",
+                  "type": "decoration",
+                  "image": "freddie",
+                  "key": "decorations",
+                  "location": [ 270, 258 ],
+                  "scale": [ 0.56, 0.56 ],
+                  "tween": {
+                    "time": 1500,
+                    "location": [ 330, 310 ],
+                    "scale": [ 0.19, 0.19 ]
+                  }
+                }
+              ] }
+            ]
+          },
+          "scene_2_sound_4": {
+            "events": {"sound_2_03": "played" },
+            "actions": [
+              { "type": "add-actor", "args": [
+                {
+                  "name": "sound_2_04",
+                  "type": "audio",
+                  "audio": [ "2_04"],
+                  "variable": "sound_2_04"
+                }
+              ] },
+              { "type": "add-actor", "args": [
+                {
+                  "name": "tom",
+                  "type": "decoration",
+                  "image": "tom",
+                  "key": "decorations",
+                  "location": [ 305, 255 ],
+                  "scale": [ -0.38, 0.38 ]
+                }
+              ] },
+              { "type": "add-actor", "args": [
+                {
+                  "name": "dane",
+                  "type": "decoration",
+                  "image": "dane",
+                  "key": "decorations",
+                  "location": [ 425, 280 ],
+                  "scale": [ 0.33, 0.33 ]
+                }
+              ] }
+            ]
+          },
+          "scene_2_sound_5": {
+            "events": {"sound_2_04": "played" },
+            "actions": [
+              { "type": "remove-actor", "args": ["announcerBox_05"] },
+              { "type": "remove-actor", "args": ["tom"] },
+              { "type": "remove-actor", "args": ["dane"] },
+              { "type": "add-actor", "args": [
+                {
+                  "name": "announcerBox_06",
+                  "type": "announcer",
+                  "location": [ 2, 5 ],
+                  "text": "Ms. Augustine has noticed the problem and is trying to revise the school’s anti-bullying policy, but she’s having trouble getting support.",
+                  "announcerBox": true
+                }
+              ] },
+              { "type": "add-actor", "args": [
+                {
+                  "name": "sound_2_05",
+                  "type": "audio",
+                  "audio": [ "2_05"],
+                  "variable": "sound_2_05"
+                }
+              ] },
+              { "type": "add-actor", "args": [
+                {
+                  "name": "augustine",
+                  "type": "decoration",
+                  "image": "augustine",
+                  "key": "decorations",
+                  "location": [ 390, 265 ],
+                  "scale": [ 0.50, 0.50 ]
+                }
+              ] }
+            ]
+          },
+          "scene_3_start": {
+            "events": {"sound_2_05": "played" },
+            "actions": [
+              { "type": "scene", "args": [ "scene3" ] }
+            ]
+          }
+        }
+      },
+      "scene3": {
+        "id": "scene3",
+        "background": "classroomWithAugustineBackground",
+        "title": "Presentation Scene 3",
+        "description": "continuing presentation classroom",
+        "call": {"func": "sendSCORM"},
+        "actors": [
+          {
+            "name": "announcerBox_07",
+            "type": "announcer",
+            "location": [ 2, 5 ],
+            "text": "Some other teachers don’t believe there’s a problem, and some students think her efforts are lame.",
+            "announcerBox": true
+          },
+          {
+            "name": "sound_3_01",
+            "type": "audio",
+            "audio": ["3_01"],
+            "variable": "sound_3_01"
+          }
+        ],
+        "outcomes": {
+          "scene_3_ended": {
+            "events": {"sound_3_01": "played" },
+            "actions": [
+              { "type": "add-actor", "args": [
+                {
+                  "name": "moveonbox",
+                  "type": "instructions",
+                  "location": [ 300, 250 ],
+                  "text": "You have completed this activity."
+                }
+              ] }
+            ]
+          }
+        }
+      }
+    }
+  }
+}

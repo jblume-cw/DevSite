@@ -1,0 +1,86 @@
+{
+  "texture": "media/Cyberbullying/texture.png",
+  "textureMap": "media/Cyberbullying/texture.json",
+  "textureKey": "cyberbulying_texture",
+  "data": "media/Cyberbullying/sceneData.json",
+  "fonts" : {
+    "cyberbullying_header": { "font": "32px nunitoregular", "fill": "#000000",  "fontWeight": "bold" },
+    "cyberbullying_header2": { "font": "30px nunitoregular", "fill": "#000000",  "fontWeight": "bold" },
+    "cyberbullying_bullet": { "font": "22px nunitoregular", "fill": "#000000",  "fontWeight": "bold", "align": "left", "bulletOffset": 1, "wordWrap": true, "wordWrapWidth": 255, "lineSpacing": -5 },
+    "cyberbullying_bullet_wide": { "font": "30px nunitoregular", "fill": "#000000",  "fontWeight": "bold", "align": "left", "bulletOffset": 1, "wordWrap": true, "wordWrapWidth": 575, "lineSpacing": -5 },
+    "cyberbullying_completed": { "font": "30px nunitoregular", "fill": "#000000",  "fontWeight": "bold", "align": "center", "wordWrap": true, "wordWrapWidth": 550 }
+  },
+  "images": {
+    "decorations": {
+      "cyberbullying": "Get the Facts/Cyberbullying/y0100.png",
+      "whatIsCyberbullying": "Get the Facts/Cyberbullying/y0200.jpg",
+      "cyberbullyingHurts": "Get the Facts/Cyberbullying/y0300.jpg",
+      "cyberbullyingLaws": "Get the Facts/Cyberbullying/y0600.jpg",
+      "stayingCyberSafe": "Get the Facts/Cyberbullying/y0700.jpg",
+      "horizontalLine": "horizontal-line.png"
+    }
+  },
+  "sceneImages": {
+    "getTheFactsBackground": "Get the Facts/get-the-facts-background.png"
+  },
+  "buttons": {
+    "getTheFactsBack": {
+      "up": "Get the Facts/get-the-facts-back.png",
+      "over": "Get the Facts/get-the-facts-back-over.png",
+      "out": "Get the Facts/get-the-facts-back.png",
+      "down": "Get the Facts/get-the-facts-back.png"
+    },
+    "getTheFactsNext": {
+      "up": "Get the Facts/get-the-facts-next.png",
+      "over": "Get the Facts/get-the-facts-next-over.png",
+      "out": "Get the Facts/get-the-facts-next.png",
+      "down": "Get the Facts/get-the-facts-next.png"
+    },
+    "getTheFactsSoundOn": {
+      "up": "Get the Facts/get-the-facts-sound-on.png",
+      "over": "Get the Facts/get-the-facts-sound-on-over.png",
+      "out": "Get the Facts/get-the-facts-sound-on.png",
+      "down": "Get the Facts/get-the-facts-sound-on.png"
+    },
+    "getTheFactsSoundOff": {
+      "up": "Get the Facts/get-the-facts-sound-off.png",
+      "over": "Get the Facts/get-the-facts-sound-off-over.png",
+      "out": "Get the Facts/get-the-facts-sound-off.png",
+      "down": "Get the Facts/get-the-facts-sound-off.png"
+    },
+    "getTheFactsExit": {
+      "up": "Get the Facts/get-the-facts-exit.png",
+      "over": "Get the Facts/get-the-facts-exit.png",
+      "out": "Get the Facts/get-the-facts-exit.png",
+      "down": "Get the Facts/get-the-facts-exit.png"
+    }
+  },
+  "cyberbullyingLeftMargin": 30,
+  "soundKey": "cyberbullyingSounds",
+  "soundFile": [ "media/Cyberbullying/cyberbullying.m4a", "media/Cyberbullying/cyberbullying.ogg" ],
+  "sounds": {
+    "y0100": [ 0.00000000, 22.35548753, false, "y0100, Starts at 0.0, lasts 22.35548753 seconds, doesn't loop"],
+    "y0200a": [ 22.35548753, 14.087029480000002, false, "y0200a"],
+    "y0200b": [ 36.44251701, 3.3686394499999963, false, "y0200b"],
+    "y0200c": [ 39.81115646, 2.8045351499999995, false, "y0200c"],
+    "y0200d": [ 42.61569161, 2.605374150000003, false, "y0200d"],
+    "y0300": [ 45.22106576, 27.271405900000005, false, "y0300"],
+    "y0400a": [ 72.49247166, 3.0960317399999866, false, "y0400a"],
+    "y0400b": [ 75.58850340, 4.111473920000009, false, "y0400b"],
+    "y0400c": [ 79.69997732, 8.473696149999995, false, "y0400c"],
+    "y0400d": [ 88.17367347, 8.86884354, false, "y0400d"],
+    "y0400e": [ 97.04251701, 9.468888890000002, false, "y0400e"],
+    "y0500a": [ 106.51140590, 7.405351469999999, false, "y0500a"],
+    "y0500b": [ 113.91675737, 3.600226759999998, false, "y0500b"],
+    "y0500c": [ 117.51698413, 10.478707479999997, false, "y0500c"],
+    "y0600": [ 127.99569161, 39.04637188000001, false, "y0600"],
+    "y0700a": [ 167.04206349, 7.127278910000001, false, "y0700a"],
+    "y0700b": [ 174.16934240, 12.922766440000004, false, "y0700b"],
+    "y0700c": [ 187.09210884, 3.8782993199999964, false, "y0700c"],
+    "y0700d": [ 190.97040816, 4.258798189999993, false, "y0700d"],
+    "y0700e": [ 195.22920635, 3.409977319999996, false, "y0700e"],
+    "y0800a": [ 198.63918367, 11.093378690000009, false, "y0800a"],
+    "y0800b": [ 209.73256236, 7.198412700000006, false, "y0800b"],
+    "y0800c": [ 216.93097506, 3.353, false, "y0800c"]
+  }
+}

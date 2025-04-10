@@ -1,0 +1,249 @@
+{
+  "play": {
+    "start": "scene1",
+    "showPlayThrough": false,
+    "scenes": {
+      "scene1": {
+        "id": "scene1",
+        "background": "hallwayZinkPoster",
+        "title": "Scene 1",
+        "description": "grade 7 encourage presentation scene 1 hallway closeup zink poster",
+        "call": {"func": "sendSCORM"},
+        "actors": [
+          {
+            "name": "announcerBox_01",
+            "type": "announcer",
+            "location": [ 2, 5 ],
+            "text": "When you average out your behavior, you’re a bystander leaning towards a bully.",
+            "announcerBox": true
+          },
+          {
+            "name": "sound_1_01",
+            "type": "audio",
+            "audio": ["1_01"],
+            "variable": "sound_1_01"
+          }
+        ],
+        "outcomes": {
+          "scene_2_start": {
+            "events": {"sound_1_01": "played" },
+            "actions": [
+              { "type": "scene", "args": [ "scene2" ] }
+            ]
+          }
+        }
+      },
+      "scene2": {
+        "id": "scene2",
+        "background": "cafeteriaJanelle",
+        "title": "Presentation Scene 2",
+        "description": "continuing presentation cafeteria janelle",
+        "call": {"func": "sendSCORM"},
+        "actors": [
+          {
+            "name": "announcerBox_02",
+            "type": "announcer",
+            "location": [ 2, 5 ],
+            "text": "You might not ever insult someone to their face, and you might not ever hit or push someone, but the way you laugh at bullying behavior actually encourages it.",
+            "announcerBox": true
+          },
+          {
+            "name": "sound_2_01",
+            "type": "audio",
+            "audio": ["2_01"],
+            "variable": "sound_2_01"
+          }
+        ],
+        "outcomes": {
+          "scene_3_start": {
+            "events": {"sound_2_01": "played" },
+            "actions": [
+              { "type": "scene", "args": [ "scene3" ] }
+            ]
+          }
+        }
+      },
+      "scene3": {
+        "id": "scene3",
+        "background": "theaterTom",
+        "title": "Presentation Scene 3",
+        "description": "continuing presentation theater tom",
+        "call": {"func": "sendSCORM"},
+        "actors": [
+          {
+            "name": "announcerBox_03",
+            "type": "announcer",
+            "location": [ 2, 5 ],
+            "text": "Why do you find it funny when someone else is hurt, emotionally or physically?",
+            "announcerBox": true
+          },
+          {
+            "name": "sound_3_01",
+            "type": "audio",
+            "audio": ["3_01"],
+            "variable": "sound_3_01"
+          }
+        ],
+        "outcomes": {
+          "scene_4_start": {
+            "events": {"sound_3_01": "played" },
+            "actions": [
+              { "type": "scene", "args": [ "scene4" ] }
+            ]
+          }
+        }
+      },
+      "scene4": {
+        "id": "scene4",
+        "background": "classroomFreddie",
+        "title": "Presentation Scene 4",
+        "description": "continuing presentation classroom freddie",
+        "call": {"func": "sendSCORM"},
+        "actors": [
+          {
+            "name": "announcerBox_04",
+            "type": "announcer",
+            "location": [ 2, 5 ],
+            "text": "Why do you find it funny when someone else is hurt, emotionally or physically?",
+            "announcerBox": true
+          },
+          {
+            "name": "sound_4_01",
+            "type": "audio",
+            "audio": ["4_01"],
+            "variable": "sound_4_01"
+          }
+        ],
+        "outcomes": {
+          "scene_5_start": {
+            "events": {"sound_4_01": "played" },
+            "actions": [
+              { "type": "scene", "args": [ "scene5" ] }
+            ]
+          }
+        }
+      },
+      "scene5": {
+        "id": "scene5",
+        "background": "hallwayFreddieAndGroup",
+        "title": "Presentation Scene 5",
+        "description": "continuing presentation hallway freddie and group",
+        "call": {"func": "sendSCORM"},
+        "actors": [
+          {
+            "name": "announcerBox_05",
+            "type": "announcer",
+            "location": [ 2, 5 ],
+            "text": "Freddie continues to struggle.",
+            "announcerBox": true
+          },
+          {
+            "name": "sound_5_01",
+            "type": "audio",
+            "audio": ["5_01"],
+            "variable": "sound_5_01"
+          }
+        ],
+        "outcomes": {
+          "scene_6_start": {
+            "events": {"sound_5_01": "played" },
+            "actions": [
+              { "type": "scene", "args": [ "scene6" ] }
+            ]
+          }
+        }
+      },
+      "scene6": {
+        "id": "scene6",
+        "background": "classroomSadAugustine",
+        "title": "Presentation Scene 6",
+        "description": "continuing presentation classroom sad augustine",
+        "call": {"func": "sendSCORM"},
+        "actors": [
+          {
+            "name": "announcerBox_06",
+            "type": "announcer",
+            "location": [ 2, 5 ],
+            "text": "Ms. Augustine tried to take him under her wing, but she’s too busy dealing with other kids, like Tom, who actively threatens others who look or act different from him.",
+            "announcerBox": true
+          },
+          {
+            "name": "sound_6_01",
+            "type": "audio",
+            "audio": ["6_01"],
+            "variable": "sound_6_01"
+          }
+        ],
+        "outcomes": {
+          "scene_7_start": {
+            "events": {"sound_6_01": "played" },
+            "actions": [
+              { "type": "scene", "args": [ "scene7" ] }
+            ]
+          }
+        }
+      },
+      "scene7": {
+        "id": "scene7",
+        "background": "hallwayTomCloseup",
+        "title": "Presentation Scene 7",
+        "description": "continuing presentation hallway tom closeup",
+        "call": {"func": "sendSCORM"},
+        "actors": [
+          {
+            "name": "announcerBox_07",
+            "type": "announcer",
+            "location": [ 2, 5 ],
+            "text": "Ms. Augustine tried to take him under her wing, but she’s too busy dealing with other kids, like Tom, who actively threatens others who look or act different from him.",
+            "announcerBox": true
+          },
+          {
+            "name": "sound_7_01",
+            "type": "audio",
+            "audio": ["7_01"],
+            "variable": "sound_7_01"
+          }
+        ],
+        "outcomes": {
+          "scene_7_sound_2": {
+            "events": {"sound_7_01": "played" },
+            "actions": [
+              { "type": "remove-actor", "args": ["announcerBox_07"] },
+              { "type": "add-actor", "args": [
+                {
+                  "name": "announcerBox_08",
+                  "type": "announcer",
+                  "location": [ 2, 5 ],
+                  "text": "As long as you keep supporting that kind of behavior, Newbridge is only going to get worse.",
+                  "announcerBox": true
+                }
+              ] },
+              { "type": "add-actor", "args": [
+                {
+                  "name": "sound_7_02",
+                  "type": "audio",
+                  "audio": [ "7_02"],
+                  "variable": "sound_7_02"
+                }
+              ] }
+            ]
+          },
+          "scene_7_ended": {
+            "events": {"sound_7_02": "played" },
+            "actions": [
+              { "type": "add-actor", "args": [
+                {
+                  "name": "moveonbox",
+                  "type": "instructions",
+                  "location": [ 300, 250 ],
+                  "text": "You have completed this activity."
+                }
+              ] },
+              { "type": "choice", "args": [ "scorm_complete", "true"] }
+            ]
+          }
+        }
+      }
+    }
+  }
+}

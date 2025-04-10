@@ -1,0 +1,87 @@
+{
+  "texture": "media/HowCanYouStopBullying/texture.png",
+  "textureMap": "media/HowCanYouStopBullying/texture.json",
+  "textureKey": "hcysb_texture",
+  "data": "media/HowCanYouStopBullying/sceneData.json",
+  "fonts" : {
+    "howCanYouStopBullying_intro": { "font": "31px nunitoregular", "fill": "#000000", "fontWeight": "bold", "wordWrap": true, "wordWrapWidth": 550 },
+    "howCanYouStopBullying_heading1": { "font": "30px nunitoregular", "fill": "#000000",  "fontWeight": "bold", "align": "center", "wordWrap": true, "wordWrapWidth": 550 },
+    "howCanYouStopBullying_unbulletedHeading2": { "font": "22px nunitoregular", "fill": "#000000",  "fontWeight": "bold", "align": "left", "wordWrap": true, "wordWrapWidth": 285 },
+    "howCanYouStopBullying_bullet": { "font": "22px nunitoregular", "fill": "#000000",  "fontWeight": "bold", "align": "left", "wordWrap": true, "wordWrapWidth": 240 },
+    "howCanYouStopBullying_bulletSqueezeIn": { "font": "20px nunitoregular", "fill": "#000000",  "fontWeight": "bold", "align": "left", "wordWrap": true, "wordWrapWidth": 255 },
+    "howCanYouStopBullying_completedText": { "font": "20px nunitoregular", "fill": "#000000",  "fontWeight": "bold", "align": "center", "wordWrap": true, "wordWrapWidth": 550 }
+  },
+  "images": {
+    "decorations": {
+      "howCanYouStopBullying": "HowCanYouStopBullying/w0100.jpg",
+      "keepAnEyeOutForOneWeek": "HowCanYouStopBullying/w0200.jpg",
+      "whatsNext": "HowCanYouStopBullying/w0300.jpg",
+      "afterSchoolActivities": "HowCanYouStopBullying/w0400.jpg",
+      "beALeader": "HowCanYouStopBullying/w0500.jpg"
+    }
+  },
+  "sceneImages": {
+    "getTheFactsBackground": "get-the-facts-background.png"
+  },
+  "buttons": {
+    "getTheFactsBack": {
+      "up": "get-the-facts-back.png",
+      "over": "get-the-facts-back-over.png",
+      "out": "get-the-facts-back.png",
+      "down": "get-the-facts-back.png"
+    },
+    "getTheFactsNext": {
+      "up": "get-the-facts-next.png",
+      "over": "get-the-facts-next-over.png",
+      "out": "get-the-facts-next.png",
+      "down": "get-the-facts-next.png"
+    },
+    "getTheFactsSoundOn": {
+      "up": "get-the-facts-sound-on.png",
+      "over": "get-the-facts-sound-on-over.png",
+      "out": "get-the-facts-sound-on.png",
+      "down": "get-the-facts-sound-on.png"
+    },
+    "getTheFactsSoundOff": {
+      "up": "get-the-facts-sound-off.png",
+      "over": "get-the-facts-sound-off-over.png",
+      "out": "get-the-facts-sound-off.png",
+      "down": "get-the-facts-sound-off.png"
+    },
+    "getTheFactsExit": {
+      "up": "get-the-facts-exit.png",
+      "over": "get-the-facts-exit.png",
+      "out": "get-the-facts-exit.png",
+      "down": "get-the-facts-exit.png"
+    },
+    "radioButtonGroup" : {
+      "selected": "radioButtonSelected.png",
+      "unselected": "radioButtonUnselected.png"
+    }
+  },
+  "soundKey": "howCanYouStopBullyingSounds",
+  "soundFile": [
+    "media/HowCanYouStopBullying/howCanYouStopBullying.m4a",
+    "media/HowCanYouStopBullying/howCanYouStopBullying.ogg"
+  ],
+  "sounds": {
+    "w0100": [ 0.00000000, 13.97650794, false, "w0100, Starts at 0.0, lasts 13.97650794 seconds, doesn't loop"],
+    "w0200a": [ 13.97650794, 6.922380949999999, false, "w0200a"],
+    "w0200b": [ 20.89888889, 8.268820860000002, false, "w0200b"],
+    "w0200c": [ 29.16770975, 8.678594099999998, false, "w0200c"],
+    "w0200d": [ 37.84630385, 3.951473929999999, false, "w0200d"],
+    "w0200e": [ 41.79777778, 5.883287980000006, false, "w0200e"],
+    "w0300a": [ 47.68106576, 5.195442180000001, false, "w0300a"],
+    "w0300b": [ 52.87650794, 4.419795909999998, false, "w0300b"],
+    "w0300c": [ 57.29630385, 5.2539909300000005, false, "w0300c"],
+    "w0300d": [ 62.55029478, 10.712857150000005, false, "w0300d"],
+    "w0400a": [ 73.26315193, 18.772743759999997, false, "w0400a"],
+    "w0400b": [ 92.03589569, 4.147959189999995, false, "w0400b"],
+    "w0400c": [ 96.18385488, 9.920907020000001, false, "w0400c"],
+    "w0400d": [ 106.10476190, 6.649569170000007, false, "w0400d"],
+    "w0500a": [ 112.75433107, 6.735102039999987, false, "w0500a"],
+    "w0500b": [ 119.48943311, 5.85845805000001, false, "w0500b"],
+    "w0500c": [ 125.34789116, 7.462063490000006, false, "w0500c"],
+    "w0500d": [ 132.80995465, 18.987, false, "w0500d"]
+  }
+}

@@ -1,0 +1,212 @@
+{"frames": {
+
+"Get the Facts/Campaign/s0200.jpg":
+{
+	"frame": {"x":2,"y":528,"w":301,"h":321},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":301,"h":321},
+	"sourceSize": {"w":301,"h":321}
+},
+"Get the Facts/Campaign/s0300.jpg":
+{
+	"frame": {"x":305,"y":528,"w":301,"h":321},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":301,"h":321},
+	"sourceSize": {"w":301,"h":321}
+},
+"Get the Facts/Campaign/text1.png":
+{
+	"frame": {"x":2,"y":851,"w":246,"h":84},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":246,"h":84},
+	"sourceSize": {"w":246,"h":84}
+},
+"Get the Facts/Campaign/text10.png":
+{
+	"frame": {"x":608,"y":646,"w":166,"h":77},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":166,"h":77},
+	"sourceSize": {"w":166,"h":77}
+},
+"Get the Facts/Campaign/text11.png":
+{
+	"frame": {"x":608,"y":725,"w":195,"h":59},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":195,"h":59},
+	"sourceSize": {"w":195,"h":59}
+},
+"Get the Facts/Campaign/text12.png":
+{
+	"frame": {"x":250,"y":851,"w":226,"h":70},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":226,"h":70},
+	"sourceSize": {"w":226,"h":70}
+},
+"Get the Facts/Campaign/text2.png":
+{
+	"frame": {"x":369,"y":928,"w":136,"h":49},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":136,"h":49},
+	"sourceSize": {"w":136,"h":49}
+},
+"Get the Facts/Campaign/text3.png":
+{
+	"frame": {"x":507,"y":953,"w":137,"h":38},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":137,"h":38},
+	"sourceSize": {"w":137,"h":38}
+},
+"Get the Facts/Campaign/text4.png":
+{
+	"frame": {"x":606,"y":908,"w":166,"h":43},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":166,"h":43},
+	"sourceSize": {"w":166,"h":43}
+},
+"Get the Facts/Campaign/text5.png":
+{
+	"frame": {"x":2,"y":937,"w":365,"h":56},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":365,"h":56},
+	"sourceSize": {"w":365,"h":56}
+},
+"Get the Facts/Campaign/text6.png":
+{
+	"frame": {"x":608,"y":568,"w":185,"h":76},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":185,"h":76},
+	"sourceSize": {"w":185,"h":76}
+},
+"Get the Facts/Campaign/text7.png":
+{
+	"frame": {"x":606,"y":855,"w":169,"h":51},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":169,"h":51},
+	"sourceSize": {"w":169,"h":51}
+},
+"Get the Facts/Campaign/text8.png":
+{
+	"frame": {"x":608,"y":786,"w":159,"h":67},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":159,"h":67},
+	"sourceSize": {"w":159,"h":67}
+},
+"Get the Facts/Campaign/text9.png":
+{
+	"frame": {"x":478,"y":851,"w":126,"h":75},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":126,"h":75},
+	"sourceSize": {"w":126,"h":75}
+},
+"Get the Facts/get-the-facts-back-over.png":
+{
+	"frame": {"x":703,"y":190,"w":97,"h":64},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":97,"h":64},
+	"sourceSize": {"w":97,"h":64}
+},
+"Get the Facts/get-the-facts-back.png":
+{
+	"frame": {"x":703,"y":450,"w":88,"h":58},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":4,"y":3,"w":88,"h":58},
+	"sourceSize": {"w":97,"h":64}
+},
+"Get the Facts/get-the-facts-background.png":
+{
+	"frame": {"x":2,"y":2,"w":699,"h":524},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":0,"y":0,"w":699,"h":524},
+	"sourceSize": {"w":700,"h":525}
+},
+"Get the Facts/get-the-facts-exit.png":
+{
+	"frame": {"x":608,"y":528,"w":45,"h":37},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":45,"h":37},
+	"sourceSize": {"w":45,"h":37}
+},
+"Get the Facts/get-the-facts-next-over.png":
+{
+	"frame": {"x":703,"y":256,"w":96,"h":64},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":96,"h":64},
+	"sourceSize": {"w":96,"h":64}
+},
+"Get the Facts/get-the-facts-next.png":
+{
+	"frame": {"x":703,"y":389,"w":88,"h":59},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":4,"y":3,"w":88,"h":59},
+	"sourceSize": {"w":96,"h":64}
+},
+"Get the Facts/get-the-facts-sound-off-over.png":
+{
+	"frame": {"x":703,"y":2,"w":98,"h":98},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":0,"y":2,"w":98,"h":98},
+	"sourceSize": {"w":98,"h":100}
+},
+"Get the Facts/get-the-facts-sound-off.png":
+{
+	"frame": {"x":703,"y":102,"w":85,"h":86},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":7,"y":7,"w":85,"h":86},
+	"sourceSize": {"w":98,"h":100}
+},
+"Get the Facts/get-the-facts-sound-on-over.png":
+{
+	"frame": {"x":703,"y":322,"w":90,"h":65},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":0,"y":1,"w":90,"h":65},
+	"sourceSize": {"w":90,"h":66}
+},
+"Get the Facts/get-the-facts-sound-on.png":
+{
+	"frame": {"x":703,"y":510,"w":79,"h":56},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":6,"y":6,"w":79,"h":56},
+	"sourceSize": {"w":90,"h":66}
+},
+"horizontal-line.png":
+{
+	"frame": {"x":250,"y":923,"w":200,"h":3},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":200,"h":3},
+	"sourceSize": {"w":200,"h":3}
+}},
+"meta": {
+	"app": "http://www.codeandweb.com/texturepacker",
+	"version": "1.0",
+	"image": "texture.png",
+	"format": "RGBA8888",
+	"size": {"w":805,"h":995},
+	"scale": "1",
+	"smartupdate": "$TexturePacker:SmartUpdate:4b02f6f51a9f7aad919a01b8e94fd289:2b09905d5b1e44bf79dff9f322f9f664:88db1022cd6b660616541d2788fcd4f7$"
+}
+}
