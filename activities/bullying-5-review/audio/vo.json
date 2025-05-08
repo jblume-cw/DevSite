@@ -1,0 +1,103 @@
+{
+	"resources": [
+		"output/bp5-bullying-lesson/vo.ogg",
+		"output/bp5-bullying-lesson/vo.m4a"
+	],
+	"spritemap": {
+		"Slide 2": {
+			"start": 0,
+			"end": 34.029319727891156,
+			"loop": false
+		},
+		"Slide 3 intro": {
+			"start": 36,
+			"end": 43.45068027210884,
+			"loop": false
+		},
+		"Slide 3 physical": {
+			"start": 45,
+			"end": 56.80800453514739,
+			"loop": false
+		},
+		"Slide 3 social": {
+			"start": 58,
+			"end": 72.79467120181405,
+			"loop": false
+		},
+		"Slide 3 verbal": {
+			"start": 74,
+			"end": 87.6853514739229,
+			"loop": false
+		},
+		"Slide 4": {
+			"start": 89,
+			"end": 143.25598639455782,
+			"loop": false
+		},
+		"Slide 5 conclusion": {
+			"start": 145,
+			"end": 156.38133786848073,
+			"loop": false
+		},
+		"Slide 5 go with": {
+			"start": 158,
+			"end": 169.8240136054422,
+			"loop": false
+		},
+		"Slide 5 help": {
+			"start": 171,
+			"end": 179.13868480725623,
+			"loop": false
+		},
+		"Slide 5 intro": {
+			"start": 181,
+			"end": 201.82265306122449,
+			"loop": false
+		},
+		"Slide 5 invite": {
+			"start": 203,
+			"end": 209.97598639455782,
+			"loop": false
+		},
+		"Slide 5 speak up": {
+			"start": 211,
+			"end": 216.73333333333332,
+			"loop": false
+		},
+		"Slide 5 stand": {
+			"start": 218,
+			"end": 224.90666666666667,
+			"loop": false
+		},
+		"Slide 5 talk": {
+			"start": 226,
+			"end": 231.38675736961451,
+			"loop": false
+		},
+		"Slide 6": {
+			"start": 233,
+			"end": 253.81598639455783,
+			"loop": false
+		},
+		"Slide 7 conclusion": {
+			"start": 255,
+			"end": 267.90666666666664,
+			"loop": false
+		},
+		"Slide 7": {
+			"start": 269,
+			"end": 280.85068027210883,
+			"loop": false
+		},
+		"Slide 8": {
+			"start": 282,
+			"end": 324.29333333333335,
+			"loop": false
+		},
+		"Slide 9": {
+			"start": 326,
+			"end": 376.78401360544217,
+			"loop": false
+		}
+	}
+}
