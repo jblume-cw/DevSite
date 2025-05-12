@@ -1,0 +1,38 @@
+{
+	"resources": [
+		"output/bp5-zink-lesson/vo.ogg",
+		"output/bp5-zink-lesson/vo.m4a"
+	],
+	"spritemap": {
+		"Slide 1": {
+			"start": 0,
+			"end": 20.87265306122449,
+			"loop": false
+		},
+		"Slide 2": {
+			"start": 22,
+			"end": 41.535986394557824,
+			"loop": false
+		},
+		"Slide 3": {
+			"start": 43,
+			"end": 58.1225850340136,
+			"loop": false
+		},
+		"Slide 4": {
+			"start": 60,
+			"end": 100.82650793650794,
+			"loop": false
+		},
+		"Slide 5": {
+			"start": 102,
+			"end": 122.72,
+			"loop": false
+		},
+		"Slide 6": {
+			"start": 124,
+			"end": 132.3653514739229,
+			"loop": false
+		}
+	}
+}
