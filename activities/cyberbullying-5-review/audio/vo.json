@@ -1,0 +1,93 @@
+{
+	"resources": [
+		"output/bp5-cyberbullying-lesson/vo.ogg",
+		"output/bp5-cyberbullying-lesson/vo.m4a"
+	],
+	"spritemap": {
+		"Slide 10": {
+			"start": 0,
+			"end": 31.00265306122449,
+			"loop": false
+		},
+		"Slide 2": {
+			"start": 33,
+			"end": 44.568004535147395,
+			"loop": false
+		},
+		"Slide 3": {
+			"start": 46,
+			"end": 61.946666666666665,
+			"loop": false
+		},
+		"Slide 4 no": {
+			"start": 63,
+			"end": 69.70931972789116,
+			"loop": false
+		},
+		"Slide 4 yes": {
+			"start": 71,
+			"end": 78.6,
+			"loop": false
+		},
+		"Slide 4": {
+			"start": 80,
+			"end": 92.37598639455783,
+			"loop": false
+		},
+		"Slide 5 no": {
+			"start": 94,
+			"end": 99.26133786848072,
+			"loop": false
+		},
+		"Slide 5 yes": {
+			"start": 101,
+			"end": 105.74666666666667,
+			"loop": false
+		},
+		"Slide 5": {
+			"start": 107,
+			"end": 111.65598639455783,
+			"loop": false
+		},
+		"Slide 6 no": {
+			"start": 113,
+			"end": 123.04800453514738,
+			"loop": false
+		},
+		"Slide 6 yes": {
+			"start": 125,
+			"end": 134.62666666666667,
+			"loop": false
+		},
+		"Slide 6": {
+			"start": 136,
+			"end": 140.6026530612245,
+			"loop": false
+		},
+		"Slide 7 no": {
+			"start": 142,
+			"end": 150.46666666666667,
+			"loop": false
+		},
+		"Slide 7 yes": {
+			"start": 152,
+			"end": 159.49598639455783,
+			"loop": false
+		},
+		"Slide 7": {
+			"start": 161,
+			"end": 164.90666666666667,
+			"loop": false
+		},
+		"Slide 8": {
+			"start": 166,
+			"end": 202.6026530612245,
+			"loop": false
+		},
+		"Slide 9": {
+			"start": 204,
+			"end": 245.73972789115646,
+			"loop": false
+		}
+	}
+}
