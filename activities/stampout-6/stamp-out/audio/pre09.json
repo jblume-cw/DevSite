@@ -1,0 +1,37 @@
+{
+  "src": "pre09.m4a",
+  "data": {
+    "audioSprite": [
+      {
+        "id": "silence",
+        "startTime": 0,
+        "duration": 3000
+      },
+      {
+        "id": "PreQ9.aiff",
+        "startTime": 4000,
+        "duration": 21622.902494331065
+      },
+      {
+        "id": "PreQ9Ra.aiff",
+        "startTime": 27000,
+        "duration": 3215.6235827664404
+      },
+      {
+        "id": "PreQ9Rb.aiff",
+        "startTime": 32000,
+        "duration": 5253.945578231295
+      },
+      {
+        "id": "PreQ9Rc.aiff",
+        "startTime": 39000,
+        "duration": 3489.8412698412712
+      },
+      {
+        "id": "PreQ9Rd.aiff",
+        "startTime": 44000,
+        "duration": 4318.117913832197
+      }
+    ]
+  }
+}

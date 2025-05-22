@@ -1,0 +1,37 @@
+{
+  "src": "alc10.m4a",
+  "data": {
+    "audioSprite": [
+      {
+        "id": "silence",
+        "startTime": 0,
+        "duration": 3000
+      },
+      {
+        "id": "AlcQ10.aiff",
+        "startTime": 4000,
+        "duration": 11548.43537414966
+      },
+      {
+        "id": "AlcQ10Ra.aiff",
+        "startTime": 17000,
+        "duration": 2936.1224489795923
+      },
+      {
+        "id": "AlcQ10Rb.aiff",
+        "startTime": 21000,
+        "duration": 2515.9863945578245
+      },
+      {
+        "id": "AlcQ10Rc.aiff",
+        "startTime": 25000,
+        "duration": 966.1451247165544
+      },
+      {
+        "id": "AlcQ10Rd.aiff",
+        "startTime": 27000,
+        "duration": 5091.60997732426
+      }
+    ]
+  }
+}

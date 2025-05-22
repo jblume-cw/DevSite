@@ -1,0 +1,22 @@
+{
+  "src": "q05.m4a",
+  "data": {
+    "audioSprite": [
+      {
+        "id": "RTPQ5",
+        "startTime": 0,
+        "duration": 11274.716553287983
+      },
+      {
+        "id": "RTPQ5rABC",
+        "startTime": 13000,
+        "duration": 4900.294784580499
+      },
+      {
+        "id": "RTPQ5rD",
+        "startTime": 19000,
+        "duration": 649.9999999999986
+      }
+    ]
+  }
+}

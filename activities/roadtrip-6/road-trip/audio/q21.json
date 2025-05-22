@@ -1,0 +1,22 @@
+{
+  "src": "q21.m4a",
+  "data": {
+    "audioSprite": [
+      {
+        "id": "RTPQ21",
+        "startTime": 0,
+        "duration": 4646.25850340136
+      },
+      {
+        "id": "RTPQ21rA",
+        "startTime": 6000,
+        "duration": 6218.662131519274
+      },
+      {
+        "id": "RTPQ21rB",
+        "startTime": 14000,
+        "duration": 4544.285714285714
+      }
+    ]
+  }
+}

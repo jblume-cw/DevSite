@@ -1,0 +1,27 @@
+{
+  "src": "tob07.m4a",
+  "data": {
+    "audioSprite": [
+      {
+        "id": "silence",
+        "startTime": 0,
+        "duration": 3000
+      },
+      {
+        "id": "TobQ7.aiff",
+        "startTime": 4000,
+        "duration": 12722.925170068027
+      },
+      {
+        "id": "TobQ7Racd.aiff",
+        "startTime": 18000,
+        "duration": 4786.802721088435
+      },
+      {
+        "id": "TobQ7Rb.aiff",
+        "startTime": 24000,
+        "duration": 833.6961451247156
+      }
+    ]
+  }
+}

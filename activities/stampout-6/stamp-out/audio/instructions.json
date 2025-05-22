@@ -1,0 +1,42 @@
+{
+  "src": "instructions.m4a",
+  "data": {
+    "audioSprite": [
+      {
+        "id": "silence",
+        "startTime": 0,
+        "duration": 3000
+      },
+      {
+        "id": "I1.aiff",
+        "startTime": 4000,
+        "duration": 10488.163265306122
+      },
+      {
+        "id": "I2.aiff",
+        "startTime": 16000,
+        "duration": 5098.480725623581
+      },
+      {
+        "id": "I3.aiff",
+        "startTime": 23000,
+        "duration": 7375.102040816327
+      },
+      {
+        "id": "I4.aiff",
+        "startTime": 32000,
+        "duration": 6164.0816326530585
+      },
+      {
+        "id": "I5.aiff",
+        "startTime": 40000,
+        "duration": 4076.3945578231287
+      },
+      {
+        "id": "I6.aiff",
+        "startTime": 46000,
+        "duration": 2277.278911564629
+      }
+    ]
+  }
+}

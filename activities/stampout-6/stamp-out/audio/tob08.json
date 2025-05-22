@@ -1,0 +1,37 @@
+{
+  "src": "tob08.m4a",
+  "data": {
+    "audioSprite": [
+      {
+        "id": "silence",
+        "startTime": 0,
+        "duration": 3000
+      },
+      {
+        "id": "TobQ8.aiff",
+        "startTime": 4000,
+        "duration": 18393.4693877551
+      },
+      {
+        "id": "TobQ8Ra.aiff",
+        "startTime": 24000,
+        "duration": 4556.41723356009
+      },
+      {
+        "id": "TobQ8Rb.aiff",
+        "startTime": 30000,
+        "duration": 5210.589569161001
+      },
+      {
+        "id": "TobQ8Rc.aiff",
+        "startTime": 37000,
+        "duration": 6027.3469387755085
+      },
+      {
+        "id": "TobQ8Rd.aiff",
+        "startTime": 45000,
+        "duration": 4809.591836734697
+      }
+    ]
+  }
+}

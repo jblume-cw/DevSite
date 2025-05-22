@@ -1,0 +1,1227 @@
+{
+  "src": "stampout.m4a",
+  "data": {
+    "audioSprite": {
+      "silence": {
+        "start": 0,
+        "end": 3,
+        "loop": false
+      },
+      "AlcQ1.aiff": {
+        "start": 4,
+        "end": 19.20235827664399,
+        "loop": false
+      },
+      "AlcQ10.aiff": {
+        "start": 21,
+        "end": 32.54843537414966,
+        "loop": false
+      },
+      "AlcQ10Ra.aiff": {
+        "start": 34,
+        "end": 36.93612244897959,
+        "loop": false
+      },
+      "AlcQ10Rb.aiff": {
+        "start": 38,
+        "end": 40.51598639455782,
+        "loop": false
+      },
+      "AlcQ10Rc.aiff": {
+        "start": 42,
+        "end": 42.966145124716554,
+        "loop": false
+      },
+      "AlcQ10Rd.aiff": {
+        "start": 44,
+        "end": 49.09160997732426,
+        "loop": false
+      },
+      "AlcQ11.aiff": {
+        "start": 51,
+        "end": 64.19680272108843,
+        "loop": false
+      },
+      "AlcQ11Ra.aiff": {
+        "start": 66,
+        "end": 69.8727664399093,
+        "loop": false
+      },
+      "AlcQ11Rb.aiff": {
+        "start": 71,
+        "end": 75.11365079365079,
+        "loop": false
+      },
+      "AlcQ11Rc.aiff": {
+        "start": 77,
+        "end": 79.4673469387755,
+        "loop": false
+      },
+      "AlcQ11Rd.aiff": {
+        "start": 81,
+        "end": 84.41825396825396,
+        "loop": false
+      },
+      "AlcQ12.aiff": {
+        "start": 86,
+        "end": 100.16102040816327,
+        "loop": false
+      },
+      "AlcQ12Ra.aiff": {
+        "start": 102,
+        "end": 105.10931972789116,
+        "loop": false
+      },
+      "AlcQ12Rb.aiff": {
+        "start": 107,
+        "end": 110.30780045351474,
+        "loop": false
+      },
+      "AlcQ12Rc.aiff": {
+        "start": 112,
+        "end": 116.37755102040816,
+        "loop": false
+      },
+      "AlcQ12Rd.aiff": {
+        "start": 118,
+        "end": 121.70730158730159,
+        "loop": false
+      },
+      "AlcQ13.aiff": {
+        "start": 123,
+        "end": 141.450589569161,
+        "loop": false
+      },
+      "AlcQ13Ra.aiff": {
+        "start": 143,
+        "end": 143.64512471655328,
+        "loop": false
+      },
+      "AlcQ13Rb.aiff": {
+        "start": 145,
+        "end": 150.48972789115646,
+        "loop": false
+      },
+      "AlcQ13Rc.aiff": {
+        "start": 152,
+        "end": 158.00918367346938,
+        "loop": false
+      },
+      "AlcQ13Rd.aiff": {
+        "start": 160,
+        "end": 167.6292970521542,
+        "loop": false
+      },
+      "AlcQ14.aiff": {
+        "start": 169,
+        "end": 188.65460317460318,
+        "loop": false
+      },
+      "AlcQ14Racd.aiff": {
+        "start": 190,
+        "end": 193.17709750566894,
+        "loop": false
+      },
+      "AlcQ14Rb.aiff": {
+        "start": 195,
+        "end": 195.67133786848072,
+        "loop": false
+      },
+      "AlcQ1Rabd.aiff": {
+        "start": 197,
+        "end": 203.48873015873016,
+        "loop": false
+      },
+      "AlcQ1Rc.aiff": {
+        "start": 205,
+        "end": 210.51297052154194,
+        "loop": false
+      },
+      "AlcQ2.aiff": {
+        "start": 212,
+        "end": 229.14215419501133,
+        "loop": false
+      },
+      "AlcQ2Ra.aiff": {
+        "start": 231,
+        "end": 231.92705215419502,
+        "loop": false
+      },
+      "AlcQ2Rbcd.aiff": {
+        "start": 233,
+        "end": 237.43809523809523,
+        "loop": false
+      },
+      "AlcQ3.aiff": {
+        "start": 239,
+        "end": 254.10383219954647,
+        "loop": false
+      },
+      "AlcQ3Rabc.aiff": {
+        "start": 256,
+        "end": 260.73684807256234,
+        "loop": false
+      },
+      "AlcQ3Rd.aiff": {
+        "start": 262,
+        "end": 262.588253968254,
+        "loop": false
+      },
+      "AlcQ4.aiff": {
+        "start": 264,
+        "end": 277.0712471655329,
+        "loop": false
+      },
+      "AlcQ4Racd.aiff": {
+        "start": 279,
+        "end": 283.1331746031746,
+        "loop": false
+      },
+      "AlcQ4Rb.aiff": {
+        "start": 285,
+        "end": 285.78537414965984,
+        "loop": false
+      },
+      "AlcQ5.aiff": {
+        "start": 287,
+        "end": 302.2202494331066,
+        "loop": false
+      },
+      "AlcQ5Rabd.aiff": {
+        "start": 304,
+        "end": 308.55802721088435,
+        "loop": false
+      },
+      "AlcQ5Rc.aiff": {
+        "start": 310,
+        "end": 310.6220634920635,
+        "loop": false
+      },
+      "AlcQ6.aiff": {
+        "start": 312,
+        "end": 328.08274376417233,
+        "loop": false
+      },
+      "AlcQ6Rabc.aiff": {
+        "start": 330,
+        "end": 335.79972789115646,
+        "loop": false
+      },
+      "AlcQ6Rd.aiff": {
+        "start": 337,
+        "end": 337.7163492063492,
+        "loop": false
+      },
+      "AlcQ7.aiff": {
+        "start": 339,
+        "end": 352.9338321995465,
+        "loop": false
+      },
+      "AlcQ7Rabd.aiff": {
+        "start": 354,
+        "end": 358.845873015873,
+        "loop": false
+      },
+      "AlcQ7Rc.aiff": {
+        "start": 360,
+        "end": 360.7034693877551,
+        "loop": false
+      },
+      "AlcQ8.aiff": {
+        "start": 362,
+        "end": 377.85793650793653,
+        "loop": false
+      },
+      "AlcQ8Ra.aiff": {
+        "start": 379,
+        "end": 383.4356235827664,
+        "loop": false
+      },
+      "AlcQ8Rbcd.aiff": {
+        "start": 385,
+        "end": 387.47163265306125,
+        "loop": false
+      },
+      "AlcQ9.aiff": {
+        "start": 389,
+        "end": 403.940589569161,
+        "loop": false
+      },
+      "AlcQ9Rabc.aiff": {
+        "start": 405,
+        "end": 410.2254195011338,
+        "loop": false
+      },
+      "AlcQ9Rd.aiff": {
+        "start": 412,
+        "end": 415.68544217687077,
+        "loop": false
+      },
+      "I1.aiff": {
+        "start": 417,
+        "end": 427.4881632653061,
+        "loop": false
+      },
+      "I2.aiff": {
+        "start": 429,
+        "end": 434.0984807256236,
+        "loop": false
+      },
+      "I3.aiff": {
+        "start": 436,
+        "end": 443.37510204081633,
+        "loop": false
+      },
+      "I4.aiff": {
+        "start": 445,
+        "end": 451.16408163265305,
+        "loop": false
+      },
+      "I5.aiff": {
+        "start": 453,
+        "end": 457.0763945578231,
+        "loop": false
+      },
+      "I6.aiff": {
+        "start": 459,
+        "end": 461.2772789115646,
+        "loop": false
+      },
+      "InhQ1.aiff": {
+        "start": 463,
+        "end": 472.98487528344674,
+        "loop": false
+      },
+      "InhQ10.aiff": {
+        "start": 474,
+        "end": 485.3271655328798,
+        "loop": false
+      },
+      "InhQ10Ra.aiff": {
+        "start": 487,
+        "end": 490.47408163265305,
+        "loop": false
+      },
+      "InhQ10Rb.aiff": {
+        "start": 492,
+        "end": 495.48333333333335,
+        "loop": false
+      },
+      "InhQ10Rc.aiff": {
+        "start": 497,
+        "end": 500.54492063492063,
+        "loop": false
+      },
+      "InhQ10Rd.aiff": {
+        "start": 502,
+        "end": 507.4914058956916,
+        "loop": false
+      },
+      "InhQ1Ra.aiff": {
+        "start": 509,
+        "end": 511.35170068027213,
+        "loop": false
+      },
+      "InhQ1Rb.aiff": {
+        "start": 513,
+        "end": 515.4648072562359,
+        "loop": false
+      },
+      "InhQ1Rc.aiff": {
+        "start": 517,
+        "end": 521.0804988662131,
+        "loop": false
+      },
+      "InhQ1Rd.aiff": {
+        "start": 523,
+        "end": 525.2009297052155,
+        "loop": false
+      },
+      "InhQ2.aiff": {
+        "start": 527,
+        "end": 537.873514739229,
+        "loop": false
+      },
+      "InhQ2Ra.aiff": {
+        "start": 539,
+        "end": 543.2887301587301,
+        "loop": false
+      },
+      "InhQ2Rb.aiff": {
+        "start": 545,
+        "end": 547.8936961451247,
+        "loop": false
+      },
+      "InhQ2Rc.aiff": {
+        "start": 549,
+        "end": 553.1280725623583,
+        "loop": false
+      },
+      "InhQ2Rd.aiff": {
+        "start": 555,
+        "end": 558.6393197278911,
+        "loop": false
+      },
+      "InhQ3.aiff": {
+        "start": 560,
+        "end": 573.8665532879819,
+        "loop": false
+      },
+      "InhQ3Ra.aiff": {
+        "start": 575,
+        "end": 578.3646485260771,
+        "loop": false
+      },
+      "InhQ3Rb.aiff": {
+        "start": 580,
+        "end": 584.1078684807256,
+        "loop": false
+      },
+      "InhQ3Rc.aiff": {
+        "start": 586,
+        "end": 593.4765532879819,
+        "loop": false
+      },
+      "InhQ3Rd.aiff": {
+        "start": 595,
+        "end": 601.7959410430839,
+        "loop": false
+      },
+      "InhQ4.aiff": {
+        "start": 603,
+        "end": 615.4819727891156,
+        "loop": false
+      },
+      "InhQ4Ra.aiff": {
+        "start": 617,
+        "end": 623.2742176870748,
+        "loop": false
+      },
+      "InhQ4Rbcd.aiff": {
+        "start": 625,
+        "end": 629.2670294784581,
+        "loop": false
+      },
+      "InhQ5.aiff": {
+        "start": 631,
+        "end": 642.8507029478458,
+        "loop": false
+      },
+      "InhQ5Ra.aiff": {
+        "start": 644,
+        "end": 649.6812698412698,
+        "loop": false
+      },
+      "InhQ5Rb.aiff": {
+        "start": 651,
+        "end": 654.9185714285715,
+        "loop": false
+      },
+      "InhQ5Rc.aiff": {
+        "start": 656,
+        "end": 660.9184807256236,
+        "loop": false
+      },
+      "InhQ5Rd.aiff": {
+        "start": 662,
+        "end": 666.5965759637188,
+        "loop": false
+      },
+      "InhQ6.aiff": {
+        "start": 668,
+        "end": 682.8740362811791,
+        "loop": false
+      },
+      "InhQ6Rabc.aiff": {
+        "start": 684,
+        "end": 687.9399319727892,
+        "loop": false
+      },
+      "InhQ6Rd.aiff": {
+        "start": 689,
+        "end": 694.6363945578231,
+        "loop": false
+      },
+      "InhQ7.aiff": {
+        "start": 696,
+        "end": 708.9354648526078,
+        "loop": false
+      },
+      "InhQ7Ra.aiff": {
+        "start": 710,
+        "end": 715.0437188208617,
+        "loop": false
+      },
+      "InhQ7Rb.aiff": {
+        "start": 717,
+        "end": 717.9454421768708,
+        "loop": false
+      },
+      "InhQ7Rc.aiff": {
+        "start": 719,
+        "end": 722.9463265306123,
+        "loop": false
+      },
+      "InhQ7Rd.aiff": {
+        "start": 724,
+        "end": 730.6614739229025,
+        "loop": false
+      },
+      "InhQ8.aiff": {
+        "start": 732,
+        "end": 749.9709297052154,
+        "loop": false
+      },
+      "InhQ8Rab.aiff": {
+        "start": 751,
+        "end": 754.9055555555556,
+        "loop": false
+      },
+      "InhQ8Rc.aiff": {
+        "start": 756,
+        "end": 758.5260090702948,
+        "loop": false
+      },
+      "InhQ8Rd.aiff": {
+        "start": 760,
+        "end": 769.1732879818594,
+        "loop": false
+      },
+      "InhQ9.aiff": {
+        "start": 771,
+        "end": 786.0286848072562,
+        "loop": false
+      },
+      "InhQ9Ra.aiff": {
+        "start": 788,
+        "end": 792.8509070294784,
+        "loop": false
+      },
+      "InhQ9Rb.aiff": {
+        "start": 794,
+        "end": 798.4119274376417,
+        "loop": false
+      },
+      "InhQ9Rc.aiff": {
+        "start": 800,
+        "end": 803.3724489795918,
+        "loop": false
+      },
+      "InhQ9Rd.aiff": {
+        "start": 805,
+        "end": 807.7996145124716,
+        "loop": false
+      },
+      "MarQ1.aiff": {
+        "start": 809,
+        "end": 824.8963492063492,
+        "loop": false
+      },
+      "MarQ1abd.aiff": {
+        "start": 826,
+        "end": 829.2800680272109,
+        "loop": false
+      },
+      "MarQ1c.aiff": {
+        "start": 831,
+        "end": 831.9621995464853,
+        "loop": false
+      },
+      "MarQ2.aiff": {
+        "start": 833,
+        "end": 846.1842403628118,
+        "loop": false
+      },
+      "MarQ2Ra.aiff": {
+        "start": 848,
+        "end": 848.8397959183674,
+        "loop": false
+      },
+      "MarQ2Rbcd.aiff": {
+        "start": 850,
+        "end": 854.3836961451248,
+        "loop": false
+      },
+      "MarQ3.aiff": {
+        "start": 856,
+        "end": 868.5952607709751,
+        "loop": false
+      },
+      "MarQ3Ra.aiff": {
+        "start": 870,
+        "end": 874.7197278911565,
+        "loop": false
+      },
+      "MarQ3Rb.aiff": {
+        "start": 876,
+        "end": 876.8487074829932,
+        "loop": false
+      },
+      "MarQ3Rcd.aiff": {
+        "start": 878,
+        "end": 882.9561678004535,
+        "loop": false
+      },
+      "MarQ4.aiff": {
+        "start": 884,
+        "end": 896.0918367346939,
+        "loop": false
+      },
+      "MarQ4Ra.aiff": {
+        "start": 898,
+        "end": 902.7099319727891,
+        "loop": false
+      },
+      "MarQ4Rb.aiff": {
+        "start": 904,
+        "end": 907.7634013605442,
+        "loop": false
+      },
+      "MarQ4Rc.aiff": {
+        "start": 909,
+        "end": 913.3068707482993,
+        "loop": false
+      },
+      "MarQ4Rd.aiff": {
+        "start": 915,
+        "end": 919.9875736961451,
+        "loop": false
+      },
+      "MarQ5.aiff": {
+        "start": 921,
+        "end": 932.1957823129252,
+        "loop": false
+      },
+      "MarQ5Ra.aiff": {
+        "start": 934,
+        "end": 938.5140136054422,
+        "loop": false
+      },
+      "MarQ5Rb.aiff": {
+        "start": 940,
+        "end": 943.7717913832199,
+        "loop": false
+      },
+      "MarQ5Rc.aiff": {
+        "start": 945,
+        "end": 949.2534240362812,
+        "loop": false
+      },
+      "MarQ5Rd.aiff": {
+        "start": 951,
+        "end": 957.1799319727891,
+        "loop": false
+      },
+      "MarQ6.aiff": {
+        "start": 959,
+        "end": 975.3144444444445,
+        "loop": false
+      },
+      "MarQ6Rabd.aiff": {
+        "start": 977,
+        "end": 981.7128344671202,
+        "loop": false
+      },
+      "MarQ6Rc.aiff": {
+        "start": 983,
+        "end": 988.01,
+        "loop": false
+      },
+      "MarQ7.aiff": {
+        "start": 990,
+        "end": 1003.4668480725624,
+        "loop": false
+      },
+      "MarQ7Ra.aiff": {
+        "start": 1005,
+        "end": 1010.810544217687,
+        "loop": false
+      },
+      "MarQ7Rb.aiff": {
+        "start": 1012,
+        "end": 1017.4034693877551,
+        "loop": false
+      },
+      "MarQ7Rc.aiff": {
+        "start": 1019,
+        "end": 1026.815238095238,
+        "loop": false
+      },
+      "MarQ7Rd.aiff": {
+        "start": 1028,
+        "end": 1035.9490476190476,
+        "loop": false
+      },
+      "MarQ8.aiff": {
+        "start": 1037,
+        "end": 1052.7708390022676,
+        "loop": false
+      },
+      "MarQ8Ra.aiff": {
+        "start": 1054,
+        "end": 1060.0057142857142,
+        "loop": false
+      },
+      "MarQ8Rb.aiff": {
+        "start": 1062,
+        "end": 1066.3133106575963,
+        "loop": false
+      },
+      "MarQ8Rc.aiff": {
+        "start": 1068,
+        "end": 1073.2110884353742,
+        "loop": false
+      },
+      "MarQ8Rd.aiff": {
+        "start": 1075,
+        "end": 1082.8960997732427,
+        "loop": false
+      },
+      "MarQ9.aiff": {
+        "start": 1084,
+        "end": 1096.6415192743764,
+        "loop": false
+      },
+      "MarQ9Ra.aiff": {
+        "start": 1098,
+        "end": 1101.4762585034014,
+        "loop": false
+      },
+      "MarQ9Rb.aiff": {
+        "start": 1103,
+        "end": 1107.208276643991,
+        "loop": false
+      },
+      "MarQ9Rc.aiff": {
+        "start": 1109,
+        "end": 1114.4095464852608,
+        "loop": false
+      },
+      "MarQ9Rd.aiff": {
+        "start": 1116,
+        "end": 1119.7390702947846,
+        "loop": false
+      },
+      "PreQ1.aiff": {
+        "start": 1121,
+        "end": 1135.9540362811792,
+        "loop": false
+      },
+      "PreQ1Ra.aiff": {
+        "start": 1137,
+        "end": 1140.8651473922903,
+        "loop": false
+      },
+      "PreQ1Rb.aiff": {
+        "start": 1142,
+        "end": 1142.6954648526078,
+        "loop": false
+      },
+      "PreQ1Rc.aiff": {
+        "start": 1144,
+        "end": 1148.5679818594103,
+        "loop": false
+      },
+      "PreQ1Rd.aiff": {
+        "start": 1150,
+        "end": 1158.284739229025,
+        "loop": false
+      },
+      "PreQ2.aiff": {
+        "start": 1160,
+        "end": 1177.8866893424035,
+        "loop": false
+      },
+      "PreQ2Ra.aiff": {
+        "start": 1179,
+        "end": 1184.6310657596373,
+        "loop": false
+      },
+      "PreQ2Rb.aiff": {
+        "start": 1186,
+        "end": 1190.533446712018,
+        "loop": false
+      },
+      "PreQ2Rc.aiff": {
+        "start": 1192,
+        "end": 1194.788299319728,
+        "loop": false
+      },
+      "PreQ2Rd.aiff": {
+        "start": 1196,
+        "end": 1201.7726530612244,
+        "loop": false
+      },
+      "PreQ3.aiff": {
+        "start": 1203,
+        "end": 1216.0568707482994,
+        "loop": false
+      },
+      "PreQ3Ra.aiff": {
+        "start": 1218,
+        "end": 1222.3843537414966,
+        "loop": false
+      },
+      "PreQ3Rb.aiff": {
+        "start": 1224,
+        "end": 1228.502925170068,
+        "loop": false
+      },
+      "PreQ3Rc.aiff": {
+        "start": 1230,
+        "end": 1235.951111111111,
+        "loop": false
+      },
+      "PreQ3Rd.aiff": {
+        "start": 1237,
+        "end": 1242.9355328798185,
+        "loop": false
+      },
+      "PreQ4.aiff": {
+        "start": 1244,
+        "end": 1258.1632199546484,
+        "loop": false
+      },
+      "PreQ4Ra.aiff": {
+        "start": 1260,
+        "end": 1264.5961451247165,
+        "loop": false
+      },
+      "PreQ4Rb.aiff": {
+        "start": 1266,
+        "end": 1270.6514285714286,
+        "loop": false
+      },
+      "PreQ4Rc.aiff": {
+        "start": 1272,
+        "end": 1278.2197052154195,
+        "loop": false
+      },
+      "PreQ4Rd.aiff": {
+        "start": 1280,
+        "end": 1286.2180725623582,
+        "loop": false
+      },
+      "PreQ5.aiff": {
+        "start": 1288,
+        "end": 1301.6626077097505,
+        "loop": false
+      },
+      "PreQ5Rabc.aiff": {
+        "start": 1303,
+        "end": 1308.4121541950112,
+        "loop": false
+      },
+      "PreQ5Rd.aiff": {
+        "start": 1310,
+        "end": 1310.6837188208617,
+        "loop": false
+      },
+      "PreQ6.aiff": {
+        "start": 1312,
+        "end": 1326.3420408163265,
+        "loop": false
+      },
+      "PreQ6Rabd.aiff": {
+        "start": 1328,
+        "end": 1333.9326757369615,
+        "loop": false
+      },
+      "PreQ6Rc.aiff": {
+        "start": 1335,
+        "end": 1340.0039682539682,
+        "loop": false
+      },
+      "PreQ7.aiff": {
+        "start": 1342,
+        "end": 1363.1080952380953,
+        "loop": false
+      },
+      "PreQ7Rabd.aiff": {
+        "start": 1365,
+        "end": 1369.0414058956917,
+        "loop": false
+      },
+      "PreQ7Rc.aiff": {
+        "start": 1371,
+        "end": 1371.8621315192743,
+        "loop": false
+      },
+      "PreQ8.aiff": {
+        "start": 1373,
+        "end": 1388.8227210884354,
+        "loop": false
+      },
+      "PreQ8Rabc.aiff": {
+        "start": 1390,
+        "end": 1392.8107256235828,
+        "loop": false
+      },
+      "PreQ8Rd.aiff": {
+        "start": 1394,
+        "end": 1397.6326077097506,
+        "loop": false
+      },
+      "PreQ9.aiff": {
+        "start": 1399,
+        "end": 1420.6229024943311,
+        "loop": false
+      },
+      "PreQ9Ra.aiff": {
+        "start": 1422,
+        "end": 1425.2156235827665,
+        "loop": false
+      },
+      "PreQ9Rb.aiff": {
+        "start": 1427,
+        "end": 1432.2539455782312,
+        "loop": false
+      },
+      "PreQ9Rc.aiff": {
+        "start": 1434,
+        "end": 1437.4898412698412,
+        "loop": false
+      },
+      "PreQ9Rd.aiff": {
+        "start": 1439,
+        "end": 1443.318117913832,
+        "loop": false
+      },
+      "Pwr2Optns.aiff": {
+        "start": 1445,
+        "end": 1447.2744671201815,
+        "loop": false
+      },
+      "Pwr2Tries.aiff": {
+        "start": 1449,
+        "end": 1451.2702494331065,
+        "loop": false
+      },
+      "PwrSkp.aiff": {
+        "start": 1453,
+        "end": 1454.8651473922903,
+        "loop": false
+      },
+      "TobQ1.aiff": {
+        "start": 1456,
+        "end": 1467.4344444444444,
+        "loop": false
+      },
+      "TobQ10.aiff": {
+        "start": 1469,
+        "end": 1483.8274149659865,
+        "loop": false
+      },
+      "TobQ10Racd.aiff": {
+        "start": 1485,
+        "end": 1491.6874829931974,
+        "loop": false
+      },
+      "TobQ10Rb.aiff": {
+        "start": 1493,
+        "end": 1498.5637641723356,
+        "loop": false
+      },
+      "TobQ11.aiff": {
+        "start": 1500,
+        "end": 1512.48,
+        "loop": false
+      },
+      "TobQ11Ra.aiff": {
+        "start": 1514,
+        "end": 1516.6953741496598,
+        "loop": false
+      },
+      "TobQ11Rb.aiff": {
+        "start": 1518,
+        "end": 1518.9790249433106,
+        "loop": false
+      },
+      "TobQ11Rcd.aiff": {
+        "start": 1520,
+        "end": 1524.7176643990929,
+        "loop": false
+      },
+      "TobQ12.aiff": {
+        "start": 1526,
+        "end": 1539.8324489795918,
+        "loop": false
+      },
+      "TobQ12Ra.aiff": {
+        "start": 1541,
+        "end": 1541.6346031746032,
+        "loop": false
+      },
+      "TobQ12Rbcd.aiff": {
+        "start": 1543,
+        "end": 1547.3939455782313,
+        "loop": false
+      },
+      "TobQ13.aiff": {
+        "start": 1549,
+        "end": 1563.6433106575964,
+        "loop": false
+      },
+      "TobQ13Ra.aiff": {
+        "start": 1565,
+        "end": 1568.3139002267574,
+        "loop": false
+      },
+      "TobQ13Rb.aiff": {
+        "start": 1570,
+        "end": 1574.5830612244897,
+        "loop": false
+      },
+      "TobQ13Rc.aiff": {
+        "start": 1576,
+        "end": 1579.422879818594,
+        "loop": false
+      },
+      "TobQ13Rd.aiff": {
+        "start": 1581,
+        "end": 1584.706485260771,
+        "loop": false
+      },
+      "TobQ14.aiff": {
+        "start": 1586,
+        "end": 1598.917006802721,
+        "loop": false
+      },
+      "TobQ14Rabc.aiff": {
+        "start": 1600,
+        "end": 1603.9292290249432,
+        "loop": false
+      },
+      "TobQ14Rd.aiff": {
+        "start": 1605,
+        "end": 1608.5222222222221,
+        "loop": false
+      },
+      "TobQ15.aiff": {
+        "start": 1610,
+        "end": 1629.437732426304,
+        "loop": false
+      },
+      "TobQ15Rabd.aiff": {
+        "start": 1631,
+        "end": 1633.4968253968254,
+        "loop": false
+      },
+      "TobQ15Rc.aiff": {
+        "start": 1635,
+        "end": 1639.7397732426305,
+        "loop": false
+      },
+      "TobQ1Ra.aiff": {
+        "start": 1641,
+        "end": 1644.33179138322,
+        "loop": false
+      },
+      "TobQ1Rb.aiff": {
+        "start": 1646,
+        "end": 1649.5586848072562,
+        "loop": false
+      },
+      "TobQ1Rc.aiff": {
+        "start": 1651,
+        "end": 1654.925782312925,
+        "loop": false
+      },
+      "TobQ1Rd.aiff": {
+        "start": 1656,
+        "end": 1661.783514739229,
+        "loop": false
+      },
+      "TobQ2.aiff": {
+        "start": 1663,
+        "end": 1675.2781179138321,
+        "loop": false
+      },
+      "TobQ2Racd.aiff": {
+        "start": 1677,
+        "end": 1682.307074829932,
+        "loop": false
+      },
+      "TobQ2Rb.aiff": {
+        "start": 1684,
+        "end": 1689.1238095238095,
+        "loop": false
+      },
+      "TobQ3.aiff": {
+        "start": 1691,
+        "end": 1711.0637868480726,
+        "loop": false
+      },
+      "TobQ3Rabc.aiff": {
+        "start": 1713,
+        "end": 1720.7688888888888,
+        "loop": false
+      },
+      "TobQ3Rd.aiff": {
+        "start": 1722,
+        "end": 1726.2832199546485,
+        "loop": false
+      },
+      "TobQ4.aiff": {
+        "start": 1728,
+        "end": 1743.4401360544218,
+        "loop": false
+      },
+      "TobQ4Rabc.aiff": {
+        "start": 1745,
+        "end": 1751.0791609977325,
+        "loop": false
+      },
+      "TobQ4Rd.aiff": {
+        "start": 1753,
+        "end": 1758.9492063492064,
+        "loop": false
+      },
+      "TobQ5.aiff": {
+        "start": 1760,
+        "end": 1776.6507482993197,
+        "loop": false
+      },
+      "TobQ5Ra.aiff": {
+        "start": 1778,
+        "end": 1784.7506575963719,
+        "loop": false
+      },
+      "TobQ5Rbcd.aiff": {
+        "start": 1786,
+        "end": 1793.1701360544218,
+        "loop": false
+      },
+      "TobQ6.aiff": {
+        "start": 1795,
+        "end": 1809.5644897959185,
+        "loop": false
+      },
+      "TobQ6Ra.aiff": {
+        "start": 1811,
+        "end": 1815.3048752834468,
+        "loop": false
+      },
+      "TobQ6Rb.aiff": {
+        "start": 1817,
+        "end": 1824.4927437641722,
+        "loop": false
+      },
+      "TobQ6Rc.aiff": {
+        "start": 1826,
+        "end": 1830.4750566893424,
+        "loop": false
+      },
+      "TobQ6Rd.aiff": {
+        "start": 1832,
+        "end": 1838.2881859410431,
+        "loop": false
+      },
+      "TobQ7.aiff": {
+        "start": 1840,
+        "end": 1852.722925170068,
+        "loop": false
+      },
+      "TobQ7Racd.aiff": {
+        "start": 1854,
+        "end": 1858.7868027210884,
+        "loop": false
+      },
+      "TobQ7Rb.aiff": {
+        "start": 1860,
+        "end": 1860.8336961451248,
+        "loop": false
+      },
+      "TobQ8.aiff": {
+        "start": 1862,
+        "end": 1880.3934693877552,
+        "loop": false
+      },
+      "TobQ8Ra.aiff": {
+        "start": 1882,
+        "end": 1886.55641723356,
+        "loop": false
+      },
+      "TobQ8Rb.aiff": {
+        "start": 1888,
+        "end": 1893.210589569161,
+        "loop": false
+      },
+      "TobQ8Rc.aiff": {
+        "start": 1895,
+        "end": 1901.0273469387755,
+        "loop": false
+      },
+      "TobQ8Rd.aiff": {
+        "start": 1903,
+        "end": 1907.8095918367346,
+        "loop": false
+      },
+      "TobQ9.aiff": {
+        "start": 1909,
+        "end": 1927.9037641723355,
+        "loop": false
+      },
+      "TobQ9Rab.aiff": {
+        "start": 1929,
+        "end": 1936.3858503401361,
+        "loop": false
+      },
+      "TobQ9c.aiff": {
+        "start": 1938,
+        "end": 1945.2983673469387,
+        "loop": false
+      },
+      "TobQ9d.aiff": {
+        "start": 1947,
+        "end": 1954.695351473923,
+        "loop": false
+      },
+      "TopSel.aiff": {
+        "start": 1956,
+        "end": 1958.370589569161,
+        "loop": false
+      },
+      "Win_mixdown": {
+        "start": 1960,
+        "end": 1966.1538321995465,
+        "loop": false
+      },
+      "cupboard_close_01": {
+        "start": 1968,
+        "end": 1968.702403628118,
+        "loop": false
+      },
+      "fun_in_the_sun": {
+        "start": 1970,
+        "end": 1976.1538321995465,
+        "loop": false
+      },
+      "magicmallet_c": {
+        "start": 1978,
+        "end": 1978.972335600907,
+        "loop": false
+      },
+      "magicmallet_cmiddle": {
+        "start": 1980,
+        "end": 1980.8450566893423,
+        "loop": false
+      },
+      "spinner for board game 01": {
+        "start": 1982,
+        "end": 1986.159931972789,
+        "loop": false
+      },
+      "yourturn02": {
+        "start": 1988,
+        "end": 1988.6559637188209,
+        "loop": false
+      },
+      "yourturn08": {
+        "start": 1990,
+        "end": 1991.3902947845804,
+        "loop": false
+      }
+    }
+  }
+}

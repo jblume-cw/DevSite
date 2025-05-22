@@ -1,0 +1,37 @@
+{
+  "src": "general.m4a",
+  "data": {
+    "audioSprite": [
+      {
+        "id": "silence",
+        "startTime": 0,
+        "duration": 3000
+      },
+      {
+        "id": "Pwr2Optns.aiff",
+        "startTime": 4000,
+        "duration": 2274.467120181406
+      },
+      {
+        "id": "Pwr2Tries.aiff",
+        "startTime": 8000,
+        "duration": 2270.249433106576
+      },
+      {
+        "id": "PwrSkp.aiff",
+        "startTime": 12000,
+        "duration": 1865.1473922902503
+      },
+      {
+        "id": "TopSel.aiff",
+        "startTime": 15000,
+        "duration": 2370.589569160998
+      },
+      {
+        "id": "Win_mixdown",
+        "startTime": 19000,
+        "duration": 6153.832199546486
+      }
+    ]
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "src": "instructions.m4a",
+  "data": {
+    "audioSprite": [
+      {
+        "id": "RTI1",
+        "startTime": 0,
+        "duration": 3763.151927437642
+      },
+      {
+        "id": "RTI2",
+        "startTime": 5000,
+        "duration": 8152.040816326531
+      },
+      {
+        "id": "RTI3",
+        "startTime": 15000,
+        "duration": 9963.809523809523
+      },
+      {
+        "id": "RTI4",
+        "startTime": 26000,
+        "duration": 1045.7596371882082
+      }
+    ]
+  }
+}

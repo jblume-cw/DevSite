@@ -1,0 +1,77 @@
+{
+  "src": "ets_vo.ogg",
+  "data": {
+    "audioSprite": {
+      "EscI1.aiff": {
+        "start": 0,
+        "end": 2.4578458049886622,
+        "loop": false
+      },
+      "EscI2.aiff": {
+        "start": 4,
+        "end": 9.510385487528344,
+        "loop": false
+      },
+      "EscI3.aiff": {
+        "start": 11,
+        "end": 12.708616780045352,
+        "loop": false
+      },
+      "EscI4.aiff": {
+        "start": 14,
+        "end": 22.33548752834467,
+        "loop": false
+      },
+      "EscI5.aiff": {
+        "start": 24,
+        "end": 26.545396825396825,
+        "loop": false
+      },
+      "EscI6.aiff": {
+        "start": 28,
+        "end": 33.98820861678004,
+        "loop": false
+      },
+      "Sit1.aiff": {
+        "start": 35,
+        "end": 45.7875283446712,
+        "loop": false
+      },
+      "Sit2.aiff": {
+        "start": 47,
+        "end": 61.49795918367347,
+        "loop": false
+      },
+      "Sit3.aiff": {
+        "start": 63,
+        "end": 73.78999999999999,
+        "loop": false
+      },
+      "Sit4.aiff": {
+        "start": 75,
+        "end": 87.39342403628117,
+        "loop": false
+      },
+      "Sit5.aiff": {
+        "start": 89,
+        "end": 102.55038548752835,
+        "loop": false
+      },
+      "Sit6.aiff": {
+        "start": 104,
+        "end": 113.2509977324263,
+        "loop": false
+      },
+      "Sit7.aiff": {
+        "start": 115,
+        "end": 131.91489795918366,
+        "loop": false
+      },
+      "Sit8.aiff": {
+        "start": 133,
+        "end": 147.43868480725624,
+        "loop": false
+      }
+    }
+  }
+}

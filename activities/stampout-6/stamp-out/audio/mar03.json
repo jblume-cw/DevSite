@@ -1,0 +1,32 @@
+{
+  "src": "mar03.m4a",
+  "data": {
+    "audioSprite": [
+      {
+        "id": "silence",
+        "startTime": 0,
+        "duration": 3000
+      },
+      {
+        "id": "MarQ3.aiff",
+        "startTime": 4000,
+        "duration": 12595.260770975055
+      },
+      {
+        "id": "MarQ3Ra.aiff",
+        "startTime": 18000,
+        "duration": 4719.727891156463
+      },
+      {
+        "id": "MarQ3Rb.aiff",
+        "startTime": 24000,
+        "duration": 848.7074829931985
+      },
+      {
+        "id": "MarQ3Rcd.aiff",
+        "startTime": 26000,
+        "duration": 4956.167800453514
+      }
+    ]
+  }
+}

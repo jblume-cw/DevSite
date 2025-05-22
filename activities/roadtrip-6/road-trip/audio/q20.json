@@ -1,0 +1,22 @@
+{
+  "src": "q20.m4a",
+  "data": {
+    "audioSprite": [
+      {
+        "id": "RTPQ20",
+        "startTime": 0,
+        "duration": 10195.895691609976
+      },
+      {
+        "id": "RTPQ20rA",
+        "startTime": 12000,
+        "duration": 945.0113378684808
+      },
+      {
+        "id": "RTPQ20rB",
+        "startTime": 14000,
+        "duration": 2969.999999999999
+      }
+    ]
+  }
+}

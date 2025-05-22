@@ -1,0 +1,27 @@
+{
+  "src": "inh06.m4a",
+  "data": {
+    "audioSprite": [
+      {
+        "id": "silence",
+        "startTime": 0,
+        "duration": 3000
+      },
+      {
+        "id": "InhQ6.aiff",
+        "startTime": 4000,
+        "duration": 14874.036281179136
+      },
+      {
+        "id": "InhQ6Rabc.aiff",
+        "startTime": 20000,
+        "duration": 3939.9319727891148
+      },
+      {
+        "id": "InhQ6Rd.aiff",
+        "startTime": 25000,
+        "duration": 5636.3945578231305
+      }
+    ]
+  }
+}

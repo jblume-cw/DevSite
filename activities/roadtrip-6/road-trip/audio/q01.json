@@ -1,0 +1,32 @@
+{
+  "src": "q01.m4a",
+  "data": {
+    "audioSprite": [
+      {
+        "id": "RTPQ1",
+        "startTime": 0,
+        "duration": 12068.639455782313
+      },
+      {
+        "id": "RTPQ1rA",
+        "startTime": 14000,
+        "duration": 3322.67573696145
+      },
+      {
+        "id": "RTPQ1rB",
+        "startTime": 19000,
+        "duration": 796.1904761904748
+      },
+      {
+        "id": "RTPQ1rC",
+        "startTime": 21000,
+        "duration": 4726.145124716552
+      },
+      {
+        "id": "RTPQ1rD",
+        "startTime": 27000,
+        "duration": 7780.725623582768
+      }
+    ]
+  }
+}

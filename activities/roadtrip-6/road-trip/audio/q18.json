@@ -1,0 +1,27 @@
+{
+  "src": "q18.m4a",
+  "data": {
+    "audioSprite": [
+      {
+        "id": "RTPQ18",
+        "startTime": 0,
+        "duration": 9604.3537414966
+      },
+      {
+        "id": "RTPQ18rAB",
+        "startTime": 11000,
+        "duration": 3048.7528344671196
+      },
+      {
+        "id": "RTPQ18rC",
+        "startTime": 16000,
+        "duration": 3044.85260770975
+      },
+      {
+        "id": "RTPQ18rD",
+        "startTime": 21000,
+        "duration": 4473.12925170068
+      }
+    ]
+  }
+}

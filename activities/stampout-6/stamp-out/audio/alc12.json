@@ -1,0 +1,37 @@
+{
+  "src": "alc12.m4a",
+  "data": {
+    "audioSprite": [
+      {
+        "id": "silence",
+        "startTime": 0,
+        "duration": 3000
+      },
+      {
+        "id": "AlcQ12.aiff",
+        "startTime": 4000,
+        "duration": 14161.020408163267
+      },
+      {
+        "id": "AlcQ12Ra.aiff",
+        "startTime": 20000,
+        "duration": 3109.319727891155
+      },
+      {
+        "id": "AlcQ12Rb.aiff",
+        "startTime": 25000,
+        "duration": 3307.8004535147406
+      },
+      {
+        "id": "AlcQ12Rc.aiff",
+        "startTime": 30000,
+        "duration": 4377.551020408163
+      },
+      {
+        "id": "AlcQ12Rd.aiff",
+        "startTime": 36000,
+        "duration": 3707.301587301586
+      }
+    ]
+  }
+}

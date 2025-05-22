@@ -1,0 +1,57 @@
+{
+  "src": "ets_sfx.ogg",
+  "data": {
+    "audioSprite": {
+      "boing01": {
+        "start": 0,
+        "end": 1.2190476190476192,
+        "loop": false
+      },
+      "boing05": {
+        "start": 3,
+        "end": 3.679183673469388,
+        "loop": false
+      },
+      "coin_mixdown": {
+        "start": 5,
+        "end": 5.997573696145125,
+        "loop": false
+      },
+      "coolcatsonmars": {
+        "start": 7,
+        "end": 11.366258503401362,
+        "loop": false
+      },
+      "coolmallet_eflat": {
+        "start": 13,
+        "end": 14.20453514739229,
+        "loop": false
+      },
+      "generic_ui_10b": {
+        "start": 16,
+        "end": 16.257891156462584,
+        "loop": false
+      },
+      "happyalert": {
+        "start": 18,
+        "end": 19.95047619047619,
+        "loop": false
+      },
+      "magicmallet_a": {
+        "start": 21,
+        "end": 21.96628117913832,
+        "loop": false
+      },
+      "melodic_lose_04": {
+        "start": 23,
+        "end": 24.94721088435374,
+        "loop": false
+      },
+      "newsstinger": {
+        "start": 26,
+        "end": 29.123083900226757,
+        "loop": false
+      }
+    }
+  }
+}

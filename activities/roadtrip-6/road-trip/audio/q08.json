@@ -1,0 +1,22 @@
+{
+  "src": "q08.m4a",
+  "data": {
+    "audioSprite": [
+      {
+        "id": "RTPQ8",
+        "startTime": 0,
+        "duration": 12006.757369614512
+      },
+      {
+        "id": "RTPQ8rABC",
+        "startTime": 14000,
+        "duration": 2124.8526077097517
+      },
+      {
+        "id": "RTPQ8rD",
+        "startTime": 18000,
+        "duration": 3211.882086167801
+      }
+    ]
+  }
+}

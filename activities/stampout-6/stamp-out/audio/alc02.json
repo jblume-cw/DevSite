@@ -1,0 +1,27 @@
+{
+  "src": "alc02.m4a",
+  "data": {
+    "audioSprite": [
+      {
+        "id": "silence",
+        "startTime": 0,
+        "duration": 3000
+      },
+      {
+        "id": "AlcQ2.aiff",
+        "startTime": 4000,
+        "duration": 17142.154195011335
+      },
+      {
+        "id": "AlcQ2Ra.aiff",
+        "startTime": 23000,
+        "duration": 927.0521541950103
+      },
+      {
+        "id": "AlcQ2Rbcd.aiff",
+        "startTime": 25000,
+        "duration": 4438.095238095237
+      }
+    ]
+  }
+}

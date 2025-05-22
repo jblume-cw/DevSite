@@ -1,0 +1,32 @@
+{
+  "src": "q04.m4a",
+  "data": {
+    "audioSprite": [
+      {
+        "id": "RTPQ4",
+        "startTime": 0,
+        "duration": 11504.489795918367
+      },
+      {
+        "id": "RTPQ4rA",
+        "startTime": 13000,
+        "duration": 3908.185941043083
+      },
+      {
+        "id": "RTPQ4rB",
+        "startTime": 18000,
+        "duration": 3781.3151927437652
+      },
+      {
+        "id": "RTPQ4rC",
+        "startTime": 23000,
+        "duration": 5611.496598639455
+      },
+      {
+        "id": "RTPQ4rD",
+        "startTime": 30000,
+        "duration": 5664.376417233562
+      }
+    ]
+  }
+}

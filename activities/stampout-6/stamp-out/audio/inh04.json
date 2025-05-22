@@ -1,0 +1,27 @@
+{
+  "src": "inh04.m4a",
+  "data": {
+    "audioSprite": [
+      {
+        "id": "silence",
+        "startTime": 0,
+        "duration": 3000
+      },
+      {
+        "id": "InhQ4.aiff",
+        "startTime": 4000,
+        "duration": 12481.972789115645
+      },
+      {
+        "id": "InhQ4Ra.aiff",
+        "startTime": 18000,
+        "duration": 6274.217687074831
+      },
+      {
+        "id": "InhQ4Rbcd.aiff",
+        "startTime": 26000,
+        "duration": 4267.029478458049
+      }
+    ]
+  }
+}

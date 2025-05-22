@@ -1,0 +1,37 @@
+{
+  "src": "tob13.m4a",
+  "data": {
+    "audioSprite": [
+      {
+        "id": "silence",
+        "startTime": 0,
+        "duration": 3000
+      },
+      {
+        "id": "TobQ13.aiff",
+        "startTime": 4000,
+        "duration": 14643.310657596374
+      },
+      {
+        "id": "TobQ13Ra.aiff",
+        "startTime": 20000,
+        "duration": 3313.9002267573687
+      },
+      {
+        "id": "TobQ13Rb.aiff",
+        "startTime": 25000,
+        "duration": 4583.061224489797
+      },
+      {
+        "id": "TobQ13Rc.aiff",
+        "startTime": 31000,
+        "duration": 3422.8798185941046
+      },
+      {
+        "id": "TobQ13Rd.aiff",
+        "startTime": 36000,
+        "duration": 3706.4852607709754
+      }
+    ]
+  }
+}

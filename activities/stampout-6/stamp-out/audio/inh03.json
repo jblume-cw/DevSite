@@ -1,0 +1,37 @@
+{
+  "src": "inh03.m4a",
+  "data": {
+    "audioSprite": [
+      {
+        "id": "silence",
+        "startTime": 0,
+        "duration": 3000
+      },
+      {
+        "id": "InhQ3.aiff",
+        "startTime": 4000,
+        "duration": 13866.553287981858
+      },
+      {
+        "id": "InhQ3Ra.aiff",
+        "startTime": 19000,
+        "duration": 3364.6485260770974
+      },
+      {
+        "id": "InhQ3Rb.aiff",
+        "startTime": 24000,
+        "duration": 4107.868480725624
+      },
+      {
+        "id": "InhQ3Rc.aiff",
+        "startTime": 30000,
+        "duration": 7476.553287981858
+      },
+      {
+        "id": "InhQ3Rd.aiff",
+        "startTime": 39000,
+        "duration": 6795.9410430839
+      }
+    ]
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "src": "mar09.m4a",
+  "data": {
+    "audioSprite": [
+      {
+        "id": "silence",
+        "startTime": 0,
+        "duration": 3000
+      },
+      {
+        "id": "MarQ9.aiff",
+        "startTime": 4000,
+        "duration": 12641.519274376416
+      },
+      {
+        "id": "MarQ9Ra.aiff",
+        "startTime": 18000,
+        "duration": 3476.258503401361
+      },
+      {
+        "id": "MarQ9Rb.aiff",
+        "startTime": 23000,
+        "duration": 4208.276643990928
+      },
+      {
+        "id": "MarQ9Rc.aiff",
+        "startTime": 29000,
+        "duration": 5409.546485260769
+      },
+      {
+        "id": "MarQ9Rd.aiff",
+        "startTime": 36000,
+        "duration": 3739.0702947845825
+      }
+    ]
+  }
+}

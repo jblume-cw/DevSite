@@ -1,0 +1,22 @@
+{
+  "src": "q13.m4a",
+  "data": {
+    "audioSprite": [
+      {
+        "id": "RTPQ13",
+        "startTime": 0,
+        "duration": 9731.269841269841
+      },
+      {
+        "id": "RTPQ13rA",
+        "startTime": 11000,
+        "duration": 2499.7505668934236
+      },
+      {
+        "id": "RTPQ13rB",
+        "startTime": 15000,
+        "duration": 1824.126984126984
+      }
+    ]
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "src": "gameover.m4a",
+  "data": {
+    "audioSprite": [
+      {
+        "id": "RTGoLAm",
+        "startTime": 0,
+        "duration": 3521.269841269841
+      },
+      {
+        "id": "RTGoLBe",
+        "startTime": 5000,
+        "duration": 2721.088435374149
+      },
+      {
+        "id": "RTGoLCh",
+        "startTime": 9000,
+        "duration": 3706.916099773242
+      },
+      {
+        "id": "RTGoLMo",
+        "startTime": 14000,
+        "duration": 2931.632653061225
+      },
+      {
+        "id": "RTGoWAm",
+        "startTime": 18000,
+        "duration": 3381.292517006802
+      },
+      {
+        "id": "RTGoWBe",
+        "startTime": 23000,
+        "duration": 2771.723356009069
+      },
+      {
+        "id": "RTGoWMo",
+        "startTime": 27000,
+        "duration": 3285.0113378684823
+      }
+    ]
+  }
+}

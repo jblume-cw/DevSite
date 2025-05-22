@@ -1,0 +1,22 @@
+{
+  "src": "q16.m4a",
+  "data": {
+    "audioSprite": [
+      {
+        "id": "RTPQ16",
+        "startTime": 0,
+        "duration": 7256.25850340136
+      },
+      {
+        "id": "RTPQ16rA",
+        "startTime": 9000,
+        "duration": 1811.043083900227
+      },
+      {
+        "id": "RTPQ16rB",
+        "startTime": 12000,
+        "duration": 2331.1564625850333
+      }
+    ]
+  }
+}

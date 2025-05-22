@@ -1,0 +1,232 @@
+{
+  "src": "fivewords.ogg",
+  "data": {
+    "audioSprite": {
+      "FLWAd": {
+        "start": 0,
+        "end": 0.9732879818594105,
+        "loop": false
+      },
+      "FLWAdCl": {
+        "start": 2,
+        "end": 4.748344671201814,
+        "loop": false
+      },
+      "FLWAn": {
+        "start": 6,
+        "end": 6.779092970521542,
+        "loop": false
+      },
+      "FLWAnCl": {
+        "start": 8,
+        "end": 9.023061224489796,
+        "loop": false
+      },
+      "FLWAp": {
+        "start": 11,
+        "end": 11.638208616780044,
+        "loop": false
+      },
+      "FLWApCl": {
+        "start": 13,
+        "end": 15.067936507936508,
+        "loop": false
+      },
+      "FLWAt": {
+        "start": 17,
+        "end": 17.74532879818594,
+        "loop": false
+      },
+      "FLWAtCl": {
+        "start": 19,
+        "end": 21.222539682539683,
+        "loop": false
+      },
+      "FLWBl": {
+        "start": 23,
+        "end": 23.764625850340135,
+        "loop": false
+      },
+      "FLWBlCl": {
+        "start": 25,
+        "end": 27.554149659863945,
+        "loop": false
+      },
+      "FLWBr": {
+        "start": 29,
+        "end": 29.66249433106576,
+        "loop": false
+      },
+      "FLWBrCl": {
+        "start": 31,
+        "end": 32.63385487528345,
+        "loop": false
+      },
+      "FLWCa": {
+        "start": 34,
+        "end": 34.886916099773245,
+        "loop": false
+      },
+      "FLWCaCl": {
+        "start": 36,
+        "end": 38.58321995464853,
+        "loop": false
+      },
+      "FLWDe": {
+        "start": 40,
+        "end": 40.67902494331066,
+        "loop": false
+      },
+      "FLWDeCl": {
+        "start": 42,
+        "end": 45.94281179138322,
+        "loop": false
+      },
+      "FLWDi": {
+        "start": 47,
+        "end": 47.79571428571428,
+        "loop": false
+      },
+      "FLWDiCl": {
+        "start": 49,
+        "end": 52.694761904761904,
+        "loop": false
+      },
+      "FLWDr": {
+        "start": 54,
+        "end": 54.78476190476191,
+        "loop": false
+      },
+      "FLWDrCl": {
+        "start": 56,
+        "end": 57.497573696145125,
+        "loop": false
+      },
+      "FLWEx": {
+        "start": 59,
+        "end": 60.464671201814056,
+        "loop": false
+      },
+      "FLWExCl": {
+        "start": 62,
+        "end": 64.62551020408164,
+        "loop": false
+      },
+      "FLWHa": {
+        "start": 66,
+        "end": 67.18229024943311,
+        "loop": false
+      },
+      "FLWHaCl": {
+        "start": 69,
+        "end": 70.84739229024943,
+        "loop": false
+      },
+      "FLWHi": {
+        "start": 72,
+        "end": 72.65585034013606,
+        "loop": false
+      },
+      "FLWHiCl": {
+        "start": 74,
+        "end": 76.36814058956917,
+        "loop": false
+      },
+      "FLWIl": {
+        "start": 78,
+        "end": 78.6227664399093,
+        "loop": false
+      },
+      "FLWIlCl": {
+        "start": 80,
+        "end": 81.00281179138322,
+        "loop": false
+      },
+      "FLWIm": {
+        "start": 83,
+        "end": 83.94630385487528,
+        "loop": false
+      },
+      "FLWImCl": {
+        "start": 85,
+        "end": 88.26643990929705,
+        "loop": false
+      },
+      "FLWMa": {
+        "start": 90,
+        "end": 90.76358276643991,
+        "loop": false
+      },
+      "FLWMaCl": {
+        "start": 92,
+        "end": 95.49160997732426,
+        "loop": false
+      },
+      "FLWPuzComp": {
+        "start": 97,
+        "end": 99.2878231292517,
+        "loop": false
+      },
+      "FLWRe": {
+        "start": 101,
+        "end": 101.85501133786848,
+        "loop": false
+      },
+      "FLWReCl": {
+        "start": 103,
+        "end": 106.80126984126984,
+        "loop": false
+      },
+      "FLWSl": {
+        "start": 108,
+        "end": 108.62256235827664,
+        "loop": false
+      },
+      "FLWSlCl": {
+        "start": 110,
+        "end": 111.94904761904762,
+        "loop": false
+      },
+      "FLWSm": {
+        "start": 113,
+        "end": 113.90614512471656,
+        "loop": false
+      },
+      "FLWSmCl": {
+        "start": 115,
+        "end": 117.35031746031746,
+        "loop": false
+      },
+      "FLWSt": {
+        "start": 119,
+        "end": 119.84399092970521,
+        "loop": false
+      },
+      "FLWStCl": {
+        "start": 121,
+        "end": 123.43537414965986,
+        "loop": false
+      },
+      "asunshineintro04": {
+        "start": 125,
+        "end": 127.22224489795919,
+        "loop": false
+      },
+      "game_show_bell_02": {
+        "start": 129,
+        "end": 130.99836734693878,
+        "loop": false
+      },
+      "gameshow_buzzer_01": {
+        "start": 132,
+        "end": 132.4290702947846,
+        "loop": false
+      },
+      "instructions_mixdown": {
+        "start": 134,
+        "end": 160.3277097505669,
+        "loop": false
+      }
+    }
+  }
+}

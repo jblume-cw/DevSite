@@ -1,0 +1,72 @@
+{
+  "src": "dodgingRisks.m4a",
+  "data": {
+    "audioSprite": {
+      "DRI1": {
+        "start": 0,
+        "end": 5.816666666666666,
+        "loop": false
+      },
+      "DRI2": {
+        "start": 7,
+        "end": 10.716666666666667,
+        "loop": false
+      },
+      "DRI3": {
+        "start": 12,
+        "end": 15.633333333333333,
+        "loop": false
+      },
+      "DRI4": {
+        "start": 17,
+        "end": 21.683333333333334,
+        "loop": false
+      },
+      "DRI5": {
+        "start": 23,
+        "end": 26,
+        "loop": false
+      },
+      "DRI6": {
+        "start": 27,
+        "end": 31.341678004535147,
+        "loop": false
+      },
+      "DROverHi": {
+        "start": 33,
+        "end": 37.53333333333333,
+        "loop": false
+      },
+      "DROverLo": {
+        "start": 39,
+        "end": 43.666666666666664,
+        "loop": false
+      },
+      "DROverMid": {
+        "start": 45,
+        "end": 48,
+        "loop": false
+      },
+      "DRReady": {
+        "start": 49,
+        "end": 53.13333333333333,
+        "loop": false
+      },
+      "db_paper1": {
+        "start": 55,
+        "end": 55.64263038548753,
+        "loop": false
+      },
+      "db_throw7": {
+        "start": 57,
+        "end": 57.47074829931973,
+        "loop": false
+      },
+      "db_wall3": {
+        "start": 59,
+        "end": 59.399478458049884,
+        "loop": false
+      }
+    }
+  }
+}

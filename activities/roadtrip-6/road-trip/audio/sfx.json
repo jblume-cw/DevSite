@@ -1,0 +1,57 @@
+{
+  "src": "sfx.m4a",
+  "data": {
+    "audioSprite": [
+      {
+        "id": "silence",
+        "startTime": 0,
+        "duration": 3000
+      },
+      {
+        "id": "coolmallet_c",
+        "startTime": 4000,
+        "duration": 911.383219954649
+      },
+      {
+        "id": "coolmallet_cmiddle",
+        "startTime": 6000,
+        "duration": 1339.7732426303853
+      },
+      {
+        "id": "deadbatteries",
+        "startTime": 9000,
+        "duration": 956.0997732426308
+      },
+      {
+        "id": "marvelous_moment03",
+        "startTime": 11000,
+        "duration": 3088.2539682539696
+      },
+      {
+        "id": "marvelous_moment07",
+        "startTime": 16000,
+        "duration": 2821.2244897959167
+      },
+      {
+        "id": "nice_nav_42",
+        "startTime": 20000,
+        "duration": 1233.560090702948
+      },
+      {
+        "id": "scroll16",
+        "startTime": 23000,
+        "duration": 1371.4285714285702
+      },
+      {
+        "id": "scroll16_out",
+        "startTime": 26000,
+        "duration": 1699.9999999999993
+      },
+      {
+        "id": "scroll43_mod",
+        "startTime": 29000,
+        "duration": 1250
+      }
+    ]
+  }
+}

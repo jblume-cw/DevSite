@@ -1,0 +1,22 @@
+{
+  "src": "q12.m4a",
+  "data": {
+    "audioSprite": [
+      {
+        "id": "RTPQ12",
+        "startTime": 0,
+        "duration": 4852.222222222223
+      },
+      {
+        "id": "RTPQ12rA",
+        "startTime": 6000,
+        "duration": 933.764172335601
+      },
+      {
+        "id": "RTPQ12rB",
+        "startTime": 8000,
+        "duration": 3792.517006802722
+      }
+    ]
+  }
+}

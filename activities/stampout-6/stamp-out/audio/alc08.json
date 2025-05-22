@@ -1,0 +1,27 @@
+{
+  "src": "alc08.m4a",
+  "data": {
+    "audioSprite": [
+      {
+        "id": "silence",
+        "startTime": 0,
+        "duration": 3000
+      },
+      {
+        "id": "AlcQ8.aiff",
+        "startTime": 4000,
+        "duration": 15857.936507936507
+      },
+      {
+        "id": "AlcQ8Ra.aiff",
+        "startTime": 21000,
+        "duration": 4435.6235827664395
+      },
+      {
+        "id": "AlcQ8Rbcd.aiff",
+        "startTime": 27000,
+        "duration": 2471.632653061224
+      }
+    ]
+  }
+}

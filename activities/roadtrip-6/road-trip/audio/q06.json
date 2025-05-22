@@ -1,0 +1,22 @@
+{
+  "src": "q06.m4a",
+  "data": {
+    "audioSprite": [
+      {
+        "id": "RTPQ6",
+        "startTime": 0,
+        "duration": 10567.64172335601
+      },
+      {
+        "id": "RTPQ6rABD",
+        "startTime": 12000,
+        "duration": 5368.639455782315
+      },
+      {
+        "id": "RTPQ6rD",
+        "startTime": 19000,
+        "duration": 4396.303854875285
+      }
+    ]
+  }
+}

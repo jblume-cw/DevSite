@@ -1,0 +1,27 @@
+{
+  "src": "alc01.m4a",
+  "data": {
+    "audioSprite": [
+      {
+        "id": "silence",
+        "startTime": 0,
+        "duration": 3000
+      },
+      {
+        "id": "AlcQ1.aiff",
+        "startTime": 4000,
+        "duration": 15202.358276643992
+      },
+      {
+        "id": "AlcQ1Rabd.aiff",
+        "startTime": 21000,
+        "duration": 6488.73015873016
+      },
+      {
+        "id": "AlcQ1Rc.aiff",
+        "startTime": 29000,
+        "duration": 5512.970521541952
+      }
+    ]
+  }
+}

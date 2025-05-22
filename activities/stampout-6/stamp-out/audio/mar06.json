@@ -1,0 +1,27 @@
+{
+  "src": "mar06.m4a",
+  "data": {
+    "audioSprite": [
+      {
+        "id": "silence",
+        "startTime": 0,
+        "duration": 3000
+      },
+      {
+        "id": "MarQ6.aiff",
+        "startTime": 4000,
+        "duration": 16314.444444444443
+      },
+      {
+        "id": "MarQ6Rabd.aiff",
+        "startTime": 22000,
+        "duration": 4712.834467120181
+      },
+      {
+        "id": "MarQ6Rc.aiff",
+        "startTime": 28000,
+        "duration": 5009.999999999998
+      }
+    ]
+  }
+}

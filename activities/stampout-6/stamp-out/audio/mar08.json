@@ -1,0 +1,37 @@
+{
+  "src": "mar08.m4a",
+  "data": {
+    "audioSprite": [
+      {
+        "id": "silence",
+        "startTime": 0,
+        "duration": 3000
+      },
+      {
+        "id": "MarQ8.aiff",
+        "startTime": 4000,
+        "duration": 15770.839002267572
+      },
+      {
+        "id": "MarQ8Ra.aiff",
+        "startTime": 21000,
+        "duration": 6005.7142857142835
+      },
+      {
+        "id": "MarQ8Rb.aiff",
+        "startTime": 29000,
+        "duration": 4313.310657596375
+      },
+      {
+        "id": "MarQ8Rc.aiff",
+        "startTime": 35000,
+        "duration": 5211.088435374151
+      },
+      {
+        "id": "MarQ8Rd.aiff",
+        "startTime": 42000,
+        "duration": 7896.099773242632
+      }
+    ]
+  }
+}

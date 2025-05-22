@@ -1,0 +1,27 @@
+{
+  "src": "pre05.m4a",
+  "data": {
+    "audioSprite": [
+      {
+        "id": "silence",
+        "startTime": 0,
+        "duration": 3000
+      },
+      {
+        "id": "PreQ5.aiff",
+        "startTime": 4000,
+        "duration": 13662.607709750568
+      },
+      {
+        "id": "PreQ5Rabc.aiff",
+        "startTime": 19000,
+        "duration": 5412.15419501134
+      },
+      {
+        "id": "PreQ5Rd.aiff",
+        "startTime": 26000,
+        "duration": 683.7188208616781
+      }
+    ]
+  }
+}

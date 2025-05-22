@@ -1,0 +1,27 @@
+{
+  "src": "q15.m4a",
+  "data": {
+    "audioSprite": [
+      {
+        "id": "RTPQ15",
+        "startTime": 0,
+        "duration": 9933.7641723356
+      },
+      {
+        "id": "RTPQ15rA",
+        "startTime": 11000,
+        "duration": 3974.7845804988665
+      },
+      {
+        "id": "RTPQ15rB",
+        "startTime": 16000,
+        "duration": 866.2585034013616
+      },
+      {
+        "id": "RTPQ15rC",
+        "startTime": 18000,
+        "duration": 2987.9365079365066
+      }
+    ]
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "src": "tob05.m4a",
+  "data": {
+    "audioSprite": [
+      {
+        "id": "silence",
+        "startTime": 0,
+        "duration": 3000
+      },
+      {
+        "id": "TobQ5.aiff",
+        "startTime": 4000,
+        "duration": 16650.748299319726
+      },
+      {
+        "id": "TobQ5Ra.aiff",
+        "startTime": 22000,
+        "duration": 6750.657596371881
+      },
+      {
+        "id": "TobQ5Rbcd.aiff",
+        "startTime": 30000,
+        "duration": 7170.136054421768
+      }
+    ]
+  }
+}

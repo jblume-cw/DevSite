@@ -1,0 +1,32 @@
+{
+  "src": "inh08.m4a",
+  "data": {
+    "audioSprite": [
+      {
+        "id": "silence",
+        "startTime": 0,
+        "duration": 3000
+      },
+      {
+        "id": "InhQ8.aiff",
+        "startTime": 4000,
+        "duration": 17970.929705215418
+      },
+      {
+        "id": "InhQ8Rab.aiff",
+        "startTime": 23000,
+        "duration": 3905.555555555555
+      },
+      {
+        "id": "InhQ8Rc.aiff",
+        "startTime": 28000,
+        "duration": 2526.0090702947837
+      },
+      {
+        "id": "InhQ8Rd.aiff",
+        "startTime": 32000,
+        "duration": 9173.28798185941
+      }
+    ]
+  }
+}

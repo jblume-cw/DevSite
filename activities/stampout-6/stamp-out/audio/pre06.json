@@ -1,0 +1,27 @@
+{
+  "src": "pre06.m4a",
+  "data": {
+    "audioSprite": [
+      {
+        "id": "silence",
+        "startTime": 0,
+        "duration": 3000
+      },
+      {
+        "id": "PreQ6.aiff",
+        "startTime": 4000,
+        "duration": 14342.040816326531
+      },
+      {
+        "id": "PreQ6Rabd.aiff",
+        "startTime": 20000,
+        "duration": 5932.67573696145
+      },
+      {
+        "id": "PreQ6Rc.aiff",
+        "startTime": 27000,
+        "duration": 5003.968253968253
+      }
+    ]
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "src": "mar04.m4a",
+  "data": {
+    "audioSprite": [
+      {
+        "id": "silence",
+        "startTime": 0,
+        "duration": 3000
+      },
+      {
+        "id": "MarQ4.aiff",
+        "startTime": 4000,
+        "duration": 12091.836734693878
+      },
+      {
+        "id": "MarQ4Ra.aiff",
+        "startTime": 18000,
+        "duration": 4709.931972789114
+      },
+      {
+        "id": "MarQ4Rb.aiff",
+        "startTime": 24000,
+        "duration": 3763.4013605442183
+      },
+      {
+        "id": "MarQ4Rc.aiff",
+        "startTime": 29000,
+        "duration": 4306.870748299318
+      },
+      {
+        "id": "MarQ4Rd.aiff",
+        "startTime": 35000,
+        "duration": 4987.573696145127
+      }
+    ]
+  }
+}

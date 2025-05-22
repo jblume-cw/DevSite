@@ -1,0 +1,52 @@
+{
+  "src": "sfx.m4a",
+  "data": {
+    "audioSprite": [
+      {
+        "id": "silence",
+        "startTime": 0,
+        "duration": 3000
+      },
+      {
+        "id": "cupboard_close_01",
+        "startTime": 4000,
+        "duration": 702.4036281179135
+      },
+      {
+        "id": "fun_in_the_sun",
+        "startTime": 6000,
+        "duration": 6153.832199546486
+      },
+      {
+        "id": "magicmallet_c",
+        "startTime": 14000,
+        "duration": 972.3356009070301
+      },
+      {
+        "id": "magicmallet_cmiddle",
+        "startTime": 16000,
+        "duration": 845.0566893424032
+      },
+      {
+        "id": "nice_nav_40",
+        "startTime": 18000,
+        "duration": 1272.0181405895694
+      },
+      {
+        "id": "spinner for board game 01",
+        "startTime": 21000,
+        "duration": 4159.931972789117
+      },
+      {
+        "id": "yourturn02",
+        "startTime": 27000,
+        "duration": 655.9637188208604
+      },
+      {
+        "id": "yourturn08",
+        "startTime": 29000,
+        "duration": 1390.2947845804974
+      }
+    ]
+  }
+}

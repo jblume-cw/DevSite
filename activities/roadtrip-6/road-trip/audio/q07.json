@@ -1,0 +1,22 @@
+{
+  "src": "q07.m4a",
+  "data": {
+    "audioSprite": [
+      {
+        "id": "RTPQ7",
+        "startTime": 0,
+        "duration": 16772.743764172337
+      },
+      {
+        "id": "RTPQ7rABD",
+        "startTime": 18000,
+        "duration": 4168.140589569162
+      },
+      {
+        "id": "RTPQ7rC",
+        "startTime": 24000,
+        "duration": 1006.8934240362814
+      }
+    ]
+  }
+}

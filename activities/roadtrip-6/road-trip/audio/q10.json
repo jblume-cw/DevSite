@@ -1,0 +1,22 @@
+{
+  "src": "q10.m4a",
+  "data": {
+    "audioSprite": [
+      {
+        "id": "RTPQ10",
+        "startTime": 0,
+        "duration": 9215.079365079366
+      },
+      {
+        "id": "RTPQ10rA",
+        "startTime": 11000,
+        "duration": 4407.959183673469
+      },
+      {
+        "id": "RTPQ10rB",
+        "startTime": 17000,
+        "duration": 4417.165532879817
+      }
+    ]
+  }
+}
