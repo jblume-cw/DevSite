@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest identifier="IUC6_pressure"
+	xmlns="http://www.imsproject.org/xsd/imscp_rootv1p1p2" 
+	xmlns:imsmd="http://www.imsglobal.org/xsd/imsmd_rootv1p2p1" 
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xmlns:adlcp="http://www.adlnet.org/xsd/adlcp_rootv1p2" 
+	xsi:schemaLocation="http://www.imsproject.org/xsd/imscp_rootv1p1p2 imscp_rootv1p1p2.xsd 
+		http://www.imsglobal.org/xsd/imsmd_rootv1p2p1 imsmd_rootv1p2p1.xsd 
+		http://www.adlnet.org/xsd/adlcp_rootv1p2 adlcp_rootv1p2.xsd" >
+
+	<organizations default="IUC6">
+	<organization identifier="IUC6" structure="hierarchical">
+		<item identifier="IUC6_pressure" identifierref="IUC6_pressure" isvisible="true">
+			<title>Pressure</title>
+		</item>
+	</organization>
+</organizations>
+
+  <resources>
+    <resource identifier="IUC6_pressure" type="webcontent" adlcp:scormtype="sco" href="index.html">
+      <file href="index.html" />
+    </resource>
+  </resources>
+	
+</manifest>
+

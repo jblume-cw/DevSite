@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta property="og:title" content="Children's Hospital Apps Test Page">
+    <title>Test Page</title>
+  
+    <script src="engine/APIWrapper.js"></script>
+    <script src="engine/phaser.js"></script>
+    <script src="engine/scene-engine.min.js"></script>
+    <script src="media/KickinIt/kickinit.act.min.js"></script>
+    <script src="media/Busted/busted.act.min.js"></script>
+    <link rel="stylesheet" href="palette/stylesheet.css" type="text/css" charset="utf-8" />
+    <link rel="stylesheet" href="Marker-Felt-Thin-Regular/stylesheet.css" type="text/css" charset="utf-8" />
+    <link rel="stylesheet" href="balloon/stylesheet.css" type="text/css" charset="utf-8" />
+    <link href='https://fonts.googleapis.com/css?family=Itim' rel='stylesheet' type='text/css'>
+    <style type="text/css">
+        body.balloon {
+            font-family: 'balloon_xbd_btextra_bold';
+        }
+    </style>
+
+    <style type="text/css">
+        body{
+            font-family: 'marker_felt_thinregular';
+        }
+    </style>
+
+    <style type="text/css">
+        body{
+            font-family: 'paletteregular';
+        }
+    </style>
+
+    <link rel="stylesheet" href="Nobile-Bold/stylesheet.css" type="text/css" charset="utf-8" />
+    <style type="text/css">
+        body{
+            font-family: 'nobileregular';
+        }
+    </style>
+
+    <script src="//fast.wistia.com/assets/external/E-v1.js" charset="ISO-8859-1"></script>
+    <style>
+        .container {
+            position: relative;
+        }
+        .gameItem {
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+    </style>
+</head>
+<body>
+<div id="preloadpalette" style="position: absolute; left: -1000em; font-family:'paletteregular';">.</div>
+<div id="preloadballoon" style="position: absolute; left: -1000em; font-family:'balloon_xbd_btextra_bold';">.</div>
+<div id="preloadFontMarkerFeltThinRegular" style="position: absolute; left: -1000em; font-family:marker_felt_thinregular;">.</div>
+<div id="preloadFontNobileRegular" style="position: absolute; left: -1000em; font-family:nobileregular;">.</div>
+<div id="gameContainer" class="container">
+    <div id="game" class="gameItem" style="z-index: 100;"></div>
+</div>
+<script>document.write('<script src="//' + window.location.hostname + ':3018/livereload.js"><\/script>');</script>
+<script type="text/javascript">SceneEngine('game', 640, 510);</script>
+</body>
+</html>

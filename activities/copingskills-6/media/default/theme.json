@@ -1,0 +1,136 @@
+{
+  "texture": "media/default/cs-spritesheet.png",
+  "textureMap": "media/default/cs-spritesheet.json",
+  "textureKey": "cs_texture",
+  "data": "media/default/sceneData.json",
+  "fonts" : {
+    "standard": { "font": "40px ralewaythin", "fill": "#ffffff", "align": "left", "wordWrap": true, "wordWrapWidth": 300},
+    "bullet_heading": { "font": "40px open_sansextrabold", "fill": "#4f4f4f", "align": "left", "wordWrap": true, "wordWrapWidth": 550},
+    "bullet_heading_35p_extralength": { "font": "35px open_sansextrabold", "fill": "#4f4f4f", "align": "left", "wordWrap": true, "wordWrapWidth": 750},
+    "bullet_heading_30p": { "font": "30px open_sansextrabold", "fill": "#4f4f4f", "align": "left", "wordWrap": true, "wordWrapWidth": 550},
+    "bullet_heading_45p": { "font": "45px open_sansextrabold", "fill": "#4f4f4f", "align": "left", "wordWrap": true, "wordWrapWidth": 550},
+    "bullets": { "font": "20px yantramanavregular", "fill": "#4f4f4f",  "fontWeight": "normal", "align": "center", "wordWrap": true, "wordWrapWidth": 800, "lineSpacing": -6 },
+    "bullets_27p": { "font": "27px yantramanavregular", "fill": "#4f4f4f",  "fontWeight": "normal", "align": "left", "wordWrap": true, "wordWrapWidth": 800, "lineSpacing": -6 },
+    "bullets_30p": { "font": "30px yantramanavregular", "fill": "#4f4f4f",  "fontWeight": "normal", "align": "left", "wordWrap": true, "wordWrapWidth": 800, "lineSpacing": -6 },
+    "bullets_25p": { "font": "25px yantramanavregular", "fill": "#4f4f4f",  "fontWeight": "normal", "align": "left", "wordWrap": true, "wordWrapWidth": 800, "lineSpacing": -6 },
+    "bullets_35p": { "font": "35px yantramanavregular", "fill": "#4f4f4f",  "fontWeight": "normal", "align": "center", "wordWrap": true, "wordWrapWidth": 800, "lineSpacing": -6 },
+    "bullets_40p": { "font": "40px yantramanavregular", "fill": "#4f4f4f",  "fontWeight": "normal", "align": "center", "wordWrap": true, "wordWrapWidth": 800, "lineSpacing": -6 },
+    "bullets_40p_el": { "font": "40px yantramanavregular", "fill": "#4f4f4f",  "fontWeight": "normal", "align": "center", "wordWrap": true, "wordWrapWidth": 800, "lineSpacing": -6 }
+
+
+
+
+
+  },
+  "images": {
+    
+   
+    "decorations": {
+      "backDisabled": "lesson-back-btn-inactive.png",
+      "next_disabled": "lesson-next-btn-inactive.png",
+      "arrow": "arrow.png",
+      "stress":"stress.png",
+      "blank": "blank.png",
+      "depression": "depression.png",
+      "weed": "marijuana.png",
+      "thc": "THC.png",
+      "police": "police.png"
+
+    }
+  },
+  "sceneImages": {
+    "background_cs": "lesson-background3.png"
+    
+  },
+  "buttons": {
+    "next": {
+      "up": "lesson-next-btn-up.png",
+      "over": "lesson-next-btn-dn.png",
+      "out": "lesson-next-btn-up.png",
+      "down": "lesson-next-btn-dn.png"
+    },
+    "back": {
+      "up": "lesson-back-btn-up.png",
+      "over": "lesson-back-btn-dn.png",
+      "out": "lesson-back-btn-up.png",
+      "down": "lesson-back-btn-dn.png"
+    },
+    "nextHighlight": {
+      "up": "lesson-next-btn-up-hi.png",
+      "over": "lesson-next-btn-dn-hi.png",
+      "out": "lesson-next-btn-up-hi.png",
+      "down": "lesson-next-btn-dn-hi.png"
+    },
+    "replay": {
+      "up": "lesson-replay-btn-up.png",
+      "over": "lesson-replay-btn-dn.png",
+      "out": "lesson-replay-btn-up.png",
+      "down": "lesson-replay-btn-dn.png"
+    },
+    "menu": {
+      "up": "lesson-menu-btn2-up.png",
+      "over": "lesson-menu-btn2-dn.png",
+      "out": "lesson-menu-btn2-up.png",
+      "down": "lesson-menu-btn2-dn.png"
+    }
+    
+      },
+      "soundKey": "cs_audio",
+  "soundFile": [ "media/default/cs_audio.m4a", "media/default/cs_audio.ogg" ],
+  "sounds": {
+      "Slide2": [
+        0,
+        47.14700680272109,
+        false,
+        "Slide2"
+      ],
+      "Slide3": [
+        49,
+        21.020521541950117,
+        false,
+        "Slide3"
+      ],
+      "Slide4": [
+        72,
+        82.4,
+        false,
+        "Slide4"
+      ],
+      "Slide5": [
+        156,
+        34.320839002267576,
+        false,
+        "Slide5"
+      ],
+      "Slide7": [
+        192,
+        15.062517006802722,
+        false,
+        "Slide7"
+      ],
+      "Slide8": [
+        209,
+        24.349999999999994,
+        false,
+        "Slide8"
+      ],
+      "Slide9": [
+        235,
+        26.345850340136053,
+        false,
+        "Slide9"
+      ],
+      "Slide10": [
+        263,
+        34.7041723356009,
+        false,
+        "Slide10"
+      ],
+      "Slide11": [
+        299,
+        13.941678004535163,
+        false,
+        "Slide11"
+      ]
+  }
+}

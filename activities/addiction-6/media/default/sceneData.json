@@ -1,0 +1,1232 @@
+{
+  "play": {
+    "start_skip": "slide01",
+    "start": "slide01",
+    "showPlayThrough": false,
+    "scenes": {
+      "slide01": {
+        "id": "slide01",
+        "background": "background_one",
+        "title": "Slide 1",
+        "description": "Slide 1",
+        "actors": [
+         {
+                  "name": "intro_heading",
+                  "type": "text",
+                  "font": "standard",
+                  "location": [ 30, 25 ],
+                  "text": "Addiction"
+        },
+         {
+            "name": "forwardButton",
+            "type": "button",
+            "image": "next",
+            "location": [ 720, 530 ],
+            "variable": "show_next"
+          },
+          {
+            "name": "replay",
+            "type": "button",
+            "image": "replay",
+            "location": [ 660, 530 ],
+            "variable": "replayClick_1"
+          },
+          {
+            "name": "backDisabled",
+            "type": "decoration",
+            "image": "backDisabled",
+            "location": [ 600, 532 ],
+            "key": "decorations"
+          },
+          {
+            "name": "dropShadow",
+            "type": "blocker",
+            "location": [ 73, 138 ],
+            "size": [640, 360],
+            "blockerTint": "0x585858",
+            "blockerAlpha": 1
+          },
+            {
+            "name": "video_addiction_intro",
+            "type": "wistia",
+            "location": [ 70, 135 ],
+            "hideCloseButton": true,
+            "size": [ 640, 360 ],
+            "video": "kovkf2zylw",
+            "blockerAlpha" : 0.0,
+            "blockInput": false,
+            "variable": "video_intro"
+          }
+        ],
+        "outcomes": {
+          "intro_video_finished": {
+            "events": { "video_intro": "finished" },
+            "actions": [
+              { "type": "remove-actor", "args": ["forwardButton"] },
+              { "type": "add-actor", "args": [
+                {
+                  "name": "nextHighlight",
+                  "type": "button",
+                  "image": "nextHighlight",
+                  "animated": false,
+                  "location": [ 720, 530 ],
+                  "variable": "show_next"
+                }
+              ] }
+            ]
+          },
+          "replay_button": {
+            "events": { "replayClick_1": "*" },
+            "actions": [
+              { "type": "scene", "args": [ "empty_replay_scene" ] },
+              { "type": "scene", "args": [ "slide01" ] }
+            ]
+          },
+          "forward_button": {
+            "events": { "show_next": "*" },
+            "actions": [ { "type": "scene", "args": [ "slide02" ] } ]
+      }
+      }
+      }, 
+      "slide02": {
+        "id": "slide02",
+        "background": "background_two",
+        "title": "Slide 2",
+        "description": "Slide 2",
+        "actors": [
+         {
+                  "name": "intro_heading",
+                  "type": "text",
+                  "font": "standard",
+                  "location": [ 30, 25 ],
+                  "text": "Addiction"
+        },
+         {
+            "name": "forwardButton",
+            "type": "button",
+            "image": "next",
+            "location": [ 720, 530 ],
+            "variable": "show_next"
+          },
+          {
+            "name": "replay",
+            "type": "button",
+            "image": "replay",
+            "location": [ 660, 530 ],
+            "variable": "replayClick"
+          },
+          {
+            "name": "back",
+            "type": "button",
+            "image": "back",
+            "location": [ 600, 532 ],
+            "variable": "show_back"
+          },
+          {
+            "name": "dropShadow",
+            "type": "blocker",
+            "location": [ 148, 138 ],
+            "size": [490, 360],
+            "blockerTint": "0x585858",
+            "blockerAlpha": 1
+          },
+            {
+            "name": "video_addiction_story",
+            "type": "wistia",
+            "location": [ 145, 135 ],
+            "hideCloseButton": true,
+            "size": [ 490, 360 ],
+            "video": "kyd2sv8xup",
+            "blockerAlpha" : 0.0,
+            "blockInput": false,
+            "variable": "video_story"
+          }
+        ],
+        "outcomes": {
+          "video_story_finished": {
+            "events": { "video_story": "finished" },
+            "actions": [
+              { "type": "remove-actor", "args": ["forwardButton"] },
+              { "type": "add-actor", "args": [
+                {
+                  "name": "nextHighlight",
+                  "type": "button",
+                  "image": "nextHighlight",
+                  "animated": false,
+                  "location": [ 720, 530 ],
+                  "variable": "show_next"
+                }
+              ] }
+            ]
+          },
+          "replay_button": {
+            "events": { "replayClick": "*" },
+            "actions": [
+              { "type": "scene", "args": [ "empty_replay_scene" ] },
+              { "type": "scene", "args": [ "slide02" ] }
+            ]
+      },
+      "forward_button": {
+            "events": { "show_next": "*" },
+            "actions": [ { "type": "scene", "args": [ "slide03" ] } ]
+      },
+      "back_button": {
+            "events": { "show_back": "*" },
+            "actions": [ { "type": "scene", "args": [ "slide01" ] } ]
+      }
+}
+},
+"slide03": {
+        "id": "slide03",
+        "background": "background_three",
+        "title": "Slide 3",
+        "description": "Slide 3",
+        "actors": [
+         {
+                  "name": "intro_heading",
+                  "type": "text",
+                  "font": "standard",
+                  "location": [ 30, 25 ],
+                  "text": "Addiction"
+        },
+         {
+            "name": "forwardButton",
+            "type": "button",
+            "image": "next",
+            "location": [ 720, 530 ],
+            "variable": "show_next"
+          },
+          {
+            "name": "replay",
+            "type": "button",
+            "image": "replay",
+            "location": [ 660, 530 ],
+            "variable": "replayClick"
+          },
+          {
+            "name": "back",
+            "type": "button",
+            "image": "back",
+            "location": [ 600, 532 ],
+            "variable": "show_back"
+          },
+          {
+            "name": "dropShadow",
+            "type": "blocker",
+            "location": [ 73, 138 ],
+            "size": [640, 360],
+            "blockerTint": "0x585858",
+            "blockerAlpha": 1
+          },
+          
+            {
+            "name": "video_addiction_trans",
+            "type": "wistia",
+            "location": [ 70, 135 ],
+            "hideCloseButton": true,
+            "size": [ 640, 360 ],
+            "video": "bl2krfugj2",
+            "blockerAlpha" : 0.0,
+            "blockInput": false,
+            "variable": "video_trans"
+          }
+        ],
+        "outcomes": {
+          "video_trans_finished": {
+            "events": { "video_trans": "finished" },
+            "actions": [
+              { "type": "remove-actor", "args": ["forwardButton"] },
+              { "type": "add-actor", "args": [
+                {
+                  "name": "nextHighlight",
+                  "type": "button",
+                  "image": "nextHighlight",
+                  "animated": false,
+                  "location": [ 720, 530 ],
+                  "variable": "show_next"
+                }
+              ] }
+            ]
+          },
+          "replay_button": {
+            "events": { "replayClick": "*" },
+            "actions": [
+              { "type": "scene", "args": [ "empty_replay_scene" ] },
+              { "type": "scene", "args": [ "slide03" ] }
+            ]
+      },
+       "forward_button": {
+            "events": { "show_next": "*" },
+            "actions": [ { "type": "scene", "args": [ "slide04" ] } ]
+      },
+      "back_button": {
+            "events": { "show_back": "*" },
+            "actions": [ { "type": "scene", "args": [ "slide02" ] } ]
+      }
+}
+},
+"slide04": {
+        "id": "slide04",
+        "background": "background_four",
+        "title": "Slide 4",
+        "description": "Slide 4",
+        "actors": [
+         {
+                  "name": "intro_heading",
+                  "type": "text",
+                  "font": "standard",
+                  "location": [ 30, 25 ],
+                  "text": "Addiction"
+        },
+         {
+            "name": "forwardButton",
+            "type": "button",
+            "image": "next",
+            "location": [ 720, 530 ],
+            "variable": "show_next"
+          },
+          {
+            "name": "replay",
+            "type": "button",
+            "image": "replay",
+            "location": [ 660, 530 ],
+            "variable": "replayClick"
+          },
+          {
+            "name": "back",
+            "type": "button",
+            "image": "back",
+            "location": [ 600, 532 ],
+            "variable": "show_back"
+          },
+          {
+            "name": "dropShadow",
+            "type": "blocker",
+            "location": [ 43, 203 ],
+            "size": [177, 236],
+            "blockerTint": "0x585858",
+            "blockerAlpha": 1
+          },
+         {
+            "name": "drug_addiction",
+            "type": "decoration",
+            "image": "drug_addiction",
+            "location": [ 40, 200 ],
+            "key": "decorations"
+          },
+          {
+           "name": "bullet_heading",
+           "type": "text",
+           "font": "bullet_heading",
+           "location": [ 260 , 125 ],
+           "text": "Addiction"
+        },
+        {
+           "name": "bullet1",
+           "type": "text",
+           "font": "bullets_25",
+           "location": [ 260 , 200 ],
+           "bullet": true,
+           "text": "Will use drug despite harmful consequences",
+           "startDelay": 3000
+        },
+        {
+           "name": "bullet2",
+           "type": "text",
+           "font": "bullets_25",
+           "location": [ 260 , 240 ],
+           "bullet": true,
+           "text": "Become so used to the drug that they have to have it",
+           "startDelay": 8000
+
+        },
+        {
+           "name": "bullet3",
+           "type": "text",
+           "font": "bullets_25",
+           "location": [ 260 , 308 ],
+           "bullet": true,
+           "text": "Body becomes dependent on the drug",
+           "startDelay": 11000
+
+        },
+        {
+           "name": "bullet4",
+           "type": "text",
+           "font": "bullets_25",
+           "location": [ 260 , 348 ],
+           "bullet": true,
+           "text": "Body builds up a tolerance, so more is needed",
+           "startDelay": 13000
+
+        },
+        {
+           "name": "bullet5",
+           "type": "text",
+           "font": "bullets_25",
+           "location": [ 260 , 388 ],
+           "bullet": true,
+           "text": "Causes changes in the brain making it difficult to quit",
+           "startDelay": 24000
+
+        },
+        {
+           "name": "bullet6",
+           "type": "text",
+           "font": "bullets_25",
+           "location": [ 260 , 456 ],
+           "bullet": true,
+           "text": "Quitting leads to withdrawal symptoms",
+           "startDelay": 32000
+
+        },
+        {
+            "name": "vo",
+            "type": "audio",
+            "audio": [ "Slide4" ],
+            "variable": "slideVO"
+          }
+        ],
+        "outcomes": {
+          "vo_finished": {
+            "events": { "slideVO": "played" },
+            "actions": [
+              { "type": "remove-actor", "args": ["forwardButton"] },
+              { "type": "add-actor", "args": [
+                {
+                  "name": "nextHighlight",
+                  "type": "button",
+                  "image": "nextHighlight",
+                  "animated": false,
+                  "location": [ 720, 530 ],
+                  "variable": "show_next"
+                }
+              ] }
+
+            ]
+          },
+         "replay_button": {
+            "events": { "replayClick": "*" },
+            "actions": [
+              { "type": "scene", "args": [ "empty_replay_scene" ] },
+              { "type": "scene", "args": [ "slide04" ] }
+            ]
+      },
+       "forward_button": {
+            "events": { "show_next": "*" },
+            "actions": [ { "type": "scene", "args": [ "slide05" ] } ]
+      },
+      "back_button": {
+            "events": { "show_back": "*" },
+            "actions": [ { "type": "scene", "args": [ "slide03" ] } ]
+      }
+}
+},
+"slide05": {
+        "id": "slide05",
+        "background": "background_five",
+        "title": "Slide 5",
+        "description": "Slide 5",
+        "actors": [
+         {
+                  "name": "intro_heading",
+                  "type": "text",
+                  "font": "standard",
+                  "location": [ 30, 25 ],
+                  "text": "Addiction"
+        },
+         {
+            "name": "forwardButton",
+            "type": "button",
+            "image": "next",
+            "location": [ 720, 530 ],
+            "variable": "show_next"
+          },
+          {
+            "name": "replay",
+            "type": "button",
+            "image": "replay",
+            "location": [ 660, 530 ],
+            "variable": "replayClick"
+          },
+          {
+            "name": "back",
+            "type": "button",
+            "image": "back",
+            "location": [ 600, 532 ],
+            "variable": "show_back"
+          },
+          {
+            "name": "dropShadow",
+            "type": "blocker",
+            "location": [ 163, 138 ],
+            "size": [463, 348],
+            "blockerTint": "0x585858",
+            "blockerAlpha": 1
+          },
+          {
+            "name": "pills",
+            "type": "decoration",
+            "image": "pills",
+            "location": [ 160, 135 ],
+            "key": "decorations"
+          },
+          {
+            "name": "vo",
+            "type": "audio",
+            "audio": [ "Slide5" ],
+            "variable": "slideVO"
+          }
+        ],
+        "outcomes": {
+          "vo_finished": {
+            "events": { "slideVO": "played" },
+            "actions": [
+             { "type": "remove-actor", "args": ["forwardButton"] },
+              { "type": "add-actor", "args": [
+                {
+                  "name": "nextHighlight",
+                  "type": "button",
+                  "image": "nextHighlight",
+                  "animated": false,
+                  "location": [ 720, 530 ],
+                  "variable": "show_next"
+                }
+              ] }
+            ]
+          },
+           "replay_button": {
+            "events": { "replayClick": "*" },
+            "actions": [
+              { "type": "scene", "args": [ "empty_replay_scene" ] },
+              { "type": "scene", "args": [ "slide05" ] }
+            ]
+      },
+       "forward_button": {
+            "events": { "show_next": "*" },
+            "actions": [ { "type": "scene", "args": [ "slide06" ] } ]
+      },
+      "back_button": {
+            "events": { "show_back": "*" },
+            "actions": [ { "type": "scene", "args": [ "slide04" ] } ]
+      }
+}
+},
+"slide06": {
+        "id": "slide06",
+        "background": "background_six",
+        "title": "Slide 6",
+        "description": "Slide 6",
+        "actors": [
+         {
+                  "name": "intro_heading",
+                  "type": "text",
+                  "font": "standard",
+                  "location": [ 30, 25 ],
+                  "text": "Addiction"
+        },
+         {
+            "name": "forwardButton",
+            "type": "button",
+            "image": "next",
+            "location": [ 720, 530 ],
+            "variable": "show_next"
+          },
+          {
+            "name": "replay",
+            "type": "button",
+            "image": "replay",
+            "location": [ 660, 530 ],
+            "variable": "replayClick"
+          },
+          {
+            "name": "back",
+            "type": "button",
+            "image": "back",
+            "location": [ 600, 532 ],
+            "variable": "show_back"
+          },
+          {
+            "name": "dropShadow",
+            "type": "blocker",
+            "location": [ 143, 138 ],
+            "size": [515, 342],
+            "blockerTint": "0x585858",
+            "blockerAlpha": 1
+          },
+          
+          {
+            "name": "doctor",
+            "type": "decoration",
+            "image": "doctor",
+            "location": [ 140, 135 ],
+            "key": "decorations"
+          },
+          {
+            "name": "vo",
+            "type": "audio",
+            "audio": [ "Slide6" ],
+            "variable": "slideVO"
+          }
+        ],
+        "outcomes": {
+          "vo_finished": {
+            "events": { "slideVO": "played" },
+            "actions": [
+             { "type": "remove-actor", "args": ["forwardButton"] },
+              { "type": "add-actor", "args": [
+                {
+                  "name": "nextHighlight",
+                  "type": "button",
+                  "image": "nextHighlight",
+                  "animated": false,
+                  "location": [ 720, 530 ],
+                  "variable": "show_next"
+                }
+              ] }
+            ]
+          },
+          "replay_button": {
+            "events": { "replayClick": "*" },
+            "actions": [
+              { "type": "scene", "args": [ "empty_replay_scene" ] },
+              { "type": "scene", "args": [ "slide06" ] }
+            ]
+      },
+       "forward_button": {
+            "events": { "show_next": "*" },
+            "actions": [ { "type": "scene", "args": [ "slide07" ] } ]
+      },
+      "back_button": {
+            "events": { "show_back": "*" },
+            "actions": [ { "type": "scene", "args": [ "slide05" ] } ]
+      }
+}
+},
+"slide07": {
+        "id": "slide07",
+        "background": "background_seven",
+        "title": "Slide 7",
+        "description": "Slide 7",
+         "actors": [
+         {
+                  "name": "intro_heading",
+                  "type": "text",
+                  "font": "standard",
+                  "location": [ 30, 25 ],
+                  "text": "Addiction"
+        },
+         {
+            "name": "forwardButton",
+            "type": "button",
+            "image": "next",
+            "location": [ 720, 530 ],
+            "variable": "show_next"
+          },
+          {
+            "name": "replay",
+            "type": "button",
+            "image": "replay",
+            "location": [ 660, 530 ],
+            "variable": "replayClick"
+          },
+          {
+            "name": "back",
+            "type": "button",
+            "image": "back",
+            "location": [ 600, 532 ],
+            "variable": "show_back"
+          },
+          
+          {
+           "name": "bullet_heading",
+           "type": "text",
+           "font": "bullet_heading",
+           "location": [ 160 , 125 ],
+           "text": "Prescription drug abuse"
+        },
+          {
+           "name": "bullet1",
+           "type": "text",
+           "font": "bullets_35",
+           "location": [ 160 , 200 ],
+           "bullet": true,
+           "text": "Taking a medication that has been prescribed to someone else",
+           "startDelay": 6000
+
+        },
+        {
+           "name": "bullet2",
+           "type": "text",
+           "font": "bullets_slide7",
+           "location": [ 160 , 315 ],
+           "bullet": true,
+           "text": "Taking too much of the drug",
+           "startDelay": 23000
+
+        },
+        {
+           "name": "bullet3",
+           "type": "text",
+           "font": "bullets_slide7",
+           "location": [ 160 , 400 ],
+           "bullet": true,
+           "text": "Snorting or injecting crushed pills",
+           "startDelay": 34000
+
+         },
+         {
+            "name": "vo",
+            "type": "audio",
+            "audio": [ "Slide7" ],
+            "variable": "slideVO"
+          }
+         ],
+        "outcomes": {
+          "vo_finished": {
+            "events": { "slideVO": "played" },
+            "actions": [
+              { "type": "remove-actor", "args": ["forwardButton"] },
+              { "type": "add-actor", "args": [
+                {
+                  "name": "nextHighlight",
+                  "type": "button",
+                  "image": "nextHighlight",
+                  "animated": false,
+                  "location": [ 720, 530 ],
+                  "variable": "show_next"
+                }
+              ] }
+            ]
+          },
+          "replay_button": {
+            "events": { "replayClick": "*" },
+            "actions": [
+              { "type": "scene", "args": [ "empty_replay_scene" ] },
+              { "type": "scene", "args": [ "slide07" ] }
+            ]
+      },
+       "forward_button": {
+            "events": { "show_next": "*" },
+            "actions": [ { "type": "scene", "args": [ "slide08" ] } ]
+      },
+      "back_button": {
+            "events": { "show_back": "*" },
+            "actions": [ { "type": "scene", "args": [ "slide06" ] } ]
+      }
+}
+},
+"slide08": {
+        "id": "slide08",
+        "background": "background_eight",
+        "title": "Slide 8",
+        "description": "Slide 8",
+        "actors": [
+         {
+                  "name": "intro_heading",
+                  "type": "text",
+                  "font": "standard",
+                  "location": [ 30, 25 ],
+                  "text": "Addiction"
+        },
+         {
+            "name": "forwardButton",
+            "type": "button",
+            "image": "next",
+            "location": [ 720, 530 ],
+            "variable": "show_next"
+          },
+          {
+            "name": "replay",
+            "type": "button",
+            "image": "replay",
+            "location": [ 660, 530 ],
+            "variable": "replayClick"
+          },
+          {
+            "name": "back",
+            "type": "button",
+            "image": "back",
+            "location": [ 600, 532 ],
+            "variable": "show_back"
+          },
+          {
+            "name": "dropShadow",
+            "type": "blocker",
+            "location": [ 143, 138 ],
+            "size": [465, 309],
+            "blockerTint": "0x585858",
+            "blockerAlpha": 1
+          },
+          
+          {
+            "name": "crimescene",
+            "type": "decoration",
+            "image": "crimescene",
+            "location": [ 140, 135 ],
+            "key": "decorations"
+          },
+          {
+            "name": "vo",
+            "type": "audio",
+            "audio": [ "Slide8" ],
+            "variable": "slideVO"
+          }
+        ],
+        "outcomes": {
+          "vo_finished": {
+            "events": { "slideVO": "played" },
+            "actions": [
+            { "type": "remove-actor", "args": ["forwardButton"] },
+              { "type": "add-actor", "args": [
+                {
+                  "name": "nextHighlight",
+                  "type": "button",
+                  "image": "nextHighlight",
+                  "animated": false,
+                  "location": [ 720, 530 ],
+                  "variable": "show_next"
+                }
+              ] }
+              
+            ]
+          },
+          "replay_button": {
+            "events": { "replayClick": "*" },
+            "actions": [
+              { "type": "scene", "args": [ "empty_replay_scene" ] },
+              { "type": "scene", "args": [ "slide08" ] }
+            ]
+      },
+      "forward_button": {
+            "events": { "show_next": "*" },
+            "actions": [ { "type": "scene", "args": [ "slide09" ] } ]
+      },
+      "back_button": {
+            "events": { "show_back": "*" },
+            "actions": [ { "type": "scene", "args": [ "slide07" ] } ]
+      }
+}
+},
+"slide09": {
+        "id": "slide09",
+        "background": "background_nine",
+        "title": "Slide 9",
+        "description": "Slide 9",
+        "actors": [
+         {
+                  "name": "intro_heading",
+                  "type": "text",
+                  "font": "standard",
+                  "location": [ 30, 25 ],
+                  "text": "Addiction"
+        },
+         {
+            "name": "forwardButton",
+            "type": "button",
+            "image": "next",
+            "location": [ 720, 530 ],
+            "variable": "show_next"
+          },
+          {
+            "name": "replay",
+            "type": "button",
+            "image": "replay",
+            "location": [ 660, 530 ],
+            "variable": "replayClick"
+          },
+          {
+            "name": "back",
+            "type": "button",
+            "image": "back",
+            "location": [ 600, 532 ],
+            "variable": "show_back"
+          },
+          
+          {
+           "name": "bullet_heading",
+           "type": "text",
+           "font": "bullet_heading",
+           "location": [ 180 , 125 ],
+           "text": "Dangers of abusing prescription drugs"
+        },
+        {
+           "name": "bullet1",
+           "type": "text",
+           "font": "bullets_slide9",
+           "location": [ 180 , 250 ],
+           "bullet": true,
+           "text": "Vomiting",
+           "startDelay": 16250
+        },
+        {
+           "name": "bullet2",
+           "type": "text",
+           "font": "bullets_slide9",
+           "location": [ 180 , 300 ],
+           "bullet": true,
+           "text": "Mood changes",
+           "startDelay": 17250
+
+        },
+        {
+           "name": "bullet3",
+           "type": "text",
+           "font": "bullets_slide9",
+           "location": [ 180 , 350 ],
+           "bullet": true,
+           "text": "Poor judgment",
+           "startDelay": 18250
+        },
+        {
+           "name": "bullet4",
+           "type": "text",
+           "font": "bullets_slide9",
+           "location": [ 180 , 400 ],
+           "bullet": true,
+           "text": "Heart failure",
+           "startDelay": 19500
+        },
+        {
+           "name": "bullet5",
+           "type": "text",
+           "font": "bullets_slide9",
+           "location": [ 420, 250],
+           "bullet": true,
+           "text": "Seizures",
+           "startDelay": 20500
+        },
+        {
+           "name": "bullet6",
+           "type": "text",
+           "font": "bullets_slide9",
+           "location": [ 420 , 300 ],
+           "bullet": true,
+           "text": "Coma",
+           "startDelay": 21500
+        },
+        {
+           "name": "bullet6",
+           "type": "text",
+           "font": "bullets_slide9",
+           "location": [ 420 , 350 ],
+           "bullet": true,
+           "text": "Death",
+           "startDelay": 22500
+        },
+        {
+            "name": "vo",
+            "type": "audio",
+            "audio": [ "Slide9" ],
+            "variable": "slideVO"
+          }
+        ],
+        "outcomes": {
+          "vo_finished": {
+            "events": { "slideVO": "played" },
+            "actions": [
+              { "type": "remove-actor", "args": ["forwardButton"] },
+              { "type": "add-actor", "args": [
+                {
+                  "name": "nextHighlight",
+                  "type": "button",
+                  "image": "nextHighlight",
+                  "animated": false,
+                  "location": [ 720, 530 ],
+                  "variable": "show_next"
+                }
+              ] }
+            ]
+          },
+         "replay_button": {
+            "events": { "replayClick": "*" },
+            "actions": [
+              { "type": "scene", "args": [ "empty_replay_scene" ] },
+              { "type": "scene", "args": [ "slide09" ] }
+            ]
+      },
+       "forward_button": {
+            "events": { "show_next": "*" },
+            "actions": [ { "type": "scene", "args": [ "slide10" ] } ]
+      },
+      "back_button": {
+            "events": { "show_back": "*" },
+            "actions": [ { "type": "scene", "args": [ "slide08" ] } ]
+      }
+}
+},
+"slide10": {
+        "id": "slide10",
+        "background": "background_ten",
+        "title": "Slide 10",
+        "description": "Slide 10",
+        "actors": [
+         {
+                  "name": "intro_heading",
+                  "type": "text",
+                  "font": "standard",
+                  "location": [ 30, 25 ],
+                  "text": "Addiction"
+        },
+         {
+            "name": "forwardButton",
+            "type": "button",
+            "image": "next",
+            "location": [ 720, 530 ],
+            "variable": "show_next"
+          },
+          {
+            "name": "replay",
+            "type": "button",
+            "image": "replay",
+            "location": [ 660, 530 ],
+            "variable": "replayClick"
+          },
+          {
+            "name": "back",
+            "type": "button",
+            "image": "back",
+            "location": [ 600, 532 ],
+            "variable": "show_back"
+          },
+          {
+            "name": "dropShadow",
+            "type": "blocker",
+            "location": [ 238, 138 ],
+            "size": [303, 385],
+            "blockerTint": "0x585858",
+            "blockerAlpha": 1
+          },
+         
+          {
+            "name": "refill",
+            "type": "decoration",
+            "image": "refill",
+            "location": [ 235, 135 ],
+            "key": "decorations"
+          },
+          {
+            "name": "vo",
+            "type": "audio",
+            "audio": [ "Slide10" ],
+            "variable": "slideVO"
+          }
+        ],
+        "outcomes": {
+          "vo_finished": {
+            "events": { "slideVO": "played" },
+            "actions": [
+            { "type": "remove-actor", "args": ["forwardButton"] },
+              { "type": "add-actor", "args": [
+                {
+                  "name": "nextHighlight",
+                  "type": "button",
+                  "image": "nextHighlight",
+                  "animated": false,
+                  "location": [ 720, 530 ],
+                  "variable": "show_next"
+                }
+              ] }
+              
+            ]
+          },
+          "replay_button": {
+            "events": { "replayClick": "*" },
+            "actions": [
+              { "type": "scene", "args": [ "empty_replay_scene" ] },
+              { "type": "scene", "args": [ "slide10" ] }
+            ]
+      },
+      "forward_button": {
+            "events": { "show_next": "*" },
+            "actions": [ { "type": "scene", "args": [ "slide11" ] } ]
+      },
+      "back_button": {
+            "events": { "show_back": "*" },
+            "actions": [ { "type": "scene", "args": [ "slide09" ] } ]
+      }
+}
+},"slide11": {
+        "id": "slide11",
+        "background": "background_eleven",
+        "title": "Slide 11",
+        "description": "Slide 11",
+        "actors": [
+         {
+                  "name": "intro_heading",
+                  "type": "text",
+                  "font": "standard",
+                  "location": [ 30, 25 ],
+                  "text": "Addiction"
+        },
+         {
+            "name": "forwardButton",
+            "type": "button",
+            "image": "next",
+            "location": [ 720, 530 ],
+            "variable": "show_next"
+          },
+          {
+            "name": "replay",
+            "type": "button",
+            "image": "replay",
+            "location": [ 660, 530 ],
+            "variable": "replayClick"
+          },
+          {
+            "name": "back",
+            "type": "button",
+            "image": "back",
+            "location": [ 600, 532 ],
+            "variable": "show_back"
+          },
+          
+          {
+           "name": "heading",
+          "type": "text",
+          "font": "bullet_heading",
+          "location": [ 10, 245 ],
+         "text": "Prescription drug abuse"
+        },
+        {
+            "name": "arrow",
+            "type": "decoration",
+            "image": "arrow",
+            "location": [ 510, 225 ],
+            "key": "decorations"
+          },
+          {
+           "name": "heroin",
+          "type": "text",
+          "font": "bullet_heading",
+          "location": [ 630, 245 ],
+         "text": "Heroin"
+        },
+        {
+            "name": "vo",
+            "type": "audio",
+            "audio": [ "Slide11" ],
+            "variable": "slideVO"
+          }
+        ],
+        "outcomes": {
+          "vo_finished": {
+            "events": { "slideVO": "played" },
+            "actions": [
+              { "type": "remove-actor", "args": ["forwardButton"] },
+              { "type": "add-actor", "args": [
+                {
+                  "name": "nextHighlight",
+                  "type": "button",
+                  "image": "nextHighlight",
+                  "animated": false,
+                  "location": [ 720, 530 ],
+                  "variable": "show_next"
+                }
+              ] }
+            ]
+          },
+          "replay_button": {
+            "events": { "replayClick": "*" },
+            "actions": [
+              { "type": "scene", "args": [ "empty_replay_scene" ] },
+              { "type": "scene", "args": [ "slide11" ] }
+            ]
+      },
+      "forward_button": {
+            "events": { "show_next": "*" },
+            "actions": [ { "type": "scene", "args": [ "slide12" ] } ]
+      },
+      "back_button": {
+            "events": { "show_back": "*" },
+            "actions": [ { "type": "scene", "args": [ "slide10" ] } ]
+      }
+}
+},
+      "slide12": {
+        "id": "slide12",
+        "background": "background_tweleve",
+        "title": "Slide 12",
+        "description": "Slide 12",
+        "actors": [
+          {
+            "name": "intro_heading",
+            "type": "text",
+            "font": "standard",
+            "location": [ 30, 25 ],
+            "text": "Addiction"
+          },
+          {
+            "name": "next_disabled",
+            "type":"decoration",
+            "image": "next_disabled",
+            "location": [ 720, 530 ],
+            "key": "decorations"
+          },
+          {
+            "name": "replay",
+            "type": "button",
+            "image": "replay",
+            "location": [ 660, 530 ],
+            "variable": "replayClick"
+          },
+          {
+            "name": "back",
+            "type": "button",
+            "image": "back",
+            "location": [ 600, 532 ],
+            "variable": "show_back"
+          },
+          {
+            "name": "dropShadow",
+            "type": "blocker",
+            "location": [ 73, 138 ],
+            "size": [640, 360],
+            "blockerTint": "0x585858",
+            "blockerAlpha": 1
+          },
+          {
+            "name": "video_addiction_conclusion",
+            "type": "wistia",
+            "location": [ 70, 135 ],
+            "hideCloseButton": true,
+            "size": [ 640, 360 ],
+            "video": "zza11xhrje",
+            "blockerAlpha" : 0.0,
+            "blockInput": false,
+            "variable": "video_conclusion"
+          }
+        ],
+        "actions": [
+          { "type": "choice", "args": [ "objective_complete", 1] },
+          { "type": "choice", "args": [ "save", 0 ] }
+        ],
+        "outcomes": {
+          "video_conclusion_finish": {
+            "events": { "video_conclusion": "finished" },
+            "actions": [
+              { "type": "remove-actor", "args": ["forwardButton"] },
+              { "type": "add-actor", "args": [] }
+            ]
+          },
+          "replay_button": {
+            "events": { "replayClick": "*" },
+            "actions": [
+              { "type": "scene", "args": [ "empty_replay_scene" ] },
+              { "type": "scene", "args": [ "slide12" ] }
+            ]
+          },
+          "back_button": {
+            "events": { "show_back": "*" },
+            "actions": [ { "type": "scene", "args": [ "slide11" ] } ]
+          }
+        }
+      },
+      "empty_replay_scene": {
+        "id": "empty_replay_scene",
+        "description": "since a scene change request to the current scene is ignored, first change to this empty scene"
+      }
+    }
+  }
+}
+

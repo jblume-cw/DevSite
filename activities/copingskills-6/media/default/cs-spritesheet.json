@@ -1,0 +1,148 @@
+{"frames": {
+
+"THC.png":
+{
+	"frame": {"x":468,"y":584,"w":460,"h":276},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":6,"y":48,"w":460,"h":276},
+	"sourceSize": {"w":470,"h":375}
+},
+"arrow.png":
+{
+	"frame": {"x":468,"y":862,"w":100,"h":29},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":6,"y":36,"w":100,"h":29},
+	"sourceSize": {"w":109,"h":109}
+},
+"depression.png":
+{
+	"frame": {"x":784,"y":283,"w":357,"h":268},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":357,"h":268},
+	"sourceSize": {"w":357,"h":268}
+},
+"lesson-back-btn-dn.png":
+{
+	"frame": {"x":991,"y":798,"w":59,"h":49},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":59,"h":49},
+	"sourceSize": {"w":59,"h":49}
+},
+"lesson-back-btn-inactive.png":
+{
+	"frame": {"x":1052,"y":798,"w":59,"h":49},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":59,"h":49},
+	"sourceSize": {"w":59,"h":49}
+},
+"lesson-back-btn-up.png":
+{
+	"frame": {"x":1113,"y":595,"w":59,"h":49},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":59,"h":49},
+	"sourceSize": {"w":59,"h":49}
+},
+"lesson-background3.png":
+{
+	"frame": {"x":2,"y":2,"w":780,"h":580},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":780,"h":580},
+	"sourceSize": {"w":780,"h":580}
+},
+"lesson-next-btn-dn-hi.png":
+{
+	"frame": {"x":1143,"y":283,"w":60,"h":50},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":60,"h":50},
+	"sourceSize": {"w":60,"h":50}
+},
+"lesson-next-btn-dn.png":
+{
+	"frame": {"x":1143,"y":335,"w":60,"h":50},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":60,"h":50},
+	"sourceSize": {"w":60,"h":50}
+},
+"lesson-next-btn-inactive.png":
+{
+	"frame": {"x":1143,"y":387,"w":60,"h":50},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":60,"h":50},
+	"sourceSize": {"w":60,"h":50}
+},
+"lesson-next-btn-up-hi.png":
+{
+	"frame": {"x":1143,"y":439,"w":60,"h":50},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":60,"h":50},
+	"sourceSize": {"w":60,"h":50}
+},
+"lesson-next-btn-up.png":
+{
+	"frame": {"x":1143,"y":491,"w":60,"h":50},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":60,"h":50},
+	"sourceSize": {"w":60,"h":50}
+},
+"lesson-replay-btn-dn.png":
+{
+	"frame": {"x":1143,"y":543,"w":59,"h":50},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":59,"h":50},
+	"sourceSize": {"w":59,"h":50}
+},
+"lesson-replay-btn-up.png":
+{
+	"frame": {"x":930,"y":798,"w":59,"h":50},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":59,"h":50},
+	"sourceSize": {"w":59,"h":50}
+},
+"marijuana.png":
+{
+	"frame": {"x":784,"y":2,"w":420,"h":279},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":420,"h":279},
+	"sourceSize": {"w":420,"h":279}
+},
+"police.png":
+{
+	"frame": {"x":2,"y":584,"w":464,"h":311},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":464,"h":311},
+	"sourceSize": {"w":464,"h":311}
+},
+"stress.png":
+{
+	"frame": {"x":930,"y":553,"w":161,"h":243},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":161,"h":243},
+	"sourceSize": {"w":161,"h":243}
+}},
+"meta": {
+	"app": "http://www.codeandweb.com/texturepacker",
+	"version": "1.0",
+	"image": "cs-spritesheet.png",
+	"format": "RGBA8888",
+	"size": {"w":1206,"h":897},
+	"scale": "1",
+	"smartupdate": "$TexturePacker:SmartUpdate:084632f4e28fa63bfa4ba936b475b205:37a2d7d3b2c474763c32fa25eadd9daa:3bae285b0ff81bd136e3bba8f60d3272$"
+}
+}

@@ -1,0 +1,16 @@
+{
+  "name": "Mission: Health Core Concepts Review",
+  "description": "This file contains a description of the Core Concepts Review Play, including all acts",
+  "scorm": false,
+  "logging": false,
+  "autoScale": true,
+  "acts": {
+    "default": {
+      "id": "default",
+      "description": "Core Concepts Review lesson",
+      "name": "Core Concepts Review",
+      "theme": "media/default/theme.json",
+      "objective": "addiction"
+    }
+  }
+}

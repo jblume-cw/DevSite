@@ -1,0 +1,1544 @@
+{
+  "play": {
+    "start_skip": "slide01",
+    "start": "slide01",
+    "showPlayThrough": false,
+    "scenes": {
+      "slide01": {
+        "id": "slide01",
+        "background": "background_rt",
+        "title": "Slide 1",
+        "description": "Slide 1",
+        "actors": [
+         {
+                  "name": "intro_heading",
+                  "type": "text",
+                  "font": "standard",
+                  "location": [ 30, 25 ],
+                  "text": "Risk Taking"
+        },
+         {
+            "name": "forwardButton",
+            "type": "button",
+            "image": "next",
+            "location": [ 720, 530 ],
+            "variable": "show_next"
+          },
+          {
+            "name": "replay",
+            "type": "button",
+            "image": "replay",
+            "location": [ 660, 530 ],
+            "variable": "replayClick"
+          },
+          {
+            "name": "backDisabled",
+            "type": "decoration",
+            "image": "backDisabled",
+            "location": [ 600, 532 ],
+            "key": "decorations"
+          },
+          {
+            "name": "dropShadow",
+            "type": "blocker",
+            "location": [ 73, 138 ],
+            "size": [640, 360],
+            "blockerTint": "0x585858",
+            "blockerAlpha": 1
+          },
+          
+            {
+            "name": "video_rt_intro",
+            "type": "wistia",
+            "location": [ 70, 135 ],
+            "hideCloseButton": true,
+            "size": [ 640, 360 ],
+            "video": "xv18x59q4h",
+            "blockerAlpha" : 0.0,
+            "blockInput": false,
+            "variable": "video_intro"
+          }
+        ],
+        "outcomes": {
+          "video_intro_finished": {
+            "events": { "video_intro": "finished" },
+            "actions": [
+              { "type": "remove-actor", "args": ["forwardButton"] },
+              { "type": "add-actor", "args": [
+                {
+                  "name": "nextHighlight",
+                  "type": "button",
+                  "image": "nextHighlight",
+                  "animated": false,
+                  "location": [ 720, 530 ],
+                  "variable": "show_next"
+                }
+              ] }
+            ]
+          },
+          "replay_button": {
+            "events": { "replayClick": "*" },
+            "actions": [
+              { "type": "scene", "args": [ "empty_replay_scene" ] },
+              { "type": "scene", "args": [ "slide01" ] }
+            ]
+          },
+          "forward_button": {
+            "events": { "show_next": "*" },
+            "actions": [ { "type": "scene", "args": [ "slide02" ] } ]
+      }
+      }
+      }, 
+      "slide02": {
+        "id": "slide02",
+        "background": "background_rt",
+        "title": "Slide 2",
+        "description": "Slide 2",
+        "actors": [
+         {
+                  "name": "intro_heading",
+                  "type": "text",
+                  "font": "standard",
+                  "location": [ 30, 25 ],
+                  "text": "Risk Taking"
+        },
+         {
+            "name": "forwardButton",
+            "type": "button",
+            "image": "next",
+            "location": [ 720, 530 ],
+            "variable": "show_next"
+          },
+          {
+            "name": "replay",
+            "type": "button",
+            "image": "replay",
+            "location": [ 660, 530 ],
+            "variable": "replayClick"
+          },
+          {
+            "name": "back",
+            "type": "button",
+            "image": "back",
+            "location": [ 600, 532 ],
+            "variable": "show_back"
+          },
+         
+          {
+           "name": "bullet_heading",
+           "type": "text",
+           "font": "bullet_heading",
+           "location": [ 80 , 125 ],
+           "text": "Four main questions"
+        },
+        {
+           "name": "bullet1",
+           "type": "text",
+           "font": "bullets_27p",
+           "location": [ 80 , 200 ],
+           "bullet": false,
+           "text": "\"If I choose to do this, am I going to learn something new that's actually useful to me?\"",
+           "startDelay": 7000,
+           "wordWrapWidth": 700
+        },
+        {
+           "name": "bullet2",
+           "type": "text",
+           "font": "bullets_27p",
+           "location": [ 80 , 285 ],
+           "bullet": false,
+           "text": "\"If I fail at this, will I still be proud that I at least gave it a try?\"",
+           "startDelay": 14000,
+           "wordWrapWidth": 700
+
+        },
+        {
+           "name": "bullet3",
+           "type": "text",
+           "font": "bullets_27p",
+           "location": [ 80 , 350 ],
+           "bullet": false,
+           "text": "\"Are there any negative consequences if I take this risk?\"",
+           "startDelay": 20000,
+           "wordWrapWidth": 700
+
+
+        },
+        {
+           "name": "bullet4",
+           "type": "text",
+           "font": "bullets_27p",
+           "location": [ 80 , 425 ],
+           "bullet": false,
+           "text": "\"Can I tell a trusted adult about this?\"",
+           "startDelay": 25000,
+           "wordWrapWidth": 700
+
+
+        },
+        {
+            "name": "vo",
+            "type": "audio",
+            "audio": [ "Slide2Short" ],
+            "variable": "slideVO"
+          }
+        ],
+        "outcomes": {
+          "vo_finished": {
+            "events": { "slideVO": "played" },
+            "actions": [
+              { "type": "remove-actor", "args": ["forwardButton"] },
+              { "type": "add-actor", "args": [
+                {
+                  "name": "nextHighlight",
+                  "type": "button",
+                  "image": "nextHighlight",
+                  "animated": false,
+                  "location": [ 720, 530 ],
+                  "variable": "show_next"
+                }
+              ] }
+            ]
+          },
+          "replay_button": {
+            "events": { "replayClick": "*" },
+            "actions": [
+              { "type": "scene", "args": [ "empty_replay_scene" ] },
+              { "type": "scene", "args": [ "slide02" ] }
+            ]
+      },
+      "forward_button": {
+            "events": { "show_next": "*" },
+            "actions": [ { "type": "scene", "args": [ "slide03" ] } ]
+      },
+      "back_button": {
+            "events": { "show_back": "*" },
+            "actions": [ { "type": "scene", "args": [ "slide01" ] } ]
+      }
+}
+},
+"slide03": {
+        "id": "slide03",
+        "background": "background_rt",
+        "title": "Slide 3",
+        "description": "Slide 3",
+        "actors": [
+         {
+                  "name": "intro_heading",
+                  "type": "text",
+                  "font": "standard",
+                  "location": [ 30, 25 ],
+                  "text": "Risk Taking"
+        },
+         {
+            "name": "forwardButton",
+            "type": "button",
+            "image": "next",
+            "location": [ 720, 530 ],
+            "variable": "show_next"
+          },
+          {
+            "name": "replay",
+            "type": "button",
+            "image": "replay",
+            "location": [ 660, 530 ],
+            "variable": "replayClick"
+          },
+          {
+            "name": "back",
+            "type": "button",
+            "image": "back",
+            "location": [ 600, 532 ],
+            "variable": "show_back"
+          },
+          {
+            "name": "dropShadow",
+            "type": "blocker",
+            "location": [ 133, 138 ],
+            "size": [532, 354],
+            "blockerTint": "0x585858",
+            "blockerAlpha": 1
+          },
+            {
+            "name": "risks-ahead",
+            "type": "decoration",
+            "image": "risks-ahead",
+            "location": [ 130, 135 ],
+            "key": "decorations"
+          },
+          {
+            "name": "clear",
+            "type": "blocker",
+            "location": [ 1, 101 ],
+            "size": [778, 428],
+            "blockerTint": "0xf3f3f3",
+            "blockerAlpha": 1,
+            "startDelay": 15000
+          },
+          {
+                  "name": "bottles",
+                  "type": "decoration",
+                  "image": "bottles",
+                  "location": [ 420, 115 ],
+                  "key": "decorations",
+                  "startDelay": 15300
+          }, 
+          {
+            "name": "dropShadow2",
+            "type": "blocker",
+            "location": [ 423, 118 ],
+            "size": [276, 369],
+            "blockerTint": "0x585858",
+            "blockerAlpha": 1,
+            "startDelay": 15300
+          },
+          {
+                  "name": "sub-texet",
+                  "type": "text",
+                  "font": "bullets_40p_hi",
+                  "location": [ 132, 220 ],
+                  "text": "Alcohol use under age 21",
+                  "wordWrapWidth": 200,
+                  "startDelay": 15300
+          },
+          {
+                  "name": "no-sign",
+                  "type": "decoration",
+                  "image": "no-sign",
+                  "location": [ 80, 155 ],
+                  "key": "decorations",
+                  "startDelay": 17000
+          },
+          {
+            "name": "vo",
+            "type": "audio",
+            "audio": [ "Slide3" ],
+            "variable": "slideVO"
+          }
+        ],
+        "outcomes": {
+          "vo_finished": {
+            "events": { "slideVO": "played" },
+            "actions": [
+              { "type": "remove-actor", "args": ["forwardButton"] },
+              { "type": "add-actor", "args": [
+                {
+                  "name": "nextHighlight",
+                  "type": "button",
+                  "image": "nextHighlight",
+                  "animated": false,
+                  "location": [ 720, 530 ],
+                  "variable": "show_next"
+                }
+              ] }
+            ]
+          },           
+          "replay_button": {
+            "events": { "replayClick": "*" },
+            "actions": [
+              { "type": "scene", "args": [ "empty_replay_scene" ] },
+              { "type": "scene", "args": [ "slide03" ] }
+            ]
+      },
+       "forward_button": {
+            "events": { "show_next": "*" },
+            "actions": [ { "type": "scene", "args": [ "slide04" ] } ]
+      },
+      "back_button": {
+            "events": { "show_back": "*" },
+            "actions": [ { "type": "scene", "args": [ "slide02" ] } ]
+      }
+}
+},
+"slide04": {
+        "id": "slide04",
+        "background": "background_rt",
+        "title": "Slide 4",
+        "description": "Slide 4",
+        "actors": [
+         {
+                  "name": "intro_heading",
+                  "type": "text",
+                  "font": "standard",
+                  "location": [ 30, 25 ],
+                  "text": "Risk Taking"
+        },
+         {
+            "name": "forwardButton",
+            "type": "button",
+            "image": "next",
+            "location": [ 720, 530 ],
+            "variable": "show_next"
+          },
+          {
+            "name": "replay",
+            "type": "button",
+            "image": "replay",
+            "location": [ 660, 530 ],
+            "variable": "replayClick"
+          },
+          {
+            "name": "back",
+            "type": "button",
+            "image": "back",
+            "location": [ 600, 532 ],
+            "variable": "show_back"
+          },
+         {
+           "name": "bullet_heading",
+           "type": "text",
+           "font": "bullet_heading_30p",
+           "location": [ 110 , 125 ],
+           "text": "How alcohol affects a person depends on many different factors.",
+           "wordWrapWidth": 600
+        },
+        {
+           "name": "bullet1",
+           "type": "text",
+           "font": "bullets_35p",
+           "location": [ 145 , 245 ],
+           "bullet":  true,
+           "text": "Age",
+           "startDelay": 4000
+        },
+        {
+           "name": "bullet2",
+           "type": "text",
+           "font": "bullets_35p",
+           "location": [ 145 , 310 ],
+           "bullet": true,
+           "text": "Weight",
+           "startDelay": 5000
+
+        },
+        {
+           "name": "bullet3",
+           "type": "text",
+           "font": "bullets_35p",
+           "location": [ 145 , 375 ],
+           "bullet": true,
+           "text": "The amount of food they've eaten",
+           "startDelay": 6000,
+           "wordWrapWidth": 700
+
+        },
+        {
+           "name": "bullet4",
+           "type": "text",
+           "font": "bullets_35p",
+           "location": [ 145 , 435 ],
+           "bullet": true,
+           "text": "Whether they are male or female",
+           "startDelay": 7000,
+           "wordWrapWidth": 700
+
+        },
+        {
+            "name": "vo",
+            "type": "audio",
+            "audio": [ "Slide4" ],
+            "variable": "slideVO"
+          }
+        ],
+        "outcomes": {
+          "vo_finished": {
+            "events": { "slideVO": "played" },
+            "actions": [
+              { "type": "remove-actor", "args": ["forwardButton"] },
+              { "type": "add-actor", "args": [
+                {
+                  "name": "nextHighlight",
+                  "type": "button",
+                  "image": "nextHighlight",
+                  "animated": false,
+                  "location": [ 720, 530 ],
+                  "variable": "show_next"
+                }
+              ] }
+            ]
+          },   
+         "replay_button": {
+            "events": { "replayClick": "*" },
+            "actions": [
+              { "type": "scene", "args": [ "empty_replay_scene" ] },
+              { "type": "scene", "args": [ "slide04" ] }
+            ]
+      },
+       "forward_button": {
+            "events": { "show_next": "*" },
+            "actions": [ { "type": "scene", "args": [ "slide05" ] } ]
+      },
+      "back_button": {
+            "events": { "show_back": "*" },
+            "actions": [ { "type": "scene", "args": [ "slide03" ] } ]
+      }
+}
+},
+"slide05": {
+        "id": "slide05",
+        "background": "background_rt",
+        "title": "Slide 5",
+        "description": "Slide 5",
+        "actors": [
+         {
+                  "name": "intro_heading",
+                  "type": "text",
+                  "font": "standard",
+                  "location": [ 30, 25 ],
+                  "text": "Risk Taking"
+        },
+         {
+            "name": "forwardButton",
+            "type": "button",
+            "image": "next",
+            "location": [ 720, 530 ],
+            "variable": "show_next"
+          },
+          {
+            "name": "replay",
+            "type": "button",
+            "image": "replay",
+            "location": [ 660, 530 ],
+            "variable": "replayClick"
+          },
+          {
+            "name": "back",
+            "type": "button",
+            "image": "back",
+            "location": [ 600, 532 ],
+            "variable": "show_back"
+          },
+          {
+            "name": "body-ds",
+            "type": "decoration",
+            "image": "body_ds",
+            "location": [ 78, 131 ],
+            "key": "decorations"
+          },
+          {
+            "name": "body",
+            "type": "decoration",
+            "image": "body",
+            "location": [ 75, 128 ],
+            "key": "decorations"
+          },
+          {
+           "name": "bullet_heading",
+           "type": "text",
+           "font": "bullet_heading_30p",
+           "location": [ 340 , 125 ],
+           "text": "Alcohol is a depressant."
+        },
+        {
+           "name": "bullet1",
+           "type": "text",
+           "font": "bullets_30p",
+           "location": [ 395 , 165 ],
+           "bullet":  false,
+           "text": "It slows down the central nervous system.",
+           "startDelay": 2000,
+           "wordWrapWidth": 350
+        },
+          {
+            "name": "arrow-brain",
+            "type": "decoration",
+            "image": "arrow_brain",
+            "location": [ 293, 198 ],
+            "key": "decorations",
+            "startDelay": 5000
+          },
+        {
+           "name": "bullet2",
+           "type": "text",
+           "font": "bullets_30p",
+           "location": [ 418 , 264 ],
+           "bullet": true,
+           "text": "Brain",
+           "startDelay": 5000
+
+        },
+          {
+            "name": "arrow-spine",
+            "type": "decoration",
+            "image": "arrow_spine",
+            "location": [ 265, 233 ],
+            "key": "decorations",
+            "startDelay": 6000
+          },
+        {
+           "name": "bullet3",
+           "type": "text",
+           "font": "bullets_30p",
+           "location": [ 418 , 304 ],
+           "bullet": true,
+           "text": "Spinal Cord",
+           "startDelay": 6000
+
+        },
+        {
+            "name": "vo",
+            "type": "audio",
+            "audio": [ "Slide5" ],
+            "variable": "slideVO"
+          }
+        ],
+        "outcomes": {
+          "vo_finished": {
+            "events": { "slideVO": "played" },
+            "actions": [
+             { "type": "remove-actor", "args": ["forwardButton"] },
+              { "type": "add-actor", "args": [
+                {
+                  "name": "nextHighlight",
+                  "type": "button",
+                  "image": "nextHighlight",
+                  "animated": false,
+                  "location": [ 720, 530 ],
+                  "variable": "show_next"
+                }
+              ] }
+            ]
+          },
+           "replay_button": {
+            "events": { "replayClick": "*" },
+            "actions": [
+              { "type": "scene", "args": [ "empty_replay_scene" ] },
+              { "type": "scene", "args": [ "slide05" ] }
+            ]
+      },
+       "forward_button": {
+            "events": { "show_next": "*" },
+            "actions": [ { "type": "scene", "args": [ "slide06" ] } ]
+      },
+      "back_button": {
+            "events": { "show_back": "*" },
+            "actions": [ { "type": "scene", "args": [ "slide04" ] } ]
+      }
+}
+},
+"slide06": {
+        "id": "slide06",
+        "background": "background_rt",
+        "title": "Slide 6",
+        "description": "Slide 6",
+        "actors": [
+         {
+                  "name": "intro_heading",
+                  "type": "text",
+                  "font": "standard",
+                  "location": [ 30, 25 ],
+                  "text": "Risk Taking"
+        },
+         {
+            "name": "forwardButton",
+            "type": "button",
+            "image": "next",
+            "location": [ 720, 530 ],
+            "variable": "show_next"
+          },
+          {
+            "name": "replay",
+            "type": "button",
+            "image": "replay",
+            "location": [ 660, 530 ],
+            "variable": "replayClick"
+          },
+          {
+            "name": "back",
+            "type": "button",
+            "image": "back",
+            "location": [ 600, 532 ],
+            "variable": "show_back"
+          },
+          {
+           "name": "bullet_heading",
+           "type": "text",
+           "font": "bullet_heading_30p",
+           "location": [ 60 , 125 ],
+           "text": "Small amounts"
+        },
+        {
+           "name": "bullet1",
+           "type": "text",
+           "font": "bullets_25p",
+           "location": [ 70 , 165 ],
+           "bullet":  true,
+           "text": "More relaxed or less nervous",
+           "startDelay": 3000
+        },
+        {
+           "name": "bullet_heading_1",
+           "type": "text",
+           "font": "bullet_heading_30p",
+           "location": [ 60 , 215 ],
+           "text": "Large amounts",
+           "startDelay": 5000
+        },
+        {
+           "name": "bullet2",
+           "type": "text",
+           "font": "bullets_25p",
+           "location": [ 70 , 255 ],
+           "bullet":  true,
+           "text": "Changes in the brain",
+           "startDelay": 7000
+        },
+        {
+           "name": "bullet_heading_2",
+           "type": "text",
+           "font": "bullet_heading_30p",
+           "location": [ 430 , 215 ],
+           "text": "Intoxication",
+           "startDelay": 9000
+        },
+        {
+           "name": "bullet3",
+           "type": "text",
+           "font": "bullets_25p",
+           "location": [ 440 , 265 ],
+           "bullet":  true,
+           "text": "Staggering",
+           "startDelay": 20000
+        },
+         {
+           "name": "bullet4",
+           "type": "text",
+           "font": "bullets_25p",
+           "location": [ 440 , 315 ],
+           "bullet":  true,
+           "text": "Loss of coordination and slurring of speech",
+           "startDelay": 22000
+        },
+         {
+           "name": "bullet5",
+           "type": "text",
+           "font": "bullets_25p",
+           "location": [ 440 , 395 ],
+           "bullet":  true,
+           "text": "Confusion and disorientation",
+           "startDelay": 25000
+        },
+         {
+           "name": "bullet6",
+           "type": "text",
+           "font": "bullets_25p",
+           "location": [ 440 , 445 ],
+           "bullet":  true,
+           "text": "Saying or doing things they normally wouldn't",
+           "startDelay": 27000
+        },
+        {
+            "name": "arrow",
+            "type": "decoration",
+            "image": "arrow",
+            "location": [ 328 , 225 ],
+            "key": "decorations",
+            "startDelay": 9000
+          },
+          {
+            "name": "vo",
+            "type": "audio",
+            "audio": [ "Slide6" ],
+            "variable": "slideVO"
+          }
+        ],
+        "outcomes": {
+          "vo_finished": {
+            "events": { "slideVO": "played" },
+            "actions": [
+             { "type": "remove-actor", "args": ["forwardButton"] },
+              { "type": "add-actor", "args": [
+                {
+                  "name": "nextHighlight",
+                  "type": "button",
+                  "image": "nextHighlight",
+                  "animated": false,
+                  "location": [ 720, 530 ],
+                  "variable": "show_next"
+                }
+              ] }
+            ]
+          },
+          "replay_button": {
+            "events": { "replayClick": "*" },
+            "actions": [
+              { "type": "scene", "args": [ "empty_replay_scene" ] },
+              { "type": "scene", "args": [ "slide06" ] }
+            ]
+      },
+       "forward_button": {
+            "events": { "show_next": "*" },
+            "actions": [ { "type": "scene", "args": [ "slide07" ] } ]
+      },
+      "back_button": {
+            "events": { "show_back": "*" },
+            "actions": [ { "type": "scene", "args": [ "slide05" ] } ]
+      }
+}
+},
+"slide07": {
+        "id": "slide07",
+        "background": "background_rt",
+        "title": "Slide 7",
+        "description": "Slide 7",
+         "actors": [
+         {
+                  "name": "intro_heading",
+                  "type": "text",
+                  "font": "standard",
+                  "location": [ 30, 25 ],
+                  "text": "Risk Taking"
+        },
+         {
+            "name": "forwardButton",
+            "type": "button",
+            "image": "next",
+            "location": [ 720, 530 ],
+            "variable": "show_next"
+          },
+          {
+            "name": "replay",
+            "type": "button",
+            "image": "replay",
+            "location": [ 660, 530 ],
+            "variable": "replayClick"
+          },
+          {
+            "name": "back",
+            "type": "button",
+            "image": "back",
+            "location": [ 600, 532 ],
+            "variable": "show_back"
+          },
+        {
+           "name": "bullet_heading_1",
+           "type": "text",
+           "font": "bullet_heading_30p",
+           "location": [ 55 , 135 ],
+           "text": "Binge Drinking",
+           "startDelay": 0
+        },
+        {
+           "name": "bullet2",
+           "type": "text",
+           "font": "bullets_25p",
+           "location": [ 65 , 200 ],
+           "bullet":  true,
+           "text": "Drinking large amounts of alcohol over a short period of time",
+           "startDelay": 0,
+           "wordWrapWidth": 250
+        },
+        {
+           "name": "bullet2a",
+           "type": "text",
+           "font": "bullets_25p",
+           "location": [ 65 , 315 ],
+           "bullet":  true,
+           "text": "Is very dangerous",
+           "startDelay": 6000,
+           "wordWrapWidth": 250
+        },
+        {
+           "name": "bullet_heading_2",
+           "type": "text",
+           "font": "bullet_heading_30p",
+           "location": [ 440 , 135 ],
+           "text": "Alcohol poisoning",
+           "startDelay": 7500
+        },
+        {
+           "name": "bullet3",
+           "type": "text",
+           "font": "bullets_25p",
+           "location": [ 440 , 200 ],
+           "bullet":  true,
+           "text": "The body can't break down alcohol fast enough",
+           "startDelay": 10000,
+           "wordWrapWidth": 250
+        },
+         {
+           "name": "bullet4",
+           "type": "text",
+           "font": "bullets_25p",
+           "location": [ 440 , 315 ],
+           "bullet":  true,
+           "text": "Affects breathing and gag reflex",
+           "startDelay": 16000,
+           "wordWrapWidth": 250
+        },
+         {
+           "name": "bullet5",
+           "type": "text",
+           "font": "bullets_25p",
+           "location": [ 440 , 395 ],
+           "bullet":  true,
+           "text": "A person could pass out, vomit or die",
+           "startDelay": 22000,
+           "wordWrapWidth": 250
+        },
+        {
+            "name": "arrow",
+            "type": "decoration",
+            "image": "arrow",
+            "location": [ 329 , 145 ],
+            "key": "decorations",
+            "startDelay": 7500
+          },
+          {
+            "name": "vo",
+            "type": "audio",
+            "audio": [ "Slide7" ],
+            "variable": "slideVO"
+          }       
+         ],
+        "outcomes": {
+          "vo_finished": {
+            "events": { "slideVO": "played" },
+            "actions": [
+             { "type": "remove-actor", "args": ["forwardButton"] },
+              { "type": "add-actor", "args": [
+                {
+                  "name": "nextHighlight",
+                  "type": "button",
+                  "image": "nextHighlight",
+                  "animated": false,
+                  "location": [ 720, 530 ],
+                  "variable": "show_next"
+                }
+              ] }
+            ]
+          },
+          "replay_button": {
+            "events": { "replayClick": "*" },
+            "actions": [
+              { "type": "scene", "args": [ "empty_replay_scene" ] },
+              { "type": "scene", "args": [ "slide07" ] }
+            ]
+      },
+       "forward_button": {
+            "events": { "show_next": "*" },
+            "actions": [ { "type": "scene", "args": [ "slide08" ] } ]
+      },
+      "back_button": {
+            "events": { "show_back": "*" },
+            "actions": [ { "type": "scene", "args": [ "slide06" ] } ]
+      }
+}
+},
+"slide08": {
+        "id": "slide08",
+        "background": "background_rt",
+        "title": "Slide 8",
+        "description": "Slide 8",
+         "actors": [
+         {
+                  "name": "intro_heading",
+                  "type": "text",
+                  "font": "standard",
+                  "location": [ 30, 25 ],
+                  "text": "Risk Taking"
+        },
+         {
+            "name": "forwardButton",
+            "type": "button",
+            "image": "next",
+            "location": [ 720, 530 ],
+            "variable": "show_next"
+          },
+          {
+            "name": "replay",
+            "type": "button",
+            "image": "replay",
+            "location": [ 660, 530 ],
+            "variable": "replayClick"
+          },
+          {
+            "name": "back",
+            "type": "button",
+            "image": "back",
+            "location": [ 600, 532 ],
+            "variable": "show_back"
+          },
+          {
+            "name": "dropShadow",
+            "type": "blocker",
+            "location": [ 163, 158 ],
+            "size": [477, 318],
+            "blockerTint": "0x585858",
+            "blockerAlpha": 1
+          },
+          {
+            "name": "911",
+            "type": "decoration",
+            "image": "911",
+            "location": [ 160, 155 ],
+            "key": "decorations"
+          },
+          {
+            "name": "vo",
+            "type": "audio",
+            "audio": [ "Slide8" ],
+            "variable": "slideVO"
+          }          
+         ],
+        "outcomes": {
+          "vo_finished": {
+            "events": { "slideVO": "played" },
+            "actions": [
+             { "type": "remove-actor", "args": ["forwardButton"] },
+              { "type": "add-actor", "args": [
+                {
+                  "name": "nextHighlight",
+                  "type": "button",
+                  "image": "nextHighlight",
+                  "animated": false,
+                  "location": [ 720, 530 ],
+                  "variable": "show_next"
+                }
+              ] }
+            ]
+          },
+          "replay_button": {
+            "events": { "replayClick": "*" },
+            "actions": [
+              { "type": "scene", "args": [ "empty_replay_scene" ] },
+              { "type": "scene", "args": [ "slide08" ] }
+            ]
+      },
+       "forward_button": {
+            "events": { "show_next": "*" },
+            "actions": [ { "type": "scene", "args": [ "slide09" ] } ]
+      },
+      "back_button": {
+            "events": { "show_back": "*" },
+            "actions": [ { "type": "scene", "args": [ "slide07" ] } ]
+      }
+}
+},
+"slide09": {
+        "id": "slide09",
+        "background": "background_rt",
+        "title": "Slide 9",
+        "description": "Slide 9",
+        "actors": [
+         {
+                  "name": "intro_heading",
+                  "type": "text",
+                  "font": "standard",
+                  "location": [ 30, 25 ],
+                  "text": "Risk Taking"
+        },
+         {
+            "name": "forwardButton",
+            "type": "button",
+            "image": "next",
+            "location": [ 720, 530 ],
+            "variable": "show_next"
+          },
+          {
+            "name": "replay",
+            "type": "button",
+            "image": "replay",
+            "location": [ 660, 530 ],
+            "variable": "replayClick"
+          },
+          {
+            "name": "back",
+            "type": "button",
+            "image": "back",
+            "location": [ 600, 532 ],
+            "variable": "show_back"
+          },
+          {
+            "name": "dropShadow",
+            "type": "blocker",
+            "location": [ 193, 218 ],
+            "size": [404, 268],
+            "blockerTint": "0x585858",
+            "blockerAlpha": 1
+          },
+          {
+            "name": "train-tracks",
+            "type": "decoration",
+            "image": "train-tracks",
+            "location": [ 190, 215 ],
+            "key": "decorations"
+          },
+          {
+           "name": "bullet_heading",
+           "type": "text",
+           "font": "bullet_heading_30p",
+           "location": [ 80 , 135 ],
+           "text": "Binge drinking"
+        },
+        {
+           "name": "bullet_heading",
+           "type": "text",
+           "font": "bullet_heading_30p",
+           "location": [ 480 , 135 ],
+           "text": "Risky behaviors"
+        },
+        {
+            "name": "arrow",
+            "type": "decoration",
+            "image": "arrow",
+            "location": [ 359, 145 ],
+            "key": "decorations"
+          },
+          {
+            "name": "vo",
+            "type": "audio",
+            "audio": [ "Slide9" ],
+            "variable": "slideVO"
+          }   
+        ],
+        "outcomes": {
+          "vo_finished": {
+            "events": { "slideVO": "played" },
+            "actions": [
+            { "type": "remove-actor", "args": ["forwardButton"] },
+              { "type": "add-actor", "args": [
+                {
+                  "name": "nextHighlight",
+                  "type": "button",
+                  "image": "nextHighlight",
+                  "animated": false,
+                  "location": [ 720, 530 ],
+                  "variable": "show_next"
+                }
+              ] }
+              
+            ]
+          },
+          "replay_button": {
+            "events": { "replayClick": "*" },
+            "actions": [
+              { "type": "scene", "args": [ "empty_replay_scene" ] },
+              { "type": "scene", "args": [ "slide09" ] }
+            ]
+      },
+      "forward_button": {
+            "events": { "show_next": "*" },
+            "actions": [ { "type": "scene", "args": [ "slide10" ] } ]
+      },
+      "back_button": {
+            "events": { "show_back": "*" },
+            "actions": [ { "type": "scene", "args": [ "slide08" ] } ]
+      }
+}
+},
+"slide10": {
+        "id": "slide10",
+        "background": "background_rt",
+        "title": "Slide 10",
+        "description": "Slide 10",
+        "actors": [
+         {
+                  "name": "intro_heading",
+                  "type": "text",
+                  "font": "standard",
+                  "location": [ 30, 25 ],
+                  "text": "Risk Taking"
+        },
+         {
+            "name": "forwardButton",
+            "type": "button",
+            "image": "next",
+            "location": [ 720, 530 ],
+            "variable": "show_next"
+          },
+          {
+            "name": "replay",
+            "type": "button",
+            "image": "replay",
+            "location": [ 660, 530 ],
+            "variable": "replayClick"
+          },
+          {
+            "name": "back",
+            "type": "button",
+            "image": "back",
+            "location": [ 600, 532 ],
+            "variable": "show_back"
+          },
+          {
+           "name": "bullet_heading",
+           "type": "text",
+           "font": "bullet_heading_45p",
+           "location": [ 200 , 125 ],
+           "text": "Why teens drink"
+        },
+        {
+           "name": "bullet1",
+           "type": "text",
+           "font": "bullets_40p",
+           "location": [ 240 , 200 ],
+           "bullet": true,
+           "text": "They're curious",
+           "startDelay": 3000
+        },
+        {
+           "name": "bullet2",
+           "type": "text",
+           "font": "bullets_40p",
+           "location": [ 240 , 275 ],
+           "bullet": true,
+           "text": "To reduce stress",
+           "startDelay": 4000
+
+        },
+        {
+           "name": "bullet3",
+           "type": "text",
+           "font": "bullets_40p",
+           "location": [ 240 , 350 ],
+           "bullet": true,
+           "text": "To feel good",
+           "startDelay": 5500
+        },
+        {
+           "name": "bullet4",
+           "type": "text",
+           "font": "bullets_40p",
+           "location": [ 240 , 425 ],
+           "bullet": true,
+           "text": "To fit in",
+           "startDelay": 9000
+        },
+        {
+            "name": "vo",
+            "type": "audio",
+            "audio": [ "Slide10" ],
+            "variable": "slideVO"
+          }   
+        ],
+        "outcomes": {
+          "vo_finished": {
+            "events": { "slideVO": "played" },
+            "actions": [
+              { "type": "remove-actor", "args": ["forwardButton"] },
+              { "type": "add-actor", "args": [
+                {
+                  "name": "nextHighlight",
+                  "type": "button",
+                  "image": "nextHighlight",
+                  "animated": false,
+                  "location": [ 720, 530 ],
+                  "variable": "show_next"
+                }
+              ] }
+            ]
+          },
+         "replay_button": {
+            "events": { "replayClick": "*" },
+            "actions": [
+              { "type": "scene", "args": [ "empty_replay_scene" ] },
+              { "type": "scene", "args": [ "slide10" ] }
+            ]
+      },
+       "forward_button": {
+            "events": { "show_next": "*" },
+            "actions": [ { "type": "scene", "args": [ "slide11" ] } ]
+      },
+      "back_button": {
+            "events": { "show_back": "*" },
+            "actions": [ { "type": "scene", "args": [ "slide09" ] } ]
+      }
+}
+},
+"slide11": {
+        "id": "slide11",
+        "background": "background_rt",
+        "title": "Slide 10",
+        "description": "Slide 11",
+        "actors": [
+         {
+                  "name": "intro_heading",
+                  "type": "text",
+                  "font": "standard",
+                  "location": [ 30, 25 ],
+                  "text": "Risk Taking"
+        },
+         {
+            "name": "forwardButton",
+            "type": "button",
+            "image": "next",
+            "location": [ 720, 530 ],
+            "variable": "show_next"
+          },
+          {
+            "name": "replay",
+            "type": "button",
+            "image": "replay",
+            "location": [ 660, 530 ],
+            "variable": "replayClick"
+          },
+          {
+            "name": "back",
+            "type": "button",
+            "image": "back",
+            "location": [ 600, 532 ],
+            "variable": "show_back"
+          },
+          {
+            "name": "dropShadow",
+            "type": "blocker",
+            "location": [ 163, 158 ],
+            "size": [458, 305],
+            "blockerTint": "0x585858",
+            "blockerAlpha": 1
+          },
+          {
+            "name": "drinking",
+            "type": "decoration",
+            "image": "drinking",
+            "location": [ 160, 155 ],
+            "key": "decorations"
+          },
+          {
+            "name": "vo",
+            "type": "audio",
+            "audio": [ "Slide11" ],
+            "variable": "slideVO"
+          }   
+        ],
+        "outcomes": {
+          "vo_finished": {
+            "events": { "slideVO": "played" },
+            "actions": [
+            { "type": "remove-actor", "args": ["forwardButton"] },
+              { "type": "add-actor", "args": [
+                {
+                  "name": "nextHighlight",
+                  "type": "button",
+                  "image": "nextHighlight",
+                  "animated": false,
+                  "location": [ 720, 530 ],
+                  "variable": "show_next"
+                }
+              ] }
+              
+            ]
+          },
+          "replay_button": {
+            "events": { "replayClick": "*" },
+            "actions": [
+              { "type": "scene", "args": [ "empty_replay_scene" ] },
+              { "type": "scene", "args": [ "slide11" ] }
+            ]
+      },
+      "forward_button": {
+            "events": { "show_next": "*" },
+            "actions": [ { "type": "scene", "args": [ "slide12" ] } ]
+      },
+      "back_button": {
+            "events": { "show_back": "*" },
+            "actions": [ { "type": "scene", "args": [ "slide10" ] } ]
+      }
+}
+},"slide12": {
+        "id": "slide12",
+        "background": "background_rt",
+        "title": "Slide 12",
+        "description": "Slide 12",
+        "actors": [
+         {
+                  "name": "intro_heading",
+                  "type": "text",
+                  "font": "standard",
+                  "location": [ 30, 25 ],
+                  "text": "Risk Taking"
+        },
+         {
+            "name": "forwardButton",
+            "type": "button",
+            "image": "next",
+            "location": [ 720, 530 ],
+            "variable": "show_next"
+          },
+          {
+            "name": "replay",
+            "type": "button",
+            "image": "replay",
+            "location": [ 660, 530 ],
+            "variable": "replayClick"
+          },
+          {
+            "name": "back",
+            "type": "button",
+            "image": "back",
+            "location": [ 600, 532 ],
+            "variable": "show_back"
+          },
+          {
+           "name": "bullet_heading",
+           "type": "text",
+           "font": "bullet_heading_35p_extralength",
+           "location": [ 65 , 125 ],
+           "text": "Negative consequences of drinking"
+        },
+        {
+           "name": "bullet1",
+           "type": "text",
+           "font": "bullets_40p_el",
+           "location": [ 100 , 200 ],
+           "bullet": true,
+           "text": "Addiction",
+           "startDelay": 6500
+        },
+        {
+           "name": "bullet2",
+           "type": "text",
+           "font": "bullets_40p_el",
+           "location": [ 100 , 275 ],
+           "bullet": true,
+           "text": "Problems with the law",
+           "startDelay": 7500
+
+        },
+        {
+           "name": "bullet3",
+           "type": "text",
+           "font": "bullets_40p_el",
+           "location": [ 100 , 350 ],
+           "bullet": true,
+           "text": "Issues in school",
+           "startDelay": 9000
+        },
+        {
+           "name": "bullet4",
+           "type": "text",
+           "font": "bullets_40p_el",
+           "location": [ 100 , 425 ],
+           "bullet": true,
+           "text": "Negative health effects",
+           "startDelay":10000
+        },
+        {
+            "name": "vo",
+            "type": "audio",
+            "audio": [ "Slide12" ],
+            "variable": "slideVO"
+          }   
+        ],
+        "outcomes": {
+          "vo_finished": {
+            "events": { "slideVO": "played" },
+            "actions": [
+              { "type": "remove-actor", "args": ["forwardButton"] },
+              { "type": "add-actor", "args": [
+                {
+                  "name": "nextHighlight",
+                  "type": "button",
+                  "image": "nextHighlight",
+                  "animated": false,
+                  "location": [ 720, 530 ],
+                  "variable": "show_next"
+                }
+              ] }
+            ]
+          },
+          "replay_button": {
+            "events": { "replayClick": "*" },
+            "actions": [
+              { "type": "scene", "args": [ "empty_replay_scene" ] },
+              { "type": "scene", "args": [ "slide12" ] }
+            ]
+      },
+      "forward_button": {
+            "events": { "show_next": "*" },
+            "actions": [ { "type": "scene", "args": [ "slide13" ] } ]
+      },
+      "back_button": {
+            "events": { "show_back": "*" },
+            "actions": [ { "type": "scene", "args": [ "slide11" ] } ]
+      }
+}
+},
+"slide13": {
+        "id": "slide13",
+        "background": "background_rt",
+        "title": "Slide 13",
+        "description": "Slide 13",
+        "actors": [
+         {
+                  "name": "intro_heading",
+                  "type": "text",
+                  "font": "standard",
+                  "location": [ 30, 25 ],
+                  "text": "Risk Taking"
+        },
+         {
+          "name": "next_disabled",
+          "type":"decoration",
+          "image": "next_disabled",
+          "location": [ 720, 530 ],
+          "key": "decorations"
+        },
+          {
+            "name": "replay",
+            "type": "button",
+            "image": "replay",
+            "location": [ 660, 530 ],
+            "variable": "replayClick"
+          },
+          {
+            "name": "back",
+            "type": "button",
+            "image": "back",
+            "location": [ 600, 532 ],
+            "variable": "show_back"
+          },
+          {
+            "name": "dropShadow",
+            "type": "blocker",
+            "location": [ 73, 138 ],
+            "size": [640, 360],
+            "blockerTint": "0x585858",
+            "blockerAlpha": 1
+          },
+          {
+            "name": "video_rt_end",
+            "type": "wistia",
+            "location": [ 70, 135 ],
+            "hideCloseButton": true,
+            "size": [ 640, 360 ],
+            "video": "cga76asckg",
+            "blockerAlpha" : 0.0,
+            "blockInput": false,
+            "variable": "video_end"
+          }
+        ],
+        "actions": [
+          { "type": "choice", "args": [ "objective_complete", 1] },
+          { "type": "choice", "args": [ "save", 0 ] }
+        ],
+        "outcomes": {
+          "video_end_finished": {
+            "events": { "video_end": "finished" },
+            "actions": [
+            ]
+          },
+          "replay_button": {
+            "events": { "replayClick": "*" },
+            "actions": [
+              { "type": "scene", "args": [ "empty_replay_scene" ] },
+              { "type": "scene", "args": [ "slide13" ] }
+            ]
+      },
+      "back_button": {
+            "events": { "show_back": "*" },
+            "actions": [ { "type": "scene", "args": [ "slide12" ] } ]
+      }
+}
+},
+"empty_replay_scene": {
+        "id": "empty_replay_scene",
+        "description": "since a scene change request to the current scene is ignored, first change to this empty scene"
+      }
+
+
+}
+}
+}
+

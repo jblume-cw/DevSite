@@ -1,0 +1,165 @@
+{
+  "texture": "media/default/rt-spritesheet.png",
+  "textureMap": "media/default/rt-spritesheet.json",
+  "textureKey": "rt_texture",
+  "data": "media/default/sceneData.json",
+  "fonts" : {
+    "standard": { "font": "40px ralewaythin", "fill": "#ffffff", "align": "left", "wordWrap": true, "wordWrapWidth": 300},
+    "bullet_heading": { "font": "40px open_sansextrabold", "fill": "#4f4f4f", "align": "left", "wordWrap": true, "wordWrapWidth": 550},
+    "bullet_heading_35p_extralength": { "font": "35px open_sansextrabold", "fill": "#4f4f4f", "align": "left", "wordWrap": true, "wordWrapWidth": 750},
+    "bullet_heading_30p": { "font": "30px open_sansextrabold", "fill": "#4f4f4f", "align": "left", "wordWrap": true, "wordWrapWidth": 550},
+    "bullet_heading_45p": { "font": "45px open_sansextrabold", "fill": "#4f4f4f", "align": "left", "wordWrap": true, "wordWrapWidth": 550},
+    "bullets": { "font": "20px yantramanavregular", "fill": "#4f4f4f",  "fontWeight": "normal", "align": "center", "wordWrap": true, "wordWrapWidth": 500, "lineSpacing": -6 },
+    "bullets_27p": { "font": "27px yantramanavregular", "fill": "#4f4f4f",  "fontWeight": "normal", "align": "left", "wordWrap": true, "wordWrapWidth": 500, "lineSpacing": -6 },
+    "bullets_30p": { "font": "30px yantramanavregular", "fill": "#4f4f4f",  "fontWeight": "normal", "align": "left", "wordWrap": true, "wordWrapWidth": 500, "lineSpacing": -6 },
+    "bullets_25p": { "font": "25px yantramanavregular", "fill": "#4f4f4f",  "fontWeight": "normal", "align": "left", "wordWrap": true, "wordWrapWidth": 330, "lineSpacing": -6 },
+    "bullets_35p": { "font": "35px yantramanavregular", "fill": "#4f4f4f",  "fontWeight": "normal", "align": "center", "wordWrap": true, "wordWrapWidth": 330, "lineSpacing": -6 },
+    "bullets_40p": { "font": "40px yantramanavregular", "fill": "#4f4f4f",  "fontWeight": "normal", "align": "center", "wordWrap": true, "wordWrapWidth": 330, "lineSpacing": -6 },
+    "bullets_40p_el": { "font": "40px yantramanavregular", "fill": "#4f4f4f",  "fontWeight": "normal", "align": "center", "wordWrap": true, "wordWrapWidth": 700, "lineSpacing": -6 },
+    "bullets_40p_hi": { "font": "35px open_sansextrabold", "fill": "#4f4f4f",  "fontWeight": "normal", "align": "center", "wordWrap": true, "wordWrapWidth": 330, "lineSpacing": 10 }
+
+
+
+
+
+  },
+  "images": {
+    
+   
+    "decorations": {
+      "backDisabled": "lesson-back-btn-inactive.png",
+      "next_disabled": "lesson-next-btn-inactive.png",
+      "bottles": "bottles.png",
+      "arrow": "arrow.png",
+      "arrow_brain": "arrow-brain.png",
+      "arrow_spine": "arrow-spine.png",
+      "body":"brain and spinal cord.png",
+      "body_ds":"brain and spinal cord ds.png",
+      "911":"911.png",
+      "drinking": "drinking.png",
+      "no-sign": "no-sign.png",
+      "risks-ahead":"risks-ahead.png",
+      "train-tracks":"train-tracks.png"
+
+    }
+  },
+  "sceneImages": {
+    "background_rt": "lesson-background3.png"
+    
+  },
+  "buttons": {
+    "next": {
+      "up": "lesson-next-btn-up.png",
+      "over": "lesson-next-btn-dn.png",
+      "out": "lesson-next-btn-up.png",
+      "down": "lesson-next-btn-dn.png"
+    },
+    "back": {
+      "up": "lesson-back-btn-up.png",
+      "over": "lesson-back-btn-dn.png",
+      "out": "lesson-back-btn-up.png",
+      "down": "lesson-back-btn-dn.png"
+    },
+    "nextHighlight": {
+      "up": "lesson-next-btn-up-hi.png",
+      "over": "lesson-next-btn-dn-hi.png",
+      "out": "lesson-next-btn-up-hi.png",
+      "down": "lesson-next-btn-dn-hi.png"
+    },
+    "replay": {
+      "up": "lesson-replay-btn-up.png",
+      "over": "lesson-replay-btn-dn.png",
+      "out": "lesson-replay-btn-up.png",
+      "down": "lesson-replay-btn-dn.png"
+    },
+    "menu": {
+      "up": "lesson-menu-btn2-up.png",
+      "over": "lesson-menu-btn2-dn.png",
+      "out": "lesson-menu-btn2-up.png",
+      "down": "lesson-menu-btn2-dn.png"
+    }
+    
+      },
+      "soundKey": "rt-audio",
+  "soundFile": [ "media/default/rt-audio.m4a", "media/default/rt-audio.ogg" ],
+  "sounds": {
+   "Slide2Short": [
+        0,
+        28,
+        false,
+        "Slide2Short"
+      ],
+      "Slide3": [
+        29,
+        41.2041723356009,
+        false,
+        "Slide3"
+      ],
+      "Slide3a": [
+        72,
+        15.573469387755097,
+        false,
+        "Slide3a"
+      ],
+      "Slide3b": [
+        89,
+        25.593514739229022,
+        false,
+        "Slide3b"
+      ],
+      "Slide4": [
+        116,
+        21.349999999999994,
+        false,
+        "Slide4"
+      ],
+      "Slide5": [
+        139,
+        19.993764172335602,
+        false,
+        "Slide5"
+      ],
+      "Slide6": [
+        160,
+        29.866666666666674,
+        false,
+        "Slide6"
+      ],
+      "Slide7": [
+        191,
+        31.758344671201826,
+        false,
+        "Slide7"
+      ],
+      "Slide8": [
+        224,
+        18.725011337868466,
+        false,
+        "Slide8"
+      ],
+      "Slide9": [
+        244,
+        17.98959183673469,
+        false,
+        "Slide9"
+      ],
+      "Slide10": [
+        263,
+        10.277074829931962,
+        false,
+        "Slide10"
+      ],
+      "Slide11": [
+        275,
+        11.433333333333337,
+        false,
+        "Slide11"
+      ],
+      "Slide12": [
+        288,
+        14.908344671201803,
+        false,
+        "Slide12"
+      ]
+  }
+}

@@ -1,0 +1,61 @@
+{
+  "src": "output.ogg",
+  "data": {
+    "audioSprite": {
+      "PreSld2All": [
+        0,
+        87.71072562358276,
+        false,
+        "PreSld2All"
+      ],
+      "PreSld3a": [
+        89,
+        3.9306802721088445,
+        false,
+        "PreSld3a"
+      ],
+      "PreSld3b": [
+        94,
+        3.525351473922896,
+        false,
+        "PreSld3b"
+      ],
+      "PreSld4a": [
+        99,
+        4.319999999999993,
+        false,
+        "PreSld4a"
+      ],
+      "PreSld4b": [
+        105,
+        2.4933333333333394,
+        false,
+        "PreSld4b"
+      ],
+      "PreSld6All": [
+        109,
+        40.29210884353742,
+        false,
+        "PreSld6All"
+      ],
+      "PreSld7": [
+        151,
+        27.018049886621327,
+        false,
+        "PreSld7"
+      ],
+      "PreSld8": [
+        180,
+        16.680861678004533,
+        false,
+        "PreSld8"
+      ],
+      "PreSld9": [
+        198,
+        17.84521541950113,
+        false,
+        "PreSld9"
+      ]
+    }
+  }
+}

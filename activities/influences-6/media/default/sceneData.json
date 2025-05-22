@@ -1,0 +1,2279 @@
+{
+  "play": {
+    "start_skip": "slide01",
+    "start": "slide01",
+    "showPlayThrough": false,
+    "scenes": {
+      "slide01": {
+        "id": "slide01",
+        "background": "background_rt",
+        "title": "Slide 1",
+        "description": "Slide 1",
+        "actors": [
+         {
+                  "name": "intro_heading",
+                  "type": "text",
+                  "font": "standard",
+                  "location": [ 30, 25 ],
+                  "text": "Analyzing Influences"
+        },
+         {
+            "name": "forwardButton",
+            "type": "button",
+            "image": "next",
+            "location": [ 720, 530 ],
+            "variable": "show_next"
+          },
+          {
+            "name": "replay",
+            "type": "button",
+            "image": "replay",
+            "location": [ 660, 530 ],
+            "variable": "replayClick"
+          },
+          {
+            "name": "backDisabled",
+            "type": "decoration",
+            "image": "backDisabled",
+            "location": [ 600, 532 ],
+            "key": "decorations"
+          },
+          {
+            "name": "dropShadow",
+            "type": "blocker",
+            "location": [ 73, 138 ],
+            "size": [640, 360],
+            "blockerTint": "0x585858",
+            "blockerAlpha": 1
+          },
+          {
+            "name": "video_rt_intro",
+            "type": "wistia",
+            "location": [ 70, 135 ],
+            "hideCloseButton": true,
+            "size": [ 640, 360 ],
+            "video": "sk2tm7sac0",
+            "blockerAlpha" : 0.0,
+            "blockInput": false,
+            "variable": "video_intro"
+          }
+        ],
+        "outcomes": {
+          "video_intro_finished": {
+            "events": { "video_intro": "finished" },
+            "actions": [
+              { "type": "remove-actor", "args": ["forwardButton"] },
+              { "type": "add-actor", "args": [
+                {
+                  "name": "nextHighlight",
+                  "type": "button",
+                  "image": "nextHighlight",
+                  "animated": false,
+                  "location": [ 720, 530 ],
+                  "variable": "show_next"
+                }
+              ] }
+            ]
+          },
+          "replay_button": {
+            "events": { "replayClick": "*" },
+            "actions": [
+              { "type": "scene", "args": [ "empty_replay_scene" ] },
+              { "type": "scene", "args": [ "slide01" ] }
+            ]
+          },
+          "forward_button": {
+            "events": { "show_next": "*" },
+            "actions": [ { "type": "scene", "args": [ "slide02" ] } ]
+      }
+      }
+      }, 
+      "slide02": {
+        "id": "slide02",
+        "background": "background_rt",
+        "title": "Slide 2",
+        "description": "Slide 2",
+        "actors": [
+         {
+                  "name": "intro_heading",
+                  "type": "text",
+                  "font": "standard",
+                  "location": [ 30, 25 ],
+                  "text": "Analyzing Influences"
+        },
+         {
+            "name": "forwardButton",
+            "type": "button",
+            "image": "next",
+            "location": [ 720, 530 ],
+            "variable": "show_next"
+          },
+          {
+            "name": "replay",
+            "type": "button",
+            "image": "replay",
+            "location": [ 660, 530 ],
+            "variable": "replayClick"
+          },
+          {
+            "name": "back",
+            "type": "button",
+            "image": "back",
+            "location": [ 600, 532 ],
+            "variable": "show_back"
+          },
+          {
+            "name": "dropShadow",
+            "type": "blocker",
+            "location": [ 53, 118 ],
+            "size": [288, 402],
+            "blockerTint": "0x585858",
+            "blockerAlpha": 1
+          },
+           {
+                  "name": "building",
+                  "type": "decoration",
+                  "image": "building",
+                  "location": [ 50, 115 ],
+                  "key": "decorations",
+                  "startDelay": 0
+          }, 
+          {
+           "name": "bullet_heading",
+           "type": "text",
+           "font": "bullet_heading_30p",
+           "location": [ 375 , 125 ],
+           "text": "Tobacco products"
+        },
+        {
+           "name": "bullet1",
+           "type": "text",
+           "font": "bullets_27p",
+           "location": [ 375 , 200 ],
+           "bullet": true,
+           "text": "Cigarettes",
+           "startDelay": 7500,
+           "wordWrapWidth": 700
+        },
+        {
+           "name": "bullet2",
+           "type": "text",
+           "font": "bullets_27p",
+           "location": [ 375 , 255 ],
+           "bullet": true,
+           "text": "Cigars",
+           "startDelay": 8000,
+           "wordWrapWidth": 700
+
+        },
+        {
+           "name": "bullet3",
+           "type": "text",
+           "font": "bullets_27p",
+           "location": [ 375 , 310 ],
+           "bullet": true,
+           "text": "Cigarillos",
+           "startDelay": 9000,
+           "wordWrapWidth": 700
+
+
+        },
+        {
+           "name": "bullet4",
+           "type": "text",
+           "font": "bullets_27p",
+           "location": [ 555 , 200 ],
+           "bullet": true,
+           "text": "Chewing tobacco",
+           "startDelay": 10000,
+           "wordWrapWidth": 700
+
+
+        },
+         {
+           "name": "bullet4",
+           "type": "text",
+           "font": "bullets_27p",
+           "location": [ 555 , 255 ],
+           "bullet": true,
+           "text": "Snus",
+           "startDelay": 11000,
+           "wordWrapWidth": 700
+
+
+        },
+        {
+           "name": "bullet5",
+           "type": "text",
+           "font": "bullets_27p",
+           "location": [ 375 , 360 ],
+           "bullet": false,
+           "text": "The main goal of tobacco companies is to make money and persuade people to use their products.",
+           "startDelay": 13000,
+           "wordWrapWidth": 350
+
+
+        },
+        {
+            "name": "vo",
+            "type": "audio",
+            "audio": [ "Slide 2" ],
+            "variable": "slideVO"
+          }
+        ],
+        "outcomes": {
+          "vo_finished": {
+            "events": { "slideVO": "played" },
+            "actions": [
+              { "type": "remove-actor", "args": ["forwardButton"] },
+              { "type": "add-actor", "args": [
+                {
+                  "name": "nextHighlight",
+                  "type": "button",
+                  "image": "nextHighlight",
+                  "animated": false,
+                  "location": [ 720, 530 ],
+                  "variable": "show_next"
+                }
+              ] }
+            ]
+          },
+          "replay_button": {
+            "events": { "replayClick": "*" },
+            "actions": [
+              { "type": "scene", "args": [ "empty_replay_scene" ] },
+              { "type": "scene", "args": [ "slide02" ] }
+            ]
+      },
+      "forward_button": {
+            "events": { "show_next": "*" },
+            "actions": [ { "type": "scene", "args": [ "slide03" ] } ]
+      },
+      "back_button": {
+            "events": { "show_back": "*" },
+            "actions": [ { "type": "scene", "args": [ "slide01" ] } ]
+      }
+}
+},
+"slide03": {
+        "id": "slide03",
+        "background": "background_rt",
+        "title": "Slide 3",
+        "description": "Slide 3",
+        "actors": [
+         {
+                  "name": "intro_heading",
+                  "type": "text",
+                  "font": "standard",
+                  "location": [ 30, 25 ],
+                  "text": "Analyzing Influences"
+        },
+         {
+            "name": "forwardButton",
+            "type": "button",
+            "image": "next",
+            "location": [ 720, 530 ],
+            "variable": "show_next"
+          },
+          {
+            "name": "replay",
+            "type": "button",
+            "image": "replay",
+            "location": [ 660, 530 ],
+            "variable": "replayClick"
+          },
+          {
+            "name": "back",
+            "type": "button",
+            "image": "back",
+            "location": [ 600, 532 ],
+            "variable": "show_back"
+          },
+          {
+            "name": "100mil",
+            "type": "button",
+            "image": "100mil",
+            "location": [ 280, 250 ],
+            "variable": "100b"
+          },
+          {
+            "name": "50mil",
+            "type": "button",
+            "image": "50mil",
+            "location": [ 50, 250 ],
+            "variable": "50a"
+          },
+          {
+            "name": "145mil",
+            "type": "button",
+            "image": "145mil",
+            "location": [ 525, 250 ],
+            "variable": "145c"
+          },
+          {
+           "name": "bullet1",
+           "type": "text",
+           "font": "bullets_27p",
+           "location": [ 75 , 125 ],
+           "bullet": false,
+           "text": "In 2011, in the state of Wisconsin alone, about how much money did tobacco companies spend on marketing their products?",
+           "startDelay": 0,
+           "wordWrapWidth": 700
+        },
+        {
+            "name": "vo",
+            "type": "audio",
+            "audio": [ "Slide 3 question" ],
+            "variable": "slideIntroVO"
+          }            
+        ],
+        "outcomes": {
+          "vo_finished": {
+            "events": { "slideVO": "played" },
+            "actions": [
+              { "type": "remove-actor", "args": ["forwardButton"] },
+              { "type": "add-actor", "args": [
+                {
+                  "name": "nextHighlight",
+                  "type": "button",
+                  "image": "nextHighlight",
+                  "animated": false,
+                  "location": [ 720, 530 ],
+                  "variable": "show_next"
+                }
+              ] }
+            ]
+          },           
+          "replay_button": {
+            "events": { "replayClick": "*" },
+            "actions": [
+              { "type": "scene", "args": [ "empty_replay_scene" ] },
+              { "type": "scene", "args": [ "slide03" ] }
+            ]
+      },
+       "forward_button": {
+            "events": { "show_next": "*" },
+            "actions": [ { "type": "scene", "args": [ "slide04" ] } ]
+      },
+      "back_button": {
+            "events": { "show_back": "*" },
+            "actions": [ { "type": "scene", "args": [ "slide02" ] } ]
+      },
+      "50mil_button": {
+            "events": { "50a": "*" },
+            "actions": [ { "type": "add-actor", "args": [ 
+
+        {
+           "name": "bullet1",
+           "type": "text",
+           "font": "bullets_27p",
+           "location": [ 75 , 350 ],
+           "bullet": false,
+           "text": "No, actually it's way more. Tobacco companies spent about 145 million dollars in 2011 just in Wisconsin!",
+           "startDelay": 0,
+           "wordWrapWidth": 700
+        }
+
+           ] },
+           {"type": "add-actor", "args": [
+            {
+                  "name": "100mil",
+                  "type": "decoration",
+                  "image": "100mil-over",
+                  "location": [ 280, 250 ],
+                  "key": "decorations",
+                  "startDelay": 0
+          }
+           ]},
+           {"type": "add-actor", "args": [
+            {
+                  "name": "145mil",
+                  "type": "decoration",
+                  "image": "145mil-over",
+                  "location": [ 525, 250 ],
+                  "key": "decorations",
+                  "startDelay": 0
+          }
+           ]},
+           {"type": "add-actor", "args": [
+            {
+                  "name": "50mil",
+                  "type": "decoration",
+                  "image": "50mil-hi",
+                  "location": [ 50, 250 ],
+                  "key": "decorations",
+                  "startDelay": 0
+          }
+           ]},
+           {"type": "add-actor", "args": [
+            {
+            "name": "vo",
+            "type": "audio",
+            "audio": [ "Slide 3 incorrect" ],
+            "variable": "slideVO"
+          }
+           ]},
+           { "type": "remove-actor", "args": ["100mil"] },
+           { "type": "remove-actor", "args": ["145mil"] }
+
+            ]
+      },
+      "100mil_button": {
+            "events": { "100b": "*" },
+            "actions": [ { "type": "add-actor", "args": [ 
+
+        {
+           "name": "bullet1",
+           "type": "text",
+           "font": "bullets_27p",
+           "location": [ 75 , 350 ],
+           "bullet": false,
+           "text": "No, actually it's way more. Tobacco companies spent about 145 million dollars in 2011 just in Wisconsin!",
+           "startDelay": 0,
+           "wordWrapWidth": 700
+        }
+
+           ] },
+           {"type": "add-actor", "args": [
+            {
+                  "name": "50mil",
+                  "type": "decoration",
+                  "image": "50mil-over",
+                  "location": [  50, 250 ],
+                  "key": "decorations",
+                  "startDelay": 0
+          }
+           ]},
+           {"type": "add-actor", "args": [
+            {
+                  "name": "145mil",
+                  "type": "decoration",
+                  "image": "145mil-over",
+                  "location": [ 525, 250 ],
+                  "key": "decorations",
+                  "startDelay": 0
+          }
+           ]},
+           {"type": "add-actor", "args": [
+            {
+                  "name": "100mil",
+                  "type": "decoration",
+                  "image": "100mil-hi",
+                  "location": [ 280, 250 ],
+                  "key": "decorations",
+                  "startDelay": 0
+          }
+           ]},
+            {"type": "add-actor", "args": [
+            {
+            "name": "vo",
+            "type": "audio",
+            "audio": [ "Slide 3 incorrect" ],
+            "variable": "slideVO"
+          }
+           ]},
+           { "type": "remove-actor", "args": ["50mil"] },
+           { "type": "remove-actor", "args": ["145mil"] }
+
+            ]
+      },
+      "145mil_button": {
+            "events": { "145c": "*" },
+            "actions": [ { "type": "add-actor", "args": [ 
+
+        {
+           "name": "bullet1",
+           "type": "text",
+           "font": "bullets_27p",
+           "location": [ 75 , 350 ],
+           "bullet": false,
+           "text": "You're right! That's a lot of money!",
+           "startDelay": 0,
+           "wordWrapWidth": 700
+        }
+
+           ] },
+           {"type": "add-actor", "args": [
+            {
+                  "name": "50mil",
+                  "type": "decoration",
+                  "image": "50mil-over",
+                  "location": [  50, 250 ],
+                  "key": "decorations",
+                  "startDelay": 0
+          }
+           ]},
+           {"type": "add-actor", "args": [
+            {
+                  "name": "145mil",
+                  "type": "decoration",
+                  "image": "145mil-hi",
+                  "location": [ 525, 250 ],
+                  "key": "decorations",
+                  "startDelay": 0
+          }
+           ]},
+           {"type": "add-actor", "args": [
+            {
+                  "name": "100mil",
+                  "type": "decoration",
+                  "image": "100mil-over",
+                  "location": [ 280, 250 ],
+                  "key": "decorations",
+                  "startDelay": 0
+          }
+           ]},
+            {"type": "add-actor", "args": [
+            {
+            "name": "vo",
+            "type": "audio",
+            "audio": [ "Slide 3 correct" ],
+            "variable": "slideVO"
+          }
+           ]},
+           { "type": "remove-actor", "args": ["50mil"] },
+           { "type": "remove-actor", "args": ["100mil"] }
+
+            ]
+      }
+}
+},
+"slide04": {
+        "id": "slide04",
+        "background": "background_rt",
+        "title": "Slide 4",
+        "description": "Slide 4",
+        "actors": [
+         {
+                  "name": "intro_heading",
+                  "type": "text",
+                  "font": "standard",
+                  "location": [ 30, 25 ],
+                  "text": "Analyzing Influences"
+        },
+         {
+            "name": "forwardButton",
+            "type": "button",
+            "image": "next",
+            "location": [ 720, 530 ],
+            "variable": "show_next"
+          },
+          {
+            "name": "replay",
+            "type": "button",
+            "image": "replay",
+            "location": [ 660, 530 ],
+            "variable": "replayClick"
+          },
+          {
+            "name": "back",
+            "type": "button",
+            "image": "back",
+            "location": [ 600, 532 ],
+            "variable": "show_back"
+          },
+          {
+            "name": "dropShadow",
+            "type": "blocker",
+            "location": [ 19, 113 ],
+            "size": [198, 410],
+            "blockerTint": "0x585858",
+            "blockerAlpha": 1
+          },
+          {
+            "name": "skoal-ad",
+            "type": "decoration",
+            "image": "skoal-ad",
+            "location": [ 16, 110 ],
+            "key": "decorations",
+            "startDelay": 0
+          },
+          {
+            "name": "dropShadow",
+            "type": "blocker",
+            "location": [ 237, 113 ],
+            "size": [306, 403],
+            "blockerTint": "0x585858",
+            "blockerAlpha": 1
+          },
+          {
+            "name": "nye-ad",
+            "type": "decoration",
+            "image": "nye-ad",
+            "location": [ 234, 110 ],
+            "key": "decorations",
+            "startDelay": 0
+          },
+          {
+            "name": "dropShadow",
+            "type": "blocker",
+            "location": [ 563, 183 ],
+            "size": [204, 270],
+            "blockerTint": "0x585858",
+            "blockerAlpha": 1
+          },
+          {
+            "name": "newport-ad",
+            "type": "decoration",
+            "image": "newport-ad",
+            "location": [ 560, 180 ],
+            "key": "decorations",
+            "startDelay": 0
+          },
+          {
+            "name": "vo",
+            "type": "audio",
+            "audio": [ "Slide 4" ],
+            "variable": "slideVO"
+          }
+          
+        ],
+        "outcomes": {
+          "vo_finished": {
+            "events": { "slideVO": "played" },
+            "actions": [
+              { "type": "remove-actor", "args": ["forwardButton"] },
+              { "type": "add-actor", "args": [
+                {
+                  "name": "nextHighlight",
+                  "type": "button",
+                  "image": "nextHighlight",
+                  "animated": false,
+                  "location": [ 720, 530 ],
+                  "variable": "show_next"
+                }
+              ] }
+            ]
+          },   
+         "replay_button": {
+            "events": { "replayClick": "*" },
+            "actions": [
+              { "type": "scene", "args": [ "empty_replay_scene" ] },
+              { "type": "scene", "args": [ "slide04" ] }
+            ]
+      },
+       "forward_button": {
+            "events": { "show_next": "*" },
+            "actions": [ { "type": "scene", "args": [ "slide05" ] } ]
+      },
+      "back_button": {
+            "events": { "show_back": "*" },
+            "actions": [ { "type": "scene", "args": [ "slide03" ] } ]
+      }
+}
+},
+"slide05": {
+        "id": "slide05",
+        "background": "background_rt",
+        "title": "Slide 5",
+        "description": "Slide 5",
+        "actors": [
+         {
+                  "name": "intro_heading",
+                  "type": "text",
+                  "font": "standard",
+                  "location": [ 30, 25 ],
+                  "text": "Analyzing Influences"
+        },
+         {
+            "name": "forwardButton",
+            "type": "button",
+            "image": "next",
+            "location": [ 720, 530 ],
+            "variable": "show_next"
+          },
+          {
+            "name": "replay",
+            "type": "button",
+            "image": "replay",
+            "location": [ 660, 530 ],
+            "variable": "replayClick"
+          },
+          {
+            "name": "back",
+            "type": "button",
+            "image": "back",
+            "location": [ 600, 532 ],
+            "variable": "show_back"
+          },
+          {
+            "name": "dropShadow",
+            "type": "blocker",
+            "location": [ 85, 130 ],
+            "size": [283, 377],
+            "blockerTint": "0x585858",
+            "blockerAlpha": 1
+          },
+          {
+            "name": "pos1",
+            "type": "decoration",
+            "image": "pos1",
+            "location": [ 82, 127 ],
+            "key": "decorations"
+          },
+          {
+            "name": "dropShadow",
+            "type": "blocker",
+            "location": [ 418, 130 ],
+            "size": [283, 378],
+            "blockerTint": "0x585858",
+            "blockerAlpha": 1
+          },
+          {
+            "name": "pos2",
+            "type": "decoration",
+            "image": "pos2",
+            "location": [ 415, 127 ],
+            "key": "decorations"
+          },
+          {
+            "name": "vo",
+            "type": "audio",
+            "audio": [ "Slide 5" ],
+            "variable": "slideVO"
+          }
+        ],
+        "outcomes": {
+          "vo_finished": {
+            "events": { "slideVO": "played" },
+            "actions": [
+             { "type": "remove-actor", "args": ["forwardButton"] },
+              { "type": "add-actor", "args": [
+                {
+                  "name": "nextHighlight",
+                  "type": "button",
+                  "image": "nextHighlight",
+                  "animated": false,
+                  "location": [ 720, 530 ],
+                  "variable": "show_next"
+                }
+              ] }
+            ]
+          },
+           "replay_button": {
+            "events": { "replayClick": "*" },
+            "actions": [
+              { "type": "scene", "args": [ "empty_replay_scene" ] },
+              { "type": "scene", "args": [ "slide05" ] }
+            ]
+      },
+       "forward_button": {
+            "events": { "show_next": "*" },
+            "actions": [ { "type": "scene", "args": [ "slide06" ] } ]
+      },
+      "back_button": {
+            "events": { "show_back": "*" },
+            "actions": [ { "type": "scene", "args": [ "slide04" ] } ]
+      }
+}
+},
+"slide06": {
+        "id": "slide06",
+        "background": "background_rt",
+        "title": "Slide 6",
+        "description": "Slide 6",
+        "actors": [
+         {
+                  "name": "intro_heading",
+                  "type": "text",
+                  "font": "standard",
+                  "location": [ 30, 25 ],
+                  "text": "Analyzing Influences"
+        },
+         {
+            "name": "forwardButton",
+            "type": "button",
+            "image": "next",
+            "location": [ 720, 530 ],
+            "variable": "show_next"
+          },
+          {
+            "name": "replay",
+            "type": "button",
+            "image": "replay",
+            "location": [ 660, 530 ],
+            "variable": "replayClick"
+          },
+          {
+            "name": "back",
+            "type": "button",
+            "image": "back",
+            "location": [ 600, 532 ],
+            "variable": "show_back"
+          },
+          {
+            "name": "dropShadow",
+            "type": "blocker",
+            "location": [ 160, 143 ],
+            "size": [463, 346],
+            "blockerTint": "0x585858",
+            "blockerAlpha": 1
+          },
+          {
+            "name": "candy-items",
+            "type": "decoration",
+            "image": "candy-items",
+            "location": [ 157, 140 ],
+            "key": "decorations"
+          },
+          {
+            "name": "vo",
+            "type": "audio",
+            "audio": [ "Slide 6" ],
+            "variable": "slideVO"
+          }          
+        ],
+        "outcomes": {
+          "vo_finished": {
+            "events": { "slideVO": "played" },
+            "actions": [
+             { "type": "remove-actor", "args": ["forwardButton"] },
+              { "type": "add-actor", "args": [
+                {
+                  "name": "nextHighlight",
+                  "type": "button",
+                  "image": "nextHighlight",
+                  "animated": false,
+                  "location": [ 720, 530 ],
+                  "variable": "show_next"
+                }
+              ] }
+            ]
+          },
+          "replay_button": {
+            "events": { "replayClick": "*" },
+            "actions": [
+              { "type": "scene", "args": [ "empty_replay_scene" ] },
+              { "type": "scene", "args": [ "slide06" ] }
+            ]
+      },
+       "forward_button": {
+            "events": { "show_next": "*" },
+            "actions": [ { "type": "scene", "args": [ "slide07" ] } ]
+      },
+      "back_button": {
+            "events": { "show_back": "*" },
+            "actions": [ { "type": "scene", "args": [ "slide05" ] } ]
+      }
+}
+},
+"slide07": {
+        "id": "slide07",
+        "background": "background_rt",
+        "title": "Slide 7",
+        "description": "Slide 7",
+         "actors": [
+         {
+                  "name": "intro_heading",
+                  "type": "text",
+                  "font": "standard",
+                  "location": [ 30, 25 ],
+                  "text": "Analyzing Influences"
+        },
+         {
+            "name": "forwardButton",
+            "type": "button",
+            "image": "next",
+            "location": [ 720, 530 ],
+            "variable": "show_next"
+          },
+          {
+            "name": "replay",
+            "type": "button",
+            "image": "replay",
+            "location": [ 660, 530 ],
+            "variable": "replayClick"
+          },
+          {
+            "name": "back",
+            "type": "button",
+            "image": "back",
+            "location": [ 600, 532 ],
+            "variable": "show_back"
+          },
+          {
+            "name": "bag-surface",
+            "type": "decoration",
+            "image": "bag-surface",
+            "location": [ 0 , 431 ],
+            "key": "decorations"
+          },
+          {
+            "name": "tabacco-bag-static",
+            "type": "decoration",
+            "image": "tabacco-bag",
+            "location": [ 500 , 350 ]
+          },
+          {
+            "name": "candy-bag-static",
+            "type": "decoration",
+            "image": "candy-bag",
+            "location": [ 105 , 350 ]
+          },
+          {
+            "name": "candy-bag",
+            "type": "drop",
+            "images": {
+              "normal":"candy-bag",
+              "overlap":"candy-bag"},
+            "location": [ 105 , 350 ],
+            "startDelay": 0,
+            "variable": "drop_candy"
+          },
+          {
+            "name": "tabacco-bag",
+            "type": "drop",
+            "images": {
+              "normal":"tabacco-bag",
+              "overlap":"tabacco-bag"},
+            "location": [ 500 , 350 ],
+            "startDelay": 0,
+            "variable": "drop_tabacco"
+          },
+          {
+            "name": "chew",
+            "type": "drag",
+            "images": {
+              "normal":"chew",
+              "dragging": "chew",
+              "overlap":"chew"},
+            "location": [ 375, 225 ],
+            "variable":"drag_chew"
+          },
+          {
+            "name": "altoids",
+            "type": "drag",
+            "images": {
+              "normal":"altoids",
+              "dragging": "altoids",
+              "overlap":"altoids"},
+            "location": [ 375, 125 ],
+            "variable":"drag_altoids"
+          },
+           {
+            "name": "mints",
+            "type": "drag",
+            "images": {
+              "normal":"mints",
+              "dragging": "mints",
+              "overlap":"mints"},
+            "location": [ 5, 125 ],
+            "variable":"drag_mints"
+          },
+           {
+            "name": "cigarillos",
+            "type": "drag",
+            "images": {
+              "normal":"cigarillos",
+              "dragging": "cigarillos",
+              "overlap":"cigarillos"},
+            "location": [ 250, 140 ],
+            "variable":"drag_cigarillos"
+          },
+           {
+            "name": "snus",
+            "type": "drag",
+            "images": {
+              "normal":"snus",
+              "dragging": "snus",
+              "overlap":"snus"},
+            "location": [ 15, 260 ],
+            "variable":"drag_snus"
+          },
+           {
+            "name": "candy-cigs",
+            "type": "drag",
+            "images": {
+              "normal":"candy-cigs",
+              "dragging": "candy-cigs",
+              "overlap":"candy-cigs"},
+            "location": [ 525, 175 ],
+            "variable":"drag_candy-cigs"
+          },
+           {
+            "name": "cigs",
+            "type": "drag",
+            "images": {
+              "normal":"cigs",
+              "dragging": "cigs",
+              "overlap":"cigs"},
+            "location": [ 140, 145 ],
+            "variable":"drag_cigs"
+          },
+           {
+            "name": "choco-cigar",
+            "type": "drag",
+            "images": {
+              "normal":"choco-cigar",
+              "dragging": "choco-cigar",
+              "overlap":"choco-cigar"},
+            "location": [ 655, 125 ],
+            "variable":"drag_choco-cigar"
+          },
+          {
+            "name": "vo",
+            "type": "audio",
+            "audio": [ "Slide 7 setup" ],
+            "variable": "slideIntroVO"
+          }      
+         ],
+        "outcomes": {
+          "vo_finished": {
+            "events": { "slideVO": "played" },
+            "actions": [
+             { "type": "remove-actor", "args": ["forwardButton"] },
+              { "type": "add-actor", "args": [
+                {
+                  "name": "nextHighlight",
+                  "type": "button",
+                  "image": "nextHighlight",
+                  "animated": false,
+                  "location": [ 720, 530 ],
+                  "variable": "show_next"
+                }
+              ] }
+            ]
+          },
+          "chew_answer_correct": {
+            "events": { "drop_tabacco" : "chew" },
+            "actions": [
+              { "type": "remove-actor", "args": ["chew"] }
+            ]
+          },
+          "cigs_answer_correct": {
+            "events": { "drop_tabacco" : "cigs" },
+            "actions": [
+              { "type": "remove-actor", "args": ["cigs"] }
+            ]
+          },
+          "cigarillos_answer_correct": {
+            "events": { "drop_tabacco" : "cigarillos" },
+            "actions": [
+              { "type": "remove-actor", "args": ["cigarillos"] }
+            ]
+          },
+          "snus_answer_correct": {
+            "events": { "drop_tabacco" : "snus" },
+            "actions": [
+              { "type": "remove-actor", "args": ["snus"] }
+            ]
+          },
+          "tabacco_answer_correct": {
+            "events": { "drop_tabacco" : ["chew", "cigs", "cigarillos", "snus"] },
+            "actions": [
+              { "type": "add-actor", "args": [
+                {
+                  "name": "vo",
+                  "type": "audio",
+                  "audio": [ "ding" ],
+                  "variable": "dingSFX"
+                }    
+              ] }
+
+            ]
+          },
+          "mints_answer_correct": {
+            "events": { "drop_candy" : "mints" },
+            "actions": [
+              { "type": "remove-actor", "args": ["mints"] } 
+            ]
+          },
+          "altoids_answer_correct": {
+            "events": { "drop_candy" : "altoids" },
+            "actions": [
+              { "type": "remove-actor", "args": ["altoids"] }
+            ]
+          },
+          "choco-cigar_answer_correct": {
+            "events": { "drop_candy" : "choco-cigar" },
+            "actions": [
+              { "type": "remove-actor", "args": ["choco-cigar"] }
+            ]
+          },
+          "candy-cigs_answer_correct": {
+            "events": { "drop_candy" : "candy-cigs" },
+            "actions": [
+              { "type": "remove-actor", "args": ["candy-cigs"] }
+            ]
+          },
+          "candy_answer_correct": {
+            "events": { "drop_candy" : ["mints", "altoids", "choco-cigar", "candy-cigs"] },
+            "actions": [
+              { "type": "add-actor", "args": [
+                {
+                  "name": "vo",
+                  "type": "audio",
+                  "audio": [ "ding" ],
+                  "variable": "dingSFX"
+                }    
+              ] }
+
+            ]
+          },
+          "replay_button": {
+            "events": { "replayClick": "*" },
+            "actions": [
+              { "type": "scene", "args": [ "empty_replay_scene" ] },
+              { "type": "scene", "args": [ "slide07" ] }
+            ]
+      },
+       "forward_button": {
+            "events": { "show_next": "*" },
+            "actions": [ { "type": "scene", "args": [ "slide08" ] } ]
+      },
+      "back_button": {
+            "events": { "show_back": "*" },
+            "actions": [ { "type": "scene", "args": [ "slide06" ] } ]
+      }
+}
+},
+"slide08": {
+        "id": "slide08",
+        "background": "background_rt",
+        "title": "Slide 8",
+        "description": "Slide 8",
+         "actors": [
+         {
+                  "name": "intro_heading",
+                  "type": "text",
+                  "font": "standard",
+                  "location": [ 30, 25 ],
+                  "text": "Analyzing Influences"
+        },
+         {
+            "name": "forwardButton",
+            "type": "button",
+            "image": "next",
+            "location": [ 720, 530 ],
+            "variable": "show_next"
+          },
+          {
+            "name": "replay",
+            "type": "button",
+            "image": "replay",
+            "location": [ 660, 530 ],
+            "variable": "replayClick"
+          },
+          {
+            "name": "back",
+            "type": "button",
+            "image": "back",
+            "location": [ 600, 532 ],
+            "variable": "show_back"
+          },
+          {
+                  "name": "main_text",
+                  "type": "text",
+                  "font": "bullets_35p",
+                  "location": [ 107, 200 ],
+                  "text": "Tobacco use is the leading preventable cause of disease, disability, and death in the United States.",
+                  "bullet": false,
+                  "wordWrapWidth": 600
+
+        },
+        {
+            "name": "vo",
+            "type": "audio",
+            "audio": [ "Slide 8" ],
+            "variable": "slideVO"
+          }    
+         ],
+        "outcomes": {
+          "vo_finished": {
+            "events": { "slideVO": "played" },
+            "actions": [
+             { "type": "remove-actor", "args": ["forwardButton"] },
+              { "type": "add-actor", "args": [
+                {
+                  "name": "nextHighlight",
+                  "type": "button",
+                  "image": "nextHighlight",
+                  "animated": false,
+                  "location": [ 720, 530 ],
+                  "variable": "show_next"
+                }
+              ] }
+            ]
+          },
+          "replay_button": {
+            "events": { "replayClick": "*" },
+            "actions": [
+              { "type": "scene", "args": [ "empty_replay_scene" ] },
+              { "type": "scene", "args": [ "slide08" ] }
+            ]
+      },
+       "forward_button": {
+            "events": { "show_next": "*" },
+            "actions": [ { "type": "scene", "args": [ "slide09" ] } ]
+      },
+      "back_button": {
+            "events": { "show_back": "*" },
+            "actions": [ { "type": "scene", "args": [ "slide07" ] } ]
+      }
+}
+},
+"slide09": {
+        "id": "slide09",
+        "background": "background_rt",
+        "title": "Slide 9",
+        "description": "Slide 9",
+        "actors": [
+         {
+                  "name": "intro_heading",
+                  "type": "text",
+                  "font": "standard",
+                  "location": [ 30, 25 ],
+                  "text": "Analyzing Influences"
+        },
+         {
+            "name": "forwardButton",
+            "type": "button",
+            "image": "next",
+            "location": [ 720, 530 ],
+            "variable": "show_next"
+          },
+          {
+            "name": "replay",
+            "type": "button",
+            "image": "replay",
+            "location": [ 660, 530 ],
+            "variable": "replayClick"
+          },
+          {
+            "name": "back",
+            "type": "button",
+            "image": "back",
+            "location": [ 600, 532 ],
+            "variable": "show_back"
+          },
+          {
+            "name": "350",
+            "type": "button",
+            "image": "350",
+            "location": [ 280, 250 ],
+            "variable": "350"
+          },
+          {
+            "name": "480",
+            "type": "button",
+            "image": "480",
+            "location": [ 525, 250 ],
+            "variable": "480"
+          },
+          {
+            "name": "200",
+            "type": "button",
+            "image": "200",
+            "location": [ 50, 250 ],
+            "variable": "200"
+          },
+          {
+           "name": "bullet1",
+           "type": "text",
+           "font": "bullets_27p",
+           "location": [ 75 , 125 ],
+           "bullet": false,
+           "text": "According to the Centers for Disease Control and Prevention, or the CDC, cigarette smoking results in about how many premature deaths in the United States each year?",
+           "startDelay": 0,
+           "wordWrapWidth": 700
+        },
+        {
+            "name": "vo",
+            "type": "audio",
+            "audio": [ "Slide 9 question" ],
+            "variable": "slideIntroVO"
+          }   
+        ],
+        "outcomes": {
+          "vo_finished": {
+            "events": { "slideVO": "played" },
+            "actions": [
+            { "type": "remove-actor", "args": ["forwardButton"] },
+              { "type": "add-actor", "args": [
+                {
+                  "name": "nextHighlight",
+                  "type": "button",
+                  "image": "nextHighlight",
+                  "animated": false,
+                  "location": [ 720, 530 ],
+                  "variable": "show_next"
+                }
+              ] }
+              
+            ]
+          },
+          "replay_button": {
+            "events": { "replayClick": "*" },
+            "actions": [
+              { "type": "scene", "args": [ "empty_replay_scene" ] },
+              { "type": "scene", "args": [ "slide09" ] }
+            ]
+      },
+      "forward_button": {
+            "events": { "show_next": "*" },
+            "actions": [ { "type": "scene", "args": [ "slide10" ] } ]
+      },
+      "back_button": {
+            "events": { "show_back": "*" },
+            "actions": [ { "type": "scene", "args": [ "slide08" ] } ]
+      },
+      "200_button": {
+            "events": { "200": "*" },
+            "actions": [ { "type": "add-actor", "args": [ 
+
+        {
+           "name": "bullet1",
+           "type": "text",
+           "font": "bullets_27p",
+           "location": [ 75 , 350 ],
+           "bullet": false,
+           "text": "Nope, the correct answer is 480,000. That's a lot of deaths that could have been prevented!",
+           "startDelay": 0,
+           "wordWrapWidth": 700
+        }
+
+           ] },
+           {"type": "add-actor", "args": [
+            {
+                  "name": "350a",
+                  "type": "decoration",
+                  "image": "350a",
+                  "location": [ 280, 250 ],
+                  "key": "decorations",
+                  "startDelay": 0
+          }
+           ]},
+           {"type": "add-actor", "args": [
+            {
+                  "name": "480a",
+                  "type": "decoration",
+                  "image": "480a",
+                  "location": [ 525, 250 ],
+                  "key": "decorations",
+                  "startDelay": 0
+          }
+           ]},
+           {"type": "add-actor", "args": [
+            {
+                  "name": "200b",
+                  "type": "decoration",
+                  "image": "200b",
+                  "location": [ 50, 250 ],
+                  "key": "decorations",
+                  "startDelay": 0
+          }
+           ]},
+            {"type": "add-actor", "args": [
+            {
+            "name": "vo",
+            "type": "audio",
+            "audio": [ "Slide 9 incorrect" ],
+            "variable": "slideVO"
+          }
+           ]},
+           { "type": "remove-actor", "args": ["350"] },
+           { "type": "remove-actor", "args": ["480"] }
+
+            ]
+      },
+      "350_button": {
+            "events": { "350": "*" },
+            "actions": [ { "type": "add-actor", "args": [ 
+
+        {
+           "name": "bullet1",
+           "type": "text",
+           "font": "bullets_27p",
+           "location": [ 75 , 350 ],
+           "bullet": false,
+           "text": "Nope, the correct answer is 480,000. That's a lot of deaths that could have been prevented!",
+           "startDelay": 0,
+           "wordWrapWidth": 700
+        }
+
+           ] },
+           {"type": "add-actor", "args": [
+            {
+                  "name": "200",
+                  "type": "decoration",
+                  "image": "200c",
+                  "location": [  50, 250 ],
+                  "key": "decorations",
+                  "startDelay": 0
+          }
+           ]},
+           {"type": "add-actor", "args": [
+            {
+                  "name": "480c",
+                  "type": "decoration",
+                  "image": "480c",
+                  "location": [ 525, 250 ],
+                  "key": "decorations",
+                  "startDelay": 0
+          }
+           ]},
+           {"type": "add-actor", "args": [
+            {
+                  "name": "350c",
+                  "type": "decoration",
+                  "image": "350b",
+                  "location": [ 280, 250 ],
+                  "key": "decorations",
+                  "startDelay": 0
+          }
+           ]},
+            {"type": "add-actor", "args": [
+            {
+            "name": "vo",
+            "type": "audio",
+            "audio": [ "Slide 9 incorrect" ],
+            "variable": "slideVO"
+          }
+           ]},
+           { "type": "remove-actor", "args": ["200"] },
+           { "type": "remove-actor", "args": ["480"] }
+
+            ]
+      },
+      "480_button": {
+            "events": { "480": "*" },
+            "actions": [ { "type": "add-actor", "args": [ 
+
+        {
+           "name": "bullet1",
+           "type": "text",
+           "font": "bullets_27p",
+           "location": [ 75 , 350 ],
+           "bullet": false,
+           "text": "You're right! That's a lot of deaths that could have been prevented.",
+           "startDelay": 0,
+           "wordWrapWidth": 700
+        }
+
+           ] },
+           {"type": "add-actor", "args": [
+            {
+                  "name": "200c",
+                  "type": "decoration",
+                  "image": "200c",
+                  "location": [  50, 250 ],
+                  "key": "decorations",
+                  "startDelay": 0
+          }
+           ]},
+           {"type": "add-actor", "args": [
+            {
+                  "name": "480b",
+                  "type": "decoration",
+                  "image": "480b",
+                  "location": [ 525, 250 ],
+                  "key": "decorations",
+                  "startDelay": 0
+          }
+           ]},
+           {"type": "add-actor", "args": [
+            {
+                  "name": "350c",
+                  "type": "decoration",
+                  "image": "350c",
+                  "location": [ 280, 250 ],
+                  "key": "decorations",
+                  "startDelay": 0
+          }
+           ]},
+            {"type": "add-actor", "args": [
+            {
+            "name": "vo",
+            "type": "audio",
+            "audio": [ "Slide 9 correct" ],
+            "variable": "slideVO"
+          }
+           ]},
+           { "type": "remove-actor", "args": ["200"] },
+           { "type": "remove-actor", "args": ["350"] }
+
+            ]
+      }
+}
+},
+"slide10": {
+        "id": "slide10",
+        "background": "background_rt",
+        "title": "Slide 10",
+        "description": "Slide 10",
+        "actors": [
+         {
+                  "name": "intro_heading",
+                  "type": "text",
+                  "font": "standard",
+                  "location": [ 30, 25 ],
+                  "text": "Analyzing Influences"
+        },
+         {
+            "name": "forwardButton",
+            "type": "button",
+            "image": "next",
+            "location": [ 720, 530 ],
+            "variable": "show_next"
+          },
+          {
+            "name": "replay",
+            "type": "button",
+            "image": "replay",
+            "location": [ 660, 530 ],
+            "variable": "replayClick"
+          },
+          {
+            "name": "back",
+            "type": "button",
+            "image": "back",
+            "location": [ 600, 532 ],
+            "variable": "show_back"
+          },
+          {
+            "name": "dropShadow",
+            "type": "blocker",
+            "location": [ 253, 128 ],
+            "size": [300, 202],
+            "blockerTint": "0x585858",
+            "blockerAlpha": 1
+          },
+          {
+            "name": "farm",
+            "type": "decoration",
+            "image": "farm",
+            "key": "decorations",
+            "location": [ 250, 125 ]
+          },
+            {
+            "name": "cigs",
+            "type": "decoration",
+            "image": "cigs-static",
+            "key": "decorations",
+            "location": [ 25, 340 ],
+            "startDelay": 4500
+          },
+          {
+            "name": "dropShadow",
+            "type": "blocker",
+            "location": [ 28, 343 ],
+            "size": [170, 170],
+            "blockerTint": "0x585858",
+            "blockerAlpha": 1,
+            "startDelay": 4500
+          },
+            {
+            "name": "cigarillos",
+            "type": "decoration",
+            "image": "cigar-static",
+            "key": "decorations",
+            "location": [ 210, 340 ],
+            "startDelay": 5500
+          },
+          {
+            "name": "dropShadow",
+            "type": "blocker",
+            "location": [ 213, 343 ],
+            "size": [170, 170],
+            "blockerTint": "0x585858",
+            "blockerAlpha": 1,
+            "startDelay": 5500
+          },
+         {
+            "name": "chew",
+            "type": "decoration",
+            "image": "chew-static",
+            "key": "decorations",
+            "location": [ 395, 340 ],
+            "startDelay": 6250
+          },
+          {
+            "name": "dropShadow",
+            "type": "blocker",
+            "location": [ 398, 343 ],
+            "size": [170, 170],
+            "blockerTint": "0x585858",
+            "blockerAlpha": 1,
+            "startDelay": 6250
+          },
+           {
+            "name": "snus",
+            "type": "decoration",
+            "key": "decorations",
+            "image": "snus-static",
+            "location": [ 580, 340 ],
+            "startDelay": 7250
+          },
+          {
+            "name": "dropShadow",
+            "type": "blocker",
+            "location": [ 583, 343 ],
+            "size": [170, 170],
+            "blockerTint": "0x585858",
+            "blockerAlpha": 1,
+            "startDelay": 7250
+          },      
+          {
+            "name": "vo",
+            "type": "audio",
+            "audio": [ "Slide 10" ],
+            "variable": "slideVO"
+          }
+        ],
+        "outcomes": {
+          "vo_finished": {
+            "events": { "slideVO": "played" },
+            "actions": [
+              { "type": "remove-actor", "args": ["forwardButton"] },
+              { "type": "add-actor", "args": [
+                {
+                  "name": "nextHighlight",
+                  "type": "button",
+                  "image": "nextHighlight",
+                  "animated": false,
+                  "location": [ 720, 530 ],
+                  "variable": "show_next"
+                }
+              ] }
+            ]
+          },
+         "replay_button": {
+            "events": { "replayClick": "*" },
+            "actions": [
+              { "type": "scene", "args": [ "empty_replay_scene" ] },
+              { "type": "scene", "args": [ "slide10" ] }
+            ]
+      },
+       "forward_button": {
+            "events": { "show_next": "*" },
+            "actions": [ { "type": "scene", "args": [ "slide11" ] } ]
+      },
+      "back_button": {
+            "events": { "show_back": "*" },
+            "actions": [ { "type": "scene", "args": [ "slide09" ] } ]
+      }
+}
+},
+"slide11": {
+        "id": "slide11",
+        "background": "background_rt",
+        "title": "Slide 10",
+        "description": "Slide 11",
+        "actors": [
+         {
+                  "name": "intro_heading",
+                  "type": "text",
+                  "font": "standard",
+                  "location": [ 30, 25 ],
+                  "text": "Analyzing Influences"
+        },
+         {
+            "name": "forwardButton",
+            "type": "button",
+            "image": "next",
+            "location": [ 720, 530 ],
+            "variable": "show_next"
+          },
+          {
+            "name": "replay",
+            "type": "button",
+            "image": "replay",
+            "location": [ 660, 530 ],
+            "variable": "replayClick"
+          },
+          {
+            "name": "back",
+            "type": "button",
+            "image": "back",
+            "location": [ 600, 532 ],
+            "variable": "show_back"
+          },
+          {
+            "name": "dropShadow",
+            "type": "blocker",
+            "location": [ 188, 128 ],
+            "size": [415, 356],
+            "blockerTint": "0x585858",
+            "blockerAlpha": 1
+          },
+          {
+            "name": "nicotine",
+            "type": "decoration",
+            "image": "nicotine",
+            "key": "decorations",
+            "location": [ 185, 125 ]
+          },
+          {
+            "name": "vo",
+            "type": "audio",
+            "audio": [ "Slide 11" ],
+            "variable": "slideVO"
+          }
+        ],
+        "outcomes": {
+          "vo_finished": {
+            "events": { "slideVO": "played" },
+            "actions": [
+            { "type": "remove-actor", "args": ["forwardButton"] },
+              { "type": "add-actor", "args": [
+                {
+                  "name": "nextHighlight",
+                  "type": "button",
+                  "image": "nextHighlight",
+                  "animated": false,
+                  "location": [ 720, 530 ],
+                  "variable": "show_next"
+                }
+              ] }
+              
+            ]
+          },
+          "replay_button": {
+            "events": { "replayClick": "*" },
+            "actions": [
+              { "type": "scene", "args": [ "empty_replay_scene" ] },
+              { "type": "scene", "args": [ "slide11" ] }
+            ]
+      },
+      "forward_button": {
+            "events": { "show_next": "*" },
+            "actions": [ { "type": "scene", "args": [ "slide12" ] } ]
+      },
+      "back_button": {
+            "events": { "show_back": "*" },
+            "actions": [ { "type": "scene", "args": [ "slide10" ] } ]
+      }
+}
+},"slide12": {
+        "id": "slide12",
+        "background": "background_rt",
+        "title": "Slide 12",
+        "description": "Slide 12",
+        "actors": [
+         {
+                  "name": "intro_heading",
+                  "type": "text",
+                  "font": "standard",
+                  "location": [ 30, 25 ],
+                  "text": "Analyzing Influences"
+        },
+         {
+            "name": "forwardButton",
+            "type": "button",
+            "image": "next",
+            "location": [ 720, 530 ],
+            "variable": "show_next"
+          },
+          {
+            "name": "replay",
+            "type": "button",
+            "image": "replay",
+            "location": [ 660, 530 ],
+            "variable": "replayClick"
+          },
+          {
+            "name": "back",
+            "type": "button",
+            "image": "back",
+            "location": [ 600, 532 ],
+            "variable": "show_back"
+          },
+          {
+           "name": "bullet_heading",
+           "type": "text",
+           "font": "bullet_heading",
+           "location": [ 165 , 125 ],
+           "text": "Withdrawal symptoms"
+        },
+        {
+           "name": "bullet1",
+           "type": "text",
+           "font": "bullets_35p",
+           "location": [ 200 , 200 ],
+           "bullet": true,
+           "text": "Irritability",
+           "startDelay": 6000
+        },
+        {
+           "name": "bullet2",
+           "type": "text",
+           "font": "bullets_35p",
+           "location": [ 200 , 250 ],
+           "bullet": true,
+           "text": "Attention difficulties",
+           "startDelay": 7000
+
+        },
+        {
+           "name": "bullet3",
+           "type": "text",
+           "font": "bullets_35p",
+           "location": [ 200 , 300 ],
+           "bullet": true,
+           "text": "Sleep disturbances",
+           "startDelay": 8500
+        },
+        {
+           "name": "bullet4",
+           "type": "text",
+           "font": "bullets_35p",
+           "location": [ 200 , 350 ],
+           "bullet": true,
+           "text": "Increased appetite",
+           "startDelay":10000
+        },
+        {
+           "name": "bullet5",
+           "type": "text",
+           "font": "bullets_35p",
+           "location": [ 200 , 400 ],
+           "bullet": true,
+           "text": "Powerful cravings",
+           "startDelay":11500
+        },
+        {
+            "name": "vo",
+            "type": "audio",
+            "audio": [ "Slide 12" ],
+            "variable": "slideVO"
+          }         
+        ],
+        "outcomes": {
+          "vo_finished": {
+            "events": { "slideVO": "played" },
+            "actions": [
+              { "type": "remove-actor", "args": ["forwardButton"] },
+              { "type": "add-actor", "args": [
+                {
+                  "name": "nextHighlight",
+                  "type": "button",
+                  "image": "nextHighlight",
+                  "animated": false,
+                  "location": [ 720, 530 ],
+                  "variable": "show_next"
+                }
+              ] }
+            ]
+          },
+          "replay_button": {
+            "events": { "replayClick": "*" },
+            "actions": [
+              { "type": "scene", "args": [ "empty_replay_scene" ] },
+              { "type": "scene", "args": [ "slide12" ] }
+            ]
+      },
+      "forward_button": {
+            "events": { "show_next": "*" },
+            "actions": [ { "type": "scene", "args": [ "slide13" ] } ]
+      },
+      "back_button": {
+            "events": { "show_back": "*" },
+            "actions": [ { "type": "scene", "args": [ "slide11" ] } ]
+      }
+}
+},
+"slide13": {
+        "id": "slide13",
+        "background": "background_rt",
+        "title": "Slide 13",
+        "description": "Slide 13",
+        "actors": [
+         {
+                  "name": "intro_heading",
+                  "type": "text",
+                  "font": "standard",
+                  "location": [ 30, 25 ],
+                  "text": "Analyzing Influences"
+        },
+         {
+            "name": "forwardButton",
+            "type": "button",
+            "image": "next",
+            "location": [ 720, 530 ],
+            "variable": "show_next"
+          },
+          {
+            "name": "replay",
+            "type": "button",
+            "image": "replay",
+            "location": [ 660, 530 ],
+            "variable": "replayClick"
+          },
+          {
+            "name": "back",
+            "type": "button",
+            "image": "back",
+            "location": [ 600, 532 ],
+            "variable": "show_back"
+          },
+          {
+           "name": "bullet_heading",
+           "type": "text",
+           "font": "bullet_heading",
+           "location": [ 20 , 125 ],
+           "text": "E-cigarettes"
+        },
+        {
+           "name": "bullet1",
+           "type": "text",
+           "font": "bullets_30p",
+           "location": [ 30 , 200 ],
+           "bullet": true,
+           "text": "Do not help you quit",
+           "startDelay": 6000
+        },
+        {
+           "name": "bullet2",
+           "type": "text",
+           "font": "bullets_30p",
+           "location": [ 30 , 250 ],
+           "bullet": true,
+           "text": "Battery-operated devices",
+           "startDelay": 9200
+
+        },
+        {
+           "name": "bullet3",
+           "type": "text",
+           "font": "bullets_30p",
+           "location": [ 30 , 300 ],
+           "bullet": true,
+           "text": "Produce a flavored nicotine vapor",
+           "startDelay": 10800
+        },
+        {
+           "name": "bullet4",
+           "type": "text",
+           "font": "bullets_30p",
+           "location": [ 30 , 350 ],
+           "bullet": true,
+           "text": "Contain many chemicals",
+           "startDelay": 15700
+        },
+          {
+            "name": "dropShadow",
+            "type": "blocker",
+            "location": [ 493, 128 ],
+            "size": [268, 326],
+            "blockerTint": "0x585858",
+            "blockerAlpha": 1
+          },
+        {
+            "name": "e-cigs",
+            "type": "decoration",
+            "image": "e-cigs",
+            "key": "decorations",
+            "location": [ 490, 125 ]
+          },
+          {
+            "name": "vo",
+            "type": "audio",
+            "audio": [ "Slide 13" ],
+            "variable": "slideVO"
+          }        
+        ],
+        "outcomes": {
+          "vo_finished": {
+            "events": { "slideVO": "played" },
+            "actions": [
+              { "type": "remove-actor", "args": ["forwardButton"] },
+              { "type": "add-actor", "args": [
+                {
+                  "name": "nextHighlight",
+                  "type": "button",
+                  "image": "nextHighlight",
+                  "animated": false,
+                  "location": [ 720, 530 ],
+                  "variable": "show_next"
+                }
+              ] }
+            ]
+          },
+          "replay_button": {
+            "events": { "replayClick": "*" },
+            "actions": [
+              { "type": "scene", "args": [ "empty_replay_scene" ] },
+              { "type": "scene", "args": [ "slide13" ] }
+            ]
+      },
+      "forward_button": {
+            "events": { "show_next": "*" },
+            "actions": [ { "type": "scene", "args": [ "slide14" ] } ]
+      },
+      "back_button": {
+            "events": { "show_back": "*" },
+            "actions": [ { "type": "scene", "args": [ "slide12" ] } ]
+      }
+}
+},
+"slide14": {
+        "id": "slide14",
+        "background": "background_rt",
+        "title": "Slide 14",
+        "description": "Slide 14",
+        "actors": [
+         {
+                  "name": "intro_heading",
+                  "type": "text",
+                  "font": "standard",
+                  "location": [ 30, 25 ],
+                  "text": "Analyzing Influences"
+        },
+         {
+            "name": "forwardButton",
+            "type": "button",
+            "image": "next",
+            "location": [ 720, 530 ],
+            "variable": "show_next"
+          },
+          {
+            "name": "replay",
+            "type": "button",
+            "image": "replay",
+            "location": [ 660, 530 ],
+            "variable": "replayClick"
+          },
+          {
+            "name": "back",
+            "type": "button",
+            "image": "back",
+            "location": [ 600, 532 ],
+            "variable": "show_back"
+          },
+          {
+           "name": "bullet_heading",
+           "type": "text",
+           "font": "bullet_heading",
+           "location": [ 25 , 125 ],
+           "text": "Health effects"
+        },
+        {
+           "name": "bullet1",
+           "type": "text",
+           "font": "bullets_27p",
+           "location": [ 40 , 200 ],
+           "bullet": true,
+           "text": "Wrinkles",
+           "startDelay": 6000
+        },
+        {
+           "name": "bullet2",
+           "type": "text",
+           "font": "bullets_27p",
+           "location": [ 40 , 250 ],
+           "bullet": true,
+           "text": "Yellow teeth",
+           "startDelay": 7000
+
+        },
+        {
+           "name": "bullet3",
+           "type": "text",
+           "font": "bullets_27p",
+           "location": [ 40 , 300 ],
+           "bullet": true,
+           "text": "Oral cancers",
+           "startDelay": 8000
+        },
+        {
+           "name": "bullet4",
+           "type": "text",
+           "font": "bullets_27p",
+           "location": [ 40 , 350 ],
+           "bullet": true,
+           "text": "Lung cancer",
+           "startDelay":9000
+        },
+        {
+           "name": "bullet5",
+           "type": "text",
+           "font": "bullets_27p",
+           "location": [ 40 , 400 ],
+           "bullet": true,
+           "text": "Lung disease",
+           "startDelay":10000
+        },
+        {
+           "name": "bullet6",
+           "type": "text",
+           "font": "bullets_27p",
+           "location": [ 40 , 450 ],
+           "bullet": true,
+           "text": "Increased risk of heart disease",
+           "startDelay":15000,
+           "wordWrapWidth": 200
+        },
+        {
+           "name": "bullet1a",
+           "type": "text",
+           "font": "bullets_27p",
+           "location": [ 370 , 200 ],
+           "bullet": true,
+           "text": "Bad skin",
+           "startDelay": 23000
+        },
+        {
+           "name": "bullet2b",
+           "type": "text",
+           "font": "bullets_27p",
+           "location": [ 370 , 250 ],
+           "bullet": true,
+           "text": "Bad breath",
+           "startDelay": 24000
+
+        },
+        {
+           "name": "bullet3c",
+           "type": "text",
+           "font": "bullets_27p",
+           "location": [ 370 , 300 ],
+           "bullet": true,
+           "text": "Bad smelling clothes and hair",
+           "startDelay": 26000
+        },
+        {
+           "name": "bullet4d",
+           "type": "text",
+           "font": "bullets_27p",
+           "location": [ 370 , 350 ],
+           "bullet": true,
+           "text": "Reduced athletic performance",
+           "startDelay":27500
+        },
+        {
+           "name": "bullet5e",
+           "type": "text",
+           "font": "bullets_27p",
+           "location": [ 370 , 400 ],
+           "bullet": true,
+           "text": "Greater risk of injury",
+           "startDelay":30000
+        },
+        {
+           "name": "bullet6f",
+           "type": "text",
+           "font": "bullets_27p",
+           "location": [ 370 , 450 ],
+           "bullet": true,
+           "text": "Increased risk of illness",
+           "startDelay":31000
+        },
+        {
+            "name": "vo",
+            "type": "audio",
+            "audio": [ "Slide 14" ],
+            "variable": "slideVO"
+          }        
+        ],
+        "outcomes": {
+          "vo_finished": {
+            "events": { "slideVO": "played" },
+            "actions": [
+              { "type": "remove-actor", "args": ["forwardButton"] },
+              { "type": "add-actor", "args": [
+                {
+                  "name": "nextHighlight",
+                  "type": "button",
+                  "image": "nextHighlight",
+                  "animated": false,
+                  "location": [ 720, 530 ],
+                  "variable": "show_next"
+                }
+              ] }
+            ]
+          },
+          "replay_button": {
+            "events": { "replayClick": "*" },
+            "actions": [
+              { "type": "scene", "args": [ "empty_replay_scene" ] },
+              { "type": "scene", "args": [ "slide14" ] }
+            ]
+      },
+      "forward_button": {
+            "events": { "show_next": "*" },
+            "actions": [ { "type": "scene", "args": [ "slide15" ] } ]
+      },
+      "back_button": {
+            "events": { "show_back": "*" },
+            "actions": [ { "type": "scene", "args": [ "slide13" ] } ]
+      }
+}
+},
+      "slide15": {
+        "id": "slide15",
+        "background": "background_rt",
+        "title": "Slide 15",
+        "description": "Slide 15",
+        "actors": [
+          {
+            "name": "intro_heading",
+            "type": "text",
+            "font": "standard",
+            "location": [ 30, 25 ],
+            "text": "Analyzing Influences"
+          },
+          {
+            "name": "next_disabled",
+            "type":"decoration",
+            "image": "next_disabled",
+            "location": [ 720, 530 ],
+            "key": "decorations"
+          },
+          {
+            "name": "replay",
+            "type": "button",
+            "image": "replay",
+            "location": [ 660, 530 ],
+            "variable": "replayClick"
+          },
+          {
+            "name": "back",
+            "type": "button",
+            "image": "back",
+            "location": [ 600, 532 ],
+            "variable": "show_back"
+          },
+          {
+            "name": "video_rt_end",
+            "type": "wistia",
+            "location": [ 70, 135 ],
+            "hideCloseButton": true,
+            "size": [ 640, 360 ],
+            "video": "50l7fzsbsn",
+            "blockerAlpha" : 0.0,
+            "blockInput": false,
+            "variable": "video_end"
+          }
+        ],
+        "outcomes": {
+          "video_end_finished": {
+            "events": { "video_end": "finished" },
+            "actions": []
+          },
+          "replay_button": {
+            "events": { "replayClick": "*" },
+            "actions": [
+              { "type": "scene", "args": [ "empty_replay_scene" ] },
+              { "type": "scene", "args": [ "slide15" ] }
+            ]
+          },
+          "back_button": {
+            "events": { "show_back": "*" },
+            "actions": [ { "type": "scene", "args": [ "slide14" ] } ]
+          }
+        },
+        "actions": [
+          { "type": "choice", "args": [ "objective_complete", 1] },
+          { "type": "choice", "args": [ "save", 0 ] }
+        ]
+      },
+      "empty_replay_scene": {
+        "id": "empty_replay_scene",
+        "description": "since a scene change request to the current scene is ignored, first change to this empty scene"
+      }
+
+
+    }
+  }
+}
+

@@ -1,0 +1,133 @@
+{
+  "texture": "media/default/iuc-spritesheet.png",
+  "textureMap": "media/default/iuc-spritesheet.json",
+  "textureKey": "iuc_texture",
+  "data": "media/default/sceneData.json",
+  "fonts" : {
+    "lesson_wrap": { "font": "35px flashligitalic", "wordWrap": true, "wordWrapWidth": 425, "lineSpacing": -4},
+    "standard": { "font": "40px ralewaythin", "fill": "#ffffff", "align": "left", "wordWrap": true, "wordWrapWidth": 300},
+    "bullet_heading": { "font": "40px open_sansextrabold", "fill": "#4f4f4f", "align": "left", "wordWrap": true, "wordWrapWidth": 550},
+    "bullets": { "font": "20px yantramanavregular", "fill": "#4f4f4f",  "fontWeight": "normal", "align": "center", "wordWrap": true, "wordWrapWidth": 500, "lineSpacing": -6 },
+    "bullets_25": { "font": "25px yantramanavregular", "fill": "#4f4f4f",  "fontWeight": "normal", "align": "left", "wordWrap": true, "wordWrapWidth": 500, "lineSpacing": -6 },
+    "bullets_slide7": { "font": "35px yantramanavregular", "fill": "#4f4f4f",  "fontWeight": "normal", "align": "center", "wordWrap": true, "wordWrapWidth": 500, "lineSpacing": -6 },
+    "bullets_35": { "font": "35px yantramanavregular", "fill": "#4f4f4f",  "fontWeight": "normal", "align": "left", "wordWrap": true, "wordWrapWidth": 500, "lineSpacing": -6 },
+    "bullets_slide9": { "font": "30px yantramanavregular", "fill": "#4f4f4f",  "fontWeight": "normal", "align": "center", "wordWrap": true, "wordWrapWidth": 500, "lineSpacing": -6 }
+
+
+
+  },
+  "images": {
+    
+   
+    "decorations": {
+      "backDisabled": "lesson-back-btn-inactive.png",
+      "next_disabled": "lesson-next-btn-inactive.png",
+      "drug_addiction": "drug-addiction.png",
+      "doctor": "doctor.png",
+      "crimescene" : "crimescene.png",
+      "refill" : "no-refills.png",
+      "pills": "pills.png",
+      "arrow": "arrow.png",
+      "dropShadow": "drop-shadow.png"
+    }
+  },
+  "sceneImages": {
+    "background_one": "lesson-background3.png",
+    "background_two": "lesson-background3.png",
+    "background_three": "lesson-background3.png",
+    "background_four": "lesson-background3.png",
+    "background_five": "lesson-background3.png",
+    "background_six": "lesson-background3.png",
+    "background_seven": "lesson-background3.png",
+    "background_eight": "lesson-background3.png",
+    "background_nine": "lesson-background3.png",
+    "background_ten": "lesson-background3.png",
+    "background_eleven": "lesson-background3.png",
+    "background_tweleve": "lesson-background3.png"
+  },
+  "buttons": {
+    "next": {
+      "up": "lesson-next-btn-up.png",
+      "over": "lesson-next-btn-dn.png",
+      "out": "lesson-next-btn-up.png",
+      "down": "lesson-next-btn-dn.png"
+    },
+    "back": {
+      "up": "lesson-back-btn-up.png",
+      "over": "lesson-back-btn-dn.png",
+      "out": "lesson-back-btn-up.png",
+      "down": "lesson-back-btn-dn.png"
+    },
+    "nextHighlight": {
+      "up": "lesson-next-btn-up-hi.png",
+      "over": "lesson-next-btn-dn-hi.png",
+      "out": "lesson-next-btn-up-hi.png",
+      "down": "lesson-next-btn-dn-hi.png"
+    },
+    "replay": {
+      "up": "lesson-replay-btn-up.png",
+      "over": "lesson-replay-btn-dn.png",
+      "out": "lesson-replay-btn-up.png",
+      "down": "lesson-replay-btn-dn.png"
+    },
+    "menu": {
+      "up": "lesson-menu-btn2-up.png",
+      "over": "lesson-menu-btn2-dn.png",
+      "out": "lesson-menu-btn2-up.png",
+      "down": "lesson-menu-btn2-dn.png"
+    }
+    
+      },
+      "soundKey": "iuc_audio",
+  "soundFile": [ "media/default/iuc_audio.m4a", "media/default/iuc_audio.ogg" ],
+  "sounds": {
+      "Slide4": [
+        0,
+        62.72501133786848,
+        false,
+        "Slide4"
+      ],
+      "Slide5": [
+        64,
+        19.21666666666667,
+        false,
+        "Slide5"
+      ],
+      "Slide6": [
+        85,
+        15.245850340136059,
+        false,
+        "Slide6"
+      ],
+      "Slide7": [
+        102,
+        38.27292517006802,
+        false,
+        "Slide7"
+      ],
+      "Slide8": [
+        142,
+        15.84167800453514,
+        false,
+        "Slide8"
+      ],
+      "Slide9": [
+        159,
+        23.57501133786849,
+        false,
+        "Slide9"
+      ],
+      "Slide10": [
+        184,
+        23.14167800453515,
+        false,
+        "Slide10"
+      ],
+      "Slide11": [
+        209,
+        21.481269841269835,
+        false,
+        "Slide11"
+      ]
+  }
+}

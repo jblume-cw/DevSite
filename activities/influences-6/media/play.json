@@ -1,0 +1,16 @@
+{
+  "name": "It's Ur Choice - Analyzing Influences",
+  "description": "This file contains a description of the IUC Analyzing Influences",
+  "scorm": false,
+  "logging": false,
+  "autoScale": true,
+  "acts": {
+    "default": {
+      "id": "default",
+      "description": "Its Ur Choice",
+      "name": "Analyzing Influences",
+      "theme": "media/default/theme.json",
+      "objective": "analyzing_influences"
+    }
+  }
+}

@@ -1,0 +1,155 @@
+{
+  "texture": "media/default/p-spritesheet.png",
+  "textureMap": "media/default/p-spritesheet.json",
+  "textureKey": "p_texture",
+  "data": "media/default/sceneData.json",
+  "fonts" : {
+    "standard": { "font": "40px ralewaythin", "fill": "#ffffff", "align": "left", "wordWrap": true, "wordWrapWidth": 300},
+    "bullet_heading": { "font": "40px open_sansextrabold", "fill": "#4f4f4f", "align": "left", "wordWrap": true, "wordWrapWidth": 550},
+    "bullet_heading_35p_extralength": { "font": "35px open_sansextrabold", "fill": "#4f4f4f", "align": "left", "wordWrap": true, "wordWrapWidth": 750},
+    "bullet_heading_30p": { "font": "30px open_sansextrabold", "fill": "#4f4f4f", "align": "left", "wordWrap": true, "wordWrapWidth": 550},
+    "bullet_heading_45p": { "font": "45px open_sansextrabold", "fill": "#4f4f4f", "align": "left", "wordWrap": true, "wordWrapWidth": 550},
+    "bullets": { "font": "20px yantramanavregular", "fill": "#4f4f4f",  "fontWeight": "normal", "align": "center", "wordWrap": true, "wordWrapWidth": 800, "lineSpacing": -6 },
+    "bullets_27p": { "font": "27px yantramanavregular", "fill": "#4f4f4f",  "fontWeight": "normal", "align": "left", "wordWrap": true, "wordWrapWidth": 800, "lineSpacing": -6 },
+    "bullets_30p": { "font": "30px yantramanavregular", "fill": "#4f4f4f",  "fontWeight": "normal", "align": "left", "wordWrap": true, "wordWrapWidth": 800, "lineSpacing": -6 },
+    "bullets_25p": { "font": "25px yantramanavregular", "fill": "#4f4f4f",  "fontWeight": "normal", "align": "left", "wordWrap": true, "wordWrapWidth": 800, "lineSpacing": -6 },
+    "bullets_35p": { "font": "35px yantramanavregular", "fill": "#4f4f4f",  "fontWeight": "normal", "align": "center", "wordWrap": true, "wordWrapWidth": 800, "lineSpacing": -6 },
+    "bullets_40p": { "font": "40px yantramanavregular", "fill": "#4f4f4f",  "fontWeight": "normal", "align": "center", "wordWrap": true, "wordWrapWidth": 800, "lineSpacing": -6 },
+    "bullets_40p_el": { "font": "40px yantramanavregular", "fill": "#4f4f4f",  "fontWeight": "normal", "align": "center", "wordWrap": true, "wordWrapWidth": 800, "lineSpacing": -6 }
+
+  },
+  "images": {
+    
+   
+    "decorations": {
+      "backDisabled": "lesson-back-btn-inactive.png",
+      "next_disabled": "lesson-next-btn-inactive.png",
+      "inhalants":"inhalants.png",
+      "ssds":"ssds.png",
+      "excuse-hi": "excuse-hi.png",
+      "personal-hi": "personal-hi.png",
+      "walk-hi": "walkaway-hi.png",
+      "reverse-hi": "reverse-hi.png",
+      "better-hi": "betteridea-hi.png"
+     
+    }
+  },
+  "sceneImages": {
+    "background_cs": "lesson-background3.png"
+    
+  },
+  "buttons": {
+    "next": {
+      "up": "lesson-next-btn-up.png",
+      "over": "lesson-next-btn-dn.png",
+      "out": "lesson-next-btn-up.png",
+      "down": "lesson-next-btn-dn.png"
+    },
+    "back": {
+      "up": "lesson-back-btn-up.png",
+      "over": "lesson-back-btn-dn.png",
+      "out": "lesson-back-btn-up.png",
+      "down": "lesson-back-btn-dn.png"
+    },
+    "nextHighlight": {
+      "up": "lesson-next-btn-up-hi.png",
+      "over": "lesson-next-btn-dn-hi.png",
+      "out": "lesson-next-btn-up-hi.png",
+      "down": "lesson-next-btn-dn-hi.png"
+    },
+    "replay": {
+      "up": "lesson-replay-btn-up.png",
+      "over": "lesson-replay-btn-dn.png",
+      "out": "lesson-replay-btn-up.png",
+      "down": "lesson-replay-btn-dn.png"
+    },
+    "walk": {
+      "up": "walkaway-up.png",
+      "over": "walkaway-over.png",
+      "out": "walkaway-up.png",
+      "down": "walkaway-hi.png"
+    },
+    "better": {
+      "up": "betteridea-up.png",
+      "over": "betteridea-over.png",
+      "out": "betteridea-up.png",
+      "down": "betteridea-hi.png"
+    },
+    "excuse": {
+      "up": "excuse-up.png",
+      "over": "excuse-over.png",
+      "out": "excuse-up.png",
+      "down": "excuse-hi.png"
+    },
+    "personal": {
+      "up": "personal-up.png",
+      "over": "personal-over.png",
+      "out": "personal-up.png",
+      "down": "personal-hi.png"
+    },
+    "reverse": {
+      "up": "reverse-up.png",
+      "over": "reverse-over.png",
+      "out": "reverse-up.png",
+      "down": "reverse-hi.png"
+    }
+      },
+      "soundKey": "p_audio",
+  "soundFile": [ "media/default/p_audio.m4a", "media/default/p_audio.ogg" ],
+  "sounds": {
+        "PreSld2All": [
+        0,
+        87.71072562358276,
+        false,
+        "PreSld2All"
+      ],
+      "PreSld3a": [
+        89,
+        3.9306802721088445,
+        false,
+        "PreSld3a"
+      ],
+      "PreSld3b": [
+        94,
+        3.525351473922896,
+        false,
+        "PreSld3b"
+      ],
+      "PreSld4a": [
+        99,
+        4.319999999999993,
+        false,
+        "PreSld4a"
+      ],
+      "PreSld4b": [
+        105,
+        2.4933333333333394,
+        false,
+        "PreSld4b"
+      ],
+      "PreSld6All": [
+        109,
+        40.29210884353742,
+        false,
+        "PreSld6All"
+      ],
+      "PreSld7": [
+        151,
+        27.018049886621327,
+        false,
+        "PreSld7"
+      ],
+      "PreSld8": [
+        180,
+        16.680861678004533,
+        false,
+        "PreSld8"
+      ],
+      "PreSld9": [
+        198,
+        17.84521541950113,
+        false,
+        "PreSld9"
+      ]
+  }
+}

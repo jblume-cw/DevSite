@@ -1,0 +1,16 @@
+{
+  "name": "It's Ur Choice - Risk Taking",
+  "description": "This file contains a description of the IUC Risk Taking",
+  "scorm": false,
+  "logging": false,
+  "autoScale": true,
+  "acts": {
+    "default": {
+      "id": "default",
+      "description": "Its Ur Choice",
+      "name": "Risk Taking",
+      "theme": "media/default/theme.json",
+      "objective": "pressure"
+    }
+  }
+}

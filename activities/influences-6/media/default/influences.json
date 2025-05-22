@@ -1,0 +1,121 @@
+{
+  "src": "influences.ogg",
+  "data": {
+    "audioSprite": {
+      "Slide 10": [
+        0,
+        19.432244897959183,
+        false,
+        "Slide 10"
+      ],
+      "Slide 11": [
+        21,
+        23.32616780045352,
+        false,
+        "Slide 11"
+      ],
+      "Slide 12": [
+        46,
+        18.19215419501134,
+        false,
+        "Slide 12"
+      ],
+      "Slide 13": [
+        66,
+        26.866893424036277,
+        false,
+        "Slide 13"
+      ],
+      "Slide 14": [
+        94,
+        41.40718820861679,
+        false,
+        "Slide 14"
+      ],
+      "Slide 2": [
+        137,
+        25.509319727891153,
+        false,
+        "Slide 2"
+      ],
+      "Slide 3 correct": [
+        164,
+        1.6980498866213054,
+        false,
+        "Slide 3 correct"
+      ],
+      "Slide 3 incorrect": [
+        167,
+        8.377052154195013,
+        false,
+        "Slide 3 incorrect"
+      ],
+      "Slide 3 question": [
+        177,
+        15.652290249433094,
+        false,
+        "Slide 3 question"
+      ],
+      "Slide 4": [
+        194,
+        42.706938775510196,
+        false,
+        "Slide 4"
+      ],
+      "Slide 5": [
+        238,
+        38.765918367346956,
+        false,
+        "Slide 5"
+      ],
+      "Slide 6": [
+        278,
+        21.225011337868466,
+        false,
+        "Slide 6"
+      ],
+      "Slide 7 good job": [
+        301,
+        3.727324263038554,
+        false,
+        "Slide 7 good job"
+      ],
+      "Slide 7 setup": [
+        306,
+        16.577981859410443,
+        false,
+        "Slide 7 setup"
+      ],
+      "Slide 8": [
+        324,
+        14.158775510204066,
+        false,
+        "Slide 8"
+      ],
+      "Slide 9 correct": [
+        340,
+        14.531950113378684,
+        false,
+        "Slide 9 correct"
+      ],
+      "Slide 9 incorrect": [
+        356,
+        17.718412698412692,
+        false,
+        "Slide 9 incorrect"
+      ],
+      "Slide 9 question": [
+        375,
+        17.617755102040803,
+        false,
+        "Slide 9 question"
+      ],
+      "ding": [
+        394,
+        1.1049206349206315,
+        false,
+        "ding"
+      ]
+    }
+  }
+}

@@ -1,0 +1,1380 @@
+{
+  "play": {
+    "start_skip": "slide01",
+    "start": "slide01",
+    "showPlayThrough": false,
+    "scenes": {
+      "slide01": {
+        "id": "slide01",
+        "background": "background_cs",
+        "title": "Slide 1",
+        "description": "Slide 1",
+        "actors": [
+         {
+                  "name": "intro_heading",
+                  "type": "text",
+                  "font": "standard",
+                  "location": [ 30, 25 ],
+                  "text": "Pressure"
+        },
+         {
+            "name": "forwardButton",
+            "type": "button",
+            "image": "next",
+            "location": [ 720, 530 ],
+            "variable": "show_next"
+          },
+          {
+            "name": "replay",
+            "type": "button",
+            "image": "replay",
+            "location": [ 660, 530 ],
+            "variable": "replayClick"
+          },
+          {
+            "name": "backDisabled",
+            "type": "decoration",
+            "image": "backDisabled",
+            "location": [ 600, 532 ],
+            "key": "decorations"
+          },
+          {
+            "name": "dropShadow",
+            "type": "blocker",
+            "location": [ 73, 138 ],
+            "size": [640, 360],
+            "blockerTint": "0x585858",
+            "blockerAlpha": 1
+          },
+          
+            {
+            "name": "video_rt_intro",
+            "type": "wistia",
+            "location": [ 70, 135 ],
+            "hideCloseButton": true,
+            "size": [ 640, 360 ],
+            "video": "9v4rs33110",
+            "blockerAlpha" : 0.0,
+            "blockInput": false,
+            "variable": "video_intro"
+          }
+        ],
+        "outcomes": {
+          "video_intro_finished": {
+            "events": { "video_intro": "finished" },
+            "actions": [
+              { "type": "remove-actor", "args": ["forwardButton"] },
+              { "type": "add-actor", "args": [
+                {
+                  "name": "nextHighlight",
+                  "type": "button",
+                  "image": "nextHighlight",
+                  "animated": false,
+                  "location": [ 720, 530 ],
+                  "variable": "show_next"
+                }
+              ] }
+            ]
+          },
+          "replay_button": {
+            "events": { "replayClick": "*" },
+            "actions": [
+              { "type": "scene", "args": [ "empty_replay_scene" ] },
+              { "type": "scene", "args": [ "slide01" ] }
+            ]
+          },
+          "forward_button": {
+            "events": { "show_next": "*" },
+            "actions": [ { "type": "scene", "args": [ "slide02" ] } ]
+      }
+      }
+      }, 
+      "slide02": {
+        "id": "slide02",
+        "background": "background_cs",
+        "title": "Slide 2",
+        "description": "Slide 2",
+        "actors": [
+         {
+                  "name": "intro_heading",
+                  "type": "text",
+                  "font": "standard",
+                  "location": [ 30, 25 ],
+                  "text": "Pressure"
+        },
+         {
+            "name": "forwardButton",
+            "type": "button",
+            "image": "next",
+            "location": [ 720, 530 ],
+            "variable": "show_next"
+          },
+          {
+            "name": "replay",
+            "type": "button",
+            "image": "replay",
+            "location": [ 660, 530 ],
+            "variable": "replayClick"
+          },
+          {
+            "name": "back",
+            "type": "button",
+            "image": "back",
+            "location": [ 600, 532 ],
+            "variable": "show_back"
+          },
+          
+          {
+           "name": "bullet_heading",
+           "type": "text",
+           "font": "bullet_heading_30p",
+           "location": [ 40 , 125 ],
+           "wordWrapWidth": 725,
+           "text": "What should you do if you're being pressured to do something you don't want to do?"
+        },
+        {
+           "name": "bullet1",
+           "type": "text",
+           "font": "bullets_30p",
+           "location": [ 70 , 210 ],
+           "bullet":  true,
+           "text": "Say no.",
+           "startDelay": 5500,
+           "wordWrapWidth": 250
+        },
+        {
+           "name": "bullet2",
+           "type": "text",
+           "font": "bullets_30p",
+           "location": [ 70 , 250 ],
+           "bullet":  true,
+           "text": "Walk away.",
+           "startDelay": 15500
+        },
+        {
+           "name": "bullet2a",
+           "type": "text",
+           "font": "bullets_30p",
+           "location": [ 70 , 290 ],
+           "bullet":  true,
+           "text": "Make up an excuse.",
+           "startDelay": 26500
+        },
+        {
+           "name": "bullet2b",
+           "type": "text",
+           "font": "bullets_30p",
+           "location": [ 70 , 330 ],
+           "bullet":  true,
+           "text": "Reverse the situation.",
+           "startDelay": 40000
+        },
+         {
+           "name": "bullet2c",
+           "type": "text",
+           "font": "bullets_30p",
+           "location": [ 70 , 370 ],
+           "bullet":  true,
+           "text": "Give a personal reason.",
+           "startDelay": 52000
+        },
+        {
+           "name": "bullet3",
+           "type": "text",
+           "font": "bullets_30p",
+           "location": [ 70 , 410 ],
+           "bullet":  true,
+           "text": "Come up with something else to do.",
+           "startDelay": 65000
+        },
+         {
+           "name": "bullet3a",
+           "type": "text",
+           "font": "bullets_30p",
+           "location": [ 70 , 450 ],
+           "bullet":  true,
+           "text": "Create a safe code with a trusted adult.",
+           "startDelay": 70000
+        },
+        {
+            "name": "vo",
+            "type": "audio",
+            "audio": [ "PreSld2All" ],
+            "variable": "slideVO"
+          }
+
+        ],
+        "outcomes": {
+          "vo_finished": {
+            "events": { "slideVO": "played" },
+            "actions": [
+              { "type": "remove-actor", "args": ["forwardButton"] },
+              { "type": "add-actor", "args": [
+                {
+                  "name": "nextHighlight",
+                  "type": "button",
+                  "image": "nextHighlight",
+                  "animated": false,
+                  "location": [ 720, 530 ],
+                  "variable": "show_next"
+                }
+              ] }
+            ]
+          },
+          "replay_button": {
+            "events": { "replayClick": "*" },
+            "actions": [
+              { "type": "scene", "args": [ "empty_replay_scene" ] },
+              { "type": "scene", "args": [ "slide02" ] }
+            ]
+      },
+      "forward_button": {
+            "events": { "show_next": "*" },
+            "actions": [ { "type": "scene", "args": [ "slide03" ] } ]
+      },
+      "back_button": {
+            "events": { "show_back": "*" },
+            "actions": [ { "type": "scene", "args": [ "slide01" ] } ]
+      }
+}
+},
+
+
+      "slide03": {
+        "id": "slide03",
+        "background": "background_cs",
+        "title": "Slide 3",
+        "description": "Slide 3",
+        "actors": [
+          {
+            "name": "intro_heading",
+            "type": "text",
+            "font": "standard",
+            "location": [ 30, 25 ],
+            "text": "Pressure"
+          },
+          {
+            "name": "forwardButton",
+            "type": "button",
+            "image": "next",
+            "location": [ 720, 530 ],
+            "variable": "show_next"
+          },
+          {
+            "name": "replay",
+            "type": "button",
+            "image": "replay",
+            "location": [ 660, 530 ],
+            "variable": "replayClick"
+          },
+          {
+            "name": "back",
+            "type": "button",
+            "image": "back",
+            "location": [ 600, 532 ],
+            "variable": "show_back"
+          },
+          {
+            "name": "vo",
+            "type": "audio",
+            "audio": [ "PreSld3a" ],
+            "variable": "slideVO"
+          }              
+        ],
+        "outcomes": {           
+          "replay_button": {
+            "events": { "replayClick": "*" },
+            "actions": [
+              { "type": "scene", "args": [ "empty_replay_scene" ] },
+              { "type": "scene", "args": [ "slide03" ] }
+            ]
+          },
+          "forward_button": {
+            "events": { "show_next": "*" },
+            "actions": [ { "type": "scene", "args": [ "slide04" ] } ]
+          },
+          "back_button": {
+            "events": { "show_back": "*" },
+            "actions": [ { "type": "scene", "args": [ "slide02" ] } ]
+          },
+          "vo_finished": {
+            "events": { "slideVO": "played" },
+            "actions": [
+              { "type": "remove-actor", "args": ["main_text"] },
+              { "type": "add-actor", "args": [
+                { 
+                  "name": "dropShadow",
+                  "type": "blocker",
+                  "location": [ 150, 109 ],
+                  "size": [486, 360],
+                  "blockerTint": "0x585858",
+                  "blockerAlpha": 1
+                }
+              ] },
+              { "type": "add-actor", "args": [
+               {
+                  "name": "video_alc_setup",
+                  "type": "wistia",
+                  "location": [ 147, 106 ],
+                  "hideCloseButton": true,
+                  "size": [ 486, 360 ],
+                  "video": "vgktc1f2ko",
+                  "blockerAlpha" : 0.0,
+                  "blockInput": false,
+                  "variable": "video_alc_setup"
+                }
+              ] }
+            ]
+          }, 
+          "video_alc_setup_finished": {
+            "events": { "video_alc_setup": "finished" },
+            "actions": [
+              { "type": "add-actor", "args": [
+                {
+                  "name": "vo",
+                  "type": "audio",
+                  "audio": [ "PreSld3b" ],
+                  "variable": "slideVO2"
+                }  
+              ] },
+              { "type": "add-actor", "args": [
+                {
+                  "name": "excuse",
+                  "type": "button",
+                  "image": "excuse",
+                  "location": [ 115, 480 ],
+                  "variable": "excuse"
+                }
+              ] },
+              {"type": "add-actor", "args": [
+                {
+                  "name": "personal",
+                  "type": "button",
+                  "image": "personal",
+                  "location": [  295, 480 ],
+                  "variable": "personal"
+                }
+              ] },
+              {"type": "add-actor", "args": [
+                {
+                  "name": "walk",
+                  "type": "button",
+                  "image": "walk",
+                  "location": [ 535, 480 ],
+                  "variable": "walk"
+                }
+              ] }
+            ]
+          },
+          "excuse_button": {
+            "events": { "excuse": "*" },
+            "actions": [ 
+              { "type": "remove-actor", "args": ["video_alc_setup"] },
+              { "type": "remove-actor", "args": ["video_alc_personal"] },
+              { "type": "remove-actor", "args": ["video_alc_walk"] },
+              { "type": "remove-actor", "args": ["slideVO2"] },
+              { "type": "remove-actor", "args": ["excuse"] },
+              { "type": "add-actor", "args": [ 
+                {
+                  "name": "video_alc_excuse",
+                  "type": "wistia",
+                  "location": [ 147, 106 ],
+                  "hideCloseButton": true,
+                  "size": [ 486, 360 ],
+                  "video": "o0uqq3vkg7",
+                  "blockerAlpha" : 0.0,
+                  "blockInput": false,
+                  "variable": "video_alc_excuse"
+                }
+              ] },
+              {
+                "type": "add-actor", "args": [
+                  {
+                    "name": "excuse_hi",
+                    "type": "decoration",
+                    "image": "excuse-hi",
+                    "location": [ 115, 480 ],
+                    "key": "decorations"
+                  } 
+                ]
+              }  
+            ] 
+          },
+          "personal_button": {
+            "events": { "personal": "*" },
+            "actions": [ 
+              { "type": "remove-actor", "args": ["video_alc_setup"] },
+              { "type": "remove-actor", "args": ["video_alc_excuse"] },
+              { "type": "remove-actor", "args": ["video_alc_walk"] },
+              { "type": "remove-actor", "args": ["slideVO2"] },
+              { "type": "remove-actor", "args": ["personal"] },
+              { "type": "add-actor", "args": [ 
+                {
+                  "name": "video_alc_personal",
+                  "type": "wistia",
+                  "location": [ 147, 106 ],
+                  "hideCloseButton": true,
+                  "size": [ 486, 360 ],
+                  "video": "xd82cp89ay",
+                  "blockerAlpha" : 0.0,
+                  "blockInput": false,
+                  "variable": "video_alc_personal"
+                }
+              ] },
+              {
+                "type": "add-actor", "args": [
+                  {
+                    "name": "personal_hi",
+                    "type": "decoration",
+                    "image": "personal-hi",
+                    "location": [ 295, 480 ],
+                    "key": "decorations"
+                  } 
+                ]
+              }
+            ]
+          },
+          "walk_button": {
+            "events": { "walk": "*" },
+            "actions": [ 
+              { "type": "remove-actor", "args": ["video_alc_setup"] },
+              { "type": "remove-actor", "args": ["video_alc_excuse"] },
+              { "type": "remove-actor", "args": ["video_alc_personal"] },
+              { "type": "remove-actor", "args": ["slideVO2"] },
+              { "type": "remove-actor", "args": ["walk"] },
+              { "type": "add-actor", "args": [ 
+                {
+                  "name": "video_alc_walk",
+                  "type": "wistia",
+                  "location": [ 147, 106 ],
+                  "hideCloseButton": true,
+                  "size": [ 486, 360 ],
+                  "video": "yz6bk1072c",
+                  "blockerAlpha" : 0.0,
+                  "blockInput": false,
+                  "variable": "video_alc_walk"
+                }
+              ] },
+              {
+                "type": "add-actor", "args": [
+                  {
+                    "name": "walk_hi",
+                    "type": "decoration",
+                    "image": "walk-hi",
+                    "location": [ 535, 480 ],
+                    "key": "decorations"
+                  } 
+                ]
+              }
+            ]
+          }    
+        }
+      },
+      "slide04": {
+        "id": "slide04",
+        "background": "background_cs",
+        "title": "Slide 4",
+        "description": "Slide 4",
+        "actors": [
+          {
+            "name": "intro_heading",
+            "type": "text",
+            "font": "standard",
+            "location": [ 30, 25 ],
+            "text": "Pressure"
+          },
+          {
+            "name": "forwardButton",
+            "type": "button",
+            "image": "next",
+            "location": [ 720, 530 ],
+            "variable": "show_next"
+          },
+          {
+            "name": "replay",
+            "type": "button",
+            "image": "replay",
+            "location": [ 660, 530 ],
+            "variable": "replayClick"
+          },
+          {
+            "name": "back",
+            "type": "button",
+            "image": "back",
+            "location": [ 600, 532 ],
+            "variable": "show_back"
+          },
+          {
+            "name": "vo",
+            "type": "audio",
+            "audio": [ "PreSld4a" ],
+            "variable": "slideVO"
+          }   
+        ],
+        "outcomes": {
+          "replay_button": {
+            "events": { "replayClick": "*" },
+            "actions": [
+              { "type": "scene", "args": [ "empty_replay_scene" ] },
+              { "type": "scene", "args": [ "slide04" ] }
+            ]
+          },
+          "forward_button": {
+            "events": { "show_next": "*" },
+            "actions": [ { "type": "scene", "args": [ "slide05" ] } ]
+          },
+          "back_button": {
+            "events": { "show_back": "*" },
+            "actions": [ { "type": "scene", "args": [ "slide03" ] } ]
+          },
+          "vo_finished": {
+            "events": { "slideVO": "played" },
+            "actions": [
+              { "type": "add-actor", "args": [
+                { 
+                  "name": "dropShadow",
+                  "type": "blocker",
+                  "location": [ 150, 109 ],
+                  "size": [486, 360],
+                  "blockerTint": "0x585858",
+                  "blockerAlpha": 1
+                }
+              ] },
+              { "type": "remove-actor", "args": ["main_text"] },
+              { "type": "add-actor", "args": [
+                {
+                  "name": "video_mar_setup",
+                  "type": "wistia",
+                  "location": [ 147, 106 ],
+                  "hideCloseButton": true,
+                  "size": [ 486, 360 ],
+                  "video": "ccmlxwana1",
+                  "blockerAlpha" : 0.0,
+                  "blockInput": false,
+                  "variable": "video_mar_setup"
+                }
+              ] }
+            ]
+          },
+          "video_mar_setup_finished": {
+            "events": { "video_mar_setup": "finished" },
+            "actions": [
+              { "type": "add-actor", "args": [
+                {
+                  "name": "vo",
+                  "type": "audio",
+                  "audio": [ "PreSld4b" ],
+                  "variable": "slideVO2"
+                } 
+              ] },
+              { "type": "add-actor", "args": [
+                {
+                  "name": "better",
+                  "type": "button",
+                  "image": "better",
+                  "location": [ 70, 480 ],
+                  "variable": "better"
+                } 
+              ] },
+              {"type": "add-actor", "args": [
+                {
+                  "name": "personal",
+                  "type": "button",
+                  "image": "personal",
+                  "location": [  295, 480 ],
+                  "variable": "personal"
+                }
+              ] },
+              {"type": "add-actor", "args": [
+                {
+                  "name": "reverse",
+                  "type": "button",
+                  "image": "reverse",
+                  "location": [ 535, 480 ],
+                  "variable": "reverse"
+                }
+              ] }
+            ]
+          },
+          "better_button": {
+            "events": { "better": "*" },
+            "actions": [ 
+              { "type": "remove-actor", "args": ["video_mar_setup"] },
+              { "type": "remove-actor", "args": ["video_mar_personal"] },
+              { "type": "remove-actor", "args": ["video_mar_reverse"] },
+              { "type": "remove-actor", "args": ["slideVO2"] },
+              { "type": "remove-actor", "args": ["better"] },
+              { "type": "add-actor", "args": [ 
+                {
+                  "name": "video_mar_better",
+                  "type": "wistia",
+                  "location": [ 147, 106 ],
+                  "hideCloseButton": true,
+                  "size": [ 486, 360 ],
+                  "video": "zbaznn1yvp",
+                  "blockerAlpha" : 0.0,
+                  "blockInput": false,
+                  "variable": "video_mar_better"
+                }
+              ] },
+              {
+                "type": "add-actor", "args": [
+                  {
+                    "name": "better_hi",
+                    "type": "decoration",
+                    "image": "better-hi",
+                    "location": [ 70, 480 ],
+                    "key": "decorations"
+                  } 
+                ]
+              }
+            ]
+          },
+          "personal_button": {
+            "events": { "personal": "*" },
+            "actions": [ 
+              { "type": "remove-actor", "args": ["video_mar_setup"] },
+              { "type": "remove-actor", "args": ["video_mar_better"] },
+              { "type": "remove-actor", "args": ["video_mar_reverse"] },
+              { "type": "remove-actor", "args": ["slideVO2"] },
+              { "type": "remove-actor", "args": ["personal"] },
+              { "type": "add-actor", "args": [ 
+                {
+                  "name": "video_mar_personal",
+                  "type": "wistia",
+                  "location": [ 147, 106 ],
+                  "hideCloseButton": true,
+                  "size": [ 486, 360 ],
+                  "video": "oyrcki5hp3",
+                  "blockerAlpha" : 0.0,
+                  "blockInput": false,
+                  "variable": "video_mar_personal"
+                }
+              ] },
+              {
+                "type": "add-actor", "args": [
+                  {
+                    "name": "personal_hi",
+                    "type": "decoration",
+                    "image": "personal-hi",
+                    "location": [ 295, 480 ],
+                    "key": "decorations"
+                  } 
+                ]
+              }
+            ]
+          },
+          "reverse_button": {
+            "events": { "reverse": "*" },
+            "actions": [ 
+              { "type": "remove-actor", "args": ["video_mar_setup"] },
+              { "type": "remove-actor", "args": ["video_mar_better"] },
+              { "type": "remove-actor", "args": ["video_mar_personal"] },
+              { "type": "remove-actor", "args": ["slideVO2"] },
+              { "type": "remove-actor", "args": ["reverse"] },
+              { "type": "add-actor", "args": [ 
+                {
+                  "name": "video_mar_reverse",
+                  "type": "wistia",
+                  "location": [ 147, 106 ],
+                  "hideCloseButton": true,
+                  "size": [ 486, 360 ],
+                  "video": "viotzp5gzu",
+                  "blockerAlpha" : 0.0,
+                  "blockInput": false,
+                  "variable": "video_mar_reverse"
+                }
+              ] },
+              {
+                "type": "add-actor", "args": [
+                  {
+                    "name": "reverse_hi",
+                    "type": "decoration",
+                    "image": "reverse-hi",
+                    "location": [ 535, 480 ],
+                    "key": "decorations"
+                  } 
+                ]
+              }
+            ]
+          }
+        }
+      },
+
+"slide05": {
+        "id": "slide05",
+        "background": "background_cs",
+        "title": "Slide 5",
+        "description": "Slide 5",
+        "actors": [
+         {
+                  "name": "intro_heading",
+                  "type": "text",
+                  "font": "standard",
+                  "location": [ 30, 25 ],
+                  "text": "Pressure"
+        },
+         {
+            "name": "forwardButton",
+            "type": "button",
+            "image": "next",
+            "location": [ 720, 530 ],
+            "variable": "show_next"
+          },
+          {
+            "name": "replay",
+            "type": "button",
+            "image": "replay",
+            "location": [ 660, 530 ],
+            "variable": "replayClick"
+          },
+          {
+            "name": "back",
+            "type": "button",
+            "image": "back",
+            "location": [ 600, 532 ],
+            "variable": "show_back"
+          },
+          {
+            "name": "dropShadow",
+            "type": "blocker",
+            "location": [ 73, 138 ],
+            "size": [640, 360],
+            "blockerTint": "0x585858",
+            "blockerAlpha": 1
+          },
+          {
+            "name": "video_rt_mid",
+            "type": "wistia",
+            "location": [ 70, 135 ],
+            "hideCloseButton": true,
+            "size": [ 640, 360 ],
+            "video": "1hi3rulcch",
+            "blockerAlpha" : 0.0,
+            "blockInput": false,
+            "variable": "video_mid"
+          }
+        ],
+        "outcomes": {
+          "video_mid_finished": {
+            "events": { "video_mid": "finished" },
+            "actions": [
+              { "type": "remove-actor", "args": ["forwardButton"] },
+              { "type": "add-actor", "args": [
+                {
+                  "name": "nextHighlight",
+                  "type": "button",
+                  "image": "nextHighlight",
+                  "animated": false,
+                  "location": [ 720, 530 ],
+                  "variable": "show_next"
+                }
+              ] }
+            ]
+          },           
+          "replay_button": {
+            "events": { "replayClick": "*" },
+            "actions": [
+              { "type": "scene", "args": [ "empty_replay_scene" ] },
+              { "type": "scene", "args": [ "slide05" ] }
+            ]
+      },
+       "forward_button": {
+            "events": { "show_next": "*" },
+            "actions": [ { "type": "scene", "args": [ "slide06" ] } ]
+      },
+      "back_button": {
+            "events": { "show_back": "*" },
+            "actions": [ { "type": "scene", "args": [ "slide04" ] } ]
+      }   
+}
+},
+"slide06": {
+        "id": "slide06",
+        "background": "background_cs",
+        "title": "Slide 6",
+        "description": "Slide 6",
+        "actors": [
+         {
+                  "name": "intro_heading",
+                  "type": "text",
+                  "font": "standard",
+                  "location": [ 30, 25 ],
+                  "text": "Pressure"
+        },
+         {
+            "name": "forwardButton",
+            "type": "button",
+            "image": "next",
+            "location": [ 720, 530 ],
+            "variable": "show_next"
+          },
+          {
+            "name": "replay",
+            "type": "button",
+            "image": "replay",
+            "location": [ 660, 530 ],
+            "variable": "replayClick"
+          },
+          {
+            "name": "back",
+            "type": "button",
+            "image": "back",
+            "location": [ 600, 532 ],
+            "variable": "show_back"
+          },
+          {
+           "name": "bullet_heading",
+           "type": "text",
+           "font": "bullet_heading",
+           "location": [ 290 , 100 ],
+           "text": "Inhalants"
+        },
+          {
+            "name": "dropShadow",
+            "type": "blocker",
+            "location": [ 223, 153 ],
+            "size": [317, 268],
+            "blockerTint": "0x585858",
+            "blockerAlpha": 1
+          },
+        {
+            "name": "Inhalants",
+            "type": "decoration",
+            "image": "inhalants",
+            "location": [ 220, 150 ],
+            "key": "decorations",
+            "startDelay": 0
+          },
+          {
+           "name": "bullet1",
+           "type": "text",
+           "font": "bullets_25p",
+           "location": [ 135 , 450 ],
+           "wordWrapWidth": 525,
+           "text": "Inhalants are substances that are sniffed to give the user a rush, or a high.",
+           "startDelay": 4000
+        },
+        {
+            "name": "vo",
+            "type": "audio",
+            "audio": [ "PreSld6All" ],
+            "variable": "slideVO"
+          }
+        ],
+        "outcomes": {
+          "vo_finished": {
+           "events": { "slideVO": "played" },
+            "actions": [
+             { "type": "remove-actor", "args": ["forwardButton"] },
+              { "type": "add-actor", "args": [
+                {
+                  "name": "nextHighlight",
+                  "type": "button",
+                  "image": "nextHighlight",
+                  "animated": false,
+                  "location": [ 720, 530 ],
+                  "variable": "show_next"
+                }
+              ] }
+            ]
+          },
+          "replay_button": {
+            "events": { "replayClick": "*" },
+            "actions": [
+              { "type": "scene", "args": [ "empty_replay_scene" ] },
+              { "type": "scene", "args": [ "slide06" ] }
+            ]
+      },
+       "forward_button": {
+            "events": { "show_next": "*" },
+            "actions": [ { "type": "scene", "args": [ "slide07" ] } ]
+      },
+      "back_button": {
+            "events": { "show_back": "*" },
+            "actions": [ { "type": "scene", "args": [ "slide05" ] } ]
+      }
+}
+},
+"slide07": {
+        "id": "slide07",
+        "background": "background_cs",
+        "title": "Slide 7",
+        "description": "Slide 7",
+         "actors": [
+         {
+                  "name": "intro_heading",
+                  "type": "text",
+                  "font": "standard",
+                  "location": [ 30, 25 ],
+                  "text": "Pressure"
+        },
+         {
+            "name": "forwardButton",
+            "type": "button",
+            "image": "next",
+            "location": [ 720, 530 ],
+            "variable": "show_next"
+          },
+          {
+            "name": "replay",
+            "type": "button",
+            "image": "replay",
+            "location": [ 660, 530 ],
+            "variable": "replayClick"
+          },
+          {
+            "name": "back",
+            "type": "button",
+            "image": "back",
+            "location": [ 600, 532 ],
+            "variable": "show_back"
+          },
+       {
+           "name": "bullet_heading",
+           "type": "text",
+           "font": "bullet_heading_30p",
+           "location": [ 150 , 125 ],
+           "wordWrapWidth": 725,
+           "text": "Short-term effects of inhalants"
+        },
+        {
+           "name": "bullet1",
+           "type": "text",
+           "font": "bullets_30p",
+           "location": [ 185 , 170 ],
+           "bullet":  true,
+           "text": "Nausea",
+           "startDelay": 3500,
+           "wordWrapWidth": 250
+        },
+        {
+           "name": "bullet2",
+           "type": "text",
+           "font": "bullets_30p",
+           "location": [ 185 , 210 ],
+           "bullet":  true,
+           "text": "Sleepiness",
+           "startDelay": 4500
+        },
+        {
+           "name": "bullet2a",
+           "type": "text",
+           "font": "bullets_30p",
+           "location": [ 185 , 250 ],
+           "bullet":  true,
+           "text": "Loss of coordination",
+           "startDelay": 5500
+        },
+        {
+           "name": "bullet2b",
+           "type": "text",
+           "font": "bullets_30p",
+           "location": [ 185 , 290 ],
+           "bullet":  true,
+           "text": "Slurred speech",
+           "startDelay": 7000
+        },
+         {
+           "name": "bullet2c",
+           "type": "text",
+           "font": "bullets_30p",
+           "location": [ 185 , 330 ],
+           "bullet":  true,
+           "text": "Dizziness",
+           "startDelay": 8000
+        },
+        {
+           "name": "bullet3",
+           "type": "text",
+           "font": "bullets_30p",
+           "location": [ 185 , 370 ],
+           "bullet":  true,
+           "text": "Light-headedness",
+           "startDelay": 10500
+        },
+         {
+           "name": "bullet3a",
+           "type": "text",
+           "font": "bullets_30p",
+           "location": [ 185 , 410 ],
+           "bullet":  true,
+           "text": "Hallucinations",
+           "startDelay": 11500
+        },
+        {
+           "name": "bullet3b",
+           "type": "text",
+           "font": "bullets_30p",
+           "location": [ 185 , 450 ],
+           "bullet":  true,
+           "text": "Delusions",
+           "startDelay": 12500
+        },
+        {
+            "name": "vo",
+            "type": "audio",
+            "audio": [ "PreSld7" ],
+            "variable": "slideVO"
+          }
+         ],
+        "outcomes": {
+          "vo_finished": {
+            "events": { "slideVO": "played" },
+            "actions": [
+             { "type": "remove-actor", "args": ["forwardButton"] },
+              { "type": "add-actor", "args": [
+                {
+                  "name": "nextHighlight",
+                  "type": "button",
+                  "image": "nextHighlight",
+                  "animated": false,
+                  "location": [ 720, 530 ],
+                  "variable": "show_next"
+                }
+              ] }
+            ]
+          },
+          "replay_button": {
+            "events": { "replayClick": "*" },
+            "actions": [
+              { "type": "scene", "args": [ "empty_replay_scene" ] },
+              { "type": "scene", "args": [ "slide07" ] }
+            ]
+      },
+       "forward_button": {
+            "events": { "show_next": "*" },
+            "actions": [ { "type": "scene", "args": [ "slide08" ] } ]
+      },
+      "back_button": {
+            "events": { "show_back": "*" },
+            "actions": [ { "type": "scene", "args": [ "slide06" ] } ]
+      }
+}
+},
+"slide08": {
+        "id": "slide08",
+        "background": "background_cs",
+        "title": "Slide 8",
+        "description": "Slide 8",
+         "actors": [
+         {
+                  "name": "intro_heading",
+                  "type": "text",
+                  "font": "standard",
+                  "location": [ 30, 25 ],
+                  "text": "Pressure"
+        },
+         {
+            "name": "forwardButton",
+            "type": "button",
+            "image": "next",
+            "location": [ 720, 530 ],
+            "variable": "show_next"
+          },
+          {
+            "name": "replay",
+            "type": "button",
+            "image": "replay",
+            "location": [ 660, 530 ],
+            "variable": "replayClick"
+          },
+          {
+            "name": "back",
+            "type": "button",
+            "image": "back",
+            "location": [ 600, 532 ],
+            "variable": "show_back"
+          },
+          
+         {
+           "name": "bullet_heading",
+           "type": "text",
+           "font": "bullet_heading_30p",
+           "location": [ 150 , 125 ],
+           "wordWrapWidth": 725,
+           "text": "Long-term effects of inhalants"
+        },
+        {
+           "name": "bullet1",
+           "type": "text",
+           "font": "bullets_30p",
+           "location": [ 185 , 170 ],
+           "bullet":  true,
+           "text": "Headaches",
+           "startDelay": 3500,
+           "wordWrapWidth": 250
+        },
+        {
+           "name": "bullet2",
+           "type": "text",
+           "font": "bullets_30p",
+           "location": [ 185 , 210 ],
+           "bullet":  true,
+           "text": "Nosebleeds",
+           "startDelay": 4500
+        },
+        {
+           "name": "bullet2a",
+           "type": "text",
+           "font": "bullets_30p",
+           "location": [ 185 , 250 ],
+           "bullet":  true,
+           "text": "Depression",
+           "startDelay": 5500
+        },
+        {
+           "name": "bullet2b",
+           "type": "text",
+           "font": "bullets_30p",
+           "location": [ 185 , 290 ],
+           "bullet":  true,
+           "text": "Loss of sense of smell or hearing",
+           "startDelay": 6500
+        },
+         {
+           "name": "bullet2c",
+           "type": "text",
+           "font": "bullets_30p",
+           "location": [ 185 , 330 ],
+           "bullet":  true,
+           "text": "Liver and kidney damage",
+           "startDelay": 9000
+        },
+        {
+           "name": "bullet3",
+           "type": "text",
+           "font": "bullets_30p",
+           "location": [ 185 , 370 ],
+           "bullet":  true,
+           "text": "Brain damage",
+           "startDelay": 11000
+        },
+        {
+            "name": "vo",
+            "type": "audio",
+            "audio": [ "PreSld8" ],
+            "variable": "slideVO"
+          }
+         ],
+        "outcomes": {
+          "vo_finished": {
+            "events": { "slideVO": "played" },
+            "actions": [
+             { "type": "remove-actor", "args": ["forwardButton"] },
+              { "type": "add-actor", "args": [
+                {
+                  "name": "nextHighlight",
+                  "type": "button",
+                  "image": "nextHighlight",
+                  "animated": false,
+                  "location": [ 720, 530 ],
+                  "variable": "show_next"
+                }
+              ] }
+            ]
+          },
+          "replay_button": {
+            "events": { "replayClick": "*" },
+            "actions": [
+              { "type": "scene", "args": [ "empty_replay_scene" ] },
+              { "type": "scene", "args": [ "slide08" ] }
+            ]
+      },
+       "forward_button": {
+            "events": { "show_next": "*" },
+            "actions": [ { "type": "scene", "args": [ "slide09" ] } ]
+      },
+      "back_button": {
+            "events": { "show_back": "*" },
+            "actions": [ { "type": "scene", "args": [ "slide07" ] } ]
+      }
+}
+},
+"slide09": {
+        "id": "slide09",
+        "background": "background_cs",
+        "title": "Slide 9",
+        "description": "Slide 9",
+        "actors": [
+         {
+                  "name": "intro_heading",
+                  "type": "text",
+                  "font": "standard",
+                  "location": [ 30, 25 ],
+                  "text": "Pressure"
+        },
+         {
+            "name": "forwardButton",
+            "type": "button",
+            "image": "next",
+            "location": [ 720, 530 ],
+            "variable": "show_next"
+          },
+          {
+            "name": "replay",
+            "type": "button",
+            "image": "replay",
+            "location": [ 660, 530 ],
+            "variable": "replayClick"
+          },
+          {
+            "name": "back",
+            "type": "button",
+            "image": "back",
+            "location": [ 600, 532 ],
+            "variable": "show_back"
+          },
+          {
+           "name": "bullet_heading",
+           "type": "text",
+           "font": "bullet_heading",
+           "location": [ 50 , 125 ],
+           "wordWrapWidth": 700,
+           "text": "Sudden Sniffing Death Syndrome"
+        },
+          {
+            "name": "dropShadow",
+            "type": "blocker",
+            "location": [ 203, 203 ],
+            "size": [380, 303],
+            "blockerTint": "0x585858",
+            "blockerAlpha": 1
+          },
+        {
+            "name": "ssds",
+            "type": "decoration",
+            "image": "ssds",
+            "location": [ 200, 200 ],
+            "key": "decorations",
+            "startDelay": 0
+          },
+          {
+            "name": "vo",
+            "type": "audio",
+            "audio": [ "PreSld9" ],
+            "variable": "slideVO"
+          }
+        ],
+        "outcomes": {
+          "vo_finished": {
+            "events": { "slideVO": "played" },
+            "actions": [
+            { "type": "remove-actor", "args": ["forwardButton"] },
+              { "type": "add-actor", "args": [
+                {
+                  "name": "nextHighlight",
+                  "type": "button",
+                  "image": "nextHighlight",
+                  "animated": false,
+                  "location": [ 720, 530 ],
+                  "variable": "show_next"
+                }
+              ] }
+              
+            ]
+          },
+          "replay_button": {
+            "events": { "replayClick": "*" },
+            "actions": [
+              { "type": "scene", "args": [ "empty_replay_scene" ] },
+              { "type": "scene", "args": [ "slide09" ] }
+            ]
+      },
+      "forward_button": {
+            "events": { "show_next": "*" },
+            "actions": [ { "type": "scene", "args": [ "slide10" ] } ]
+      },
+      "back_button": {
+            "events": { "show_back": "*" },
+            "actions": [ { "type": "scene", "args": [ "slide08" ] } ]
+      }
+}
+},
+"slide10": {
+        "id": "slide10",
+        "background": "background_cs",
+        "title": "Slide 10",
+        "description": "Slide 10",
+        "actors": [
+         {
+                  "name": "intro_heading",
+                  "type": "text",
+                  "font": "standard",
+                  "location": [ 30, 25 ],
+                  "text": "Pressure"
+        },
+         {
+          "name": "next_disabled",
+          "type":"decoration",
+          "image": "next_disabled",
+          "location": [ 720, 530 ],
+          "key": "decorations"
+        },
+          {
+            "name": "replay",
+            "type": "button",
+            "image": "replay",
+            "location": [ 660, 530 ],
+            "variable": "replayClick"
+          },
+          {
+            "name": "back",
+            "type": "button",
+            "image": "back",
+            "location": [ 600, 532 ],
+            "variable": "show_back"
+          },
+          {
+            "name": "dropShadow",
+            "type": "blocker",
+            "location": [ 73, 138 ],
+            "size": [640, 360],
+            "blockerTint": "0x585858",
+            "blockerAlpha": 1
+          },
+          {
+            "name": "video_rt_end",
+            "type": "wistia",
+            "location": [ 70, 135 ],
+            "hideCloseButton": true,
+            "size": [ 640, 360 ],
+            "video": "7t287ph7bs",
+            "blockerAlpha" : 0.0,
+            "blockInput": false,
+            "variable": "video_end"
+          }
+        ],
+        "actions": [
+          { "type": "choice", "args": [ "objective_complete", 1] },
+          { "type": "choice", "args": [ "save", 0 ] }
+        ],
+        "outcomes": {
+          "video_end_finished": {
+            "events": { "video_end": "finished" },
+            "actions": [
+            ]
+          },
+          "replay_button": {
+            "events": { "replayClick": "*" },
+            "actions": [
+              { "type": "scene", "args": [ "empty_replay_scene" ] },
+              { "type": "scene", "args": [ "slide10" ] }
+            ]
+      },
+      "back_button": {
+            "events": { "show_back": "*" },
+            "actions": [ { "type": "scene", "args": [ "slide09" ] } ]
+      }
+}
+},
+"empty_replay_scene": {
+        "id": "empty_replay_scene",
+        "description": "since a scene change request to the current scene is ignored, first change to this empty scene"
+      }
+
+
+}
+}
+}
+

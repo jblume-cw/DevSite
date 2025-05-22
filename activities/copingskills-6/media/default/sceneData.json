@@ -1,0 +1,1468 @@
+{
+  "play": {
+    "start_skip": "slide01",
+    "start": "slide01",
+    "showPlayThrough": false,
+    "scenes": {
+      "slide01": {
+        "id": "slide01",
+        "background": "background_cs",
+        "title": "Slide 1",
+        "description": "Slide 1",
+        "actors": [
+         {
+                  "name": "intro_heading",
+                  "type": "text",
+                  "font": "standard",
+                  "location": [ 30, 25 ],
+                  "text": "Coping Skills"
+        },
+         {
+            "name": "forwardButton",
+            "type": "button",
+            "image": "next",
+            "location": [ 720, 530 ],
+            "variable": "show_next"
+          },
+          {
+            "name": "replay",
+            "type": "button",
+            "image": "replay",
+            "location": [ 660, 530 ],
+            "variable": "replayClick"
+          },
+          {
+            "name": "backDisabled",
+            "type": "decoration",
+            "image": "backDisabled",
+            "location": [ 600, 532 ],
+            "key": "decorations"
+          },
+          {
+            "name": "dropShadow",
+            "type": "blocker",
+            "location": [ 73, 138 ],
+            "size": [640, 360],
+            "blockerTint": "0x585858",
+            "blockerAlpha": 1
+          },
+            {
+            "name": "video_rt_intro",
+            "type": "wistia",
+            "location": [ 70, 135 ],
+            "hideCloseButton": true,
+            "size": [ 640, 360 ],
+            "video": "rstggcvwfp",
+            "blockerAlpha" : 0.0,
+            "blockInput": false,
+            "variable": "video_intro"
+          }
+        ],
+        "outcomes": {
+          "video_intro_finished": {
+            "events": { "video_intro": "finished" },
+            "actions": [
+              { "type": "remove-actor", "args": ["forwardButton"] },
+              { "type": "add-actor", "args": [
+                {
+                  "name": "nextHighlight",
+                  "type": "button",
+                  "image": "nextHighlight",
+                  "animated": false,
+                  "location": [ 720, 530 ],
+                  "variable": "show_next"
+                }
+              ] }
+            ]
+          },
+          "replay_button": {
+            "events": { "replayClick": "*" },
+            "actions": [
+              { "type": "scene", "args": [ "empty_replay_scene" ] },
+              { "type": "scene", "args": [ "slide01" ] }
+            ]
+          },
+          "forward_button": {
+            "events": { "show_next": "*" },
+            "actions": [ { "type": "scene", "args": [ "slide02" ] } ]
+      }
+      }
+      }, 
+      "slide02": {
+        "id": "slide02",
+        "background": "background_cs",
+        "title": "Slide 2",
+        "description": "Slide 2",
+        "actors": [
+         {
+                  "name": "intro_heading",
+                  "type": "text",
+                  "font": "standard",
+                  "location": [ 30, 25 ],
+                  "text": "Coping Skills"
+        },
+         {
+            "name": "forwardButton",
+            "type": "button",
+            "image": "next",
+            "location": [ 720, 530 ],
+            "variable": "show_next"
+          },
+          {
+            "name": "replay",
+            "type": "button",
+            "image": "replay",
+            "location": [ 660, 530 ],
+            "variable": "replayClick"
+          },
+          {
+            "name": "back",
+            "type": "button",
+            "image": "back",
+            "location": [ 600, 532 ],
+            "variable": "show_back"
+          },
+          
+          {
+           "name": "bullet_heading",
+           "type": "text",
+           "font": "bullet_heading_30p",
+           "location": [ 60 , 125 ],
+           "text": "Stress:"
+        },
+        {
+           "name": "bullet",
+           "type": "text",
+           "font": "bullets_30p",
+           "location": [ 170 , 125 ],
+           "text": "an anxious, nervous or worried feeling"
+        },
+        {
+           "name": "bullet1",
+           "type": "text",
+           "font": "bullets_25p",
+           "location": [ 70 , 165 ],
+           "bullet":  true,
+           "text": "Some stress can be good.",
+           "startDelay": 12000
+        },
+        {
+           "name": "bullet1",
+           "type": "text",
+           "font": "bullets_25p",
+           "location": [ 465 , 165 ],
+           "bullet":  true,
+           "text": "Too much stress isn't good for anyone.",
+           "startDelay": 19000,
+           "wordWrapWidth": 250
+        },
+        {
+           "name": "bullet_heading_1",
+           "type": "text",
+           "font": "bullet_heading_30p",
+           "location": [ 60 , 215 ],
+           "text": "Causes of stress:",
+           "startDelay": 29000
+        },
+        {
+           "name": "bullet2",
+           "type": "text",
+           "font": "bullets_25p",
+           "location": [ 70 , 265 ],
+           "bullet":  true,
+           "text": "Being bullied",
+           "startDelay": 34000
+        },
+        {
+           "name": "bullet2a",
+           "type": "text",
+           "font": "bullets_25p",
+           "location": [ 70 , 325 ],
+           "bullet":  true,
+           "text": "Relationship drama",
+           "startDelay": 35000
+        },
+        {
+           "name": "bullet2b",
+           "type": "text",
+           "font": "bullets_25p",
+           "location": [ 70 , 385 ],
+           "bullet":  true,
+           "text": "Family conflicts",
+           "startDelay": 36000
+        },
+         {
+           "name": "bullet2c",
+           "type": "text",
+           "font": "bullets_25p",
+           "location": [ 70 , 445 ],
+           "bullet":  true,
+           "text": "Being exposed to violence",
+           "startDelay": 37500
+        },
+        {
+           "name": "bullet3",
+           "type": "text",
+           "font": "bullets_25p",
+           "location": [ 440 , 265 ],
+           "bullet":  true,
+           "text": "Problems with schoolwork",
+           "startDelay": 38500
+        },
+         {
+           "name": "bullet3a",
+           "type": "text",
+           "font": "bullets_25p",
+           "location": [ 440 , 325 ],
+           "bullet":  true,
+           "text": "Health issues",
+           "startDelay": 40500
+        },
+         {
+           "name": "bullet3b",
+           "type": "text",
+           "font": "bullets_25p",
+           "location": [ 440 , 385 ],
+           "bullet":  true,
+           "text": "Crammed schedules",
+           "startDelay": 41500
+        },
+        {
+            "name": "vo",
+            "type": "audio",
+            "audio": [ "Slide2" ],
+            "variable": "slideVO"
+          }
+
+        ],
+        "outcomes": {
+          "vo_finished": {
+            "events": { "slideVO": "played" },
+            "actions": [
+              { "type": "remove-actor", "args": ["forwardButton"] },
+              { "type": "add-actor", "args": [
+                {
+                  "name": "nextHighlight",
+                  "type": "button",
+                  "image": "nextHighlight",
+                  "animated": false,
+                  "location": [ 720, 530 ],
+                  "variable": "show_next"
+                }
+              ] }
+            ]
+          },
+          "replay_button": {
+            "events": { "replayClick": "*" },
+            "actions": [
+              { "type": "scene", "args": [ "empty_replay_scene" ] },
+              { "type": "scene", "args": [ "slide02" ] }
+            ]
+      },
+      "forward_button": {
+            "events": { "show_next": "*" },
+            "actions": [ { "type": "scene", "args": [ "slide03" ] } ]
+      },
+      "back_button": {
+            "events": { "show_back": "*" },
+            "actions": [ { "type": "scene", "args": [ "slide01" ] } ]
+      }
+}
+},
+"slide03": {
+        "id": "slide03",
+        "background": "background_cs",
+        "title": "Slide 3",
+        "description": "Slide 3",
+        "actors": [
+         {
+                  "name": "intro_heading",
+                  "type": "text",
+                  "font": "standard",
+                  "location": [ 30, 25 ],
+                  "text": "Coping Skills"
+        },
+         {
+            "name": "forwardButton",
+            "type": "button",
+            "image": "next",
+            "location": [ 720, 530 ],
+            "variable": "show_next"
+          },
+          {
+            "name": "replay",
+            "type": "button",
+            "image": "replay",
+            "location": [ 660, 530 ],
+            "variable": "replayClick"
+          },
+          {
+            "name": "back",
+            "type": "button",
+            "image": "back",
+            "location": [ 600, 532 ],
+            "variable": "show_back"
+          },
+          {
+            "name": "dropShadow",
+            "type": "blocker",
+            "location": [ 588, 188 ],
+            "size": [161, 243],
+            "blockerTint": "0x585858",
+            "blockerAlpha": 1
+          },
+            {
+            "name": "stress_pic",
+            "type": "decoration",
+            "image": "stress",
+            "location": [ 585, 185 ],
+            "key": "decorations"
+          },
+          {
+                  "name": "heading",
+                  "type": "text",
+                  "font": "bullet_heading",
+                  "location": [ 25, 115 ],
+                  "text": "Signs of stress overload:",
+                  "startDelay": 0
+          },
+          {
+                  "name": "bullet1",
+                  "type": "text",
+                  "font": "bullets_27p",
+                  "location": [ 40, 175 ],
+                  "bullet": true,
+                  "text": "Anxiety, or panic attacks",
+                  "startDelay": 4000
+          },
+          {
+                  "name": "bullet2",
+                  "type": "text",
+                  "font": "bullets_27p",
+                  "location": [ 40, 215 ],
+                  "bullet": true,
+                  "text": "A feeling of being constantly pressured, hassled, or hurried",
+                  "wordWrapWidth": 500,
+                  "startDelay": 6000
+          },
+          {
+                  "name": "bullet3",
+                  "type": "text",
+                  "font": "bullets_27p",
+                  "location": [ 40, 285 ],
+                  "bullet": true,
+                  "text": "Irritability and moodiness",
+                  "startDelay": 9000
+          },
+          {
+                  "name": "bullet4",
+                  "type": "text",
+                  "font": "bullets_27p",
+                  "location": [ 40, 325 ],
+                  "bullet": true,
+                  "text": "Physical symptoms such as stomach problems or headaches",
+                  "wordWrapWidth": 500,
+                  "startDelay": 12000
+          },
+          {
+                  "name": "bullet5",
+                  "type": "text",
+                  "font": "bullets_27p",
+                  "location": [ 40, 395 ],
+                  "bullet": true,
+                  "text": "Sadness or depression",
+                  "startDelay": 14000
+          },
+           {
+                  "name": "bullet6",
+                  "type": "text",
+                  "font": "bullets_27p",
+                  "location": [ 40, 435 ],
+                  "bullet": true,
+                  "text": "Problems sleeping",
+                  "startDelay": 16000
+          },
+          {
+                  "name": "bullet6",
+                  "type": "text",
+                  "font": "bullets_27p",
+                  "location": [ 40, 475 ],
+                  "bullet": true,
+                  "text": "Drinking alcohol, smoking, overeating, or using drugs",
+                  "startDelay": 17000
+          },
+          {
+            "name": "vo",
+            "type": "audio",
+            "audio": [ "Slide3" ],
+            "variable": "slideVO"
+          }
+        ],
+        "outcomes": {
+          "vo_finished": {
+            "events": { "slideVO": "played" },
+            "actions": [
+              { "type": "remove-actor", "args": ["forwardButton"] },
+              { "type": "add-actor", "args": [
+                {
+                  "name": "nextHighlight",
+                  "type": "button",
+                  "image": "nextHighlight",
+                  "animated": false,
+                  "location": [ 720, 530 ],
+                  "variable": "show_next"
+                }
+              ] }
+            ]
+          },           
+          "replay_button": {
+            "events": { "replayClick": "*" },
+            "actions": [
+              { "type": "scene", "args": [ "empty_replay_scene" ] },
+              { "type": "scene", "args": [ "slide03" ] }
+            ]
+      },
+       "forward_button": {
+            "events": { "show_next": "*" },
+            "actions": [ { "type": "scene", "args": [ "slide04" ] } ]
+      },
+      "back_button": {
+            "events": { "show_back": "*" },
+            "actions": [ { "type": "scene", "args": [ "slide02" ] } ]
+      }
+}
+},
+"slide04": {
+        "id": "slide04",
+        "background": "background_cs",
+        "title": "Slide 4",
+        "description": "Slide 4",
+        "actors": [
+         {
+                  "name": "intro_heading",
+                  "type": "text",
+                  "font": "standard",
+                  "location": [ 30, 25 ],
+                  "text": "Coping Skills"
+        },
+         {
+            "name": "forwardButton",
+            "type": "button",
+            "image": "next",
+            "location": [ 720, 530 ],
+            "variable": "show_next"
+          },
+          {
+            "name": "replay",
+            "type": "button",
+            "image": "replay",
+            "location": [ 660, 530 ],
+            "variable": "replayClick"
+          },
+          {
+            "name": "back",
+            "type": "button",
+            "image": "back",
+            "location": [ 600, 532 ],
+            "variable": "show_back"
+          },
+         {
+           "name": "bullet_heading",
+           "type": "text",
+           "font": "bullet_heading",
+           "location": [ 65 , 125 ],
+           "text": "Managing stress",
+           "wordWrapWidth": 600
+        },
+        {
+           "name": "bullet1",
+           "type": "text",
+           "font": "bullets_35p",
+           "location": [ 75 , 215 ],
+           "bullet":  true,
+           "text": "Take a stand against trying to do too much.",
+           "startDelay": 10500
+        },
+        {
+           "name": "bullet2",
+           "type": "text",
+           "font": "bullets_35p",
+           "location": [ 75 , 275 ],
+           "bullet": true,
+           "text": "Learn to relax.",
+           "startDelay": 21500
+
+        },
+        {
+           "name": "bullet3",
+           "type": "text",
+           "font": "bullets_35p",
+           "location": [ 75 , 335 ],
+           "bullet": true,
+           "text": "Treat your body well.",
+           "startDelay": 38000,
+           "wordWrapWidth": 0
+
+        },
+        {
+           "name": "bullet4",
+           "type": "text",
+           "font": "bullets_35p",
+           "location": [ 75 , 395 ],
+           "bullet": true,
+           "text": "Check you attitude.",
+           "startDelay": 52000,
+           "wordWrapWidth": 700
+
+        },
+        {
+           "name": "bullet4",
+           "type": "text",
+           "font": "bullets_35p",
+           "location": [ 75 , 455 ],
+           "bullet": true,
+           "text": "Be realistic.",
+           "startDelay": 72000,
+           "wordWrapWidth": 700
+
+        },
+        {
+            "name": "vo",
+            "type": "audio",
+            "audio": [ "Slide4" ],
+            "variable": "slideVO"
+          }
+        ],
+        "outcomes": {
+          "vo_finished": {
+            "events": { "slideVO": "played" },
+            "actions": [
+              { "type": "remove-actor", "args": ["forwardButton"] },
+              { "type": "add-actor", "args": [
+                {
+                  "name": "nextHighlight",
+                  "type": "button",
+                  "image": "nextHighlight",
+                  "animated": false,
+                  "location": [ 720, 530 ],
+                  "variable": "show_next"
+                }
+              ] }
+            ]
+          },   
+         "replay_button": {
+            "events": { "replayClick": "*" },
+            "actions": [
+              { "type": "scene", "args": [ "empty_replay_scene" ] },
+              { "type": "scene", "args": [ "slide04" ] }
+            ]
+      },
+       "forward_button": {
+            "events": { "show_next": "*" },
+            "actions": [ { "type": "scene", "args": [ "slide05" ] } ]
+      },
+      "back_button": {
+            "events": { "show_back": "*" },
+            "actions": [ { "type": "scene", "args": [ "slide03" ] } ]
+      }
+}
+},
+"slide05": {
+        "id": "slide05",
+        "background": "background_cs",
+        "title": "Slide 5",
+        "description": "Slide 5",
+        "actors": [
+         {
+                  "name": "intro_heading",
+                  "type": "text",
+                  "font": "standard",
+                  "location": [ 30, 25 ],
+                  "text": "Coping Skills"
+        },
+         {
+            "name": "forwardButton",
+            "type": "button",
+            "image": "next",
+            "location": [ 720, 530 ],
+            "variable": "show_next"
+          },
+          {
+            "name": "replay",
+            "type": "button",
+            "image": "replay",
+            "location": [ 660, 530 ],
+            "variable": "replayClick"
+          },
+          {
+            "name": "back",
+            "type": "button",
+            "image": "back",
+            "location": [ 600, 532 ],
+            "variable": "show_back"
+          },
+          {
+           "name": "bullet_heading",
+           "type": "text",
+           "font": "bullet_heading",
+           "location": [ 135 , 125 ],
+           "text": "Anxiety and depression"
+        },
+          {
+            "name": "dropShadow",
+            "type": "blocker",
+            "location": [ 203, 203 ],
+            "size": [357, 268],
+            "blockerTint": "0x585858",
+            "blockerAlpha": 1
+          },
+        {
+            "name": "depression",
+            "type": "decoration",
+            "image": "depression",
+            "location": [ 200, 200 ],
+            "key": "decorations"
+          },
+          {
+            "name": "vo",
+            "type": "audio",
+            "audio": [ "Slide5" ],
+            "variable": "slideVO"
+          }
+        ],
+        "outcomes": {
+          "vo_finished": {
+            "events": { "slideVO": "played" },
+            "actions": [
+             { "type": "remove-actor", "args": ["forwardButton"] },
+              { "type": "add-actor", "args": [
+                {
+                  "name": "nextHighlight",
+                  "type": "button",
+                  "image": "nextHighlight",
+                  "animated": false,
+                  "location": [ 720, 530 ],
+                  "variable": "show_next"
+                }
+              ] }
+            ]
+          },
+           "replay_button": {
+            "events": { "replayClick": "*" },
+            "actions": [
+              { "type": "scene", "args": [ "empty_replay_scene" ] },
+              { "type": "scene", "args": [ "slide05" ] }
+            ]
+      },
+       "forward_button": {
+            "events": { "show_next": "*" },
+            "actions": [ { "type": "scene", "args": [ "slide06" ] } ]
+      },
+      "back_button": {
+            "events": { "show_back": "*" },
+            "actions": [ { "type": "scene", "args": [ "slide04" ] } ]
+      }
+}
+},
+"slide06": {
+        "id": "slide06",
+        "background": "background_cs",
+        "title": "Slide 6",
+        "description": "Slide 6",
+        "actors": [
+         {
+                  "name": "intro_heading",
+                  "type": "text",
+                  "font": "standard",
+                  "location": [ 30, 25 ],
+                  "text": "Coping Skills"
+        },
+         {
+            "name": "forwardButton",
+            "type": "button",
+            "image": "next",
+            "location": [ 720, 530 ],
+            "variable": "show_next"
+          },
+          {
+            "name": "replay",
+            "type": "button",
+            "image": "replay",
+            "location": [ 660, 530 ],
+            "variable": "replayClick"
+          },
+          {
+            "name": "back",
+            "type": "button",
+            "image": "back",
+            "location": [ 600, 532 ],
+            "variable": "show_back"
+          },
+          {
+            "name": "dropShadow",
+            "type": "blocker",
+            "location": [ 73, 138 ],
+            "size": [640, 360],
+            "blockerTint": "0x585858",
+            "blockerAlpha": 1
+          },
+          {
+            "name": "video_rt_mid",
+            "type": "wistia",
+            "location": [ 70, 135 ],
+            "hideCloseButton": true,
+            "size": [ 640, 360 ],
+            "video": "vbxiclszdy",
+            "blockerAlpha" : 0.0,
+            "blockInput": false,
+            "variable": "video_mid"
+          }
+        ],
+        "outcomes": {
+          "video_mid_finished": {
+           "events": { "video_mid": "finished" },
+            "actions": [
+             { "type": "remove-actor", "args": ["forwardButton"] },
+              { "type": "add-actor", "args": [
+                {
+                  "name": "nextHighlight",
+                  "type": "button",
+                  "image": "nextHighlight",
+                  "animated": false,
+                  "location": [ 720, 530 ],
+                  "variable": "show_next"
+                }
+              ] }
+            ]
+          },
+          "replay_button": {
+            "events": { "replayClick": "*" },
+            "actions": [
+              { "type": "scene", "args": [ "empty_replay_scene" ] },
+              { "type": "scene", "args": [ "slide06" ] }
+            ]
+      },
+       "forward_button": {
+            "events": { "show_next": "*" },
+            "actions": [ { "type": "scene", "args": [ "slide07" ] } ]
+      },
+      "back_button": {
+            "events": { "show_back": "*" },
+            "actions": [ { "type": "scene", "args": [ "slide05" ] } ]
+      }
+}
+},
+"slide07": {
+        "id": "slide07",
+        "background": "background_cs",
+        "title": "Slide 7",
+        "description": "Slide 7",
+         "actors": [
+         {
+                  "name": "intro_heading",
+                  "type": "text",
+                  "font": "standard",
+                  "location": [ 30, 25 ],
+                  "text": "Coping Skills"
+        },
+         {
+            "name": "forwardButton",
+            "type": "button",
+            "image": "next",
+            "location": [ 720, 530 ],
+            "variable": "show_next"
+          },
+          {
+            "name": "replay",
+            "type": "button",
+            "image": "replay",
+            "location": [ 660, 530 ],
+            "variable": "replayClick"
+          },
+          {
+            "name": "back",
+            "type": "button",
+            "image": "back",
+            "location": [ 600, 532 ],
+            "variable": "show_back"
+          },
+       {
+           "name": "bullet_heading",
+           "type": "text",
+           "font": "bullet_heading",
+           "location": [ 284 , 110 ],
+           "text": "Marijuana"
+        },
+        {
+            "name": "weed",
+            "type": "decoration",
+            "image": "weed",
+            "location": [ 180, 170 ],
+            "key": "decorations",
+            "startDelay": 5000
+          },
+          {
+            "name": "dropShadow",
+            "type": "blocker",
+            "location": [ 183, 173 ],
+            "size": [420, 279],
+            "blockerTint": "0x585858",
+            "blockerAlpha": 1,
+            "startDelay": 5000
+          },
+          {
+           "name": "bullet1",
+           "type": "text",
+           "font": "bullets_30p",
+           "location": [ 258 , 475 ],
+           "text": "Cannabis sativa plant",
+           "startDelay": 5000
+        },
+        {
+            "name": "vo",
+            "type": "audio",
+            "audio": [ "Slide7" ],
+            "variable": "slideVO"
+          }   
+         ],
+        "outcomes": {
+          "vo_finished": {
+            "events": { "slideVO": "played" },
+            "actions": [
+             { "type": "remove-actor", "args": ["forwardButton"] },
+              { "type": "add-actor", "args": [
+                {
+                  "name": "nextHighlight",
+                  "type": "button",
+                  "image": "nextHighlight",
+                  "animated": false,
+                  "location": [ 720, 530 ],
+                  "variable": "show_next"
+                }
+              ] }
+            ]
+          },
+          "replay_button": {
+            "events": { "replayClick": "*" },
+            "actions": [
+              { "type": "scene", "args": [ "empty_replay_scene" ] },
+              { "type": "scene", "args": [ "slide07" ] }
+            ]
+      },
+       "forward_button": {
+            "events": { "show_next": "*" },
+            "actions": [ { "type": "scene", "args": [ "slide08" ] } ]
+      },
+      "back_button": {
+            "events": { "show_back": "*" },
+            "actions": [ { "type": "scene", "args": [ "slide06" ] } ]
+      }
+}
+},
+"slide08": {
+        "id": "slide08",
+        "background": "background_cs",
+        "title": "Slide 8",
+        "description": "Slide 8",
+         "actors": [
+         {
+                  "name": "intro_heading",
+                  "type": "text",
+                  "font": "standard",
+                  "location": [ 30, 25 ],
+                  "text": "Coping Skills"
+        },
+         {
+            "name": "forwardButton",
+            "type": "button",
+            "image": "next",
+            "location": [ 720, 530 ],
+            "variable": "show_next"
+          },
+          {
+            "name": "replay",
+            "type": "button",
+            "image": "replay",
+            "location": [ 660, 530 ],
+            "variable": "replayClick"
+          },
+          {
+            "name": "back",
+            "type": "button",
+            "image": "back",
+            "location": [ 600, 532 ],
+            "variable": "show_back"
+          },
+          
+        {
+           "name": "bullet_heading",
+           "type": "text",
+           "font": "bullet_heading",
+           "location": [ 250 , 125 ],
+           "text": "THC"
+        },
+        {
+           "name": "bullet_heading",
+           "type": "text",
+           "font": "bullet_heading",
+           "location": [ 460 , 125 ],
+           "text": "High",
+           "startDelay": 18000
+        },
+        {
+            "name": "THC",
+            "type": "decoration",
+            "image": "thc",
+            "location": [ 170, 180 ],
+            "key": "decorations"
+          },
+          {
+            "name": "arrow",
+            "type": "decoration",
+            "image": "arrow",
+            "location": [ 340, 100 ],
+            "key": "decorations",
+            "startDelay": 18000
+
+          },
+          {
+            "name": "vo",
+            "type": "audio",
+            "audio": [ "Slide8" ],
+            "variable": "slideVO"
+          }                
+         ],
+        "outcomes": {
+          "vo_finished": {
+            "events": { "slideVO": "played" },
+            "actions": [
+             { "type": "remove-actor", "args": ["forwardButton"] },
+              { "type": "add-actor", "args": [
+                {
+                  "name": "nextHighlight",
+                  "type": "button",
+                  "image": "nextHighlight",
+                  "animated": false,
+                  "location": [ 720, 530 ],
+                  "variable": "show_next"
+                }
+              ] }
+            ]
+          },
+          "replay_button": {
+            "events": { "replayClick": "*" },
+            "actions": [
+              { "type": "scene", "args": [ "empty_replay_scene" ] },
+              { "type": "scene", "args": [ "slide08" ] }
+            ]
+      },
+       "forward_button": {
+            "events": { "show_next": "*" },
+            "actions": [ { "type": "scene", "args": [ "slide09" ] } ]
+      },
+      "back_button": {
+            "events": { "show_back": "*" },
+            "actions": [ { "type": "scene", "args": [ "slide07" ] } ]
+      }
+}
+},
+"slide09": {
+        "id": "slide09",
+        "background": "background_cs",
+        "title": "Slide 9",
+        "description": "Slide 9",
+        "actors": [
+         {
+                  "name": "intro_heading",
+                  "type": "text",
+                  "font": "standard",
+                  "location": [ 30, 25 ],
+                  "text": "Coping Skills"
+        },
+         {
+            "name": "forwardButton",
+            "type": "button",
+            "image": "next",
+            "location": [ 720, 530 ],
+            "variable": "show_next"
+          },
+          {
+            "name": "replay",
+            "type": "button",
+            "image": "replay",
+            "location": [ 660, 530 ],
+            "variable": "replayClick"
+          },
+          {
+            "name": "back",
+            "type": "button",
+            "image": "back",
+            "location": [ 600, 532 ],
+            "variable": "show_back"
+          },
+          {
+                  "name": "heading",
+                  "type": "text",
+                  "font": "bullet_heading",
+                  "location": [ 25, 115 ],
+                  "text": "Short-term effects",
+                  "startDelay": 0
+          },
+          {
+                  "name": "bullet1",
+                  "type": "text",
+                  "font": "bullets_27p",
+                  "location": [ 40, 175 ],
+                  "bullet": true,
+                  "text": "Increased heart rate",
+                  "startDelay": 4000
+          },
+          {
+                  "name": "bullet1a",
+                  "type": "text",
+                  "font": "bullets_27p",
+                  "location": [ 40, 215 ],
+                  "bullet": true,
+                  "text": "Bloodshot eyes",
+                  "wordWrapWidth": 500,
+                  "startDelay": 5000
+          },
+          {
+                  "name": "bullet1b",
+                  "type": "text",
+                  "font": "bullets_27p",
+                  "location": [ 40, 255 ],
+                  "bullet": true,
+                  "text": "Difficulty thinking and solving problems",
+                  "startDelay": 6000
+          },
+          {
+                  "name": "bullet1c",
+                  "type": "text",
+                  "font": "bullets_27p",
+                  "location": [ 40, 295 ],
+                  "bullet": true,
+                  "text": "Loss of coordination",
+                  "wordWrapWidth": 500,
+                  "startDelay": 9000
+          },
+          {
+                  "name": "bullet1d",
+                  "type": "text",
+                  "font": "bullets_27p",
+                  "location": [ 40, 335 ],
+                  "bullet": true,
+                  "text": "Memory and learning problems",
+                  "startDelay": 10000
+          },
+           {
+                  "name": "bullet1e",
+                  "type": "text",
+                  "font": "bullets_27p",
+                  "location": [ 40, 375 ],
+                  "bullet": true,
+                  "text": "Increased appetite",
+                  "startDelay": 12000
+          },
+          {
+                  "name": "bullet1f",
+                  "type": "text",
+                  "font": "bullets_27p",
+                  "location": [ 40, 415 ],
+                  "bullet": true,
+                  "text": "Feeling lightheaded or sleepy",
+                  "startDelay": 13000
+          },
+          {
+                  "name": "bullet2",
+                  "type": "text",
+                  "font": "bullets_27p",
+                  "location": [ 580, 175 ],
+                  "bullet": true,
+                  "text": "Anxiety",
+                  "startDelay": 18500
+          },
+          {
+                  "name": "bullet2a",
+                  "type": "text",
+                  "font": "bullets_27p",
+                  "location": [ 580, 215 ],
+                  "bullet": true,
+                  "text": "Fear",
+                  "startDelay": 19500
+          },
+          {
+                  "name": "bullet2b",
+                  "type": "text",
+                  "font": "bullets_27p",
+                  "location": [ 580, 255 ],
+                  "bullet": true,
+                  "text": "Distrust",
+                  "startDelay": 20500
+          },
+          {
+                  "name": "bullet2c",
+                  "type": "text",
+                  "font": "bullets_27p",
+                  "location": [ 580, 295 ],
+                  "bullet": true,
+                  "text": "Panic",
+                  "startDelay": 21500
+          },
+          {
+                  "name": "bullet2d",
+                  "type": "text",
+                  "font": "bullets_27p",
+                  "location": [ 580, 335 ],
+                  "bullet": true,
+                  "text": "Paranoia",
+                  "startDelay": 22500
+          },
+          {
+                  "name": "bullet2e",
+                  "type": "text",
+                  "font": "bullets_27p",
+                  "location": [ 580, 375 ],
+                  "bullet": true,
+                  "text": "Hallucinations",
+                  "startDelay": 23500
+          },
+          {
+            "name": "vo",
+            "type": "audio",
+            "audio": [ "Slide9" ],
+            "variable": "slideVO"
+          }      
+        ],
+        "outcomes": {
+          "vo_finished": {
+            "events": { "slideVO": "played" },
+            "actions": [
+            { "type": "remove-actor", "args": ["forwardButton"] },
+              { "type": "add-actor", "args": [
+                {
+                  "name": "nextHighlight",
+                  "type": "button",
+                  "image": "nextHighlight",
+                  "animated": false,
+                  "location": [ 720, 530 ],
+                  "variable": "show_next"
+                }
+              ] }
+              
+            ]
+          },
+          "replay_button": {
+            "events": { "replayClick": "*" },
+            "actions": [
+              { "type": "scene", "args": [ "empty_replay_scene" ] },
+              { "type": "scene", "args": [ "slide09" ] }
+            ]
+      },
+      "forward_button": {
+            "events": { "show_next": "*" },
+            "actions": [ { "type": "scene", "args": [ "slide10" ] } ]
+      },
+      "back_button": {
+            "events": { "show_back": "*" },
+            "actions": [ { "type": "scene", "args": [ "slide08" ] } ]
+      }
+}
+},
+"slide10": {
+        "id": "slide10",
+        "background": "background_cs",
+        "title": "Slide 10",
+        "description": "Slide 10",
+        "actors": [
+         {
+                  "name": "intro_heading",
+                  "type": "text",
+                  "font": "standard",
+                  "location": [ 30, 25 ],
+                  "text": "Coping Skills"
+        },
+         {
+            "name": "forwardButton",
+            "type": "button",
+            "image": "next",
+            "location": [ 720, 530 ],
+            "variable": "show_next"
+          },
+          {
+            "name": "replay",
+            "type": "button",
+            "image": "replay",
+            "location": [ 660, 530 ],
+            "variable": "replayClick"
+          },
+          {
+            "name": "back",
+            "type": "button",
+            "image": "back",
+            "location": [ 600, 532 ],
+            "variable": "show_back"
+          },
+          {
+           "name": "bullet_heading",
+           "type": "text",
+           "font": "bullet_heading_45p",
+           "location": [ 175 , 125 ],
+           "text": "Long-term effects"
+        },
+        {
+           "name": "bullet1",
+           "type": "text",
+           "font": "bullets_35p",
+           "location": [ 215 , 200 ],
+           "bullet": true,
+           "text": "Actual changes in the brain",
+           "startDelay": 5500
+        },
+        {
+           "name": "bullet2",
+           "type": "text",
+           "font": "bullets_35p",
+           "location": [ 215 , 275 ],
+           "bullet": true,
+           "text": "Respiratory problems",
+           "startDelay": 10500
+
+        },
+        {
+           "name": "bullet3",
+           "type": "text",
+           "font": "bullets_35p",
+           "location": [ 215 , 350 ],
+           "bullet": true,
+           "text": "Immune system problems",
+           "startDelay": 15500
+        },
+        {
+           "name": "bullet4",
+           "type": "text",
+           "font": "bullets_35p",
+           "location": [ 215 , 425 ],
+           "bullet": true,
+           "text": "Emotional problems",
+           "startDelay": 19600
+        },
+        {
+            "name": "vo",
+            "type": "audio",
+            "audio": [ "Slide10" ],
+            "variable": "slideVO"
+          }   
+        ],
+        "outcomes": {
+          "vo_finished": {
+            "events": { "slideVO": "played" },
+            "actions": [
+              { "type": "remove-actor", "args": ["forwardButton"] },
+              { "type": "add-actor", "args": [
+                {
+                  "name": "nextHighlight",
+                  "type": "button",
+                  "image": "nextHighlight",
+                  "animated": false,
+                  "location": [ 720, 530 ],
+                  "variable": "show_next"
+                }
+              ] }
+            ]
+          },
+         "replay_button": {
+            "events": { "replayClick": "*" },
+            "actions": [
+              { "type": "scene", "args": [ "empty_replay_scene" ] },
+              { "type": "scene", "args": [ "slide10" ] }
+            ]
+      },
+       "forward_button": {
+            "events": { "show_next": "*" },
+            "actions": [ { "type": "scene", "args": [ "slide11" ] } ]
+      },
+      "back_button": {
+            "events": { "show_back": "*" },
+            "actions": [ { "type": "scene", "args": [ "slide09" ] } ]
+      }
+}
+},
+"slide11": {
+        "id": "slide11",
+        "background": "background_cs",
+        "title": "Slide 10",
+        "description": "Slide 11",
+        "actors": [
+         {
+                  "name": "intro_heading",
+                  "type": "text",
+                  "font": "standard",
+                  "location": [ 30, 25 ],
+                  "text": "Coping Skills"
+        },
+         {
+            "name": "forwardButton",
+            "type": "button",
+            "image": "next",
+            "location": [ 720, 530 ],
+            "variable": "show_next"
+          },
+          {
+            "name": "replay",
+            "type": "button",
+            "image": "replay",
+            "location": [ 660, 530 ],
+            "variable": "replayClick"
+          },
+          {
+            "name": "back",
+            "type": "button",
+            "image": "back",
+            "location": [ 600, 532 ],
+            "variable": "show_back"
+          },
+          {
+            "name": "dropShadow",
+            "type": "blocker",
+            "location": [ 163, 158 ],
+            "size": [464, 311],
+            "blockerTint": "0x585858",
+            "blockerAlpha": 1
+          },
+          {
+            "name": "drinking",
+            "type": "decoration",
+            "image": "police",
+            "location": [ 160, 155 ],
+            "key": "decorations"
+          },
+          {
+            "name": "vo",
+            "type": "audio",
+            "audio": [ "Slide11" ],
+            "variable": "slideVO"
+          } 
+        ],
+        "outcomes": {
+          "vo_finished": {
+            "events": { "slideVO": "played" },
+            "actions": [
+            { "type": "remove-actor", "args": ["forwardButton"] },
+              { "type": "add-actor", "args": [
+                {
+                  "name": "nextHighlight",
+                  "type": "button",
+                  "image": "nextHighlight",
+                  "animated": false,
+                  "location": [ 720, 530 ],
+                  "variable": "show_next"
+                }
+              ] }
+              
+            ]
+          },
+          "replay_button": {
+            "events": { "replayClick": "*" },
+            "actions": [
+              { "type": "scene", "args": [ "empty_replay_scene" ] },
+              { "type": "scene", "args": [ "slide11" ] }
+            ]
+      },
+      "forward_button": {
+            "events": { "show_next": "*" },
+            "actions": [ { "type": "scene", "args": [ "slide12" ] } ]
+      },
+      "back_button": {
+            "events": { "show_back": "*" },
+            "actions": [ { "type": "scene", "args": [ "slide10" ] } ]
+      }
+}
+},
+"slide12": {
+        "id": "slide12",
+        "background": "background_cs",
+        "title": "Slide 12",
+        "description": "Slide 12",
+        "actors": [
+         {
+                  "name": "intro_heading",
+                  "type": "text",
+                  "font": "standard",
+                  "location": [ 30, 25 ],
+                  "text": "Coping Skills"
+        },
+         {
+          "name": "next_disabled",
+          "type":"decoration",
+          "image": "next_disabled",
+          "location": [ 720, 530 ],
+          "key": "decorations"
+        },
+          {
+            "name": "replay",
+            "type": "button",
+            "image": "replay",
+            "location": [ 660, 530 ],
+            "variable": "replayClick"
+          },
+          {
+            "name": "back",
+            "type": "button",
+            "image": "back",
+            "location": [ 600, 532 ],
+            "variable": "show_back"
+          },
+          {
+            "name": "dropShadow",
+            "type": "blocker",
+            "location": [ 73, 138 ],
+            "size": [640, 360],
+            "blockerTint": "0x585858",
+            "blockerAlpha": 1
+          },
+          {
+            "name": "video_rt_end",
+            "type": "wistia",
+            "location": [ 70, 135 ],
+            "hideCloseButton": true,
+            "size": [ 640, 360 ],
+            "video": "v1fsr5j6r2",
+            "blockerAlpha" : 0.0,
+            "blockInput": false,
+            "variable": "video_end"
+          }
+        ],
+        "actions": [
+          { "type": "choice", "args": [ "objective_complete", 1] },
+          { "type": "choice", "args": [ "save", 0 ] }
+        ],
+        "outcomes": {
+          "video_end_finished": {
+            "events": { "video_end": "finished" },
+            "actions": [
+            ]
+          },
+          "replay_button": {
+            "events": { "replayClick": "*" },
+            "actions": [
+              { "type": "scene", "args": [ "empty_replay_scene" ] },
+              { "type": "scene", "args": [ "slide12" ] }
+            ]
+      },
+      "back_button": {
+            "events": { "show_back": "*" },
+            "actions": [ { "type": "scene", "args": [ "slide11" ] } ]
+      }
+}
+},
+"empty_replay_scene": {
+        "id": "empty_replay_scene",
+        "description": "since a scene change request to the current scene is ignored, first change to this empty scene"
+      }
+
+
+}
+}
+}
+

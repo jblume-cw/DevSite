@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta property="og:title" content="IUC Analyzing Influences" />
+    <title>Analyzing Influences</title>
+    <script>
+      _environmentSettings = {
+        assetPath: "",
+      };
+    </script>
+    <script src="engine/APIWrapper.js"></script>
+    <script src="engine/phaser.js"></script>
+    <script src="engine/scene-engine.min.js"></script>
+
+    <link
+      rel="stylesheet"
+      href="Aachen-BT-Roman/stylesheet.css"
+      type="text/css"
+      charset="utf-8"
+    />
+
+    <link
+      rel="stylesheet"
+      href="openSans/stylesheet.css"
+      type="text/css"
+      charset="utf-8"
+    />
+    <link
+      rel="stylesheet"
+      href="yantramanav/stylesheet.css"
+      type="text/css"
+      charset="utf-8"
+    />
+    <link
+      rel="stylesheet"
+      href="raleway/stylesheet.css"
+      type="text/css"
+      charset="utf-8"
+    />
+
+    <style type="text/css">
+      body {
+        font-family: "yantramanavregular";
+      }
+
+      body {
+        font-family: "open_sansextrabold";
+      }
+
+      body {
+        font-family: "ralewaythin";
+      }
+    </style>
+
+    <script
+      src="//fast.wistia.com/assets/external/E-v1.js"
+      charset="ISO-8859-1"
+      async
+    ></script>
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+      }
+      .container {
+        position: relative;
+      }
+      .gameItem {
+        top: 0;
+        left: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <div
+      id="preloadFontOpenReg"
+      style="position: absolute; left: -1000em; font-family: yantramanavregular"
+    >
+      .
+    </div>
+
+    <div
+      id="preloadFontOpenBold"
+      style="position: absolute; left: -1000em; font-family: open_sansextrabold"
+    >
+      .
+    </div>
+
+    <div
+      id="preloadFontRaleway"
+      style="position: absolute; left: -1000em; font-family: ralewaythin"
+    >
+      .
+    </div>
+
+    <div id="gameContainer" class="container">
+      <div id="game" class="gameItem" style="z-index: 100"></div>
+    </div>
+
+    <script type="text/javascript">
+      SceneEngine("game", 780, 580);
+    </script>
+  </body>
+</html>

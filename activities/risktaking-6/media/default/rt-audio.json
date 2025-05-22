@@ -1,0 +1,85 @@
+{
+  "src": "output.ogg",
+  "data": {
+    "audioSprite": {
+      "Slide2Short": [
+        0,
+        28,
+        false,
+        "Slide2Short"
+      ],
+      "Slide3": [
+        29,
+        41.2041723356009,
+        false,
+        "Slide3"
+      ],
+      "Slide3a": [
+        72,
+        15.573469387755097,
+        false,
+        "Slide3a"
+      ],
+      "Slide3b": [
+        89,
+        25.593514739229022,
+        false,
+        "Slide3b"
+      ],
+      "Slide4": [
+        116,
+        21.349999999999994,
+        false,
+        "Slide4"
+      ],
+      "Slide5": [
+        139,
+        19.993764172335602,
+        false,
+        "Slide5"
+      ],
+      "Slide6": [
+        160,
+        29.866666666666674,
+        false,
+        "Slide6"
+      ],
+      "Slide7": [
+        191,
+        31.758344671201826,
+        false,
+        "Slide7"
+      ],
+      "Slide8": [
+        224,
+        18.725011337868466,
+        false,
+        "Slide8"
+      ],
+      "Slide9": [
+        244,
+        17.98959183673469,
+        false,
+        "Slide9"
+      ],
+      "Slide10": [
+        263,
+        10.277074829931962,
+        false,
+        "Slide10"
+      ],
+      "Slide11": [
+        275,
+        11.433333333333337,
+        false,
+        "Slide11"
+      ],
+      "Slide12": [
+        288,
+        14.908344671201803,
+        false,
+        "Slide12"
+      ]
+    }
+  }
+}
