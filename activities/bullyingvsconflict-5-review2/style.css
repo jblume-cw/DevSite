@@ -1,0 +1,25 @@
+.font-preload {
+    visibility: hidden;
+    position: absolute;
+    left: -9999px;
+}
+
+#gabarito400 {
+    font-family: 'Gabarito';
+    font-weight: 400;
+    font-style: normal;
+}
+
+#gabarito900 {
+    font-family: 'Gabarito';
+    font-weight: 900;
+    font-style: normal;
+}
+
+#phaserDOM {
+    display: inline-block !important;
+}
+
+#gameContainer #my_video.wistia_embed {
+    margin-bottom: 0 !important;
+}

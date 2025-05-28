@@ -1,0 +1,53 @@
+{
+	"resources": [
+		"output/bp5-bullying-vs-conflict/vo.ogg",
+		"output/bp5-bullying-vs-conflict/vo.m4a"
+	],
+	"spritemap": {
+		"Checklist intro": {
+			"start": 0,
+			"end": 7.253333333333333,
+			"loop": false
+		},
+		"Facts": {
+			"start": 9,
+			"end": 45.06546485260771,
+			"loop": false
+		},
+		"Menu conclusion": {
+			"start": 47,
+			"end": 61.97598639455782,
+			"loop": false
+		},
+		"Menu intro": {
+			"start": 63,
+			"end": 76.58308390022675,
+			"loop": false
+		},
+		"Scenario 1": {
+			"start": 78,
+			"end": 104.90666666666667,
+			"loop": false
+		},
+		"Scenario 2": {
+			"start": 106,
+			"end": 131.18555555555557,
+			"loop": false
+		},
+		"Scenario 3": {
+			"start": 133,
+			"end": 152.73868480725622,
+			"loop": false
+		},
+		"Scenario 4": {
+			"start": 154,
+			"end": 176.74666666666667,
+			"loop": false
+		},
+		"Splash alt": {
+			"start": 178,
+			"end": 194.11408163265307,
+			"loop": false
+		}
+	}
+}
