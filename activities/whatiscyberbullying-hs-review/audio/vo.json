@@ -1,0 +1,48 @@
+{
+	"resources": [
+		"output/cyberhslesson/vo.ogg",
+		"output/cyberhslesson/vo.m4a"
+	],
+	"spritemap": {
+		"slide 1": {
+			"start": 0,
+			"end": 1.568095238095238,
+			"loop": false
+		},
+		"slide 2": {
+			"start": 3,
+			"end": 17.319206349206347,
+			"loop": false
+		},
+		"slide 3": {
+			"start": 19,
+			"end": 33.387142857142855,
+			"loop": false
+		},
+		"slide 4": {
+			"start": 35,
+			"end": 45.22049886621315,
+			"loop": false
+		},
+		"slide 5": {
+			"start": 47,
+			"end": 59.017437641723355,
+			"loop": false
+		},
+		"slide 6": {
+			"start": 61,
+			"end": 74.29684807256236,
+			"loop": false
+		},
+		"slide 7": {
+			"start": 76,
+			"end": 89.45439909297052,
+			"loop": false
+		},
+		"slide 8": {
+			"start": 91,
+			"end": 95.05854875283447,
+			"loop": false
+		}
+	}
+}
