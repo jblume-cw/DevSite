@@ -1,0 +1,83 @@
+{
+	"resources": [
+		"output/cyberhstruthormyth/vo.ogg",
+		"output/cyberhstruthormyth/vo.m4a"
+	],
+	"spritemap": {
+		"Question 1 Myth": {
+			"start": 0,
+			"end": 26.555804988662132,
+			"loop": false
+		},
+		"Question 1 Truth": {
+			"start": 28,
+			"end": 54.288004535147394,
+			"loop": false
+		},
+		"Question 1": {
+			"start": 56,
+			"end": 62.36265306122449,
+			"loop": false
+		},
+		"Question 2 Myth": {
+			"start": 64,
+			"end": 91.53068027210884,
+			"loop": false
+		},
+		"Question 2 Truth": {
+			"start": 93,
+			"end": 120.85333333333332,
+			"loop": false
+		},
+		"Question 2": {
+			"start": 122,
+			"end": 127.6880045351474,
+			"loop": false
+		},
+		"Question 3 Myth": {
+			"start": 129,
+			"end": 153.03333333333333,
+			"loop": false
+		},
+		"Question 3 Truth": {
+			"start": 155,
+			"end": 176.75201814058957,
+			"loop": false
+		},
+		"Question 3": {
+			"start": 178,
+			"end": 183.93868480725624,
+			"loop": false
+		},
+		"Question 4 Myth": {
+			"start": 185,
+			"end": 199.57068027210883,
+			"loop": false
+		},
+		"Question 4 Truth": {
+			"start": 201,
+			"end": 214.6159863945578,
+			"loop": false
+		},
+		"Question 4": {
+			"start": 216,
+			"end": 220.8426530612245,
+			"loop": false
+		},
+		"Question 5 Myth": {
+			"start": 222,
+			"end": 239.18839002267575,
+			"loop": false
+		},
+		"Question 5 Truth": {
+			"start": 241,
+			"end": 257.86931972789114,
+			"loop": false
+		},
+		"Question 5": {
+			"start": 259,
+			"end": 264.43201814058955,
+			"loop": false
+		}
+	}
+}
